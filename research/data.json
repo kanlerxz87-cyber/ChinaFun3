@@ -1,0 +1,482 @@
+{
+  "checked": "2026-11-25",
+  "sources": {
+    "m-taian": {
+      "title": "MICHELIN · Taian Table",
+      "url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table",
+      "observed": "Three star icons; Innovative; Changning address; restaurant website. No hours in inspected excerpt.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "m-fu": {
+      "title": "MICHELIN · Fu He Hui",
+      "url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fu-he-hui",
+      "observed": "Two star icons; Vegetarian; 1037 Yuyuan Road; daily 11:00–13:00 and 17:30–21:00.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "m-tang": {
+      "title": "MICHELIN · T’ang Court",
+      "url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/t-ang-court-506725",
+      "observed": "Two star icons; Cantonese; 5F The Langham Xintiandi, 99 Madang Road.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "m-da": {
+      "title": "MICHELIN · Da Vittorio Shanghai",
+      "url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-vittorio-570570",
+      "observed": "Two star icons; Italian; 3F N3 BFC, 600 Zhongshan Dong Er Road; Tue–Sun 12:00–13:30, 18:00–21:30.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "m-tavern": {
+      "title": "MICHELIN · Shanghai Tavern",
+      "url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/shanghai-tavern",
+      "observed": "Listed with no stars or Bib icon; European Contemporary; 1F Shanghai Edition, 199 East Nanjing Road. Daily lunch differs from operator weekend schedule.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "m-yi": {
+      "title": "MICHELIN · Yi Long Court",
+      "url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yi-long-court",
+      "observed": "One star icon; Cantonese; 2F Peninsula Hotel, 32 Zhongshan Dong Yi Road. No hours in inspected excerpt.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "m-directory": {
+      "title": "MICHELIN · Shanghai directory",
+      "url": "https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants",
+      "observed": "153 entries displayed at observation; live directory is dynamic. Shortlist is not exhaustive.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "taian": {
+      "title": "Taian Table · Shanghai",
+      "url": "https://sh.taian-table.cn/",
+      "observed": "Operator links current Menu No.55 PDF.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "taian-menu": {
+      "title": "Taian Table · Menu 55",
+      "url": "https://sh.taian-table.cn/wp-content/uploads/2026/10/Menu-No.55.pdf",
+      "observed": "Seasonal 10-course degustation is mandatory; add-ons priced, base meal price not visible in parsed document. No couple total established.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "langham-room": {
+      "title": "Langham · Superior room",
+      "url": "https://www.langhamhotels.com/en/the-langham/shanghai/stay/rooms/superior-room/",
+      "observed": "King or twin beds; three guests; 40 m²; marble bathroom, separate rain shower, heated floor, Internet, coffee machine.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "tang": {
+      "title": "Langham · T’ang Court",
+      "url": "https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/",
+      "observed": "2026 two stars; lunch 11:30–14:00, dinner 17:30–21:00 daily; also Off on Monday. CNY 888 and 2,288 for two. Chef Tan (differs from Michelin).",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "tang-menu": {
+      "title": "T’ang Court · official set menus",
+      "url": "https://www.langhamhotels.com/content/dam/langhamhotels/tlshx-pdfs/tang-court/2026/seasonal-set-menu-selection-2026.pdf",
+      "observed": "Classic dim sum lunch set for two CNY 888; all-day set for two CNY 2,288. Prices inclusive of service charge and taxes. Future validity not established; optional extras excluded.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "radisson": {
+      "title": "Radisson Blu New World · overview",
+      "url": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-shanghai-new-world",
+      "observed": "88 Nanjing Road W; connection to Metro 1,2,8; indoor pool and gym. Spa closed 9 Dec 2026–30 Apr 2027. Generic next-60-day rate excluded.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "radisson-room": {
+      "title": "Radisson Blu New World · rooms",
+      "url": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-shanghai-new-world/rooms",
+      "observed": "Superior 30 m²; 2 adults; queen/king/twin options; free Wi-Fi, coffee/tea. No explicit private-bathroom text established in inspected excerpt.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "peninsula": {
+      "title": "The Peninsula Shanghai · overview",
+      "url": "https://www.peninsula.com/en/shanghai/5-star-luxury-hotel-bund",
+      "observed": "32 Zhongshan Dong Yi Road; Bund; indoor heated pool and fitness centre. Not a dated quote.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "peninsula-room": {
+      "title": "The Peninsula · Deluxe room",
+      "url": "https://www.peninsula.com/en/shanghai/luxury-hotel-room-suite-types/deluxe-room",
+      "observed": "King/twin; maximum 2 adults; 54–59 m²; marble bathroom. No dated trip total.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "da": {
+      "title": "Da Vittorio · Shanghai operator",
+      "url": "https://www.davittorio.com/en/restaurants/da-vittorio-shanghai.html",
+      "observed": "Tue–Sun lunch 12:00–13:30, dinner 18:00–21:30. English street number 600, Chinese 558; verify entrance. Shanghai page links menu.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "da-menu": {
+      "title": "Da Vittorio · Shanghai menu",
+      "url": "https://www.davittorio.com/images/davittorio/ristorante/shanghai/menu/Menu%20Ristorante%20-%20Inglese.pdf",
+      "observed": "Sea tasting menu RMB 2,388; white truffle menu RMB 4,388; 10% service charge. Per-person basis not explicit in parsed text; no inferred couple meal total.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "tavern": {
+      "title": "Marriott · Shanghai EDITION dining",
+      "url": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/dining/",
+      "observed": "Shanghai Tavern Mon–Fri 06:30–10:30, 11:30–16:30, 17:30–22:00; Sat–Sun 06:30–10:30, 12:00–15:00, 17:30–22:00. Weekend lunch conflicts with Michelin.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "museum-old": {
+      "title": "Shanghai Museum · former site and domain notice",
+      "url": "https://www.shanghaimuseum.net/mu/frontend/pg/en/visit",
+      "observed": "Official notice: .net discontinued 1 Jan 2027, replaced by .cn. Official footer links YouTube @theshanghaimuseum and Instagram theshanghaimuseum.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "east": {
+      "title": "Shanghai Museum · East visitor guide",
+      "url": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-east",
+      "observed": "Wed–Mon 10:00–18:00; last entry 17:00; Tue closure except national holidays. 1952 Century Avenue. Individual general visits no reservation; special galleries and ticketed exhibitions differ. Metro 2 Shanghai Technology Museum exit 8, 4 Xiangcheng Road exit 2, 6 Pudian Road exit 1. No ticket total established.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "west": {
+      "title": "Shanghai Museum · People’s Square visitor guide",
+      "url": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-west",
+      "observed": "Tue–Sun 09:00–17:00, last entry 15:00, Monday closure except national holidays; evening opening only by announcement. 201 Ren Min Da Dao. Only Americas exhibition 9 Jul 2026–14 Nov 2027; individual advance tickets. Metro 1/2/8 People’s Square exit 1 or 14 Dashijie exit 4. No ticket total established.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "ig-taian": {
+      "title": "Instagram · Taian chef",
+      "url": "https://www.instagram.com/stefan_stiller_taian_table/",
+      "observed": "Chef profile links taian-table.cn; Shanghai-related posts visible. Preview only.",
+      "kind": "operator social",
+      "checked": "2026-11-25"
+    },
+    "ig-fu": {
+      "title": "Instagram · Fu He Hui",
+      "url": "https://www.instagram.com/fuhehui/",
+      "observed": "Profile address 1037 Yuyuan Road and phone match Michelin. Seasonal food posts visible. Preview only.",
+      "kind": "operator social",
+      "checked": "2026-11-25"
+    },
+    "ig-da": {
+      "title": "Instagram · Da Vittorio group",
+      "url": "https://www.instagram.com/davittorioristorante/",
+      "observed": "Group profile links official website and lists Shanghai, Italy and St. Moritz. Shanghai-specific post DfPPnBDiAje visible; group content not all Shanghai.",
+      "kind": "operator social",
+      "checked": "2026-11-25"
+    },
+    "quote-2027-02-15": {
+      "title": "Langham · date-specific room search 2027-02-15",
+      "url": "https://reservations.brilliantbylangham.com/en-US/booking/rooms?adult=2&arrive=2027-02-15&chain=10316&config=brilliant&depart=2027-02-22&hotel=28382&level=hotel&rooms=1&theme=brilliant",
+      "observed": "Returned selected dates, 7 nights, 1 room and 2 guests; only From and member-exclusive figures excluding taxes and fees. No final stay total or refund conditions established; no nightly multiplication.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "quote-2027-03-01": {
+      "title": "Langham · date-specific room search 2027-03-01",
+      "url": "https://reservations.brilliantbylangham.com/en-US/booking/rooms?adult=2&arrive=2027-03-01&chain=10316&config=brilliant&depart=2027-03-08&hotel=28382&level=hotel&rooms=1&theme=brilliant",
+      "observed": "Returned selected dates, 7 nights, 1 room and 2 guests; only From and member-exclusive figures excluding taxes and fees. No final stay total or refund conditions established; no nightly multiplication.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    },
+    "quote-2027-03-16": {
+      "title": "Langham · date-specific room search 2027-03-16",
+      "url": "https://reservations.brilliantbylangham.com/en-US/booking/rooms?adult=2&arrive=2027-03-16&chain=10316&config=brilliant&depart=2027-03-23&hotel=28382&level=hotel&rooms=1&theme=brilliant",
+      "observed": "Returned selected dates, 7 nights, 1 room and 2 guests; only From and member-exclusive figures excluding taxes and fees. No final stay total or refund conditions established; no nightly multiplication.",
+      "kind": "official",
+      "checked": "2026-11-25"
+    }
+  },
+  "restaurants": [
+    {
+      "id": "taian",
+      "name": "Taian Table",
+      "stars": 3,
+      "distinction": "3 stars",
+      "cuisine": "Innovative",
+      "cluster": "Changning",
+      "address": "101–102, Building 1, Garden Office, No.161, Lane 465, Zhenning Road",
+      "hours": null,
+      "exceptions": null,
+      "total": null,
+      "priceNote": "Mandatory 10-course menu; base price not established.",
+      "sources": [
+        "m-taian",
+        "taian",
+        "taian-menu"
+      ],
+      "social": [
+        [
+          "Chef Instagram",
+          "https://www.instagram.com/stefan_stiller_taian_table/"
+        ],
+        [
+          "Shanghai post",
+          "https://instagram.com/p/DgDPPcNNEUL"
+        ]
+      ],
+      "flags": [
+        "Meal total, opening hours and 2027 exceptions unverified."
+      ]
+    },
+    {
+      "id": "fu",
+      "name": "Fu He Hui",
+      "stars": 2,
+      "distinction": "2 stars",
+      "cuisine": "Vegetarian",
+      "cluster": "Changning",
+      "address": "1037 Yuyuan Road",
+      "hours": "Mon–Sun · 11:00–13:00 / 17:30–21:00",
+      "exceptions": null,
+      "total": null,
+      "priceNote": "Seasonal set menus; no official numeric couple total established.",
+      "sources": [
+        "m-fu",
+        "ig-fu"
+      ],
+      "social": [
+        [
+          "Restaurant Instagram",
+          "https://www.instagram.com/fuhehui/"
+        ],
+        [
+          "Winter menu post",
+          "https://instagram.com/p/DflORkdt-LY"
+        ]
+      ],
+      "flags": [
+        "Meal total and 2027 holiday exceptions unverified."
+      ]
+    },
+    {
+      "id": "tang",
+      "name": "T’ang Court",
+      "stars": 2,
+      "distinction": "2 stars",
+      "cuisine": "Cantonese",
+      "cluster": "Xintiandi",
+      "address": "5F, The Langham Xintiandi, 99 Madang Road",
+      "hours": "11:30–14:00 / 17:30–21:00",
+      "exceptions": "Operator says “daily” and “Off on Monday”; conflict requires confirmation.",
+      "total": "CNY 888 lunch / CNY 2,288 all-day",
+      "priceNote": "Each is one set for TWO, including tax and service. Optional drinks/extras excluded. Published menu, not a 2027 reservation quote.",
+      "sources": [
+        "m-tang",
+        "tang",
+        "tang-menu"
+      ],
+      "social": [],
+      "flags": [
+        "Weekly schedule conflict; direct matching social link missing; 2027 price validity unverified."
+      ]
+    },
+    {
+      "id": "da",
+      "name": "Da Vittorio Shanghai",
+      "stars": 2,
+      "distinction": "2 stars",
+      "cuisine": "Italian",
+      "cluster": "Bund / Huangpu",
+      "address": "3F, N3, The Bund Finance Centre, 600 Zhongshan Dong Er Road",
+      "hours": "Tue–Sun · 12:00–13:30 / 18:00–21:30",
+      "exceptions": "Closed Monday; holiday exceptions unverified.",
+      "total": null,
+      "priceNote": "Menu found; couple meal total not explicit. Do not turn Michelin price symbols into a budget.",
+      "sources": [
+        "m-da",
+        "da",
+        "da-menu",
+        "ig-da"
+      ],
+      "social": [
+        [
+          "Group Instagram",
+          "https://www.instagram.com/davittorioristorante/"
+        ],
+        [
+          "Shanghai-specific post",
+          "https://instagram.com/p/DfPPnBDiAje"
+        ]
+      ],
+      "flags": [
+        "English/Chinese street numbers differ (600/558); couple total unverified. Group preview includes other cities."
+      ]
+    },
+    {
+      "id": "tavern",
+      "name": "Shanghai Tavern",
+      "stars": 0,
+      "distinction": "Selected · no star",
+      "cuisine": "European Contemporary",
+      "cluster": "Bund / Huangpu",
+      "address": "1F, Shanghai EDITION, 199 East Nanjing Road",
+      "hours": "Mon–Fri · 06:30–10:30 / 11:30–16:30 / 17:30–22:00; Sat–Sun · 06:30–10:30 / 12:00–15:00 / 17:30–22:00",
+      "exceptions": "Operator weekend lunch differs from Michelin; operator times shown. Holiday exceptions unverified.",
+      "total": null,
+      "priceNote": "No official couple meal total established.",
+      "sources": [
+        "m-tavern",
+        "tavern"
+      ],
+      "social": [],
+      "flags": [
+        "Weekend-hours conflict; meal total and matching social preview missing."
+      ]
+    },
+    {
+      "id": "yi",
+      "name": "Yi Long Court",
+      "stars": 1,
+      "distinction": "1 star",
+      "cuisine": "Cantonese",
+      "cluster": "Bund / Huangpu",
+      "address": "2F, The Peninsula, 32 Zhongshan Dong Yi Road",
+      "hours": null,
+      "exceptions": null,
+      "total": null,
+      "priceNote": "No official couple meal total established.",
+      "sources": [
+        "m-yi"
+      ],
+      "social": [],
+      "flags": [
+        "Operator dining link redirected to hotel home. Hours, meal total, 2027 exceptions and matching social preview unverified."
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "id": "langham",
+      "name": "The Langham, Shanghai, Xintiandi",
+      "area": "Xintiandi",
+      "room": "Superior · select King, not Twin",
+      "bed": "King option",
+      "bath": "Marble bathroom with separate rain shower",
+      "size": "40 m²",
+      "amenities": "Heated bathroom floor · Internet · coffee machine",
+      "total": null,
+      "rank": null,
+      "transitCount": null,
+      "onsite": [
+        "tang"
+      ],
+      "sources": [
+        "langham-room",
+        "m-tang",
+        "quote-2027-02-15"
+      ],
+      "flags": [
+        "Dated room search available; final seven-night total, king inventory and cancellation terms unverified. No one-hour transit count established."
+      ]
+    },
+    {
+      "id": "peninsula",
+      "name": "The Peninsula Shanghai",
+      "area": "Bund",
+      "room": "Deluxe · select King, not Twin",
+      "bed": "King option",
+      "bath": "Marble bathroom",
+      "size": "54–59 m²",
+      "amenities": "Indoor heated pool · fitness centre",
+      "total": null,
+      "rank": null,
+      "transitCount": null,
+      "onsite": [
+        "yi"
+      ],
+      "sources": [
+        "peninsula-room",
+        "peninsula",
+        "m-yi"
+      ],
+      "flags": [
+        "Maximum 2 adults. Seven-night total, specific king inventory and cancellation terms unverified. No one-hour transit count established."
+      ]
+    },
+    {
+      "id": "radisson",
+      "name": "Radisson Blu New World Hotel, Shanghai",
+      "area": "People’s Square / Nanjing Road W",
+      "room": "Superior · select Queen or King, not Twin",
+      "bed": "Queen or King option",
+      "bath": null,
+      "size": "30 m²",
+      "amenities": "Indoor pool · gym · Wi-Fi · Metro 1, 2, 8 connection",
+      "total": null,
+      "rank": null,
+      "transitCount": null,
+      "onsite": [],
+      "sources": [
+        "radisson-room",
+        "radisson"
+      ],
+      "flags": [
+        "Spa CLOSED 9 Dec 2026–30 Apr 2027. Explicit private-bathroom text not established. Seven-night total and transit count unverified."
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "id": "west",
+      "name": "Shanghai Museum · People’s Square",
+      "area": "Huangpu",
+      "address": "201 Ren Min Da Dao",
+      "hours": "Tue–Sun · 09:00–17:00; last entry 15:00",
+      "exceptions": "Closed Monday except national holidays. Evening sessions only by announcement.",
+      "total": null,
+      "booking": "Advance ticket required. Only “On Top of the World Tree: Ancient Civilizations of the Americas” during trip window; permanent displays are at East.",
+      "transit": "Metro 1/2/8 · People’s Square, Exit 1; or 14 · Dashijie, Exit 4. Hotel-to-door time unverified.",
+      "social": [
+        [
+          "Official YouTube channel",
+          "https://www.youtube.com/@theshanghaimuseum"
+        ],
+        [
+          "Official Instagram",
+          "https://www.instagram.com/theshanghaimuseum"
+        ]
+      ],
+      "sources": [
+        "west",
+        "museum-old"
+      ]
+    },
+    {
+      "id": "east",
+      "name": "Shanghai Museum · East",
+      "area": "Pudong",
+      "address": "1952 Century Avenue",
+      "hours": "Wed–Mon · 10:00–18:00; last entry 17:00",
+      "exceptions": "Closed Tuesday except national holidays. Special galleries require separate reservations; ticketed shows may cost extra.",
+      "total": null,
+      "booking": "No general individual reservation currently required; bring original valid ID. Special experiences/exhibitions differ.",
+      "transit": "Metro 2 · Shanghai Technology Museum, Exit 8; 4 · Xiangcheng Road, Exit 2; 6 · Pudian Road, Exit 1. Hotel-to-door time unverified.",
+      "social": [
+        [
+          "Official YouTube channel",
+          "https://www.youtube.com/@theshanghaimuseum"
+        ],
+        [
+          "Official Instagram",
+          "https://www.instagram.com/theshanghaimuseum"
+        ]
+      ],
+      "sources": [
+        "east",
+        "museum-old"
+      ]
+    }
+  ]
+}

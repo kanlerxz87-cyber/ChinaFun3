@@ -72,3 +72,9 @@ cd docs && python3 -m http.server 8080
 
 ---
 Merged 2026-11-25 • Shanghai focus • Mobile-friendly • No hallucinations • All sources linkable • No discard merge (both sessions preserved)
+
+## Additional source-first dashboard · session 8725551a
+
+An independent, non-overwriting planning baseline is available at [considered/index.html](considered/index.html) (published URL: https://kanlerxz87-cyber.github.io/ChinaFun3/considered/). It preserves the root and docs sites above unchanged. Its own [README](considered/README.md), [source register](considered/sources.html), [review queue](considered/review.html), and [structured evidence](research/data.json) document its bounded Shanghai shortlist and limitations. No final seven-night hotel total, cheapest booking date or complete one-hour transit ranking was established in that snapshot. Existing dashboards were preserved during parallel integration, not silently reverified or endorsed by this addition.
+
+Build this additional subsite with `python3 scripts/build.py`; test it with `python3 -m unittest discover -s tests -v`. Optional browser checks are documented in considered/README.md. Other sessions retain ownership of the root/dashboard and docs scopes recorded in COORDINATION.md.
