@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activities &amp; Landmarks — ChinaFun3 Trip Planner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body data-page="activities">
+  <header id="site-header" class="site-header"></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Verified Activities &amp; Cultural Landmarks (16 Sites)</h1>
+        <p>
+          8 Shanghai &amp; 8 Beijing highlights within easy transit of our hotel clusters, audited against official municipal government and museum portals. All prices reflect <strong>verified winter off-season (Feb–Mar) totals for 2 adults</strong> in CNY.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="callout callout-warn mb-12">
+          <h2 class="callout-title">Plan Around the Monday Closure Trap &amp; Carry Your Original Passport!</h2>
+          <p>
+            <strong>Closed Mondays:</strong> The Palace Museum (Forbidden City), National Museum of China, Temple of Heaven inner halls, Summer Palace inner halls, Yu Garden, Shanghai Museum (People's Square), and West Bund Museum (2F).
+            <strong>Open Mondays:</strong> Museum of Art Pudong (MAP), Shanghai Museum East (closed Tuesdays), Shanghai Tower 118F, Jing'an Temple, The Bund &amp; Cruises, Former French Concession, Yonghe Lama Temple, Jingshan Park, and Badaling Great Wall.
+          </p>
+        </div>
+
+        <div class="controls-bar" role="region" aria-label="Filter activities">
+          <div class="filter-group">
+            <button type="button" class="chip-btn active" data-act-city="ALL">All Cities (16)</button>
+            <button type="button" class="chip-btn" data-act-city="Shanghai">Shanghai (8)</button>
+            <button type="button" class="chip-btn" data-act-city="Beijing">Beijing (8)</button>
+          </div>
+          <div class="filter-group">
+            <button type="button" class="chip-btn active" data-act-filter="ALL">All Schedules</button>
+            <button type="button" class="chip-btn" data-act-filter="MONDAY">Open Mondays ✓</button>
+            <button type="button" class="chip-btn" data-act-filter="FREE">Free Admission (CN¥0)</button>
+          </div>
+          <div class="filter-group">
+            <input type="search" id="act-search" class="search-input" placeholder="Search museum, garden, wall…" aria-label="Search activities" />
+          </div>
+        </div>
+
+        <p id="activities-count" class="results-count mb-12">Loading activities…</p>
+        <div id="activities-grid" class="grid-2">
+          <div class="loading-box">Loading verified activities…</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

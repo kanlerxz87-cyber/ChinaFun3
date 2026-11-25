@@ -40,15 +40,15 @@
         "tier": "Smart Value Culinary Base (7 Nights, 2 Adults — excl. International Flights)",
         "shanghaiHotel7N": "US$1,179 (Radisson Blu Junior Suite, Queen, incl. tax)",
         "beijingHotel7N": "US$955 (Park Plaza Wangfujing Deluxe King, incl. tax)",
-        "activities8SitesCny": "Shanghai 8 activities: CN¥1,100 (~US$152) | Beijing 8 activities: CN¥360 (~US$50, excl. optional HSR rail ~CN¥120–240 RT for 2)",
-        "michelinDiningIllustrative": "Mix of verified Bib Gourmand/Selected + 2–3 starred lunches/dinners (e.g., 1★ Yong Yi Ting dim sum CN¥800–1,000 + 2★ T'ang Court tasting CN¥3,344 + 2★ Bao Li Xuan lunch CN¥1,576; exact total varies by reservations chosen)"
+        "activities8SitesCny": "Shanghai 8 activities: CN¥1,120 (~US$155) | Beijing 8 activities: CN¥360 (~US$50, excl. optional Badaling HSR rail ~CN¥120–240 RT for 2)",
+        "michelinDiningIllustrative": "Verified official set menus for 2: 2★ T'ang Court Classic Dim Sum Lunch CN¥888 + 1★ Yong Yi Ting Dim Sum Lunch CN¥892 + Jade on 36 Lunch CN¥776–1,276 + 1★ Trb Hutong Weekday Lunch CN¥1,812 (exact total varies by bookings chosen)"
       },
       {
         "tier": "Luxury Flagship Base (7 Nights, 2 Adults — excl. International Flights)",
         "shanghaiHotel7N": "US$1,917 (The Langham Xintiandi) to US$3,097 (The PuLi Hotel & Spa)",
         "beijingHotel7N": "US$1,343 (Hilton Wangfujing 65 sqm King) to US$2,786 (The PuXuan Hotel & Spa)",
-        "activities8SitesCny": "Same official off-season admission totals (Shanghai CN¥1,100 / Beijing CN¥360) + optional VIP tours / Yu Garden night light show (CN¥300–436 for 2)",
-        "michelinDiningIllustrative": "Flagship 3★/2★ tasting nights (e.g., 3★ Taian Table CN¥4,776 for 2 + 2★ Da Vittorio CN¥5,474–7,454 for 2 + 1★ Trb Hutong CN¥1,998–2,438 for 2)"
+        "activities8SitesCny": "Same official off-season admission totals (Shanghai CN¥1,120 / Beijing CN¥360) + optional Yu Garden winter night tour (CN¥300–436 for 2) / Shanghai Tower Sky 632 combo (+CN¥176 for 2)",
+        "michelinDiningIllustrative": "Verified flagship dinners for 2: 3★ Taian Table CN¥5,176–5,776 + 2★ Bao Li Xuan CN¥3,576 + 2★ Da Vittorio CN¥5,254–9,654 + 2★ T'ang Court All-Day Set CN¥2,288 + 1★ Trb Hutong Seasonal/Signature CN¥3,882–5,262"
       }
     ],
     "keyBookingAndOperationalTakeaways": [
@@ -156,9 +156,9 @@
   "siteImprovements": [
     {
       "id": "IMP-01",
-      "title": "Bilingual Chinese Taxi & Concierge Address Cards (中文地址卡片)",
+      "title": "Native Hanzi Street Addresses (中文街道地址) & Amap Deep-Links on Driver Cards",
       "priority": "High Impact — Quick Win",
-      "description": "Add a one-tap 'Show Driver (中文)' modal button on every hotel, restaurant, and attraction card displaying huge-font Chinese name, exact street address, district, and nearest Metro station so travelers can hand their phone to taxi drivers or paste directly into DiDi/Amap."
+      "description": "Upgrade the live 'Show Driver' address cards across all 29 MICHELIN restaurants, 10 hotels, and 16 attractions with verified native Hanzi street addresses (e.g., 上海市黄浦区南京西路88号) and one-tap deep links into Amap (高德地图) / Apple Maps for effortless taxi & DiDi handoff."
     },
     {
       "id": "IMP-02",
@@ -205,9 +205,9 @@
     {
       "id": "FLG-03",
       "severity": "High",
-      "category": "Restaurant Data — Missing Official Menu Prices (21 of 29 Restaurants)",
+      "category": "Restaurant Data — Missing Official Menu Prices (20 of 29 Restaurants)",
       "status": "needs review",
-      "details": "Only 8 of 29 audited restaurants publish explicit 2026 numeric menu prices on their official websites/PDFs (Taian Table, Bao Li Xuan, Da Vittorio, T'ang Court, Imperial Treasure [a la carte], Yong Yi Ting [dim sum], Jade on 36, Trb Hutong, Fu Chun Ju [a la carte] — note 2 of those are a la carte ranges without fixed tasting set totals). For the remaining 21 venues (including 3★ Chao Shang Chao, 3★ Xin Rong Ji, 2★ Bombana, 2★ Canton 8, 2★ Fu He Hui, 2★ Ji Pin Court, 2★ King's Joy, 2★ Lamdre, 2★ Jingji, and Bib Gourmand/Selected venues), exact 2-adult CNY totals are intentionally left blank rather than guessed; confirm directly via WeChat Mini Program, Dianping, or hotel concierge when booking."
+      "details": "Only 9 of 29 audited restaurants publish explicit 2026 numeric menu prices on their official websites/PDFs: 7 publish fixed 2-adult set totals (Taian Table, Bao Li Xuan, Da Vittorio, T'ang Court, Yong Yi Ting [dim sum lunch], Jade on 36, Trb Hutong) and 2 publish à la carte dish ranges without fixed 2-adult set totals (Imperial Treasure, Fu Chun Ju). For the remaining 20 venues (including 3★ Chao Shang Chao, 3★ Xin Rong Ji, 2★ Bombana, 2★ Canton 8, 2★ Fu He Hui, 2★ Ji Pin Court, 2★ King's Joy, 2★ Lamdre, 2★ Jingji, and Bib Gourmand/Selected venues), exact 2-adult CNY totals are intentionally left blank rather than guessed; confirm directly via WeChat Mini Program, Dianping, or hotel concierge when booking."
     },
     {
       "id": "FLG-04",

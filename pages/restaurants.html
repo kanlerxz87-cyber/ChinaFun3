@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MICHELIN Dining Directory — ChinaFun3 Trip Planner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body data-page="restaurants">
+  <header id="site-header" class="site-header"></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>MICHELIN Dining Directory (29 Audited Venues)</h1>
+        <p>
+          16 Shanghai &amp; 13 Beijing restaurants verified directly against <code>guide.michelin.com</code> and official venue menus. Strictly distinguishes <strong>MICHELIN Starred</strong> (3★/2★/1★) from <strong>MICHELIN Guide Listed</strong> (Bib Gourmand &amp; Selected). Any price or schedule not officially published online is left blank (<code>—</code>) and flagged.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="callout callout-crimson mb-12">
+          <h2 class="callout-title">Critical Verification Notes Before Booking</h2>
+          <p>
+            <strong>2026–2027 Guide Updates:</strong> Beijing's <em>King's Joy</em> moved from 3★ to <strong>2★</strong> in the Oct 2026 Beijing 2027 Guide; Shanghai's <em>157 Shi Fang</em> (Bib Gourmand) relocated to <strong>IM Shanghai, 1398 Kaixuan Road</strong>. Shanghai's next annual MICHELIN ceremony may release prior to Feb 2027—reconfirm star status &amp; Spring Festival tail closures (Feb 15–20) via hotel concierge or WeChat before reserving.
+          </p>
+        </div>
+
+        <div class="controls-bar" role="region" aria-label="Filter MICHELIN restaurants">
+          <div class="filter-group" aria-label="Filter by city">
+            <button type="button" class="chip-btn active" data-rest-city="ALL">All Cities (29)</button>
+            <button type="button" class="chip-btn" data-rest-city="Shanghai">Shanghai (16)</button>
+            <button type="button" class="chip-btn" data-rest-city="Beijing">Beijing (13)</button>
+          </div>
+          <div class="filter-group" aria-label="Filter by distinction">
+            <button type="button" class="chip-btn active" data-rest-cat="ALL">All Distinctions</button>
+            <button type="button" class="chip-btn" data-rest-cat="STARRED">★ MICHELIN Starred Only</button>
+            <button type="button" class="chip-btn" data-rest-cat="LISTED">Bib Gourmand &amp; Selected</button>
+          </div>
+          <div class="filter-group">
+            <label style="display:inline-flex;align-items:center;gap:6px;font-size:0.84rem;font-weight:600;cursor:pointer;">
+              <input type="checkbox" id="rest-price-only" />
+              Official Menu Price Published Only (9)
+            </label>
+            <input type="search" id="rest-search" class="search-input" placeholder="Search name, cuisine, district…" aria-label="Search restaurants" />
+          </div>
+        </div>
+
+        <p id="restaurants-count" class="results-count mb-12">Loading restaurants…</p>
+        <div id="restaurants-grid" class="grid-2">
+          <div class="loading-box">Loading verified MICHELIN restaurants…</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

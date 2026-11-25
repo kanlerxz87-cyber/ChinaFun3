@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flagged for Review &amp; Audit Register — ChinaFun3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body data-page="review">
+  <header id="site-header" class="site-header"></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Flagged for Review &amp; Verification Audit Register</h1>
+        <p>
+          Zero guesswork policy: every prompt contradiction, dynamic calendar uncertainty, hotel direct-engine limitation, and blank restaurant/activity field is tracked here with full transparency.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-eyebrow">Audit Register (FLG-01 – FLG-10)</p>
+            <h2 class="section-title">Systemic Flags, Irregularities &amp; Watch Items</h2>
+          </div>
+          <div class="filter-group">
+            <button type="button" class="chip-btn active" data-flag-sev="ALL">All Severities (10)</button>
+            <button type="button" class="chip-btn" data-flag-sev="High">High</button>
+            <button type="button" class="chip-btn" data-flag-sev="Medium">Medium</button>
+            <button type="button" class="chip-btn" data-flag-sev="Low">Low</button>
+          </div>
+        </div>
+
+        <div id="flagged-list" class="grid-2">
+          <div class="loading-box">Loading audit register…</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-eyebrow">Auto-Synced Granular Audit</p>
+            <h2 class="section-title">Every Individual Blank / Flagged Record Across Datasets</h2>
+            <p class="section-subtitle">Dynamically computed directly from <code>data/restaurants.json</code> and <code>data/activities.json</code> so zero omissions can occur.</p>
+          </div>
+          <span id="granular-count" class="badge badge-review">Computing…</span>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Dataset</th>
+                <th>City</th>
+                <th>Item</th>
+                <th>Unverified / Flagged Fields</th>
+                <th>Primary Reference</th>
+              </tr>
+            </thead>
+            <tbody id="granular-audit-tbody">
+              <tr><td colspan="5" class="loading-box">Computing live granular audit…</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

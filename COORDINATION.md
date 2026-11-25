@@ -24,8 +24,8 @@
 | `T-03` | Research & verify hotels (private bath, queen+ bed, amenities, transit ≤1 hr to Michelin clusters), rank by Michelin reachability, verify 7-night pricing for Feb–Mar 2027 dates & optimal booking window | `done` | `session-256b850d` | `data/hotels.json` | 2026-11-25 |
 | `T-04` | Research & verify activities & attractions within ≤1 hr transit of hotel clusters, official hours/exceptions, 2-adult admission prices, official links, and social media links | `done` | `session-256b850d` | `data/activities.json` | 2026-11-25 |
 | `T-05` | Compile Executive Summary, Missing Info / Decision Questions & Discovery Plan, Site Improvement Suggestions, and Flagged for Review audit register | `done` | `session-256b850d` | `data/governance.json` | 2026-11-25 |
-| `T-06` | Build mobile-friendly GitHub Pages dashboard (landing page + category subpages, searchable/filterable tables, zero broken links, line-by-line verification pass) | `in progress` | `session-256b850d` | `index.html`, `pages/*.html`, `assets/*`, `.nojekyll` | 2026-11-25 |
-| `T-07` | Final integration audit, link & schema validation, live preview verification, and GitHub Pages publication | `unclaimed` | — | `README.md`, `COORDINATION.md`, site root | 2026-11-25 |
+| `T-06` | Build mobile-friendly GitHub Pages dashboard (landing page + category subpages, searchable/filterable tables, zero broken links, line-by-line verification pass) | `done` | `session-256b850d` | `index.html`, `pages/*.html`, `assets/*`, `.nojekyll` | 2026-11-25 |
+| `T-07` | Final integration audit, link & schema validation, live preview verification, and GitHub Pages publication | `done` | `session-256b850d` | `README.md`, `COORDINATION.md`, site root | 2026-11-25 |
 
 ---
 
@@ -62,6 +62,10 @@
   - Explicitly flagged nuances: `Badaling Great Wall` HSR train ride is only 20–27 min from Beijing North/Qinghe, but total door-to-door from downtown hotels is ~60–70 min incl. station security (flagged transparently); `West Bund Museum` rotating post-Feb 14, 2027 Centre Pompidou show fee and `Badaling` cable car fee left flagged rather than guessed. Verified YouTube/Instagram links attached only where directly verified.
 - **`T-05` Completed (`data/governance.json`):**
   - Consolidated Executive Summary (3 itinerary options: 7-night Shanghai Feb 22–Mar 1, 14-night Dual-City Shanghai Feb 15–22 + Beijing Feb 22–Mar 1, and 3-night sprint if Feb 15–18 is hard-locked), verified 2-adult 7-night cost snapshots, 7 prioritized Missing Info / Decision Questions (`Q-01`–`Q-07`), 4-phase Discovery Plan, 5 high-impact Site Improvement Suggestions (`IMP-01`–`IMP-05`), and 10 comprehensive Flagged for Review audit entries (`FLG-01`–`FLG-10`) synced across all 4 upstream JSON files.
+- **`T-06` & `T-07` Completed (`index.html`, `pages/*.html`, `assets/*`, `.nojekyll`, `README.md`):**
+  - Built complete mobile-first 6-page static GitHub Pages dashboard (`index.html`, `pages/restaurants.html`, `pages/hotels.html`, `pages/activities.html`, `pages/planning.html`, `pages/review.html`) backed by `assets/styles.css`, `assets/app.js`, and `.nojekyll`.
+  - Cross-file consistency audit verified & reconciled all star distinctions (`King's Joy` 2★, `Fu He Hui` 2★, `Vivant` 1★, `Lamdre` 2★, `157 Shi Fang` Bib Gourmand), exact menu price totals (`Taian Table` CN¥5,176–5,776, `T'ang Court` CN¥888–2,288, `Yong Yi Ting` CN¥892, `Bao Li Xuan` CN¥3,576, `Da Vittorio` CN¥5,254–9,654, `Jade on 36` CN¥776–2,176, `Trb Hutong` CN¥1,812–5,262), and exact activity sums (Shanghai CN¥1,120 / Beijing CN¥360).
+  - Automated validation suite passed 100%: all 5 JSON datasets valid, 190 external URLs well-formed, all relative links resolved, JS syntax valid (`node --check`), all 14 HTTP endpoints returned `200 OK` on live preview server (`0.0.0.0:8000`), and full DOM execution across all 6 pages produced zero errors, zero `undefined`/`NaN`/`[object Object]`, and zero empty `href` attributes.
 
 ---
 
