@@ -1,0 +1,68 @@
+[
+  {
+    "id": "H1",
+    "name": "SSAW Boutique Hotel Shanghai Bund",
+    "cluster": "Huangpu / Yu Garden / The Bund",
+    "address": "No. 839 Renmin Road, Huangpu, Shanghai, China (verify on official site)",
+    "official_url": "https://www.ssawhotels.com/en/hotel-detail/ssaw-boutique-hotel-shanghai-bund",
+    "booking_url": "https://www.booking.com/hotel/cn/ssaw-boutique-shanghai-bund.html",
+    "source_links": [
+      "https://www.booking.com/hotel/cn/ssaw-boutique-shanghai-bund.html",
+      "https://www.ssawhotels.com/en/hotel-detail/ssaw-boutique-hotel-shanghai-bund"
+    ],
+    "private_bathroom": "Unverified - confirm on room details for selected room type",
+    "queen_or_larger_bed": "Unverified - confirm on room details for selected room type",
+    "amenities_notes": "Boutique hotel near Yu Garden/The Bund; amenities require room-level confirmation.",
+    "nightly_rate_indicative": "From ~US$218/night (Booking listing snippet, accessed 2026-11-25; not a quote for 2027-02-15)",
+    "total_7_night_indicative": "Unverified - no confirmed 2027-02-15 to 2027-02-22 quote",
+    "dates_checked": "2027-02-15 check-in, 2027-02-22 check-out (7 nights) - NOT CONFIRMED",
+    "best_time_to_book": "Unverified - no official source; monitor refundable rates and compare channels",
+    "transit_notes": "Near Yu Garden area; short metro/bus access to Bund/Huangpu Michelin cluster. Exact <=1hr verification pending route check.",
+    "michelin_access_score_note": "Proposed high access to Huangpu cluster; requires route verification",
+    "verification_status": "Partially verified (name/location/links). Pricing/amenities/dates unverified."
+  },
+  {
+    "id": "H2",
+    "name": "Holiday Inn Express Shanghai on The Bund by IHG",
+    "cluster": "Huangpu / The Bund / East Nanjing Road",
+    "address": "No. 33 Fuzhou Road, Huangpu, Shanghai, China (verify on official site)",
+    "official_url": "https://www.ihg.com/holidayinnexpress/hotels/us/en/shanghai/shazz/hoteldetail",
+    "booking_url": "https://www.booking.com/hotel/cn/holiday-inn-express-shanghai-on-the-bund.html",
+    "source_links": [
+      "https://www.ihg.com/holidayinnexpress/hotels/us/en/shanghai/shazz/hoteldetail",
+      "https://www.booking.com/hotel/cn/holiday-inn-express-shanghai-on-the-bund.html"
+    ],
+    "private_bathroom": "Unverified - confirm on room details for selected room type",
+    "queen_or_larger_bed": "Unverified - confirm on room details for selected room type",
+    "amenities_notes": "IHG hotel on Fuzhou Road near the Bund; confirm room type has queen bed and private bathroom.",
+    "nightly_rate_indicative": "From ~US$115-147/night (Booking/Trip snippets, accessed 2026-11-25; not a quote for 2027-02-15)",
+    "total_7_night_indicative": "Unverified - no confirmed 2027-02-15 to 2027-02-22 quote",
+    "dates_checked": "2027-02-15 check-in, 2027-02-22 check-out (7 nights) - NOT CONFIRMED",
+    "best_time_to_book": "Unverified - no official source; monitor refundable rates and compare channels",
+    "transit_notes": "On Fuzhou Road in Huangpu; close to Lao Zheng Xing (556 Fuzhou Rd) and Bund area. Exact <=1hr verification pending route check.",
+    "michelin_access_score_note": "Proposed very high access to Huangpu/Bund cluster; requires route verification",
+    "verification_status": "Partially verified (name/location/links). Pricing/amenities/dates unverified."
+  },
+  {
+    "id": "H3",
+    "name": "Hyatt on the Bund, Shanghai",
+    "cluster": "Hongkou / North Bund (near Huangpu)",
+    "address": "199 Huangpu Road, Hongkou, Shanghai, China (verify on official site)",
+    "official_url": "https://www.hyatt.com/hyatt-on-the-bund/en-US/shahb-hyatt-on-the-bund",
+    "booking_url": "https://www.booking.com/hotel/cn/hyatt-on-the-bund-shanghai.html",
+    "source_links": [
+      "https://www.hyatt.com/hyatt-on-the-bund/en-US/shahb-hyatt-on-the-bund",
+      "https://us.trip.com/hotels/shanghai-hotel-detail-425378/hyatt-on-the-bund-shanghai/"
+    ],
+    "private_bathroom": "Likely yes (upscale full-service hotel) - confirm on official room page",
+    "queen_or_larger_bed": "Room types include queen/king options per Trip listing; confirm exact room on official site",
+    "amenities_notes": "Upscale Hyatt property; river views; confirm selected room has queen+ bed and private bathroom.",
+    "nightly_rate_indicative": "From ~US$315+/night (Booking/Trip snippets, accessed 2026-11-25; not a quote for 2027-02-15)",
+    "total_7_night_indicative": "Unverified - no confirmed 2027-02-15 to 2027-02-22 quote",
+    "dates_checked": "2027-02-15 check-in, 2027-02-22 check-out (7 nights) - NOT CONFIRMED",
+    "best_time_to_book": "Unverified - no official source; monitor refundable rates and compare channels",
+    "transit_notes": "North Bund location; short taxi/metro/bus to Huangpu Michelin cluster. Exact <=1hr verification pending route check.",
+    "michelin_access_score_note": "Proposed high access; slightly farther than Fuzhou Rd options but within likely 1hr transit",
+    "verification_status": "Partially verified (name/location/links). Pricing/amenities/dates unverified."
+  }
+]
