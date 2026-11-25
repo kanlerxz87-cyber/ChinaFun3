@@ -19,9 +19,9 @@
 | Task ID | Task Description | Status | Owner Session | File Scope | Last Updated (UTC) |
 |---|---|---|---|---|---|
 | `T-00` | Repo audit & `COORDINATION.md` initialization | `done` | `session-256b850d` | `COORDINATION.md` | 2026-11-25 |
-| `T-01` | Verify 2027 China travel calendar (Spring Festival / Lantern Festival, official public holidays, weather, booking windows) & city-level Michelin Guide China cluster counts | `in progress` | `session-256b850d` | `data/calendar-and-clusters.json`, `docs/research-notes.md` | 2026-11-25 |
-| `T-02` | Research & verify Michelin-starred and Michelin Guide-listed restaurants (Shanghai & Beijing clusters), total pricing for 2 adults, hours/exceptions, official links, and social media links (YouTube/TikTok/Instagram) | `in progress` | `session-256b850d` | `data/restaurants.json` | 2026-11-25 |
-| `T-03` | Research & verify hotels (private bath, queen+ bed, amenities, transit ≤1 hr to Michelin clusters), rank by Michelin reachability, verify 7-night pricing for Feb–Mar 2027 dates & optimal booking window | `unclaimed` | — | `data/hotels.json` | 2026-11-25 |
+| `T-01` | Verify 2027 China travel calendar (Spring Festival / Lantern Festival, official public holidays, weather, booking windows) & city-level Michelin Guide China cluster counts | `done` | `session-256b850d` | `data/calendar-and-clusters.json` | 2026-11-25 |
+| `T-02` | Research & verify Michelin-starred and Michelin Guide-listed restaurants (Shanghai & Beijing clusters), total pricing for 2 adults, hours/exceptions, official links, and social media links (YouTube/TikTok/Instagram) | `done` | `session-256b850d` | `data/restaurants.json` | 2026-11-25 |
+| `T-03` | Research & verify hotels (private bath, queen+ bed, amenities, transit ≤1 hr to Michelin clusters), rank by Michelin reachability, verify 7-night pricing for Feb–Mar 2027 dates & optimal booking window | `in progress` | `session-256b850d` | `data/hotels.json` | 2026-11-25 |
 | `T-04` | Research & verify activities & attractions within ≤1 hr transit of hotel clusters, official hours/exceptions, 2-adult admission prices, official links, and social media links | `unclaimed` | — | `data/activities.json` | 2026-11-25 |
 | `T-05` | Compile Executive Summary, Missing Info / Decision Questions & Discovery Plan, Site Improvement Suggestions, and Flagged for Review audit register | `unclaimed` | — | `data/governance.json` | 2026-11-25 |
 | `T-06` | Build mobile-friendly GitHub Pages dashboard (landing page + category subpages, searchable/filterable tables, zero broken links, line-by-line verification pass) | `unclaimed` | — | `index.html`, `pages/*.html`, `assets/*`, `.nojekyll` | 2026-11-25 |
@@ -44,7 +44,15 @@
 
 ## Verification & Source Log
 
-*(Populated as each task completes.)*
+- **`T-01` Completed (`data/calendar-and-clusters.json`):**
+  - Verified 2027 official public holiday schedule (Spring Festival Feb 5–13, make-up workdays Jan 31 & Feb 14, Qingming Apr 3–5) via Beijing Municipal Government (`english.beijing.gov.cn`), Lantern Festival (Feb 20, 2027), Beijing Two Sessions (early March) via State Council (`english.www.gov.cn`), NIA 240-hour visa-free transit (`en.nia.gov.cn`), and Shanghai/Beijing Feb–Mar climate normals (`climate-data.org`).
+  - Verified all 10 active Mainland China MICHELIN Guide editions (Shanghai 156 / 51★, Beijing 107 / 33★, Guangzhou 117 / 20★, Chengdu 84 / 15★, Zhejiang/Hangzhou 142 / 13★, Jiangsu 111 / 9★, Shenzhen 59 / 7★, Fujian 96 / 7★, Hunan 61 / 4★ debut Nov 24, 2026, Tianjin 27 / 1★) plus Greater China SAR benchmarks (Hong Kong 219 / 77★, Macau 59 / 21★) directly from `guide.michelin.com` ceremony releases and `english.shanghai.gov.cn`.
+  - Irregularities flagged: Shanghai live index shows 153 vs 156 at ceremony due to mid-year closures; Zhejiang/Hangzhou province-only Bib/Selected split left `null` because official tri-region release only published combined 409-restaurant Bib/Selected totals; exact 2027 Two Sessions closing date not yet officially published.
+- **`T-02` Completed (`data/restaurants.json`):**
+  - Verified 29 individual restaurants (16 Shanghai, 13 Beijing) directly on `guide.michelin.com` (addresses, phone numbers, star vs. Bib Gourmand / Selected distinction, cuisines, ¥ price tier, and published hours).
+  - Extracted exact 2026 official menu pricing & hours directly from primary restaurant websites/PDFs for `Taian Table`, `Bao Li Xuan`, `Da Vittorio`, `T'ang Court`, `Imperial Treasure`, `Yong Yi Ting`, `Jade on 36`, `Trb Hutong`, and `Fu Chun Ju` (plus hours/policy for `8 ½ Otto e Mezzo Bombana` and `Monsieur Dior`).
+  - Verified YouTube, Instagram, and TikTok/Douyin URLs via direct search results (no guessed handles/links).
+  - Unverified numeric prices/hours intentionally left `null` and logged in `unverifiedFields` for the Flagged for Review page. Note also: `King's Joy` dropped from 3★ to 2★ in the Oct 2026 Beijing 2027 Guide; `157 Shi Fang` relocated to IM Shanghai (1398 Kaixuan Rd); `No. 69 Fangzhuanchang Zhajiangmian` has official street address `1 Fangzhuanchang Hutong`.
 
 ---
 
