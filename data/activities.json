@@ -1,0 +1,443 @@
+{
+  "metadata": {
+    "taskId": "T-04",
+    "verifiedDate": "2026-11-25",
+    "travelWindow": "Feb 15 – Mar 23, 2027 (Winter / Off-Peak Season pricing applies through Mar 31 at all seasonal Beijing & Shanghai heritage sites)",
+    "pricingBasis": "Total admission for 2 adults in CNY (off-season Feb–Mar rates where seasonal tiers apply). Optional paid add-ons (cable cars, night shows, special exhibitions) noted separately.",
+    "passportRule": "Foreign travelers MUST carry their original physical passport for virtually all major Beijing & Shanghai museums, imperial sites, and high-speed rail stations."
+  },
+  "activities": [
+    {
+      "id": "sh-yu-garden",
+      "city": "Shanghai",
+      "category": "Classical Garden & Heritage",
+      "name": "Yu Garden (Yuyuan Garden)",
+      "chineseName": "豫园",
+      "address": "North Gate: No. 168 Fuyou Road / South Gate (individual entry): No. 279 Yuyuan Old Street, Huangpu District, Shanghai",
+      "transitFromHotelCluster": "12–20 min via Metro Line 10 or Line 14 to Yuyuan Garden Station (from People's Square, Nanjing Rd, Xintiandi, or Lujiazui); 25 min from Jing'an Temple (Line 14 direct)",
+      "maxTransitMin": 25,
+      "priceForTwoCny": 60,
+      "priceBreakdown": "CN¥30/adult x 2 = CN¥60 (Official off-season rate Dec 1–Mar 31; peak season Apr–Jun & Sep–Nov is CN¥40/adult). Optional winter/spring Fri–Sun evening light tour ('Yu Xiang Shan Lin') is CN¥150–218/adult.",
+      "daysOpen": "Tuesday – Sunday",
+      "hours": "09:00–16:30 (last entry 16:00)",
+      "closureExceptions": "Closed Mondays (except national statutory holidays). Special Spring Festival / Yuyuan Lantern Festival timed entry applies around Feb 15–20 in the adjacent Yuyuan Malls.",
+      "bookingRequirement": "On-site ticket windows at North/South Gates or online via 'Shanghai Yuyuan' (上海豫园) WeChat Mini Program.",
+      "winterSuitability": "Excellent crisp-day stroll; indoor pavilions, teahouses (Huxin Pavilion), and nearby heated dining malls.",
+      "officialUrl": "https://www.yugarden.com.cn/page/articleview/message.html",
+      "officialGovReferenceUrl": "https://english.shanghai.gov.cn/en-UniqueExperience-travelinshanghai/20250729/25cfb8bce97d4e798f99ac62986255ff.html",
+      "socialLinks": [
+        {
+          "platform": "YouTube",
+          "label": "Yu Garden Shanghai Walkthrough",
+          "url": "https://www.youtube.com/watch?v=hNXTlKNqVGk"
+        }
+      ],
+      "unverifiedFields": []
+    },
+    {
+      "id": "sh-shanghai-museum",
+      "city": "Shanghai",
+      "category": "World-Class Museum (Indoor)",
+      "name": "Shanghai Museum (People's Square & East Pavilion)",
+      "chineseName": "上海博物馆（人民广场馆 & 东馆）",
+      "address": "People's Square: No. 201 Renmin Avenue, Huangpu | East Pavilion: No. 1952 Century Avenue, Pudong",
+      "transitFromHotelCluster": "People's Square branch: 6–8 min walk from Radisson Blu / 12–20 min via Lines 1/2/8 from all central hotels. East Pavilion: 15–25 min via Line 2 to Shanghai Science & Technology Museum Station.",
+      "maxTransitMin": 25,
+      "priceForTwoCny": 0,
+      "priceBreakdown": "Free permanent collection admission for 2 adults (CN¥0). Selected special temporary exhibitions or VR experiences carry separate fees (e.g., CN¥198 VR add-on).",
+      "daysOpen": "People's Square: Tue–Sun | East Pavilion: Wed–Mon (staggered closures mean at least one branch is open EVERY day!)",
+      "hours": "People's Square: 09:00–17:00 (last entry 15:00/16:00) | East Pavilion: 10:00–18:00 (last entry 17:00)",
+      "closureExceptions": "People's Square closed Mondays; East Pavilion closed Tuesdays (except national holidays).",
+      "bookingRequirement": "East Pavilion: no individual reservation required (passport for entry). People's Square: advance reservation via Shanghai Museum WeChat/website required during major special exhibitions.",
+      "winterSuitability": "Top rainy/cold February indoor anchor; climate-controlled world-class bronzes, jade, Ming/Qing furniture & ceramics.",
+      "officialUrl": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
+      "officialGovReferenceUrl": "https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-west",
+      "socialLinks": [
+        {
+          "platform": "YouTube",
+          "label": "Shanghai Museum Tour",
+          "url": "https://www.youtube.com/watch?v=OUtolwvTmAc"
+        }
+      ],
+      "unverifiedFields": []
+    },
+    {
+      "id": "sh-shanghai-tower",
+      "city": "Shanghai",
+      "category": "Skyline Observatory (Indoor)",
+      "name": "Top of Shanghai Observatory (118F, Shanghai Tower)",
+      "chineseName": "上海中心大厦 · 上海之巅观光厅",
+      "address": "No. 501 Yincheng Middle Road, Lujiazui, Pudong New Area, Shanghai",
+      "transitFromHotelCluster": "4 min walk from Grand Hyatt Shanghai; 15–25 min via Metro Line 2 or Line 14 to Lujiazui Station from People's Square, Nanjing Rd, Xintiandi & Jing'an.",
+      "maxTransitMin": 28,
+      "priceForTwoCny": 360,
+      "priceBreakdown": "CN¥180/adult x 2 = CN¥360 for 118F Observatory (546m high). Optional Sky 632 damper light-show combo: CN¥268/adult (CN¥536 for 2).",
+      "daysOpen": "Monday – Sunday (Daily)",
+      "hours": "08:30–22:00 (last entry 21:30)",
+      "closureExceptions": "Open daily year-round; visibility can be reduced on foggy/rainy late-Feb days—check clear-sky forecast before heading up.",
+      "bookingRequirement": "Buy on-site or online (Trip.com / WeChat) with passport.",
+      "winterSuitability": "Fully enclosed heated indoor observation deck; ideal for sunset/night skyline views in chilly February.",
+      "officialUrl": "https://www.meet-in-shanghai.net/en/2025-shanghai-tourism-festival/hai-guide-soak-in-breathtaking-views-while-enjoying-the-high-life-883446/",
+      "officialGovReferenceUrl": "https://english.shanghai.gov.cn/en-InFocus/20240514/f64b1efd759a4a87abc1b1af176c83fb.html",
+      "socialLinks": [
+        {
+          "platform": "YouTube",
+          "label": "Shanghai Tower 118F Observatory Tour",
+          "url": "https://www.youtube.com/watch?v=6ssEi4Esd7s"
+        }
+      ],
+      "unverifiedFields": []
+    },
+    {
+      "id": "sh-bund-river-cruise",
+      "city": "Shanghai",
+      "category": "Waterfront & River Cruise",
+      "name": "The Bund Promenade & Huangpu River Sightseeing Cruise",
+      "chineseName": "外滩 & 浦江游览",
+      "address": "Shiliupu Pier: No. 551 Zhongshan East 2nd Road, Huangpu District, Shanghai (The Bund spans Zhongshan East 1st Road)",
+      "transitFromHotelCluster": "10–15 min walk from Holiday Inn Nanjing Rd; 15–22 min via Line 2/10/14 from Radisson Blu, Langham Xintiandi, PuLi & Grand Hyatt.",
+      "maxTransitMin": 25,
+      "priceForTwoCny": 240,
+      "priceBreakdown": "The Bund promenade is FREE (CN¥0). Official Huangpu River Sightseeing Cruises: Express route CN¥100/adult (CN¥200 for 2); Classic Essence route CN¥120–130/adult (CN¥240–260 for 2); Weekend Longhua–West Bund refined loop CN¥150/adult (CN¥300 for 2).",
+      "daysOpen": "Monday – Sunday (Daily)",
+      "hours": "The Bund: 24/7 (skyline illuminations typically dusk to ~22:00–23:00 in winter). River Cruises: daytime & evening departures roughly 11:00–21:30 (exact night-boat sailing slots confirmed day-of via official 'Huangpu River Cruise' WeChat mini-program).",
+      "closureExceptions": "Cruises may pause during severe fog or gale advisories on the Huangpu River.",
+      "bookingRequirement": "Shiliupu Pier physical ticket office (passport required) or 'Huangpu River Cruise' (浦江游览) WeChat Mini Program / Trip.com.",
+      "winterSuitability": "Bundle up for open top-deck photos; heated indoor viewing cabins available on all classic sightseeing boats.",
+      "officialUrl": "https://english.shanghai.gov.cn/en-FestivalsCelebrations/20260515/ee03e0a7bc6e4d87acc0a1cbe5d8ca49.html",
+      "officialGovReferenceUrl": "https://www.meet-in-shanghai.net/en/news/shanghai-offers-halfprice-tickets-at-56-attractions-for-tourism-day-186836/",
+      "socialLinks": [
+        {
+          "platform": "YouTube",
+          "label": "Huangpu River Night Cruise Experience",
+          "url": "https://www.youtube.com/watch?v=m8EdilgLsYc"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Shanghai Huangpu River Night Cruise 4K",
+          "url": "https://www.youtube.com/watch?v=CKslFiCjggs"
+        }
+      ],
+      "unverifiedFields": ["Exact Feb–Mar 2027 night-cruise departure timetable (verify day-of on official 浦江游览 WeChat mini-program)"]
+    },
+    {
+      "id": "sh-map-pudong",
+      "city": "Shanghai",
+      "category": "Contemporary Art Museum (Indoor)",
+      "name": "Museum of Art Pudong (MAP)",
+      "chineseName": "浦东美术馆",
+      "address": "No. 2777 Binjiang Avenue, Lujiazui, Pudong New Area, Shanghai",
+      "transitFromHotelCluster": "12 min walk from Grand Hyatt Shanghai; 18–26 min via Metro Line 2 or Line 14 to Lujiazui Station (Exit 2/6) + 10 min walk from Puxi hotels.",
+      "maxTransitMin": 30,
+      "priceForTwoCny": 160,
+      "priceBreakdown": "CN¥80/adult x 2 = CN¥160 (official single all-exhibition museum ticket verified May 2026 via english.shanghai.gov.cn; special add-on VR experiences CN¥30 extra).",
+      "daysOpen": "Monday – Sunday (Open Daily — rare major museum open on Mondays!)",
+      "hours": "10:00–21:00 (last entry 20:00)",
+      "closureExceptions": "Open Mondays (a huge itinerary advantage when Yu Garden, Shanghai Museum People's Square, and West Bund Museum are closed!). Typically closes only 2–3 days over Lunar New Year Eve/Day 1.",
+      "bookingRequirement": "Online ticket reservation via MAP WeChat Mini Program or on-site box office with passport.",
+      "winterSuitability": "Exceptional indoor winter sunset venue—Jean Nouvel's giant Mirror Hall windows frame The Bund directly across the river.",
+      "officialUrl": "https://english.shanghai.gov.cn/en-ArtExhibitions/20260511/06b67420ffc747de9616c60db8219ff3.html",
+      "officialGovReferenceUrl": "https://english.shanghai.gov.cn/en-ArtExhibitions/20250126/1aef53ede6354fbca9a5063d7e4b53f7.html",
+      "socialLinks": [
+        {
+          "platform": "YouTube",
+          "label": "Museum of Art Pudong (MAP) Highlights",
+          "url": "https://www.youtube.com/watch?v=rAlU-sxO1I8"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Wandering in Museum of Art Pudong",
+          "url": "https://www.youtube.com/watch?v=T3-PR4wFeSI"
+        }
+      ],
+      "unverifiedFields": []
+    },
+    {
+      "id": "sh-jingan-temple",
+      "city": "Shanghai",
+      "category": "Historic Temple & Cultural Landmark",
+      "name": "Jing'an Temple",
+      "chineseName": "静安寺",
+      "address": "No. 1686 Nanjing West Road, Jing'an District, Shanghai",
+      "transitFromHotelCluster": "4 min walk from The PuLi Hotel; 12–25 min via direct Metro Line 2 or Line 14 to Jing'an Temple Station from Radisson Blu, Holiday Inn, Langham Xintiandi & Grand Hyatt.",
+      "maxTransitMin": 25,
+      "priceForTwoCny": 100,
+      "priceBreakdown": "CN¥50/adult x 2 = CN¥100 (verified via Official Shanghai Tourism Portal meet-in-shanghai.net).",
+      "daysOpen": "Monday – Sunday (Daily)",
+      "hours": "07:30–17:00",
+      "closureExceptions": "Open daily; extra busy on the 1st and 15th days of the lunar month (Feb 20, 2027 is Lunar Jan 15 / Lantern Festival—expect heavy worship crowds and possible free/special prayer hours).",
+      "bookingRequirement": "On-site ticket window (cash/Alipay/WeChat Pay) at main gate.",
+      "winterSuitability": "Compact 45–60 min visit with covered wooden courtyards and direct pairing with Jing An Kerry Centre & 1★ Huaiyang Delights next door.",
+      "officialUrl": "https://www.meet-in-shanghai.net/en/guide/how-jingan-temple-evolved-into-an-international-cultural-exchange-of-buddhism-166442/",
+      "officialGovReferenceUrl": "https://www.meet-in-shanghai.net/en/guide/how-jingan-temple-evolved-into-an-international-cultural-exchange-of-buddhism-166442/",
+      "socialLinks": [
+        {
+          "platform": "YouTube",
+          "label": "Jing'an Temple Shanghai Guide (2026)",
+          "url": "https://www.youtube.com/watch?v=mj6eZaXGU9M"
+        }
+      ],
+      "unverifiedFields": []
+    },
+    {
+      "id": "sh-french-concession-walk",
+      "city": "Shanghai",
+      "category": "Architecture, Cafes & Neighborhood Walk",
+      "name": "Former French Concession & Xintiandi Heritage Walk (Wukang Rd, Anfu Rd & Shikumen Lanes)",
+      "chineseName": "武康路 · 安福路 · 新天地历史风貌区",
+      "address": "Wukang Mansion (1850 Middle Huaihai Rd, Xuhui) -> Wukang Rd -> Anfu Rd -> Xintiandi (Taicang Rd / Madang Rd, Huangpu)",
+      "transitFromHotelCluster": "Xintiandi starts at The Langham doorstep; Wukang Rd is 15–25 min via Line 10/11 (Jiao Tong University) or Line 1/7 (Changshu Rd) from all 5 Shanghai hotels.",
+      "maxTransitMin": 28,
+      "priceForTwoCny": 0,
+      "priceBreakdown": "Free public streets and architectural landmarks (CN¥0). Budget CN¥80–200 for two at specialty cafes/bakeries along Anfu Road.",
+      "daysOpen": "Monday – Sunday (Daily)",
+      "hours": "Streets open 24/7; boutiques and cafes typically 10:00–21:00",
+      "closureExceptions": "None for street strolling; some small historic house museums along Wukang Rd close Mondays.",
+      "bookingRequirement": "No reservation needed.",
+      "winterSuitability": "Classic winter city walk—plane-tree avenues, Art Deco apartments, warm specialty coffee stops, and direct proximity to 2★ Ji Pin Court & Trine.",
+      "officialUrl": "https://www.meet-in-shanghai.net/en/guide/xujiahui-origin-city-walk-424594/",
+      "officialGovReferenceUrl": "https://english.shanghai.gov.cn/en-SpecialtyShoppingAreas/20241119/f32b1eb65cda4a64bf541f4691a18fd4.html",
+      "socialLinks": [
+        {
+          "platform": "YouTube",
+          "label": "Shanghai Winter Trip: Anfu & Wukang Roads & Xintiandi (2026)",
+          "url": "https://www.youtube.com/watch?v=tS7Sl5ubzkQ"
+        }
+      ],
+      "unverifiedFields": []
+    },
+    {
+      "id": "sh-west-bund-museum",
+      "city": "Shanghai",
+      "category": "Modern Art Museum & Waterfront (Indoor)",
+      "name": "West Bund Museum (Centre Pompidou × West Bund Collaboration)",
+      "chineseName": "西岸美术馆",
+      "address": "No. 2600 Longteng Avenue, Xuhui District, Shanghai",
+      "transitFromHotelCluster": "25–35 min via Metro Line 11 (Yunjin Road Station, 10 min walk) or 15–22 min via DiDi from Xintiandi, People's Square & Jing'an.",
+      "maxTransitMin": 38,
+      "priceForTwoCny": 200,
+      "priceBreakdown": "Exhibition tickets vary by show: CN¥60–120/adult (≈ CN¥120–240 for 2; representative mid-range Centre Pompidou exhibition CN¥100/adult = CN¥200 for 2; public atrium/bookstore 1F/B1 is free).",
+      "daysOpen": "Tuesday – Sunday (Exhibition halls)",
+      "hours": "Exhibition halls: Tue–Sun 10:00–17:00 or 11:00–18:00 depending on active exhibition (last entry 30–60 min prior). 1F/B1 public atrium & cafes open daily 10:00–22:00.",
+      "closureExceptions": "2F exhibition galleries CLOSED Mondays (except national holidays). Note: 'Computer Worlds' runs through Feb 14, 2027—check active late-Feb/Mar 2027 Centre Pompidou exhibition schedule on West Bund Life WeChat mini-program.",
+      "bookingRequirement": "Purchase via 'West Bund Life' WeChat Mini Program or on-site ticket desk.",
+      "winterSuitability": "Sir David Chipperfield daylight-filled indoor galleries paired with crisp riverside walking along Art Museum Avenue.",
+      "officialUrl": "https://www.westbund.com/en/index/POPULAR-VENUES/detail_695y4T.html",
+      "officialGovReferenceUrl": "https://www.meet-in-shanghai.net/en/nighttime-culture/west-bund-museum-709131/",
+      "socialLinks": [
+        {
+          "platform": "Instagram",
+          "label": "@westbundmuseum (Official)",
+          "url": "https://www.instagram.com/westbundmuseum/"
+        }
+      ],
+      "unverifiedFields": ["Exact late-Feb/Mar 2027 exhibition ticket price (depends on post-Feb 14, 2027 rotating Centre Pompidou show; typical verified range CN¥60–120/adult)"]
+    },
+    {
+      "id": "bj-palace-museum",
+      "city": "Beijing",
+      "category": "UNESCO Imperial Palace",
+      "name": "The Palace Museum (Forbidden City)",
+      "chineseName": "故宫博物院",
+      "address": "No. 4 Jingshan Front Street, Dongcheng District, Beijing (Enter via South Meridian Gate / Wu Men)",
+      "transitFromHotelCluster": "15–22 min walk or 1 stop Metro from The PuXuan, Hilton Wangfujing & Park Plaza Wangfujing; 20–28 min via Line 1 (Tian'anmen East) from JEN Beijing & InterContinental Sanlitun.",
+      "maxTransitMin": 30,
+      "priceForTwoCny": 80,
+      "priceBreakdown": "CN¥40/adult x 2 = CN¥80 (Official off-season rate Nov 1–Mar 31; peak season Apr 1–Oct 31 is CN¥60/adult). Optional Treasure Gallery (+CN¥10/person) & Clock Gallery (+CN¥10/person) = +CN¥40 for 2.",
+      "daysOpen": "Tuesday – Sunday",
+      "hours": "Off-Season (Nov 1–Mar 31): 08:30–16:30 (last entry 15:30)",
+      "closureExceptions": "CLOSED MONDAYS (except statutory national holidays). NO same-day tickets sold on site! Heightened security checks apply around Tian'anmen during Beijing Two Sessions (early March).",
+      "bookingRequirement": "MANDATORY advance real-name passport booking (up to 7 days prior at 20:00 Beijing time) via official Palace Museum WeChat Mini Program or international booking portal.",
+      "winterSuitability": "Clear blue winter skies over snow-dusted golden roofs with far fewer crowds than summer; dress in thermal layers and windproof coat (mostly open-air courtyards).",
+      "officialUrl": "https://english.beijing.gov.cn/travellinginbeijing/museums/202603/t20260320_4562527.html",
+      "officialGovReferenceUrl": "https://english.beijing.gov.cn/specials/ticketing/index.html",
+      "socialLinks": [
+        {
+          "platform": "YouTube",
+          "label": "The Palace Museum Beijing — Foreigner Ticket & Visit Guide (2025)",
+          "url": "https://www.youtube.com/watch?v=u5byrwo4V50"
+        }
+      ],
+      "unverifiedFields": []
+    },
+    {
+      "id": "bj-temple-of-heaven",
+      "city": "Beijing",
+      "category": "UNESCO Imperial Park & Architecture",
+      "name": "Temple of Heaven Park",
+      "chineseName": "天坛公园",
+      "address": "No. 1 Tiantan E. Road, Dongcheng District, Beijing",
+      "transitFromHotelCluster": "15–22 min via direct Metro Line 5 (Tiantan Dongmen Station) from Park Plaza & Hilton Wangfujing; 25–35 min via Line 8/10+5 from PuXuan, JEN Beijing & InterContinental Sanlitun.",
+      "maxTransitMin": 35,
+      "priceForTwoCny": 56,
+      "priceBreakdown": "Off-season (Nov 1–Mar 31): Combined Through-Ticket (Park + Hall of Prayer for Good Harvests, Echo Wall, Circular Mound Altar) CN¥28/adult x 2 = CN¥56 (Park-only entry CN¥10/adult = CN¥20 for 2; Peak Apr–Oct Through-Ticket CN¥34/adult).",
+      "daysOpen": "Park: Daily | Inner Monuments (Hall of Prayer, Echo Wall, Circular Mound): Tuesday – Sunday",
+      "hours": "Off-Season (Nov 1–Mar 31): Park 06:30–22:00 (last entry 21:00) | Inner Monuments: 08:00–17:00 (last entry 16:30)",
+      "closureExceptions": "Hall of Prayer for Good Harvests, Echo Wall, Circular Mound Altar & Fasting Palace are CLOSED MONDAYS (except statutory holidays); outer park grounds remain open daily.",
+      "bookingRequirement": "Online via 'Temple of Heaven Official Ticketing Platform' WeChat account (with passport) or on-site ticket window.",
+      "winterSuitability": "Bright morning sunshine illuminates the cobalt-blue triple-eaved Hall of Prayer; combine with local tai chi/morning park culture.",
+      "officialUrl": "https://english.beijing.gov.cn/specials/parktours/guidevisitors/templeofheaven/",
+      "officialGovReferenceUrl": "https://english.beijing.gov.cn/specials/parktours/guidevisitors/templeofheaven/overview/202301/t20230112_2897365.html",
+      "socialLinks": [
+        {
+          "platform": "YouTube",
+          "label": "Temple of Heaven & Summer Palace Guide",
+          "url": "https://www.youtube.com/watch?v=WyMNOO3bl8U"
+        }
+      ],
+      "unverifiedFields": []
+    },
+    {
+      "id": "bj-summer-palace",
+      "city": "Beijing",
+      "category": "UNESCO Imperial Garden & Lake",
+      "name": "The Summer Palace (Yiheyuan)",
+      "chineseName": "颐和园",
+      "address": "No. 19 Xinjian Gongmen Road, Haidian District, Beijing",
+      "transitFromHotelCluster": "45–55 min via Metro Line 4 to Beigongmen Station (North Palace Gate) or Xiyuan Station from Wangfujing hotels (Line 1/8/5 -> Line 4); 50–58 min via Line 10 -> Line 4 from Guomao/Sanlitun.",
+      "maxTransitMin": 58,
+      "priceForTwoCny": 100,
+      "priceBreakdown": "Off-season (Nov 1–Mar 31): Combined Through-Ticket (Park + Tower of Buddhist Incense, Garden of Virtue & Harmony, Suzhou Street, Wenchang Gallery) CN¥50/adult x 2 = CN¥100 (Park-only entry CN¥20/adult = CN¥40 for 2; Peak Apr–Oct Through-Ticket CN¥60/adult).",
+      "daysOpen": "Park: Daily | Paid Inner Courtyards: Tuesday – Sunday",
+      "hours": "Off-Season (Nov 1–Mar 31): Park 06:30–19:00 (last entry 18:00) | Paid Inner Scenic Spots: 08:30–17:00 (last entry 16:30)",
+      "closureExceptions": "Tower of Buddhist Incense, Garden of Virtue & Harmony, Suzhou Street & Museum halls CLOSED MONDAYS (except statutory holidays). Kunming Lake boat cruises suspend during winter ice season.",
+      "bookingRequirement": "On-site comprehensive service ticket window (passport) or 1–7 days ahead on official 'Summer Palace' WeChat account.",
+      "winterSuitability": "Covered 728m painted Long Corridor shields against wind; in February Kunming Lake often shows dramatic winter ice scenes before March thaw.",
+      "officialUrl": "https://english.beijing.gov.cn/travellinginbeijing/parks/202603/t20260320_4562531.html",
+      "officialGovReferenceUrl": "https://english.beijing.gov.cn/specials/parktours/guidevisitors/summerpalace/index.html",
+      "socialLinks": [
+        {
+          "platform": "YouTube",
+          "label": "Summer Palace & Temple of Heaven Beijing",
+          "url": "https://www.youtube.com/watch?v=WyMNOO3bl8U"
+        }
+      ],
+      "unverifiedFields": []
+    },
+    {
+      "id": "bj-lama-temple",
+      "city": "Beijing",
+      "category": "Imperial Tibetan Buddhist Temple",
+      "name": "Yonghe Temple (Lama Temple)",
+      "chineseName": "雍和宫",
+      "address": "No. 12 Yonghegong Street, Dongcheng District, Beijing",
+      "transitFromHotelCluster": "15–20 min via direct Metro Line 5 (Yonghegong Station) from Park Plaza & Hilton Wangfujing; 20–28 min from PuXuan, JEN Beijing & InterContinental Sanlitun. Literally 3 min walk from 2★ King's Joy!",
+      "maxTransitMin": 28,
+      "priceForTwoCny": 50,
+      "priceBreakdown": "CN¥25/adult x 2 = CN¥50 (includes complimentary eco-incense sticks at entrance).",
+      "daysOpen": "Monday – Sunday (Open Daily — great Monday option!)",
+      "hours": "Winter (Nov 1–Mar 31): 09:00–16:30 (ticket sales & entry close 16:00)",
+      "closureExceptions": "Open daily (including Mondays!). Extremely crowded on Lunar 1st and 15th days (Sat Feb 20, 2027 Lantern Festival) and mornings; daily capacity capped at 40,000 (20k AM / 20k PM).",
+      "bookingRequirement": "Advance real-name booking (up to 10 days ahead, 08:00–18:00) via official WeChat account '雍和宫游客信众服务' (foreign visitors with passport can also inquire at on-site visitor service window if slots remain).",
+      "winterSuitability": "Atmospheric fragrant sandalwood halls (incl. 18m Maitreya Buddha carved from a single sandalwood trunk) + Wudaoying Hutong coffee shops & 2★ King's Joy right next door.",
+      "officialUrl": "https://english.beijing.gov.cn/specials/240tour/index.html",
+      "officialGovReferenceUrl": "https://english.beijing.gov.cn/latest/news/202201/t20220106_2584077.html",
+      "socialLinks": [
+        {
+          "platform": "YouTube",
+          "label": "5 Things About the Lama Temple (Yonghe Temple)",
+          "url": "https://www.youtube.com/watch?v=zIoLmTNa2uQ"
+        }
+      ],
+      "unverifiedFields": []
+    },
+    {
+      "id": "bj-jingshan-hutongs",
+      "city": "Beijing",
+      "category": "Panoramic Viewpoint & Historic Hutongs",
+      "name": "Jingshan Park Panorama & Shichahai / Nanluoguxiang Hutongs",
+      "chineseName": "景山公园 & 什刹海 / 南锣鼓巷胡同",
+      "address": "No. 44 Jingshan West Street, Xicheng District, Beijing (directly north of Forbidden City exit)",
+      "transitFromHotelCluster": "14 min walk from The PuXuan (1.0 km); 18–25 min from Hilton/Park Plaza Wangfujing; 30–38 min via Line 1/6/8 from Guomao & Sanlitun.",
+      "maxTransitMin": 38,
+      "priceForTwoCny": 4,
+      "priceBreakdown": "CN¥2/adult x 2 = CN¥4 standard entry (CN¥10/adult during special floral exhibition seasons; Shichahai & Nanluoguxiang hutongs are free).",
+      "daysOpen": "Monday – Sunday (Open Daily — another great Monday option!)",
+      "hours": "Off-Season (Nov 1–Mar 31): 06:30–20:00 (last entry 19:30)",
+      "closureExceptions": "Open daily year-round.",
+      "bookingRequirement": "On-site ticket booth at Park Gate (passport/Alipay/WeChat) or 'Visiting Beijing Parks' WeChat account up to 7 days prior.",
+      "winterSuitability": "Best 10-minute hilltop climb in Beijing for golden-hour panoramic views over the Forbidden City roofs, paired with warm Bib Gourmand noodles at No. 69 Fangzhuanchang nearby.",
+      "officialUrl": "https://english.beijing.gov.cn/travellinginbeijing/parks/202603/t20260320_4562541.html",
+      "officialGovReferenceUrl": "https://english.beijing.gov.cn/specials/240tour/index.html",
+      "socialLinks": [],
+      "unverifiedFields": ["No verified standalone Jingshan Park official social media handle returned in search"]
+    },
+    {
+      "id": "bj-national-museum",
+      "city": "Beijing",
+      "category": "National History Museum (Indoor)",
+      "name": "National Museum of China",
+      "chineseName": "中国国家博物馆",
+      "address": "No. 16 East Chang'an Avenue, Dongcheng District, Beijing (East side of Tian'anmen Square)",
+      "transitFromHotelCluster": "15–20 min via Line 1 (Tian'anmen East Station) or walk from Wangfujing hotels; 18–30 min via Line 1 direct from JEN Beijing & InterContinental Sanlitun.",
+      "maxTransitMin": 32,
+      "priceForTwoCny": 0,
+      "priceBreakdown": "Free permanent collection admission for 2 adults (CN¥0; select special international exhibitions may charge separate entry).",
+      "daysOpen": "Tuesday – Sunday",
+      "hours": "09:00–17:00 (last entry 16:00)",
+      "closureExceptions": "CLOSED MONDAYS (except public holidays). IMPORTANT: Temporary closures or heightened Tian'anmen perimeter restrictions routinely occur on key plenary days during Beijing's Two Sessions (approx. Mar 4–11)—strongly prefer Feb 15–Mar 1!",
+      "bookingRequirement": "MANDATORY advance real-name passport reservation (7 days prior) via official National Museum WeChat/website; also allows entry into Tian'anmen Square security perimeter.",
+      "winterSuitability": "World's largest single-building museum—fully heated full-day refuge housing China's Ancient China bronze/jade masterworks.",
+      "officialUrl": "https://english.beijing.gov.cn/specials/240tour/index.html",
+      "officialGovReferenceUrl": "https://english.beijing.gov.cn/specials/ticketing/index.html",
+      "socialLinks": [],
+      "unverifiedFields": ["No verified standalone National Museum of China English social media video/handle returned in search"]
+    },
+    {
+      "id": "bj-798-art-zone",
+      "city": "Beijing",
+      "category": "Contemporary Art District & UCCA",
+      "name": "798 · 751 Art District (incl. UCCA Center for Contemporary Art)",
+      "chineseName": "798 · 751 艺术区",
+      "address": "No. 2 & No. 4 Jiuxianqiao Road, Chaoyang District, Beijing",
+      "transitFromHotelCluster": "20–25 min via DiDi or 35–42 min via Metro Line 14 (Wangjing South Station + walk) from InterContinental Sanlitun & JEN Beijing; 35–48 min from Wangfujing hotels.",
+      "maxTransitMin": 48,
+      "priceForTwoCny": 0,
+      "priceBreakdown": "District street & courtyard entry is FREE (CN¥0) year-round. Individual major exhibitions inside UCCA or special museums charge separately (typically CN¥60–198/adult depending on active show).",
+      "daysOpen": "District: Daily 24/7 | Most galleries & UCCA: Tuesday – Sunday",
+      "hours": "District open all day; galleries/cafes generally 10:00–18:00 or 19:00",
+      "closureExceptions": "Major ticketed museums (such as UCCA & teamLab Massless) are typically CLOSED MONDAYS; outdoor sculpture plazas, Bauhaus industrial walkways & cafes remain open.",
+      "bookingRequirement": "No booking needed for the district; book individual exhibitions via 798 Art Zone WeChat Mini Program or on-site.",
+      "winterSuitability": "Indoor-outdoor gallery hopping in heated converted 1950s electronics factories with specialty coffee, design shops & zero tour-bus congestion.",
+      "officialUrl": "https://english.beijing.gov.cn/travellinginbeijing/attractions/202603/t20260323_4563864.html",
+      "officialGovReferenceUrl": "https://english.beijing.gov.cn/specials/240tour/index.html",
+      "socialLinks": [
+        {
+          "platform": "YouTube",
+          "label": "798 Art District Beijing 4K Walking Tour (Oct 2026)",
+          "url": "https://www.youtube.com/watch?v=QTEcL_v9gQY"
+        },
+        {
+          "platform": "Instagram",
+          "label": "@ucca798 — UCCA Center for Contemporary Art (Official)",
+          "url": "https://www.instagram.com/ucca798/"
+        }
+      ],
+      "unverifiedFields": ["Exact late-Feb/Mar 2027 UCCA temporary exhibition ticket fee (varies by exhibition)"]
+    },
+    {
+      "id": "bj-badaling-great-wall",
+      "city": "Beijing",
+      "category": "UNESCO World Wonder (High-Speed Rail)",
+      "name": "Badaling Great Wall (via Beijing–Zhangjiakou High-Speed Rail)",
+      "chineseName": "八达岭长城（京张高铁直达）",
+      "address": "North Entrance of Guangou Ancient Road, Jundu Mountain, Yanqing District, Beijing (Badaling Great Wall HSR Station)",
+      "transitFromHotelCluster": "TRANSIT NUANCE: High-speed G-train from Beijing North Station (Xizhimen, Lines 2/4/13) or Qinghe Station takes only 20–27 min rail time! Including Metro to Beijing North (~20–25 min from Wangfujing) + 15 min railway security boarding buffer, total door-to-door is ~60–70 min (flagged transparently vs strict <=60 min threshold; fastest Great Wall access from central Beijing).",
+      "maxTransitMin": 65,
+      "priceForTwoCny": 70,
+      "priceBreakdown": "Off-season (Nov 1–Mar 31): Wall Admission CN¥35/adult x 2 = CN¥70 (Peak Apr–Oct CN¥40/adult). High-speed G-train round-trip adds approx. CN¥36–160/person depending on class (2nd class ~CN¥20–35 each way; optional cable car extra).",
+      "daysOpen": "Monday – Sunday (Open Daily — ideal Monday excursion when city museums close!)",
+      "hours": "Off-Season (Nov 1–Mar 31): 07:30–16:00",
+      "closureExceptions": "Open daily year-round (including Mondays!). In winter, icy steps or high winds can occasionally pause cable cars—wear grippy winter boots and windproof layers.",
+      "bookingRequirement": "Wall tickets available on-site (no mandatory advance slot per Beijing Gov March 2026 notice), BUT High-Speed G-train tickets (Beijing North <-> Badaling Great Wall) SHOULD be booked 7–15 days ahead on Railway 12306 or Trip.com with passport because morning trains sell out!",
+      "winterSuitability": "Dramatic snow-dusted mountain ridges and crisp visibility; dress for 5–8°C colder & windier conditions than downtown Beijing (sub-zero mornings in Feb).",
+      "officialUrl": "https://english.beijing.gov.cn/travellinginbeijing/attractions/202603/t20260320_4562521.html",
+      "officialGovReferenceUrl": "https://english.beijing.gov.cn/livinginbeijing/transportation/railway/202412/t20241211_3963021.html",
+      "socialLinks": [],
+      "unverifiedFields": [
+        "Total door-to-door transit from downtown hotels slightly exceeds 60 min (~60–70 min including Metro + HSR security buffer; train ride itself is 20–27 min) — flagged explicitly for user awareness",
+        "Official 2027 Badaling cable car round-trip price not verified directly on badaling.cn (left out of base admission total)"
+      ]
+    }
+  ]
+}
