@@ -1,0 +1,38 @@
+name: Validate static planning site
+on:
+  push:
+    branches: [arena/a9dba5c2-chinafun3]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Rebuild and validate data, arithmetic and local links
+        run: |
+          python scripts/build.py
+          git diff --exit-code -- '*.html' data/hotels.csv
+          npm test
+      - name: Browser and accessibility checks
+        run: |
+          python -m http.server 3000 --bind 0.0.0.0 > /tmp/china-site-server.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          npm run test:browser
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-validation
+          path: test-results/
+          retention-days: 7
