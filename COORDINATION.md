@@ -17,7 +17,7 @@ Note: the branch-naming convention `session-<id>/<task>` conflicts with the plat
 | T4 | Activities (hours, tickets, social links) | done (partial, see log) | 3c3c3c5e | `docs/data/activities.json`, `docs/activities.html` |
 | T5 | Questions, suggestions, flagged review | done | 3c3c3c5e | `docs/data/questions.json`, `docs/data/suggestions.json`, `docs/review.html` |
 | T6 | Site shell, landing page, executive summary | done | 3c3c3c5e | `docs/index.html`, `docs/assets/*`, `docs/.nojekyll` |
-| T7 | Integration: merge, re-verify, publish Pages | in progress | 3c3c3c5e | `docs/**`, `COORDINATION.md` |
+| T7 | Integration: merge, re-verify, publish Pages | done | 3c3c3c5e | `docs/**`, `COORDINATION.md` |
 
 Shared outputs (`docs/index.html` navigation, combined data) are owned by T7 (integration).
 
@@ -37,3 +37,10 @@ Shared outputs (`docs/index.html` navigation, combined data) are owned by T7 (in
 - **Handoff:** none needed.
 - **Build and checks (T6/T7):** site is static HTML/CSS/JS in `docs/` (no build step). Checks run: every internal `href` and `data-src` resolves; all 8 JSON files parse; `app.js` passes a syntax check; the renderer was run against every data file in a headless DOM (row and unverified counts matched the data). Local server tested with HTTP 200 on all pages and data files. No broken internal links.
 - **Task results:** T1 — 2027 holiday dates verified against the gov.cn notice; 15 Feb 2027 = Monday. T2 — 16 starred Shanghai restaurants verified against the official release; 64 unverified cells (hours, prices, social links, guide links) left blank. T4 — Shanghai Museum and Yu Garden verified against official sites; ticket/social blanks flagged. T3 — no hotel rows; room/price data not reachable. T5 — 11 questions, 8 suggestions (none implemented).
+- **Integration (T7) · 3c3c3c5e:**
+  - PR #1 (site + data) merged into `main` (merge commit 7277767). PR #2 (root `index.html` forwarder) merged after that.
+  - GitHub Pages is configured with source `main` / path `/` (root). The token cannot change it (HTTP 403 on PUT), so the root `index.html` forwards to `docs/index.html`.
+  - Latest Pages build: status `built` (commit a0b6d59). The live URL is https://kanlerxz87-cyber.github.io/ChinaFun3/ . This sandbox cannot reach github.io directly, so the page itself was checked locally, not on the live URL.
+  - Process note: a stray `git checkout main` was run during publishing. It was reverted right away to the session branch, and no commits were made on `main` directly.
+  - Final re-verification: all JSON parses; all internal links resolve; every table row has a source link or an Unverified flag.
+- **Open items (need your input or manual checks):** see the Questions tab (Q1–Q11) and suggestions S1–S8.
