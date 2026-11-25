@@ -1,0 +1,85 @@
+{
+  "title": "Flagged for review — irregularities found during verification (2026-11-25)",
+  "items": [
+    {
+      "id": "F1",
+      "severity": "high",
+      "title": "102 House: named Two MICHELIN Stars in the official press release, absent from the live directory",
+      "detail": "The official MICHELIN Guide press release (2026-04-08/09) lists 102 House as a Two MICHELIN Stars restaurant. The live Shanghai all-starred directory checked 2026-11-25 contains 50 restaurants (1×3★, 11×2★, 38×1★) and does NOT include 102 House; its Michelin page (guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/102-house) could not be fetched (error). Possible causes: closed/delisted after April 2026, or a directory sync issue. Treat 102 House as unverified-star until checked on an official page.",
+      "action": "Manual review on guide.michelin.com; check 102 House's restaurant page or press for closure notices.",
+      "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang"
+    },
+    {
+      "id": "F2",
+      "severity": "medium",
+      "title": "Press-release counts vs live directory counts differ for Two Stars",
+      "detail": "Press release: Shanghai has 1 three-star, 12 two-star, 38 one-star (=51). Live directory: 1 three-star, 11 two-star, 38 one-star (=50). The difference is exactly 102 House (F1). One-star and three-star counts match.",
+      "action": "Resolve with F1.",
+      "source": "https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred"
+    },
+    {
+      "id": "F3",
+      "severity": "medium",
+      "title": "MICHELIN Guide Hotels Shanghai page filter counts do not match per-hotel key icons",
+      "detail": "The hotels page filter chips state 5 two-key / 8 one-key / 25 selected (=38). Enumerating the 38 listed hotels, the key icons show 5 two-key / 13 one-key / 20 selected. Per-hotel distinctions on this dashboard are recorded as observed (icons); the filter-chip counts are not used anywhere.",
+      "action": "Manual review on the hotels page; likely a filter-state artifact.",
+      "source": "https://guide.michelin.com/en/hotels-stays/shanghai"
+    },
+    {
+      "id": "F4",
+      "severity": "high",
+      "title": "Transit times (subway/bus ≤1h) unverified — shmetro.com unreachable",
+      "detail": "The official Shanghai Metro site (www.shmetro.com, service.shmetro.com) returned HTTP 500 from the build sandbox on 2026-11-25. No routing engine or map API is available from the allowed host list, so door-to-door travel times could not be verified. Same-district pairings (hotel neighborhood vs restaurant/activity district) are reported as verified geography; any minute-level travel time is left blank and flagged.",
+      "action": "Verify on shmetro.com or an official map once reachable; update verify/transport.html and the hotel cluster counts.",
+      "source": "https://www.shmetro.com/"
+    },
+    {
+      "id": "F5",
+      "severity": "medium",
+      "title": "Hotel bed type and private bathroom: category-level only",
+      "detail": "Room-level bed type (queen/king) and private-bathroom confirmation are not published per-room on the channels reachable from the sandbox. Only The Peninsula Shanghai's Deluxe Room 'King / Twin' was verified from its official rooms page. All other hotels are marked 'category-level standard; confirm at booking'.",
+      "action": "Confirm bed type + private bath with each hotel's reservations desk before booking.",
+      "source": "https://www.peninsula.com/en/shanghai/luxury-hotel-room-suite-types"
+    },
+    {
+      "id": "F6",
+      "severity": "medium",
+      "title": "Waldorf Astoria Shanghai on the Bund sold out for Feb 15–22, 2027 (via booking engine)",
+      "detail": "The MICHELIN Guide Hotels booking engine returned 'No rooms available' for Waldorf Astoria Shanghai on the Bund for Feb 15–22, 2027 at check time. This may reflect channel inventory, not total unavailability.",
+      "action": "Re-check alternate dates and the hotel's own booking engine.",
+      "source": "https://guide.michelin.com/en/hotels-stays/shanghai/waldorf-astoria-shanghai-on-the-bund-6803?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1"
+    },
+    {
+      "id": "F7",
+      "severity": "low",
+      "title": "Official sites unreachable from the build sandbox",
+      "detail": "hilton.com, hyatt.com, middlehousehotels.com, orientalpearltower.com.cn, shmetro.com, shanghai.gov.cn and several others failed to fetch (blocked/error) on 2026-11-25. Data for those venues is either taken from an alternative official channel (e.g., MICHELIN Guide Hotels booking engine) or left blank+flagged.",
+      "action": "Re-fetch from an unrestricted environment where needed.",
+      "source": "https://www.hyatt.com/"
+    },
+    {
+      "id": "F8",
+      "severity": "low",
+      "title": "Shanghai Disneyland operating hours unverified",
+      "detail": "The official site is reachable, but its park-hours page returned 404 at fetch time; hours are left blank and flagged. Third-party guides (non-official) were not used.",
+      "action": "Check the official app/calendar for the visit date.",
+      "source": "https://www.shanghaidisneyresort.com/en/"
+    },
+    {
+      "id": "F9",
+      "severity": "low",
+      "title": "Restaurant menu prices: exact totals only for T'ang Court",
+      "detail": "T'ang Court's 2026 official menu PDF publishes exact for-two totals (¥888 dim-sum lunch set; ¥2,288 all-day set, incl. service & taxes). For the other 49 restaurants only the official price band (¥–¥¥¥¥) is verified; no menu prices are published on the reachable official pages, so no cost-for-two numbers are shown — they are left blank rather than estimated.",
+      "action": "Optional: fetch each restaurant's official menu (site links in verify/restaurants.html) to publish exact totals.",
+      "source": "https://www.langhamhotels.com/content/dam/langhamhotels/tlshx-pdfs/tang-court/2026/seasonal-set-menu-selection-2026.pdf"
+    },
+    {
+      "id": "F10",
+      "severity": "low",
+      "title": "Rate currency and taxes",
+      "detail": "Hotel rates are USD from the MICHELIN Guide Hotels booking engine (all-in with taxes shown separately per night); T'ang Court menu prices are CNY incl. service & taxes. No FX conversion was applied or inferred.",
+      "action": "Apply current FX at booking time if a single-currency budget is required.",
+      "source": "https://guide.michelin.com/en/hotels-stays/shanghai"
+    }
+  ]
+}

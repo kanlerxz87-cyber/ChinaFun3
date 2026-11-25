@@ -1,0 +1,34 @@
+{
+  "title": "Shanghai trip — verified planning dashboard",
+  "generated": "2026-11-25",
+  "verification_date": "2026-11-25 (all live checks performed this date)",
+  "trip": {
+    "destination": "Shanghai, China",
+    "window": "Feb 15, 2027 – Mar 23, 2027",
+    "preferred_arrival": "Feb 15, 2027",
+    "duration": "1–2 weeks (7-night stay modeled: Feb 15–22, 2027)",
+    "guests": "2 adults (couple)",
+    "constraints": [
+      "Queen-size bed or equivalent/larger",
+      "Private bathroom",
+      "Activities within 1 hour by subway/bus of hotel",
+      "Hotels ranked by Michelin-starred restaurants within 1 hour of travel"
+    ]
+  },
+  "counts": {
+    "michelin_starred_shanghai_directory": 50,
+    "three_star": 1,
+    "two_star": 11,
+    "one_star": 38,
+    "hotels_rate_verified": 8,
+    "activities_listed": 7,
+    "activities_hours_verified": 3,
+    "exact_menu_totals_for_two": 2
+  },
+  "notes": [
+    "Star status and price bands are from the official MICHELIN Guide Shanghai all-starred directory (guide.michelin.com), checked 2026-11-25.",
+    "Hotel rates are live 'Starting at' USD prices for Feb 15–22, 2027 (7 nights), 2 adults, from the MICHELIN Guide Hotels booking engine (official channel), checked 2026-11-25.",
+    "Every table row on this site carries an official source link; values that could not be confirmed from an official source are left blank and flagged 'Unverified'.",
+    "This dashboard is a non-overlapping addition (verify/) by session arena/b27f0613-chinafun3; other sessions' sites remain unchanged."
+  ]
+}
