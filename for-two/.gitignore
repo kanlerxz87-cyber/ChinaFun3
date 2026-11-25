@@ -1,0 +1,8 @@
+node_modules/
+.cache/
+.local/
+test-results/
+coverage/
+__pycache__/
+*.pyc
+.DS_Store

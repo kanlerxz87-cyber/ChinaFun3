@@ -106,3 +106,22 @@ Shared outputs (`docs/index.html` navigation, combined data) owned by T7 (integr
 - CI caught one relocation oversight: the JavaScript syntax step still pointed to deleted assets/app.js. Corrected workflow, npm test and subsite README to considered/assets/app.js; offline content tests were already passing. No factual source or prior-owner file changed.
 
 - Completion: PR #5 merged 2026-11-25T13:27:49Z, main merge commit 62a8a24da14acbb573269ba84a1efbc877255722. Verification check passed. Pages run 45623839028 completed successfully (build + deploy + report); Pages API reports built with no error for that commit. Public fetch of https://kanlerxz87-cyber.github.io/ChinaFun3/considered/ returned the new executive dashboard successfully. No reservations or payments made. Research gaps remain needs review; publication is complete.
+
+
+## Session a9dba5c2 — isolated /for-two/ integration
+
+- Initial claim f3f305e was committed/pushed on the fixed branch `arena/a9dba5c2-chinafun3` when only the original README was visible. Original complete board/log is preserved at `for-two/COORDINATION-session.md`.
+- On publication check, fetched `origin/main` 62a8a24 and discovered the root, docs/ and considered/ owners. Claimed non-overlapping `for-two/**` plus unique `.github/workflows/validate.yml` in a4b942c and pushed immediately before relocating. Root README/navigation/data and other sessions’ build/research tools are not changed.
+- Relocation committed as 10133ae. Merge of origin/main paused for COORDINATION add/add and README modify/delete conflicts. Resolution preserves origin/main’s full board above, appends this handoff, restores root README byte-for-byte from origin/main, and retains this session’s README/research/site/tests separately under for-two/. No session’s work was discarded.
+- Scope: `for-two/**` (a9dba5c2 only); `.github/workflows/validate.yml` (a9dba5c2 only); root COORDINATION append-only. Existing scopes above remain unchanged. Root navigation-link request: owner may optionally link `for-two/index.html` after review.
+- Research: **needs review** (published F01–F13; inherited dashboards also explicitly not reverified). Four hotel candidates, seven dining records, five activities, 51 evidence/media sources. Six official dated Peninsula quotes and surcharge arithmetic; four usable published couple meal totals. No inferred hotel price, private bathroom confirmation, timed transit rank or 2027 menu guarantee. Evidence in `for-two/data/trip.json`, audit at `for-two/research/verification.md`.
+- Site/test implementation: **done**, publication integration **in progress**. Before relocation: 9 offline tests and 113 desktop/mobile/browser/accessibility checks passed. Re-running at /for-two/ before PR. No completion claim for other owners’ factual research.
+- Direct Pages settings update denied HTTP 403. Existing main / publication is retained; plan is explicit PR merge from this branch, no direct push/checkout of main and no settings bypass.
+
+### a9dba5c2 relocation verification complete
+
+- **done**: isolated `/for-two/` build regenerated; 9 Python tests + 113 real-browser checks passed after relocation, including axe desktop/mobile and 320–1440px overflow checks. Combined repository scan: 40 tracked HTML files, zero missing relative-file targets. Existing other-owner files unchanged against main 62a8a24.
+- **needs review**: F14 now published in `for-two/review.html`: preserved parallel dashboards are not independently reverified; do not combine their factual claims without official-source reconciliation. F01–F13 remain published research gaps, not deployment blockers.
+- **in progress**: PR integration and actual Pages reachability verification. Evidence/results at `for-two/research/release.md`. Direct Pages update denial is not bypassed.
+
+- Publication synchronization: PR #6 landed a completion note while PR #7 opened. Merged main c21b265, preserving that full board and appending this session’s log; no content or ownership lost.

@@ -1,0 +1,30 @@
+{
+  "name": "chinafun3",
+  "version": "1.0.0",
+  "description": "Official-source China travel research and mobile-friendly static dashboard",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "python scripts/build.py",
+    "test": "python -m unittest discover -s tests -v",
+    "test:browser": "node tests/browser.mjs",
+    "serve": "python -m http.server 3000 --bind 0.0.0.0 --directory .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanlerxz87-cyber/ChinaFun3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/kanlerxz87-cyber/ChinaFun3/issues"
+  },
+  "homepage": "https://github.com/kanlerxz87-cyber/ChinaFun3#readme",
+  "devDependencies": {
+    "@sparticuz/chromium": "^158.0.0",
+    "axe-core": "^4.14.1",
+    "playwright": "^1.65.1"
+  },
+  "private": true
+}
