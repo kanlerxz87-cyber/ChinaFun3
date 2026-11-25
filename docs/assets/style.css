@@ -1,0 +1,92 @@
+:root {
+  --bg: #f5f7fa;
+  --card: #ffffff;
+  --ink: #1d2433;
+  --muted: #5b6475;
+  --line: #dde2ea;
+  --brand: #1f5fbf;
+  --brand-soft: #e7f0ff;
+  --warn: #b26a00;
+  --warn-soft: #fff4e0;
+  --ok: #1c7c4a;
+  --ok-soft: #e5f6ec;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg); color: var(--ink); line-height: 1.5; font-size: 16px;
+}
+a { color: var(--brand); word-break: break-word; }
+header.site {
+  background: var(--card); border-bottom: 1px solid var(--line);
+  position: sticky; top: 0; z-index: 10;
+}
+header.site .bar {
+  max-width: 1200px; margin: 0 auto; padding: 12px 16px;
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+}
+header.site .brand { font-weight: 700; color: var(--ink); text-decoration: none; margin-right: auto; }
+nav.site a {
+  color: var(--ink); text-decoration: none; padding: 6px 10px; border-radius: 8px;
+  font-size: 14px; white-space: nowrap;
+}
+nav.site a:hover, nav.site a.active { background: var(--brand-soft); color: var(--brand); }
+main { max-width: 1200px; margin: 0 auto; padding: 20px 16px 60px; }
+h1 { font-size: 26px; margin: 8px 0 6px; }
+h2 { font-size: 20px; margin: 28px 0 10px; }
+h3 { font-size: 17px; margin: 18px 0 8px; }
+p.lead { color: var(--muted); margin: 0 0 14px; }
+.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 16px; margin: 0 0 16px;
+}
+.grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.tile { display: block; text-decoration: none; color: var(--ink); }
+.tile:hover { border-color: var(--brand); }
+.tile .k { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.tile .v { font-size: 22px; font-weight: 700; margin-top: 4px; }
+.tile .d { font-size: 14px; color: var(--muted); margin-top: 4px; }
+.pill {
+  display: inline-block; font-size: 12px; padding: 2px 8px; border-radius: 999px;
+  background: var(--brand-soft); color: var(--brand); margin: 2px 4px 2px 0; white-space: nowrap;
+}
+.pill.warn { background: var(--warn-soft); color: var(--warn); }
+.pill.ok { background: var(--ok-soft); color: var(--ok); }
+.unverified {
+  display: inline-block; font-size: 12px; font-weight: 600; padding: 1px 7px; border-radius: 6px;
+  background: var(--warn-soft); color: var(--warn);
+}
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+table.data { width: 100%; border-collapse: collapse; font-size: 14px; }
+table.data th, table.data td {
+  text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line);
+}
+table.data th {
+  background: #f0f3f8; font-size: 12px; text-transform: uppercase; letter-spacing: .03em; color: var(--muted);
+  position: sticky; top: 0;
+}
+table.data tr:last-child td { border-bottom: none; }
+table.data td.cell-text { min-width: 140px; }
+ul.plain { margin: 6px 0 0 18px; padding: 0; }
+ul.plain li { margin: 4px 0; }
+.note { font-size: 13px; color: var(--muted); margin-top: 8px; }
+.flag { background: var(--warn-soft); border-left: 4px solid var(--warn); padding: 10px 12px; border-radius: 8px; }
+.ok-box { background: var(--ok-soft); border-left: 4px solid var(--ok); padding: 10px 12px; border-radius: 8px; }
+.empty { color: var(--muted); font-style: italic; padding: 12px; }
+footer.site { max-width: 1200px; margin: 0 auto; padding: 16px; color: var(--muted); font-size: 13px; }
+
+/* Mobile: turn each row into a stacked card with labels */
+@media (max-width: 720px) {
+  h1 { font-size: 22px; }
+  table.data thead { display: none; }
+  table.data, table.data tbody, table.data tr, table.data td { display: block; width: 100%; }
+  table.data tr { border-bottom: 1px solid var(--line); padding: 8px 0; }
+  table.data tr:last-child { border-bottom: none; }
+  table.data td { border: none; padding: 4px 12px; }
+  table.data td::before {
+    content: attr(data-label); display: block; font-size: 11px; text-transform: uppercase;
+    letter-spacing: .03em; color: var(--muted); margin-bottom: 1px;
+  }
+  table.data td.cell-text { min-width: 0; }
+}

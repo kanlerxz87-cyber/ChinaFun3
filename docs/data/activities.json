@@ -1,0 +1,36 @@
+{
+  "title": "Activities: Shanghai (verified rows only)",
+  "intro": "Only fields confirmed on the venue's own website are filled in. Blank = not yet verified.",
+  "columns": [
+    {"key": "name", "label": "Activity"},
+    {"key": "hours", "label": "Hours"},
+    {"key": "days_open", "label": "Days open & exceptions"},
+    {"key": "ticket", "label": "Ticket / price (season)"},
+    {"key": "booking", "label": "Booking"},
+    {"key": "social", "label": "YouTube / TikTok / Instagram"},
+    {"key": "link", "label": "Official link"},
+    {"key": "source", "label": "Source (official)", "type": "source"}
+  ],
+  "rows": [
+    {
+      "name": "Shanghai Museum (The Shanghai Museum on People's Square)",
+      "hours": "9:00 am – 5:00 pm, last entry 4:00 pm",
+      "days_open": "Closed every Monday (except public holidays). Monday 15 Feb 2027 is a Monday, so this venue is closed on the first preferred trip day.",
+      "ticket": null,
+      "booking": "Walk-in for individual visitors since 1 Sep 2025. Reservations required in peak periods (including national holidays and school vacations); up to 14 days ahead via WeChat or the official website.",
+      "social": "Douyin (TikTok's China app): https://www.douyin.com/user/MS4wLjABAAAAvgW-hMLuZNKCgJaueieZXzqQrEeaAace1q-NmJlZ_oE · Instagram: https://www.instagram.com/theshanghaimuseum · YouTube: https://www.youtube.com/@theshanghaimuseum",
+      "link": "https://www.shanghaimuseum.net",
+      "source": {"label": "Shanghai Museum notice (25 Aug 2025) and official site footer", "url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/I00004797"}
+    },
+    {
+      "name": "Yu Garden (豫园), Shanghai",
+      "hours": "9:00–16:30 (last entry 16:00)",
+      "days_open": "Closed every Monday (except national holidays). Spring Festival hours follow the announcement at the time. Monday 15 Feb 2027 is a Monday, so it is closed on the first preferred trip day.",
+      "ticket": "Adult ¥30 in the off-season (1 Dec – 31 Mar). Adult ¥40 in peak months (1 Apr – 30 Jun and 1 Sep – 30 Nov). Half-price tickets for students aged 6–18 and visitors aged 60+ with valid ID.",
+      "booking": "Tickets at the north or south gate windows, or via the official '上海豫园' mini-program (WeChat).",
+      "social": null,
+      "link": "https://www.yugarden.com.cn/page/articleView/message.html",
+      "source": {"label": "Yu Garden official visitor information", "url": "https://www.yugarden.com.cn/page/articleView/message.html"}
+    }
+  ]
+}

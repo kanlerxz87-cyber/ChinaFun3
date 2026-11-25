@@ -1,0 +1,24 @@
+{
+  "title": "Questions, answers and missing information",
+  "intro": "Each question needs an answer before a decision can be made reasonably. 'Answered' means the answer is in an official source. 'Open' needs your input or a manual check.",
+  "columns": [
+    {"key": "id", "label": "#"},
+    {"key": "question", "label": "Question"},
+    {"key": "status", "label": "Status"},
+    {"key": "answer", "label": "Answer / current finding"},
+    {"key": "how_to_close", "label": "How to close it"}
+  ],
+  "rows": [
+    {"id": "Q1", "question": "Which city or cities? (Michelin cluster and base)", "status": "Open", "answer": "Not stated. Shanghai was used as a test cluster because it has a large official Michelin list (156 restaurants).", "how_to_close": "Your choice: Shanghai, Beijing, Hong Kong, Hainan (Sanya/Haikou), or other."},
+    {"id": "Q2", "question": "How many nights, and which dates?", "status": "Open", "answer": "The preferred window (15–18 Feb) is 3 nights. The requirement is a 7-night price, so either 15–22 Feb or another 7-night window.", "how_to_close": "Confirm one of: 15–22 Feb (7 nights), or 15–18 Feb (3 nights, price shown per night)."},
+    {"id": "Q3", "question": "Can a US passport holder enter China for a normal sightseeing trip without a visa?", "status": "Answered (partly)", "answer": "Not as a standard tourist. The 240-hour transit rule needs an onward ticket to a third country or region and a 10-day maximum. Hainan has a 30-day visa-free rule that includes the US. Nationwide 30-day status is unverified.", "how_to_close": "Check with the Chinese embassy or consulate; re-check NIA's nationwide 30-day list."},
+    {"id": "Q4", "question": "Will the Spring Festival holiday overlap the trip?", "status": "Answered", "answer": "No. The official holiday is 5–13 Feb 2027 and 14 Feb is a working day. The trip starts on Mon 15 Feb.", "how_to_close": "Re-check the State Council notice in case of changes."},
+    {"id": "Q5", "question": "Which hotels meet the requirements (private bath, queen or larger, two adults)?", "status": "Open", "answer": "No verified hotel rows yet. Room and price data cannot be checked from here.", "how_to_close": "Provide the hotel list you want checked, or allow a manual check on the hotel sites and booking platforms."},
+    {"id": "Q6", "question": "What is the cheapest time to book a hotel?", "status": "Open", "answer": "No price history can be verified from here, so no booking window is recommended yet.", "how_to_close": "Set up price tracking on a booking site once the hotel list is fixed; compare fares at several dates."},
+    {"id": "Q7", "question": "Which Michelin restaurants are within 60 minutes by subway or bus of each hotel?", "status": "Open", "answer": "Needs hotel addresses and a route-time tool. Not yet done.", "how_to_close": "Pick the hotels first, then compute journey times in a route planner."},
+    {"id": "Q8", "question": "What are the current hours, prices and bookings for each Michelin restaurant?", "status": "Open", "answer": "The Michelin Guide pages could not be opened from here. Only star status is verified.", "how_to_close": "Check each restaurant's official page or the Michelin Guide page manually."},
+    {"id": "Q9", "question": "Which YouTube, TikTok or Instagram links exist for each place?", "status": "Open", "answer": "Only the Shanghai Museum's official links are listed (from its website). Other places were not searched.", "how_to_close": "Search official accounts for each place and add links with sources."},
+    {"id": "Q10", "question": "Do you want a 2-adult budget in CNY, USD, or both?", "status": "Open", "answer": "Not stated. Tables show what the sources give (CNY for Michelin averages, where verified).", "how_to_close": "Choose one currency or dual display."},
+    {"id": "Q11", "question": "What dates are your must-do activities (museums, gardens, etc.)?", "status": "Open", "answer": "Not stated. Both verified museum/garden venues are closed on Mondays.", "how_to_close": "Tell us the activity list and the day you want for each."}
+  ]
+}
