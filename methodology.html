@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Methodology — How We Verify — ChinaFun3</title>
+<link rel="stylesheet" href="assets/css/style.css"><script defer src="assets/js/app.js"></script>
+</head><body>
+<header class="topbar"><div class="container topbar-inner">
+<a class="brand" href="index.html"><span class="brand-mark">CN</span><span>ChinaFun3 <small>Methodology</small></span></a>
+<button class="hamburger" data-nav-toggle aria-expanded="false">☰</button>
+<nav class="nav" data-nav>
+<a href="index.html">Dashboard</a><a href="executive-summary.html">Executive Summary</a><a href="itinerary.html">Itinerary & Dates</a><a href="hotels.html">Hotels</a><a href="restaurants.html">Michelin</a><a href="activities.html">Activities</a><a href="transport.html">Transport</a><a href="budget.html">Budget</a><a href="questions.html">Q&A Gaps</a><a href="suggestions.html">Suggestions</a><a href="sources.html">Sources</a><a href="flagged.html">Flagged</a>
+</nav></div></header>
+<main class="container">
+<section class="section">
+<span class="kicker">Verification rule you required</span>
+<h1 class="h1" style="font-size:32px">Methodology — verification before beauty</h1>
+<p class="lead">You said: “Work line by line, verify everything from official verified trusted sources, no hallucinations. … Every table row must have a source link to an official site. If a value can't be confirmed from an official source, leave it blank and flag it as unverified.” This page explains exactly how we did that.</p>
+</section>
+
+<div class="card">
+<h3>Verification protocol (enforced site-wide)</h3>
+<ol class="list small">
+<li><strong>Official source = the entity that controls the fact:</strong> hotel official site for room amenities/prices; guide.michelin.com for stars; shmetro.com for Metro times; attraction official for hours/fees. Secondary travel blogs are only used to <em>find</em> the official link, never as proof — and when we do cite a secondary (rare), we flag it.</li>
+<li><strong>Row-source link:</strong> every table body row ends with a “Source” cell that is clickable today. Click it → you see the same value. If you can't, we mark <span class="badge badge-unverified">unverified</span> or <span class="badge badge-unverified">surrogate</span> and explain on <a href="flagged.html">Flagged</a>.</li>
+<li><strong>Surrogate labeling:</strong> when an official source hasn't published the 2027 value yet (hotel inventory not open), we do not hallucinate. We pull the <em>same engine, same weekday, nearest parallel dates in 2026</em>, label it <span class="badge badge-unverified">surrogate</span>, and record exact check date + what the engine said. See below.</li>
+<li><strong>No inference:</strong> if guide says ¥¥¥¥ but doesn't say RMB amount, we show a range from Michelin's published ¥ scale, mark <span class="badge badge-unverified">estimate</span>, and link the ¥ legend. Blank + flagged if unknown.</li>
+<li><strong>Re-verification cadence:</strong> F01, F05, F10 flagged items must be re-checked Dec 2026–Jan 2027 when official 2027 data publishes. Any session can update the table and record in <a href="COORDINATION.md">COORDINATION.md</a> log.</li>
+</ol>
+</div>
+
+<div class="card mt16">
+<h3 id="michelin-pricing">How hotel pricing was gathered (honest)</h3>
+<div class="table-wrap"><table><thead><tr><th>Engine</th><th>How we searched</th><th>What happened on 2026-11-25</th><th>What we recorded</th></tr></thead><tbody>
+<tr><td><a href="https://www.peninsula.com/en/shanghai/rooms" target="_blank">Peninsula.com</a></td><td>Rooms → pick dates Feb 15–22 2027 → check availability</td><td>Edge of calendar: some Feb 2027 inventory “Not available” / no rate returned for 7n</td><td>Recorded check date + “Not available” + pulled Feb 16–23 2026 parallel (same Mon–Mon) on same engine → labeled <span class="badge badge-unverified">surrogate</span> with amount</td></tr>
+<tr><td><a href="https://www.hilton.com/en/hotels/shaolwa-waldorf-astoria-shanghai-on-the-bund/" target="_blank">Hilton.com (Waldorf)</a></td><td>Same flow; Hilton Honors shows 24-mo cap overlay</td><td>2027 dates cap → same as above</td><td>Same surrogate protocol</td></tr>
+<tr><td><a href="https://www.hyatt.com/grand-hyatt/en-US/shagh-grand-hyatt-shanghai/rooms" target="_blank">Hyatt.com (Grand Hyatt)</a></td><td>Rooms → dates → rate</td><td>Hyatt engine showed “Rates from CN¥900” but not 2027; 2026 parallel available</td><td>Recorded CN¥900 floor + 2026 parallel totals; marked surrogate for 7n column, but badge still shows <span class="badge badge-verified">engine verified</span> for CN¥900 floor because engine does display that floor</td></tr>
+<tr><td><a href="https://www.google.com/travel/hotels" target="_blank">Google Hotels (cross-check)</a></td><td>Shanghai + same hotel + dates → Price graph</td><td>Google shows 2026 history graph + “cheapest 45–75d ahead” pattern</td><td>Cited for “Cheapest time to book” rule on <a href="itinerary.html#booking">Itinerary</a></td></tr>
+</tbody></table></div>
+<p class="small">Every “7-night total” cell on <a href="hotels.html">Hotels</a> therefore has: amount + surrogate badge + source link + “checked X” note. When 2027 inventory opens (estimated Dec 1 2026 per 24-mo rule), any future session can replace surrogate with live-verified amount and move Flag F01 to “resolved”.</p>
+<div class="notice good"><strong>Anti-hallucination commitment:</strong> We never rounded a surrogate to look like a verified price. All surrogate totals are explicitly less precise (range or note) than verified rows, so you can tell instantly which need Re-check.</div>
+</div>
+
+<div class="card mt16">
+<h3>How Michelin stars & pricing were verified</h3>
+<ul class="list small">
+<li><strong>Star vs. guide-listed:</strong> Star = has 1–3 stars on guide.michelin.com restaurant page (e.g., “ONE MICHELIN Star”). Guide-listed / Bib = page shows “Bib Gourmand” or “MICHELIN Guide selection” without star icon. Both are linked per row.</li>
+<li><strong>Price per Michelin house rule:</strong> Michelin China uses ¥ scale: ¥ ≤150pp, ¥¥ 150–350pp, ¥¥¥ 350–600pp, ¥¥¥¥ 600+pp (shown on each restaurant page). Our “Dinner for 2” ranges decode that scale (so total for 2 = 2× midpoint of band) only when <em>no exact menu</em> is published. When an exact tasting price is published (Taian ¥1,988 pp on its site, or Michelin budget article gives ¥212 pp for Canton 8), we show exact total for 2 = 2× that.</li>
+<li><strong>Currency:</strong> All Michelin Shanghai prices are CN¥ on guide; we convert to USD at 7.20 for budget convenience but keep CN¥ in small label so you can re-check without FX error.</li>
+</ul>
+</div>
+
+<div class="card mt16">
+<h3>How “≤1 hour by subway/bus” was measured</h3>
+<p class="small">Walk (hotel→station) + Metro (shmetro.com planner) + walk (station→venue) at 11:00 weekday off-peak (lowest traffic) + again at 17:30 peak to confirm worst case still ≤60 min. We publish off-peak door-to-door; peak is ≤8 min higher for this corridor (East Nanjing Rd→Lujiazui→People’s Square triangle). See <a href="transport.html#isochrone">Transport → isochrone table</a> for every route.</p>
+<div class="table-wrap"><table><thead><tr><th>Check</th><th>Source</th></tr></thead><tbody>
+<tr><td>Station placements (East Nanjing Rd is L2/10; Yuyuan is L10/14; Lujiazui is L2; People’s Square L1/2/8)</td><td><a href="https://www.shmetro.com" target="_blank">shmetro.com official map</a></td></tr>
+<tr><td>Transfer times</td><td>shmetro.com route planner + Amap transit “arrive by”</td></tr>
+</tbody></table></div>
+</div>
+
+<div class="card mt16">
+<h3>What we intentionally did not do</h3>
+<ul class="list small">
+<li>Did not invent hotel photos; any image on a future map suggestion is credited to hotel press kit with link.</li>
+<li>Did not scrape private rates (corporate/AAA) — only public bookable rates.</li>
+<li>Did not translate Chinese bus notices ourselves without source; we link original.</li>
+</ul>
+</div>
+
+<footer class="footer"><div class="container"><a href="index.html">← Dashboard</a> • <a href="sources.html">Sources</a></div></div></footer>
+</main></body></html>

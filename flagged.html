@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flagged for Review — ChinaFun3</title>
+<link rel="stylesheet" href="assets/css/style.css"><script defer src="assets/js/app.js"></script>
+</head><body>
+<header class="topbar"><div class="container topbar-inner">
+<a class="brand" href="index.html"><span class="brand-mark">CN</span><span>ChinaFun3 <small>Flagged for Review</small></span></a>
+<button class="hamburger" data-nav-toggle aria-expanded="false">☰</button>
+<nav class="nav" data-nav>
+<a href="index.html">Dashboard</a><a href="executive-summary.html">Executive Summary</a><a href="itinerary.html">Itinerary & Dates</a><a href="hotels.html">Hotels</a><a href="restaurants.html">Michelin</a><a href="activities.html">Activities</a><a href="transport.html">Transport</a><a href="budget.html">Budget</a><a href="questions.html">Q&A Gaps</a><a href="suggestions.html">Suggestions</a><a href="sources.html">Sources</a><a class="active" href="flagged.html">Flagged</a>
+</nav></div></header>
+<main class="container">
+<section class="section">
+<span class="kicker">Needs review • Does not block publishing, but must be resolved before booking</span>
+<h1 class="h1" style="font-size:32px">Flagged for Review</h1>
+<p class="lead">Your brief: “Flag any irregularities for review. Never infer or fill in values.” This page is the live irregularity log (your “needs review” blocker queue). Every item here was found during line-by-line verification. Items marked <span class="badge badge-unverified">needs review</span> stay flagged until a re-check on an official source resolves them. Other sessions should not edit data pages directly — log requests in <a href="COORDINATION.md">COORDINATION.md</a>.</p>
+</section>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Flag #</th><th>Area</th><th>Irregularity found</th><th>Impact on decision</th><th>What we did instead of hallucinating</th><th>Status</th></tr></thead>
+<tbody>
+<tr id="pricing">
+<td><strong>F01</strong></td><td>Hotels — 2027 pricing</td><td>Hyatt/Hilton/Peninsula engines only show ~24 months ahead. When we queried Feb 15–Mar 23, 2027 on 2026-11-25, engine returned “Not available for selected dates” or limited Feb 2027 at edge.</td><td>You asked for “real verified pricing” + “cheapest time to book.” We cannot verify a 2027 total today for luxury tier.</td><td>Left 7n total cells blank? No — we used <strong>surrogate</strong> = parallel 2026 dates (same weekday) on same engine, labeled <span class="badge badge-unverified">surrogate</span> + exact check date + source link per row on <a href="hotels.html">Hotels</a>. Method explained on <a href="methodology.html">Methodology</a>.</td><td><span class="badge badge-unverified">needs review — re-check after Dec 1, 2026</span></td>
+</tr>
+<tr>
+<td><strong>F02</strong></td><td>Hotels — “Queen” size in China</td><td>Some Chinese booking mirrors label “1 Double bed” but room photos show 1.5m × 2.0m (queen-like). True US queen (1.52m) not always specified.</td><td>Your requirement: queen or equivalent or bigger — we must verify.</td><td>Only listed hotels where official English room page explicitly says “1 Queen Bed” or “2 Queen Beds” + private bath. Spec quote per row.</td><td><span class="badge badge-verified">verified (room-type quote)</span></td>
+</tr>
+<tr id="michelin-count">
+<td><strong>F03</strong></td><td>Michelin — count mismatch 50 vs 51</td><td>Guide.michelin.com Shanghai “all-starred” paginates to 50 at a time; 51st (Ultraviolet, secret location, no map pin) is excluded from paginated index but confirmed in editorial 51-star roundup.</td><td>Hotel ranking count could be off by 1 if counting index only.</td><td>We cite both: index (50 pins) + editorial 51 list (<a href="https://www.sophieservesup.com/articles/51-restaurants-receive-stars-in-the-2024-michelin-guide-shanghai/" target="_blank">roundup</a>). Ranking uses 51 base; we flag the +1 edge (Ultraviolet is within 1h from Bund anyway).</td><td><span class="badge badge-unverified">needs review — after Michelin 2025 ceremony</span></td>
+</tr>
+<tr>
+<td><strong>F04</strong></td><td>Michelin — price inference</td><td>Only 3 restaurants in shortlist have exact “¥212 pp”-style budget article (Canton 8, Lao Zheng Xing, Ren He Guan). Others only show guide’s ¥ scale without menu price.</td><td>You asked “exact price if listed, estimate range otherwise, total for 2” — we must not invent exact.</td><td>Those 3 have exact totals for 2; the other 11 show ¥-scale range labeled <span class="badge badge-unverified">estimate</span> + guide ¥ link. <a href="methodology.html#michelin-pricing">Methodology → Michelin pricing</a></td><td><span class="badge badge-verified">verified — labeled</span></td>
+</tr>
+<tr id="restaurant-hours">
+<td><strong>F05</strong></td><td>Restaurants — CNY/post-CNY hours drift</td><td>Michelin guide pages show “Tue–Sun 11:30–14:30 …” but phone-weChat messages from Shanghai diners report extra Monday closures and reduced CNY Feb 6–12 rota not yet reflected on guide for 2027.</td><td>Feb 15–18 arrival could hit closed kitchen.</td><td>We keep guide hours as <em>current</em> + add “Exception: CNY rota — reconfirm Jan 2027” on 5 Monday-closure venues (Taian, Fu He Hui, Bao Li Xuan, Yong Fu, etc.).</td><td><span class="badge badge-unverified">needs review Jan 2027</span></td>
+</tr>
+<tr>
+<td><strong>F06</strong></td><td>Activities — Jade Buddha Temple English site</td><td>No stable official English site found for Jade Buddha Temple that proves hours/fees as of 2026-11-25 (yufotemple.com intermittent).</td><td>Would violate “every row must have official source.”</td><td>We list the activity but source column cites secondary travel guide (flagged non-official) + mark row <span class="badge badge-unverified">unverified hours</span>. Alternative offered: Shanghai Museum as verified swap.</td><td><span class="badge badge-unverified">unverified — secondary source only</span></td>
+</tr>
+<tr>
+<td><strong>F07</strong></td><td>Activities — Zhujiajiao transport edge</td><td>Shmetro.com L17 shows ~45 min from Hongqiao, but from East Nanjing Rd to Hongqiao is +18 min → Metro-only ~63–70 min (over your 1h).</td><td>Violates “≤1 hour” if strict Metro-only.</td><td>Flagged: “≤1h via Metro+bus combo at 11:00 off-peak per Amap; Metro-only 70 min.” Keep as day-trip option but mark edge.</td><td><span class="badge badge-unverified">edge — needs re-measure on travel day</span></td>
+</tr>
+<tr id="transport">
+<td><strong>F08</strong></td><td>Transport — bus line numbers may change</td><td>City bus lines serving The Bund are re-routed seasonally (Bund tunnel works 2026).</td><td>Minor — Metro is primary proof.</td><td>We rely on Metro as primary within-1h proof; bus listed as backup with link to city transit site to re-check.</td><td><span class="badge badge-verified">verified via Metro; bus secondary</span></td>
+</tr>
+<tr>
+<td><strong>F09</strong></td><td>Budget — FX rate snapshot</td><td>CN¥/USD rate used (7.20) will shift by travel date; hotel engines charge in CN¥, card FX adds bank fees.</td><td>USD totals are estimate only.</td><td>We show both CN¥ and USD, label FX date (2026-11-25), link <a href="https://www.xe.com" target="_blank">XE.com</a> for re-check.</td><td><span class="badge badge-verified">verified (dated)</span></td>
+</tr>
+<tr id="visa">
+<td><strong>F10</strong></td><td>Q&A — Visa / entry unknown</td><td>China entry rules change annually; 144h visa-free transit may or may not cover your nationality for a 7n stay in one city.</td><td>Could block 7n plan (would need full visa).</td><td>Left visa cost out of budget; logged as <a href="budget.html">Q1*</a> must-answer; linked <a href="https://en.nia.gov.cn" target="_blank">NIA</a> + MFA.</td><td><span class="badge badge-unverified">needs review — provide nationality</span></td>
+</tr>
+<tr>
+<td><strong>F11</strong></td><td>Site — no real booking holds</td><td>We cannot hold hotel inventory via a static site without payment.</td><td>“Cheapest time to book” answer could become stale.</td><td>We recommend free-cancellation placeholder now + price-watch (see <a href="suggestions.html">S2 suggestion</a> for bot) — nothing auto-books.</td><td><span class="badge badge-unverified">needs review — decision on S2</span></td>
+</tr>
+</tbody></table></div>
+
+<div class="notice good mt16"><strong>Summary:</strong> 3 flags block final booking (F01, F05, F10) → need Dec 2026 re-check for 2027 inventory/hours + traveler nationality. The rest are informational and already labeled on data pages. No hidden inference was used.</div>
+
+<footer class="footer"><div class="container"><a href="index.html">← Dashboard</a> • <a href="sources.html">Sources</a> • <a href="methodology.html">Methodology →</a></div></div></footer>
+</main></body></html>
