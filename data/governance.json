@@ -1,0 +1,262 @@
+{
+  "metadata": {
+    "taskId": "T-05",
+    "verifiedDate": "2026-11-25",
+    "auditScope": "Cross-dataset governance register consolidating Executive Summary, Missing Information / Decision Questions & Discovery Plan, Site Improvement Suggestions, and Flagged for Review items across T-01 through T-04."
+  },
+  "executiveSummary": {
+    "headline": "Shanghai (#1 Mainland MICHELIN Hub: 156 Listed / 51 Starred) + Optional Beijing (#2 Hub: 107 Listed / 33 Starred) in Late February 2027",
+    "recommendedItineraries": [
+      {
+        "option": "Option A — 1-Week Focused Culinary Base (7 Nights, Single City: Shanghai)",
+        "recommendedDates": "Mon Feb 22 – Mon Mar 1, 2027",
+        "whyBest": "Avoids Spring Festival tail & Lantern Festival crowds (Feb 20) while capturing Shanghai's winter hotel price trough—31% to 37% cheaper than March 2027 (verified live on Radisson Blu Shanghai New World: US$1,179 incl. tax vs US$1,543–1,620 in March). 100% of 16 audited Shanghai MICHELIN restaurants sit within 35 min of People's Square.",
+        "topHotelPicks": [
+          "Best Overall Transit & Value: Radisson Blu Hotel Shanghai New World — US$1,179 / 7 nights incl. tax (40 sqm Junior Suite, 1 Queen, Free Cancel)",
+          "Best Luxury Culinary Integration: The Langham, Shanghai, Xintiandi — US$1,917 / 7 nights incl. tax (2★ T'ang Court inside hotel, 1.8m King, Free Cancel)",
+          "Best Skyline Value: Grand Hyatt Shanghai (Jin Mao Tower 54F–87F) — US$1,311 (Queen) / US$1,468 (King) incl. tax"
+        ]
+      },
+      {
+        "option": "Option B — 2-Week Dual-City Ultimate MICHELIN Loop (14 Nights: Shanghai + Beijing via 4.5-Hr High-Speed Rail)",
+        "recommendedDates": "Shanghai Mon Feb 15 – Mon Feb 22, 2027 (7 nights) + Beijing Mon Feb 22 – Mon Mar 1, 2027 (7 nights)",
+        "whyBest": "Maximizes both savings and calendar timing: (1) Shanghai Feb 15–22 hits the lowest verified 2027 hotel floor (Radisson Blu US$1,061 incl. tax) and lets you catch Shanghai's iconic Yuyuan Lantern Festival (Sat Feb 20); (2) Beijing Feb 22–Mar 1 locks in Beijing's winter off-peak hotel floor (Park Plaza US$955 / Hilton US$1,343 / JEN US$1,365) AND completes Forbidden City / National Museum visits BEFORE Beijing's NPC/CPPCC Two Sessions security perimeter starts around Mar 4–5.",
+        "topHotelPicks": [
+          "Shanghai Leg (Feb 15–22): Radisson Blu Shanghai New World (US$1,061) or The Langham Xintiandi",
+          "Beijing Leg (Feb 22–Mar 1): Park Plaza Beijing Wangfujing (US$955 value) / Hilton Beijing Wangfujing (US$1,343, 65 sqm King) / The PuXuan (US$2,786 ultra-luxury w/ 1★ Fu Chun Ju on 3F)"
+        ]
+      },
+      {
+        "option": "Option C — Short 3–4 Night Sprint (ONLY if Feb 15–18 Literal Dates Are Hard-Locked)",
+        "recommendedDates": "Mon Feb 15 – Thu Feb 18, 2027 (3 nights)",
+        "whyBest": "Flags the prompt's internal contradiction (1–2 weeks / 7-night totals vs Feb 15–18 preferred dates). If strictly constrained to 3 nights, stay in Shanghai only (zero intercity transit loss) and note that Yu Garden, Shanghai Museum (People's Square), and West Bund Museum close Monday Feb 15—anchor Monday with Museum of Art Pudong (open daily!), Jing'an Temple, and Shanghai Tower.",
+        "topHotelPicks": [
+          "Radisson Blu Hotel Shanghai New World or The Langham, Shanghai, Xintiandi"
+        ]
+      }
+    ],
+    "verifiedCostSnapshotForTwoAdults7Nights": [
+      {
+        "tier": "Smart Value Culinary Base (7 Nights, 2 Adults — excl. International Flights)",
+        "shanghaiHotel7N": "US$1,179 (Radisson Blu Junior Suite, Queen, incl. tax)",
+        "beijingHotel7N": "US$955 (Park Plaza Wangfujing Deluxe King, incl. tax)",
+        "activities8SitesCny": "Shanghai 8 activities: CN¥1,100 (~US$152) | Beijing 8 activities: CN¥360 (~US$50, excl. optional HSR rail ~CN¥120–240 RT for 2)",
+        "michelinDiningIllustrative": "Mix of verified Bib Gourmand/Selected + 2–3 starred lunches/dinners (e.g., 1★ Yong Yi Ting dim sum CN¥800–1,000 + 2★ T'ang Court tasting CN¥3,344 + 2★ Bao Li Xuan lunch CN¥1,576; exact total varies by reservations chosen)"
+      },
+      {
+        "tier": "Luxury Flagship Base (7 Nights, 2 Adults — excl. International Flights)",
+        "shanghaiHotel7N": "US$1,917 (The Langham Xintiandi) to US$3,097 (The PuLi Hotel & Spa)",
+        "beijingHotel7N": "US$1,343 (Hilton Wangfujing 65 sqm King) to US$2,786 (The PuXuan Hotel & Spa)",
+        "activities8SitesCny": "Same official off-season admission totals (Shanghai CN¥1,100 / Beijing CN¥360) + optional VIP tours / Yu Garden night light show (CN¥300–436 for 2)",
+        "michelinDiningIllustrative": "Flagship 3★/2★ tasting nights (e.g., 3★ Taian Table CN¥4,776 for 2 + 2★ Da Vittorio CN¥5,474–7,454 for 2 + 1★ Trb Hutong CN¥1,998–2,438 for 2)"
+      }
+    ],
+    "keyBookingAndOperationalTakeaways": [
+      "Cheapest Upcoming Hotel Window: Lock in a Free Cancellation rate now for Mon Feb 15–22 or Mon Feb 22–Mar 1, 2027 (verified 31%–53% cheaper in Shanghai than March), then re-check 7–14 days pre-arrival per KAYAK's May 2026 hotel pricing study.",
+      "Monday Museum Closure Trap: The Palace Museum (Forbidden City), National Museum of China, Temple of Heaven inner halls, Summer Palace inner halls, Yu Garden, Shanghai Museum (People's Square), and West Bund Museum all close Mondays. Plan Mondays for Museum of Art Pudong, Shanghai Museum East (closed Tuesdays), Shanghai Tower, Jing'an Temple, Yonghe Lama Temple, Jingshan Park, or Badaling Great Wall.",
+      "Visa & Digital Readiness: Check whether both travelers' passports qualify for China's 240-hour (10-day) Visa-Free Transit (57 eligible countries; strictly requires confirmed onward ticket to a THIRD country/region such as Hong Kong, Tokyo, or Seoul—round-trip US<->China does NOT qualify!). Set up Alipay & WeChat Pay linked to international Visa/Mastercard plus an eSIM before departure."
+    ]
+  },
+  "missingInfoAndDiscovery": {
+    "decisionQuestions": [
+      {
+        "id": "Q-01",
+        "priority": "Critical",
+        "topic": "Exact Trip Duration & Dates (Resolve Prompt Contradiction)",
+        "question": "Is the trip 7–14 nights (matching '1–2 weeks' & '7-night hotel stay') or strictly 3 nights (matching 'Preferred vacation time is Feb 15–18, 2027')?",
+        "impact": "Determines single-city vs. dual-city routing, hotel total budget, and whether you overlap Lantern Festival (Feb 20) or Beijing Two Sessions (Mar 4–11).",
+        "defaultAssumed": "7-night benchmark (Mon Feb 22 – Mon Mar 1, 2027) plus 14-night Shanghai + Beijing option (Feb 15 – Mar 1, 2027)."
+      },
+      {
+        "id": "Q-02",
+        "priority": "Critical",
+        "topic": "Geographic Scope: Mainland China Only vs. Hong Kong / Macau SARs",
+        "question": "Are you planning Mainland China only (Shanghai / Beijing), or open to Hong Kong (219 MICHELIN listed / 77★) and Macau (59 / 21★), which require separate border/immigration crossings?",
+        "impact": "Hong Kong & Macau also serve as valid 'third regions' to unlock Mainland China's 240-hour (10-day) Visa-Free Transit rule!",
+        "defaultAssumed": "Deep-dive on Mainland China's top two MICHELIN clusters (Shanghai #1, Beijing #2), with all 12 Mainland + SAR clusters ranked in Overview."
+      },
+      {
+        "id": "Q-03",
+        "priority": "Critical",
+        "topic": "Passport Nationality & Visa / 240-Hour Transit Eligibility",
+        "question": "What passports do both adults hold, and will your flight routing include a third country/region (e.g., Tokyo, Seoul, Hong Kong, Taipei) or a direct round-trip?",
+        "impact": "Determines whether a standard Chinese Tourist Visa (L-Visa) is required before travel (apply 1–2 months prior) vs. eligible unilateral visa-free or 240-hour transit entry.",
+        "defaultAssumed": "Flagged NIA 240-hour transit requirements (57 countries, 65 ports, onward ticket to third country/region)."
+      },
+      {
+        "id": "Q-04",
+        "priority": "High",
+        "topic": "Total Budget Target & Dining vs. Hotel Split",
+        "question": "What is your target total budget for 2 adults (excluding/including flights), and how many 2★/3★ tasting dinners vs. 1★/Bib Gourmand meals do you want?",
+        "impact": "3★/2★ tasting menus run CN¥3,300–7,500+ for 2 adults per meal; balancing value hotels (US$955–1,302/wk) vs. flagship luxury hotels (US$1,917–3,097/wk) frees US$1,000–2,000+ for dining.",
+        "defaultAssumed": "Provided transparent value, upscale, and luxury tiers across all 10 hotels and 29 restaurants."
+      },
+      {
+        "id": "Q-05",
+        "priority": "High",
+        "topic": "Dietary Restrictions, Allergies & Wine Pairing Preferences",
+        "question": "Do either of the 2 adults have shellfish, seafood, nut, gluten, pork, or alcohol restrictions, or vegetarian preferences?",
+        "impact": "Fixed-course MICHELIN kitchens (e.g., 3★ Taian Table, 2★ Da Vittorio) require advance notice; Shanghai & Beijing also boast elite plant-based 2★ restaurants (Fu He Hui, King's Joy, Lamdre)!",
+        "defaultAssumed": "Included 3 elite vegetarian/plant-based 2★ restaurants alongside Cantonese, Jiangnan, Shanghainese, Chaoshan, Italian, and contemporary French kitchens."
+      },
+      {
+        "id": "Q-06",
+        "priority": "Medium",
+        "topic": "Departure City / Airport & Preferred High-Speed Rail Comfort Class",
+        "question": "Which origin airport are you flying from (for flight pricing & jet-lag buffer on Day 1), and would you take Beijing–Shanghai High-Speed Rail (4.5 hrs) or domestic flight if doing both cities?",
+        "impact": "International airfare varies sharply around Lunar New Year return peaks (Feb 13–17, 2027); arriving Feb 21–22 avoids peak inbound/outbound holiday fares.",
+        "defaultAssumed": "Airfare excluded as origin city was not provided."
+      },
+      {
+        "id": "Q-07",
+        "priority": "Medium",
+        "topic": "Cold-Weather Tolerance (Beijing Sub-Zero Mornings vs. Milder Shanghai)",
+        "question": "Are both travelers comfortable walking outdoor imperial sites in Beijing in late February (avg -5.5°C to 6.0°C, windchill on the Great Wall), or do you prefer Shanghai's milder maritime climate (avg 2.9°C to 9.9°C)?",
+        "impact": "Directly shapes city split, packing gear, and indoor museum vs. outdoor park ratios.",
+        "defaultAssumed": "Included full Feb & Mar climate normals and indoor winter anchors for both cities."
+      }
+    ],
+    "discoveryPlan": [
+      {
+        "phase": "Phase 1 — Immediate Scope Lock (Now / Within 48 Hours)",
+        "timeline": "Nov 2026 (T-90 days)",
+        "actions": [
+          "Answer Q-01 to Q-05 (confirm 7-night vs. 14-night dates, single vs. dual city, passport visa pathway, and dietary needs).",
+          "Reserve 1 refundable (Free Cancellation) hotel per city on Trip.com or official SynXis to lock in the verified low late-February rate before March inventory spills over."
+        ]
+      },
+      {
+        "phase": "Phase 2 — Documentation, Flights & Core Dining Strategy (60–75 Days Out)",
+        "timeline": "Dec 2026",
+        "actions": [
+          "Book international flights (check multi-city open-jaw into Shanghai PVG / out of Beijing PEK or vice-versa; verify third-country transit routing if relying on 240-hour visa-free transit).",
+          "Submit Chinese L-Visa application if required by nationality/routing.",
+          "Shortlist top 4–6 priority MICHELIN dining bookings and confirm direct reservation opening windows (WeChat Mini Programs, email, or hotel concierge—note The Langham, The PuLi & The PuXuan concierges can book Chinese-only phone/WeChat restaurants on guests' behalf!)."
+        ]
+      },
+      {
+        "phase": "Phase 3 — Flagship MICHELIN Reservations & Digital Setup (30–45 Days Out)",
+        "timeline": "Jan 2027",
+        "actions": [
+          "Book high-demand 3★/2★ tables (Taian Table releases monthly via official site/WeChat; Xin Rong Ji, Chao Shang Chao, King's Joy & Da Vittorio fill weeks ahead—confirm exact menu price & deposit rules directly when booking).",
+          "Install and passport-verify Alipay, WeChat Pay, Didi (inside Alipay/WeChat), Amap (Gaode Maps / Apple Maps works well in China), and purchase an international China eSIM with built-in roaming access."
+        ]
+      },
+      {
+        "phase": "Phase 4 — Rate Re-Check & Timed Attraction Tickets (7–15 Days Out)",
+        "timeline": "Early–Mid Feb 2027",
+        "actions": [
+          "T-15 days: Book Beijing North <-> Badaling Great Wall High-Speed Rail tickets (and Beijing–Shanghai Fuxing G-train if doing 2 cities) via Railway 12306 or Trip.com.",
+          "T-14 & T-7 days: Re-check live hotel prices per KAYAK's pricing study; rebook if cheaper, otherwise keep locked-in rate.",
+          "T-7 days (at 20:00 Beijing Time): Reserve mandatory real-name passport tickets for The Palace Museum (Forbidden City), National Museum of China, Yonghe Lama Temple (T-10 days), and Shanghai Museum special exhibitions."
+        ]
+      }
+    ]
+  },
+  "siteImprovements": [
+    {
+      "id": "IMP-01",
+      "title": "Bilingual Chinese Taxi & Concierge Address Cards (中文地址卡片)",
+      "priority": "High Impact — Quick Win",
+      "description": "Add a one-tap 'Show Driver (中文)' modal button on every hotel, restaurant, and attraction card displaying huge-font Chinese name, exact street address, district, and nearest Metro station so travelers can hand their phone to taxi drivers or paste directly into DiDi/Amap."
+    },
+    {
+      "id": "IMP-02",
+      "title": "Interactive Transit Isochrone Map (Leaflet + OpenStreetMap)",
+      "priority": "High Impact",
+      "description": "Plot all 10 hotels, 29 MICHELIN restaurants, and 16 attractions on an interactive city switcher map with clickable hotel pins showing 15-min, 30-min, and 60-min Metro reachability rings."
+    },
+    {
+      "id": "IMP-03",
+      "title": "Live USD ↔ CNY Currency Toggle & Total Trip Budget Calculator",
+      "priority": "High Impact",
+      "description": "Let users select 1 hotel + pick specific restaurants & activities via checkboxes to dynamically calculate an itemized 2-adult trip total in both CNY and USD (with transparent FX rate stamp and explicit exclusion of unverified menu prices)."
+    },
+    {
+      "id": "IMP-04",
+      "title": "Monday-Closure-Safe Day-by-Day Itinerary Planner & .ICS Calendar Export",
+      "priority": "Medium-High Impact",
+      "description": "Automatically warn users if they schedule Forbidden City, National Museum, Yu Garden, or West Bund Museum on a Monday (or Shanghai Museum East on a Tuesday), and generate downloadable `.ics` reminders for T-30 MICHELIN bookings and T-7 20:00 BJT Forbidden City ticket drops."
+    },
+    {
+      "id": "IMP-05",
+      "title": "Automated Weekly Price & Link Health GitHub Action",
+      "priority": "Medium Impact — Engineering Quality",
+      "description": "Add a scheduled GitHub Actions workflow checking HTTP status of all official restaurant/museum URLs and logging historical hotel price snapshots in `/data/price-history.json` to visualize actual price movement from Nov 2026 through Feb 2027."
+    }
+  ],
+  "flaggedForReview": [
+    {
+      "id": "FLG-01",
+      "severity": "High",
+      "category": "Prompt Contradiction",
+      "item": "Trip Duration ('1–2 weeks' & '7-night hotel total') vs. 'Preferred vacation time: Feb 15–18, 2027' (3 nights)",
+      "status": "needs review",
+      "details": "The user prompt simultaneously specifies a 1–2 week trip (and asks for 7-night hotel totals) while naming Feb 15–18, 2027 (only 3 nights) as preferred vacation time. All hotel pricing tables standardize on 7 nights (Mon Feb 22 – Mon Mar 1, 2027, plus Feb 15–22 benchmark) until the user confirms exact length."
+    },
+    {
+      "id": "FLG-02",
+      "severity": "High",
+      "category": "Calendar & Event Timing",
+      "item": "2027 Beijing 'Two Sessions' (NPC & CPPCC) Exact Closing Date & Security Closures",
+      "status": "needs review",
+      "details": "State Council precedent sets Two Sessions opening on March 4–5 annually, typically lasting ~7–10 days, but exact 2027 closing date and any temporary Tian'anmen Square / National Museum / Forbidden City security closures are announced closer to February 2027. Strongly recommend scheduling Beijing before March 1, 2027."
+    },
+    {
+      "id": "FLG-03",
+      "severity": "High",
+      "category": "Restaurant Data — Missing Official Menu Prices (21 of 29 Restaurants)",
+      "status": "needs review",
+      "details": "Only 8 of 29 audited restaurants publish explicit 2026 numeric menu prices on their official websites/PDFs (Taian Table, Bao Li Xuan, Da Vittorio, T'ang Court, Imperial Treasure [a la carte], Yong Yi Ting [dim sum], Jade on 36, Trb Hutong, Fu Chun Ju [a la carte] — note 2 of those are a la carte ranges without fixed tasting set totals). For the remaining 21 venues (including 3★ Chao Shang Chao, 3★ Xin Rong Ji, 2★ Bombana, 2★ Canton 8, 2★ Fu He Hui, 2★ Ji Pin Court, 2★ King's Joy, 2★ Lamdre, 2★ Jingji, and Bib Gourmand/Selected venues), exact 2-adult CNY totals are intentionally left blank rather than guessed; confirm directly via WeChat Mini Program, Dianping, or hotel concierge when booking."
+    },
+    {
+      "id": "FLG-04",
+      "severity": "Medium",
+      "category": "Restaurant Data — Missing Official Hours / Websites / Social Links",
+      "status": "needs review",
+      "details": "Several mainland Chinese MICHELIN venues operate primarily through WeChat Mini Programs rather than public English websites or Western social media (Instagram/TikTok/YouTube). Specifically, `daysOpen`/`hours` were not published on guide.michelin.com or an official English site for 13 venues (Canton 8, Ji Pin Court, Huaiyang Delights, Vivant, 157 Shi Fang, Trine, Chao Shang Chao, Lamdre, Jingji, Sheng Yong Xing, Chef 1996, Old Tower, No. 69 Fangzhuanchang, Under Clouds Green; plus Yuge daysOpen & Monsieur Dior lunch/dinner hours). All unverified cells are left blank and flagged transparently."
+    },
+    {
+      "id": "FLG-05",
+      "severity": "Medium",
+      "category": "MICHELIN Guide Live Updates & Recent Changes",
+      "status": "verified — watch closely",
+      "details": "Three notable 2026–2027 MICHELIN updates verified during audit: (1) King's Joy (Beijing) moved from 3★ to 2★ in the Oct 2026 Beijing 2027 Guide; (2) 157 Shi Fang (Shanghai Bib Gourmand) relocated to IM Shanghai, 1398 Kaixuan Road; (3) Shanghai's live guide.michelin.com index currently reflects 153 venues vs. 156 at the Oct 2025 ceremony due to mid-year closures—and the 2027 Shanghai MICHELIN Guide ceremony is expected around late 2026 / before Feb 2027! Re-verify star updates right before booking."
+    },
+    {
+      "id": "FLG-06",
+      "severity": "Medium",
+      "category": "Hotel Direct Brand Engine Rate Verification",
+      "status": "needs review",
+      "details": "Official brand direct live rates were confirmed on be.synxis.com for The PuLi Hotel & Spa (CN¥2,533/nt excl. tax) and The PuXuan Hotel & Spa (CN¥2,468/nt excl. tax w/ breakfast). Direct web booking SPAs for IHG (Holiday Inn, InterContinental), Radisson (Radisson Blu, Park Plaza), Hilton (Hilton Wangfujing), Hyatt (Grand Hyatt), Langham, and Shangri-La (JEN Beijing) either blocked automated scraping or returned HTTP 500; therefore all 10 hotels carry verified live tax-inclusive 7-night Feb 22–Mar 1, 2027 quotes from Trip.com (Asia's primary China OTA) alongside official hotel room-spec URLs. Users should cross-check brand member direct rates (IHG One Rewards, Hilton Honors, World of Hyatt, Shangri-La Circle) before final payment."
+    },
+    {
+      "id": "FLG-07",
+      "severity": "Medium",
+      "category": "Hotel Renovation Notice",
+      "status": "verified — note for traveler",
+      "details": "The PuLi Hotel and Spa (Shanghai) official SynXis booking notice states that phased 'PuLi Enhancement' space refinements began in October 2025 while the hotel remains fully operational. Confirm completion status with the hotel before finalizing a Feb 2027 luxury booking."
+    },
+    {
+      "id": "FLG-08",
+      "severity": "Medium",
+      "category": "Activity Transit Threshold Nuance (Badaling Great Wall)",
+      "status": "needs review",
+      "details": "While the Beijing–Zhangjiakou High-Speed Rail train itself reaches Badaling Great Wall Station in just 20–27 minutes from Beijing North or Qinghe Station, total door-to-door transit from central Wangfujing/CBD hotels including Metro transfer + 15-minute railway security buffer averages ~60–70 minutes—borderline relative to the strict <=60-minute target. Included transparently because it is by far the fastest Great Wall access from central Beijing. Official 2027 Badaling cable car pricing was not directly verified on badaling.cn and is excluded from base CN¥70 wall admission."
+    },
+    {
+      "id": "FLG-09",
+      "severity": "Low",
+      "category": "Rotating 2027 Exhibition Pricing & Night Cruise Timetables",
+      "status": "needs review",
+      "details": "West Bund Museum's verified 'Computer Worlds' exhibition closes Feb 14, 2027, so late-Feb/Mar 2027 exhibition ticket fees (historically CN¥60–120/adult) and UCCA 798 temporary show pricing will depend on the new spring 2027 exhibitions. Similarly, confirm exact Feb–Mar 2027 Huangpu River evening cruise sailing times day-of on the official '浦江游览' WeChat Mini Program."
+    },
+    {
+      "id": "FLG-10",
+      "severity": "Low",
+      "category": "MICHELIN Cluster Breakdown (Zhejiang / Jiangsu Tri-Region Release & SAR Green Stars)",
+      "status": "needs review",
+      "details": "Official MICHELIN tri-region release published Zhejiang/Hangzhou's 142 total listed & 13 starred restaurants but aggregated Bib Gourmand & Selected counts across Shanghai+Jiangsu+Zhejiang (409 total); Zhejiang-only Bib/Selected sub-counts and HK/Macau Green Star sub-counts are left blank rather than inferred."
+    }
+  ]
+}

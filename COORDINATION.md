@@ -23,8 +23,8 @@
 | `T-02` | Research & verify Michelin-starred and Michelin Guide-listed restaurants (Shanghai & Beijing clusters), total pricing for 2 adults, hours/exceptions, official links, and social media links (YouTube/TikTok/Instagram) | `done` | `session-256b850d` | `data/restaurants.json` | 2026-11-25 |
 | `T-03` | Research & verify hotels (private bath, queen+ bed, amenities, transit ≤1 hr to Michelin clusters), rank by Michelin reachability, verify 7-night pricing for Feb–Mar 2027 dates & optimal booking window | `done` | `session-256b850d` | `data/hotels.json` | 2026-11-25 |
 | `T-04` | Research & verify activities & attractions within ≤1 hr transit of hotel clusters, official hours/exceptions, 2-adult admission prices, official links, and social media links | `done` | `session-256b850d` | `data/activities.json` | 2026-11-25 |
-| `T-05` | Compile Executive Summary, Missing Info / Decision Questions & Discovery Plan, Site Improvement Suggestions, and Flagged for Review audit register | `in progress` | `session-256b850d` | `data/governance.json` | 2026-11-25 |
-| `T-06` | Build mobile-friendly GitHub Pages dashboard (landing page + category subpages, searchable/filterable tables, zero broken links, line-by-line verification pass) | `unclaimed` | — | `index.html`, `pages/*.html`, `assets/*`, `.nojekyll` | 2026-11-25 |
+| `T-05` | Compile Executive Summary, Missing Info / Decision Questions & Discovery Plan, Site Improvement Suggestions, and Flagged for Review audit register | `done` | `session-256b850d` | `data/governance.json` | 2026-11-25 |
+| `T-06` | Build mobile-friendly GitHub Pages dashboard (landing page + category subpages, searchable/filterable tables, zero broken links, line-by-line verification pass) | `in progress` | `session-256b850d` | `index.html`, `pages/*.html`, `assets/*`, `.nojekyll` | 2026-11-25 |
 | `T-07` | Final integration audit, link & schema validation, live preview verification, and GitHub Pages publication | `unclaimed` | — | `README.md`, `COORDINATION.md`, site root | 2026-11-25 |
 
 ---
@@ -60,6 +60,8 @@
 - **`T-04` Completed (`data/activities.json`):**
   - Verified 16 iconic activities & attractions (8 Shanghai, 8 Beijing) with official off-season winter (Dec–Mar / Nov–Mar) 2-adult CNY admission prices, exact opening hours, weekly Monday/Tuesday closure patterns, and passport/booking rules directly from primary municipal/venue portals (`yugarden.com.cn`, `shanghaimuseum.net`, `english.shanghai.gov.cn`, `meet-in-shanghai.net`, `westbund.com`, `english.beijing.gov.cn`).
   - Explicitly flagged nuances: `Badaling Great Wall` HSR train ride is only 20–27 min from Beijing North/Qinghe, but total door-to-door from downtown hotels is ~60–70 min incl. station security (flagged transparently); `West Bund Museum` rotating post-Feb 14, 2027 Centre Pompidou show fee and `Badaling` cable car fee left flagged rather than guessed. Verified YouTube/Instagram links attached only where directly verified.
+- **`T-05` Completed (`data/governance.json`):**
+  - Consolidated Executive Summary (3 itinerary options: 7-night Shanghai Feb 22–Mar 1, 14-night Dual-City Shanghai Feb 15–22 + Beijing Feb 22–Mar 1, and 3-night sprint if Feb 15–18 is hard-locked), verified 2-adult 7-night cost snapshots, 7 prioritized Missing Info / Decision Questions (`Q-01`–`Q-07`), 4-phase Discovery Plan, 5 high-impact Site Improvement Suggestions (`IMP-01`–`IMP-05`), and 10 comprehensive Flagged for Review audit entries (`FLG-01`–`FLG-10`) synced across all 4 upstream JSON files.
 
 ---
 
