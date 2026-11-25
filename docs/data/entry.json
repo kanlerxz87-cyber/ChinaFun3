@@ -1,0 +1,48 @@
+{
+  "title": "Entry rules for a US passport holder",
+  "intro": "Rules below are taken from the National Immigration Administration (NIA) policy pages. Items marked unverified were not confirmed on an official page.",
+  "columns": [
+    {"key": "rule", "label": "Rule"},
+    {"key": "us_status", "label": "Applies to US citizens?"},
+    {"key": "details", "label": "Details"},
+    {"key": "trip_fit", "label": "Fit for this trip"},
+    {"key": "source", "label": "Source (official)", "type": "source"}
+  ],
+  "rows": [
+    {
+      "rule": "240-hour visa-free TRANSIT",
+      "us_status": "Yes — 'United States' is on the list of 57 countries",
+      "details": "Ordinary passport; enter and leave through one of 65 designated ports in 24 provincial-level regions; stay up to 10 days (240 hours), counted from 00:00 the day after arrival; must hold onward tickets with confirmed seats to a third country or region. Activities allowed include travel, business, visits and family reunions. Work, study and news reporting need prior approval.",
+      "trip_fit": "Works only if the trip is a transit: arrive from one place, leave for a third place. A 10-day stay is the maximum, so 7 nights fits and 14 nights does not.",
+      "source": {"label": "NIA — Visa-Free Transit Policies (20 Aug 2026)", "url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html"}
+    },
+    {
+      "rule": "Hainan Province 30-day visa-free entry",
+      "us_status": "Yes — 'the United States' is on the list of 61 countries",
+      "details": "Ordinary passport; stay up to 30 days in Hainan Province for tourism, business, visits, family visits, medical treatment, conferences, sports events. Work and study excluded. All open ports in Hainan are eligible.",
+      "trip_fit": "A possible alternative: a Hainan-only trip (for example Sanya or Haikou) needs no visa under this policy. It does not cover Shanghai or any other mainland city.",
+      "source": {"label": "NIA — Regional Visa-Free Entry Policies (20 Aug 2026)", "url": "https://en.nia.gov.cn/n147418/n147463/c180637/content.html"}
+    },
+    {
+      "rule": "Nationwide 30-day unilateral visa-free entry",
+      "us_status": "UNVERIFIED — secondary sources say the US is NOT on this list",
+      "details": "Not checked on an official NIA page in this session. Must be confirmed before relying on it.",
+      "trip_fit": "If the US is not on this list, a normal Shanghai tourist trip needs a Chinese tourist (L) visa.",
+      "source": {"label": "Not yet verified on an official page", "url": null}
+    },
+    {
+      "rule": "Chinese tourist (L) visa",
+      "us_status": "Required for a normal sightseeing trip if the 240-hour transit or Hainan rule does not apply (secondary sources)",
+      "details": "Fee, processing time and document list are NOT verified here and are left blank. Check the embassy or consulate that serves your area.",
+      "trip_fit": "Start the visa process early if this route is needed.",
+      "source": {"label": "Not yet verified on an official page", "url": null}
+    },
+    {
+      "rule": "Shanghai inside the 240-hour permitted area",
+      "us_status": "UNVERIFIED in text — the list of 24 permitted areas is an image on the official NIA page",
+      "details": "Secondary sources list Shanghai as one of the 24 regions. Not confirmed from the official page text.",
+      "trip_fit": "Must be confirmed before choosing a transit itinerary.",
+      "source": {"label": "NIA — Visa-Free Transit Policies (map image not readable)", "url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html"}
+    }
+  ]
+}

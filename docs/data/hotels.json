@@ -1,0 +1,26 @@
+{
+  "title": "Hotels (requirements and status)",
+  "intro": "No hotel row has been verified yet. Room rates for February 2027 cannot be checked from this environment: booking sites are outside the sandbox's allowed hosts, and prices for dates this far out are not published. Nothing below is filled in from memory.",
+  "columns": [
+    {"key": "hotel", "label": "Hotel"},
+    {"key": "location", "label": "Location / district"},
+    {"key": "minutes_to_michelin", "label": "Travel time to Michelin cluster (≤60 min)"},
+    {"key": "bed", "label": "Queen or larger bed"},
+    {"key": "private_bath", "label": "Private bathroom"},
+    {"key": "total_7_nights", "label": "Total for 7 nights (2 adults)"},
+    {"key": "cheapest_booking_window", "label": "Cheapest booking time"},
+    {"key": "source", "label": "Source (official)", "type": "source"}
+  ],
+  "rows": [],
+  "requirements": [
+    "Private bathroom in every room booked.",
+    "Queen or larger bed (or equivalent).",
+    "Two adults.",
+    "Total price for a 7-night stay, in the same currency for every hotel.",
+    "Travel time of 60 minutes or less by subway or bus to the activities and to the Michelin restaurants.",
+    "Ranked by price, location and amenities, and by the number of Michelin restaurants within 60 minutes by subway or bus."
+  ],
+  "leads": [
+    {"name": "Bvlgari Hotel Shanghai", "status": "UNVERIFIED LEAD — a third-party article says the restaurant Bao Li Xuan (two stars) is inside this hotel. Not confirmed on the hotel's or Michelin's site. No room, bed, bath or price data has been checked.", "source": "https://us.trip.com/guide/food/shanghai-restaurant.html (third-party)"}
+  ]
+}

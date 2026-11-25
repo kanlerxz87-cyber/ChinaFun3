@@ -1,0 +1,26 @@
+{
+  "title": "2027 public holidays and make-up workdays (China)",
+  "intro": "All dates below come from the official State Council General Office notice (国办发明电〔2026〕10号, 5 Nov 2026). Weekdays were computed with a calendar check.",
+  "columns": [
+    {"key": "holiday", "label": "Holiday"},
+    {"key": "off_days", "label": "Days off"},
+    {"key": "workdays", "label": "Make-up workdays"},
+    {"key": "note", "label": "Relevance to Feb 15–18, 2027 trip"},
+    {"key": "source", "label": "Source (official)", "type": "source"}
+  ],
+  "rows": [
+    {"holiday": "New Year's Day", "off_days": "1 Jan (Fri) – 3 Jan (Sun), 3 days", "workdays": "None", "note": "Outside trip window.", "source": {"label": "State Council notice", "url": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm"}},
+    {"holiday": "Spring Festival (Chinese New Year)", "off_days": "5 Feb (Fri, New Year's Eve) – 13 Feb (Sat, 1st lunar month day 8), 9 days", "workdays": "Sun 31 Jan and Sun 14 Feb", "note": "Holiday ends two days before the preferred trip. Sunday 14 Feb is a working day, so Mon 15 Feb is a normal working day.", "source": {"label": "State Council notice", "url": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm"}},
+    {"holiday": "Qingming Festival", "off_days": "3 Apr (Sat) – 5 Apr (Mon), 3 days", "workdays": "None", "note": "Outside trip window.", "source": {"label": "State Council notice", "url": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm"}},
+    {"holiday": "Labour Day", "off_days": "1 May (Sat) – 5 May (Wed), 5 days", "workdays": "Sat 8 May", "note": "Outside trip window.", "source": {"label": "State Council notice", "url": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm"}},
+    {"holiday": "Dragon Boat Festival", "off_days": "9 Jun (Wed), 1 day", "workdays": "None", "note": "Outside trip window.", "source": {"label": "State Council notice", "url": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm"}},
+    {"holiday": "Mid-Autumn Festival", "off_days": "15 Sep (Wed), 1 day", "workdays": "None", "note": "Outside trip window.", "source": {"label": "State Council notice", "url": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm"}},
+    {"holiday": "National Day", "off_days": "1 Oct (Fri) – 7 Oct (Thu), 7 days", "workdays": "Sun 26 Sep and Sat 9 Oct", "note": "Outside trip window.", "source": {"label": "State Council notice", "url": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm"}}
+  ],
+  "checks": [
+    {"item": "Sun 15 Feb 2027 is NOT the date; Mon 15 Feb 2027 is a Monday", "result": "Verified with calendar check; 14 Feb 2027 is a Sunday, matching the official make-up workday."},
+    {"item": "Lunar New Year's Day = 6 Feb 2027 (Sat)", "result": "Derived from the notice (13 Feb = 1st lunar month day 8). Not stated explicitly in the notice."},
+    {"item": "Lantern Festival = 20 Feb 2027", "result": "UNVERIFIED — found only on third-party sites; not in the State Council notice."},
+    {"item": "Chunyun (rail rush) dates for early 2027", "result": "UNVERIFIED — not yet announced per third-party sources."}
+  ]
+}

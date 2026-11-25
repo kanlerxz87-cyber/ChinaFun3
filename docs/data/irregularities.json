@@ -1,0 +1,197 @@
+{
+  "title": "Repo review and flagged irregularities",
+  "intro": "Each item lists what was found and the sources to check manually. Severity: High = could change a decision; Medium = needs a check before use; Low = housekeeping.",
+  "repo_facts": [
+    {
+      "item": "Repository",
+      "value": "kanlerxz87-cyber/ChinaFun3 (GitHub). Branch for this session: arena/3c3c3c5e-chinafun3 (based on main, commit fa1f9fa)."
+    },
+    {
+      "item": "Files at start",
+      "value": "README.md only (11 bytes: '# ChinaFun3', no trailing newline). No code, no site, no data, no license, no CI."
+    },
+    {
+      "item": "Git history",
+      "value": "One commit: 'Initial commit' (fa1f9fa)."
+    },
+    {
+      "item": "Coordination file",
+      "value": "COORDINATION.md did not exist; created by this session (task board)."
+    }
+  ],
+  "columns": [
+    {
+      "key": "id",
+      "label": "ID"
+    },
+    {
+      "key": "severity",
+      "label": "Severity"
+    },
+    {
+      "key": "item",
+      "label": "Irregularity"
+    },
+    {
+      "key": "detail",
+      "label": "What was found and what to check"
+    },
+    {
+      "key": "source",
+      "label": "Source to review",
+      "type": "source"
+    }
+  ],
+  "rows": [
+    {
+      "id": "I-01",
+      "severity": "Low",
+      "item": "README is a placeholder",
+      "detail": "11 bytes, one heading. No purpose, owner, license or how-to. Fix: add a description and a link to this site.",
+      "source": {
+        "label": "Repo README on main",
+        "url": "https://github.com/kanlerxz87-cyber/ChinaFun3/blob/main/README.md"
+      }
+    },
+    {
+      "id": "I-02",
+      "severity": "Low",
+      "item": "Branch-naming rule conflict",
+      "detail": "The task text asks for branches named session-<id>/<task>. The platform rule says to work only on the assigned branch. This session followed the assigned branch.",
+      "source": {
+        "label": "COORDINATION.md (this repo)",
+        "url": "https://github.com/kanlerxz87-cyber/ChinaFun3/blob/arena/3c3c3c5e-chinafun3/COORDINATION.md"
+      }
+    },
+    {
+      "id": "I-03",
+      "severity": "High",
+      "item": "Preferred dates vs. 7-night requirement",
+      "detail": "The preferred stay 15–18 Feb 2027 is 3 nights. The stated requirement is a 7-night price. Options: 15–22 Feb (7 nights) or another 7-night window. Needs your decision.",
+      "source": {
+        "label": "Calendar check (see calendar page)",
+        "url": null
+      }
+    },
+    {
+      "id": "I-04",
+      "severity": "High",
+      "item": "Monday 15 Feb 2027 closes two main attractions",
+      "detail": "Shanghai Museum (People's Square) is closed Mondays except public holidays. Yu Garden is closed Mondays except national holidays. 15 Feb 2027 is a Monday, so do these on 16–18 Feb.",
+      "source": {
+        "label": "Shanghai Museum notice",
+        "url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/I00004797"
+      }
+    },
+    {
+      "id": "I-05",
+      "severity": "High",
+      "item": "US entry is not a general visa-free tourist entry",
+      "detail": "The 240-hour transit rule requires an onward ticket to a third country or region, with a 10-day maximum. A normal sightseeing trip needs a Chinese L visa unless Hainan's 30-day rule applies. Verify with the embassy before booking anything.",
+      "source": {
+        "label": "NIA — Visa-Free Transit Policies",
+        "url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html"
+      }
+    },
+    {
+      "id": "I-06",
+      "severity": "High",
+      "item": "Yu Garden hours and price conflict across websites",
+      "detail": "Third-party sites show 8:30–17:00 and ¥40 (or ¥60 at Spring Festival). The official Yu Garden page shows 9:00–16:30 and ¥30 from 1 Dec to 31 Mar, plus ¥40 from 1 Apr to 30 Jun and 1 Sep to 30 Nov. The official page is used here.",
+      "source": {
+        "label": "Yu Garden official visitor information",
+        "url": "https://www.yugarden.com.cn/page/articleView/message.html"
+      }
+    },
+    {
+      "id": "I-07",
+      "severity": "High",
+      "item": "Holiday length: third-party error",
+      "detail": "publicholidaycalendar.com says China's Spring Festival holiday is 5–10 Feb 2027 (6 days). The official State Council notice says 5–13 Feb (9 days). The official notice is used here.",
+      "source": {
+        "label": "State Council notice (official)",
+        "url": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm"
+      }
+    },
+    {
+      "id": "I-08",
+      "severity": "Medium",
+      "item": "Michelin counts differ across sites",
+      "detail": "Third-party sites show Shanghai totals of 49, 50 or 51 starred restaurants and 11 or 12 two-star restaurants. The official release names 12 two-star restaurants (1 three-star). The 1-star count (38) is derived from the release (35 retained + 3 new).",
+      "source": {
+        "label": "MICHELIN press release (official)",
+        "url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang"
+      }
+    },
+    {
+      "id": "I-09",
+      "severity": "Medium",
+      "item": "Chinese names differ across sources",
+      "detail": "Huaiyang Delights is 三月醉淮扬 on one site and 扬州宴 on another. Amazing Chinese Cuisine appears as 菁禧会, 菁禧荟 and 成隆行蟹王府. Imperial Treasure and Yu Bao Xuan are swapped on one site. Confirm names on the Michelin Guide site before booking.",
+      "source": {
+        "label": "MICHELIN press release (English names only)",
+        "url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang"
+      }
+    },
+    {
+      "id": "I-10",
+      "severity": "Medium",
+      "item": "Shanghai Museum closed-day conflict between branches",
+      "detail": "An official notice for the East museum says closed Tuesdays (2024; the page was seen in search results and not opened directly). The People's Square notice says closed Mondays (Aug 2025, opened directly). Each branch needs its own check; the People's Square notice must be re-checked close to the trip.",
+      "source": {
+        "label": "Shanghai Museum East notice (official, 2024)",
+        "url": "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/I00004684"
+      }
+    },
+    {
+      "id": "I-11",
+      "severity": "Medium",
+      "item": "Hainan 30-day rule not checked for other provinces",
+      "detail": "The official Hainan page is verified. The nationwide 30-day list (where the US is reportedly NOT included) was not fetched from NIA.",
+      "source": {
+        "label": "NIA — Regional Visa-Free Entry Policies",
+        "url": "https://en.nia.gov.cn/n147418/n147463/c180637/content.html"
+      }
+    },
+    {
+      "id": "I-12",
+      "severity": "Medium",
+      "item": "Michelin restaurant guide pages could not be opened",
+      "detail": "guide.michelin.com returned errors from this environment. Hours, prices, district and booking links for all restaurants are therefore blank until checked manually.",
+      "source": {
+        "label": "Michelin Guide (Shanghai)",
+        "url": "https://guide.michelin.com/en/mainland-china/shanghai"
+      }
+    },
+    {
+      "id": "I-13",
+      "severity": "Medium",
+      "item": "Hotel prices cannot be verified from here",
+      "detail": "Booking sites are not reachable from this environment, and Feb 2027 rates are not published. The hotel table is empty by design.",
+      "source": {
+        "label": "Not applicable",
+        "url": null
+      }
+    },
+    {
+      "id": "I-14",
+      "severity": "Low",
+      "item": "Lantern Festival date is unverified",
+      "detail": "20 Feb 2027 appears only on third-party sites. The official notice does not list it.",
+      "source": {
+        "label": "Not verified on an official page",
+        "url": null
+      }
+    },
+    {
+      "id": "I-15",
+      "severity": "Low",
+      "item": "Shanghai not confirmed in the 240-hour area list",
+      "detail": "The official page shows the 24 permitted regions as an image that could not be read.",
+      "source": {
+        "label": "NIA — Visa-Free Transit Policies",
+        "url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html"
+      }
+    }
+  ]
+}
