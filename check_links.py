@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Verify every internal link/href in the generated pages resolves to a file."""
 import re, sys, pathlib
-root = pathlib.Path(__file__).parent
+root = pathlib.Path(__file__).parent / 'plan'
 pages = sorted(root.glob('*.html'))
 bad = []
 for p in pages:

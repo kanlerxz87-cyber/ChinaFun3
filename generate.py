@@ -11,7 +11,7 @@ from collections import Counter
 
 import data.dataset as D
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).parent / "plan"
 NAV = [
     ("index.html", "Dashboard"),
     ("hotels.html", "Hotels"),
@@ -863,6 +863,8 @@ search-result snippets alone unless the underlying page was opened.</p>
 
 
 if __name__ == "__main__":
+    ROOT.mkdir(exist_ok=True)
+    (ROOT / "assets").mkdir(exist_ok=True)
     pages = {
         "index.html": build_index,
         "hotels.html": build_hotels,
