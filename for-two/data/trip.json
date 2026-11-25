@@ -1,0 +1,1071 @@
+{
+  "checked": "2026-11-25",
+  "sources": [
+    {
+      "id": "michelin-sh",
+      "title": "MICHELIN · Shanghai, Jiangsu & Zhejiang 2026",
+      "url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang",
+      "evidence": "Shanghai: 156 restaurants, 35 cuisines. Taian Table retains three stars. T’ang Court promoted to two. Fu He Hui and Bao Li Xuan retain two. 35 existing one-star restaurants plus three new; nine retained two-star plus three promoted.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "51 Shanghai starred restaurants is arithmetic: 1 + 12 + 38. Not 77; 77 is the three-region total."
+    },
+    {
+      "id": "michelin-gz",
+      "title": "MICHELIN · Guangzhou & Shenzhen 2026",
+      "url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-guangzhou-shenzhen-2026-joint-release-marks-shenzhen-s-unprecedented-debut",
+      "evidence": "Guangzhou retained 20 starred restaurants: three two-star and 17 one-star. Selection is 117 restaurants. Shenzhen is a separate selection.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Comparison of guide coverage, not affordability, weather or transport."
+    },
+    {
+      "id": "taian",
+      "title": "MICHELIN · Taian Table",
+      "url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/taian-table",
+      "evidence": "Three-star icons; Innovative; 101–102, Building No. 1, Garden Office, No.161, Lane 465, Zhenning Road, Changning. Official restaurant link: sh.taian-table.cn.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Opening schedule not exposed in the inspected relevant chunks; no numeric meal total."
+    },
+    {
+      "id": "taian-site",
+      "title": "Taian Table · current menu link",
+      "url": "https://sh.taian-table.cn/",
+      "evidence": "Seasonal tasting menu; links Menu-No.55.pdf.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": ""
+    },
+    {
+      "id": "taian-menu",
+      "title": "Taian Table · Menu 55",
+      "url": "https://sh.taian-table.cn/wp-content/uploads/2026/10/Menu-No.55.pdf",
+      "evidence": "Mandatory seasonal ten-course degustation; optional add-ons. No base menu price in extracted text.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Add-on prices must not be mistaken for the full tasting-menu price. Media prices excluded."
+    },
+    {
+      "id": "tang",
+      "title": "The Langham · T’ang Court",
+      "url": "https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/",
+      "evidence": "2026 two Michelin stars. Lunch 11:30–14:00 daily; dinner 17:30–21:00 daily; also states “Off on Monday”. Fifth floor.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Contradictory daily vs Monday-closed wording. Hours recorded as published, days unresolved."
+    },
+    {
+      "id": "tang-menu",
+      "title": "T’ang Court · official set-menu PDF",
+      "url": "https://www.langhamhotels.com/content/dam/langhamhotels/tlshx-pdfs/tang-court/2026/seasonal-set-menu-selection-2026.pdf",
+      "evidence": "Classic dim sum lunch set for TWO ¥888; all-day set for TWO ¥2,288. “All prices are in Chinese Yuan and inclusive of service charge and taxes.”",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Current published menu, not confirmed for February/March 2027. Drinks not listed as included."
+    },
+    {
+      "id": "fu",
+      "title": "MICHELIN · Fu He Hui",
+      "url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/fu-he-hui",
+      "evidence": "Two stars; vegetarian; 1037 Yuyuan Road, Changning; Mon–Sun 11:00–13:00 and 17:30–21:00. Only seasonal set menus.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "MICHELIN is the official guide publisher, not the restaurant operator. No numeric total verified."
+    },
+    {
+      "id": "yi",
+      "title": "MICHELIN · Yi Long Court",
+      "url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/yi-long-court",
+      "evidence": "One star; Cantonese; 2F, Peninsula Hotel, 32 Zhongshan Dong Yi Road, Huangpu. Mon–Sun 11:30–14:30 and 18:00–22:30.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Old operator URL redirected; canonical yi-site URL subsequently found and fetched. Guide supplies weekday schedule."
+    },
+    {
+      "id": "bao",
+      "title": "MICHELIN · Bao Li Xuan",
+      "url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/bao-li-xuan",
+      "evidence": "Two stars; Cantonese; 3F, Chamber of Commerce Shanghai, Lane 108, North Shanxi Road, Jingan; restaurant of Bvlgari Hotel in adjacent century-old building.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": ""
+    },
+    {
+      "id": "bao-site",
+      "title": "Bvlgari · Bao Li Xuan",
+      "url": "https://www.bulgarihotels.com/en-US/shanghai/dining/bao-li-xuan",
+      "evidence": "Two-star Chinese dining. Lunch 11:30–14:00; dinner 17:30–22:00. No weekday schedule in inspected text. Links menu PDF.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Do not infer that the hours apply seven days a week."
+    },
+    {
+      "id": "bao-menu",
+      "title": "Bao Li Xuan · official menu PDF",
+      "url": "https://www.bulgarihotels.com/mgnl/dam/jcr:b07dc4e7-f129-4516-ac0d-4cd860fc3c9b/bvlgari-hotel-shanghai-bao-li-xuan-menu-en.pdf",
+      "evidence": "Autumn set menu CNY1788 per person. Beverage pairing CNY800 per person. All prices include service fee and tax.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Two-person food total calculated as 1788 × 2 = 3576. Optional pairing adds 1600, giving 5176. Autumn menu is NOT a 2027 winter quote."
+    },
+    {
+      "id": "polux",
+      "title": "MICHELIN · Polux",
+      "url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/polux",
+      "evidence": "Bib Gourmand icon; French; No. 5, Xintiandi Beili, Lane 181 Taicang Road, Huangpu; daily 11:00–22:00.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Bib Gourmand is not a Michelin star."
+    },
+    {
+      "id": "polux-site",
+      "title": "Polux · official restaurant website",
+      "url": "https://www.poluxbypp.com/",
+      "evidence": "No.5 Lane 181 Taicang Road. Daily 11AM–10PM. Official Instagram link poluxbypp. Numeric menu items and Express Lunch 160 shown.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Currency and tax/service treatment were not established in inspected text; no all-in two-person price asserted."
+    },
+    {
+      "id": "sir",
+      "title": "MICHELIN · Sir Elly’s",
+      "url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/sir-elly-s",
+      "evidence": "Listed without star or Bib icon; Italian. 13F Peninsula Hotel, 32 Zhongshan Dong Yi Road. Wed–Sun 18:00–22:30; Mon/Tue closed.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Guide-listed / Selected, not starred. Old media or historical descriptions do not override the current guide."
+    },
+    {
+      "id": "langham-room",
+      "title": "The Langham · Deluxe Room",
+      "url": "https://www.langhamhotels.com/en/the-langham/shanghai/stay/rooms/deluxe-room/",
+      "evidence": "King bed, 1.8 metres; three guests; 40 m²; marble bathroom with separate rain shower, heated bathroom floor, wired/wireless Internet, coffee machine.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Index lists 40–43 m² while detailed room page lists 40 m²; detailed value used. Explicit exclusive/private-bath wording not obtained."
+    },
+    {
+      "id": "langham-index",
+      "title": "The Langham · rooms index",
+      "url": "https://www.langhamhotels.com/en/the-langham/shanghai/stay/",
+      "evidence": "Deluxe room: 40–43 m². King or two single-bed alternatives described. Official booking link hotel 28382.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": ""
+    },
+    {
+      "id": "pen-room",
+      "title": "The Peninsula · Deluxe Room",
+      "url": "https://www.peninsula.com/en/shanghai/luxury-hotel-room-suite-types/deluxe-room",
+      "evidence": "King / Twin; maximum two adults; 54–59 m²; marble bathroom with in-built TV and mood lighting; separate walk-in closet.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Select King, not Twin. Engine says sleeps 3; room page says two adults maximum. Two adults fit both. Private exclusivity not expressly stated."
+    },
+    {
+      "id": "pen-site",
+      "title": "The Peninsula · Shanghai hotel",
+      "url": "https://www.peninsula.com/en/shanghai/5-star-luxury-hotel-bund",
+      "evidence": "32 Zhongshan Dong Yi Road, The Bund. Fitness centre, indoor heated pool, spa; dining link for Sir Elly’s.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": ""
+    },
+    {
+      "id": "marriott-room",
+      "title": "Marriott Marquis · rooms",
+      "url": "https://www.marriott.com/en-us/hotels/shamc-shanghai-marriott-marquis-city-centre/rooms/",
+      "evidence": "Deluxe King Room, Guest room, 1 King. Complimentary Wi-Fi, 24-hour room service; marble bathroom with double vanity. Hotel in People’s Square.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "No explicit private-bathroom wording or room size captured."
+    },
+    {
+      "id": "bvlgari-room",
+      "title": "Bvlgari · Superior Room",
+      "url": "https://www.bulgarihotels.com/en-US/shanghai/accommodation/rooms/superior-room",
+      "evidence": "Superior rooms feature king beds. 52 sqm; wash basins, walk-in rain shower, heated toilets, walk-in closet; city-view rooms face Suzhou Creek/city center.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Private exclusivity and occupancy not expressly confirmed; no dated price returned."
+    },
+    {
+      "id": "pen-offer",
+      "title": "The Peninsula · A Gift for the New Year",
+      "url": "https://www.peninsula.com/en/shanghai/special-offers/festive/a-gift-for-the-new-year",
+      "evidence": "Book 23 November–7 December for January–March stays. Rooms 15% discount, suites 20%. Daily breakfast for two. Rates subject to 16.6% surcharge. Full non-refundable prepayment; amendments not permitted.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "2026 festive context and 2027 engine dates establish current offer window. Total below is calculated, NOT a checkout receipt. No claim this is the best future booking day."
+    },
+    {
+      "id": "rate-0",
+      "title": "Peninsula · 2027-02-15 to 2027-02-22",
+      "url": "https://secure.peninsula.com/?adult=2&arrive=2027-02-15&chain=5440&child=0&currency=CNY&depart=2027-02-22&hotel=24623&level=hotel&locale=en-GB&productcurrency=CNY&rooms=1",
+      "evidence": "Deluxe Room, 1 King Bed; A Gift for the New Year; CNY 2465 average per night excluding taxes/fees. Daily breakfast up to two; non-refundable/non-amendable; book before 8 Dec.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Dated result fetched; prices can change. Only six start dates sampled, not all 30 eligible seven-night check-ins."
+    },
+    {
+      "id": "rate-1",
+      "title": "Peninsula · 2027-02-22 to 2027-03-01",
+      "url": "https://secure.peninsula.com/?adult=2&arrive=2027-02-22&chain=5440&child=0&currency=CNY&depart=2027-03-01&hotel=24623&level=hotel&locale=en-GB&productcurrency=CNY&rooms=1",
+      "evidence": "Deluxe Room, 1 King Bed; A Gift for the New Year; CNY 2465 average per night excluding taxes/fees. Daily breakfast up to two; non-refundable/non-amendable; book before 8 Dec.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Dated result fetched; prices can change. Only six start dates sampled, not all 30 eligible seven-night check-ins."
+    },
+    {
+      "id": "rate-2",
+      "title": "Peninsula · 2027-03-01 to 2027-03-08",
+      "url": "https://secure.peninsula.com/?adult=2&arrive=2027-03-01&chain=5440&child=0&currency=CNY&depart=2027-03-08&hotel=24623&level=hotel&locale=en-GB&productcurrency=CNY&rooms=1",
+      "evidence": "Deluxe Room, 1 King Bed; A Gift for the New Year; CNY 2465 average per night excluding taxes/fees. Daily breakfast up to two; non-refundable/non-amendable; book before 8 Dec.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Dated result fetched; prices can change. Only six start dates sampled, not all 30 eligible seven-night check-ins."
+    },
+    {
+      "id": "rate-3",
+      "title": "Peninsula · 2027-03-08 to 2027-03-15",
+      "url": "https://secure.peninsula.com/?adult=2&arrive=2027-03-08&chain=5440&child=0&currency=CNY&depart=2027-03-15&hotel=24623&level=hotel&locale=en-GB&productcurrency=CNY&rooms=1",
+      "evidence": "Deluxe Room, 1 King Bed; A Gift for the New Year; CNY 2805 average per night excluding taxes/fees. Daily breakfast up to two; non-refundable/non-amendable; book before 8 Dec.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Dated result fetched; prices can change. Only six start dates sampled, not all 30 eligible seven-night check-ins."
+    },
+    {
+      "id": "rate-4",
+      "title": "Peninsula · 2027-03-15 to 2027-03-22",
+      "url": "https://secure.peninsula.com/?adult=2&arrive=2027-03-15&chain=5440&child=0&currency=CNY&depart=2027-03-22&hotel=24623&level=hotel&locale=en-GB&productcurrency=CNY&rooms=1",
+      "evidence": "Deluxe Room, 1 King Bed; A Gift for the New Year; CNY 2805 average per night excluding taxes/fees. Daily breakfast up to two; non-refundable/non-amendable; book before 8 Dec.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Dated result fetched; prices can change. Only six start dates sampled, not all 30 eligible seven-night check-ins."
+    },
+    {
+      "id": "rate-5",
+      "title": "Peninsula · 2027-03-16 to 2027-03-23",
+      "url": "https://secure.peninsula.com/?adult=2&arrive=2027-03-16&chain=5440&child=0&currency=CNY&depart=2027-03-23&hotel=24623&level=hotel&locale=en-GB&productcurrency=CNY&rooms=1",
+      "evidence": "Deluxe Room, 1 King Bed; A Gift for the New Year; CNY 2805 average per night excluding taxes/fees. Daily breakfast up to two; non-refundable/non-amendable; book before 8 Dec.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Dated result fetched; prices can change. Only six start dates sampled, not all 30 eligible seven-night check-ins."
+    },
+    {
+      "id": "langham-rate",
+      "title": "Langham · dated seven-night search",
+      "url": "https://reservations.brilliantbylangham.com/en-US/booking/rooms?adult=2&arrive=2027-02-15&chain=10316&config=brilliant&depart=2027-02-22&hotel=28382&level=hotel&locale=en-US&rooms=1&theme=brilliant",
+      "evidence": "15 Feb 2027–22 Feb 2027; 7 nights; 1 room, 2 guests. Select Room page returned no price.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "No quote obtained. Do not interpret as sold out. Notice: points not awarded for check-outs on/after 12 January 2027."
+    },
+    {
+      "id": "marriott-rate",
+      "title": "Marriott · dated seven-night search",
+      "url": "https://www.marriott.com/reservation/availabilitySearch.mi?propertyCode=SHAMC&fromDate=02/15/2027&toDate=02/22/2027&numberOfRooms=1&numberOfGuests=2&useRewardsPoints=false",
+      "evidence": "Seven nights Feb 15–22; one room/two guests. Deluxe King displayed “7,755 Total Per Room”, “6,650 Total Per Room”, and “Taxes and all fees included”; no distinguishable selected rate terms.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Ambiguous dual-price extraction. Neither figure accepted as a confirmed quote. Redirected to session-based rateListMenu.mi; retain dated entry URL for reproducibility."
+    },
+    {
+      "id": "east",
+      "title": "Shanghai Museum · East visitor guide",
+      "url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-east",
+      "evidence": "1952 Century Avenue, Pudong. Wed–Mon 10:00–18:00, last entry 17:00; Tuesdays closed except national holidays. Individuals no reservation; original valid ID, B1 East Gate; special exhibitions may be ticketed.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "No numeric general admission amount transcribed. Special galleries require separate reservations. Holiday 2027 adjustments unverified."
+    },
+    {
+      "id": "west",
+      "title": "Shanghai Museum · People’s Square visitor guide",
+      "url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-west",
+      "evidence": "201 Ren Min Da Dao. Tue–Sun 09:00–17:00, last entry 15:00; Mondays closed except holidays. Americas exhibition 9 July 2026–14 November 2027; no other exhibitions during run.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Do not label this branch free or use old 16:00 last-entry times. Extended sessions 09:00–21:00 on announced days only; 2027 dates not captured."
+    },
+    {
+      "id": "history",
+      "title": "Shanghai government · museum transport guide",
+      "url": "https://english.shanghai.gov.cn/en-CityTour/20240424/85e2717d1dc84468986c6e4408dd8c82.html",
+      "evidence": "Shanghai History Museum: 325 West Nanjing Road, Huangpu; Metro 1/2/8 to People’s Square.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Published 2024. Address/station only; no current opening schedule or admission price confirmed."
+    },
+    {
+      "id": "yu",
+      "title": "Shanghai government · Yuyuan night tour",
+      "url": "https://english.shanghai.gov.cn/en-UniqueExperience-travelinshanghai/20250729/25cfb8bce97d4e798f99ac62986255ff.html",
+      "evidence": "Winter/spring: Fri–Sun 18:00–21:20, last entry 20:30; closed Mon–Thu except public holidays. 279 Yuyuan Old Street, South Gate. Tickets 150–218 yuan.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "2025 announcement, not a 2027 quote. Historic two-person range 300–436 yuan is derived only; current-price field blank. Separate from garden daytime visits and bazaar lantern events."
+    },
+    {
+      "id": "bund",
+      "title": "Bvlgari · guided Bund tour",
+      "url": "https://www.bulgarihotels.com/en-US/shanghai/experiences/bund-tour",
+      "evidence": "Two-hour tour with one of the hotel guides; Bund along Huangpu River.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Not a free self-guided walk. Price, operating days, meeting point and eligibility for non-guests not published in extracted text."
+    },
+    {
+      "id": "media-taian",
+      "title": "YouTube · Taian Table review",
+      "url": "https://www.youtube.com/watch?v=RYsEUZJSrN8",
+      "evidence": "Alexander On The Road; uploaded 2026-07-16; Taian Table explicitly identified in description.",
+      "kind": "media",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Independent review. Historic menu 48 appears; not a current-price source."
+    },
+    {
+      "id": "media-fu",
+      "title": "YouTube · Fu He Hui short",
+      "url": "https://www.youtube.com/shorts/7APfxnHcnMw?cbrd=1",
+      "evidence": "Fetched title/description: Clement Leung, 5 May 2026, Fu He Hui at 1037 Yuyuan Road, Shanghai.",
+      "kind": "media",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Metadata fetched; playback error present. Historic reviewer price ignored."
+    },
+    {
+      "id": "media-bao",
+      "title": "YouTube · Bao Li Xuan",
+      "url": "https://www.youtube.com/watch?v=6zxepoFgqJk",
+      "evidence": "Fetched description/transcript identifies Bao Li Xuan at Bvlgari Shanghai; pop rainbow, 2019-03-29.",
+      "kind": "media",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Historic independent media; award wording in video is not current evidence."
+    },
+    {
+      "id": "media-polux",
+      "title": "Instagram · Polux",
+      "url": "https://www.instagram.com/poluxbypp/",
+      "evidence": "Linked by the official Polux restaurant website.",
+      "kind": "media",
+      "method": "operator cross-link",
+      "checked": "2026-11-25",
+      "note": "Restaurant profile, not a verified individual reel; Instagram may require login."
+    },
+    {
+      "id": "media-sir",
+      "title": "Instagram · Sir Elly’s",
+      "url": "https://www.instagram.com/sirellys.restaurant/",
+      "evidence": "Fetched profile identifies Peninsula Shanghai, #32 on The Bund and links restaurant website.",
+      "kind": "media",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Profile and posts fetched; no menu or award facts inferred."
+    },
+    {
+      "id": "media-east",
+      "title": "YouTube · Shanghai Museum East",
+      "url": "https://www.youtube.com/watch?v=bqU3WbL6xac",
+      "evidence": "Shanghai Let’s Meet; 2024-06-26; description explicitly names Shanghai Museum East.",
+      "kind": "media",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Venue preview; exhibitions in 2024 are not guaranteed in 2027."
+    },
+    {
+      "id": "media-history",
+      "title": "YouTube · Shanghai History Museum",
+      "url": "https://www.youtube.com/watch?v=qVgFJj-vvUY",
+      "evidence": "International Channel Shanghai; 2024-03-27; three exhibitions at Shanghai History Museum.",
+      "kind": "media",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Past exhibition report, not a 2027 programme."
+    },
+    {
+      "id": "media-yu",
+      "title": "YouTube · Yuyuan night tours",
+      "url": "https://www.youtube.com/shorts/nh1FRv9eK8U",
+      "evidence": "Fetched title/description: New China TV, 10 August 2025, Yuyuan Garden night tours.",
+      "kind": "media",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Metadata fetched; playback error present. Not a 2027 schedule or price source."
+    },
+    {
+      "id": "media-bund",
+      "title": "YouTube · Suzhou Creek to the Bund",
+      "url": "https://www.youtube.com/watch?v=bZCLgcNMz5M",
+      "evidence": "Fetched description: Travel with Ben, 8 November 2026, Suzhou Creek walk ending at the Bund; Bund chapter at 27:00.",
+      "kind": "media",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Independent area walk, not a demonstration of Bvlgari’s paid tour. Description fetched."
+    },
+    {
+      "id": "yi-site",
+      "title": "The Peninsula · Yi Long Court (canonical)",
+      "url": "https://www.peninsula.com/en/shanghai/hotel-fine-dining/yi-long-court",
+      "evidence": "One Michelin star, Cantonese, 2/F. Lunch 11:30–14:30; dinner 18:00–22:30. Links dim sum menu PDF.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Canonical link found via hotel dining index; resolves the old URL redirect, not 2027 holiday hours."
+    },
+    {
+      "id": "yi-menu",
+      "title": "Yi Long Court · official dim sum menu",
+      "url": "https://www.peninsula.com/-/media/files/shanghai/menu/2026/yi-long-court/1029/ylc-dim-sum-lunch-menu-2026.pdf",
+      "evidence": "Dim sum set lunch 338 for one person. Vegetarian set 338 for one person. Prices in RMB subject to 16.6% surcharge.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Two set lunches: 338 × 2 × 1.166 = CNY 788.216, rounded to 788.22. Drinks not specified; not a 2027 quote."
+    },
+    {
+      "id": "sir-site",
+      "title": "The Peninsula · Sir Elly’s restaurant",
+      "url": "https://www.peninsula.com/en/shanghai/hotel-fine-dining/sir-ellys-restaurant",
+      "evidence": "Dinner Wednesday–Sunday 18:00–22:30; closed Monday and Tuesday excluding public holidays. Northern Italian; 13/F.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Public-holiday exception explicitly stated; individual 2027 dates still unverified."
+    },
+    {
+      "id": "sir-menu",
+      "title": "Sir Elly’s · official menu",
+      "url": "https://www.peninsula.com/-/media/files/shanghai/menu/2026/sir-ellys/0626/new-menu-in-se.pdf",
+      "evidence": "Signature five courses: 1,288 per person, RMB, subject to 16.6% surcharge.",
+      "kind": "official",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Two tasting menus: 1288 × 2 × 1.166 = CNY 3003.616, rounded to 3003.62. Drinks excluded from calculation; not a 2027 quote."
+    },
+    {
+      "id": "media-west",
+      "title": "YouTube · People’s Square Americas exhibition",
+      "url": "https://www.youtube.com/watch?v=AhjH5tpovKs",
+      "evidence": "Fetched title and description identify the Americas exhibition at Shanghai Museum People’s Square; ShanghaiEye, July 2026.",
+      "kind": "media",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Venue-specific news preview. Page metadata fetched; playback returned an error. Not an availability source."
+    },
+    {
+      "id": "media-langham",
+      "title": "Instagram · related Langham Shanghai hotel profile",
+      "url": "https://www.instagram.com/langhamshanghaixintiandi/",
+      "evidence": "Fetched hotel profile identifies Xintiandi and links its hotel website. Recent returned posts were from 2020.",
+      "kind": "media",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Related hotel profile ONLY, not a verified T’ang Court restaurant video. Exact-restaurant media gap remains."
+    },
+    {
+      "id": "media-peninsula",
+      "title": "Instagram · related Peninsula Shanghai hotel profile",
+      "url": "https://www.instagram.com/thepeninsulashanghai/",
+      "evidence": "Fetched hotel profile identifies Shanghai and links Peninsula Shanghai website.",
+      "kind": "media",
+      "method": "fetch_page",
+      "checked": "2026-11-25",
+      "note": "Related hotel profile ONLY, not a verified Yi Long Court restaurant video. Exact-restaurant media gap remains."
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "tang",
+      "name": "T’ang Court",
+      "cluster": "Xintiandi",
+      "distinction": "2 stars",
+      "stars": 2,
+      "cuisine": "Cantonese",
+      "address": "5F, The Langham, Shanghai, Xintiandi",
+      "days": null,
+      "hours": "11:30–14:00; 17:30–21:00",
+      "exceptions": null,
+      "price2027": null,
+      "minutes": null,
+      "sources": [
+        "michelin-sh",
+        "tang",
+        "tang-menu"
+      ],
+      "media": [
+        "media-langham"
+      ],
+      "priceNow": [
+        888,
+        2288
+      ],
+      "priceNote": "Two different sets for two: dim sum lunch CNY 888; all-day CNY 2,288. Tax/service included; drinks not listed. Current menu, not a 2027 quote.",
+      "flags": [
+        "F03"
+      ],
+      "notes": "Operator says both “daily” and “Off on Monday”. Related hotel profile found; no restaurant-specific video verified."
+    },
+    {
+      "id": "polux",
+      "name": "Polux",
+      "cluster": "Xintiandi",
+      "distinction": "Bib Gourmand",
+      "stars": 0,
+      "cuisine": "French",
+      "address": "No. 5, Lane 181, Taicang Road, Xintiandi",
+      "days": "Mon–Sun",
+      "hours": "11:00–22:00",
+      "exceptions": null,
+      "price2027": null,
+      "minutes": null,
+      "sources": [
+        "polux",
+        "polux-site"
+      ],
+      "media": [
+        "media-polux"
+      ],
+      "priceNow": null,
+      "priceNote": "Full two-person total, currency and charge treatment not verified.",
+      "flags": [],
+      "notes": "Bib Gourmand is a value distinction, not a star."
+    },
+    {
+      "id": "yi",
+      "name": "Yi Long Court",
+      "cluster": "The Bund",
+      "distinction": "1 star",
+      "stars": 1,
+      "cuisine": "Cantonese",
+      "address": "2F, The Peninsula, 32 Zhongshan Dong Yi Road",
+      "days": "Mon–Sun",
+      "hours": "11:30–14:30; 18:00–22:30",
+      "exceptions": null,
+      "price2027": null,
+      "minutes": null,
+      "sources": [
+        "yi",
+        "yi-site",
+        "yi-menu"
+      ],
+      "media": [
+        "media-peninsula"
+      ],
+      "priceNow": [
+        788.22
+      ],
+      "priceNote": "Calculated two dim sum set lunches: CNY 788.22 including published 16.6% surcharge. Drinks not specified. Current menu, not a 2027 quote.",
+      "flags": [
+        "F09"
+      ],
+      "notes": "Hours confirmed by operator; weekdays from MICHELIN. Canonical restaurant link found. Related hotel profile is not a restaurant-specific video."
+    },
+    {
+      "id": "sir",
+      "name": "Sir Elly’s",
+      "cluster": "The Bund",
+      "distinction": "Selected",
+      "stars": 0,
+      "cuisine": "Italian",
+      "address": "13F, The Peninsula, 32 Zhongshan Dong Yi Road",
+      "days": "Wed–Sun",
+      "hours": "18:00–22:30",
+      "exceptions": null,
+      "price2027": null,
+      "minutes": null,
+      "sources": [
+        "sir",
+        "sir-site",
+        "sir-menu"
+      ],
+      "media": [
+        "media-sir"
+      ],
+      "priceNow": [
+        3003.62
+      ],
+      "priceNote": "Calculated two signature five-course menus: CNY 3,003.62 including published 16.6% surcharge. Drinks excluded from calculation; not a 2027 quote.",
+      "flags": [],
+      "notes": "Closed Mon/Tue except public holidays, per operator. Selected / listed, not currently starred."
+    },
+    {
+      "id": "bao",
+      "name": "Bao Li Xuan",
+      "cluster": "Suzhou Creek",
+      "distinction": "2 stars",
+      "stars": 2,
+      "cuisine": "Cantonese",
+      "address": "3F, Chamber of Commerce, Lane 108 North Shanxi Road",
+      "days": null,
+      "hours": "11:30–14:00; 17:30–22:00",
+      "exceptions": null,
+      "price2027": null,
+      "minutes": null,
+      "sources": [
+        "bao",
+        "bao-site",
+        "bao-menu"
+      ],
+      "media": [
+        "media-bao"
+      ],
+      "priceNow": [
+        3576,
+        5176
+      ],
+      "priceNote": "Calculated autumn-set total for two: CNY 3,576 food; CNY 5,176 with optional pairing. Tax/service included. Not a winter 2027 quote.",
+      "flags": [
+        "F04"
+      ],
+      "notes": "Operator publishes times but not weekdays. Part of Bvlgari Hotel, in an adjacent building."
+    },
+    {
+      "id": "taian",
+      "name": "Taian Table",
+      "cluster": "Changning",
+      "distinction": "3 stars",
+      "stars": 3,
+      "cuisine": "Innovative",
+      "address": "101–102, Building 1, Garden Office, No.161, Lane 465 Zhenning Road",
+      "days": null,
+      "hours": null,
+      "exceptions": null,
+      "price2027": null,
+      "minutes": null,
+      "sources": [
+        "michelin-sh",
+        "taian",
+        "taian-site",
+        "taian-menu"
+      ],
+      "media": [
+        "media-taian"
+      ],
+      "priceNow": null,
+      "priceNote": "Menu 55 has add-on prices but no base tasting-menu price in extracted text.",
+      "flags": [
+        "F04"
+      ],
+      "notes": "Seasonal mandatory ten-course menu. Do not use a review’s old menu prices."
+    },
+    {
+      "id": "fu",
+      "name": "Fu He Hui",
+      "cluster": "Changning",
+      "distinction": "2 stars",
+      "stars": 2,
+      "cuisine": "Vegetarian",
+      "address": "1037 Yuyuan Road",
+      "days": "Mon–Sun",
+      "hours": "11:00–13:00; 17:30–21:00",
+      "exceptions": null,
+      "price2027": null,
+      "minutes": null,
+      "sources": [
+        "michelin-sh",
+        "fu"
+      ],
+      "media": [
+        "media-fu"
+      ],
+      "priceNow": null,
+      "priceNote": "Numeric two-person set-menu price not confirmed.",
+      "flags": [],
+      "notes": "Seasonal set menus only. Dietary suitability must be confirmed with the restaurant."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "peninsula",
+      "name": "The Peninsula Shanghai",
+      "area": "The Bund",
+      "room": "Deluxe Room — select King",
+      "bed": "King",
+      "size": "54–59 m²",
+      "bathFeatures": "Marble bathroom; built-in TV and mood lighting",
+      "privateBathroom": null,
+      "amenities": "Indoor heated pool, fitness centre, spa; walk-in closet",
+      "onsite": [
+        "yi",
+        "sir"
+      ],
+      "total": 20119.33,
+      "priceType": "Calculated from official quote + published surcharge",
+      "rank": null,
+      "within60": null,
+      "sources": [
+        "pen-room",
+        "pen-site",
+        "yi",
+        "sir",
+        "rate-0",
+        "pen-offer"
+      ],
+      "note": "Dated quote available. Non-refundable; full prepayment. Not declared cheapest overall.",
+      "flags": [
+        "F01",
+        "F02",
+        "F05"
+      ]
+    },
+    {
+      "id": "langham",
+      "name": "The Langham, Shanghai, Xintiandi",
+      "area": "Xintiandi",
+      "room": "Deluxe Room — select King",
+      "bed": "King · 1.8 m",
+      "size": "40 m²",
+      "bathFeatures": "Marble bathroom; separate rain shower; heated floor",
+      "privateBathroom": null,
+      "amenities": "Coffee machine, Internet, 24-hour room service",
+      "onsite": [
+        "tang"
+      ],
+      "total": null,
+      "priceType": null,
+      "rank": null,
+      "within60": null,
+      "sources": [
+        "langham-room",
+        "langham-index",
+        "tang",
+        "langham-rate"
+      ],
+      "note": "Strong dining-led candidate, not a confirmed value winner. Booking page returned dates but no price.",
+      "flags": [
+        "F01",
+        "F02",
+        "F03",
+        "F05",
+        "F06"
+      ]
+    },
+    {
+      "id": "marriott",
+      "name": "Shanghai Marriott Marquis City Centre",
+      "area": "People’s Square",
+      "room": "Deluxe King Room",
+      "bed": "1 King",
+      "size": null,
+      "bathFeatures": "Marble bathroom with double vanity",
+      "privateBathroom": null,
+      "amenities": "Complimentary Wi-Fi; 24-hour room service",
+      "onsite": null,
+      "total": null,
+      "priceType": null,
+      "rank": null,
+      "within60": null,
+      "sources": [
+        "marriott-room",
+        "marriott-rate"
+      ],
+      "note": "Investigate as a price challenger, not a verified cheap choice. Ambiguous dual totals rejected.",
+      "flags": [
+        "F01",
+        "F02",
+        "F05",
+        "F07"
+      ]
+    },
+    {
+      "id": "bvlgari",
+      "name": "Bvlgari Hotel Shanghai",
+      "area": "Suzhou Creek",
+      "room": "Superior Room",
+      "bed": "King",
+      "size": "52 m²",
+      "bathFeatures": "Walk-in rain shower; wash basins; heated toilet",
+      "privateBathroom": null,
+      "amenities": "Walk-in closet; two HD TVs; floor-to-ceiling windows",
+      "onsite": [
+        "bao"
+      ],
+      "total": null,
+      "priceType": null,
+      "rank": null,
+      "within60": null,
+      "sources": [
+        "bvlgari-room",
+        "bao",
+        "bao-site"
+      ],
+      "note": "Bao Li Xuan is in an adjacent building within the hotel complex. No dated rate verified.",
+      "flags": [
+        "F01",
+        "F02",
+        "F05"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "id": "east",
+      "name": "Shanghai Museum East",
+      "area": "Pudong",
+      "address": "1952 Century Avenue",
+      "days": "Wed–Mon",
+      "hours": "10:00–18:00; last entry 17:00",
+      "exceptions": "Tuesdays closed except national holidays. Special galleries need reservations; some exhibitions ticketed.",
+      "price2027": null,
+      "minutes": null,
+      "media": [
+        "media-east"
+      ],
+      "sources": [
+        "east"
+      ],
+      "note": "Prioritize for permanent collections. Original valid ID; B1 East Gate. Holiday 2027 changes unverified."
+    },
+    {
+      "id": "west",
+      "name": "Shanghai Museum · People’s Square",
+      "area": "People’s Square",
+      "address": "201 Ren Min Da Dao",
+      "days": "Tue–Sun",
+      "hours": "09:00–17:00; last entry 15:00",
+      "exceptions": "Mondays closed except national holidays. Evening opening only on separately announced dates.",
+      "price2027": null,
+      "minutes": null,
+      "media": [
+        "media-west"
+      ],
+      "sources": [
+        "west"
+      ],
+      "note": "Americas exhibition is scheduled through 14 Nov 2027; no other exhibitions at this branch during its run. Do not assume free admission."
+    },
+    {
+      "id": "history",
+      "name": "Shanghai History Museum",
+      "area": "People’s Square",
+      "address": "325 West Nanjing Road",
+      "days": null,
+      "hours": null,
+      "exceptions": null,
+      "price2027": null,
+      "minutes": null,
+      "media": [
+        "media-history"
+      ],
+      "sources": [
+        "history"
+      ],
+      "note": "Government source confirms address and Metro 1/2/8 at People’s Square, not a hotel-to-museum journey time. Current hours unverified."
+    },
+    {
+      "id": "yu",
+      "name": "Yuyuan Garden · night tour",
+      "area": "Old City",
+      "address": "South Gate, 279 Yuyuan Old Street",
+      "days": "Fri–Sun (published winter schedule)",
+      "hours": "18:00–21:20; last entry 20:30",
+      "exceptions": "Published closed Mon–Thu except public holidays. 2027 special schedule unverified.",
+      "price2027": null,
+      "minutes": null,
+      "media": [
+        "media-yu"
+      ],
+      "sources": [
+        "yu"
+      ],
+      "note": "2025 reference only: two tickets calculate to CNY 300–436; not a current or 2027 quote. Not the bazaar lantern festival. Timed entry, no free re-entry."
+    },
+    {
+      "id": "bund",
+      "name": "The Bund · Bvlgari guided tour",
+      "area": "The Bund",
+      "address": null,
+      "days": null,
+      "hours": null,
+      "exceptions": null,
+      "price2027": null,
+      "minutes": null,
+      "media": [
+        "media-bund"
+      ],
+      "sources": [
+        "bund"
+      ],
+      "note": "Operator describes a two-hour guided tour. Meeting point, non-guest access, dates and price unverified. Linked media is an independent area walk, not this product."
+    }
+  ],
+  "quotes": [
+    {
+      "id": "q0",
+      "hotel": "peninsula",
+      "checkIn": "2027-02-15",
+      "checkOut": "2027-02-22",
+      "nights": 7,
+      "adults": 2,
+      "rooms": 1,
+      "room": "Deluxe King",
+      "plan": "A Gift for the New Year",
+      "currency": "CNY",
+      "nightly": 2465,
+      "subtotal": 17255,
+      "surchargePercent": 16.6,
+      "total": 20119.33,
+      "checkoutTotal": null,
+      "sources": [
+        "rate-0",
+        "pen-offer"
+      ],
+      "checked": "2026-11-25",
+      "status": "Calculated from official inputs; checkout total unverified"
+    },
+    {
+      "id": "q1",
+      "hotel": "peninsula",
+      "checkIn": "2027-02-22",
+      "checkOut": "2027-03-01",
+      "nights": 7,
+      "adults": 2,
+      "rooms": 1,
+      "room": "Deluxe King",
+      "plan": "A Gift for the New Year",
+      "currency": "CNY",
+      "nightly": 2465,
+      "subtotal": 17255,
+      "surchargePercent": 16.6,
+      "total": 20119.33,
+      "checkoutTotal": null,
+      "sources": [
+        "rate-1",
+        "pen-offer"
+      ],
+      "checked": "2026-11-25",
+      "status": "Calculated from official inputs; checkout total unverified"
+    },
+    {
+      "id": "q2",
+      "hotel": "peninsula",
+      "checkIn": "2027-03-01",
+      "checkOut": "2027-03-08",
+      "nights": 7,
+      "adults": 2,
+      "rooms": 1,
+      "room": "Deluxe King",
+      "plan": "A Gift for the New Year",
+      "currency": "CNY",
+      "nightly": 2465,
+      "subtotal": 17255,
+      "surchargePercent": 16.6,
+      "total": 20119.33,
+      "checkoutTotal": null,
+      "sources": [
+        "rate-2",
+        "pen-offer"
+      ],
+      "checked": "2026-11-25",
+      "status": "Calculated from official inputs; checkout total unverified"
+    },
+    {
+      "id": "q3",
+      "hotel": "peninsula",
+      "checkIn": "2027-03-08",
+      "checkOut": "2027-03-15",
+      "nights": 7,
+      "adults": 2,
+      "rooms": 1,
+      "room": "Deluxe King",
+      "plan": "A Gift for the New Year",
+      "currency": "CNY",
+      "nightly": 2805,
+      "subtotal": 19635,
+      "surchargePercent": 16.6,
+      "total": 22894.41,
+      "checkoutTotal": null,
+      "sources": [
+        "rate-3",
+        "pen-offer"
+      ],
+      "checked": "2026-11-25",
+      "status": "Calculated from official inputs; checkout total unverified"
+    },
+    {
+      "id": "q4",
+      "hotel": "peninsula",
+      "checkIn": "2027-03-15",
+      "checkOut": "2027-03-22",
+      "nights": 7,
+      "adults": 2,
+      "rooms": 1,
+      "room": "Deluxe King",
+      "plan": "A Gift for the New Year",
+      "currency": "CNY",
+      "nightly": 2805,
+      "subtotal": 19635,
+      "surchargePercent": 16.6,
+      "total": 22894.41,
+      "checkoutTotal": null,
+      "sources": [
+        "rate-4",
+        "pen-offer"
+      ],
+      "checked": "2026-11-25",
+      "status": "Calculated from official inputs; checkout total unverified"
+    },
+    {
+      "id": "q5",
+      "hotel": "peninsula",
+      "checkIn": "2027-03-16",
+      "checkOut": "2027-03-23",
+      "nights": 7,
+      "adults": 2,
+      "rooms": 1,
+      "room": "Deluxe King",
+      "plan": "A Gift for the New Year",
+      "currency": "CNY",
+      "nightly": 2805,
+      "subtotal": 19635,
+      "surchargePercent": 16.6,
+      "total": 22894.41,
+      "checkoutTotal": null,
+      "sources": [
+        "rate-5",
+        "pen-offer"
+      ],
+      "checked": "2026-11-25",
+      "status": "Calculated from official inputs; checkout total unverified"
+    }
+  ]
+}
