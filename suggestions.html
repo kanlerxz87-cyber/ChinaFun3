@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suggestions · Shanghai Trip Plan</title>
+<meta name="description" content="Reviewable proposals before implementing site changes">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><div class="topbar-inner">
+  <div class="brand">Shanghai · Feb-Mar 2027<small>Verified trip research · 2 adults</small></div>
+  <nav class="nav"><a href="index.html">Dashboard</a><a href="hotels.html">Hotels</a><a href="michelin.html">Michelin</a><a href="activities.html">Activities</a><a href="dates.html">Dates & Booking</a><a href="questions.html">Open Questions</a><a href="suggestions.html" class="active">Suggestions</a><a href="flagged.html">Flagged</a><a href="verification.html">Verification</a></nav>
+</div></header>
+<main id="main" class="wrap">
+
+<h1>Suggestions for improving this site</h1>
+<p class="lead">A review queue, not a changelog. Nothing here has been implemented beyond what is marked
+"already implemented" — pick the path you want before any of it is built.</p>
+
+<div class="notice info">
+  <strong>How to use this page.</strong> Each suggestion lists what it would add, why it changes a decision, and
+  what it costs to build. Priority reflects decision impact, not effort. Approve in any order; the top three are
+  the ones that would most change the answer to "which hotel, which nights".
+</div>
+
+<div class="tablewrap"><table>
+<thead><tr><th>Priority</th><th>Suggestion</th><th>What it adds</th><th>Why it matters</th><th>Effort / prerequisite</th></tr></thead>
+<tbody><tr><td><span class="badge star">High</span></td>
+<td><strong>Live rate capture per hotel</strong></td><td>A dated snapshot per hotel (timestamp, currency, total for 15–22 Feb 2027) that can be re-run before booking.</td><td>Turns the biggest blank column into the site&#x27;s most valuable one.</td><td>Needs a booking-engine read per hotel; one hour of work, repeated monthly.</td></tr><tr><td><span class="badge star">High</span></td>
+<td><strong>Per-restaurant transit minutes</strong></td><td>Add a &#x27;minutes from each shortlisted hotel&#x27; column, filled from a routing planner for a weekday evening.</td><td>Makes the one-hour rule auditable instead of assumed.</td><td>10 hotels × 50 restaurants is 500 lookups — sample the top 15 restaurants first.</td></tr><tr><td><span class="badge star">High</span></td>
+<td><strong>Distinction legend on every table</strong></td><td>Keep the star / Bib / Selected chips inline in every list, plus the official award year.</td><td>The single most common way trip lists mislead is calling a listed restaurant &#x27;starred&#x27;.</td><td>Already implemented; extend with the year once the 2027 guide is published.</td></tr><tr><td><span class="badge bib">Medium</span></td>
+<td><strong>Reservation lead-time column</strong></td><td>How far ahead each starred room must be booked, and whether a deposit is required.</td><td>Prevents arriving with a plan and no table.</td><td>Requires a phone/email per restaurant; batch it into one verification session.</td></tr><tr><td><span class="badge bib">Medium</span></td>
+<td><strong>Cost-per-person ↔ cost-for-two toggle</strong></td><td>Show the verified per-person basis next to the derived total.</td><td>Removes ambiguity about what the total includes.</td><td>Small UI change; already have both numbers for the one verified row.</td></tr><tr><td><span class="badge bib">Medium</span></td>
+<td><strong>Closure calendar overlay</strong></td><td>Merge restaurant closing days and holiday dates into one calendar view of the stay.</td><td>Monday closures and the Lantern Festival interact; a calendar exposes collisions instantly.</td><td>Blocked until more hours are verified.</td></tr><tr><td><span class="badge sel">Low</span></td>
+<td><strong>Print / offline stylesheet</strong></td><td>A single-page printable plan for use in the city without data.</td><td>Roaming data is unreliable; a printed sheet always works.</td><td>One CSS print block.</td></tr><tr><td><span class="badge sel">Low</span></td>
+<td><strong>Source freshness badge per row</strong></td><td>Date each verified cell.</td><td>Prices and hours drift; a date tells you whether to trust the row.</td><td>Add a &#x27;checked&#x27; date field to the dataset.</td></tr><tr><td><span class="badge sel">Low</span></td>
+<td><strong>Currency display</strong></td><td>Show an approximate USD conversion alongside CNY, clearly marked as indicative.</td><td>Easier budgeting for a US-based traveller.</td><td>Requires a stated FX rate and date — never show a conversion without one.</td></tr></tbody></table></div>
+
+<h2>Deliberately rejected</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>Idea</th><th>Why not</th></tr></thead>
+<tbody>
+<tr><td>Estimated hotel prices ("typical nightly rate")</td><td>Would look verified and be wrong. The column
+stays empty and linked to the booking engine.</td></tr>
+<tr><td>Auto-embedded social feeds</td><td>Embeds break silently and can't be verified offline; direct links age
+better.</td></tr>
+<tr><td>Scraped aggregate ratings</td><td>Third-party scores change without notice and aren't official. Kept out
+entirely rather than half-trusted.</td></tr>
+<tr><td>Filling hours from memory of similar venues</td><td>The exact failure mode this project exists to
+avoid.</td></tr>
+</tbody></table></div>
+
+<h2>What would most improve the next iteration</h2>
+<ol>
+  <li><strong>One verification session with the phone in hand</strong> — hours and set-menu prices for the twelve
+    starred rooms you would realistically book. That single afternoon would fill more of this site's gaps than
+    any amount of extra web reading.</li>
+  <li><strong>A dated price snapshot</strong> for the three shortlisted hotels, re-run monthly until booking.</li>
+  <li><strong>Routing confirmations</strong> for the top fifteen restaurants from the chosen hotel.</li>
+</ol>
+
+</main>
+<footer>
+  Built from <code>data/dataset.py</code>. Blank or chipped fields are <strong>not verified</strong> —
+  no value on this site is estimated. Sources are linked on every row.
+  · <a href="verification.html">Method &amp; source log</a>
+</footer>
+</body>
+</html>
