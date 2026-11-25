@@ -465,7 +465,7 @@ high-speed rail — but they are day trips, not neighbourhood activities.</p>
 # ---------------------------------------------------------------------------
 def build_dates():
     drows = "".join(f"""<tr><td><strong>{e(d["item"])}</strong></td><td>{e(d["value"])}</td>
-<td>{link(d["src"], "source") if d["src"] else chip("")}</td><td>{e(d["note"]) or "—"}</td></tr>""" for d in D.DATES)
+<td>{link(d["src"], "source") if d["src"] else '<span class="muted">your brief</span>'}</td><td>{e(d["note"]) or "—"}</td></tr>""" for d in D.DATES)
     brows = "".join(f"""<tr><td>{e(b["source"])}</td><td>{e(b["kind"])}</td><td>{e(b["claim"])}</td>
 <td>{link(b["url"], "source")}</td></tr>""" for b in D.BOOKING_WINDOWS)
 
@@ -556,7 +556,7 @@ Nothing in this plan breaks if you extend — the only real change is that day t
 <tr><td><strong>10 nights</strong></td><td>15–25 Feb 2027</td><td>Adds one high-speed-rail day trip.</td>
 <td>Suzhou 23–40 min from Hongqiao; Hangzhou ~45–60 min. Confirm fares on 12306.</td></tr>
 <tr><td><strong>14 nights</strong></td><td>15 Feb – 1 Mar 2027</td><td>Adds both day trips plus a slower pace and a second starred dinner.</td>
-<td>Leaves 22 spare days inside the window if weather turns — March is wetter (~86–88 mm vs ~65 mm).</td></tr>
+<td>Still ends before the wetter second half of March (March averages ~86–88 mm vs ~65 mm in February).</td></tr>
 </tbody></table></div>
 <p class="muted">Extending past 1 March moves the stay into March, which the weather sources describe as noticeably
 wetter. If the priority is comfort rather than length, the 7- or 10-night version is the better trade.</p>

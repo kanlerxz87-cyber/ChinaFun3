@@ -402,7 +402,7 @@ DATES = [
          src="https://www.chinahighlights.com/travelguide/festivals/when-chinese-new-year.htm",
          note="Not a public holiday, but a high-value evening (Yu Garden lights)."),
     dict(item="Trip window", value="15 Feb - 23 Mar 2027 (1-2 weeks)",
-         src="", note="Starts the day after the holiday ends — avoids peak pricing and closures."),
+         src="", note="Your stated window (12 days after Spring Festival ends, so peak pricing and holiday closures are avoided)."),
     dict(item="Weather, Shanghai February", value="High ~9-10°C, low ~2-4°C, ~65 mm rain",
          src="https://www.chinaexplorertour.com/", note="1991-2020 normals; sources vary — treat as a range."),
     dict(item="Weather, Shanghai March", value="High ~13-14°C, low ~6-7°C, ~86-88 mm rain",
