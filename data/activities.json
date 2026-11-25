@@ -1,0 +1,8 @@
+{
+  "meta": { "anchor_station": "East Nanjing Road L2/L10 (hotel base)", "verified": "2026-11-25 on shmetro.com + Amap 11:00 off-peak" },
+  "activities": [
+    { "name": "The Bund (Waitan)", "hours": "24h daily, lights May-Oct 19:00-23:00 / Nov-Apr 18:00-21:00", "entry_for_2": "¥0", "transit": "6 min walk", "official": "https://www.meet-in-shanghai.net/the-bund/" },
+    { "name": "Yu Garden + Bazaar", "hours": "Garden 09:00-16:30 last 16:00, Closed Mon except holidays; Bazaar 10:00-22:00", "entry_for_2": "¥80", "transit": "L10/14 to Yuyuan 14 min", "official": "WeChat mini Shanghai Yu Yuan + https://www.yuyuantm.com" },
+    { "name": "Oriental Pearl Tower", "hours": "09:00-21:00 last 20:30", "entry_for_2": "¥398", "transit": "L2 East Nanjing -> Lujiazui 18 min", "official": "https://www.orientalpearltower.com" }
+  ]
+}

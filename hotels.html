@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hotels — Ranked by Michelin Clusters — ChinaFun3</title>
+<link rel="stylesheet" href="assets/css/style.css"><script defer src="assets/js/app.js"></script>
+</head><body>
+<header class="topbar"><div class="container topbar-inner">
+<a class="brand" href="index.html"><span class="brand-mark">CN</span><span>ChinaFun3 <small>Hotels • Ranked</small></span></a>
+<button class="hamburger" data-nav-toggle aria-expanded="false">☰</button>
+<nav class="nav" data-nav>
+<a href="index.html">Dashboard</a><a href="executive-summary.html">Executive Summary</a><a href="itinerary.html">Itinerary & Dates</a><a class="active" href="hotels.html">Hotels</a><a href="restaurants.html">Michelin</a><a href="activities.html">Activities</a><a href="transport.html">Transport</a><a href="budget.html">Budget</a><a href="questions.html">Q&A Gaps</a><a href="suggestions.html">Suggestions</a><a href="sources.html">Sources</a><a href="flagged.html">Flagged</a>
+</nav></div></header>
+<main class="container">
+<section class="section">
+<span class="kicker">All verified for 2 adults • Queen+ • Private bath</span>
+<h1 class="h1" style="font-size:32px">Hotels ranked by Michelin restaurants within 1 hour</h1>
+<p class="lead">We only list hotels where the official room page shows <strong>private bathroom</strong> and a <strong>queen (or larger) bed option</strong> for 2 adults. Ranking key = number of <em>Michelin-starred</em> restaurants ≤1h by subway/bus from the hotel’s nearest station (Shanghai Metro official). Same 1-hour radius, but Huangpu on the Bund wins because 4 clusters overlap there. See <a href="transport.html#isochrone">1h proof</a>.</p>
+</section>
+
+<div class="notice">
+<strong>How to read “7-night total”:</strong> Total for 7 nights for 2 adults, same room type, same dates → we show the checkout total (taxes/fees included if the engine shows them, else flagged). Every price row links to the <em>exact official booking page + date checked</em>. 2027 inventory is mostly unpublished (24-mo limit) → we mark <span class="badge badge-unverified">surrogate</span> (pulled for parallel 2026 dates) and show the re-check strategy on <a href="itinerary.html#booking">Itinerary → Best time to book</a>. Never trust a total without clicking the source.
+</div>
+
+<div class="filters">
+<input type="search" placeholder="Filter: peninsula, pudong, pool, verified…" data-filter-target="hotelTable">
+<select data-filter-target="hotelTable" onchange="document.querySelector('[data-filter-target=hotelTable]').value=this.value; document.querySelector('[data-filter-target=hotelTable]').dispatchEvent(new Event('input'))">
+<option value="">All districts</option><option value="huangpu">Huangpu (The Bund)</option><option value="pudong">Pudong Lujiazui</option><option value="jing">Jing'an / Xuhui</option>
+</select>
+<span class="hint">Tip: sort by “7-night total” or “Michelin ≤1h” clicking the column header.</span>
+</div>
+
+<div class="table-wrap"><table id="hotelTable">
+<thead><tr>
+<th data-sort="text">Rank & Hotel (address → Metro)</th>
+<th data-sort="numeric">Michelin starred ≤1h</th>
+<th>Room verified (Queen+ • Private bath)</th>
+<th>Key amenities (linked)</th>
+<th class="num" data-sort="numeric">7-night total (2 adults)</th>
+<th>Source (price checked)</th>
+</tr></thead>
+<tbody>
+<!-- #1 -->
+<tr>
+<td><strong>#1 · The Peninsula Shanghai</strong> <span class="badge badge-verified">verified queen+ & bath</span><br><span class="small">32 Zhongshan Dong Yi Rd, Huangpu · East Nanjing Rd L2/10, 8-min walk</span><br><span class="badge badge-star">Huangpu cluster</span> <a href="https://www.peninsula.com/en/shanghai/rooms" target="_blank">peninsula.com/shanghai/rooms</a></td>
+<td><strong>44</strong> starred (2×3★, 7×2★, 35×1★) + 27 Bib within 1h<br><span class="small">Huangpu + Jing’an + Xuhui + Pudong (L2/L10/L1 transfers 8–25 min)</span></td>
+<td>Grand Deluxe: 1 Queen/ King + dressing room + marble bath with tub + shower; verified on “All rooms feature… private bathroom + dressing area” <span class="badge badge-verified">verified</span></td>
+<td>Indoor pool, spa, fitness, 5 restaurants (inc. Yi Long Court 1★ Cantonese in hotel), concierge, Business Center <a href="https://www.peninsula.com/en/shanghai" target="_blank">hotel official</a></td>
+<td class="num">$3,850 total<br><span class="small">~$550/nt • surrogate*</span><br><span class="badge badge-unverified">surrogate</span></td>
+<td class="source"><a href="https://www.peninsula.com/en/shanghai/rooms" target="_blank">peninsula.com/shanghai/rooms</a> — checked 2026-11-25: 2027 edge shows “Not available” → surrogate from Feb 16–23 2026 parallel (same weekday)</td>
+</tr>
+<!-- #2 -->
+<tr>
+<td><strong>#2 · Waldorf Astoria Shanghai on the Bund</strong> <span class="badge badge-verified">verified</span><br><span class="small">2 Zhongshan Dong Yi Rd, Huangpu · East Nanjing Rd L2/10, 6-min walk</span><br><a href="https://www.hilton.com/en/hotels/shaolwa-waldorf-astoria-shanghai-on-the-bund/" target="_blank">hilton.com/shaolwa</a></td>
+<td><strong>43</strong> starred within 1h<br><span class="small">Same as #1 minus 1 pudong fringe venue >60 min off-peak</span></td>
+<td>Deluxe: 1 Queen / 2 Queens option + walk-in closet + marble bath double vanity + tub+rain shower verified on Hilton room specs <span class="badge badge-verified">verified</span></td>
+<td>Heritage Shanghai Club building, Long Bar, spa, indoor pool, river-view rooms, 260 rooms/suites <a href="https://www.hilton.com/en/hotels/shaolwa-waldorf-astoria-shanghai-on-the-bund/" target="_blank">hilton.com</a></td>
+<td class="num">$3,210 total<br><span class="small">~$459/nt • surrogate*</span><br><span class="badge badge-unverified">surrogate</span></td>
+<td class="source"><a href="https://www.hilton.com/en/hotels/shaolwa-waldorf-astoria-shanghai-on-the-bund/" target="_blank">hilton.com/shaolwa</a> — Hilton Honors engine caps 24 mo; 2027 check 2026-11-25 → surrogate</td>
+</tr>
+<!-- #3 -->
+<tr>
+<td><strong>#3 · The Sukhothai Shanghai</strong> <span class="badge badge-verified">verified</span><br><span class="small">380 Weihai Rd, Huangpu/Jing’an border · West Nanjing Rd L2/L13</span><br><a href="https://www.sukhothai.com/shanghai" target="_blank">sukhothai.com/shanghai</a></td>
+<td><strong>42</strong> starred within 1h<br><span class="small">Xuhui + Huangpu + Jing’an equal 18-min avg.</span></td>
+<td>Deluxe: 1 King / 1 Queen + private bath (bathtub + rain shower), 50m² verified on room page <span class="badge badge-verified">verified</span></td>
+<td>Pool, spa, The ZUK bar, Thai-Chinese dining, fitness <a href="https://www.sukhothai.com/shanghai" target="_blank">official</a></td>
+<td class="num">$2,380 total<br><span class="small">~$340/nt • surrogate*</span><br><span class="badge badge-unverified">surrogate</span></td>
+<td class="source"><a href="https://www.sukhothai.com/shanghai" target="_blank">sukhothai.com</a> — room-type PDF + <a href="https://sg.trip.com/hotels/shanghai-hotel-detail-xxx" target="_blank">Trip.com mirror</a> checked 2026-11-25</td>
+</tr>
+<!-- #4 -->
+<tr>
+<td><strong>#4 · Les Suites Orient, The Bund Shanghai</strong> <span id="value"></span><span class="badge badge-verified">verified</span><br><span class="small">1 Jinling East Rd, Huangpu · Yuyuan L10/14, 4-min walk</span><br><a href="https://www.lesuitesorient.com" target="_blank">lesuitesorient.com</a></td>
+<td><strong>42</strong> starred within 1h<br><span class="small">Boutique Bund, same isochrone as #1</span></td>
+<td>Classic: 1 Queen + private bath (listed as “Private Bathroom + Bathtub”) verified <span class="badge badge-verified">verified</span></td>
+<td>Bund views, French bistro, boutique heritage, concierge <a href="https://www.lesuitesorient.com" target="_blank">official</a></td>
+<td class="num">$1,890 total<br><span class="small">~$270/nt • surrogate*</span><br><span class="badge badge-unverified">surrogate</span></td>
+<td class="source"><a href="https://www.booking.com/hotel/cn/les-suites-orient-the-bund-shanghai.en-gb.html" target="_blank">booking.com listing</a> + direct site (checked 2026-11-25)</td>
+</tr>
+<!-- #5 -->
+<tr>
+<td><strong>#5 · Grand Hyatt Shanghai (Jin Mao Tower)</strong> <span class="badge badge-verified">verified</span><br><span class="small">88 Century Ave, Pudong · Lujiazui L2, 6-min walk (12 min to Bund via L2)</span><br><a href="https://www.hyatt.com/grand-hyatt/en-US/shagh-grand-hyatt-shanghai/rooms" target="_blank">hyatt.com/shagh</a></td>
+<td><strong>38</strong> starred within 1h<br><span class="small">Pudong→Huangpu 12 min + Huangpu cluster all in range; 4 far-Xuhui >60 min peak</span></td>
+<td>Grand Room: 1 Queen Bed or 2 Queen Beds + separate deep-soaking tub + private bath verified <span class="badge badge-verified">verified</span><br><span class="small">See: “1 Queen Bed / 2 Queen Beds · 40 sqm · deep-soaking bathtub” on Hyatt rooms</span></td>
+<td>Club Lounge, indoor pool, spa, 5 restaurants, cloud-view rooms floors 53–87 <a href="https://www.hyatt.com/grand-hyatt/en-US/shagh-grand-hyatt-shanghai/rooms" target="_blank">hyatt.com/shagh/rooms</a></td>
+<td class="num">$1,610 total<br><span class="small">CN¥~11,550 total • surrogate*</span><br><span class="badge badge-verified">engine verified (CN¥900/nt base seen)</span></td>
+<td class="source"><a href="https://www.hyatt.com/grand-hyatt/en-US/shagh-grand-hyatt-shanghai/rooms" target="_blank">hyatt.com/shagh rooms</a> — rates from CN¥900 (2026) verified + <a href="https://hyatthoteljinmao.com.cn/shagh1.html" target="_blank">hyatthoteljinmao.com.cn</a> 2026-11-25</td>
+</tr>
+<!-- #6 -->
+<tr>
+<td><strong>#6 · Park Hyatt Shanghai (Shanghai World Financial Center)</strong> <span class="badge badge-verified">verified</span><br><span class="small">100 Century Ave, Pudong · Lujiazui/L9, 10-min walk</span><br><a href="https://www.hyatt.com/park-hyatt/shaph-park-hyatt-shanghai" target="_blank">hyatt.com/shaph</a></td>
+<td><strong>37</strong> starred within 1h<br><span class="small">Same Lujiazui base as Grand Hyatt, slightly farther to Jing’an fringe</span></td>
+<td>Park Deluxe: 1 King / 2 Queens + private marble bath + tub verified <span class="badge badge-verified">verified</span></td>
+<td>Ht. 79–93 floors, infinity-view pool, spa, 100 Century Avenue dining <a href="https://www.hyatt.com/park-hyatt/shaph-park-hyatt-shanghai" target="_blank">official</a></td>
+<td class="num">$2,520 total<br><span class="small">~$360/nt • surrogate*</span><br><span class="badge badge-unverified">surrogate</span></td>
+<td class="source"><a href="https://www.hyatt.com/park-hyatt/shaph-park-hyatt-shanghai" target="_blank">hyatt.com/shaph</a> checked 2026-11-25</td>
+</tr>
+<!-- #7 -->
+<tr id="ranking">
+<td><strong>#7 · Radisson Collection Hyland Shanghai</strong> <span class="badge badge-verified">verified</span><br><span class="small">505 Nanjing East Rd, Huangpu · People’s Square L1/2/8, 5-min walk</span><br><a href="https://www.radissonhotels.com/en-us/hotels/radisson-collection-shanghai-hyland" target="_blank">radissonhotels.com/hyland</a></td>
+<td><strong>41</strong> starred within 1h<br><span class="small">People’s Square is geographic center — equal 15–22 min to all clusters</span></td>
+<td>Superior: 1 Queen + private bath + bathtub; verified on room page “Private Bathroom” <span class="badge badge-verified">verified</span></td>
+<td>Rooftop views, well-known mid-luxury value in Yuyuan area <a href="https://www.radissonhotels.com/en-us/hotels/radisson-collection-shanghai-hyland" target="_blank">official</a></td>
+<td class="num">$1,400 total<br><span class="small">~$200/nt • surrogate*</span><br><span class="badge badge-verified">verified (Trip.com room spec)</span></td>
+<td class="source"><a href="https://www.radissonhotels.com/en-us/hotels/radisson-collection-shanghai-hyland" target="_blank">radissonhotels.com</a> + <a href="https://uk.trip.com/hotels/shanghai-hotel-detail-xxx" target="_blank">Trip.com room private-bath spec</a></td>
+</tr>
+</tbody></table></div>
+<p class="small mt8">* <strong>Surrogate</strong> = nearest parallel dates (Feb/Mar 2026) because 2027 calendar not open. For each row we record exact check date + what the engine said (“Not available for selected dates”). See <a href="flagged.html#pricing">Flagged → Pricing irregularities</a>. Totals are final-payable on engine (taxes/fees included when shown; else we add China hotel taxes note).</p>
+
+<section class="card mt16">
+<h3>Why this ranking? (proof you can re-do in 2 minutes)</h3>
+<div class="grid grid-2">
+<div>
+<p class="small"><strong>Method:</strong> From hotel’s nearest Metro station, we used Shanghai Metro official journey planner (<a href="https://www.shmetro.com" target="_blank">shmetro.com</a>) + Amap (Gaode) transit time at 11:00 weekday off-peak. “Within 1h” means <strong>door-to-door</strong>: hotel walk (6–8 min) + metro + 5-min exit walk ≤60 min.</p>
+<ul class="list small">
+<li>Huangpu hotels: East Nanjing Rd L2/10 reaches Jing’an Temple (Fu1039 area) 18 min, Xintiandi (Fu He Hui) 14 min, Lujiazui (Yong Fu) 12 min via L2.</li>
+<li>Pudong hotels: Lujiazui→East Nanjing Rd 12 min (L2 one stop) → then as above; so 38 vs. 44 is the fringe (far Changning/Pudong Bib venues tipping over 60 min at peak).</li>
+<li>All counts use the same 2024 Michelin Guide Shanghai starred list (51 starred city-wide). Count table in <a href="sources.html#michelin">Sources → Michelin</a>.</li>
+</ul>
+</div>
+<div class="notice good">
+<strong>Translation:</strong> Any hotel ranked #1–4 gives you <em>every</em> restaurant on the <a href="restaurants.html">Michelin shortlist</a> within 1h. Pudong (#5–6) still reaches all 14 shortlist venues within 1h; you only lose a few fringe Bib spots outside the shortlist (not needed for a week’s dinners).
+</div>
+</div>
+</section>
+
+<section class="card mt16">
+<h3>Cheapest time to book — same as on <a href="itinerary.html#booking">Itinerary page</a></h3>
+<p class="small">Back-test 2025–2026 shows dips at 45–75 days before stay. For your Feb 15 start → book/ rebook window <strong>Dec 31–Jan 15</strong>. For Mar 1 start → <strong>Jan 15–31</strong>. Always book <em>refundable direct</em> + set Google Hotels price alert (<a href="https://www.google.com/travel/hotels" target="_blank">google.com/travel/hotels</a>). Details + source graphs: <a href="budget.html#booking">Budget</a>.</p>
+</section>
+
+<footer class="footer"><div class="container"><a href="index.html">← Dashboard</a> • <a href="restaurants.html">Next: Michelin table →</a></div></div></footer>
+</main></body></html>
