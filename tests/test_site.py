@@ -7,6 +7,7 @@ from pathlib import Path
 from urllib.parse import urlsplit, unquote
 
 ROOT = Path(__file__).resolve().parents[1]
+SITE = ROOT / 'considered'
 D = json.loads((ROOT / 'research/data.json').read_text())
 PAGES = ['index','hotels','restaurants','activities','itinerary','dates','review','suggestions','sources']
 
@@ -40,7 +41,7 @@ class SiteTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         subprocess.run(['python3','scripts/build.py'],cwd=ROOT,check=True)
-        cls.pages={p:Page((ROOT/(p+'.html')).read_text()) for p in PAGES}
+        cls.pages={p:Page((SITE/(p+'.html')).read_text()) for p in PAGES}
     def test_nine_pages_accessible_shell(self):
         for key,p in self.pages.items():
             with self.subTest(page=key):
@@ -57,7 +58,7 @@ class SiteTests(unittest.TestCase):
                     u=urlsplit(href)
                     if u.scheme or u.netloc: continue
                     self.assertFalse(href.startswith('/'),'Root-absolute URLs break project Pages')
-                    target=ROOT / unquote(u.path or key+'.html')
+                    target=SITE / unquote(u.path or key+'.html')
                     self.assertTrue(target.is_file(),href)
                     if u.fragment and target.suffix=='.html':
                         self.assertIn(u.fragment,Page(target.read_text()).ids)
@@ -95,13 +96,13 @@ class SiteTests(unittest.TestCase):
         first=date(2027,2,15); last=date(2027,3,23)
         self.assertEqual((date(2027,2,18)-first).days,3)
         self.assertEqual((last-timedelta(days=7)-first).days+1,30)
-        text=(ROOT/'dates.html').read_text()
+        text=(SITE/'dates.html').read_text()
         for i in range(30):
             start=first+timedelta(days=i)
             self.assertIn(f'{start.isoformat()} → {(start+timedelta(days=7)).isoformat()}',text)
     def test_deterministic_build(self):
-        before={p:(ROOT/(p+'.html')).read_bytes() for p in PAGES}
+        before={p:(SITE/(p+'.html')).read_bytes() for p in PAGES}
         subprocess.run(['python3','scripts/build.py'],cwd=ROOT,check=True)
-        for p in PAGES: self.assertEqual(before[p],(ROOT/(p+'.html')).read_bytes())
+        for p in PAGES: self.assertEqual(before[p],(SITE/(p+'.html')).read_bytes())
 
 if __name__=='__main__': unittest.main()

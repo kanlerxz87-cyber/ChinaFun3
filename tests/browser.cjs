@@ -14,7 +14,7 @@ const assert = require('node:assert/strict');
   for (const width of [390, 768, 1440]) {
     await page.setViewportSize({width, height:1000});
     for(const key of pages) {
-      const response=await page.goto(`http://127.0.0.1:8000/${key}.html`);
+      const response=await page.goto(`http://127.0.0.1:8000/considered/${key}.html`);
       assert.equal(response.status(),200);
       assert.equal(await page.locator('h1').count(),1);
       assert.equal(await page.locator('nav a[aria-current="page"]').count(),1);
@@ -22,7 +22,7 @@ const assert = require('node:assert/strict');
       assert.equal(overflow,false,`${key} overflows viewport at ${width}`);
     }
   }
-  await page.goto('http://127.0.0.1:8000/restaurants.html');
+  await page.goto('http://127.0.0.1:8000/considered/restaurants.html');
   await page.getByRole('button',{name:'Selected, no star', exact:true}).click();
   assert.equal(await page.locator('tbody tr:visible').count(),1);
   assert.match(await page.locator('tbody tr:visible').innerText(),/Shanghai Tavern/);
@@ -34,7 +34,7 @@ const assert = require('node:assert/strict');
   assert.equal(await page.locator('.no-results').isVisible(),true);
   await page.locator('.table-search').fill('Changning');
   assert.equal(await page.locator('tbody tr:visible').count(),2);
-  await page.goto('http://127.0.0.1:8000/suggestions.html');
+  await page.goto('http://127.0.0.1:8000/considered/suggestions.html');
   await page.locator('#clear-choices').click();
   await page.locator('[data-choice="quotes"]').click();
   assert.equal(await page.locator('[data-choice="quotes"]').getAttribute('aria-pressed'),'true');
@@ -45,11 +45,11 @@ const assert = require('node:assert/strict');
   await page.getByText('What is the actual time away?',{exact:true}).click();
   assert.equal(await page.locator('details').first().getAttribute('open'),'');
   await page.setViewportSize({width:1440,height:1100});
-  await page.goto('http://127.0.0.1:8000/index.html');
+  await page.goto('http://127.0.0.1:8000/considered/index.html');
   await page.screenshot({path:'.cache/dashboard-desktop.png',fullPage:true});
   await page.setViewportSize({width:390,height:844});
   await page.screenshot({path:'.cache/dashboard-mobile.png',fullPage:true});
-  await page.goto('http://127.0.0.1:8000/restaurants.html');
+  await page.goto('http://127.0.0.1:8000/considered/restaurants.html');
   await page.screenshot({path:'.cache/dining-mobile.png',fullPage:true});
   assert.deepEqual(errors,[],'No browser runtime errors');
   console.log('PASS: 27 page/viewport checks, table filters/search, no-results, saved/cleared review choices, disclosure, no runtime errors.');

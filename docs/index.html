@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard · ChinaFun3 trip planning</title>
+<meta name="description" content="China trip planning: entry rules, holidays, Michelin restaurants, hotels, activities — every value sourced or flagged as unverified.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site"><div class="bar">
+<a class="brand" href="index.html">ChinaFun3 · Trip planning</a>
+<nav class="site"><a href="index.html" class="active">Home</a><a href="entry-and-calendar.html">Entry & calendar</a><a href="michelin-shanghai.html">Michelin</a><a href="hotels.html">Hotels</a><a href="activities.html">Activities</a><a href="review.html">Questions & suggestions</a><a href="repo-review.html">Repo review</a></nav>
+</div></header>
+<main>
+
+<h1>China trip — dashboard</h1>
+<p class="lead">Trip window: 15 Feb – 23 Mar 2027 (1–2 weeks). Preferred: 15–18 Feb 2027. Couple, 2 adults. Status: planning stage — several key facts are still open.</p>
+
+<div class="card flag"><strong>Read first:</strong> Monday 15 Feb 2027 closes the Shanghai Museum and Yu Garden. US passports do not get general visa-free tourist entry. The hotel table is empty because room rates for February 2027 cannot be verified yet.</div>
+
+<h2>Executive summary</h2>
+<div class="card">
+<ul class="plain">
+<li><strong>Dates.</strong> Preferred 15–18 Feb 2027 is a 3-night stay (Mon–Thu). The 7-night price requirement needs a choice: 15–22 Feb, or another 7-night window. Open question Q2.</li>
+<li><strong>Holidays.</strong> Official Spring Festival holiday is 5–13 Feb 2027 (9 days). 14 Feb is a working day. Trip starts after the holiday. <a href="https://www.gov.cn/zhengce/content/202611/content_7085101.htm" target="_blank" rel="noopener">State Council notice ↗</a></li>
+<li><strong>Entry.</strong> US passport: 240-hour visa-free transit only with an onward ticket to a third country or region (max 10 days). Hainan has a 30-day visa-free rule that includes the US. Normal sightseeing in mainland China may need an L visa — nationwide 30-day status still to be checked. <a href="https://en.nia.gov.cn/n147418/n147463/c183412/content.html" target="_blank" rel="noopener">NIA ↗</a></li>
+<li><strong>Michelin (Shanghai).</strong> 156 restaurants in the 2026 guide; 51 starred (1 three-star, 12 two-star, 38 one-star by derived count); 35 Bib Gourmand. Official names for 16 starred restaurants are listed. Hours, prices and social links are not yet verified. <a href="https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang" target="_blank" rel="noopener">Michelin release ↗</a></li>
+<li><strong>Hotels.</strong> Not yet verified. No room, bed, bath or price data is available from this environment.</li>
+<li><strong>Activities.</strong> Shanghai Museum and Yu Garden are verified against their official sites. Both are closed Mondays, so the first preferred day does not work for them.</li>
+<li><strong>Biggest gaps:</strong> city choice, hotels, restaurant hours/prices, social-media links, and the nationwide visa rule.</li>
+</ul>
+</div>
+
+<h2>Categories</h2>
+<div class="grid">
+<a class="card tile" href="entry-and-calendar.html"><div class="k">Entry & calendar</div><div class="v">Visa & holidays</div><div class="d" data-count-src="data/entry.json">loading…</div></a>
+<a class="card tile" href="michelin-shanghai.html"><div class="k">Michelin</div><div class="v">Shanghai cluster</div><div class="d" data-count-src="data/michelin.json">loading…</div></a>
+<a class="card tile" href="hotels.html"><div class="k">Hotels</div><div class="v">Requirements</div><div class="d" data-count-src="data/hotels.json">loading…</div></a>
+<a class="card tile" href="activities.html"><div class="k">Activities</div><div class="v">Hours & tickets</div><div class="d" data-count-src="data/activities.json">loading…</div></a>
+<a class="card tile" href="review.html"><div class="k">Review</div><div class="v">Questions & suggestions</div><div class="d" data-count-src="data/questions.json">loading…</div></a>
+<a class="card tile" href="repo-review.html"><div class="k">Repo review</div><div class="v">Irregularities</div><div class="d" data-count-src="data/irregularities.json">loading…</div></a>
+</div>
+
+<h2>How to read this site</h2>
+<div class="card"><ul class="plain">
+<li>Each table row has a source link to an official site, or is flagged <span class="unverified">Unverified</span>.</li>
+<li>Values are never guessed. Empty cells stay empty until checked.</li>
+<li>The table on each page can be scrolled sideways on desktop; on phones each row becomes a card.</li>
+</ul></div>
+<p class="note">Coordination: see COORDINATION.md in the repo root for task status and logs.</p>
+
+</main>
+<footer class="site">Every value is either linked to an official source or marked <span class="unverified">Unverified</span>. Last data check: 25 Nov 2026. Nothing here is a booking.</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

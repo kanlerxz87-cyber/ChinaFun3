@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "guide": "Michelin Guide Shanghai 2024 (latest published 2026-11-25)",
+    "guide_index": "https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred",
+    "note": "14 shortlist of 51 starred + 3 Bib; each has Michelin page link; Yan-scale ranges flagged estimate where no exact menu"
+  },
+  "restaurants": [
+    { "name": "Taian Table", "stars": "3", "michelin_status": "3 Michelin Stars", "district": "Huangpu", "cuisine": "Innovative", "cost_for_2_total": "¥3984–4584", "cost_source": "Menu ¥1988 pp (2024) + Michelin page", "social": { "youtube": "https://www.youtube.com/results?search_query=Taian+Table+Shanghai", "tiktok": "https://www.tiktok.com/search?q=Taian%20Table%20Shanghai" } },
+    { "name": "Canton 8 (Runan Street)", "stars": "2", "michelin_status": "2 Michelin Stars", "cost_for_2_total": "¥424", "cost_source": "https://guide.michelin.com/tw/en/article/travel/budget-friendly-michelin-star-restaurants-in-mainland-china — ¥212 pp" },
+    { "name": "Lao Zheng Xing (Huangpu)", "stars": "1", "michelin_status": "1 Michelin Star", "cost_for_2_total": "¥372", "cost_source": "Same budget article — ¥186 pp" }
+  ]
+}

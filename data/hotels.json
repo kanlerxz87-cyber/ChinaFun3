@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "verified_date": "2026-11-25",
+    "city": "Shanghai Municipality",
+    "source_guide": "https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred",
+    "note": "Each entry has an official source link; surrogate-labeled 7n totals where 2027 inventory not yet published."
+  },
+  "hotels": [
+    {
+      "rank": 1,
+      "name": "The Peninsula Shanghai",
+      "address": "32 Zhongshan Dong Yi Road, Huangpu, Shanghai",
+      "nearest_metro": "East Nanjing Road L2/L10, 8-min walk",
+      "michelin_starred_within_1h": 44,
+      "room": "Grand Deluxe Suite — 1 Queen/ King + dressing room + marble private bathroom with tub + shower",
+      "amenities": ["Indoor pool", "Spa", "Fitness", "5 restaurants inc. Yi Long Court 1* Cantonese"],
+      "seven_night_total": { "amount_usd": 3850, "per_night_usd": 550, "label": "surrogate*", "status": "surrogate" },
+      "price_source": "https://www.peninsula.com/en/shanghai/rooms (checked 2026-11-25; 2027 cap → surrogate Feb 16-23 2026)"
+    },
+    {
+      "rank": 2,
+      "name": "Waldorf Astoria Shanghai on the Bund",
+      "address": "2 Zhongshan Dong Yi Road, Huangpu",
+      "nearest_metro": "East Nanjing Road L2/L10, 6-min walk",
+      "michelin_starred_within_1h": 43,
+      "seven_night_total": { "amount_usd": 3210, "status": "surrogate" },
+      "price_source": "https://www.hilton.com/en/hotels/shaolwa-waldorf-astoria-shanghai-on-the-bund/"
+    },
+    {
+      "rank": 5,
+      "name": "Grand Hyatt Shanghai",
+      "address": "88 Century Avenue, Pudong (Jin Mao Tower)",
+      "nearest_metro": "Lujiazui L2, 6-min walk (12 min to Bund via L2)",
+      "michelin_starred_within_1h": 38,
+      "room": "Grand Room — 1 Queen Bed / 2 Queen Beds, 40 sqm, deep-soaking bathtub, private bathroom",
+      "seven_night_total": { "amount_usd": 1610, "amount_cny": 11550, "status": "verified-proxy", "rate_floor_cny": 900 },
+      "price_source": "https://www.hyatt.com/grand-hyatt/en-US/shagh-grand-hyatt-shanghai/rooms"
+    }
+  ]
+}

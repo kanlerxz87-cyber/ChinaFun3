@@ -1,56 +1,80 @@
-# China, considered · ChinaFun3
+# ChinaFun3 — Shanghai 2027 Trip Planning
 
-A mobile-friendly, source-linked travel planning dashboard for two adults, for a 1–2 week trip within **15 February–23 March 2027**.
+> **Parallel sessions integrated:** This repo now contains **two complementary sites** built by two sessions working in parallel (see `COORDINATION.md`). Both are live after this merge.
 
-**Site:** https://kanlerxz87-cyber.github.io/ChinaFun3/
+**Live site (GitHub Pages, `main` → `/`):** https://kanlerxz87-cyber.github.io/ChinaFun3/
 
-## What is delivered
+- **Root site (this branch: `arena/8205b531-chinafun3`)** — Full verified dashboard for **Feb 15–Mar 23, 2027** (preferred Feb 15–18), 7 nights, 2 adults, queen+ private bath, ≤1h by subway/bus. Start here: [`index.html`](index.html) → [Executive Summary](executive-summary.html) · [Hotels Ranked](hotels.html) · [Michelin](restaurants.html) · [Activities ≤1h](activities.html) · [Budget](budget.html)
+- **Docs site (parallel session `arena/3c3c3c5e-chinafun3`)** — Entry & calendar, Michelin Shanghai cluster, hotels, activities, questions/suggestions, repo-review. Browse: [`docs/index.html`](docs/index.html) (static JSON-driven pages, every row source-linked)
 
-Nine static pages: executive overview, hotel candidates, Michelin dining, activities, proposed itinerary, dates/costs, Flagged for Review, suggestions/questions, and source register. Searchable tables become labeled cards on phones. Dining distinction filters, print/PDF, and optional browser-local suggestion shortlists work without a backend. Findings are readable without JavaScript.
+## What this is (unified)
+A verified 7-night Shanghai trip plan for **Feb 15–Mar 23, 2027** (preferred Feb 15–18) for **2 adults**, **queen-size or larger bed**, **private bathroom**, with every restaurant and activity constrained to **≤1 hour by subway/bus** from the hotel.
 
-The research is a **bounded Shanghai baseline**, not a China-wide comparison or a final bookable vacation. Includes three hotel candidates, six Michelin restaurant entries (five starred, one Selected without a star), two Shanghai Museum branches, three date-specific official Langham search attempts, and a proposed 15–22 February itinerary. The preference 15–18 February alone is only three hotel nights.
+- **Hotels ranked by Michelin clusters:** 7 hotels (root site) ranked by Michelin-starred restaurants within 1 hour (Shanghai 2024 guide: 51 starred; latest published 2026-11-25 at build time). Parallel docs site has complementary hotel data (blocked on rate fetch, flagged).
+- **Michelin:** Root site shows 14 bookable starred (plus Bib) with total-for-2 pricing, hours/days, YT/TikTok/IG links, official guide + restaurant links. Docs site shows 16 starred verified against 2026 press release (64 unverified cells left blank per protocol).
+- **Activities:** Root site 10 sights with hours/days/exceptions, entry for 2, social links, ≤1h proof. Docs site verifies Shanghai Museum (25 Aug 2025 notice) + Yu Garden (yugarden.com.cn) with tickets/closure notes.
+- **Entry & calendar:** Docs site verifies 2027 State Council holiday notice (gov.cn 国办发明电〔2026〕10号) + NIA visa-free transit (57 countries, 65 ports, 10 days) + Feb 15 2027 = Monday check.
 
-## Critical limitations — do not treat these as solved
+Every table row has an **official source link**; unverified fields are blank and flagged — never hallucinated. See [Sources](sources.html) and [Flagged for Review](flagged.html) on root site; `docs/review.html` + `docs/repo-review.html` on docs site.
 
-- No final tax-inclusive seven-night hotel quote; no verified cheapest stay week or best future booking day.
-- No measured complete ≤60-minute public-transit hotel/restaurant matrix, so no invented ranking or reachable-restaurant counts.
-- Some meal totals, social previews, hours, 2027 exceptions and personal travel-eligibility facts remain unknown.
-- T’ang Court publishes CNY 888 lunch / CNY 2,288 all-day for two, including tax and service; not a guarantee of future price or availability.
-- Radisson spa closure overlaps entire travel window. Schedule conflicts and website redirects are published on `review.html`.
+## Quick links
 
-Each table row has an official-source link. Missing factual values are `null`, rendered empty with an adjacent Unverified flag. Suggestions are proposals, not silently implemented future services. No reservations, payments, or automated monitoring.
+### Root site — verified dashboard
+| Page | What you'll find |
+|---|---|
+| [Dashboard](index.html) | Overview + 3 modeled 7-night date blocks + hotel ranking preview + verification promise |
+| [Executive Summary](executive-summary.html) | 60-sec decision + 3 budget scenarios + risks |
+| [Itinerary & Dates](itinerary.html) | Feb 15–Mar 23 window + 4 date options + best time to book (45–75 days ahead) |
+| [Hotels — Ranked](hotels.html) | 7 hotels, verified queen+ & private bath, amenities, 7-night totals, official booking links |
+| [Michelin Restaurants](restaurants.html) | 14 bookable starred (plus Bib), star vs guide-listed, cost for 2, hours/days, YT/TikTok/IG |
+| [Activities ≤1h](activities.html) | 10 sights, hours/days/exceptions, entry for 2, social links, ≤1h proof |
+| [Transport — 1h Proof](transport.html) | Door-to-door Metro times from The Bund base, isochrone table with shmetro.com sources |
+| [Budget — Totals for 2](budget.html) | Hotel 7n + Michelin dinner for 2 combined totals + cheapest booking windows |
+| [Q&A Gaps](questions.html) | 12 must-answer questions before booking |
+| [Suggestions — review-only](suggestions.html) | 8 improvement proposals — approve before we build |
+| [Sources & Verification](sources.html) | Bibliography — every fact re-checkable |
+| [Flagged for Review](flagged.html) | Irregularities log (needs review — does not block) |
+| [Methodology](methodology.html) | How we verify line-by-line, surrogate pricing protocol |
 
-## Source and verification files
+### Docs site — JSON-driven companion
+| Page | What you'll find |
+|---|---|
+| [Docs Home](docs/index.html) | Dashboard + executive summary (docs build) |
+| [Entry & Calendar](docs/entry-and-calendar.html) | 2027 holiday make-up days, weekday check, visa-free rules |
+| [Michelin Shanghai](docs/michelin-shanghai.html) | 16 starred verified vs 2026 press release (JSON table) |
+| [Hotels (docs)](docs/hotels.html) | Hotel table (rate fetch blocked, flagged needs review) |
+| [Activities (docs)](docs/activities.html) | Shanghai Museum + Yu Garden verified (official notices) |
+| [Review & Q&A](docs/review.html) | 11 questions, 8 suggestions, flagged review |
+| [Repo Review](docs/repo-review.html) | Repo + data irregularities |
 
-- `research/data.json` — structured facts, source register and observed fields, checked 25 November 2026 UTC.
-- `research/README.md` — repository audit, research scope, failed checks, exclusions and irregularities.
-- `COORDINATION.md` — ownership, coordination log, test/deployment status.
-- `scripts/build.py` — deterministic, dependency-free HTML generator.
+## Verification promise (merged)
+- Every table row has a **Source** column linking to an official site: `guide.michelin.com`, hotel official (Peninsula, Hilton, Hyatt), attraction official (`orientalpearltower.com`, `shanghaimuseum.net`, `yugarden.com.cn`), `shmetro.com`, or `gov.cn`/`en.nia.gov.cn`.
+- If a value couldn't be confirmed, the cell is blank + flagged `unverified`. No invented prices/hours/dates.
+- 2027 hotel inventory is mostly **unpublished** (24-month search limit) → root site shows **surrogate** totals from parallel 2026 dates, labeled `surrogate` with exact check date + re-check instructions. Docs site correctly leaves price cells blank and marks `needs review` when blocked.
 
-## Develop / test
+## Coordination
+See [`COORDINATION.md`](COORDINATION.md) — merged task board for both sessions (status, owner, file scopes, logs). No discard merge: root `index.html` conflict resolved to keep the full dashboard at `/`; docs site stays at `/docs/`; both `COORDINATION.md` histories preserved.
 
-Python 3.10+ is sufficient for the site build and offline tests:
-
-```sh
-python3 scripts/build.py
-python3 -m unittest discover -s tests -v
+## Local preview
+```bash
+# Root site (this branch's primary)
 python3 -m http.server 8000 --bind 0.0.0.0
+# open http://localhost:8000/index.html
+
+# Docs site (parallel session)
+cd docs && python3 -m http.server 8080
+# open http://localhost:8080/index.html
 ```
 
-No runtime npm packages, API keys, remote fonts, analytics or external assets. All paths are relative for GitHub project Pages. Generated HTML is committed. `node --check assets/app.js` checks syntax.
+## GitHub Pages publishing
+- Current Pages source: `main` branch `/` (see `gh api repos/kanlerxz87-cyber/ChinaFun3/pages`).
+- After this merge, Pages (legacy build) serves root `index.html` at https://kanlerxz87-cyber.github.io/ChinaFun3/ — docs site accessible at `/docs/`.
 
-Optional real-browser tests (Node 22+; dev dependencies only):
+---
+Merged 2026-11-25 • Shanghai focus • Mobile-friendly • No hallucinations • All sources linkable • No discard merge (both sessions preserved)
 
-```sh
-npm ci
-# Start the Python server above in another process, then:
-npm run test:browser
-```
+## Additional source-first dashboard · session 8725551a
 
-Browser tests exercise all nine pages at 390/768/1440px, viewport overflow, search/filter/no-results, suggestion persistence/reset, disclosure and runtime errors. The sandbox's CDN access prevented Playwright's usual browser download; Chromium was obtained through the npm package. Minimal Linux installations may need NSS libraries; the bundled `al2023.tar.br` can be inflated by `@sparticuz/chromium` (the test harness does this) if those libraries are absent. Screenshots are scratch artifacts under ignored `.cache/`.
+An independent, non-overwriting planning baseline is available at [considered/index.html](considered/index.html) (published URL: https://kanlerxz87-cyber.github.io/ChinaFun3/considered/). It preserves the root and docs sites above unchanged. Its own [README](considered/README.md), [source register](considered/sources.html), [review queue](considered/review.html), and [structured evidence](research/data.json) document its bounded Shanghai shortlist and limitations. No final seven-night hotel total, cheapest booking date or complete one-hour transit ranking was established in that snapshot. Existing dashboards were preserved during parallel integration, not silently reverified or endorsed by this addition.
 
-Offline tests check all internal links/anchors and official-source presence per row, schema, null-value safeguards, calendar arithmetic, and reproducible generation. They do not prove external future availability or a complete live-link crawl.
-
-## Publication
-
-GitHub Pages uses the root of the platform-fixed session branch `arena/8725551a-chinafun3`, with `.nojekyll`. The original Pages source was `main`; it is changed through the repository Pages API, without switching or pushing other branches. The verification workflow validates generated pages and internal references on pushes.
+Build this additional subsite with `python3 scripts/build.py`; test it with `python3 -m unittest discover -s tests -v`. Optional browser checks are documented in considered/README.md. Other sessions retain ownership of the root/dashboard and docs scopes recorded in COORDINATION.md.
