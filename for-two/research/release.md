@@ -11,9 +11,15 @@
 
 ## Publication status
 
-The direct GitHub Pages settings update was denied with HTTP 403. Existing Pages settings (`main`, `/`) and its deployment environment are left untouched. The isolated dashboard is being submitted through an explicit pull request from `arena/a9dba5c2-chinafun3`; the final PR/build outcome will be recorded after completion.
+The direct GitHub Pages settings update was denied with HTTP 403. Existing Pages settings (`main`, `/`) and its deployment environment were left untouched.
 
-Target URL: https://kanlerxz87-cyber.github.io/ChinaFun3/for-two/
+- [PR #7](https://github.com/kanlerxz87-cyber/ChinaFun3/pull/7) merged on 25 November 2026 at 13:32 UTC, commit `e7c538fdec3a5451e8bc36dabdbc6b11a2244990`.
+- Both repository and isolated-dashboard CI checks passed. [Isolated validation run](https://github.com/kanlerxz87-cyber/ChinaFun3/actions/runs/45624417603).
+- [GitHub Pages build and deployment](https://github.com/kanlerxz87-cyber/ChinaFun3/actions/runs/45624561650) completed successfully for that exact merge commit, including the deployment job.
+- Public-page fetch from the research tool failed both during and after deployment. Consequently, deployment is confirmed by GitHub, but independent public HTTP/content verification is **not confirmed**. Local browser rendering at the identical `/for-two/` path passed. The sandbox network allowlist does not include github.io.
+- GitHub emitted a non-blocking Node 20 deprecation annotation for its Pages artifact action (automatically run on Node 24); no deployment failure occurred.
+
+Published path: https://kanlerxz87-cyber.github.io/ChinaFun3/for-two/
 
 ## Research boundary
 

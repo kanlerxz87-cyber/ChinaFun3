@@ -125,3 +125,9 @@ Shared outputs (`docs/index.html` navigation, combined data) owned by T7 (integr
 - **in progress**: PR integration and actual Pages reachability verification. Evidence/results at `for-two/research/release.md`. Direct Pages update denial is not bypassed.
 
 - Publication synchronization: PR #6 landed a completion note while PR #7 opened. Merged main c21b265, preserving that full board and appending this session’s log; no content or ownership lost.
+
+### a9dba5c2 final handoff — 25 November 2026
+
+- **done**: PR #7 merged at 13:32 UTC, merge e7c538fdec3a5451e8bc36dabdbc6b11a2244990. Both CI checks passed. GitHub Pages build/deploy run 45624561650 completed successfully for that exact commit. Published dashboard path: https://kanlerxz87-cyber.github.io/ChinaFun3/for-two/ .
+- **needs review**: research F01–F14 remain published; no one-hour ranking, hotel checkout total, private-bathroom confirmation or complete China-wide cheapest-stay claim. Public-page fetch failed in this environment even after deployment; independent public HTTP/content verification is unconfirmed (github.io is not in sandbox allowlist). Local identical-subpath browser checks passed.
+- **done**: conflict resolutions preserved both owners’ complete coordination logs and existing other-owner files. Final source/test/publication evidence: `for-two/research/verification.md`, `for-two/research/release.md`, `for-two/sources.html`. No bookings, messages to hotels or future monitoring were initiated. Optional root-nav link remains a request to the root owner, not an unauthorized edit.

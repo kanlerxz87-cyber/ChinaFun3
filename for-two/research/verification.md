@@ -5,7 +5,7 @@ Research snapshot: **2026-11-25 UTC**. Travel dates are in China local time. Sou
 ## What was actually done
 
 - Inspected original repository: only an 11-byte README, no application, no data, no coordination board. Created the board, claimed scope, committed and pushed before implementing.
-- Used the fixed Arena branch; no other session claim or integration branch was found. No other branch was created, switched to, merged into or pushed.
+- Used the fixed Arena branch throughout. No other session claim was visible initially. Concurrent dashboards were discovered before publication; main was then merged into this branch with all other-owner files preserved and this dashboard relocated to `/for-two/`. Publication used PR #7; no other branch was checked out, created or pushed directly.
 - Checked official Michelin 2026 regional releases for Shanghai and Guangzhou. Kept Shanghai/Guangzhou separate from regional totals and did not copy third-party aggregate prices.
 - Read seven restaurant records against the official guide and/or operator. Found five starred restaurants, one Bib Gourmand and one Selected restaurant in this shortlist. It is **not** the complete Shanghai guide.
 - Read official room pages for four hotels. Recorded king beds, room sizes when stated, bathroom fixtures and amenities. Did not turn implied bathroom privacy into an explicitly confirmed field.
