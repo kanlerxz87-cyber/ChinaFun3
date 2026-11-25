@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Activities — within 1 hour of Shanghai hotels</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<h1>🎯 Activities (≤1h)</h1>
+<nav>
+<a href="../index.html">Dashboard</a>
+<a href="hotels.html">Hotels</a>
+<a href="restaurants.html">Restaurants</a>
+<a href="activities.html">Activities</a>
+<a href="itinerary.html">Dates &amp; Itinerary</a>
+<a href="verification.html">Verification</a>
+<a href="suggestions.html">Suggestions &amp; Questions</a>
+</nav>
+</div></header>
+<main>
+<div class="card">
+<h2>Activities within ~1 hour of Bund / Lujiazui hotels (subway/bus)</h2>
+<p class="mut">Travel times are planning estimates — verify exact Metro times on <a href="http://service.shmetro.com/en/yxxlt/index.htm">shmetro.com</a> or the Metro app for your hotel station. Hours below are from official pages where verified; otherwise blank + <em>Unverified</em>.</p>
+<div class="toolbar">
+<input type="search" id="a-search" placeholder="Search activity…">
+<select id="a-status"><option value="all">All verification statuses</option><option value="partial">Partially verified</option><option value="unverified">Unverified</option></select>
+</div>
+<div class="tablewrap"><table id="activities-table">
+<thead><tr><th>Activity</th><th>Open days / Hours / Exceptions</th><th>Ticket</th><th>Travel from hotel</th><th>Official link</th><th>Social (verified only)</th></tr></thead>
+<tbody>
+<tr data-status="partial"><td><strong>Shanghai Museum (People's Square)</strong></td><td>Tue–Sun · 09:00–17:00 · Closed Mon (except holidays). <em>Last entry conflict: 15:00 vs 16:00 — verify.</em> East branch: Wed–Mon 10:00–18:00, closed Tue.</td><td>Free (special exhibitions may charge)</td><td>&lt;60 min by Metro Line 2 from Bund/Lujiazui (verify)</td><td><a href="https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-west">shanghaimuseum.net — Visit</a><br><a href="https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/I00004797">Walk-in notice (Aug 2025)</a></td><td><a href="https://www.youtube.com/watch?v=OUtolwvTmAc">YouTube tour</a></td></tr>
+<tr data-status="unverified"><td><strong>Yu Garden</strong> (walled garden)</td><td><em>Secondary only: 09:00–16:30, last entry 16:00, closed Mon (except holidays). Spring Festival by notice. — UNVERIFIED, check official mini-program.</em></td><td><em>¥30/¥40 secondary — verify official</em></td><td>~15 min walk from Bund; &lt;60 min by Metro from Lujiazui</td><td><a href="https://www.yugarden.com.cn/">yugarden.com.cn</a> (confirm)</td><td><a href="https://www.youtube.com/watch?v=hNXTlKNqVGk">YouTube</a><br><a href="https://www.tiktok.com/@sxnecax/video/7331273291216260354">TikTok</a></td></tr>
+<tr data-status="unverified"><td><strong>Oriental Pearl Radio &amp; TV Tower</strong></td><td><em>CONFLICT across sources (09:00–21:00 vs 08:00–22:00) — UNVERIFIED. Check official site.</em></td><td><em>¥160–¥280 secondary — verify</em></td><td>Walking from Lujiazui; &lt;60 min from Bund</td><td><a href="https://www.orientalpearltower.com/">orientalpearltower.com</a> (confirm)</td><td><em>None verified</em></td></tr>
+<tr data-status="partial"><td><strong>Shanghai Disneyland</strong></td><td>Daily per calendar · Typically 08:30–21:30 · <em>Varies — check official calendar for exact date.</em></td><td>Date-specific (check commerce page)</td><td>&lt;60 min by Metro Line 11 (verify)</td><td><a href="https://www.shanghaidisneyresort.com/">shanghaidisneyresort.com</a><br><a href="https://www.shanghaidisneyresort.com/commerce/product">Tickets &amp; packages</a></td><td><em>None verified</em></td></tr>
+<tr data-status="unverified"><td><strong>The Bund</strong> (public waterfront)</td><td><em>Open public space — no official hours page verified in this pass. UNVERIFIED.</em></td><td>Free</td><td>Walking from Bund hotels</td><td><a href="https://www.shanghai.gov.cn/">shanghai.gov.cn</a></td><td><em>None verified</em></td></tr>
+</tbody></table></div>
+<p class="mut">Machine-readable: <a href="../data/activities.csv">activities.csv</a> · <a href="../data/activities.json">activities.json</a>. Instagram links are blank everywhere — no verified Instagram URL was found via search in this pass; do not guess handles.</p>
+</div>
+</main>
+<footer><a href="../index.html">← Dashboard</a> · <a href="verification.html">Verification</a></footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>
