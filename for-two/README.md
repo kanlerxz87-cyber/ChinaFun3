@@ -2,7 +2,7 @@
 
 An evidence-led, mobile-friendly static trip-planning dashboard for two adults traveling between **15 February and 23 March 2027**.
 
-**Site:** https://kanlerxz87-cyber.github.io/ChinaFun3/
+**Site:** https://kanlerxz87-cyber.github.io/ChinaFun3/for-two/
 
 ## Pages
 
@@ -13,7 +13,7 @@ An evidence-led, mobile-friendly static trip-planning dashboard for two adults t
 - Proposed seven-night itinerary
 - Six dated Peninsula hotel searches and transparent seven-night calculations
 - Decision questions and optional locally saved suggestion reviews
-- Flagged for Review (13 open research issues)
+- Flagged for Review (14 open research issues)
 - Official-source register, media links and method
 
 ## Important boundaries
@@ -29,9 +29,10 @@ The preferred 15–18 February window is shorter than one week. The proposed 15�
 Runtime: plain HTML/CSS/JavaScript, no CDN assets, no backend and no framework. Python 3 generates the static pages. Node dependencies are only for browser testing.
 
 ```sh
+cd for-two
 python scripts/build.py
 python -m unittest discover -s tests -v
-python -m http.server 3000 --bind 0.0.0.0
+python -m http.server 3000 --bind 0.0.0.0 --directory ..
 ```
 
 Optional browser tests (with the server already running):
@@ -53,4 +54,4 @@ Local shortlist/suggestion preferences stay in browser localStorage; export is o
 
 ## Coordination and deployment
 
-Read [COORDINATION.md](COORDINATION.md) before changing files. This Arena session uses fixed branch `arena/a9dba5c2-chinafun3`; no alternative branch is created. Repository-generated HTML is committed so GitHub Pages can publish directly from the working branch's root with `.nojekyll`. CI validates the build and tests; it does not claim to reverify third-party travel facts.
+Read [COORDINATION.md](../COORDINATION.md) before changing files. This Arena session uses fixed branch `arena/a9dba5c2-chinafun3`; no alternative branch is created. This dashboard is isolated in `for-two/`; other sessions’ root, docs/ and considered/ sites are preserved, not reverified. Changes go through a PR into the existing Pages source main /, never a direct push or checkout of main. The original board is archived at `COORDINATION-session.md`. CI validates the build and tests; it does not claim to reverify third-party travel facts.

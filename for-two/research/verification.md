@@ -34,7 +34,7 @@ Research snapshot: **2026-11-25 UTC**. Travel dates are in China local time. Sou
 
 ## Irregularities deliberately retained
 
-See F01–F13 on [Flagged for Review](../review.html). Highlights:
+See F01–F14 on [Flagged for Review](../review.html). Highlights:
 - T’ang Court says both “daily” and “Off on Monday”.
 - Langham Deluxe size: index 40–43 m²; detail 40 m² (detail used).
 - Peninsula room page says two adults maximum; engine says sleeps three (two adults fits both, no third guest assumed).
@@ -52,3 +52,7 @@ See F01–F13 on [Flagged for Review](../review.html). Highlights:
 ## What remains incomplete
 
 An exhaustive China-wide city/hotel search; three accepted competing hotel prices; all 30 eligible seven-night date checks; a final checkout total; private-bathroom confirmation; one-hour transit ranking; a complete flight/meal/activity/transport budget; exact-venue media for two restaurants; date-valid 2027 menus, holidays and some opening hours; traveler-specific entry feasibility. These are visible research gaps, not fabricated completions. No future monitoring or follow-up service is running.
+
+## Parallel integration boundary
+
+After initial research, other sessions merged root, docs/ and considered/ dashboards. Their existing files are preserved byte-for-byte; this session’s complete deliverable is under /for-two/. The retained datasets were not independently source-audited by this session. F14 explicitly warns against treating preservation as factual endorsement. Build tools, test dependencies and source records for this dashboard are scoped to for-two/ only.

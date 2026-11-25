@@ -1,3 +1,5 @@
+> Archived initial session board. Current ownership/handoff is in ../COORDINATION.md; historical root claims below are superseded by the isolated for-two/ scope.
+
 # Coordination board
 
 Session: `a9dba5c2` · Working branch: `arena/a9dba5c2-chinafun3` · Started: 2026-11-25 (UTC).

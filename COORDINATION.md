@@ -115,3 +115,9 @@ Shared outputs (`docs/index.html` navigation, combined data) owned by T7 (integr
 - Research: **needs review** (published F01–F13; inherited dashboards also explicitly not reverified). Four hotel candidates, seven dining records, five activities, 51 evidence/media sources. Six official dated Peninsula quotes and surcharge arithmetic; four usable published couple meal totals. No inferred hotel price, private bathroom confirmation, timed transit rank or 2027 menu guarantee. Evidence in `for-two/data/trip.json`, audit at `for-two/research/verification.md`.
 - Site/test implementation: **done**, publication integration **in progress**. Before relocation: 9 offline tests and 113 desktop/mobile/browser/accessibility checks passed. Re-running at /for-two/ before PR. No completion claim for other owners’ factual research.
 - Direct Pages settings update denied HTTP 403. Existing main / publication is retained; plan is explicit PR merge from this branch, no direct push/checkout of main and no settings bypass.
+
+### a9dba5c2 relocation verification complete
+
+- **done**: isolated `/for-two/` build regenerated; 9 Python tests + 113 real-browser checks passed after relocation, including axe desktop/mobile and 320–1440px overflow checks. Combined repository scan: 40 tracked HTML files, zero missing relative-file targets. Existing other-owner files unchanged against main 62a8a24.
+- **needs review**: F14 now published in `for-two/review.html`: preserved parallel dashboards are not independently reverified; do not combine their factual claims without official-source reconciliation. F01–F13 remain published research gaps, not deployment blockers.
+- **in progress**: PR integration and actual Pages reachability verification. Evidence/results at `for-two/research/release.md`. Direct Pages update denial is not bypassed.
