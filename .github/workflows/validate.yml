@@ -1,4 +1,4 @@
-name: Validate static planning site
+name: Validate for-two planning site
 on:
   push:
     branches: [arena/a9dba5c2-chinafun3]
@@ -9,6 +9,9 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: for-two
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -18,6 +21,7 @@ jobs:
         with:
           node-version: '22'
           cache: npm
+          cache-dependency-path: for-two/package-lock.json
       - run: npm ci
       - name: Rebuild and validate data, arithmetic and local links
         run: |
@@ -26,7 +30,7 @@ jobs:
           npm test
       - name: Browser and accessibility checks
         run: |
-          python -m http.server 3000 --bind 0.0.0.0 > /tmp/china-site-server.log 2>&1 &
+          python -m http.server 3000 --bind 0.0.0.0 --directory .. > /tmp/china-site-server.log 2>&1 &
           SERVER_PID=$!
           trap 'kill "$SERVER_PID"' EXIT
           npm run test:browser
@@ -34,5 +38,5 @@ jobs:
         if: always()
         with:
           name: browser-validation
-          path: test-results/
+          path: for-two/test-results/
           retention-days: 7

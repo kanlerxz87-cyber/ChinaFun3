@@ -6,7 +6,7 @@ import { brotliDecompressSync } from 'node:zlib';
 import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 const require=createRequire(import.meta.url);
-const base=process.env.TEST_BASE_URL || 'http://127.0.0.1:3000/';
+const base=process.env.TEST_BASE_URL || 'http://127.0.0.1:3000/for-two/';
 // Minimal Debian environments may lack NSS. Use the libraries shipped in the browser npm package.
 const libDir=path.resolve('.cache/browser');
 await fs.mkdir(libDir,{recursive:true});
