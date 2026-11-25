@@ -37,7 +37,7 @@ python3 -m unittest discover -s tests -v
 python3 -m http.server 8000 --bind 0.0.0.0
 ```
 
-No runtime npm packages, API keys, remote fonts, analytics or external assets. All paths are relative for GitHub project Pages. Generated HTML is committed. `node --check assets/app.js` checks syntax.
+No runtime npm packages, API keys, remote fonts, analytics or external assets. All paths are relative for GitHub project Pages. Generated HTML is committed. `node --check considered/assets/app.js` checks syntax.
 
 Optional real-browser tests (Node 22+; dev dependencies only):
 
