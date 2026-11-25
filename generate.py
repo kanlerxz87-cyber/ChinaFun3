@@ -102,6 +102,9 @@ RANKED = hotel_rank()
 
 # social links: only URLs actually seen during research
 SOCIAL = {
+    "Fu He Hui": [
+        ("Instagram", "https://www.instagram.com/fuhehui/", "official account: 2★, 1037 Yuyuan Rd"),
+    ],
     "Taian Table": [
         ("YouTube", "https://www.youtube.com/watch?v=RYsEUZJSrN8", "in-depth review (16 Jul 2026)"),
         ("YouTube", "https://www.youtube.com/watch?v=YyhXAggluco", "Tai'an Table (27 Feb 2022)"),
@@ -109,8 +112,8 @@ SOCIAL = {
 }
 
 
-def social_cell(name):
-    links = SOCIAL.get(name, [])
+def social_cell(name, extra=None):
+    links = list(extra or []) + SOCIAL.get(name, [])
     if not links:
         q = name.replace(" ", "+")
         return ('<span class="badge warn">no verified post</span>'
@@ -183,7 +186,9 @@ def build_index():
       <li><strong>{len(D.EXCLUDED)} properties are explicitly excluded</strong> and why (Four Seasons not yet
         open in 2027, Ultraviolet closed 2025, one hotel fetched in error).</li>
       <li><strong>{len([r for r in D.RESTAURANTS if not r["hours"]])} of {len(D.RESTAURANTS)}</strong>
-        restaurants still have no official hours — the single biggest gap in this plan.</li>
+        restaurants still have no official hours — the single biggest gap in this plan. Every venue that does
+        publish hours (Yu Garden, both Shanghai Museum buildings, Disneyland, 7 starred kitchens) is filled in
+        and linked.</li>
     </ol>
   </div>
 </div>
@@ -204,7 +209,7 @@ district is confirmed on MICHELIN. District counts are a verified <em>floor</em>
 left blank rather than guessed, so real totals per district are equal or higher.</p>
 
 <h2>What this site does not know yet</h2>
-<div class="notice"><p>Before booking, eight questions need answers — currency of the live room rate,
+<div class="notice"><p>Before booking, {len(QUESTIONS)} questions need answers — currency of the live room rate,
 cancellation terms, which starred kitchens close on Mondays, and whether the hotels actually hold
 queen-bed rooms on your dates. They are all listed, with how to find each answer, on
 <a href="questions.html">Open Questions</a>.</p></div>
@@ -390,7 +395,8 @@ service charge are extra.</p>
 <p>Only links returned by an actual search are published as links. Where no post was verified, the cell offers a
 platform search instead and says so — it is never presented as a restaurant account.
 Verified so far: <strong>{sum(len(v) for v in SOCIAL.values())}</strong> link(s) across
-<strong>{len(SOCIAL)}</strong> restaurant(s).</p>
+<strong>{len(SOCIAL)}</strong> restaurant(s). Accounts were only listed when a search result could be
+tied to the restaurant (for example Fu He Hui's account states its two stars and 1037 Yuyuan Road).</p>
 """
     return page("Michelin", "Starred vs Guide-listed Shanghai restaurants with costs and hours", body, "michelin.html")
 
@@ -405,7 +411,7 @@ def build_activities():
 <td>{e(a["exceptions"]) or "—"}</td>
 <td>{e(a["transit"]) or '<span class="badge warn">not verified</span>'} {"<br>" + VERIFIED if a["transit_verified"] else ""}</td>
 <td>{e(a["cost"]) or '<span class="badge warn">not verified</span>'}</td>
-<td>{social_cell(a["name"])}</td>
+<td>{social_cell(a["name"], a.get("social"))}</td>
 <td>{link(a["src"], "official source")}</td>
 <td>{e(a["notes"]) or "—"}</td>
 </tr>""" for a in D.ACTIVITIES)
@@ -440,10 +446,11 @@ high-speed rail — but they are day trips, not neighbourhood activities.</p>
   <div class="card" style="grid-column:span 6"><h3>Confirmed</h3>
     <p>Both Shanghai Museum buildings publish hours and closures on the museum's own site, including the
     Monday (People's Square) and Tuesday (East) closure and the walk-in rule introduced in September 2025.</p></div>
-  <div class="card" style="grid-column:span 6"><h3>Missing</h3>
-    <p>Yu Garden has no verified hours, ticket price or official site in this dataset, and the Bund's
-    24-hour status is unconfirmed. Neither should be scheduled until checked — see
-    <a href="flagged.html">Flagged</a>.</p></div>
+  <div class="card" style="grid-column:span 6"><h3>Corrected from the official site</h3>
+    <p>Yu Garden publishes <strong>09:00-16:30</strong> (last entry 16:00), closed Mondays except national
+    holidays, at <strong>¥30 per adult</strong> in the 1 Dec-31 Mar off-peak season. Popular guides quoted
+    08:30-17:00 and ¥40-50 — all wrong for February. Still missing: the Bund's 24-hour status, which remains
+    blank rather than assumed.</p></div>
 </div>
 """
     return page("Activities", "Shanghai activities with verified hours and official links", body, "activities.html")
@@ -768,7 +775,9 @@ verifiable for February 2027.</td><td>excluded</td></tr>
 so the bed requirement is unproven for that hotel even though its dining is the strongest.</td><td>{UNVERIFIED}</td></tr>
 <tr><td>Fairmont Peace address</td><td>Street address not captured from an official page; left blank instead of
 copying a directory listing.</td><td>{UNVERIFIED}</td></tr>
-<tr><td>Yu Garden</td><td>No official hours, price or site obtained. Should not be scheduled yet.</td><td>{UNVERIFIED}</td></tr>
+<tr><td>Yu Garden — resolved</td><td>Official site gave 09:00-16:30 with closures, ¥30 off-peak (February) and both gates. Every
+third-party guide consulted quoted a different time or price (08:30-17:00 / 09:00-16:30 / ¥30-¥50), so only the
+official page is used.</td><td>{VERIFIED}</td></tr>
 <tr><td>The Bund</td><td>24-hour access not confirmed on an official page; hours left blank.</td><td>{UNVERIFIED}</td></tr>
 <tr><td>Spring Festival 2027 notice</td><td>Holiday dates come from travel publishers repeating the State
 Council notice; the notice itself was not retrieved.</td><td>{UNVERIFIED}</td></tr>
@@ -826,6 +835,7 @@ def build_verification():
 <tr><td>Fairmont Peace Hotel</td><td>Fairmont Queen Queen 49 sqm, claw-foot tub, marble bath</td><td>{link("https://www.fairmont.com/en/hotels/shanghai/fairmont-peace-hotel/rooms/DBCMV.room.html", "Fairmont room page")}</td></tr>
 <tr><td>Ritz-Carlton Pudong</td><td>1 King / 2 Double room configurations</td><td>{link("https://www.ritzcarlton.com/en/hotels/shasz-the-ritz-carlton-shanghai-pudong/rooms/", "Marriott room page")}</td></tr>
 <tr><td>Bvlgari Shanghai</td><td>82 rooms, 19 suites, Bao Li Xuan on site</td><td>{link("https://www.bulgarihotels.com/en-US/shanghai", "Bvlgari hotel page")}</td></tr>
+<tr><td>Yu Garden</td><td>09:00-16:30 (last entry 16:00), closed Mon except national holidays; ¥30 adult 1 Dec-31 Mar off-peak; Metro 10/14 Yuyuan Garden</td><td>{link("https://www.yugarden.com.cn/page/articleView/message.html", "official visit info")} · {link("https://www.yugarden.com.cn/page/articleView/traffic.html", "official transport page")}</td></tr>
 <tr><td>Shanghai Museum</td><td>09:00–17:00, closed Mondays except holidays</td><td>{link("https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/I00004797", "museum notice")}</td></tr>
 <tr><td>Shanghai Disneyland</td><td>Date-specific closing times</td><td>{link("https://www.shanghaidisneyresort.com/experience/theme-park/theme-park", "official calendar")}</td></tr>
 <tr><td>Shanghai Metro</td><td>19 lines · 508 stations · ~816 km</td><td>{link("https://www.shmetro.com/", "shmetro.com")}</td></tr>
@@ -856,8 +866,22 @@ def build_verification():
     <li>It is complete. Gaps are counted on <a href="flagged.html">Flagged</a>.</li></ul>
   </div>
 </div>
+<h2>Social accounts — how they were accepted</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>Account</th><th>Why it is treated as official</th><th>Link</th></tr></thead>
+<tbody>
+<tr><td>Taian Table (via chef Stefan Stiller)</td><td>Account bio lists "Taian Table &amp; STILLER" with three MICHELIN stars for TT Shanghai.</td><td>{link("https://www.instagram.com/stefan_stiller_taian_table/", "instagram.com/stefan_stiller_taian_table")}</td></tr>
+<tr><td>Fu He Hui</td><td>Bio states Chinese Zen vegetarian, two MICHELIN stars, and the exact street address (1037 Yuyuan Road).</td><td>{link("https://www.instagram.com/fuhehui/", "instagram.com/fuhehui")}</td></tr>
+<tr><td>The Shanghai Museum</td><td>Account describes itself as the museum of ancient Chinese art; used for the People's Square venue.</td><td>{link("https://www.instagram.com/theshanghaimuseum/", "instagram.com/theshanghaimuseum")}</td></tr>
+<tr><td>Shanghai Disneyland park account</td><td>Launch of the park's own Instagram was announced by the resort's verified X account.</td><td>{link("https://instagram.com/shanghaidisneyresort_park/", "instagram.com/shanghaidisneyresort_park")}</td></tr>
+</tbody></table></div>
+<p class="muted">Accounts that could not be tied to the venue were not listed. Where nothing was verified the
+row offers a platform search and says so explicitly — no account was guessed from a name match.</p>
+
 <p class="muted">Tooling note: pages were read directly over HTTPS during this session; no value was taken from
-search-result snippets alone unless the underlying page was opened.</p>
+search-result snippets alone unless the underlying page was opened. One limitation worth stating: some brand
+sites (Bvlgari room pages, Marriott/Hyatt/Shangri-La room pages, the Oriental Pearl Tower site) blocked or failed
+to return, and those rows are marked unverified rather than filled from a directory listing.</p>
 """
     return page("Verification", "Method and source log for every value on this site", body, "verification.html")
 

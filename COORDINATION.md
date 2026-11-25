@@ -170,3 +170,23 @@ Shared outputs (`docs/index.html` navigation, combined data) owned by T7 (integr
 - `main` had advanced with PRs #1–#8 (root site + `docs/` + `for-two/` + `considered/`). Our site was relocated
   to `plan/` before merging so no other session's page names were contested; the merge then produced conflicts
   only in `README.md` and `COORDINATION.md`, resolved by keeping `main`'s text and appending this section.
+
+### Round 3 (session `arena/7449eccd-chinafun3`) — post-publish verification
+
+**Yu Garden resolved from the official site** (previously blank + flagged):
+- Hours `09:00-16:30`, last entry `16:00`, garden cleared `16:30`; closed Mondays except national public holidays.
+- Price is seasonal and February is **off-peak**: ¥30 adult (1 Dec-31 Mar) vs ¥40 peak (1 Apr-30 Jun, 1 Sep-30 Nov).
+- Gates: north 168 Fuyou Road (groups + individuals), south 279 Yuyuan Old Street (individuals only); office 218 Anren Street, Huangpu; tel 021-63260830.
+- Transport: Metro 10/14 Yuyuan Garden + bus 11/26/64/736/926/929/932/969/980/Fangchuan.
+- Sources: https://www.yugarden.com.cn/page/articleView/message.html · https://www.yugarden.com.cn/page/articleView/traffic.html
+
+**Irregularity caught:** every third-party guide consulted gave a different Yu Garden answer (08:30-17:00 vs
+09:00-16:30; ¥30 / ¥40 / ¥50; "closed some Mondays" vs daily). Only the official page is used; the discrepancy is
+documented on `plan/flagged.html` and `plan/verification.html` as evidence for the "official sources only" rule.
+
+**Social accounts accepted (4, each tied to the venue):** Taian Table via chef Stefan Stiller's account (bio lists
+TT Shanghai with three stars); Fu He Hui (bio states 2★ and 1037 Yuyuan Road); The Shanghai Museum; Shanghai
+Disneyland park account (launch announced by the resort's verified X account).
+
+**Build status:** `python3 generate.py` → 9 pages; `python3 check_links.py` → no broken internal links, no
+malformed tables. Published at `/plan/` after PR #9 merged to `main`; Pages build `779e15f` reported `built`.
