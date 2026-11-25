@@ -169,7 +169,8 @@ def build_index():
         are all inside it.</li>
       <li><strong>One hotel beats everything on walk-to-dinner.</strong> Bvlgari Shanghai houses
         <strong>two</strong> starred restaurants in the same building (Bao Li Xuan 2★ and Il Ristorante 1★).
-        The Peninsula (Yi Long Court 1★) and Ritz-Carlton Pudong (Jin Xuan 1★) each house one.</li>
+        The Waldorf Astoria (Ling Long 1★), the Peninsula (Yi Long Court 1★) and the Ritz-Carlton Pudong
+        (Jin Xuan 1★) each house one — confirmed on each restaurant's MICHELIN page.</li>
       <li><strong>Only one restaurant price survives verification.</strong> Taian Table publishes
         ¥2,588 / ¥2,888 per person → <strong>¥5,176–5,776 for two</strong> before add-ons. Other starred
         houses do not publish menus that a static page can confirm.</li>
@@ -251,6 +252,14 @@ brand's own website. Any hotel whose room page could not be read is still listed
 <th>Rooms</th><th>7 nights (15–22 Feb 2027)</th><th>MICHELIN Keys</th>
 </tr></thead>
 <tbody>{"".join(rows)}</tbody></table></div>
+
+<div class="notice ok">
+  <strong>Ranking result.</strong> Bvlgari Shanghai wins outright: Bao Li Xuan (2★) and Il Ristorante (1★) are
+  both inside the building. Waldorf Astoria on the Bund, the Peninsula and the Ritz-Carlton Pudong each house
+  one starred kitchen (Ling Long 1★, Yi Long Court 1★, Jin Xuan 1★ respectively) — those three are tied on the
+  in-building measure and separated only by district depth. Fairmont Peace Hotel and Grand Hyatt Shanghai house
+  none, which is why they sit last despite being strong hotels.
+</div>
 
 <h2>How the ranking is built</h2>
 <div class="grid">
@@ -486,6 +495,28 @@ def build_dates():
 <div class="tablewrap"><table>
 <thead><tr><th>Source</th><th>Type</th><th>What it claims</th><th>Link</th></tr></thead>
 <tbody>{brows}</tbody></table></div>
+
+<h3>Actual dates to act on (derived, not a hotel quote)</h3>
+<div class="tablewrap"><table>
+<thead><tr><th>When</th><th>Action</th><th>Basis</th></tr></thead>
+<tbody>
+<tr><td><strong>Now – 31 Dec 2026</strong><br><span class="muted">~11-13 months ahead</span></td>
+<td>Reserve a <em>free-cancellation</em> room at the first-choice hotel for 15–22 Feb 2027 as soon as the
+calendar opens. This locks the room type, not the price.</td>
+<td>Luxury booking-window guidance (3-6 months for a specific room category) applied backwards from the stay.</td></tr>
+<tr><td><strong>1 Nov – 15 Dec 2026</strong><br><span class="muted">~3 months ahead</span></td>
+<td>Second look: compare the live total for the same room across the shortlist. Replace the placeholder booking
+only if a lower <em>refundable</em> rate appears.</td>
+<td>Mews: 1-3 months balances price and availability.</td></tr>
+<tr><td><strong>1 – 7 Feb 2027</strong><br><span class="muted">8-14 days before check-in</span></td>
+<td>Final price check. Industry data puts the cheapest city-hotel window here; rebook if the rate has dropped.</td>
+<td>Hotels.com 2026 index and KAYAK 2026 analysis.</td></tr>
+<tr><td><strong>After 13 Feb 2027</strong></td>
+<td>Only now is the Spring Festival peak over — avoid any booking action in 5-13 Feb, when pricing spikes.</td>
+<td>State Council holiday dates (via secondary summaries).</td></tr>
+</tbody></table></div>
+<p class="muted">These are <strong>derived dates</strong>: they combine verified stay dates with published
+industry booking windows. They are not a hotel's advice and carry no price guarantee.</p>
 
 <h3>Recommended approach for these dates</h3>
 <ol>
