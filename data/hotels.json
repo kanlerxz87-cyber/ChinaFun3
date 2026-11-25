@@ -1,0 +1,770 @@
+{
+  "metadata": {
+    "taskId": "T-03",
+    "verifiedDate": "2026-11-25",
+    "referenceStayWindow": {
+      "checkIn": "2027-02-22",
+      "checkOut": "2027-03-01",
+      "nights": 7,
+      "occupancy": "2 adults, 1 room",
+      "whySelected": "First full Monday-to-Monday week immediately after Spring Festival (Feb 5–13) and Lantern Festival (Feb 20), before Beijing Two Sessions (typically Mar 4–11) and before Shanghai's March corporate/trade-fair surge. Monday check-in also aligns with KAYAK's May 2026 international hotel pricing study identifying Sunday/Monday as the cheapest check-in days."
+    },
+    "hardRequirements": {
+      "privateBathroom": true,
+      "bedSize": "1 Queen or 1 King bed (confirmed on both official brand room specs and live booking inventory)",
+      "transitRadius": "<= 60 minutes door-to-door by official Metro + walking to audited MICHELIN restaurants"
+    },
+    "currencyNote": "Trip.com live quotes retrieved 2026-11-25 in USD include all taxes and service charges for 1 room x 7 nights. Official direct SynXis quotes (The PuLi, The PuXuan) are in CNY excluding taxes & service charges (typically +16.6% in mainland China luxury hotels). Prices fluctuate dynamically; re-verify via live booking URLs before purchase."
+  },
+  "cheapestBookingWindow": {
+    "summary": "Within the Feb 15–Mar 23, 2027 window, late February (Feb 15–22 and Feb 22–Mar 1) is empirically the cheapest travel period in both Shanghai (30%–53% cheaper than March) and Beijing (2%–14% cheaper than mid-March). For booking lead time, lock in a free-cancellation rate 2–3 months ahead (Nov–Dec 2026) and re-check 7–14 days before arrival when KAYAK's May 2026 global hotel pricing data shows last-minute drops on non-event weeks.",
+    "live2027WeeklyBenchmark": [
+      {
+        "city": "Shanghai",
+        "benchmarkHotel": "Radisson Blu Hotel Shanghai New World",
+        "roomType": "Junior Suite (1 Queen Bed, 40 sqm) / Superior Queen (30 sqm)",
+        "weeks": [
+          {
+            "dates": "2027-02-15 to 2027-02-22 (Mon–Mon)",
+            "total7NightUsdInclTax": 1061,
+            "rateType": "Junior Suite (1 Queen) — Free Cancellation",
+            "vsCheapestPct": 0,
+            "context": "Cheapest week verified; post-CNY return tail, overlaps Lantern Festival (Sat Feb 20)",
+            "sourceUrl": "https://www.trip.com/hotels/shanghai-hotel-detail-346391/radisson-blu-hotel-shanghai-new-world/?checkIn=2027-02-15&checkOut=2027-02-22&adult=2&crn=1"
+          },
+          {
+            "dates": "2027-02-22 to 2027-03-01 (Mon–Mon)",
+            "total7NightUsdInclTax": 1179,
+            "rateType": "Junior Suite (1 Queen) — Free Cancellation",
+            "vsCheapestPct": 11.1,
+            "context": "Best overall balance: zero holiday closures/crowds while still 31%–37% below March rates",
+            "sourceUrl": "https://www.trip.com/hotels/shanghai-hotel-detail-346391/radisson-blu-hotel-shanghai-new-world/?checkIn=2027-02-22&checkOut=2027-03-01&adult=2&crn=1"
+          },
+          {
+            "dates": "2027-03-01 to 2027-03-08 (Mon–Mon)",
+            "total7NightUsdInclTax": 1543,
+            "rateType": "Junior Suite (1 Queen) — Non-refundable (Superior Queen Free Cancel: US$1,572)",
+            "vsCheapestPct": 45.4,
+            "context": "Sharp March corporate & spring trade-fair rate jump (+45% vs mid-Feb)",
+            "sourceUrl": "https://www.trip.com/hotels/shanghai-hotel-detail-346391/radisson-blu-hotel-shanghai-new-world/?checkIn=2027-03-01&checkOut=2027-03-08&adult=2&crn=1"
+          },
+          {
+            "dates": "2027-03-15 to 2027-03-22 (Mon–Mon)",
+            "total7NightUsdInclTax": 1620,
+            "rateType": "Junior Suite (1 Queen) — Non-refundable (Superior Queen Free Cancel: US$1,656)",
+            "vsCheapestPct": 52.7,
+            "context": "Peak spring corporate rate (+53% vs mid-Feb)",
+            "sourceUrl": "https://www.trip.com/hotels/shanghai-hotel-detail-346391/radisson-blu-hotel-shanghai-new-world/?checkIn=2027-03-15&checkOut=2027-03-22&adult=2&crn=1"
+          }
+        ]
+      },
+      {
+        "city": "Beijing",
+        "benchmarkHotel": "Hilton Beijing Wangfujing",
+        "roomType": "Deluxe Plus (1 King Bed, 65 sqm)",
+        "weeks": [
+          {
+            "dates": "2027-02-15 to 2027-02-22 (Mon–Mon)",
+            "total7NightUsdInclTax": 1317,
+            "rateType": "Deluxe Plus (1 King) — Free Cancellation",
+            "vsCheapestPct": 0,
+            "context": "Cheapest week verified; winter off-peak immediately after Spring Festival",
+            "sourceUrl": "https://www.trip.com/hotels/beijing-hotel-detail-347308/hilton-beijing-wangfujing/?checkIn=2027-02-15&checkOut=2027-02-22&adult=2&crn=1"
+          },
+          {
+            "dates": "2027-02-22 to 2027-03-01 (Mon–Mon)",
+            "total7NightUsdInclTax": 1343,
+            "rateType": "Deluxe Plus (1 King) — Free Cancellation",
+            "vsCheapestPct": 2.0,
+            "context": "Virtually identical to mid-Feb (+US$26/wk), zero Lantern Festival crowds, finishes BEFORE Two Sessions",
+            "sourceUrl": "https://www.trip.com/hotels/beijing-hotel-detail-347308/hilton-beijing-wangfujing/?checkIn=2027-02-22&checkOut=2027-03-01&adult=2&crn=1"
+          },
+          {
+            "dates": "2027-03-01 to 2027-03-08 (Mon–Mon)",
+            "total7NightUsdInclTax": 1343,
+            "rateType": "Deluxe Plus (1 King) — Free Cancellation",
+            "vsCheapestPct": 2.0,
+            "context": "CAUTION: Overlaps NPC/CPPCC Two Sessions opening (typically Mar 4–5); heightened Tiananmen/Wangfujing security and tighter diplomatic inventory closer to arrival",
+            "sourceUrl": "https://www.trip.com/hotels/beijing-hotel-detail-347308/hilton-beijing-wangfujing/?checkIn=2027-03-01&checkOut=2027-03-08&adult=2&crn=1"
+          },
+          {
+            "dates": "2027-03-15 to 2027-03-22 (Mon–Mon)",
+            "total7NightUsdInclTax": 1409,
+            "rateType": "Deluxe Plus (1 King) — Non-refundable (Free Cancellation ~US$1,498)",
+            "vsCheapestPct": 7.0,
+            "context": "Spring tourism & milder weather push rates up +7% to +14% vs mid-Feb",
+            "sourceUrl": "https://www.trip.com/hotels/beijing-hotel-detail-347308/hilton-beijing-wangfujing/?checkIn=2027-03-15&checkOut=2027-03-22&adult=2&crn=1"
+          }
+        ]
+      },
+      {
+        "city": "Beijing (Value Tier)",
+        "benchmarkHotel": "Park Plaza Beijing Wangfujing",
+        "roomType": "Deluxe King Room (1 Queen/King Bed, 28–32 sqm)",
+        "weeks": [
+          {
+            "dates": "2027-02-15 to 2027-02-22 (Mon–Mon)",
+            "total7NightUsdInclTax": 955,
+            "rateType": "Deluxe King — Free Cancellation",
+            "vsCheapestPct": 0,
+            "context": "Steady winter off-peak floor",
+            "sourceUrl": "https://www.trip.com/hotels/beijing-hotel-detail-425031/park-plaza-beijing-wangfujing/?checkIn=2027-02-15&checkOut=2027-02-22&adult=2&crn=1"
+          },
+          {
+            "dates": "2027-02-22 to 2027-03-01 (Mon–Mon)",
+            "total7NightUsdInclTax": 955,
+            "rateType": "Deluxe King — Free Cancellation",
+            "vsCheapestPct": 0,
+            "context": "Same low floor, zero holiday/Two Sessions disruption",
+            "sourceUrl": "https://www.trip.com/hotels/beijing-hotel-detail-425031/park-plaza-beijing-wangfujing/?checkIn=2027-02-22&checkOut=2027-03-01&adult=2&crn=1"
+          },
+          {
+            "dates": "2027-03-01 to 2027-03-08 (Mon–Mon)",
+            "total7NightUsdInclTax": 955,
+            "rateType": "Deluxe King — Free Cancellation",
+            "vsCheapestPct": 0,
+            "context": "Same base rate early; Two Sessions security applies near Wangfujing/Chang'an Ave",
+            "sourceUrl": "https://www.trip.com/hotels/beijing-hotel-detail-425031/park-plaza-beijing-wangfujing/?checkIn=2027-03-01&checkOut=2027-03-08&adult=2&crn=1"
+          }
+        ]
+      }
+    ],
+    "bookingLeadTimeGuidance": {
+      "sourceName": "KAYAK Hotel Pricing Study (published May 6, 2026; analyzing Jan 2025–Mar 2026 search data)",
+      "sourceUrl": "https://www.kayak.co.uk/news/best-time-to-book-a-hotel/",
+      "keyFindings": [
+        "Cheapest booking window statistically falls within 1–2 weeks before check-in (week of stay) on standard off-peak dates, though relying solely on last-minute inventory risks sell-outs during Beijing Two Sessions or Shanghai trade fairs.",
+        "Cheapest check-in days for international hotel stays are Sunday and Monday (Friday and Saturday check-ins carry the highest weekend premiums).",
+        "Actionable Two-Step Booking Playbook: (1) Reserve a Free Cancellation rate immediately (all 10 hotels below offer free cancellation up to 1–3 days before check-in) to lock in low February pricing; (2) Re-check Trip.com and official brand rates 14 days and 7 days prior to Feb 22, 2027—rebook if lower, or keep your locked-in rate if rates rise."
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "id": "sh-radisson-blu-new-world",
+      "city": "Shanghai",
+      "cityRank": 1,
+      "tier": "Upper-Midscale / Best Overall Transit & Value",
+      "name": "Radisson Blu Hotel Shanghai New World",
+      "chineseName": "上海新世界丽笙大酒店",
+      "district": "Huangpu (People's Square)",
+      "address": "No. 88 Nanjing West Road, Huangpu District, Shanghai 200003, China",
+      "phone": "+86 21 6359 9999",
+      "nearestMetro": {
+        "station": "People's Square Station (人民广场站)",
+        "lines": ["Line 1", "Line 2", "Line 8"],
+        "walkMeters": 250,
+        "walkMinutes": 4
+      },
+      "michelinReachability": {
+        "auditedWithin60Min": 16,
+        "auditedTotalInCity": 16,
+        "auditedWithin30Min": 15,
+        "maxDoorToDoorMin": 35,
+        "cityGuideClusterReachable": "Virtually all 156 Shanghai MICHELIN Guide restaurants via 3-line People's Square hub",
+        "keyTransitExamples": [
+          "Vivant by Johnny Pham (1★): 5 min walk",
+          "8 ½ Otto e Mezzo Bombana (2★) & Imperial Treasure (2★): 15 min (Line 2, 1 stop + walk)",
+          "T'ang Court (2★): 14 min (Line 8, 1 stop + walk) or 20 min walk",
+          "Bao Li Xuan (2★): 15 min (Line 1/12)",
+          "Huaiyang Delights (1★) & Yuge (Bib): 15 min (Line 2, 2 stops to Jing'an Temple)",
+          "Jade on 36 (Selected) & Yong Yi Ting (1★): 18–22 min (Line 2, 2 stops to Lujiazui)",
+          "Taian Table (3★) & Fu He Hui (2★): 22–25 min (Line 2, 3 stops to Jiangsu Rd)",
+          "Da Vittorio (2★) & Canton 8 (2★): 18–22 min (Line 8/10)"
+        ]
+      },
+      "verifiedRoom": {
+        "roomName": "Junior Suite (1 Queen Bed)",
+        "bedSpec": "1 Queen bed",
+        "sizeSqm": 40,
+        "privateBathroom": true,
+        "bathroomDetails": "Private en-suite bathroom with bathtub and separate shower",
+        "nonSmoking": true
+      },
+      "amenities": [
+        "Free indoor heated swimming pool",
+        "Free 24-hour fitness center",
+        "Vita Spa & massage room",
+        "Free Wi-Fi",
+        "Revolving 45F restaurant & 47F Sky Dome Bar",
+        "Executive lounge (eligible room tiers)",
+        "Concierge & luggage storage"
+      ],
+      "pricing7NightsFeb22Mar1": {
+        "checkIn": "2027-02-22",
+        "checkOut": "2027-03-01",
+        "nights": 7,
+        "lowestQueenKingUsdInclTax": 1179,
+        "avgPerNightPreTaxUsd": 159,
+        "breakfast2AdultsUsdInclTax": 1395,
+        "cancellationPolicy": "Free cancellation before 12:00, Feb 22, 2027",
+        "directOfficialRateNote": "Radisson official SPA booking display did not expose static HTML rate payload for automated read; verified live tax-inclusive total pulled from Trip.com.",
+        "officialHotelUrl": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-shanghai-new-world",
+        "liveQuoteUrl": "https://www.trip.com/hotels/shanghai-hotel-detail-346391/radisson-blu-hotel-shanghai-new-world/?checkIn=2027-02-22&checkOut=2027-03-01&adult=2&crn=1"
+      }
+    },
+    {
+      "id": "sh-holiday-inn-nanjing-road",
+      "city": "Shanghai",
+      "cityRank": 2,
+      "tier": "Value / Midscale (IHG)",
+      "name": "Holiday Inn Shanghai Nanjing Road by IHG",
+      "chineseName": "上海南京路步行街假日酒店",
+      "district": "Huangpu (East Nanjing Road / The Bund)",
+      "address": "No. 595 Jiujiang Road, Huangpu District, Shanghai 200001, China",
+      "phone": "+86 21 3313 4888",
+      "nearestMetro": {
+        "station": "East Nanjing Road Station (南京东路站) & People's Square Station",
+        "lines": ["Line 2", "Line 10", "Line 1 (via People's Square)", "Line 8 (via People's Square)"],
+        "walkMeters": 460,
+        "walkMinutes": 6
+      },
+      "michelinReachability": {
+        "auditedWithin60Min": 16,
+        "auditedTotalInCity": 16,
+        "auditedWithin30Min": 14,
+        "maxDoorToDoorMin": 40,
+        "cityGuideClusterReachable": "Walkable to Bund fine dining + direct Line 2/10 spine across Huangpu, Pudong, Jing'an, Xuhui & Changning",
+        "keyTransitExamples": [
+          "Vivant by Johnny Pham (1★): 8 min walk",
+          "8 ½ Otto e Mezzo Bombana (2★) & Imperial Treasure (2★): 12–15 min walk",
+          "Da Vittorio (2★): 15 min (Line 10, 1 stop to Yuyuan Garden + walk)",
+          "T'ang Court (2★): 16 min (Line 10, 2 stops to Xintiandi)",
+          "Jade on 36 (Selected) & Yong Yi Ting (1★): 14–20 min (Line 2, 1 stop to Lujiazui)",
+          "Huaiyang Delights (1★): 18 min (Line 2, 3 stops)",
+          "Taian Table (3★) & Fu He Hui (2★): 25–28 min (Line 2, 4 stops)"
+        ]
+      },
+      "verifiedRoom": {
+        "roomName": "Superior Queen Room (Standard 1 King / Queen)",
+        "bedSpec": "1 Queen bed (IHG official site also lists Standard 30 sqm 1 King Bed)",
+        "sizeSqm": 30,
+        "privateBathroom": true,
+        "bathroomDetails": "Private en-suite bathroom with walk-in shower",
+        "nonSmoking": true
+      },
+      "amenities": [
+        "Fitness center",
+        "Free Wi-Fi",
+        "2 on-site restaurants & cafe",
+        "Mini fridge & tea/coffee maker",
+        "Library / lobby lounge",
+        "Airport transfer service (extra charge)"
+      ],
+      "pricing7NightsFeb22Mar1": {
+        "checkIn": "2027-02-22",
+        "checkOut": "2027-03-01",
+        "nights": 7,
+        "lowestQueenKingUsdInclTax": 1302,
+        "avgPerNightPreTaxUsd": 159,
+        "breakfast2AdultsUsdInclTax": 1572,
+        "cancellationPolicy": "Free cancellation before 16:00, Feb 22, 2027",
+        "directOfficialRateNote": "IHG live rate SPA blocked automated read; official room specs verified on ihg.com and live tax-inclusive total pulled from Trip.com.",
+        "officialHotelUrl": "https://www.ihg.com/holidayinn/hotels/us/en/shanghai/shanr/hoteldetail/rooms",
+        "liveQuoteUrl": "https://www.trip.com/hotels/shanghai-hotel-detail-72812393/holiday-inn-shanghai-nanjing-road-by-ihg/?checkIn=2027-02-22&checkOut=2027-03-01&adult=2&crn=1"
+      }
+    },
+    {
+      "id": "sh-langham-xintiandi",
+      "city": "Shanghai",
+      "cityRank": 3,
+      "tier": "Luxury (Home of 2★ T'ang Court)",
+      "name": "The Langham, Shanghai, Xintiandi",
+      "chineseName": "上海新天地朗廷酒店",
+      "district": "Huangpu (Xintiandi)",
+      "address": "No. 99 Madang Road, Huangpu District, Shanghai 200021, China",
+      "phone": "+86 21 2330 2288",
+      "nearestMetro": {
+        "station": "Site of the First CPC National Congress · South Huangpi Rd (Line 1/14) & Xintiandi (Line 10/13)",
+        "lines": ["Line 1", "Line 14", "Line 10", "Line 13"],
+        "walkMeters": 260,
+        "walkMinutes": 4
+      },
+      "michelinReachability": {
+        "auditedWithin60Min": 16,
+        "auditedTotalInCity": 16,
+        "auditedWithin30Min": 14,
+        "maxDoorToDoorMin": 38,
+        "cityGuideClusterReachable": "4-line Xintiandi/Huaihai crossroads with 2★ T'ang Court inside the hotel",
+        "keyTransitExamples": [
+          "T'ang Court (2★): 0 min (5th Floor of this hotel!)",
+          "Vivant by Johnny Pham (1★): 14 min (Line 1, 1 stop to People's Square)",
+          "Canton 8 (2★) & Da Vittorio (2★): 15–18 min (Line 10/14)",
+          "Huaiyang Delights (1★): 15 min (Line 14, 1 stop to Jing'an Temple)",
+          "Ji Pin Court (2★) & Trine (Selected): 16–20 min (Line 1/10)",
+          "Jade on 36 (Selected) & Yong Yi Ting (1★): 18–22 min (Line 14 direct to Lujiazui)",
+          "8 ½ Otto e Mezzo Bombana (2★): 20 min (Line 10, 2 stops to East Nanjing Rd)",
+          "Taian Table (3★) & Fu He Hui (2★): 25–30 min (Line 14 + Line 2 or 18 min DiDi)"
+        ]
+      },
+      "verifiedRoom": {
+        "roomName": "Deluxe King Room (Official Superior/Deluxe King)",
+        "bedSpec": "1 King bed (1.8m x 2.0m confirmed on official langhamhotels.com; Trip.com labels 1 queen/king)",
+        "sizeSqm": 40,
+        "privateBathroom": true,
+        "bathroomDetails": "Marble private bathroom with deep bathtub, separate rain shower, heated floor, and Diptyque bath amenities",
+        "nonSmoking": true
+      },
+      "amenities": [
+        "2★ MICHELIN T'ang Court Cantonese restaurant on 5F",
+        "Free illuminated indoor heated swimming pool",
+        "Chuan Spa (Traditional Chinese Medicine inspired) & sauna",
+        "24-hour fitness center",
+        "Free Wi-Fi",
+        "Langham Club Executive Lounge (upgrade tier)",
+        "Signature Langham Afternoon Tea Lobby Lounge"
+      ],
+      "pricing7NightsFeb22Mar1": {
+        "checkIn": "2027-02-22",
+        "checkOut": "2027-03-01",
+        "nights": 7,
+        "lowestQueenKingUsdInclTax": 1917,
+        "avgPerNightPreTaxUsd": 235,
+        "breakfast2AdultsUsdInclTax": 2385,
+        "cancellationPolicy": "Free cancellation before 18:00, Feb 21, 2027",
+        "directOfficialRateNote": "Official room specs verified on langhamhotels.com; live tax-inclusive 7-night quote pulled from Trip.com.",
+        "officialHotelUrl": "https://www.langhamhotels.com/en/the-langham/shanghai/stay/rooms/deluxe-room/",
+        "liveQuoteUrl": "https://www.trip.com/hotels/shanghai-hotel-detail-374483/the-langham-shanghai-xintiandi/?checkIn=2027-02-22&checkOut=2027-03-01&adult=2&crn=1"
+      }
+    },
+    {
+      "id": "sh-puli-hotel-and-spa",
+      "city": "Shanghai",
+      "cityRank": 4,
+      "tier": "Ultra-Luxury Urban Resort (LHW)",
+      "name": "The PuLi Hotel and Spa",
+      "chineseName": "上海璞丽酒店",
+      "district": "Jing'an (Jing'an Temple)",
+      "address": "No. 1 Changde Road, Jing'an District, Shanghai 200040, China",
+      "phone": "+86 21 3203 9999",
+      "nearestMetro": {
+        "station": "Jing'an Temple Station (静安寺站)",
+        "lines": ["Line 2", "Line 7", "Line 14"],
+        "walkMeters": 90,
+        "walkMinutes": 2
+      },
+      "michelinReachability": {
+        "auditedWithin60Min": 16,
+        "auditedTotalInCity": 16,
+        "auditedWithin30Min": 14,
+        "maxDoorToDoorMin": 38,
+        "cityGuideClusterReachable": "Direct 3-line Jing'an Temple interchange (90m from lobby); best base for West Shanghai 3★ Taian Table + Jing'an/French Concession dining",
+        "keyTransitExamples": [
+          "Huaiyang Delights (1★): 2 min walk (adjacent Park Place Mall)",
+          "Yuge (Bib Gourmand): 7 min walk",
+          "Taian Table (3★) & Fu He Hui (2★): 12–16 min (Line 2, 1 stop to Jiangsu Rd)",
+          "T'ang Court (2★): 14 min (Line 14, 1 stop to South Huangpi Rd)",
+          "Vivant by Johnny Pham (1★): 15 min (Line 2, 2 stops to People's Square)",
+          "Ji Pin Court (2★) & Trine (Selected): 12–15 min (Line 7, 1 stop to Changshu Rd)",
+          "8 ½ Otto e Mezzo Bombana (2★) & Imperial Treasure (2★): 22 min (Line 2, 3 stops)",
+          "Jade on 36 (Selected) & Yong Yi Ting (1★): 24–28 min (Line 2/14 direct to Lujiazui)"
+        ]
+      },
+      "verifiedRoom": {
+        "roomName": "Deluxe King Room",
+        "bedSpec": "1 King bed (1.8m x 2.0m confirmed on official thepuli.com & SynXis)",
+        "sizeSqm": 45,
+        "privateBathroom": true,
+        "bathroomDetails": "Private bathroom with window-side soaking bathtub, separate rainfall shower, and bespoke luxury amenities",
+        "nonSmoking": true
+      },
+      "amenities": [
+        "25-meter heated indoor infinity swimming pool (free)",
+        "UR Spa & sauna/steam facilities",
+        "Complimentary daily in-room minibar & Nespresso machine",
+        "24-hour fitness center",
+        "Free high-speed Wi-Fi",
+        "24-hour dedicated Guest Service Specialist",
+        "Note: Phased property enhancements began Oct 2025 while remaining fully operational (per official SynXis notice)"
+      ],
+      "pricing7NightsFeb22Mar1": {
+        "checkIn": "2027-02-22",
+        "checkOut": "2027-03-01",
+        "nights": 7,
+        "lowestQueenKingUsdInclTax": 3097,
+        "avgPerNightPreTaxUsd": 417,
+        "breakfast2AdultsUsdInclTax": 3531,
+        "officialDirectSynxisCnyPerNightExclTax": 2533,
+        "officialDirectSynxisNote": "Verified live 2027-02-22 to 2027-03-01 direct rate on be.synxis.com: CN¥2,533/night excl. taxes & fees ('Stay 3 Nights - Up to 15% Off', Free cancellation up to 16:00 1 day prior).",
+        "cancellationPolicy": "Free cancellation before 16:00, Feb 21, 2027",
+        "officialHotelUrl": "https://thepuli.com/en/shanghai-jingan-luxury-puli-hotel-rooms-and-suites/city-view-deluxe-room/",
+        "officialDirectBookingUrl": "https://be.synxis.com/?adult=2&arrive=2027-02-22&chain=24447&child=0&currency=CNY&depart=2027-03-01&hotel=7049&level=hotel&locale=en-US&rooms=1",
+        "liveQuoteUrl": "https://www.trip.com/hotels/shanghai-hotel-detail-416228/the-puli-shanghai/?checkIn=2027-02-22&checkOut=2027-03-01&adult=2&crn=1"
+      }
+    },
+    {
+      "id": "sh-grand-hyatt-jin-mao",
+      "city": "Shanghai",
+      "cityRank": 5,
+      "tier": "Skyline 5-Star Value (Jin Mao Tower Floors 54–87)",
+      "name": "Grand Hyatt Shanghai",
+      "chineseName": "上海金茂君悦大酒店",
+      "district": "Pudong (Lujiazui Financial District)",
+      "address": "Jin Mao Tower, No. 88 Century Avenue (Check-in 54F), Pudong New Area, Shanghai 200121, China",
+      "phone": "+86 21 8024 1234",
+      "nearestMetro": {
+        "station": "Lujiazui Station (陆家嘴站)",
+        "lines": ["Line 2", "Line 14"],
+        "walkMeters": 430,
+        "walkMinutes": 6
+      },
+      "michelinReachability": {
+        "auditedWithin60Min": 16,
+        "auditedTotalInCity": 16,
+        "auditedWithin30Min": 11,
+        "maxDoorToDoorMin": 48,
+        "cityGuideClusterReachable": "Iconic Lujiazui skyline base; 1–2 stops across the Huangpu River via Line 2/14 to The Bund, Yuyuan, People's Square & Xintiandi",
+        "keyTransitExamples": [
+          "Jade on 36 (Selected) & Yong Yi Ting (1★): 10–15 min walk",
+          "Da Vittorio (2★): 18 min (Line 14, 1 stop to Yuyuan Garden + walk)",
+          "8 ½ Otto e Mezzo Bombana (2★) & Imperial Treasure (2★): 20 min (Line 2, 1 stop to East Nanjing Rd)",
+          "Vivant by Johnny Pham (1★): 22 min (Line 2, 2 stops to People's Square)",
+          "T'ang Court (2★): 25 min (Line 14, 3 stops to South Huangpi Rd)",
+          "Huaiyang Delights (1★): 28 min (Line 2/14 to Jing'an Temple)",
+          "Taian Table (3★) & 157 Shi Fang (Bib Gourmand): 38–48 min (Line 2 West)"
+        ]
+      },
+      "verifiedRoom": {
+        "roomName": "Grand Queen Bed / Grand Hyatt King Room (Floors 58–79)",
+        "bedSpec": "1 Queen bed (40 sqm) or 1 King bed (40–42 sqm; official hyatt.com confirms King & Queen options)",
+        "sizeSqm": 40,
+        "privateBathroom": true,
+        "bathroomDetails": "Marble private bathroom with soaking tub and separate walk-in shower",
+        "nonSmoking": true
+      },
+      "amenities": [
+        "57th-floor sky-high heated indoor swimming pool (swimming cap required per official Hyatt policy)",
+        "Club Oasis Spa, sauna & fitness center",
+        "9–10 on-site dining venues & Cloud 9 sky bar",
+        "33-storey central atrium in Jin Mao Tower",
+        "Free Wi-Fi",
+        "Grand Club Lounge (eligible room tiers)"
+      ],
+      "pricing7NightsFeb22Mar1": {
+        "checkIn": "2027-02-22",
+        "checkOut": "2027-03-01",
+        "nights": 7,
+        "lowestQueenKingUsdInclTax": 1311,
+        "kingRoomFreeCancelUsdInclTax": 1468,
+        "avgPerNightPreTaxUsd": 161,
+        "breakfast2AdultsUsdInclTax": 1678,
+        "cancellationPolicy": "Free cancellation before 23:59, Feb 19, 2027 (Grand Queen US$1,311 / Grand King US$1,468)",
+        "directOfficialRateNote": "Official room specs & pool policy verified on hyatt.com; live tax-inclusive 7-night quote pulled from Trip.com.",
+        "officialHotelUrl": "https://www.hyatt.com/grand-hyatt/en-US/shagh-grand-hyatt-shanghai/rooms",
+        "liveQuoteUrl": "https://www.trip.com/hotels/shanghai-hotel-detail-346403/grand-hyatt-shanghai/?checkIn=2027-02-22&checkOut=2027-03-01&adult=2&crn=1"
+      }
+    },
+    {
+      "id": "bj-puxuan-hotel-and-spa",
+      "city": "Beijing",
+      "cityRank": 1,
+      "tier": "Ultra-Luxury (Home of 1★ Fu Chun Ju, Steps from Forbidden City)",
+      "name": "The PuXuan Hotel and Spa",
+      "chineseName": "北京璞瑄酒店",
+      "district": "Dongcheng (Wangfujing / National Art Museum)",
+      "address": "No. 1 Wangfujing Street, Dongcheng District, Beijing 100006, China",
+      "phone": "+86 10 5393 6688",
+      "nearestMetro": {
+        "station": "National Art Museum Station (中国美术馆站)",
+        "lines": ["Line 8"],
+        "walkMeters": 90,
+        "walkMinutes": 2
+      },
+      "michelinReachability": {
+        "auditedWithin60Min": 13,
+        "auditedTotalInCity": 13,
+        "auditedWithin30Min": 10,
+        "maxDoorToDoorMin": 55,
+        "cityGuideClusterReachable": "Unmatched heritage + Michelin base: 1★ Fu Chun Ju on-site, 1★ Trb Hutong 7 min walk, Line 8 at lobby doorstep",
+        "keyTransitExamples": [
+          "Fu Chun Ju (1★): 0 min (3rd Floor of this hotel!)",
+          "Trb Hutong (1★): 7 min walk",
+          "Fangzhuanchang No. 69 (Bib Gourmand): 12 min (Line 8, 2 stops to Shichahai)",
+          "King's Joy (2★): 20 min (Line 8 + Line 2 or 12 min DiDi)",
+          "Chao Shang Chao (3★) & Jingji (2★): 24–28 min (Line 8 + Line 1 to Guomao/Dawanglu)",
+          "Lamdre (2★), Old Tower (1★), Monsieur Dior (Selected) & Sheng Yong Xing (1★): 26–32 min (Line 6/10 or 18 min DiDi)",
+          "Xin Rong Ji (3★): 32 min (Line 8+2+10 or 20 min DiDi)",
+          "Chef 1996 (1★): 45–55 min Metro / 30 min DiDi"
+        ]
+      },
+      "verifiedRoom": {
+        "roomName": "Grand King Room",
+        "bedSpec": "1 King bed (1.8m x 2.0m confirmed on official thepuxuan.com & SynXis)",
+        "sizeSqm": 50,
+        "privateBathroom": true,
+        "bathroomDetails": "Private marble bathroom with custom soaking bathtub and separate rainfall shower",
+        "nonSmoking": true
+      },
+      "amenities": [
+        "1★ MICHELIN Fu Chun Ju Cantonese restaurant on 3F & Rive Gauche French brasserie",
+        "UR Spa by Guerlain",
+        "Complimentary daily in-room minibar & Nespresso machine",
+        "24-hour fitness center",
+        "Private library & Tea Room",
+        "Free Wi-Fi",
+        "24-hour flexible check-in/out & PuXuan Club privileges on eligible rates"
+      ],
+      "pricing7NightsFeb22Mar1": {
+        "checkIn": "2027-02-22",
+        "checkOut": "2027-03-01",
+        "nights": 7,
+        "lowestQueenKingUsdInclTax": 2786,
+        "avgPerNightPreTaxUsd": 375,
+        "breakfast2AdultsUsdInclTax": 2993,
+        "officialDirectSynxisCnyPerNightExclTax": 2468,
+        "officialDirectSynxisNote": "Verified live 2027-02-22 to 2027-03-01 direct rate on be.synxis.com: CN¥2,468/night excl. taxes & fees ('Stay for 4 Pay for 3', daily breakfasts included, Free cancellation up to 16:00 3 days prior).",
+        "cancellationPolicy": "Free cancellation before 18:00, Feb 21, 2027 (Trip.com) / 3 days prior (SynXis Stay 4 Pay 3)",
+        "officialHotelUrl": "https://thepuxuan.com/zh-hans/beijing-wangfujing-luxury-hotel-rooms-and-suites/grand-room/",
+        "officialDirectBookingUrl": "https://be.synxis.com/?adult=2&arrive=2027-02-22&chain=24447&child=0&currency=CNY&depart=2027-03-01&hotel=6954&level=hotel&locale=en-US&rooms=1",
+        "liveQuoteUrl": "https://www.trip.com/hotels/beijing-hotel-detail-28704027/the-puxuan-hotel-and-spa/?checkIn=2027-02-22&checkOut=2027-03-01&adult=2&crn=1"
+      }
+    },
+    {
+      "id": "bj-park-plaza-wangfujing",
+      "city": "Beijing",
+      "cityRank": 2,
+      "tier": "Best Value / 4-Star Upscale (Radisson)",
+      "name": "Park Plaza Beijing Wangfujing",
+      "chineseName": "北京丽亭酒店（王府井店）",
+      "district": "Dongcheng (Wangfujing / Jinbao Street)",
+      "address": "No. 97 Jinbao Street, Dongcheng District, Beijing 100005, China",
+      "phone": "+86 10 8522 1999",
+      "nearestMetro": {
+        "station": "Dengshikou Station (灯市口站)",
+        "lines": ["Line 5", "Line 1 (via Dongdan, 1 stop south)", "Line 8 (Jinyu Hutong, 7 min walk)"],
+        "walkMeters": 290,
+        "walkMinutes": 4
+      },
+      "michelinReachability": {
+        "auditedWithin60Min": 13,
+        "auditedTotalInCity": 13,
+        "auditedWithin30Min": 11,
+        "maxDoorToDoorMin": 55,
+        "cityGuideClusterReachable": "Direct Line 5 north-south spine (2★ King's Joy & Temple of Heaven) + 1 stop to Line 1 East (3★ Chao Shang Chao & 2★ Jingji)",
+        "keyTransitExamples": [
+          "Under Clouds Green (Selected): 8 min walk (Dafangjia Hutong)",
+          "Fu Chun Ju (1★): 12 min walk",
+          "King's Joy (2★): 15 min (Line 5 direct, 4 stops to Yonghegong)",
+          "Chao Shang Chao (3★): 18 min (Line 5 -> Line 1 to Guomao)",
+          "Trb Hutong (1★): 18 min walk or 10 min taxi",
+          "Jingji (2★): 22 min (Line 5 -> Line 1 to Dawanglu)",
+          "Lamdre (2★), Old Tower (1★), Monsieur Dior (Selected): 25–28 min (Metro or 15 min DiDi)",
+          "Xin Rong Ji (3★): 30 min (Line 5 -> Line 2 -> Line 10)"
+        ]
+      },
+      "verifiedRoom": {
+        "roomName": "Deluxe King Room",
+        "bedSpec": "1 Queen or 1 King bed (confirmed on official radissonhotels.com; Trip.com confirms 1 queen/double)",
+        "sizeSqm": 30,
+        "privateBathroom": true,
+        "bathroomDetails": "Private en-suite bathroom with bathtub and shower",
+        "nonSmoking": true
+      },
+      "amenities": [
+        "Fitness room / gym",
+        "Free self-service guest laundry room (noted in verified 2026 guest reviews)",
+        "Free Wi-Fi",
+        "On-site restaurant & cafe",
+        "Free luggage storage & taxi booking",
+        "Airport transfer service (extra charge)"
+      ],
+      "pricing7NightsFeb22Mar1": {
+        "checkIn": "2027-02-22",
+        "checkOut": "2027-03-01",
+        "nights": 7,
+        "lowestQueenKingUsdInclTax": 955,
+        "avgPerNightPreTaxUsd": 129,
+        "breakfast2AdultsUsdInclTax": 1144,
+        "cancellationPolicy": "Free cancellation before 12:00, Feb 22, 2027",
+        "directOfficialRateNote": "Official room specs verified on radissonhotels.com; live tax-inclusive 7-night quote pulled from Trip.com (US$955 holds steady across Feb 15–Mar 8, 2027).",
+        "officialHotelUrl": "https://www.radissonhotels.com/en-us/hotels/park-plaza-beijing-wangfujing/rooms",
+        "liveQuoteUrl": "https://www.trip.com/hotels/beijing-hotel-detail-425031/park-plaza-beijing-wangfujing/?checkIn=2027-02-22&checkOut=2027-03-01&adult=2&crn=1"
+      }
+    },
+    {
+      "id": "bj-hilton-wangfujing",
+      "city": "Beijing",
+      "cityRank": 3,
+      "tier": "Upper-Upscale 5-Star (Large 50–65 sqm Rooms)",
+      "name": "Hilton Beijing Wangfujing",
+      "chineseName": "北京王府井希尔顿酒店",
+      "district": "Dongcheng (Wangfujing Pedestrian Street)",
+      "address": "No. 8 Wangfujing East Street, Dongcheng District, Beijing 100006, China",
+      "phone": "+86 10 5812 8888",
+      "nearestMetro": {
+        "station": "Jinyu Hutong Station (金鱼胡同站, Line 8) & Dengshikou Station (Line 5)",
+        "lines": ["Line 8", "Line 5", "Line 1 (Wangfujing, 1 stop south)"],
+        "walkMeters": 370,
+        "walkMinutes": 5
+      },
+      "michelinReachability": {
+        "auditedWithin60Min": 13,
+        "auditedTotalInCity": 13,
+        "auditedWithin30Min": 11,
+        "maxDoorToDoorMin": 55,
+        "cityGuideClusterReachable": "Prime dual-line Wangfujing hub (Lines 8 & 5) bridging Forbidden City/Hutongs and Chaoyang CBD/Sanlitun",
+        "keyTransitExamples": [
+          "Fu Chun Ju (1★): 10 min walk",
+          "Trb Hutong (1★): 15 min walk",
+          "Fangzhuanchang No. 69 (Bib Gourmand): 16 min (Line 8 direct to Shichahai)",
+          "King's Joy (2★): 18 min (Line 5 from Dengshikou to Yonghegong)",
+          "Chao Shang Chao (3★) & Jingji (2★): 20–24 min (Line 8 -> Line 1)",
+          "Sanlitun Cluster (Lamdre, Old Tower, Monsieur Dior, Sheng Yong Xing): 26–30 min"
+        ]
+      },
+      "verifiedRoom": {
+        "roomName": "Deluxe Plus (1 King Bed, 65 sqm)",
+        "bedSpec": "1 King bed",
+        "sizeSqm": 65,
+        "privateBathroom": true,
+        "bathroomDetails": "Oversized marble private bathroom with deep soaking bathtub and separate walk-in rain shower",
+        "nonSmoking": true
+      },
+      "amenities": [
+        "Rooftop scenic heated indoor swimming pool (free)",
+        "Spa & massage room",
+        "24-hour fitness center",
+        "Executive Lounge (eligible room tiers)",
+        "3 on-site restaurants (incl. Chynna roast duck)",
+        "Free Wi-Fi"
+      ],
+      "pricing7NightsFeb22Mar1": {
+        "checkIn": "2027-02-22",
+        "checkOut": "2027-03-01",
+        "nights": 7,
+        "lowestQueenKingUsdInclTax": 1343,
+        "avgPerNightPreTaxUsd": 164,
+        "breakfast2AdultsUsdInclTax": 1636,
+        "cancellationPolicy": "Free cancellation before 23:59, Feb 21, 2027",
+        "directOfficialRateNote": "Official room specs verified on hilton.com; live tax-inclusive 7-night quote pulled from Trip.com (also verified US$1,317 for Feb 15–22, 2027).",
+        "officialHotelUrl": "https://www3.hilton.com/en/hotels/china/hilton-beijing-wangfujing-BJSWFHI/index.html",
+        "liveQuoteUrl": "https://www.trip.com/hotels/beijing-hotel-detail-347308/hilton-beijing-wangfujing/?checkIn=2027-02-22&checkOut=2027-03-01&adult=2&crn=1"
+      }
+    },
+    {
+      "id": "bj-jen-beijing-shangri-la",
+      "city": "Beijing",
+      "cityRank": 4,
+      "tier": "Modern Lifestyle 5-Star (China World CBD, Best for Chaoyang Michelin)",
+      "name": "JEN Beijing by Shangri-La",
+      "chineseName": "北京新国贸饭店（香格里拉集团）",
+      "district": "Chaoyang (Guomao CBD / China World Complex)",
+      "address": "No. 1 Jianguomen Outer Street, Chaoyang District, Beijing 100004, China",
+      "phone": "+86 10 6505 2277",
+      "nearestMetro": {
+        "station": "Guomao Station (国贸站) — indoor mall underground connection",
+        "lines": ["Line 1", "Line 10"],
+        "walkMeters": 430,
+        "walkMinutes": 5
+      },
+      "michelinReachability": {
+        "auditedWithin60Min": 13,
+        "auditedTotalInCity": 13,
+        "auditedWithin30Min": 12,
+        "maxDoorToDoorMin": 48,
+        "cityGuideClusterReachable": "Highest 30-min reachability to Chaoyang's 8 audited Michelin venues (3★ Chao Shang Chao 5 min walk!) + direct Line 1 to Forbidden City/Wangfujing",
+        "keyTransitExamples": [
+          "Chao Shang Chao (3★): 5 min walk (adjacent CP Center)",
+          "Jingji (2★): 12 min (Line 1, 1 stop to Dawanglu)",
+          "Lamdre (2★), Old Tower (1★), Monsieur Dior (Selected) & Sheng Yong Xing (1★): 15–20 min (Line 10, 2 stops to Tuanjiehu)",
+          "Xin Rong Ji (3★): 18 min (Line 10, 4 stops to Liangmaqiao)",
+          "Fu Chun Ju (1★) & Trb Hutong (1★): 22–28 min (Line 1, 3 stops to Wangfujing + walk)",
+          "King's Joy (2★): 28 min (Line 1 -> Line 5)",
+          "Chef 1996 (1★): 38–45 min Metro / 25 min DiDi"
+        ]
+      },
+      "verifiedRoom": {
+        "roomName": "Jen 40 King",
+        "bedSpec": "1 King bed",
+        "sizeSqm": 40,
+        "privateBathroom": true,
+        "bathroomDetails": "Modern private bathroom with walk-in rain shower and heated toilet controls",
+        "nonSmoking": true
+      },
+      "amenities": [
+        "Trainyard 3,500 sqm 24-hour mega-gym (world-class fitness facility)",
+        "25-meter heated indoor lap pool & sauna (free)",
+        "Beersmith craft gastropub & San Wu Tang all-day restaurant",
+        "Direct indoor winter-proof access to China World Mall & Guomao Subway",
+        "Free Wi-Fi",
+        "Air-purified guest rooms with CCTV Tower / CBD skyline views"
+      ],
+      "pricing7NightsFeb22Mar1": {
+        "checkIn": "2027-02-22",
+        "checkOut": "2027-03-01",
+        "nights": 7,
+        "lowestQueenKingUsdInclTax": 1365,
+        "freeCancelUsdInclTax": 1392,
+        "avgPerNightPreTaxUsd": 167,
+        "breakfast2AdultsUsdInclTax": 1686,
+        "cancellationPolicy": "US$1,365 non-refundable Early Bird; US$1,392 Free Cancellation before 18:00, Feb 21, 2027",
+        "directOfficialRateNote": "Shangri-La direct booking endpoint returned HTTP 500 during automated read; verified live Shangri-La Circle rate pulled from Trip.com.",
+        "officialHotelUrl": "https://www.shangri-la.com/en/hotels/jen/beijing/centraldistrict/",
+        "liveQuoteUrl": "https://www.trip.com/hotels/beijing-hotel-detail-7492873/hotel-jen-beijing/?checkIn=2027-02-22&checkOut=2027-03-01&adult=2&crn=1"
+      }
+    },
+    {
+      "id": "bj-intercontinental-sanlitun",
+      "city": "Beijing",
+      "cityRank": 5,
+      "tier": "Luxury Design 5-Star (TaiKoo Li Sanlitun)",
+      "name": "InterContinental Beijing Sanlitun by IHG",
+      "chineseName": "北京三里屯通盈中心洲际酒店",
+      "district": "Chaoyang (Sanlitun)",
+      "address": "Building 1, South Sanlitun, Chaoyang District, Beijing 100027, China",
+      "phone": "+86 10 6530 8888",
+      "nearestMetro": {
+        "station": "Tuanjiehu Station (团结湖站, Line 10) & Workers' Stadium Station (Lines 3, 17)",
+        "lines": ["Line 10", "Line 3", "Line 17"],
+        "walkMeters": 340,
+        "walkMinutes": 5
+      },
+      "michelinReachability": {
+        "auditedWithin60Min": 13,
+        "auditedTotalInCity": 13,
+        "auditedWithin30Min": 12,
+        "maxDoorToDoorMin": 45,
+        "cityGuideClusterReachable": "Walkable to 4 audited Sanlitun MICHELIN venues (140m to TaiKoo Li!) + 12–18 min on Line 10 to 3★ Xin Rong Ji and 3★ Chao Shang Chao",
+        "keyTransitExamples": [
+          "Old Tower (1★) & Monsieur Dior (Selected): 3–5 min walk (TaiKoo Li North)",
+          "Lamdre (2★) & Sheng Yong Xing (1★): 7–10 min walk",
+          "Xin Rong Ji (3★): 12 min (Line 10, 2 stops to Liangmaqiao)",
+          "Chao Shang Chao (3★): 15 min (Line 10, 2 stops to Guomao)",
+          "Jingji (2★): 22 min (Line 10 -> Line 1)",
+          "King's Joy (2★): 24 min (Line 10 -> Line 2/5 or 14 min DiDi)",
+          "Chef 1996 (1★): 25 min DiDi / 38 min Metro",
+          "Fu Chun Ju (1★) & Trb Hutong (1★): 28–34 min (Line 10 -> Line 6/8)"
+        ]
+      },
+      "verifiedRoom": {
+        "roomName": "1 King Bed Classic",
+        "bedSpec": "1 King bed",
+        "sizeSqm": 45,
+        "privateBathroom": true,
+        "bathroomDetails": "Signature circular open-concept marble private bathroom with freestanding bathtub and walk-in rain shower",
+        "nonSmoking": true
+      },
+      "amenities": [
+        "Heated indoor swimming pool overlooking Sanlitun skyline",
+        "Free sauna & 24-hour fitness center",
+        "Spa & massage room",
+        "22F Club InterContinental Executive Lounge (eligible room tiers)",
+        "On-site Michelin-recognized steakhouse & dining outlets",
+        "Free Wi-Fi"
+      ],
+      "pricing7NightsFeb22Mar1": {
+        "checkIn": "2027-02-22",
+        "checkOut": "2027-03-01",
+        "nights": 7,
+        "lowestQueenKingUsdInclTax": 2186,
+        "freeCancelUsdInclTax": 2572,
+        "avgPerNightPreTaxUsd": 268,
+        "breakfast2AdultsUsdInclTax": 2406,
+        "cancellationPolicy": "US$2,186 non-refundable (IHG Stay Longer Pay Less); US$2,572 Free Cancellation before 23:59, Feb 20, 2027",
+        "directOfficialRateNote": "Official room specs verified on ihg.com; live tax-inclusive 7-night quote pulled from Trip.com.",
+        "officialHotelUrl": "https://www.ihg.com/intercontinental/hotels/us/en/beijing/peghe/hoteldetail/rooms",
+        "liveQuoteUrl": "https://www.trip.com/hotels/beijing-hotel-detail-5659815/intercontinental-hotels-beijing-sanlitun-by-ihg/?checkIn=2027-02-22&checkOut=2027-03-01&adult=2&crn=1"
+      }
+    }
+  ]
+}
