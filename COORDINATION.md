@@ -10,6 +10,7 @@
 |---|---|---|---|---|
 | `arena/8205b531-chinafun3` | `arena/8205b531-chinafun3` | 2026-11-25 13:12 UTC | 2026-11-25 13:22 UTC (merge resolution v2) | active — root site |
 | `arena/3c3c3c5e-chinafun3` | `arena/3c3c3c5e-chinafun3` (merged to `main` as `a0b6d59` + `e824b4b`) | 2026-11-25 | 2026-11-25 13:22 UTC (PR #4 merged: T7 log) | merged to `main` — docs site |
+| `arena/b27f0613-chinafun3` | `arena/b27f0613-chinafun3` | 2026-11-25 | 2026-11-25 (claim commit) | active — `verify/` re-verified dashboard |
 
 ---
 
@@ -198,3 +199,30 @@ malformed tables. Published at `/plan/` after PR #9 merged to `main`; Pages buil
   Thu-Sun only. Lantern Festival (20 Feb) is the anchor evening.
 - Dashboard now links the itinerary directly.
 - `python3 check_links.py` → 9 pages, no broken links, no malformed tables.
+
+---
+
+## Task Board — Session `arena/b27f0613-chinafun3` (scope: `verify/**` + append-only `COORDINATION.md` + `README.md` link section + new `.github/workflows/verify-dashboard.yml`)
+
+| ID | Task | Status | Owner Session | Files Touched / Scope | Sources & Verification Note | Updated |
+|---|---|---|---|---|---|---|
+| V01 | Claim scope & fresh re-verification of Michelin 2026 Shanghai directory | **done** | `b27f0613` | `COORDINATION.md` | Full 50-restaurant starred directory scraped from guide.michelin.com all-starred listing (1×3★, 11×2★, 38×1★); cross-checked vs official 2026-04-09 press release (guide.michelin.com + webwire mirror) | 2026-11-25 |
+| V02 | Hotel shortlist + live Feb 15–22 2027 rate verification | **done** | `b27f0613` | `verify/data/hotels.json` | 8 hotels; "starting at" USD rates for Feb 15–22 2027 pulled live from the MICHELIN Guide Hotels booking engine (official channel) 2026-11-25; Waldorf = sold out that window (flagged) | 2026-11-25 |
+| V03 | Michelin restaurant deep verification (address/hours/website/phone) | **done** | `b27f0613` | `verify/data/restaurants.json` | 12 restaurant pages on guide.michelin.com verified (stars, address, district, band, phone, website); hours verified for 4 (T'ang Court via langhamhotels.com, Da Vittorio / Fu He Hui / Ling Long via guide pages) | 2026-11-25 |
+| V04 | Activities with official hours/tickets/social links | **done** | `b27f0613` | `verify/data/activities.json` | Yu Garden (yugarden.com.cn) + Shanghai Museum (shanghaimuseum.net, 8 official socials) verified; Disney site verified but hours flagged; Bund/Oriental Pearl/Jing'an Temple flagged (official sites unreachable) | 2026-11-25 |
+| V05 | Exact menu pricing | **done** | `b27f0613` | `verify/data/restaurants.json`, `verify/budget.html` | T'ang Court 2026 official menu PDF: ¥888 dim-sum lunch set for 2; ¥2,288 all-day set for 2 (incl. service + taxes) — exact totals for 2 | 2026-11-25 |
+| V06 | Dashboard site build (mobile-friendly tables, 11 pages) | **done** | `b27f0613` | `verify/**`, `verify/scripts/build.py`, `verify/assets/*` | Generated from JSON; every table row has Source link or Unverified flag | 2026-11-25 |
+| V07 | Verification tests + CI workflow | **done** | `b27f0613` | `verify/tests/test_site.py`, `.github/workflows/verify-dashboard.yml` (new file) | Row-source audit, link resolution, JSON schema, arithmetic checks | 2026-11-25 |
+| V08 | Q&A gaps + suggestions section | **done** | `b27f0613` | `verify/questions.html`, `verify/suggestions.html` | Open questions list + decision-improvement suggestions with discovery actions | 2026-11-25 |
+| V09 | Flagged-for-review irregularities | **done (needs review)** | `b27f0613` | `verify/data/flagged.json`, `verify/flagged.html` | 102 House discrepancy; press-release vs directory counts; hotel filter-count mismatch; shmetro unreachable (transit unverified); site-reachability gaps | 2026-11-25 |
+| V10 | Publication (PR → main → Pages `/verify/`) | **in progress** | `b27f0613` | — | Pages source stays `main` `/`; subsite addressable at `/verify/` like `/considered/`, `/for-two/`, `/docs/` | 2026-11-25 |
+
+## Log — Session `arena/b27f0613-chinafun3`
+
+| Timestamp (UTC) | Session | Action |
+|---|---|---|
+| 2026-11-25 | `b27f0613` | Branch `arena/b27f0613-chinafun3` created from `45c6f11` (branch base). Fetched `origin/main` (a1598cf) and merged (fast-forward, no conflicts) to synchronize with all prior sessions' merged work (root, docs/, considered/, for-two/, plan/). No other session's files modified. |
+| 2026-11-25 | `b27f0613` | Verified Pages: source `main` `/`, status `built`, live at https://kanlerxz87-cyber.github.io/ChinaFun3/. |
+| 2026-11-25 | `b27f0613` | Claimed V01–V10. Scope announced: new `verify/**` only + append-only COORDINATION + README link section + new CI workflow file. |
+| 2026-11-25 | `b27f0613` | Verified official sources: Michelin 2026 regional press release (guide.michelin.com, 2026-04-08/09), full 50-restaurant starred directory (guide.michelin.com), 38-hotel Shanghai directory, 12 restaurant pages, Langham/Peninsula official sites, Yu Garden, Shanghai Museum, Shanghai Disney Resort. Live Feb 15–22 2027 hotel rates from the MICHELIN Guide Hotels booking engine. T'ang Court 2026 menu PDF (exact ¥888 / ¥2,288 for-two totals). |
+| 2026-11-25 | `b27f0613` | Built `verify/` dashboard (11 generated pages, JSON-driven, every row source-linked or flagged), offline tests, CI workflow. See `verify/verification.html` for the line-by-line log. |

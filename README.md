@@ -105,3 +105,19 @@ Distinctive findings worth merging into the root site later:
 - Verified per-row contact data: 19 addresses, 18 phones, 14 official restaurant sites, 7 published hour sets out of 58 rows; the rest are blank and flagged rather than filled.
 
 Build: `python3 generate.py` · Check: `python3 check_links.py`
+
+## Verified dashboard · session `arena/b27f0613-chinafun3` (`verify/`)
+
+A fresh, independently re-verified dashboard is published at [`verify/index.html`](verify/index.html) (live URL: https://kanlerxz87-cyber.github.io/ChinaFun3/verify/). It is a non-overlapping addition: all prior sites remain unchanged.
+
+**What it adds (all checks 2026-11-25, every row source-linked or flagged):**
+- **All 50 starred Shanghai restaurants** from the official MICHELIN Guide directory (1×3★, 11×2★, 38×1★) with star status and price band; 12 restaurants deep-verified with address/district/hours/phone/website.
+- **Live verified hotel rates for Feb 15–22, 2027** (7 nights, 2 adults) from the official MICHELIN Guide Hotels booking engine — 8 hotels ranked; cheapest 7-night total **Andaz Xintiandi $1,183** ($1,379 all-in); Waldorf Astoria sold out that window (flagged).
+- **Exact for-two menu totals** for T'ang Court from the official 2026 menu PDF (**¥888** dim-sum lunch set / **¥2,288** all-day set, incl. service & taxes); other restaurants show official price band only (no invented estimates).
+- **Activities** with official hours/tickets (Yu Garden, Shanghai Museum incl. 8 official social links); Disneyland/Bund/Oriental Pearl/Jing'an Temple flagged where official pages are unreachable.
+- **1-hour travel** analysis based on verified district geography; minute-level transit times flagged (shmetro.com unreachable) — never guessed.
+- **Q&A gaps** (10 must-answer questions), **suggestions** (10 proposals to review before implementing), **flagged irregularities** (10 items, incl. the 102 House press-release-vs-directory discrepancy), and a **verification log**.
+
+Pages: [Home](verify/index.html) · [Hotels](verify/hotels.html) · [Michelin](verify/restaurants.html) · [Activities](verify/activities.html) · [1-Hour Travel](verify/transport.html) · [Budget](verify/budget.html) · [Q&A Gaps](verify/questions.html) · [Suggestions](verify/suggestions.html) · [Sources](verify/sources.html) · [Flagged](verify/flagged.html) · [Verification Log](verify/verification.html)
+
+Build/test: `python3 verify/scripts/build.py` · `python3 -m unittest discover -s verify/tests -v` · `node --check verify/assets/app.js` (CI: `.github/workflows/verify-dashboard.yml`). Claim and log: see [`COORDINATION.md`](COORDINATION.md) (session `arena/b27f0613-chinafun3`, tasks V01–V10).

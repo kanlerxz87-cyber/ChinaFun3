@@ -1,0 +1,24 @@
+name: Verify dashboard
+on:
+  push:
+    branches: ['arena/b27f0613-chinafun3']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate data schema, row evidence, arithmetic and internal links
+        run: python3 -m unittest discover -s verify/tests -v
+      - name: Validate browser script syntax
+        run: node --check verify/assets/app.js
+      - name: Generated pages must match source
+        run: |
+          python3 verify/scripts/build.py
+          git diff --exit-code -- verify/
