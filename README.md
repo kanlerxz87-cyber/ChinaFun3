@@ -78,3 +78,30 @@ Merged 2026-11-25 • Shanghai focus • Mobile-friendly • No hallucinations �
 An independent, non-overwriting planning baseline is available at [considered/index.html](considered/index.html) (published URL: https://kanlerxz87-cyber.github.io/ChinaFun3/considered/). It preserves the root and docs sites above unchanged. Its own [README](considered/README.md), [source register](considered/sources.html), [review queue](considered/review.html), and [structured evidence](research/data.json) document its bounded Shanghai shortlist and limitations. No final seven-night hotel total, cheapest booking date or complete one-hour transit ranking was established in that snapshot. Existing dashboards were preserved during parallel integration, not silently reverified or endorsed by this addition.
 
 Build this additional subsite with `python3 scripts/build.py`; test it with `python3 -m unittest discover -s tests -v`. Optional browser checks are documented in considered/README.md. Other sessions retain ownership of the root/dashboard and docs scopes recorded in COORDINATION.md.
+
+## Plan site — our session (`arena/7449eccd-chinafun3` → `plan/`)
+
+A third, independent, additive site, published at **`/plan/`** so it cannot collide with the two sites above:
+https://kanlerxz87-cyber.github.io/ChinaFun3/plan/
+
+Built from a single dataset (`data/dataset.py`) by `generate.py`; `check_links.py` fails the build on any broken
+internal link or malformed table row.
+
+| Page | What it adds |
+|---|---|
+| [`plan/index.html`](plan/index.html) | Dashboard + executive summary, district-level Michelin weighting |
+| [`plan/hotels.html`](plan/hotels.html) | 6 hotels ranked by *starred restaurants inside the same building*, plus confirmed-district depth |
+| [`plan/michelin.html`](plan/michelin.html) | All 50 starred rows transcribed from the official 2026 city list + Bib Gourmand sample; star vs listed labeled per row |
+| [`plan/activities.html`](plan/activities.html) | Activities with verified hours and honest transit caveats |
+| [`plan/dates.html`](plan/dates.html) | Feb–Mar 2027 dates, weather, booking-window evidence, dated action calendar |
+| [`plan/questions.html`](plan/questions.html) | 10 open questions that block a booking decision |
+| [`plan/suggestions.html`](plan/suggestions.html) | Review queue of improvements, prioritized, nothing implemented |
+| [`plan/flagged.html`](plan/flagged.html) | Every unverified value and irregularity |
+| [`plan/verification.html`](plan/verification.html) | Per-row verification status and source log |
+
+Distinctive findings worth merging into the root site later:
+- Only restaurant price that survives verification: Taian Table ¥2,588 / ¥2,888 per person → **¥5,176–5,776 for two** (official FAQ).
+- **Bvlgari Shanghai houses two starred restaurants** (Bao Li Xuan 2★ + Il Ristorante 1★); Waldorf Astoria (Ling Long 1★), Peninsula (Yi Long Court 1★) and Ritz-Carlton Pudong (Jin Xuan 1★) each house one — confirmed on each restaurant's MICHELIN page.
+- Verified per-row contact data: 19 addresses, 18 phones, 14 official restaurant sites, 7 published hour sets out of 58 rows; the rest are blank and flagged rather than filled.
+
+Build: `python3 generate.py` · Check: `python3 check_links.py`

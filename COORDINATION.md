@@ -131,3 +131,42 @@ Shared outputs (`docs/index.html` navigation, combined data) owned by T7 (integr
 - **done**: PR #7 merged at 13:32 UTC, merge e7c538fdec3a5451e8bc36dabdbc6b11a2244990. Both CI checks passed. GitHub Pages build/deploy run 45624561650 completed successfully for that exact commit. Published dashboard path: https://kanlerxz87-cyber.github.io/ChinaFun3/for-two/ .
 - **needs review**: research F01–F14 remain published; no one-hour ranking, hotel checkout total, private-bathroom confirmation or complete China-wide cheapest-stay claim. Public-page fetch failed in this environment even after deployment; independent public HTTP/content verification is unconfirmed (github.io is not in sandbox allowlist). Local identical-subpath browser checks passed.
 - **done**: conflict resolutions preserved both owners’ complete coordination logs and existing other-owner files. Final source/test/publication evidence: `for-two/research/verification.md`, `for-two/research/release.md`, `for-two/sources.html`. No bookings, messages to hotels or future monitoring were initiated. Optional root-nav link remains a request to the root owner, not an unauthorized edit.
+
+---
+
+## Session `arena/7449eccd-chinafun3` — plan site (`plan/**`), merged via PR #9
+
+**Scope (non-overlapping):** `plan/**`, `data/dataset.py`, `generate.py`, `check_links.py`. No root-site,
+`docs/**`, `for-two/**` or `considered/**` file was modified. The two shared files (`README.md`,
+`COORDINATION.md`) were kept as `main`'s version with this section appended — nothing removed.
+
+| ID | Task | Status | Owner | Files |
+|---|---|---|---|---|
+| U1 | Dataset + generator + link checker | **done** | `arena/7449eccd-chinafun3` | `data/dataset.py`, `generate.py`, `check_links.py` |
+| U2 | Hotels ranked by in-building starred density | **done** | `arena/7449eccd-chinafun3` | `plan/hotels.html` |
+| U3 | All 50 starred rows + Bib sample, star vs listed | **done** | `arena/7449eccd-chinafun3` | `plan/michelin.html` |
+| U4 | Activities, dates/weather, booking calendar | **done** | `arena/7449eccd-chinafun3` | `plan/activities.html`, `plan/dates.html` |
+| U5 | Open questions, suggestions, flagged, verification | **done** | `arena/7449eccd-chinafun3` | `plan/questions.html`, `plan/suggestions.html`, `plan/flagged.html`, `plan/verification.html` |
+| U6 | Merge with `main` without discarding other sessions' work | **done** | `arena/7449eccd-chinafun3` | conflict resolved additively |
+
+### Sources verified in this session
+- MICHELIN Shanghai all-starred (50 entries) and Bib Gourmand lists: https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred
+- 2026 selection announcement: https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang
+- Taian Table official FAQ pricing: https://sh.taian-table.cn/faq/
+- Individual MICHELIN restaurant pages for 19 rows (address, phone, hours, official site) — each row on `plan/michelin.html` links its own page.
+- Brand room pages: Peninsula, Bvlgari, Ritz-Carlton Pudong, Waldorf Astoria, Fairmont Peace, Grand Hyatt.
+- Shanghai Museum hours notice; Shanghai Disneyland calendar; shmetro.com network facts.
+
+### Irregularities logged (detail on `plan/flagged.html`)
+- City page counter shows 1×3★ / 11×2★ / 38×1★ = 50, while the 2026 launch release reports 12 two-star across the
+  wider region — discrepancy documented, city counter used.
+- MICHELIN ¥¥¥¥ tiers are relative bands, never converted to currency.
+- Peninsula structured-data "price range" is not a dated quote and is not used as a rate.
+- Ultraviolet (closed 29 Mar 2025) and the not-yet-open Four Seasons Shanghai excluded.
+- Feb-2027 room rates, 51 of 58 restaurant hour sets, 57 of 58 restaurant prices and all measured transit times
+  remain **unverified and blank** by design.
+
+### Merge notes
+- `main` had advanced with PRs #1–#8 (root site + `docs/` + `for-two/` + `considered/`). Our site was relocated
+  to `plan/` before merging so no other session's page names were contested; the merge then produced conflicts
+  only in `README.md` and `COORDINATION.md`, resolved by keeping `main`'s text and appending this section.
