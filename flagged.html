@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flagged for Review — ChinaFun3</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">CN 2027</span>
+        <span>ChinaFun3 Dashboard</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu ▾</button>
+      <nav class="site-nav">
+        <a href="index.html">Dashboard</a>
+        <a href="summary.html">Executive Summary</a>
+        <a href="hotels.html">Hotels</a>
+        <a href="restaurants.html">Michelin Restaurants</a>
+        <a href="activities.html">Activities</a>
+        <a href="questions.html">Decisions &amp; Info</a>
+        <a href="suggestions.html">Suggestions</a>
+        <a href="flagged.html" class="active">Flagged for Review</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-header">
+      <h1>Flagged for Review — Irregularities &amp; Unverified Fields</h1>
+      <p>Per our strict verification policy, every conflict, missing specification, or value that could not be confirmed from an official source is left blank in the tables and logged here with a direct link for manual review.</p>
+    </div>
+
+    <div class="filter-bar" data-filter-table="flagged-table">
+      <span style="font-size:0.85rem; color:var(--text-muted); font-weight:600;">Filter:</span>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="irregularity">Irregularities / Conflicts</button>
+      <button class="filter-btn" data-filter="hotel-price">Hotel 7-Night Pricing</button>
+      <button class="filter-btn" data-filter="restaurant-data">Restaurant Pricing / Hours / Social</button>
+      <button class="filter-btn" data-filter="activity-data">Activity Verification</button>
+    </div>
+
+    <div class="table-wrap">
+      <table id="flagged-table">
+        <thead>
+          <tr>
+            <th>Flag ID</th>
+            <th>Severity</th>
+            <th>Page / Item</th>
+            <th>Issue / Unverified Field</th>
+            <th>Manual Review Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-tags="irregularity">
+            <td><strong>F-01</strong></td>
+            <td><span class="badge badge-high">High</span></td>
+            <td>Trip Dates (Brief)</td>
+            <td><strong>Date Length Conflict:</strong> Brief asks for a 1–2 week trip and 7-night hotel pricing between Feb 15 and Mar 23, 2027, but lists "Preferred vacation time is February 15 2027 to February 18 2027" (3 nights). Also overlaps <strong>Lantern Festival (Feb 20, 2027)</strong>.</td>
+            <td><a href="https://www.chinese-lunar-calendar.com/chinese-new-year-2027" target="_blank" rel="noopener">2027 Lunar Calendar</a></td>
+          </tr>
+          <tr data-tags="irregularity">
+            <td><strong>F-02</strong></td>
+            <td><span class="badge badge-high">High</span></td>
+            <td>Destination City (Brief)</td>
+            <td><strong>City Not Specified:</strong> Brief says "China" without naming a city. Shanghai was selected as the primary hub (154 Michelin listings). Confirm whether Beijing, Hangzhou, or Chengdu should be added.</td>
+            <td><a href="https://guide.michelin.com/en/cn/shanghai-municipality/restaurants" target="_blank" rel="noopener">MICHELIN Guide Shanghai</a></td>
+          </tr>
+          <tr data-tags="hotel-price">
+            <td><strong>F-03</strong></td>
+            <td><span class="badge badge-med">Medium</span></td>
+            <td>Hotels (All 6 Properties)</td>
+            <td><strong>7-Night Feb 2027 Official Rates Unverified:</strong> Official hotel booking engines use live dynamic pricing not exposed to static crawlers. All 6 cells left blank (<code>—</code>) until exact 7-night dates are entered directly on official sites.</td>
+            <td><a href="hotels.html">Check Official Hotel Links →</a></td>
+          </tr>
+          <tr data-tags="restaurant-data">
+            <td><strong>F-04</strong></td>
+            <td><span class="badge badge-med">Medium</span></td>
+            <td>Restaurants (8 of 10 venues)</td>
+            <td><strong>Exact 2027 Menu Prices Unverified:</strong> Official Michelin Guide pages publish price tiers (¥–¥¥¥¥) rather than exact tasting menu prices for 8½ Otto e Mezzo Bombana, Da Vittorio, Bao Li Xuan, Il Ristorante - Niko Romito, Yong Fu, Da Hu Chun, Yangzhou Fan Dian, and Jean Georges.</td>
+            <td><a href="restaurants.html">Inspect Restaurants Table →</a></td>
+          </tr>
+          <tr data-tags="restaurant-data">
+            <td><strong>F-05</strong></td>
+            <td><span class="badge badge-med">Medium</span></td>
+            <td>Restaurants (4 venues)</td>
+            <td><strong>Opening Hours Unverified on Official Site:</strong> Yong Fu (Huangpu), Da Hu Chun, Yangzhou Fan Dian, and Jean Georges hours could not be confirmed from an up-to-date official website; phone confirmation recommended.</td>
+            <td><a href="restaurants.html">Inspect Restaurants Table →</a></td>
+          </tr>
+          <tr data-tags="restaurant-data">
+            <td><strong>F-06</strong></td>
+            <td><span class="badge badge-med">Medium</span></td>
+            <td>Restaurants &amp; Activities</td>
+            <td><strong>Social Media Links (YouTube / IG / TikTok):</strong> Verified direct video/IG links are included where confirmed (Taian Table, 8½ Otto e Mezzo Bombana, Canton 8, Shanghai Museum, Yu Garden, The Bund). Remaining venues left blank rather than linking unverified URLs.</td>
+            <td><a href="restaurants.html">Restaurants</a> / <a href="activities.html">Activities</a></td>
+          </tr>
+          <tr data-tags="activity-data">
+            <td><strong>F-07</strong></td>
+            <td><span class="badge badge-med">Medium</span></td>
+            <td>Activities (Jade Buddha Temple)</td>
+            <td><strong>Official Temple Domain Unverified:</strong> Hours (08:00–17:00) and ¥20+¥10 entry fee come from a secondary Shanghai guide; official temple website was not confirmed.</td>
+            <td><a href="https://shanghai-guide.com/en/what-see-in-shanghai.html" target="_blank" rel="noopener">Secondary Guide Ref</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    ChinaFun3 · Flagged for Review · Status: Needs Review (non-blocking)
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

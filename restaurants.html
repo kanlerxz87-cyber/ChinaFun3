@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michelin Restaurants — ChinaFun3</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">CN 2027</span>
+        <span>ChinaFun3 Dashboard</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu ▾</button>
+      <nav class="site-nav">
+        <a href="index.html">Dashboard</a>
+        <a href="summary.html">Executive Summary</a>
+        <a href="hotels.html">Hotels</a>
+        <a href="restaurants.html" class="active">Michelin Restaurants</a>
+        <a href="activities.html">Activities</a>
+        <a href="questions.html">Decisions &amp; Info</a>
+        <a href="suggestions.html">Suggestions</a>
+        <a href="flagged.html">Flagged for Review</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-header">
+      <h1>Shanghai Michelin Guide Restaurants (2026 Edition)</h1>
+      <p>Verified selection across all tiers—<strong>Michelin Star (3★, 2★, 1★)</strong>, <strong>Bib Gourmand</strong>, and <strong>MICHELIN Selected (Listed in Guide)</strong>—all within <strong>≤1 hour by subway or bus</strong> from our ranked hotels. Costs shown are <strong>total price for 2 adults</strong>.</p>
+    </div>
+
+    <div class="filter-bar" data-filter-table="restaurants-table">
+      <span style="font-size:0.85rem; color:var(--text-muted); font-weight:600;">Filter:</span>
+      <button class="filter-btn active" data-filter="all">All (10)</button>
+      <button class="filter-btn" data-filter="3star">3 Stars (1)</button>
+      <button class="filter-btn" data-filter="2star">2 Stars (4)</button>
+      <button class="filter-btn" data-filter="1star">1 Star (2)</button>
+      <button class="filter-btn" data-filter="bib">Bib Gourmand (2)</button>
+      <button class="filter-btn" data-filter="selected">Michelin Selected (1)</button>
+    </div>
+
+    <div class="table-wrap">
+      <table id="restaurants-table">
+        <thead>
+          <tr>
+            <th>Restaurant &amp; District</th>
+            <th>Michelin Status</th>
+            <th>Cuisine</th>
+            <th>Total Cost (2 Adults)</th>
+            <th>Days Open, Hours &amp; Exceptions</th>
+            <th>Official Links</th>
+            <th>YouTube / Instagram / TikTok</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-tags="3star,changning">
+            <td><strong>Taian Table</strong><br /><small>Changning (Lane 465 Zhenning Rd)</small></td>
+            <td><span class="badge badge-star">★★★ 3 Stars</span></td>
+            <td>Innovative</td>
+            <td><strong>¥5,176 – ¥5,776 CNY</strong><br /><small>(10-course ¥2,588 or 12-course ¥2,888 pp; excl. wine)</small></td>
+            <td>Tue–Sat: 18:00–23:00<br /><small>Closed Sun–Mon; exact address sent after booking; check CNY/Lantern Festival closures</small></td>
+            <td class="link-list">
+              <a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/taian-table" target="_blank" rel="noopener">MICHELIN Guide</a>
+              <a href="https://sh.taian-table.cn/" target="_blank" rel="noopener">Official Website</a>
+            </td>
+            <td class="link-list">
+              <a href="https://www.youtube.com/watch?v=9FbSPG4We0M" target="_blank" rel="noopener">YouTube (Review 1)</a>
+              <a href="https://www.youtube.com/watch?v=RYsEUZJSrN8" target="_blank" rel="noopener">YouTube (Review 2)</a>
+            </td>
+          </tr>
+          <tr data-tags="2star,huangpu">
+            <td><strong>8 ½ Otto e Mezzo Bombana</strong><br /><small>Huangpu / Rockbund (169 Yuanmingyuan Rd)</small></td>
+            <td><span class="badge badge-star">★★ 2 Stars</span></td>
+            <td>Italian</td>
+            <td>— <span class="badge badge-unverified">Unverified</span><br /><small>Guide tier: ¥¥¥¥; live tasting price unconfirmed on official site</small></td>
+            <td>Lunch: Thu–Sun 12:00–13:30<br />Dinner: Mon–Sun 18:00–21:00<br /><small>Smart casual dress code</small></td>
+            <td class="link-list">
+              <a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurants/2-stars-michelin" target="_blank" rel="noopener">MICHELIN Guide</a>
+              <a href="https://www.ottoemezzobombana.com/branch/shanghai/" target="_blank" rel="noopener">Official Website</a>
+            </td>
+            <td class="link-list">
+              <a href="https://www.instagram.com/ottoemezzobombanashanghai" target="_blank" rel="noopener">Instagram (Official)</a>
+            </td>
+          </tr>
+          <tr data-tags="2star,huangpu">
+            <td><strong>Da Vittorio Shanghai</strong><br /><small>Huangpu / BFC Bund (600 Zhongshan Dong Er Rd)</small></td>
+            <td><span class="badge badge-star">★★ 2 Stars</span></td>
+            <td>Italian</td>
+            <td>— <span class="badge badge-unverified">Unverified</span><br /><small>Guide tier: ¥¥¥¥; official dinner menu price requires direct check</small></td>
+            <td>Tue–Sun: Lunch 12:00–13:30; Dinner 18:00–21:30<br /><small>Closed Mondays</small></td>
+            <td class="link-list">
+              <a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/da-vittorio-570570" target="_blank" rel="noopener">MICHELIN Guide</a>
+              <a href="https://www.davittorio.com/en/restaurants/da-vittorio-shanghai.html" target="_blank" rel="noopener">Official Website</a>
+            </td>
+            <td class="link-list">
+              — <span class="badge badge-unverified">Unverified</span>
+            </td>
+          </tr>
+          <tr data-tags="2star,jingan">
+            <td><strong>Bao Li Xuan</strong><br /><small>Jing'an / Bvlgari Hotel (Lane 108 N. Shanxi Rd)</small></td>
+            <td><span class="badge badge-star">★★ 2 Stars</span></td>
+            <td>Cantonese</td>
+            <td>— <span class="badge badge-unverified">Unverified</span><br /><small>Guide tier: ¥¥¥¥; official menu price not published online</small></td>
+            <td>Daily: Lunch 11:30–14:00; Dinner 17:30–21:00<br /><small>Afternoon tea not available</small></td>
+            <td class="link-list">
+              <a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/bao-li-xuan" target="_blank" rel="noopener">MICHELIN Guide</a>
+              <a href="https://www.bulgarihotels.com/auth/en_US/bhr/shanghai/restaurants/chinese-fine-dining-restaurant" target="_blank" rel="noopener">Official Website</a>
+            </td>
+            <td class="link-list">
+              — <span class="badge badge-unverified">Unverified</span>
+            </td>
+          </tr>
+          <tr data-tags="2star,huangpu">
+            <td><strong>Canton 8 (Huangpu)</strong><br /><small>Huangpu (63 Runan St)</small></td>
+            <td><span class="badge badge-star">★★ 2 Stars</span></td>
+            <td>Cantonese / Dim Sum</td>
+            <td><strong>~¥404 – ¥800 CNY</strong><br /><small>(Guide tier: ¥¥; ~¥202–¥400 pp excl. drinks)</small></td>
+            <td>Mon–Sun: 11:00–15:00, 17:00–22:00<br /><small>Weekend dinner reservations strongly advised</small></td>
+            <td class="link-list">
+              <a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurants/2-stars-michelin" target="_blank" rel="noopener">MICHELIN Guide</a>
+            </td>
+            <td class="link-list">
+              <a href="https://www.youtube.com/watch?v=1V1Yqa9yCYQ" target="_blank" rel="noopener">YouTube (Review)</a>
+            </td>
+          </tr>
+          <tr data-tags="1star,jingan">
+            <td><strong>Il Ristorante - Niko Romito</strong><br /><small>Jing'an / Bvlgari Hotel 47F (Lane 108 N. Shanxi Rd)</small></td>
+            <td><span class="badge badge-star">★ 1 Star</span></td>
+            <td>Italian</td>
+            <td>— <span class="badge badge-unverified">Unverified</span><br /><small>Guide tier: ¥¥¥¥; official menu price requires direct check</small></td>
+            <td>Dinner: 18:00–21:00<br /><small>Lunch currently listed as closed on official Bvlgari page</small></td>
+            <td class="link-list">
+              <a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurants/1-star-michelin/2-stars-michelin" target="_blank" rel="noopener">MICHELIN Guide</a>
+              <a href="https://www.bulgarihotels.com/en_US/shanghai/restaurants/il-ristorante-niko-romito" target="_blank" rel="noopener">Official Website</a>
+            </td>
+            <td class="link-list">
+              — <span class="badge badge-unverified">Unverified</span>
+            </td>
+          </tr>
+          <tr data-tags="1star,huangpu">
+            <td><strong>Yong Fu (Huangpu)</strong><br /><small>Huangpu / Jin Jiang Hotel (59 S. Maoming Rd)</small></td>
+            <td><span class="badge badge-star">★ 1 Star</span></td>
+            <td>Ningbo</td>
+            <td>— <span class="badge badge-unverified">Unverified</span><br /><small>Guide tier: ¥¥¥; official menu price not published online</small></td>
+            <td>— <span class="badge badge-unverified">Unverified</span><br /><small>Confirm hours via +86 21 3356 6777</small></td>
+            <td class="link-list">
+              <a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/yong-fu" target="_blank" rel="noopener">MICHELIN Guide</a>
+            </td>
+            <td class="link-list">
+              — <span class="badge badge-unverified">Unverified</span>
+            </td>
+          </tr>
+          <tr data-tags="bib,huangpu">
+            <td><strong>Da Hu Chun (Middle Sichuan Rd)</strong><br /><small>Huangpu (136 Middle Sichuan Rd)</small></td>
+            <td><span class="badge badge-bib">Bib Gourmand</span></td>
+            <td>Dim Sum (Shengjianbao)</td>
+            <td>— <span class="badge badge-unverified">Unverified</span><br /><small>Guide tier: ¥ (Budget); exact 2027 menu price unconfirmed</small></td>
+            <td>— <span class="badge badge-unverified">Unverified</span><br /><small>Check holiday hours on arrival</small></td>
+            <td class="link-list">
+              <a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/da-hu-chun-middle-sichuan-road" target="_blank" rel="noopener">MICHELIN Guide</a>
+            </td>
+            <td class="link-list">
+              — <span class="badge badge-unverified">Unverified</span>
+            </td>
+          </tr>
+          <tr data-tags="bib,huangpu">
+            <td><strong>Yangzhou Fan Dian (Huangpu)</strong><br /><small>Huangpu (345 Middle Fujian Rd)</small></td>
+            <td><span class="badge badge-bib">Bib Gourmand</span></td>
+            <td>Huaiyang</td>
+            <td>— <span class="badge badge-unverified">Unverified</span><br /><small>Guide tier: ¥¥ (Moderate); exact 2027 menu price unconfirmed</small></td>
+            <td>— <span class="badge badge-unverified">Unverified</span><br /><small>Check holiday hours on arrival</small></td>
+            <td class="link-list">
+              <a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/yangzhou-fan-dian-huangpu" target="_blank" rel="noopener">MICHELIN Guide</a>
+            </td>
+            <td class="link-list">
+              — <span class="badge badge-unverified">Unverified</span>
+            </td>
+          </tr>
+          <tr data-tags="selected,huangpu">
+            <td><strong>Jean Georges</strong><br /><small>Huangpu / Three on the Bund (3 Zhongshan Dong Yi Rd)</small></td>
+            <td><span class="badge badge-selected">Listed in Guide</span></td>
+            <td>French Contemporary</td>
+            <td>— <span class="badge badge-unverified">Unverified</span><br /><small>Guide tier: ¥¥¥¥; 2026/2027 menu prices unconfirmed</small></td>
+            <td>— <span class="badge badge-unverified">Unverified</span><br /><small>Confirm current hours via +86 21 6321 7733</small></td>
+            <td class="link-list">
+              <a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurants/bookable" target="_blank" rel="noopener">MICHELIN Guide</a>
+            </td>
+            <td class="link-list">
+              — <span class="badge badge-unverified">Unverified</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    ChinaFun3 · Michelin Restaurants · Source: 2026 MICHELIN Guide Shanghai · Unverified cells logged on <a href="flagged.html">Flagged for Review</a>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

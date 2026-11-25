@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Improvement Suggestions — ChinaFun3</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">CN 2027</span>
+        <span>ChinaFun3 Dashboard</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu ▾</button>
+      <nav class="site-nav">
+        <a href="index.html">Dashboard</a>
+        <a href="summary.html">Executive Summary</a>
+        <a href="hotels.html">Hotels</a>
+        <a href="restaurants.html">Michelin Restaurants</a>
+        <a href="activities.html">Activities</a>
+        <a href="questions.html">Decisions &amp; Info</a>
+        <a href="suggestions.html" class="active">Suggestions</a>
+        <a href="flagged.html">Flagged for Review</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-header">
+      <h1>Site &amp; Decision-Making Improvement Suggestions</h1>
+      <p>Review these proposed enhancements and choose the best path before implementing any changes. Organized by impact on trip decision-making and user experience.</p>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Suggestion</th>
+            <th>Category</th>
+            <th>Decision-Making Benefit</th>
+            <th>Effort</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>S-01</strong></td>
+            <td><strong>Interactive Budget Calculator (2 Adults)</strong><br /><small>Let users pick 1 hotel + N Michelin meals + activities and see live CNY &amp; USD totals.</small></td>
+            <td>Decision Support</td>
+            <td>Instantly compares luxury vs. mid-tier 7-night total trip cost before booking.</td>
+            <td>Medium</td>
+            <td><span class="badge badge-selected">Proposed</span></td>
+          </tr>
+          <tr>
+            <td><strong>S-02</strong></td>
+            <td><strong>Interactive Metro &amp; Michelin Cluster Map</strong><br /><small>Embed a Leaflet/OpenStreetMap view plotting all 6 hotels, Michelin pins, and 30/60-min Metro rings.</small></td>
+            <td>Visualization</td>
+            <td>Visually proves ≤1 hr transit and helps group lunch/dinner + nearby activities by neighborhood.</td>
+            <td>Medium</td>
+            <td><span class="badge badge-selected">Proposed</span></td>
+          </tr>
+          <tr>
+            <td><strong>S-03</strong></td>
+            <td><strong>Day-by-Day Itinerary Builder (7-Day &amp; 14-Day)</strong><br /><small>Slot restaurants and activities into days while flagging Monday closures (Shanghai Museum, Yu Garden, Da Vittorio).</small></td>
+            <td>Planning UX</td>
+            <td>Prevents scheduling conflicts with closed days and Lantern Festival (Feb 20, 2027).</td>
+            <td>Medium</td>
+            <td><span class="badge badge-selected">Proposed</span></td>
+          </tr>
+          <tr>
+            <td><strong>S-04</strong></td>
+            <td><strong>Multi-City Comparison Tab (Beijing / Hangzhou / Chengdu)</strong><br /><small>Add verified Michelin &amp; hotel tables for Beijing and Hangzhou (1 hr from Shanghai by high-speed rail).</small></td>
+            <td>Data Expansion</td>
+            <td>Helps decide between a 1-city deep dive vs. a 2-city 2-week itinerary.</td>
+            <td>High</td>
+            <td><span class="badge badge-selected">Proposed</span></td>
+          </tr>
+          <tr>
+            <td><strong>S-05</strong></td>
+            <td><strong>Reservation Countdown &amp; Booking-Window Alerts</strong><br /><small>Show exact open dates for 90-day dining (Taian Table) and 30-day optimal hotel booking windows.</small></td>
+            <td>Timing</td>
+            <td>Ensures the couple books high-demand tables and lowest-cost hotel windows on time.</td>
+            <td>Low</td>
+            <td><span class="badge badge-selected">Proposed</span></td>
+          </tr>
+          <tr>
+            <td><strong>S-06</strong></td>
+            <td><strong>Currency Toggle (CNY ↔ USD) &amp; Table Sorting</strong><br /><small>Allow sorting hotels/restaurants by price, star tier, or district, and toggling CNY/USD display.</small></td>
+            <td>UI / Mobile UX</td>
+            <td>Faster scanning on mobile phones when comparing options side-by-side.</td>
+            <td>Low</td>
+            <td><span class="badge badge-selected">Proposed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    ChinaFun3 · Site Improvement Suggestions · Review &amp; approve before implementation
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
