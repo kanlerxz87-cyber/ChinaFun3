@@ -190,3 +190,11 @@ Disneyland park account (launch announced by the resort's verified X account).
 
 **Build status:** `python3 generate.py` → 9 pages; `python3 check_links.py` → no broken internal links, no
 malformed tables. Published at `/plan/` after PR #9 merged to `main`; Pages build `779e15f` reported `built`.
+
+### Round 4 — duration options and a closing-day-aware skeleton
+- Added a 7 / 10 / 14-night comparison to `plan/dates.html` (the brief allows 1-2 weeks inside 15 Feb-23 Mar 2027).
+- Added a 7-night day skeleton derived **only** from verified closures: Yu Garden and Shanghai Museum (People's
+  Square) shut Mondays, Shanghai Museum East shut Tuesdays, Da Vittorio shut Mondays, 8½ Otto e Mezzo lunch
+  Thu-Sun only. Lantern Festival (20 Feb) is the anchor evening.
+- Dashboard now links the itinerary directly.
+- `python3 check_links.py` → 9 pages, no broken links, no malformed tables.

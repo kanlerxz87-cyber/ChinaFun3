@@ -183,6 +183,9 @@ def build_index():
       <li><strong>Booking timing is evidence-based, not guesswork.</strong> Industry 2026 data points to
         8–14 days out for city hotels, with the trade-off of losing specific room categories — see
         <a href="dates.html">Dates &amp; Booking</a> for the exact recommendation and its caveat.</li>
+      <li><strong>7 nights, with a 10- or 14-night version costed the same way.</strong> The window allows up to
+        14 nights; extending only adds high-speed-rail day trips (Suzhou 23-40 min, Hangzhou ~45-60 min). March is
+        wetter, which argues for the shorter option unless length matters more than comfort.</li>
       <li><strong>{len(D.EXCLUDED)} properties are explicitly excluded</strong> and why (Four Seasons not yet
         open in 2027, Ultraviolet closed 2025, one hotel fetched in error).</li>
       <li><strong>{len([r for r in D.RESTAURANTS if not r["hours"]])} of {len(D.RESTAURANTS)}</strong>
@@ -214,6 +217,7 @@ cancellation terms, which starred kitchens close on Mondays, and whether the hot
 queen-bed rooms on your dates. They are all listed, with how to find each answer, on
 <a href="questions.html">Open Questions</a>.</p></div>
 <div class="toolbar">
+  <a class="btn" href="dates.html">7-night itinerary + 10/14-night options</a>
   <a class="btn" href="questions.html">Open questions</a>
   <a class="btn secondary" href="flagged.html">Flagged for review</a>
   <a class="btn secondary" href="suggestions.html">Site suggestions</a>
@@ -538,6 +542,48 @@ industry booking windows. They are not a hotel's advice and carry no price guara
 <p class="muted">Caveat worth stating plainly: the studies measure <em>average</em> behaviour across many city
 hotels. A specific luxury property with a specific room category may never discount, and waiting can cost the
 room rather than save money.</p>
+
+
+<h2>If you stretch to the full two weeks</h2>
+<p class="lead">The trip window is 15 Feb – 23 Mar 2027, so 7 nights is the short option and 14 is the long one.
+Nothing in this plan breaks if you extend — the only real change is that day trips become worth the travel time.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Length</th><th>Dates</th><th>What it adds</th><th>Verified constraint</th></tr></thead>
+<tbody>
+<tr><td><strong>7 nights</strong> (recommended)</td><td>15–22 Feb 2027</td>
+<td>City only: Michelin dinners, Bund, Yu Garden, museum, one Disney day.</td>
+<td>Fits inside the window with room to move if a restaurant is closed.</td></tr>
+<tr><td><strong>10 nights</strong></td><td>15–25 Feb 2027</td><td>Adds one high-speed-rail day trip.</td>
+<td>Suzhou 23–40 min from Hongqiao; Hangzhou ~45–60 min. Confirm fares on 12306.</td></tr>
+<tr><td><strong>14 nights</strong></td><td>15 Feb – 1 Mar 2027</td><td>Adds both day trips plus a slower pace and a second starred dinner.</td>
+<td>Leaves 22 spare days inside the window if weather turns — March is wetter (~86–88 mm vs ~65 mm).</td></tr>
+</tbody></table></div>
+<p class="muted">Extending past 1 March moves the stay into March, which the weather sources describe as noticeably
+wetter. If the priority is comfort rather than length, the 7- or 10-night version is the better trade.</p>
+
+<h2>A 7-night shape that respects verified closing days</h2>
+<p class="muted">Derived only from verified facts: Yu Garden and Shanghai Museum (People's Square) close Mondays,
+Shanghai Museum East closes Tuesdays, Da Vittorio closes Mondays, and 8½ Otto e Mezzo serves lunch only
+Thursday to Sunday. Treat this as a suggested skeleton, not a booking.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Day</th><th>Suggestion</th><th>Why this ordering</th></tr></thead>
+<tbody>
+<tr><td>Mon 15 Feb<br><span class="muted">arrival</span></td><td>Land, settle in, Bund walk at dusk, casual Bib Gourmand dinner.</td>
+<td>Both museums and Yu Garden are shut on Mondays — keep the day light and jet-lag friendly.</td></tr>
+<tr><td>Tue 16</td><td>Shanghai Museum (People's Square), then a 1★ or 2★ dinner nearby.</td>
+<td>People's Square museum is open Tuesday; the East building is not.</td></tr>
+<tr><td>Wed 17</td><td>Yu Garden in the morning (09:00 opening, before crowds), Bund area in the afternoon.</td>
+<td>Garden is open Wednesday; mornings are calmer than midday.</td></tr>
+<tr><td>Thu 18</td><td>8½ Otto e Mezzo lunch (Thu–Sun only), Taian Table for dinner.</td>
+<td>The only day-shape that pairs a verified lunch service with the three-star dinner.</td></tr>
+<tr><td>Fri 19</td><td>Flex day: Shanghai Museum East (Pudong), or Suzhou by high-speed rail.</td>
+<td>East building is open Friday; Suzhou is 23–40 min from Hongqiao.</td></tr>
+<tr><td>Sat 20</td><td>Lantern Festival evening — Yu Garden bazaar and lights.</td>
+<td>20 Feb 2027 is the Lantern Festival; the one date worth planning around.</td></tr>
+<tr><td>Sun 21</td><td>Disneyland, or a second starred dinner and a slow last day.</td>
+<td>Disney needs a full day and date-specific hours must be checked.</td></tr>
+<tr><td>Mon 22<br><span class="muted">departure</span></td><td>Checkout.</td><td>—</td></tr>
+</tbody></table></div>
 
 <h2>Transit baseline</h2>
 <p>{D.DATES[-1]["value"]} · {link(D.DATES[-1]["src"], "Shanghai Metro")} — network facts only. Journey times to
