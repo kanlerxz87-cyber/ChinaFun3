@@ -1,0 +1,84 @@
+{
+  "title": "Suggestions — choose before anything changes",
+  "intro": "Nothing below has been implemented. Pick the items you want; the rest stay as ideas.",
+  "columns": [
+    {
+      "key": "id",
+      "label": "#"
+    },
+    {
+      "key": "suggestion",
+      "label": "Suggestion"
+    },
+    {
+      "key": "benefit",
+      "label": "Benefit"
+    },
+    {
+      "key": "effort",
+      "label": "Effort"
+    },
+    {
+      "key": "decision",
+      "label": "Your decision"
+    }
+  ],
+  "rows": [
+    {
+      "id": "S1",
+      "suggestion": "Choose the base city first (Q1), then limit all tables to that city.",
+      "benefit": "Removes rows that would not be used for the chosen trip.",
+      "effort": "Low",
+      "decision": "Open"
+    },
+    {
+      "id": "S2",
+      "suggestion": "Fix dates to a 7-night window and show per-night and 7-night totals in one table.",
+      "benefit": "Allows direct comparison with the 7-night requirement.",
+      "effort": "Low",
+      "decision": "Open"
+    },
+    {
+      "id": "S3",
+      "suggestion": "Add a 'Last verified' date column to every row, with the source URL and a screenshot or archived copy.",
+      "benefit": "Makes stale data visible.",
+      "effort": "Medium",
+      "decision": "Open"
+    },
+    {
+      "id": "S4",
+      "suggestion": "Run a manual pass on guide.michelin.com for each starred restaurant (hours, prices, booking link).",
+      "benefit": "Fills the largest data gap.",
+      "effort": "Medium",
+      "decision": "Open"
+    },
+    {
+      "id": "S5",
+      "suggestion": "Price-track 3–5 shortlisted hotels for 7 nights on the dates chosen, once a month, from now to the trip.",
+      "benefit": "Gives a real basis for the 'cheapest booking time' answer.",
+      "effort": "Medium",
+      "decision": "Open"
+    },
+    {
+      "id": "S6",
+      "suggestion": "Confirm entry route with the embassy: transit (240-hour) vs. L visa vs. Hainan 30-day.",
+      "benefit": "Avoids an invalid itinerary.",
+      "effort": "Low",
+      "decision": "Open"
+    },
+    {
+      "id": "S7",
+      "suggestion": "Compare Shanghai with Hainan (30-day visa-free rule for US passports) as a second option.",
+      "benefit": "Possible no-visa trip.",
+      "effort": "Medium",
+      "decision": "Open"
+    },
+    {
+      "id": "S8",
+      "suggestion": "Add a map view of hotels and restaurants with 60-minute travel rings.",
+      "benefit": "Shows the 1-hour rule visually.",
+      "effort": "High",
+      "decision": "Open"
+    }
+  ]
+}
