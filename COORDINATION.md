@@ -325,7 +325,7 @@ Existing session scopes are respected; requests for changes to their files will 
 - This session claimed I01 before implementation after the prior root-site claim was stale; it has not checked out or modified another session's branch.
 - PRs #19–20 published and logged the independent targeted audit and its successful Pages deployment. The hub will link the audit without changing its findings.
 - PR #21 merged while this branch was being rebased. It rebuilt the canonical root dashboard and root data pages. I01 now archives that latest detailed dashboard (rather than replacing or reverting its source/data work) and uses a separate hub at `/`.
-- This branch will leave PR #21 data and all companion subsite-owned pages untouched; I02 root-fragment repairs remain additive. Any future root-page integration should preserve or explicitly reconcile the hub/archive and its fragment targets.
+- This branch preserves PR #21's root pages and research inputs, except for the narrow, source-linked derived dining-total correction claimed under I03. All companion subsite-owned pages and data remain untouched; I02 navigation changes are additive. Any future root-page integration should preserve or explicitly reconcile the hub/archive and its fragment targets.
 - Rebase conflicts are being resolved additively against current `origin/main`; no merged main history or data is to be discarded.
 
 ### Additional takeover — root-page anchor repair (2026-11-26)
@@ -347,11 +347,17 @@ Existing session scopes are respected; requests for changes to their files will 
 
 | ID | Task | Status | Owner | Files Touched / Scope | Verification |
 |---|---|---|---|---|---|
-| I03 | Align the derived dining total in the root budget dataset with its official menu inputs | **in progress** | `arena/6e5e57f6-chinafun3` | `data/budget.json` only: one scenario's derived total and breakdown string | Recompute ¥5,776 + ¥3,576 + ¥3,003.62 using decimal arithmetic; change no menu amount, source URL, hotel quote, or companion-site data; do not run the root generator |
+| I03 | Align the derived dining total in the root budget dataset with its official menu inputs | **done** | `arena/6e5e57f6-chinafun3` | `data/budget.json` only: one scenario's derived total and breakdown string | Recomputed ¥5,776 + ¥3,576 + ¥3,003.62 using decimal arithmetic; changed no menu amount, source URL, hotel quote, or companion-site data; root generator not run |
 
 - This narrow additive claim was made after final validation found that PR #21's root dataset still stores ¥12,243.84 beside menu inputs summing to ¥12,355.62. The corrected static `budget.html` and `executive-summary.html` already link the official menu sources; this claim brings their root JSON snapshot into agreement without altering any component prices.
 
-### Narrow mobile-header fix extension — 2026-11-26
-- Playwright found horizontal overflow at 320px in the newly archived root dashboard: the shared root `.brand` refused to shrink around its long subtitle. The root-owned `assets/css/style.css` was claimed for responsive layout; the first targeted rule now lets the brand shrink.
-- A broader recheck also found 320px overflow in the root itinerary's modeled-stay cards because a long status badge set the grid's intrinsic minimum width. Extend the same root CSS scope to constrain grid tracks and let badges wrap; recheck the hub, archive, itinerary, and question/source pages at mobile widths. No subsite CSS or research data will change.
-- Mobile recheck complete after the grid fix: all 15 root HTML pages (including hub and archive) passed 320, 375, 390, 768, and 1440px viewport checks with no horizontal page overflow or browser errors (75 page/viewport checks total).
+### Narrow mobile-layout fix extension — 2026-11-26
+- Playwright found horizontal overflow at 320px in the newly archived root dashboard: the shared root `.brand` refused to shrink around its long subtitle. The root-owned `assets/css/style.css` was claimed for responsive layout; the targeted brand rule now lets it shrink.
+- A broader recheck also found 320px overflow in the root itinerary's modeled-stay cards because a long status badge set the grid's intrinsic minimum width. The same CSS scope now constrains grid tracks and lets badges wrap. No subsite CSS changed.
+- Mobile recheck complete: all 15 root HTML pages (including hub and archive) passed 320, 375, 390, 768, and 1440px viewport checks with no horizontal page overflow or browser errors (75 page/viewport checks total).
+
+### Pre-PR validation — 2026-11-26
+- `python3 -m unittest discover -s tests -v`: 11 passed (root + Considered); `python3 -m unittest discover -s verify/tests -v`: 10 passed (pre-existing file-handle `ResourceWarning`s only); `cd for-two && python3 -m unittest discover -s tests -v`: 9 passed.
+- `python3 check_links.py`: 9 Plan pages, no issues. Repository-wide local HTML link/fragment audit: 62 HTML pages, 1,141 local targets/fragments, zero issues. README: 75 Markdown links, zero missing local targets. All 27 JSON files parsed successfully; browser JS syntax checks passed.
+- Playwright passed 75 root-page/viewport checks at widths 320, 375, 390, 768, and 1440px; hub → independent audit and hub → archive disclosure/navigation both worked without browser errors.
+- The archived dashboard was compared against `58a1578:index.html`; its markup/data match PR #21 apart from the archive title, description, and warning banner. `scripts/build_root.py` and `generate.py` were not run to avoid overwriting the custom hub/archive and root Q&A edits.
