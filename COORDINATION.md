@@ -227,6 +227,27 @@ malformed tables. Published at `/plan/` after PR #9 merged to `main`; Pages buil
 | 2026-11-25 | `b27f0613` | Verified official sources: Michelin 2026 regional press release (guide.michelin.com, 2026-04-08/09), full 50-restaurant starred directory (guide.michelin.com), 38-hotel Shanghai directory, 12 restaurant pages, Langham/Peninsula official sites, Yu Garden, Shanghai Museum, Shanghai Disney Resort. Live Feb 15–22 2027 hotel rates from the MICHELIN Guide Hotels booking engine. T'ang Court 2026 menu PDF (exact ¥888 / ¥2,288 for-two totals). |
 | 2026-11-25 | `b27f0613` | Built `verify/` dashboard (11 generated pages, JSON-driven, every row source-linked or flagged), offline tests, CI workflow. See `verify/verification.html` for the line-by-line log. |
 
+### Current session claim — 2026-11-26
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Independent repository and publication audit; publish actionable verified findings | in progress | `arena/3f54228c-chinafun3` | `audit-2026-11-26/**`, append-only `COORDINATION.md` |
+
+Existing session scopes are respected; requests for changes to their files will be logged rather than edited. The Arena-assigned branch is fixed for this session.
+
+**Scope takeover request/claim:** The root-site owner `arena/8205b531-chinafun3` last recorded a commit on 2026-11-25, more than 60 minutes ago. In accordance with the stale-claim handoff rule, this session claims only `index.html` for a prominent link to the independent audit and caution about unverified legacy figures. Other root files remain untouched; requests for corrections are logged in the audit.
+
+### Audit findings and handoff — 2026-11-26
+
+- Task status: **needs review**; targeted audit completed, not a comprehensive line-by-line repository verification. Scope: `audit-2026-11-26/index.html`, root `index.html` (stale-owner handoff above), this append-only log.
+- Checked the official [2026 MICHELIN announcement](https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang) against the legacy claim that 2024 was the latest. Claim is contradicted. Requested correction to legacy `executive-summary.html`, `restaurants.html`, related data and all affected tables by their owner or an integration session.
+- Checked the [dated Andaz booking page](https://guide.michelin.com/en/hotels-stays/shanghai/andaz-xintiandi-shanghai-6510?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1): $169 starting / $197 including taxes per night. Multiplying by seven is indicative, not a confirmed checkout quote or verified qualifying room. Legacy surrogate figures and one-hour counts need source-by-source review; request correction in `hotels.html` and associated data.
+- Checked the [State Council holiday notice hosted by Wuhan district government](https://www.dxh.gov.cn/ZWGK/zc_zwgk/ZFWJ/TZGG/202611/t20261106_2875104.shtml). Social search links are not reviews; official hours, current meal totals, actual full transit routes, room-specific amenities and cheapest dates remain incomplete. Details published in audit flagged page.
+- Verification: `python3 check_links.py` (nine plan pages), `npm test` (eight considered tests), and `python3 -m unittest discover -s verify/tests` (ten verify tests) passed. New page local links checked separately. These do not validate every repository page or external link, nor facts. ResourceWarnings in verify tests noted.
+- PR #10 belongs to another active branch and has not been integrated or reviewed by this session. No other session's branch was merged or changed.
+
+**Concurrent-session handoff:** After the above claim, GitHub showed active integration PR #16 (`arena/9ee6f5e0-chinafun3`, updated 2026-11-26) also owns `index.html` and is correcting legacy pages. Its claim was absent from this branch's board at the time of the handoff. To avoid overlapping work, this session relinquishes `index.html` and restores it to the branch base. Request to integration owner: include a prominent link to `audit-2026-11-26/` and retain the cautions that nightly starting rates times seven are not verified checkout totals, one-hour counts require individual measured routes, and search links are not reviews. PR #16 was reported conflicting by GitHub; its owner should resolve that conflict without discarding other work. A broad local scan of 61 HTML files found zero missing relative resources; this is not external-link verification.
+
 ---
 
 ## Task Board — Session `arena/9ee6f5e0-chinafun3` (FINAL INTEGRATION — scope: root site fixes + append-only `COORDINATION.md` + `README.md` integration section)
@@ -258,3 +279,7 @@ malformed tables. Published at `/plan/` after PR #9 merged to `main`; Pages buil
   - GitHub Pages status: `built` on `main` `/` at `https://kanlerxz87-cyber.github.io/ChinaFun3/`.
 - **Status:** Done — no broken links or JSON errors found.
 | 2026-11-26 | `9ee6f5e0` | W05/W06 done: re-verified combined data (check_links OK, verify 10/10, considered 8/8, all pages 200, mobile viewport+table-wrap). PR #16 https://github.com/kanlerxz87-cyber/ChinaFun3/pull/16 MERGED 2026-11-26T19:12:30Z (merge commit 0bbd4d5). Pages build `built` on main `/` — live at https://kanlerxz87-cyber.github.io/ChinaFun3/ (root + /docs/ + /considered/ + /for-two/ + /plan/ + /verify/). Merge conflict with PR #15 (d4b2f26a) in COORDINATION.md resolved keeping both boards, no discard. PR #10 NOT merged (divergent, would delete all work — F12). |
+
+**2026-11-26 merge reconciliation:** Merged updated `origin/main` into this session branch; resolved the sole `COORDINATION.md` conflict by retaining both sessions’ complete appended boards and logs. No other content was discarded. PR #16 has since merged; previous requests concerning its pending state are historical.
+
+**Audit continuation:** PR #16 and follow-up PRs #17–18 merged since the earlier handoff. Some legacy Michelin claims were corrected, but `hotels.html` still reports 44 reachable starred restaurants including two three-star restaurants, while the [official 2026 regional announcement](https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang) reports only one three-star in the wider three-region selection. The audit page now distinguishes already-corrected claims from remaining discrepancies. Request to the root integration owner: link the audit and remove or individually verify those hotel rankings and proxy amounts; no root file was changed by this session. A failed ordinary `git pull --rebase` after the merge was aborted; `git pull --rebase=merges` succeeded, preserving the resolved merge.
