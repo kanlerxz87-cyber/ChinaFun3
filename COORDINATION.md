@@ -343,6 +343,14 @@ Existing session scopes are respected; requests for changes to their files will 
 ### Narrow I02 arithmetic-validation extension — 2026-11-26
 - Before editing, include a correction to the derived combined dining total shown in both `budget.html` and `executive-summary.html`. Their displayed items are ¥5,776 + ¥3,576 + ¥3,003.62 = ¥12,355.62, while the leading total currently says ¥12,243.84. Also add direct official links for those menu amounts in the summary row/card so the cited amounts are reviewable in context. Do not alter the menu prices or hotel quote.
 
+### Additional root budget-data reconciliation — 2026-11-26
+
+| ID | Task | Status | Owner | Files Touched / Scope | Verification |
+|---|---|---|---|---|---|
+| I03 | Align the derived dining total in the root budget dataset with its official menu inputs | **in progress** | `arena/6e5e57f6-chinafun3` | `data/budget.json` only: one scenario's derived total and breakdown string | Recompute ¥5,776 + ¥3,576 + ¥3,003.62 using decimal arithmetic; change no menu amount, source URL, hotel quote, or companion-site data; do not run the root generator |
+
+- This narrow additive claim was made after final validation found that PR #21's root dataset still stores ¥12,243.84 beside menu inputs summing to ¥12,355.62. The corrected static `budget.html` and `executive-summary.html` already link the official menu sources; this claim brings their root JSON snapshot into agreement without altering any component prices.
+
 ### Narrow mobile-header fix extension — 2026-11-26
 - Playwright found horizontal overflow at 320px in the newly archived root dashboard: the shared root `.brand` refused to shrink around its long subtitle. The root-owned `assets/css/style.css` was claimed for responsive layout; the first targeted rule now lets the brand shrink.
 - A broader recheck also found 320px overflow in the root itinerary's modeled-stay cards because a long status badge set the grid's intrinsic minimum width. Extend the same root CSS scope to constrain grid tracks and let badges wrap; recheck the hub, archive, itinerary, and question/source pages at mobile widths. No subsite CSS or research data will change.
