@@ -1,0 +1,373 @@
+{
+  "checked_date": "2026-11-26",
+  "visa_options": [
+    {
+      "pathway": "Pathway 1 · 240-Hour (10-Day) Visa-Free Transit (TWOV)",
+      "eligibility_us": "YES — United States is one of the 55+ eligible countries under China NIA's 240h transit policy (even though the US is NOT on the 30-day unilateral visa-free list).",
+      "routing_rule": "STRICTLY requires Country/Region A → Mainland China → Country/Region C (e.g., SFO → PVG, then PVG/SHA → Tokyo, Seoul, Hong Kong, Taipei, or Singapore → SFO). Direct US → Shanghai → US round-trip is INELIGIBLE.",
+      "max_stay": "Up to 240 hours (10 full days starting 00:00 the day after arrival) across Shanghai & 24 permitted provinces (includes Jiangsu/Suzhou & Zhejiang/Hangzhou!).",
+      "cost_for_couple": "$0 USD",
+      "documents_needed": "US passport valid ≥3 months + confirmed interline/onward seat ticket to 3rd country/region + hotel reservation.",
+      "source_url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html",
+      "source_label": "China NIA Official 240h Notice"
+    },
+    {
+      "pathway": "Pathway 2 · Simplified US Citizen Tourist Visa (L-Visa via New COVA)",
+      "eligibility_us": "Required for direct US ↔ Mainland China round-trip flights OR stays >10 days (14–28 night options).",
+      "routing_rule": "Allows any routing (direct US ↔ PVG round-trip) and multi-year multiple entries (US citizens typically eligible for 10-year multi-entry L-visa).",
+      "max_stay": "Typically 60–90 days per entry (covers 1–4 week trip easily).",
+      "cost_for_couple": "$280 USD for 2 ($140/person Regular Fee reduced through Dec 31, 2026; reverts to $185/pp = $370/2 if unextended after Dec 31, 2026; Express +$25/pp).",
+      "documents_needed": "SIMPLIFIED FOR US APPLICANTS: Since Jan 1, 2024 (reconfirmed Sep 20, 2025 for the upgraded COVA portal consular.mfa.gov.cn/VISA/), US tourist L-visa applicants do NOT need air tickets, hotel bookings, itinerary, or invitation letters! Submit online first (1–2 week preliminary review), then drop passport at Consular Office.",
+      "source_url": "https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202509/t20250920_11712385.htm",
+      "source_label": "US Embassy COVA Upgrade (Sep 2025)"
+    }
+  ],
+  "budget_scenarios": [
+    {
+      "tier": "Scenario 1 · Smart Luxury Value (Andaz Xintiandi + Starred Lunch Arbitrage)",
+      "hotel_choice": "Andaz Xintiandi · 7 Nights ($1,376.21 all-in w/ tax, non-ref)",
+      "hotel_usd": 1376.21,
+      "visa_usd_range": "$0 (240h Transit) or $280 (2× L-Visa by Dec 31, 2026)",
+      "verified_dining_sample": "T'ang Court 2★ Dim Sum Set (CNY 888) + Yi Long Court 1★ Dim Sum Set (CNY 788.22) + Mr & Mrs Bund Weekday Lunch (CNY 660) + Sui Tang Li Set for 2 (CNY 988) + Pierre Gagnaire 1★ Dinner (CNY 2,284) = CNY 5,608.22 across 5 verified MICHELIN meals (+ casual Bib Gourmand meals)",
+      "verified_activities_transit": "Maglev RT w/ boarding pass (CNY 160) + two 3-Day Metro Passes ×2 (CNY 180) + Yu Garden (CNY 60) + Shanghai Museum East (CNY 0) + Shanghai Tower 118F (CNY 360) + Huangpu Cruise (CNY 240) + Zhujiajiao Combo (CNY 120) = CNY 1,120 (~$155)",
+      "verified_subtotal_note": "$1,376.21 hotel + CNY 6,728.22 (~$929) verified on-ground items + $0–$280 visa (Excludes international flights & unpriced à la carte/3★ meals — never fabricated).",
+      "source_url": "https://guide.michelin.com/en/hotels-stays/shanghai/andaz-xintiandi-shanghai-6510?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1"
+    },
+    {
+      "tier": "Scenario 2 · Recommended Sweet Spot (Langham Xintiandi w/ Breakfast + 2★/1★ Mix)",
+      "hotel_choice": "The Langham, Xintiandi · 7 Nights ($2,291.93 all-in w/ Daily Breakfast for 2 & Free Cancel)",
+      "hotel_usd": 2291.93,
+      "visa_usd_range": "$0 (240h Transit) or $280 (2× L-Visa by Dec 31, 2026)",
+      "verified_dining_sample": "T'ang Court 2★ All-Day Set (CNY 2,288) + Bao Li Xuan 2★ Set (CNY 3,576) + Yi Long Court 1★ Tasting (CNY 2,304.02) + Sir Elly's 5-Course (CNY 3,003.62) + Mr & Mrs Bund Brunch (CNY 990) + Sui Tang Li Set (CNY 988) = CNY 13,149.64 across 6 verified MICHELIN set meals",
+      "verified_activities_transit": "Same verified transit + attractions bundle + Shanghai Disneyland 1-Day base (from CNY 950/2) = CNY 2,070 (~$286)",
+      "verified_subtotal_note": "$2,291.93 hotel (breakfast covered!) + CNY 15,219.64 (~$2,102) verified dining/activities + $0–$280 visa (Plus Taian Table RMB 4,000 deposit + balance & flights).",
+      "source_url": "https://guide.michelin.com/en/hotels-stays/shanghai/the-langham-shanghai-xintiandi-5331?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1"
+    },
+    {
+      "tier": "Scenario 3 · Iconic Bund Splurge (Shanghai EDITION or Peninsula Promo + Grand Tasting)",
+      "hotel_choice": "The Shanghai EDITION ($3,222.01 Free Cancel) OR Peninsula Direct Promo (CNY 20,119.33 incl. breakfast if booked by Dec 7, 2026)",
+      "hotel_usd": 3222.01,
+      "visa_usd_range": "$0 (240h Transit) or $280 (2× L-Visa by Dec 31, 2026)",
+      "verified_dining_sample": "Bao Li Xuan 2★ w/ Wine Pairing (CNY 5,176) + Mr & Mrs Bund PP Classic Dinner (CNY 2,833.60) + Sir Elly's 5-Course (CNY 3,003.62) + Pierre Gagnaire 1★ Upper Range (CNY 4,556) + T'ang Court 2★ All-Day (CNY 2,288) + Yi Long Court 1★ Tasting (CNY 2,304.02) = CNY 20,161.24 across 6 verified menus",
+      "verified_activities_transit": "Maglev + Metro + Sky632 Shanghai Tower (CNY 536) + Disneyland (from CNY 950) + Yuyuan & Cruise = CNY 2,246 (~$310)",
+      "verified_subtotal_note": "$3,222.01 hotel + CNY 22,407.24 (~$3,095) verified gala menus/activities + $0–$280 visa (Excludes unpriced 3★ Taian Table / 2★ Bombana / 2★ Da Vittorio wine pairings & flights).",
+      "source_url": "https://guide.michelin.com/en/hotels-stays/shanghai/the-shanghai-edition-121740-11679?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1"
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q01",
+      "category": "Visa & Flight Routing",
+      "question": "Will you fly round-trip US ↔ Shanghai, or route onward via a 3rd country/region (e.g., Tokyo, Seoul, Hong Kong, or Taipei)?",
+      "why_it_matters": "Determines whether you qualify for $0 240-hour Visa-Free Transit (≤10 days) or need a $140/pp ($280/couple) Chinese L-Visa before Dec 31, 2026.",
+      "discovery_method": "Compare Google Flights / airline multi-city 'US → PVG, PVG → HND/ICN/HKG → US' fares against direct 'US ↔ PVG' round-trip + $280 L-visa cost before Dec 15, 2026.",
+      "source_url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html"
+    },
+    {
+      "id": "Q02",
+      "category": "Trip Duration",
+      "question": "Which exact duration do you want: 7 nights (Feb 15–22), 10 nights (Feb 15–25), 14 nights (Feb 15–Mar 1), or 21–28 nights?",
+      "why_it_matters": "Stays ≤10 days fit 240h visa-free transit; 14 nights captures both low-rate February weeks before March 1's +15%–40% hotel rate jump and unlocks Hangzhou (13★).",
+      "discovery_method": "Confirm PTO days with employers and check whether 240h transit clock (00:00 day after arrival to scheduled departure) covers your preferred return flight.",
+      "source_url": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm"
+    },
+    {
+      "id": "Q03",
+      "category": "Hotel Tier & Dec 7 Deadline",
+      "question": "Do you want to lock The Peninsula Shanghai's 15%-off + breakfast promo (non-refundable, expires Dec 7, 2026) or book a Free-Cancellation base (#1 Langham $2,291.93 w/ breakfast or #4 Sukhothai $2,394.04)?",
+      "why_it_matters": "Peninsula's 'A Gift for the New Year' offer closes Dec 7, 2026 and requires full prepayment, whereas Langham & Sukhothai allow free cancellation until Feb 14, 2027.",
+      "discovery_method": "Pull live checkout quote on peninsula.com before Dec 7, 2026 and compare directly against Langham's $2,291.93 refundable MICHELIN quote.",
+      "source_url": "https://www.peninsula.com/en/shanghai/special-offers/festive/a-gift-for-the-new-year"
+    },
+    {
+      "id": "Q04",
+      "category": "Bedding Preference",
+      "question": "Do you prefer 1 shared King/Queen bed or 2 Queen beds in one private room?",
+      "why_it_matters": "Langham, Andaz, Shangri-La, Sukhothai, and Ritz-Carlton base quotes are 1 King; W Shanghai base ($2,733.53) is 1 Queen ($2,792.31 for 1 King); Shanghai EDITION ($3,222.01) offers 2 Queen beds.",
+      "discovery_method": "Select exact room code on checkout screen and save confirmation PDF showing bed count and private bathroom.",
+      "source_url": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/rooms/"
+    },
+    {
+      "id": "Q05",
+      "category": "Fine-Dining Budget & Unpublished Tasting Prices",
+      "question": "What is your comfortable ceiling per flagship dinner, and should we email Taian Table (3★), 8½ Otto e Mezzo (2★), Fu He Hui (2★), and Ling Long (1★) for Feb 2027 menu tariffs?",
+      "why_it_matters": "Those 4 starred venues omit base menu totals from public websites (Taian Table takes RMB 2,000/pp deposit).",
+      "discovery_method": "Email info@taian-table.cn, infosha@ottoemezzobombana.com, and call Fu He Hui (+86 21 3980 9188) 45–60 days before arrival to request current RMB tasting tariffs + service charge.",
+      "source_url": "https://sh.taian-table.cn/faq/"
+    },
+    {
+      "id": "Q06",
+      "category": "Dietary & Beverage Preferences",
+      "question": "Do either of you have shellfish/seafood allergies, vegetarian preferences, or interest in wine/tea pairings?",
+      "why_it_matters": "Taian Table's FAQ notes severe dietary substitutions require advance review; Bao Li Xuan's wine pairing adds CNY 1,600/couple; Fu He Hui (2★) is 100% vegetarian.",
+      "discovery_method": "List allergies in writing at reservation time (≥14 days prior) and request non-alcoholic tea pairing pricing where desired.",
+      "source_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fu-he-hui"
+    },
+    {
+      "id": "Q07",
+      "category": "Monday Dining & T'ang Court Contradiction",
+      "question": "Do you want T'ang Court (2★) on a mid-week lunch (Wed–Sun) rather than Monday?",
+      "why_it_matters": "Langham's official T'ang Court page prints both 'daily' and 'Off on Monday'.",
+      "discovery_method": "Schedule T'ang Court Tue–Sun (we placed it on Wed Feb 17 in the itinerary) or email tlshx.tangcourt@langhamhotels.com to confirm Monday status.",
+      "source_url": "https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/"
+    },
+    {
+      "id": "Q08",
+      "category": "Ritz-Carlton Pudong Renovation Tolerance",
+      "question": "If considering #7 Ritz-Carlton Pudong ($2,532.92) or 1★ Jin Xuan, does ongoing lobby/55F spa enhancement work bother you?",
+      "why_it_matters": "Official Jin Xuan page announces enhancement work in 1F Lobby, 1F Retail, 3F Banquet, and 55F Spa starting Oct 1, 2026 with no published completion date.",
+      "discovery_method": "Contact Ritz-Carlton Pudong (+86 21 2020 1888) in Jan 2027 to confirm whether 55F Spa & 1F Lobby works will still be active on Feb 15–22, 2027.",
+      "source_url": "https://www.jinxuanchineserestaurantshanghai.com/"
+    },
+    {
+      "id": "Q09",
+      "category": "Day-5 Choice: Disneyland vs Ancient Canal Town",
+      "question": "On Friday Feb 19, do you prefer Zhujiajiao Ancient Water Town (CNY 120/2) or Shanghai Disneyland (from CNY 950/2)?",
+      "why_it_matters": "Both sit at the ~50–65 min Metro boundary (Line 17 vs Line 11) and require a dedicated day in a 7-night plan (a 10-night plan easily fits both).",
+      "discovery_method": "Check Shanghai Disneyland's Feb 2027 opening hours & date-tier price 30 days ahead on shanghaidisneyresort.com/en/.",
+      "source_url": "https://www.shanghaidisneyresort.com/en/"
+    },
+    {
+      "id": "Q10",
+      "category": "Mobile Payments & Connectivity",
+      "question": "Have both travelers verified passport identity inside Alipay and WeChat Pay with a zero-FX US Visa/Mastercard?",
+      "why_it_matters": "Shanghai Metro QR codes, Yu Garden mini-program tickets,Museum of Art Pudong tickets, and Taian Table WeChat deposits rely heavily on Alipay/WeChat.",
+      "discovery_method": "Install Alipay & WeChat in the US 2 weeks pre-trip, complete passport real-name verification, bind 2 no-FTF credit cards each, and install a roaming eSIM (Airalo/Holafly/US carrier) so Western apps & maps work without local firewall blocks.",
+      "source_url": "https://www.yugarden.com.cn/page/articleView/message.html"
+    }
+  ],
+  "suggestions": [
+    {
+      "id": "S01",
+      "status": "FOR REVIEW ONLY — NOT IMPLEMENTED",
+      "title": "Use an Open-Jaw 3rd-Country/Region Ticket to Unlock $0 240-Hour Visa-Free Transit",
+      "upside": "Saves $280 in US L-Visa fees + consular drop-off logistics while adding 1–2 nights in Tokyo, Seoul, Hong Kong, or Taipei.",
+      "tradeoff": "Caps Mainland China stay at 240 hours (10 days) and requires confirmed onward seat before boarding in the US.",
+      "verification_step": "Price multi-city airfare (e.g. SFO → PVG Feb 14/15, PVG → TYO/HKG Feb 22, TYO/HKG → SFO Feb 24) against direct SFO ↔ PVG + $280 L-visa.",
+      "source_url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html"
+    },
+    {
+      "id": "S02",
+      "status": "FOR REVIEW ONLY — NOT IMPLEMENTED",
+      "title": "Two-Stage 'Free-Cancel Lock + Feb 1 Re-Price' Hotel Booking Strategy",
+      "upside": "Locking #1 Langham ($2,291.93 w/ breakfast, free cancel Feb 14) or #4 Sukhothai ($2,394.04, free cancel Feb 14) right now eliminates upside price risk while preserving the option to switch to a cheaper last-minute non-refundable rate on Feb 1–7, 2027.",
+      "tradeoff": "Requires setting a calendar reminder before Feb 13, 2027.",
+      "verification_step": "Book refundable rate today; re-run exact dated MICHELIN Hotels & direct brand search on Feb 2, 2027.",
+      "source_url": "https://guide.michelin.com/en/hotels-stays/shanghai/the-langham-shanghai-xintiandi-5331?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1"
+    },
+    {
+      "id": "S03",
+      "status": "FOR REVIEW ONLY — NOT IMPLEMENTED",
+      "title": "Starred Cantonese Lunch Arbitrage + Selected/3★ Evening Pairing",
+      "upside": "Booking T'ang Court (2★, CNY 888 for 2) and Yi Long Court (1★, CNY 695–788 for 2) at lunchtime cuts per-couple spend by 61%–66% versus their evening tasting menus (CNY 2,288–2,304), freeing budget for 3★ Taian Table at night.",
+      "tradeoff": "Hearty midday dim sum means scheduling lighter walks in the afternoon.",
+      "verification_step": "Request the 'Dim Sum Lunch Set Menu for Two' explicitly when booking T'ang Court & Yi Long Court.",
+      "source_url": "https://www.langhamhotels.com/content/dam/langhamhotels/tlshx-pdfs/tang-court/2026/seasonal-set-menu-selection-2026.pdf"
+    },
+    {
+      "id": "S04",
+      "status": "FOR REVIEW ONLY — NOT IMPLEMENTED",
+      "title": "If Extending to 14 Nights (Feb 15 – Mar 1), Add 3 Nights in Hangzhou via 45-Min HSR",
+      "upside": "Hangzhou adds 13 MICHELIN-starred + 75 Bib/Selected venues around West Lake & Longjing tea hills while keeping your entire 2-week trip inside February's low hotel-rate trough before March 1.",
+      "tradeoff": "Requires a Chinese L-Visa (exceeds 240h transit) or exiting directly from Hangzhou Xiaoshan Airport (HGH, an eligible 240h port!) within 10 days.",
+      "verification_step": "Check 12306.cn G-train schedules (Shanghai Hongqiao → Hangzhou East, 45–55 min) 15 days before travel.",
+      "source_url": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang"
+    },
+    {
+      "id": "S05",
+      "status": "FOR REVIEW ONLY — NOT IMPLEMENTED",
+      "title": "Buy the CNY 55 'Maglev Single + 24-Hour Metro Pass' Bundle at PVG Arrival",
+      "upside": "Costs only CNY 5 (~$0.70) more than a standalone CNY 50 Maglev ticket and covers unlimited Shanghai Metro rides for your first 24 hours.",
+      "tradeoff": "Sold at PVG Maglev ticket counter rather than direct credit-card tap at turnstile.",
+      "verification_step": "Ask for the Maglev & Metro Pass Joint Ticket (CNY 55) at Pudong Airport Maglev station window.",
+      "source_url": "https://service.shmetro.com/en/cczn/73.htm"
+    },
+    {
+      "id": "S06",
+      "status": "FOR REVIEW ONLY — NOT IMPLEMENTED",
+      "title": "Swap Saturday Lantern Festival Yuyuan Crowds for Friday Evening Night Tour + Bund Rooftop",
+      "upside": "Sat Feb 20, 2027 is Lantern Festival — Yuyuan Old Street reaches maximum annual crowd density and often implements one-way pedestrian queues. Visiting Yuyuan Night Tour on Fri Feb 19 (18:00–21:20) and viewing Lantern night from a Bund rooftop on Sat Feb 20 avoids multi-hour crowd control.",
+      "tradeoff": "Misses the exact 15th-lunar-day atmosphere inside Yuyuan Mall.",
+      "verification_step": "Monitor '上海豫园' WeChat notices in early Feb 2027 for Lantern Festival crowd-control hours and surge pricing.",
+      "source_url": "https://www.yugarden.com.cn/page/articleView/message.html"
+    }
+  ],
+  "flagged_items": [
+    {
+      "id": "F01",
+      "severity": "High",
+      "category": "Hotel Live Quote Gap",
+      "subject": "The Peninsula Shanghai — Feb 15–22, 2027 Live Checkout Total",
+      "finding": "On 2026-11-26, MICHELIN Guide Hotels returned no live checkout price for Peninsula Shanghai, and secure.peninsula.com renders rates client-side. Peninsula's official offer page confirms 'A Gift for the New Year' (15% off rooms + breakfast for 2 + 16.6% surcharge, book Nov 23–Dec 7, 2026); prior-day sibling check recorded CNY 2,465/nt excl. 16.6% (CNY 20,119.33 / 7 nights) for Feb 15–Mar 8.",
+      "handling": "Left 2026-11-26 USD checkout column blank ('—') in the main table and linked the live Peninsula promo page.",
+      "source_url": "https://www.peninsula.com/en/shanghai/special-offers/festive/a-gift-for-the-new-year"
+    },
+    {
+      "id": "F02",
+      "severity": "Medium",
+      "category": "Hotel Inventory Unavailable",
+      "subject": "Waldorf Astoria, Capella, Upper House (Middle House) & PuLi — Feb 15–22, 2027",
+      "finding": "Dated MICHELIN Guide Hotels queries on 2026-11-26 returned no bookable rooms for these 4 properties on Feb 15–22, 2027; Four Seasons Huaihai Zhong Rd is an unopened 2027 project.",
+      "handling": "Listed separately under 'Checked — No Live Inventory on 2026-11-26' with zero surrogate prices.",
+      "source_url": "https://guide.michelin.com/en/hotels-stays/shanghai/waldorf-astoria-shanghai-on-the-bund-6803?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1"
+    },
+    {
+      "id": "F03",
+      "severity": "High",
+      "category": "Active Property Renovation & Floor Mismatch",
+      "subject": "The Ritz-Carlton Shanghai, Pudong & 1★ Jin Xuan",
+      "finding": "(1) Official jinxuanchineserestaurantshanghai.com prints a notice that 1F Lobby, 1F Retail, 3F Banquet Hall, and 55F Spa began enhancement work on Oct 1, 2026 with no end date stated. (2) Jin Xuan is listed as 53F on its official website vs 52F on MICHELIN.",
+      "handling": "Surfaced renovation alert directly on Hotel #7 and Jin Xuan rows; verify completion before booking.",
+      "source_url": "https://www.jinxuanchineserestaurantshanghai.com/"
+    },
+    {
+      "id": "F04",
+      "severity": "Low",
+      "category": "Hotel Loyalty & Cancellation Detail",
+      "subject": "The Langham, Shanghai, Xintiandi — Brilliant Points Cutoff & Channel Variance",
+      "finding": "Official reservations.brilliantbylangham.com displays: 'This hotel will no longer award Brilliant Points for stays with check-out on or after 12 Jan 2027.' Also, live 2026-11-26 MICHELIN quote ($2,291.93) shows Free Cancellation until Feb 14, 2027 (earlier root table had Feb 10).",
+      "handling": "Updated cancellation to Feb 14, 2027 and disclosed the Jan 12, 2027 loyalty change.",
+      "source_url": "https://reservations.brilliantbylangham.com/en-US/booking/rooms?adult=2&arrive=2027-02-15&chain=10316&config=brilliant&depart=2027-02-22&hotel=28382&level=hotel&locale=en-US&rooms=1&theme=brilliant"
+    },
+    {
+      "id": "F05",
+      "severity": "Medium",
+      "category": "Room Bed/Bath Wording",
+      "subject": "W Shanghai ('Marvelous Oversize King' = 1 Queen) & Bvlgari Superior Room Page",
+      "finding": "W Shanghai's MICHELIN room card titles the entry rate 'Marvelous Room Oversize King' while printing '1 Queen Bed' in specs ('Wonderful King' at $2,792.31 has '1 King Bed'). Bvlgari's Superior Room page returned a fetch error on 2026-11-26.",
+      "handling": "Disclosed both Queen ($2,733.53/$6,858.31) and King ($2,792.31/$7,418.17) tiers and flagged room-level bath confirmation at checkout.",
+      "source_url": "https://guide.michelin.com/en/hotels-stays/shanghai/w-shanghai-10556?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1"
+    },
+    {
+      "id": "F06",
+      "severity": "High",
+      "category": "Restaurant Price Audit",
+      "subject": "Taian Table (3★) — Deposit Verified vs Base Tasting Price Unstated on 2026 FAQ/PDF",
+      "finding": "Root site's F05/Q04 cited '¥5,176–5,776 for 2' as from Taian Table's 2026 FAQ, whereas live sh.taian-table.cn/faq/ only states the RMB 2,000/person deposit and Oct 2026 Menu-No.55.pdf omits numeric prices (¥2,588/¥2,888 was an older historical figure).",
+      "handling": "Left Taian Table's couple total blank ('—') and reported only the verified RMB 4,000 two-person deposit.",
+      "source_url": "https://sh.taian-table.cn/faq/"
+    },
+    {
+      "id": "F07",
+      "severity": "Medium",
+      "category": "Operator Contradiction",
+      "subject": "T'ang Court (2★) — Monday Opening Contradiction & Missing Standalone Video",
+      "finding": "Official Langham T'ang Court page prints both 'daily' and 'Off on Monday'. Only parent hotel YouTube/Instagram media was verified (no TikTok).",
+      "handling": "Treated Monday as closed for itinerary safety and labeled hotel media transparently.",
+      "source_url": "https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/"
+    },
+    {
+      "id": "F08",
+      "severity": "Medium",
+      "category": "Missing Operating Days & Social Slot",
+      "subject": "Bao Li Xuan (2★) — Operating Weekdays Unstated & No TikTok",
+      "finding": "Bvlgari's official page gives Lunch 11:30–14:00 & Dinner 17:30–22:00 and PDF menu gives CNY 3,576/2 set price, but omits operating days of the week; no verified TikTok video.",
+      "handling": "Left Open Days blank ('—') and flagged phone confirmation (+86 21 3606 7788).",
+      "source_url": "https://www.bulgarihotels.com/en_US/shanghai/dining/chinese-fine-dining-restaurant"
+    },
+    {
+      "id": "F09",
+      "severity": "Medium",
+      "category": "Ambiguous PDF Menu Wording",
+      "subject": "Da Vittorio Shanghai (2★) — Tasting Menu 'Shared for the Whole Table' Wording",
+      "finding": "Official English PDF prints 'Shared for the whole table' above Il Mare (RMB 2,388) and White Truffle (RMB 4,388) + 10% service without explicitly printing 'per person' vs 'per table'.",
+      "handling": "Left headline couple set figure blank ('—') and cited verified à la carte range + exact PDF wording.",
+      "source_url": "https://www.davittorio.com/images/2023/Shanghai/Menu%20Ristorante%20-%20Inglese.pdf"
+    },
+    {
+      "id": "F10",
+      "severity": "Medium",
+      "category": "Unpublished Menu Prices / Hours / Western Socials",
+      "subject": "8½ Otto e Mezzo (2★), Fu He Hui (2★), Canton 8 (2★), Ling Long (1★), Da Hu Chun (Bib), Rong Cuisine (Bib)",
+      "finding": "Official pages omit numeric menu totals; Canton 8 & Rong Cuisine omit operating hours on MICHELIN; mainland-focused venues lack verified public accounts on one or more Western platforms (TikTok/Instagram).",
+      "handling": "Left unverified price/hour/social slots blank ('—') and showed official MICHELIN ¥–¥¥¥¥ spend bands only.",
+      "source_url": "https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants"
+    },
+    {
+      "id": "F11",
+      "severity": "Low",
+      "category": "Social Media Scope & Surcharge Detail",
+      "subject": "Yi Long Court (1★), Mr & Mrs Bund (Selected), Sir Elly's (Selected), Sui Tang Li (Selected)",
+      "finding": "Couple menu prices ARE verified from 2026 official pages/PDFs, but TikTok lacks verified venue-exact clips (and Sui Tang Li's RMB 988 offer page does not specify whether service charge applies).",
+      "handling": "Left TikTok slot blank ('—') rather than using unrelated videos; noted Sui Tang Li surcharge check.",
+      "source_url": "https://www.upperhouse.com/en/shanghai/special-offers/sui-tang-li-black-pearl-set-menu/"
+    },
+    {
+      "id": "F12",
+      "severity": "Low",
+      "category": "PDF Vector Font Encoding",
+      "subject": "Le Comptoir de Pierre Gagnaire (1★) — Set Menu PDFs Non-Text-Extractable",
+      "finding": "Capella's Lunch_Menu and Dinner_Menu PDFs encode numeric price digits as vector outlines, whereas A_La_Carte_Menu.pdf?v112 extracts cleanly (Entrées RMB 359–779, Mains RMB 679–1,499 + 10%).",
+      "handling": "Used verified à la carte couple range (CNY 2,284–4,556) and flagged set-menu totals.",
+      "source_url": "https://capellahotels.com/assets/docs/shanghai/A_La_Carte_Menu_%E9%9B%B6%E7%82%B9%E8%8F%9C%E5%8D%95.pdf?v112"
+    },
+    {
+      "id": "F13",
+      "severity": "Low",
+      "category": "Minor Hours & Currency Label Discrepancy",
+      "subject": "Polux (Bib Gourmand) & Shanghai Tavern (Selected)",
+      "finding": "Polux lists 11:00–22:00 on poluxbypp.com vs 10:00–22:00 on MICHELIN and prints menu numbers without a currency/service-charge label; Shanghai Tavern weekend afternoon hours differ slightly between Marriott & MICHELIN.",
+      "handling": "Used conservative operator hours (11:00–22:00) and left Polux/Shanghai Tavern couple total blank ('—').",
+      "source_url": "https://www.poluxbypp.com/"
+    },
+    {
+      "id": "F14",
+      "severity": "Medium",
+      "category": "MICHELIN Ceremony vs Live Directory Count",
+      "subject": "Shanghai (51 Ceremony vs 50 Live Starred) & Chengdu (13 Ceremony vs 14 Live Starred)",
+      "finding": "April 2026 Shanghai press release announced 51 starred (156 total), but 2★ 102 House closed July 8, 2026 leaving 50 starred (153 total) live; Ultraviolet (former 3★) closed March 29, 2025. Chengdu's live directory lists 14 starred vs 13 in ceremony release.",
+      "handling": "Used live 2026-11-26 directory counts and documented ceremony-vs-live differences.",
+      "source_url": "https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred"
+    },
+    {
+      "id": "F15",
+      "severity": "Medium",
+      "category": "Attraction 2027 Tariff / Schedule Gaps",
+      "subject": "Shanghai Museum People's Square (Americas-Only!), MAP, Yuyuan Night Tour, Shanghai Tower Hours & Disneyland Feb 2027 Calendar",
+      "finding": "(1) People's Square branch hosts ONLY the ticketed Americas exhibition Jul 9, 2026–Nov 14, 2027 (price unstated on English page). (2) MAP English page omits ticket price. (3) Shanghai Tower hours & Disneyland Feb 2027 daily calendar are unpublished 90 days out. (4) shanghaimuseum.net switches to shanghaimuseum.cn on Jan 1, 2027.",
+      "handling": "Left unverified 2027 prices/hours blank ('—') and routed permanent museum visitors to Shanghai Museum East.",
+      "source_url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-west"
+    },
+    {
+      "id": "F16",
+      "severity": "Medium",
+      "category": "Door-to-Door Transit Minutes & ~1h Outer Boundary",
+      "subject": "Station-to-Station vs Walking Minutes; Disneyland & Zhujiajiao ~50–65 Min Rail",
+      "finding": "Unlike root F07 (which reported shmetro.com unreachable), we verified service.shmetro.com/en/ (35–40 km/h speed, fares, Line 11 Disney notice), but exact door-to-door walking minutes depend on real-time navigation; Zhujiajiao & Disneyland sit right on the ~1-hour boundary.",
+      "handling": "Reported verified Metro lines, exits, fares & distance-derived ride brackets without fabricating single-minute door-to-door claims.",
+      "source_url": "https://service.shmetro.com/en/operation/965.htm"
+    }
+  ],
+  "repo_audit": [
+    {
+      "target": "Root Dashboard (/ · rebuilt in PR #21 on 2026-11-26)",
+      "resolved_strengths": "PR #21 removed closed 3★ Ultraviolet & unopened Four Seasons, updated to 50 live starred restaurants, fixed Yu Garden ¥30 off-peak ticket, and added Feb 15–22 MICHELIN hotel quotes.",
+      "remaining_gaps_fixed_here": "(1) Root F05/Q04 still cites '¥5,176–5,776' as Taian Table's 2026 FAQ price, whereas live sh.taian-table.cn/faq/ only states the ¥2,000/pp deposit (fixed in F06). (2) Root F07 declared shmetro unverified, whereas service.shmetro.com/en/ is live and verified here. (3) Root missed Ritz-Carlton Pudong's Oct 1, 2026 1F/3F/55F spa renovation notice, Langham's Jan 12, 2027 Brilliant Points cutoff, US Embassy's $140 L-visa Dec 31, 2026 deadline, brand room bath pages (Andaz/Shangri-La/Sukhothai/EDITION/Ritz), 2026 PDF menus for Mr & Mrs Bund / Sui Tang Li / Pierre Gagnaire / Da Vittorio / Jin Xuan, and multi-window March rate curves (+15.5%–40.3%).",
+      "source_url": "https://sh.taian-table.cn/faq/"
+    },
+    {
+      "target": "/for-two/ · Couple Audit Subsite",
+      "resolved_strengths": "High-rigor verification of Peninsula festive promo, T'ang Court / Yi Long Court / Sir Elly's PDF menus, and strict rejection of mismatched social media search results.",
+      "remaining_gaps_fixed_here": "Expanded hotel checkout coverage to 9 ranked properties + multi-window Feb–Mar 2027 rate curves, added Mr & Mrs Bund (Nov 2026 PDF), Sui Tang Li (CNY 988/2), Bao Li Xuan (CNY 3,576/2), Pierre Gagnaire, US Embassy $140 L-visa rules, and 6-city Mainland China MICHELIN comparison.",
+      "source_url": "https://www.mmbund.com/wp-content/uploads/sites/4/2026/11/Mr-Mr-Bund-Dinner-Menu-Nov-2026-S.pdf"
+    },
+    {
+      "target": "/verify/ · MICHELIN Directory & Hotel Check Subsite",
+      "resolved_strengths": "Complete 50-starred restaurant list and 102 House July 8, 2026 closure documentation.",
+      "remaining_gaps_fixed_here": "Added room-level checkout totals (incl. taxes, bed & private-bath brand specs) instead of 'starting at' card rates, added 7 Bib Gourmand / MICHELIN Selected non-starred restaurants, and verified service.shmetro.com + municipal attraction tariffs.",
+      "source_url": "https://english.shanghai.gov.cn/en-FestivalsCelebrations/20260515/ee03e0a7bc6e4d87acc0a1cbe5d8ca49.html"
+    },
+    {
+      "target": "/docs/ & /considered/ & /plan/ · Earlier Subsites",
+      "resolved_strengths": "/plan/ caught third-party Yu Garden contradictions and built a closure-aware skeleton; /considered/ added offline test checks.",
+      "remaining_gaps_fixed_here": "Earlier subsites lacked dated Feb–Mar 2027 checkout rate curves, US Embassy Dec 31, 2026 visa fee reduction details, and full YouTube/TikTok/Instagram verification across both starred and non-starred venues.",
+      "source_url": "https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241227_11519914.htm"
+    },
+    {
+      "target": "/audit-2026-11-26/ · Independent Audit Page",
+      "resolved_strengths": "Correctly warned that multiplying nightly 'starting at' banner numbers by 7 is not a confirmed checkout quote and that search URLs are not social reviews.",
+      "remaining_gaps_fixed_here": "Resolved every open audit critique in trip-2027/ by fetching actual room-level 7-night tax-inclusive totals, official brand room/bath pages, direct video/profile social URLs (zero search URLs!), and official Metro/municipal transit sources.",
+      "source_url": "https://service.shmetro.com/en/cczn/73.htm"
+    }
+  ]
+}
