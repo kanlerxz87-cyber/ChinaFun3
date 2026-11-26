@@ -1,0 +1,118 @@
+{
+  "title": "Flagged Irregularities, Open Traveler Questions, Suggestions & Sources",
+  "checked_date": "2026-11-26",
+  "flagged_irregularities": [
+    {
+      "id": "F01",
+      "severity": "High (Resolved)",
+      "area": "Closed 3★ Restaurant Removed",
+      "legacy_claim": "Legacy root site featured Ultraviolet by Paul Pairet (3★) as an active bookable dining option.",
+      "verified_finding": "Ultraviolet closed permanently on March 29, 2025 and has been removed from the live MICHELIN Guide Shanghai directory.",
+      "action_taken": "Excluded from active tables and logged here.",
+      "source_url": "https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred"
+    },
+    {
+      "id": "F02",
+      "severity": "High (Resolved)",
+      "area": "Michelin Count & 102 House Closure",
+      "legacy_claim": "Legacy root stated 46/51 starred restaurants from the 2024 Guide.",
+      "verified_finding": "Live 2026 MICHELIN Guide Shanghai directory contains 153 total entries: 50 Starred (1× 3★, 11× 2★, 38× 1★) + 33 Bib Gourmand + 70 MICHELIN Selected. Additionally, 102 House (awarded 2★ in Apr 2026) closed July 8, 2026 and is no longer listed.",
+      "action_taken": "Rebuilt directory strictly from live 2026 counts (50 starred + Bib + Selected).",
+      "source_url": "https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/102-house"
+    },
+    {
+      "id": "F03",
+      "severity": "High (Resolved)",
+      "area": "2027 Hotel Pricing & Surrogate Claim",
+      "legacy_claim": "Legacy root claimed Feb–Mar 2027 inventory was unpublished due to a 24-month limit and used unverified/surrogate nightly figures.",
+      "verified_finding": "As of Nov 26, 2026 (~90 days out), live Feb 15–22, 2027 checkout rates are published across 11 MICHELIN Guide Hotels ($1,376.21–$6,858.31 all-in; Waldorf Astoria unavailable) plus Peninsula's 6-window direct promo (CNY 2,465/nt Feb 15–Mar 8 vs CNY 2,805/nt Mar 8–23).",
+      "action_taken": "Replaced all legacy surrogate rates with live Nov 2026 quotes and clickable query URLs.",
+      "source_url": "https://guide.michelin.com/en/hotels-stays/shanghai"
+    },
+    {
+      "id": "F04",
+      "severity": "High (Resolved)",
+      "area": "Unopened Hotel Recommended",
+      "legacy_claim": "Legacy root recommended Four Seasons Hotel Shanghai (Huaihai Zhong Road) at $390/nt.",
+      "verified_finding": "Official Four Seasons press release announces a planned 2027 opening; property is not verified bookable for Feb 15–22, 2027.",
+      "action_taken": "Excluded from hotel rankings and flagged.",
+      "source_url": "https://press.fourseasons.com/news-releases/2023/new-four-seasons-in-shanghai/"
+    },
+    {
+      "id": "F05",
+      "severity": "Medium (Ongoing Transparency)",
+      "area": "Restaurant Tasting Menu Totals for 2 Adults",
+      "legacy_claim": "Legacy root printed estimated single-figure CNY totals for 14 restaurants.",
+      "verified_finding": "Only 5 venues have direct official 2026/FAQ prices verifiable from the sandbox (Taian Table, T'ang Court, Yi Long Court, Sir Elly's, Bao Li Xuan). Remaining venues publish official MICHELIN ¥–¥¥¥¥ tiers only.",
+      "action_taken": "Exact verified prices shown where published; unpublished menu totals left blank and flagged rather than estimated.",
+      "source_url": "https://sh.taian-table.cn/faq/"
+    },
+    {
+      "id": "F06",
+      "severity": "Medium (Resolved)",
+      "area": "Yu Garden Off-Peak Ticket & Shanghai Museum People's Square",
+      "legacy_claim": "Legacy root misquoted Yu Garden off-peak fee as ¥40 and listed People's Square as hosting permanent galleries.",
+      "verified_finding": "Official yugarden.com.cn sets Dec 1–Mar 31 off-peak adult admission at ¥30 (¥60 for 2), closed Mondays. Official shanghaimuseum.net states People's Square hosts only the ticketed Americas exhibition (Jul 2026–Nov 2027) while permanent galleries sit at Shanghai Museum East (closed Tuesdays).",
+      "action_taken": "Updated both venues with exact official notices.",
+      "source_url": "https://www.yugarden.com.cn/page/articleView/message.html"
+    },
+    {
+      "id": "F07",
+      "severity": "Medium (Ongoing Flag)",
+      "area": "Door-to-Door Metro Transit Minutes & shmetro.com Error",
+      "legacy_claim": "Legacy root printed exact door-to-door minute figures citing shmetro.com.",
+      "verified_finding": "Official shmetro.com fails/returns HTTP errors from the sandbox. Minute-level door-to-door transit timings cannot be verified.",
+      "action_taken": "Removed fabricated minute claims; retained verified district proximity and Metro line/station names, and flagged minute timings.",
+      "source_url": "https://english.shanghai.gov.cn/en-MuseumsGalleries/20241018/dfda779aa5f644f48f99e89ffb745703.html"
+    },
+    {
+      "id": "F08",
+      "severity": "Low (Resolved)",
+      "area": "2027 Spring Festival Calendar",
+      "legacy_claim": "Unsourced holiday summary.",
+      "verified_finding": "State Council notice 国办发明电〔2026〕10号 sets Spring Festival holiday Feb 5–13, 2027 with make-up workday Sun Feb 14; Mon Feb 15 is a normal working Monday.",
+      "action_taken": "Linked directly to gov.cn notice.",
+      "source_url": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm"
+    },
+    {
+      "id": "F09",
+      "severity": "High (Resolved)",
+      "area": "Visa-Free Transit Rule",
+      "legacy_claim": "Outdated 144-hour reference in early trip notes.",
+      "verified_finding": "Official NIA notice specifies 240-hour (10-day) visa-free transit across eligible ports when flying onward to a third country/region; round-trip US–Shanghai–US requires a visa.",
+      "action_taken": "Updated with live NIA source link.",
+      "source_url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html"
+    },
+    {
+      "id": "F10",
+      "severity": "Medium (Ongoing Flag)",
+      "area": "Private Bath & Unreachable Activity Portals",
+      "legacy_claim": "Blanket claims on private bath & all attraction hours.",
+      "verified_finding": "Room-specific ensuite bathrooms are explicitly verified on official pages for Peninsula, Langham, and Bvlgari; other hotels verify 5-star King/Queen rooms on MICHELIN Guide Hotels and require confirming private bath at checkout. Oriental Pearl Tower official site is unreachable from sandbox; Disneyland Feb 2027 daily hours/prices are not yet published.",
+      "action_taken": "Flagged transparently on Hotels & Activities pages.",
+      "source_url": "https://www.bulgarihotels.com/en-US/shanghai/accommodation/rooms/superior-room"
+    }
+  ],
+  "questions": [
+    {"id": "Q01", "priority": "High", "question": "Which hotel budget tier fits your preference: Andaz Xintiandi ($1,376.21 room-only), Langham Xintiandi ($2,291.93 incl. breakfast + 2★ T'ang Court), or Peninsula Shanghai (CNY 20,119.33 direct promo incl. breakfast, deadline Dec 7, 2026)?", "why": "Peninsula's 15% promo closes Dec 7, 2026, and Andaz's $1,376.21 rate is non-refundable."},
+    {"id": "Q02", "priority": "High", "question": "Do you want 7 nights (Feb 15–22, covering Lantern Festival Feb 20) or 10–14 nights inside Feb 15–Mar 23?", "why": "Peninsula's Feb 15–Mar 8 window is 13.8% cheaper than Mar 8–23, and longer stays accommodate Disneyland + Suzhou/Hangzhou rail trips."},
+    {"id": "Q03", "priority": "High", "question": "Are you flying US → Shanghai → third country/region (eligible for 240-hour NIA visa-free transit) or US → Shanghai → US (requires standard Chinese visa)?", "why": "Must confirm routing before booking non-refundable flights or hotels."},
+    {"id": "Q04", "priority": "High", "question": "Which 2–4 Michelin reservations are must-haves (e.g., 3★ Taian Table ¥5,176–5,776, 2★ T'ang Court ¥888/¥2,288, 2★ Da Vittorio, 2★ Bao Li Xuan ¥3,576–5,176)?", "why": "Top tasting-menu counters release bookings 30–60 days ahead and have strict closed-day rules (Mon/Sun)."},
+    {"id": "Q05", "priority": "Medium", "question": "King bed vs. two Queen/Twin beds?", "why": "Langham/Andaz/Sukhothai/Ritz-Carlton verified quotes are 1 King; EDITION offers 1 King or 2 Queens; Peninsula offers King or Twin."},
+    {"id": "Q06", "priority": "Medium", "question": "Are there dietary restrictions (seafood/crustacean/shellfish, alcohol pairings, vegetarian)?", "why": "Several Huangpu/Bund icons are Cantonese/Ningbo seafood-focused, while 2★ Fu He Hui & Bib Gong De Lin are vegetarian."},
+    {"id": "Q07", "priority": "Medium", "question": "Is Shanghai Disneyland a must-do given it sits at the outer ~1h edge of Metro Line 11?", "why": "Requires a full day plus advance real-name passport ticket registration."},
+    {"id": "Q08", "priority": "Medium", "question": "Do you want an optional 1-day high-speed rail trip (Suzhou or Hangzhou) via 12306?", "why": "Fits cleanly in a 10–14 night window; tight in a 7-night Michelin-focused itinerary."},
+    {"id": "Q09", "priority": "Low", "question": "Do you already have Alipay / WeChat Pay linked to an international card and eSIM/roaming ready?", "why": "Needed for Shanghai Metro QR rides, Yu Garden mini-program tickets, and restaurant deposits."},
+    {"id": "Q10", "priority": "Low", "question": "Are you traveling via PVG (Pudong) or SHA (Hongqiao)?", "why": "Affects arrival transfer choice (Maglev/Metro Line 2 from PVG vs Line 2/10 from SHA)."}
+  ],
+  "suggestions": [
+    {"id": "S01", "status": "Review Only — Not Implemented", "title": "Lock a refundable Feb 15–22 base hotel immediately & decide on Peninsula before Dec 7", "detail": "Book Langham Xintiandi ($2,291.93 incl. breakfast, free cancel until Feb 10) or Peninsula promo (CNY 20,119.33 before Dec 7) so you hold prime Huangpu inventory while keeping flexibility."},
+    {"id": "S02", "status": "Review Only — Not Implemented", "title": "Pair Huangpu hotel stay with closed-day-aware restaurant & museum blocks", "detail": "Never put Yu Garden, Shanghai Museum People's Square, T'ang Court, or Da Vittorio on Monday, and never put Shanghai Museum East on Tuesday."},
+    {"id": "S03", "status": "Review Only — Not Implemented", "title": "Use dim sum lunch sets at 1★/2★ hotels to manage dining budget", "detail": "Yi Long Court (¥788.22 for 2) and T'ang Court (¥888 for 2) deliver starred Cantonese craft at a fraction of evening tasting-menu spend."},
+    {"id": "S04", "status": "Review Only — Not Implemented", "title": "Verify remaining 38 starred addresses & live Feb 2027 Amap/Metro transit times from local mobile app", "detail": "Because shmetro.com failed from the sandbox, run an Amap / Apple Maps transit check in Shanghai or pre-trip to confirm minute-by-minute door-to-door timings."},
+    {"id": "S05", "status": "Review Only — Not Implemented", "title": "Add Lantern Festival (Feb 20, 2027) evening booking alert on Yu Garden mini-program", "detail": "Official site publishes Spring Festival / Lantern Festival evening hours separately by notice."},
+    {"id": "S06", "status": "Review Only — Not Implemented", "title": "Pre-book Taian Table 30–60 days out (Tue–Sat 18:00/20:00 seatings only)", "detail": "Closed Sunday and Monday; 10-course ¥2,588 / 12-course ¥2,888 pp."},
+    {"id": "S07", "status": "Review Only — Not Implemented", "title": "Confirm private bathroom text & airport transfer perks on checkout screen", "detail": "Even on 5-star MICHELIN listings, save a screenshot of room bed & bath specs at booking."},
+    {"id": "S08", "status": "Review Only — Not Implemented", "title": "Keep parallel subsite evaluations untouched for specialist deep-dives", "detail": "Root dashboard now links directly to docs/, considered/, for-two/, plan/, and verify/ for auditability."}
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "title": "ChinaFun3 — Shanghai 2027 Verified Trip Dashboard",
+  "verified_date": "2026-11-26",
+  "trip": {
+    "destination": "Shanghai, China",
+    "travelers": "2 adults (couple)",
+    "window": "Feb 15, 2027 – Mar 23, 2027",
+    "preferred_start": "Feb 15–18, 2027 (7-night model: Feb 15–22, 2027; flexible 1–2 weeks)",
+    "room_constraints": "Queen-size bed or larger + private bathroom",
+    "radius_rule": "Activities & restaurants within ≤1 hour by subway/bus of hotel (central Huangpu/Jing'an cluster)"
+  },
+  "calendar": [
+    {
+      "label": "Chinese New Year 2027 Holiday (Spring Festival)",
+      "dates": "Feb 5–13, 2027 (official 9-day statutory holiday)",
+      "impact": "Make-up workday on Sun Feb 14, 2027; Mon Feb 15, 2027 is a normal working Monday. Your Feb 15–Mar 23 window begins immediately after peak holiday closures and return-travel surges end.",
+      "status": "Verified",
+      "source_label": "State Council General Office (国办发明电〔2026〕10号)",
+      "source_url": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm"
+    },
+    {
+      "label": "Lantern Festival (Yuanxiao)",
+      "dates": "Feb 20, 2027 (Saturday)",
+      "impact": "Not a statutory holiday, but a signature evening for Yu Garden / Yuyuan lantern displays inside the Feb 15–22 stay.",
+      "status": "Verified",
+      "source_label": "Yu Garden Official Site (holiday hours by notice)",
+      "source_url": "https://www.yugarden.com.cn/page/articleView/message.html"
+    },
+    {
+      "label": "240-Hour (10-Day) Visa-Free Transit (US Passport Holders)",
+      "dates": "Policy active as checked Nov 2026",
+      "impact": "Eligible for 240-hour visa-free transit when transiting through an eligible port (Shanghai Pudong/Hongqiao) to a third country/region; a direct US–Shanghai–US round-trip requires a Chinese visa unless an onward third-country leg (e.g., HK/Macau/Tokyo/Seoul) is booked.",
+      "status": "Verified",
+      "source_label": "National Immigration Administration (NIA)",
+      "source_url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html"
+    }
+  ],
+  "date_options": [
+    {
+      "id": "opt-1",
+      "label": "Option A — Preferred Arrival (Mon Feb 15 – Mon Feb 22, 2027 · 7 nights)",
+      "why": "Hits preferred Feb 15–18 start, captures Lantern Festival (Sat Feb 20), and sits inside Peninsula's lower CNY 2,465/nt promo band (13.8% below Mar 8–23).",
+      "pros": "Full live quotes verified across 11 bookable MICHELIN hotels (from $1,376.21 all-in at Andaz Xintiandi to $3,549 at Peninsula / $20,119.33 CNY direct).",
+      "watchout": "Mon Feb 15: Yu Garden & Shanghai Museum People's Square & Da Vittorio & T'ang Court are closed Mondays — schedule Bund walk, Jin Xuan, or Shanghai Museum East (closed Tue).",
+      "status": "Verified"
+    },
+    {
+      "id": "opt-2",
+      "label": "Option B — Mid-Window 7-Night Stay (Mon Feb 22 – Mon Mar 1, 2027 · 7 nights)",
+      "why": "Still inside Peninsula's lower CNY 2,465/nt direct-booking period (Feb 15–Mar 8) while moving 10+ days past Spring Festival.",
+      "pros": "Same lower-season Peninsula rate (CNY 2,465/nt excl. tax/fee) with lighter post-Lantern Festival crowds.",
+      "watchout": "MICHELIN Guide Hotels live inventory rolls open ~90 days out; re-check checkout totals as dates pass 90 days out.",
+      "status": "Verified (Peninsula direct) / Rolling ~90d (MICHELIN)"
+    },
+    {
+      "id": "opt-3",
+      "label": "Option C — Extended 10–14 Night Stay (Feb 15 – Feb 25 or Mar 1, 2027)",
+      "why": "Your brief allows 1–2 weeks inside Feb 15–Mar 23; 10–14 nights lets you pair 7+ Michelin dinners with Shanghai Disneyland and a 12306 high-speed rail day trip to Suzhou/Hangzhou.",
+      "pros": "Keeps all nights inside the lower Feb 15–Mar 8 Peninsula quote window.",
+      "watchout": "March averages higher rainfall (~86–88 mm vs ~65 mm in Feb); verify multi-week hotel quotes directly.",
+      "status": "Verified (Peninsula window)"
+    }
+  ],
+  "peninsula_windows": [
+    {
+      "window": "Feb 15 – Feb 22, 2027 (7 nights)",
+      "nightly_cny_excl": 2465,
+      "all_in_cny": 20119.33,
+      "offer": "A Gift for the New Year (15% off, incl. daily breakfast for 2; book Nov 23 – Dec 7, 2026)",
+      "source_url": "https://www.peninsula.com/en/shanghai/special-offers/rooms/a-gift-for-the-new-year"
+    },
+    {
+      "window": "Feb 22 – Mar 1, 2027 (7 nights)",
+      "nightly_cny_excl": 2465,
+      "all_in_cny": 20119.33,
+      "offer": "A Gift for the New Year (15% off, incl. daily breakfast for 2)",
+      "source_url": "https://www.peninsula.com/en/shanghai/special-offers/rooms/a-gift-for-the-new-year"
+    },
+    {
+      "window": "Mar 1 – Mar 8, 2027 (7 nights)",
+      "nightly_cny_excl": 2465,
+      "all_in_cny": 20119.33,
+      "offer": "A Gift for the New Year (15% off, incl. daily breakfast for 2)",
+      "source_url": "https://www.peninsula.com/en/shanghai/special-offers/rooms/a-gift-for-the-new-year"
+    },
+    {
+      "window": "Mar 8 – Mar 15, 2027 (7 nights)",
+      "nightly_cny_excl": 2805,
+      "all_in_cny": 22894.41,
+      "offer": "A Gift for the New Year (+13.8% higher than Feb 15–Mar 8)",
+      "source_url": "https://www.peninsula.com/en/shanghai/special-offers/rooms/a-gift-for-the-new-year"
+    },
+    {
+      "window": "Mar 15 – Mar 22, 2027 (7 nights)",
+      "nightly_cny_excl": 2805,
+      "all_in_cny": 22894.41,
+      "offer": "A Gift for the New Year (+13.8% higher than Feb 15–Mar 8)",
+      "source_url": "https://www.peninsula.com/en/shanghai/special-offers/rooms/a-gift-for-the-new-year"
+    },
+    {
+      "window": "Mar 16 – Mar 23, 2027 (7 nights)",
+      "nightly_cny_excl": 2805,
+      "all_in_cny": 22894.41,
+      "offer": "A Gift for the New Year (+13.8% higher than Feb 15–Mar 8)",
+      "source_url": "https://www.peninsula.com/en/shanghai/special-offers/rooms/a-gift-for-the-new-year"
+    }
+  ],
+  "booking_guidance": [
+    {
+      "title": "Confirmed Dated Hotel Promo (Act by Dec 7, 2026)",
+      "detail": "The Peninsula Shanghai 'A Gift for the New Year' offer is bookable Nov 23 – Dec 7, 2026 (stay window through Mar 31, 2027), cutting Deluxe Room rates to CNY 2,465/nt (excl. 16.6% service/tax; CNY 20,119.33 all-in for 7 nights incl. breakfast for 2) for Feb 15 – Mar 8 vs. CNY 2,805/nt (+13.8%) for Mar 8 – 23.",
+      "type": "Confirmed Hotel Quote",
+      "source_url": "https://www.peninsula.com/en/shanghai/special-offers/rooms/a-gift-for-the-new-year"
+    },
+    {
+      "title": "MICHELIN Guide Hotels Rolling 90-Day Inventory",
+      "detail": "Live Feb 15–22, 2027 checkout quotes are already open on guide.michelin.com; later windows (Feb 22–Mar 23) unlock dynamically roughly 90 days ahead of check-in.",
+      "type": "Observed Booking Engine Behavior",
+      "source_url": "https://guide.michelin.com/en/hotels-stays/shanghai"
+    },
+    {
+      "title": "Industry Booking-Window Benchmarks (Not Hotel Guarantees)",
+      "detail": "Third-party industry analyses (Hotels.com / KAYAK) report 8–14 days pre-check-in often yields lowest average city rates, while Mews recommends 1–3 months ahead for balance of rate and category choice. Book a free-cancellation rate (e.g., Langham Feb 10 cutoff, Peninsula/Sukhothai/Shangri-La Feb 14 cutoff) and re-price before cancellation closes.",
+      "type": "Industry Analysis",
+      "source_url": "https://www.mews.com/en/blog/hotel-reservation-tips"
+    }
+  ],
+  "skeleton_7n": [
+    {"day": "Day 1 · Mon Feb 15", "focus": "Arrival & Bund Promenade (closed-Monday aware)", "notes": "Avoid Yu Garden, Shanghai Museum People's Square, Da Vittorio, and T'ang Court (all closed Mondays). Walk The Bund waterfront; dine at Yong Fu (daily 11:00–14:00, 17:00–21:00), Yi Long Court (daily), or Jin Xuan (daily)."},
+    {"day": "Day 2 · Tue Feb 16", "focus": "Old Town / Yu Garden + Bund Fine Dining", "notes": "Yu Garden opens Tue–Sun 09:00–16:30 (¥30/adult off-peak). Shanghai Museum East is closed Tuesdays — save East for Wed+. Evening: Canton Table (daily) or 8 ½ Otto e Mezzo Bombana (dinner Mon–Sun)."},
+    {"day": "Day 3 · Wed Feb 17", "focus": "Shanghai Museum East (Pudong) + Lujiazui", "notes": "Shanghai Museum East open Wed–Mon 10:00–18:00 (free permanent galleries, bring passport). Pair with Museum of Art Pudong (daily 10:00–21:00) or Jin Xuan (53F Ritz-Carlton Pudong)."},
+    {"day": "Day 4 · Thu Feb 18", "focus": "People's Square / Power Station of Art + Tasting Menu", "notes": "Power Station of Art (Tue–Sun 11:00–19:00, Huangpu). 8 ½ Otto e Mezzo Bombana opens Thu–Sun lunch; Taian Table runs Tue–Sat dinner (18:00–20:00 seatings, ¥2,588/¥2,888 pp)."},
+    {"day": "Day 5 · Fri Feb 19", "focus": "China Art Museum / Jing'an & Xintiandi Dining", "notes": "China Art Museum (Tue–Sun 10:00–18:00, Pudong Line 8) or Jing'an luxury cluster (Bao Li Xuan 2★, Il Ristorante 1★)."},
+    {"day": "Day 6 · Sat Feb 20 (Lantern Festival)", "focus": "Lantern Festival Evening + T'ang Court / Da Vittorio", "notes": "Lantern Festival evening in Huangpu/Yuyuan (verify 2027 holiday evening notice on yugarden.com.cn). Lunch at T'ang Court (¥888 dim sum set for 2) or Da Vittorio (2★)."},
+    {"day": "Day 7 · Sun Feb 21", "focus": "Shanghai Disneyland or Suzhou Day Trip + Farewell Dinner", "notes": "Full-day Disneyland (Metro Line 11; check 2027 park calendar closer to date) or Rockbund/Fosun Foundation galleries, followed by Sir Elly's or Mr & Mrs Bund (Bund waterfront)."},
+    {"day": "Day 8 · Mon Feb 22", "focus": "Breakfast & Departure", "notes": "Check-out (included breakfast if staying at Langham or Peninsula/Bvlgari direct/selected rates)."}
+  ]
+}

@@ -219,6 +219,10 @@ malformed tables. Published at `/plan/` after PR #9 merged to `main`; Pages buil
   - `F06`: Legacy root misstated Yu Garden off-peak fee (`¥30/adult` = `¥60` for 2 from Dec 1–Mar 31, not `¥40`) and misstated Shanghai Museum People's Square permanent gallery availability during the Jul 2026–Nov 2027 Americas special exhibition.
   - `F07`: Legacy root cited unverified door-to-door transit minutes and `shmetro.com` (broken/unreachable from sandbox); replaced with verified Metro line/station & district proximity plus explicit flagging of unverified transit minutes.
   - `F08`–`F10`: Replaced unsourced holiday/visa text with official State Council `国办发明电〔2026〕10号` (Spring Festival Feb 5–13, 2027; Feb 14 make-up workday; Feb 15 normal workday) and NIA 240-hour visa-free transit rules, plus verified YouTube/Instagram/TikTok links and room-level bed/bath verification notes.
+- **Completion status (`2026-11-26`):**
+  - Rebuilt all 14 root HTML pages via `python3 scripts/build_root.py` from `data/{trip,hotels,restaurants,activities,transport,budget,flagged}.json`.
+  - Passed all offline/CI checks: `tests/test_root_site.py` + `tests/test_site.py` (11/11), `verify/tests/test_site.py` (10/10), `for-two/tests/test_site.py` (9/9), `check_links.py` (9 pages), `node --check assets/js/app.js`.
+  - All parallel subsites (`docs/`, `considered/`, `for-two/`, `plan/`, `verify/`) remain untouched.
 
 - `python3 check_links.py` → 9 pages, no broken links, no malformed tables.
 
