@@ -342,3 +342,6 @@ Existing session scopes are respected; requests for changes to their files will 
 
 ### Narrow I02 arithmetic-validation extension — 2026-11-26
 - Before editing, include a correction to the derived combined dining total shown in both `budget.html` and `executive-summary.html`. Their displayed items are ¥5,776 + ¥3,576 + ¥3,003.62 = ¥12,355.62, while the leading total currently says ¥12,243.84. Also add direct official links for those menu amounts in the summary row/card so the cited amounts are reviewable in context. Do not alter the menu prices or hotel quote.
+
+### Narrow mobile-header fix extension — 2026-11-26
+- Playwright found horizontal overflow at 320px in the newly archived root dashboard: the shared root `.brand` refuses to shrink around its long subtitle. Extend I01 to the root-owned `assets/css/style.css` only, allowing the brand text to wrap at narrow widths. No subsite CSS or research data will change; recheck the hub, archive, and root question/source pages at mobile widths.
