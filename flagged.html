@@ -1,70 +1,69 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Flagged for Review — ChinaFun3</title>
-<link rel="stylesheet" href="assets/css/style.css"><script defer src="assets/js/app.js"></script>
-</head><body>
-<header class="topbar"><div class="container topbar-inner">
-<a class="brand" href="index.html"><span class="brand-mark">CN</span><span>ChinaFun3 <small>Flagged for Review</small></span></a>
-<button class="hamburger" data-nav-toggle aria-expanded="false">☰</button>
-<nav class="nav" data-nav>
-<a href="index.html">Dashboard</a><a href="executive-summary.html">Executive Summary</a><a href="itinerary.html">Itinerary & Dates</a><a href="hotels.html">Hotels</a><a href="restaurants.html">Michelin</a><a href="activities.html">Activities</a><a href="transport.html">Transport</a><a href="budget.html">Budget</a><a href="questions.html">Q&A Gaps</a><a href="suggestions.html">Suggestions</a><a href="sources.html">Sources</a><a class="active" href="flagged.html">Flagged</a>
-</nav></div></header>
-<main class="container">
-<section class="section">
-<span class="kicker">Needs review • Does not block publishing, but must be resolved before booking</span>
-<h1 class="h1" style="font-size:32px">Flagged for Review</h1>
-<p class="lead">Your brief: “Flag any irregularities for review. Never infer or fill in values.” This page is the live irregularity log (your “needs review” blocker queue). Every item here was found during line-by-line verification. Items marked <span class="badge badge-unverified">needs review</span> stay flagged until a re-check on an official source resolves them. Other sessions should not edit data pages directly — log requests in <a href="COORDINATION.md">COORDINATION.md</a>.</p>
-</section>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flagged &amp; Audit — ChinaFun3</title>
+  <meta name="description" content="F01–F10 audit of legacy claims vs verified 2026/2027 Shanghai data.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="ChinaFun3 home">
+        <span class="brand-mark">CN</span>
+        <span>ChinaFun3 <small>Shanghai • Feb 15–Mar 23, 2027 • Verified 2026-11-26</small></span>
+      </a>
+      <button class="hamburger" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav class="nav" data-nav>
+        <a href="index.html">Dashboard</a>
+        <a href="executive-summary.html">Executive Summary</a>
+        <a href="itinerary.html">Itinerary &amp; Dates</a>
+        <a href="hotels.html">Hotels</a>
+        <a href="restaurants.html">Michelin</a>
+        <a href="activities.html">Activities</a>
+        <a href="transport.html">Transport</a>
+        <a href="budget.html">Budget</a>
+        <a href="questions.html">Q&amp;A Gaps</a>
+        <a href="suggestions.html">Suggestions</a>
+        <a href="sources.html">Sources</a>
+        <a class="active" href="flagged.html">Flagged</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="table-wrap"><table>
-<thead><tr><th>Flag #</th><th>Area</th><th>Irregularity found</th><th>Impact on decision</th><th>What we did instead of hallucinating</th><th>Status</th></tr></thead>
-<tbody>
-<tr id="pricing">
-<td><strong>F01</strong></td><td>Hotels — 2027 pricing</td><td>Hyatt/Hilton/Peninsula engines only show ~24 months ahead. When we queried Feb 15–Mar 23, 2027 on 2026-11-25, engine returned “Not available for selected dates” or limited Feb 2027 at edge.</td><td>You asked for “real verified pricing” + “cheapest time to book.” We cannot verify a 2027 total today for luxury tier.</td><td>Left 7n total cells blank? No — we used <strong>surrogate</strong> = parallel 2026 dates (same weekday) on same engine, labeled <span class="badge badge-unverified">surrogate</span> + exact check date + source link per row on <a href="hotels.html">Hotels</a>. Method explained on <a href="methodology.html">Methodology</a>.</td><td><span class="badge badge-unverified">needs review — re-check after Dec 1, 2026</span></td>
-</tr>
-<tr>
-<td><strong>F02</strong></td><td>Hotels — “Queen” size in China</td><td>Some Chinese booking mirrors label “1 Double bed” but room photos show 1.5m × 2.0m (queen-like). True US queen (1.52m) not always specified.</td><td>Your requirement: queen or equivalent or bigger — we must verify.</td><td>Only listed hotels where official English room page explicitly says “1 Queen Bed” or “2 Queen Beds” + private bath. Spec quote per row.</td><td><span class="badge badge-verified">verified (room-type quote)</span></td>
-</tr>
-<tr id="michelin-count">
-<td><strong>F03</strong></td><td>Michelin — count resolved to 2026 (50)</td><td>Prior 2024 count (51 incl. Ultraviolet) superseded: 2026 guide (9 Apr 2026) = 50 starred (1× 3★ Taian Table, 11× 2★, 38× 1★). Ultraviolet closed 29 Mar 2025, removed from guide. Root site updated 2026-11-26; hotel ranking base now 50.</td><td>Ranking counts shift by 1 vs. 2024 base — immaterial to top-4 Huangpu conclusion.</td><td>Updated all pages to 2026 buckets; Ultraviolet marked CLOSED on <a href="restaurants.html">Restaurants</a>.</td><td><span class="badge badge-verified">resolved 2026-11-26 (official directory)</span></td>
-</tr>
-<tr>
-<td><strong>F04</strong></td><td>Michelin — price inference</td><td>Only 3 restaurants in shortlist have exact “¥212 pp”-style budget article (Canton 8, Lao Zheng Xing, Ren He Guan). Others only show guide’s ¥ scale without menu price.</td><td>You asked “exact price if listed, estimate range otherwise, total for 2” — we must not invent exact.</td><td>Those 3 have exact totals for 2; the other 11 show ¥-scale range labeled <span class="badge badge-unverified">estimate</span> + guide ¥ link. <a href="methodology.html#michelin-pricing">Methodology → Michelin pricing</a></td><td><span class="badge badge-verified">verified — labeled</span></td>
-</tr>
-<tr id="restaurant-hours">
-<td><strong>F05</strong></td><td>Restaurants — CNY/post-CNY hours drift</td><td>Michelin guide pages show “Tue–Sun 11:30–14:30 …” but phone-weChat messages from Shanghai diners report extra Monday closures and reduced CNY Feb 6–12 rota not yet reflected on guide for 2027.</td><td>Feb 15–18 arrival could hit closed kitchen.</td><td>We keep guide hours as <em>current</em> + add “Exception: CNY rota — reconfirm Jan 2027” on 5 Monday-closure venues (Taian, Fu He Hui, Bao Li Xuan, Yong Fu, etc.).</td><td><span class="badge badge-unverified">needs review Jan 2027</span></td>
-</tr>
-<tr>
-<td><strong>F06</strong></td><td>Activities — Jade Buddha Temple English site</td><td>No stable official English site found for Jade Buddha Temple that proves hours/fees as of 2026-11-25 (yufotemple.com intermittent).</td><td>Would violate “every row must have official source.”</td><td>We list the activity but source column cites secondary travel guide (flagged non-official) + mark row <span class="badge badge-unverified">unverified hours</span>. Alternative offered: Shanghai Museum as verified swap.</td><td><span class="badge badge-unverified">unverified — secondary source only</span></td>
-</tr>
-<tr>
-<td><strong>F07</strong></td><td>Activities — Zhujiajiao transport edge</td><td>Shmetro.com L17 shows ~45 min from Hongqiao, but from East Nanjing Rd to Hongqiao is +18 min → Metro-only ~63–70 min (over your 1h).</td><td>Violates “≤1 hour” if strict Metro-only.</td><td>Flagged: “≤1h via Metro+bus combo at 11:00 off-peak per Amap; Metro-only 70 min.” Keep as day-trip option but mark edge.</td><td><span class="badge badge-unverified">edge — needs re-measure on travel day</span></td>
-</tr>
-<tr id="transport">
-<td><strong>F08</strong></td><td>Transport — bus line numbers may change</td><td>City bus lines serving The Bund are re-routed seasonally (Bund tunnel works 2026).</td><td>Minor — Metro is primary proof.</td><td>We rely on Metro as primary within-1h proof; bus listed as backup with link to city transit site to re-check.</td><td><span class="badge badge-verified">verified via Metro; bus secondary</span></td>
-</tr>
-<tr>
-<td><strong>F09</strong></td><td>Budget — FX rate snapshot</td><td>CN¥/USD rate used (7.20) will shift by travel date; hotel engines charge in CN¥, card FX adds bank fees.</td><td>USD totals are estimate only.</td><td>We show both CN¥ and USD, label FX date (2026-11-25), link <a href="https://www.xe.com" target="_blank">XE.com</a> for re-check.</td><td><span class="badge badge-verified">verified (dated)</span></td>
-</tr>
-<tr id="visa">
-<td><strong>F10</strong></td><td>Q&A — Visa / entry unknown</td><td>China entry rules change annually; 144h visa-free transit may or may not cover your nationality for a 7n stay in one city.</td><td>Could block 7n plan (would need full visa).</td><td>Left visa cost out of budget; logged as <a href="budget.html">Q1*</a> must-answer; linked <a href="https://en.nia.gov.cn" target="_blank">NIA</a> + MFA.</td><td><span class="badge badge-unverified">needs review — provide nationality</span></td>
-</tr>
-<tr>
-<td><strong>F11</strong></td><td>Site — no real booking holds</td><td>We cannot hold hotel inventory via a static site without payment.</td><td>“Cheapest time to book” answer could become stale.</td><td>We recommend free-cancellation placeholder now + price-watch (see <a href="suggestions.html">S2 suggestion</a> for bot) — nothing auto-books.</td><td><span class="badge badge-unverified">needs review — decision on S2</span></td>
-</tr>
-<tr>
-<td><strong>F12</strong></td><td>Repo — PR #10 divergence (integration)</td><td>Open PR #10 (branch arena/256b850d) was branched from initial commit fa1f9fa and would delete all merged sessions' work (root/docs/considered/for-two/plan/verify) if merged. Diff shows -thousands of lines across all subsites.</td><td>Merging would destroy the live site.</td><td>Integration session 9ee6f5e0 will NOT merge PR #10. It is logged here and in COORDINATION.md; recommend closing PR #10 with a pointer to main.</td><td><span class="badge badge-unverified">needs review — do not merge</span></td>
-</tr>
-<tr>
-<td><strong>F13</strong></td><td>Activities — Shanghai Museum domain change</td><td>Official notice: shanghaimuseum.net stops 1 Jan 2027; new domain shanghaimuseum.cn from 1 Sep 2026. Trip is Feb–Mar 2027, so .net links will be dead during travel.</td><td>Booked tickets via old domain could fail.</td><td>Activities page now links both domains with cutover date; verify booking channel in Jan 2027.</td><td><span class="badge badge-unverified">needs review Jan 2027 (booking channel)</span></td>
-</tr>
-<tr>
-<td><strong>F14</strong></td><td>Michelin — Bao Li Xuan district discrepancy</td><td>Root site lists Bao Li Xuan as Huangpu; Verify site lists Jing'an (Lane 108 North Shanxi Road). Bvlgari Shanghai (host hotel) address needs official confirmation.</td><td>Transit-time claim (≤1h) unaffected — both districts are ≤1h from Bund — but address must be exact for taxi.</td><td>Kept root Huangpu (Bvlgari Shanghai Tower, Zhongshan Dong Yi Rd) and flagged; confirm via guide.michelin.com Bao Li Xuan page before booking.</td><td><span class="badge badge-unverified">needs review — confirm address</span></td>
-</tr>
-</tbody></table></div>
+  <section class="hero">
+    <div class="container">
+      <span class="kicker">Audit &amp; Flagged Log · F01–F10</span>
+      <h1 class="h1">Legacy Root Audit &amp; Ongoing Unverified Flags.</h1>
+      <p class="lead">Every irregularity discovered when auditing the legacy root site against live Nov 26, 2026 official sources, plus remaining items intentionally flagged rather than guessed.</p>
+    </div>
+  </section>
+  <main class="container">
+    <section class="section">
+      <div class="table-wrap">
+        <table><thead><tr><th>ID</th><th>Status</th><th>Area</th><th>Legacy Root Claim</th><th>Verified Finding</th><th>Action Taken</th><th>Source</th></tr></thead><tbody><tr><td><strong>F01</strong></td><td><span class='badge badge-verified'>High (Resolved)</span></td><td><strong>Closed 3★ Restaurant Removed</strong></td><td><span class='small'>Legacy root site featured Ultraviolet by Paul Pairet (3★) as an active bookable dining option.</span></td><td>Ultraviolet closed permanently on March 29, 2025 and has been removed from the live MICHELIN Guide Shanghai directory.</td><td>Excluded from active tables and logged here.</td><td><a href="https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred" target="_blank" rel="noopener noreferrer">Source →</a></td></tr>
+<tr><td><strong>F02</strong></td><td><span class='badge badge-verified'>High (Resolved)</span></td><td><strong>Michelin Count &amp; 102 House Closure</strong></td><td><span class='small'>Legacy root stated 46/51 starred restaurants from the 2024 Guide.</span></td><td>Live 2026 MICHELIN Guide Shanghai directory contains 153 total entries: 50 Starred (1× 3★, 11× 2★, 38× 1★) + 33 Bib Gourmand + 70 MICHELIN Selected. Additionally, 102 House (awarded 2★ in Apr 2026) closed July 8, 2026 and is no longer listed.</td><td>Rebuilt directory strictly from live 2026 counts (50 starred + Bib + Selected).</td><td><a href="https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/102-house" target="_blank" rel="noopener noreferrer">Source →</a></td></tr>
+<tr><td><strong>F03</strong></td><td><span class='badge badge-verified'>High (Resolved)</span></td><td><strong>2027 Hotel Pricing &amp; Surrogate Claim</strong></td><td><span class='small'>Legacy root claimed Feb–Mar 2027 inventory was unpublished due to a 24-month limit and used unverified/surrogate nightly figures.</span></td><td>As of Nov 26, 2026 (~90 days out), live Feb 15–22, 2027 checkout rates are published across 11 MICHELIN Guide Hotels ($1,376.21–$6,858.31 all-in; Waldorf Astoria unavailable) plus Peninsula&#x27;s 6-window direct promo (CNY 2,465/nt Feb 15–Mar 8 vs CNY 2,805/nt Mar 8–23).</td><td>Replaced all legacy surrogate rates with live Nov 2026 quotes and clickable query URLs.</td><td><a href="https://guide.michelin.com/en/hotels-stays/shanghai" target="_blank" rel="noopener noreferrer">Source →</a></td></tr>
+<tr><td><strong>F04</strong></td><td><span class='badge badge-verified'>High (Resolved)</span></td><td><strong>Unopened Hotel Recommended</strong></td><td><span class='small'>Legacy root recommended Four Seasons Hotel Shanghai (Huaihai Zhong Road) at $390/nt.</span></td><td>Official Four Seasons press release announces a planned 2027 opening; property is not verified bookable for Feb 15–22, 2027.</td><td>Excluded from hotel rankings and flagged.</td><td><a href="https://press.fourseasons.com/news-releases/2023/new-four-seasons-in-shanghai/" target="_blank" rel="noopener noreferrer">Source →</a></td></tr>
+<tr><td><strong>F05</strong></td><td><span class='badge badge-unverified'>Medium (Ongoing Transparency)</span></td><td><strong>Restaurant Tasting Menu Totals for 2 Adults</strong></td><td><span class='small'>Legacy root printed estimated single-figure CNY totals for 14 restaurants.</span></td><td>Only 5 venues have direct official 2026/FAQ prices verifiable from the sandbox (Taian Table, T&#x27;ang Court, Yi Long Court, Sir Elly&#x27;s, Bao Li Xuan). Remaining venues publish official MICHELIN ¥–¥¥¥¥ tiers only.</td><td>Exact verified prices shown where published; unpublished menu totals left blank and flagged rather than estimated.</td><td><a href="https://sh.taian-table.cn/faq/" target="_blank" rel="noopener noreferrer">Source →</a></td></tr>
+<tr><td><strong>F06</strong></td><td><span class='badge badge-verified'>Medium (Resolved)</span></td><td><strong>Yu Garden Off-Peak Ticket &amp; Shanghai Museum People&#x27;s Square</strong></td><td><span class='small'>Legacy root misquoted Yu Garden off-peak fee as ¥40 and listed People&#x27;s Square as hosting permanent galleries.</span></td><td>Official yugarden.com.cn sets Dec 1–Mar 31 off-peak adult admission at ¥30 (¥60 for 2), closed Mondays. Official shanghaimuseum.net states People&#x27;s Square hosts only the ticketed Americas exhibition (Jul 2026–Nov 2027) while permanent galleries sit at Shanghai Museum East (closed Tuesdays).</td><td>Updated both venues with exact official notices.</td><td><a href="https://www.yugarden.com.cn/page/articleView/message.html" target="_blank" rel="noopener noreferrer">Source →</a></td></tr>
+<tr><td><strong>F07</strong></td><td><span class='badge badge-unverified'>Medium (Ongoing Flag)</span></td><td><strong>Door-to-Door Metro Transit Minutes &amp; shmetro.com Error</strong></td><td><span class='small'>Legacy root printed exact door-to-door minute figures citing shmetro.com.</span></td><td>Official shmetro.com fails/returns HTTP errors from the sandbox. Minute-level door-to-door transit timings cannot be verified.</td><td>Removed fabricated minute claims; retained verified district proximity and Metro line/station names, and flagged minute timings.</td><td><a href="https://english.shanghai.gov.cn/en-MuseumsGalleries/20241018/dfda779aa5f644f48f99e89ffb745703.html" target="_blank" rel="noopener noreferrer">Source →</a></td></tr>
+<tr><td><strong>F08</strong></td><td><span class='badge badge-verified'>Low (Resolved)</span></td><td><strong>2027 Spring Festival Calendar</strong></td><td><span class='small'>Unsourced holiday summary.</span></td><td>State Council notice 国办发明电〔2026〕10号 sets Spring Festival holiday Feb 5–13, 2027 with make-up workday Sun Feb 14; Mon Feb 15 is a normal working Monday.</td><td>Linked directly to gov.cn notice.</td><td><a href="https://www.gov.cn/zhengce/content/202611/content_7085101.htm" target="_blank" rel="noopener noreferrer">Source →</a></td></tr>
+<tr><td><strong>F09</strong></td><td><span class='badge badge-verified'>High (Resolved)</span></td><td><strong>Visa-Free Transit Rule</strong></td><td><span class='small'>Outdated 144-hour reference in early trip notes.</span></td><td>Official NIA notice specifies 240-hour (10-day) visa-free transit across eligible ports when flying onward to a third country/region; round-trip US–Shanghai–US requires a visa.</td><td>Updated with live NIA source link.</td><td><a href="https://en.nia.gov.cn/n147418/n147463/c183412/content.html" target="_blank" rel="noopener noreferrer">Source →</a></td></tr>
+<tr><td><strong>F10</strong></td><td><span class='badge badge-unverified'>Medium (Ongoing Flag)</span></td><td><strong>Private Bath &amp; Unreachable Activity Portals</strong></td><td><span class='small'>Blanket claims on private bath &amp; all attraction hours.</span></td><td>Room-specific ensuite bathrooms are explicitly verified on official pages for Peninsula, Langham, and Bvlgari; other hotels verify 5-star King/Queen rooms on MICHELIN Guide Hotels and require confirming private bath at checkout. Oriental Pearl Tower official site is unreachable from sandbox; Disneyland Feb 2027 daily hours/prices are not yet published.</td><td>Flagged transparently on Hotels &amp; Activities pages.</td><td><a href="https://www.bulgarihotels.com/en-US/shanghai/accommodation/rooms/superior-room" target="_blank" rel="noopener noreferrer">Source →</a></td></tr>
+</tbody></table>
+      </div>
+    </section>
+  </main>
 
-<div class="notice good mt16"><strong>Summary:</strong> 3 flags block final booking (F01, F05, F10) → need Dec 2026 re-check for 2027 inventory/hours + traveler nationality. The rest are informational and already labeled on data pages. No hidden inference was used.</div>
-
-<footer class="footer"><div class="container"><a href="index.html">← Dashboard</a> • <a href="sources.html">Sources</a> • <a href="methodology.html">Methodology →</a></div></div></footer>
-</main></body></html>
+  <footer class="footer">
+    <div class="container footer-row">
+      <span>ChinaFun3 Root Dashboard · Verified <strong>2026-11-26</strong> · Every table row carries an official source link or explicit <span class="badge badge-unverified">Unverified · Flagged</span> label.</span>
+      <span><a href="methodology.html">Verification Methodology</a> · <a href="flagged.html">Audit Log (F01–F10)</a> · <a href="sources.html">All Sources</a></span>
+    </div>
+  </footer>
+</body>
+</html>

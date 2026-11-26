@@ -1,40 +1,40 @@
-# ChinaFun3 — Shanghai 2027 Trip Planning
+# ChinaFun3 — Shanghai 2027 Trip Planning (Unified Verified Root Dashboard)
 
-> **Parallel sessions integrated:** This repo now contains **two complementary sites** built by two sessions working in parallel (see `COORDINATION.md`). Both are live after this merge.
+> **Re-verified Root Dashboard (`arena/25a2c056-chinafun3`) + Parallel Subsites:** The root site at `/` has been completely re-verified (2026-11-26) against live Nov 2026 sources, removing legacy surrogate prices, closed restaurants (`Ultraviolet`, `102 House`), and unopened hotels (`Four Seasons Huaihai`). All parallel subsites (`docs/`, `considered/`, `for-two/`, `plan/`, `verify/`) remain preserved intact (see `COORDINATION.md`).
 
 **Live site (GitHub Pages, `main` → `/`):** https://kanlerxz87-cyber.github.io/ChinaFun3/
 
-- **Root site (this branch: `arena/8205b531-chinafun3`)** — Full verified dashboard for **Feb 15–Mar 23, 2027** (preferred Feb 15–18), 7 nights, 2 adults, queen+ private bath, ≤1h by subway/bus. Start here: [`index.html`](index.html) → [Executive Summary](executive-summary.html) · [Hotels Ranked](hotels.html) · [Michelin](restaurants.html) · [Activities ≤1h](activities.html) · [Budget](budget.html)
-- **Docs site (parallel session `arena/3c3c3c5e-chinafun3`)** — Entry & calendar, Michelin Shanghai cluster, hotels, activities, questions/suggestions, repo-review. Browse: [`docs/index.html`](docs/index.html) (static JSON-driven pages, every row source-linked)
+- **Root site (this branch: `arena/25a2c056-chinafun3`)** — Unified re-verified dashboard for **Feb 15–Mar 23, 2027** (preferred Feb 15–18), 7 nights, 2 adults, Queen/King+ bedding, private bath, ≤1h Metro/walk cluster. Start here: [`index.html`](index.html) · [Executive Summary](executive-summary.html) · [Hotels (12 Ranked)](hotels.html) · [Michelin 2026 (50★ + Bib/Selected)](restaurants.html) · [Activities ≤1h](activities.html) · [Budget](budget.html) · [Audit Log (F01–F10)](flagged.html)
+- **Parallel subsites preserved:** [`verify/`](verify/index.html) · [`plan/`](plan/index.html) · [`for-two/`](for-two/index.html) · [`considered/`](considered/index.html) · [`docs/`](docs/index.html) · [`audit-2026-11-26/`](audit-2026-11-26/index.html)
 
-## What this is (unified)
-A verified 7-night Shanghai trip plan for **Feb 15–Mar 23, 2027** (preferred Feb 15–18) for **2 adults**, **queen-size or larger bed**, **private bathroom**, with every restaurant and activity constrained to **≤1 hour by subway/bus** from the hotel.
+## What this is (unified, re-verified 2026-11-26)
+A verified 7-night Shanghai trip plan for **Feb 15–Mar 23, 2027** (preferred Feb 15–18) for **2 adults**, **queen-size or larger bed**, **private bathroom**, with restaurants and activities anchored in the central **Huangpu / Jing'an / Xuhui / Pudong** Metro cluster.
 
-- **Hotels ranked by Michelin clusters:** 7 hotels (root site) ranked by Michelin-starred restaurants within 1 hour (Shanghai 2024 guide: 51 starred; latest published 2026-11-25 at build time). Parallel docs site has complementary hotel data (blocked on rate fetch, flagged).
-- **Michelin:** Root site shows 14 bookable starred (plus Bib) with total-for-2 pricing, hours/days, YT/TikTok/IG links, official guide + restaurant links. Docs site shows 16 starred verified against 2026 press release (64 unverified cells left blank per protocol).
-- **Activities:** Root site 10 sights with hours/days/exceptions, entry for 2, social links, ≤1h proof. Docs site verifies Shanghai Museum (25 Aug 2025 notice) + Yu Garden (yugarden.com.cn) with tickets/closure notes.
-- **Entry & calendar:** Docs site verifies 2027 State Council holiday notice (gov.cn 国办发明电〔2026〕10号) + NIA visa-free transit (57 countries, 65 ports, 10 days) + Feb 15 2027 = Monday check.
+- **Hotels ranked by Michelin clusters + live Feb 15–22, 2027 quotes:** 12 MICHELIN Guide Hotels checked live (`11` bookable for Feb 15–22, 2027 from **$1,376.21** all-in at Andaz Xintiandi, **$2,291.93** incl. breakfast at Langham Xintiandi with 2★ T'ang Court, and **CNY 20,119.33** Peninsula direct promo bookable Nov 23–Dec 7, 2026; Waldorf Astoria unavailable that week). Peninsula's 6-window check confirms **Feb 15–Mar 8 is 13.8% cheaper** than Mar 8–23.
+- **Michelin Guide 2026:** Live Shanghai directory holds **153 total entries** — **50 Starred** (`1×3★`, `11×2★`, `38×1★`), **33 Bib Gourmand**, and **70 MICHELIN Selected**. Root site shows **25 deep-verified featured venues** (clearly distinguishing Starred vs. Guide-listed non-starred) with exact 2026 official PDF/FAQ totals where published (`Taian Table`, `T'ang Court`, `Yi Long Court`, `Sir Elly's`, `Bao Li Xuan`) + all 50 starred venues. `Ultraviolet` (closed Mar 29, 2025) and `102 House` (closed Jul 8, 2026) excluded and logged.
+- **Activities:** 12 central Shanghai attractions with official hours, closed days (`Yu Garden` & `Shanghai Museum People's Square` & `China Art Museum` & `Power Station of Art` closed Mondays; `Shanghai Museum East` closed Tuesdays), **Yu Garden off-peak ¥30/adult (¥60 for 2)**, and verified YouTube/Instagram/TikTok links.
+- **Entry & calendar:** Verified 2027 State Council holiday notice (`gov.cn` `国办发明电〔2026〕10号`: Spring Festival Feb 5–13, Feb 14 make-up workday, Mon Feb 15 normal workday) + NIA **240-hour (10-day)** visa-free transit rule.
 
-Every table row has an **official source link**; unverified fields are blank and flagged — never hallucinated. See [Sources](sources.html) and [Flagged for Review](flagged.html) on root site; `docs/review.html` + `docs/repo-review.html` on docs site.
+Every table row has an **official source link**; unverified fields (including door-to-door Metro minutes since `shmetro.com` fails from the sandbox, unpublished menu prices, and Disneyland Feb 2027 hours) are left blank and flagged — never hallucinated. See [Sources](sources.html) and [Flagged & Audit (F01–F10)](flagged.html).
 
 ## Quick links
 
 ### Root site — verified dashboard
 | Page | What you'll find |
 |---|---|
-| [Dashboard](index.html) | Overview + 3 modeled 7-night date blocks + hotel ranking preview + verification promise |
-| [Executive Summary](executive-summary.html) | 60-sec decision + 3 budget scenarios + risks |
-| [Itinerary & Dates](itinerary.html) | Feb 15–Mar 23 window + 4 date options + best time to book (45–75 days ahead) |
-| [Hotels — Ranked](hotels.html) | 7 hotels, verified queen+ & private bath, amenities, 7-night totals, official booking links |
-| [Michelin Restaurants](restaurants.html) | 14 bookable starred (plus Bib), star vs guide-listed, cost for 2, hours/days, YT/TikTok/IG |
-| [Activities ≤1h](activities.html) | 10 sights, hours/days/exceptions, entry for 2, social links, ≤1h proof |
-| [Transport — 1h Proof](transport.html) | Door-to-door Metro times from The Bund base, isochrone table with shmetro.com sources |
-| [Budget — Totals for 2](budget.html) | Hotel 7n + Michelin dinner for 2 combined totals + cheapest booking windows |
-| [Q&A Gaps](questions.html) | 12 must-answer questions before booking |
-| [Suggestions — review-only](suggestions.html) | 8 improvement proposals — approve before we build |
-| [Sources & Verification](sources.html) | Bibliography — every fact re-checkable |
-| [Flagged for Review](flagged.html) | Irregularities log (needs review — does not block) |
-| [Methodology](methodology.html) | How we verify line-by-line, surrogate pricing protocol |
+| [Dashboard](index.html) | Overview + live stats + executive snapshot + companion subsite directory |
+| [Executive Summary](executive-summary.html) | 60-sec decision + top 5 hotels + 3 budget scenarios + regulatory rules |
+| [Itinerary & Dates](itinerary.html) | Feb 15–Mar 23 window + Gov.cn 2027 calendar + NIA 240h visa + 6 Peninsula promo windows |
+| [Hotels — Ranked](hotels.html) | 12 hotels, live Feb 15–22, 2027 checkout totals, verified beds, bath status, booking links |
+| [Michelin Restaurants](restaurants.html) | 25 featured (Starred vs. Bib/Selected), exact for-2 PDF/FAQ costs, YT/IG links + all 50 starred |
+| [Activities ≤1h](activities.html) | 12 sights, official hours/days/exceptions, Yu Garden ¥60 off-peak, social links |
+| [Transport — 1h Proof](transport.html) | Verified district Metro corridors + honest flagging of unverified minute timings |
+| [Budget — Totals for 2](budget.html) | Combined 7-night live hotel + exact 2026 verified dining/activity totals for 2 |
+| [Q&A Gaps](questions.html) | 10 must-answer traveler decisions before booking |
+| [Suggestions — review-only](suggestions.html) | 8 actionable planning proposals — review before acting |
+| [Sources & Verification](sources.html) | Complete official & social bibliography |
+| [Flagged & Audit (F01–F10)](flagged.html) | Full legacy audit + ongoing unverified flags |
+| [Methodology](methodology.html) | Line-by-line verification & anti-hallucination protocol |
 
 ### Docs site — JSON-driven companion
 | Page | What you'll find |

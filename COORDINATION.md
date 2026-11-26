@@ -8,9 +8,10 @@
 
 | Session ID | Branch | Started | Last Commit | Status |
 |---|---|---|---|---|
-| `arena/8205b531-chinafun3` | `arena/8205b531-chinafun3` | 2026-11-25 13:12 UTC | 2026-11-25 13:22 UTC (merge resolution v2) | active — root site |
+| `arena/8205b531-chinafun3` | `arena/8205b531-chinafun3` | 2026-11-25 13:12 UTC | 2026-11-25 13:22 UTC (merge resolution v2) | stale (>24h) — handed off to `arena/25a2c056-chinafun3` for full re-verified root rebuild |
 | `arena/3c3c3c5e-chinafun3` | `arena/3c3c3c5e-chinafun3` (merged to `main` as `a0b6d59` + `e824b4b`) | 2026-11-25 | 2026-11-25 13:22 UTC (PR #4 merged: T7 log) | merged to `main` — docs site |
-| `arena/b27f0613-chinafun3` | `arena/b27f0613-chinafun3` | 2026-11-25 | 2026-11-25 (claim commit) | active — `verify/` re-verified dashboard |
+| `arena/b27f0613-chinafun3` | `arena/b27f0613-chinafun3` | 2026-11-25 | 2026-11-25 (PR #14 merged) | merged to `main` — `verify/` re-verified dashboard |
+| `arena/25a2c056-chinafun3` | `arena/25a2c056-chinafun3` | 2026-11-26 | 2026-11-26 (claim commit) | **active — root site audit, re-verified rebuild & unified integration** |
 
 ---
 
@@ -198,6 +199,32 @@ malformed tables. Published at `/plan/` after PR #9 merged to `main`; Pages buil
   Square) shut Mondays, Shanghai Museum East shut Tuesdays, Da Vittorio shut Mondays, 8½ Otto e Mezzo lunch
   Thu-Sun only. Lantern Festival (20 Feb) is the anchor evening.
 - Dashboard now links the itinerary directly.
+
+---
+
+## Session `arena/25a2c056-chinafun3` — Stale Root Site Handover & Re-verified Integration (`/` + `data/*.json` + `assets/*`)
+
+- **Takeover basis:** Prior root-site session `arena/8205b531-chinafun3` has been inactive >24h (`2026-11-25 13:22 UTC`), exceeding the 60-minute coordination rule. Taking over root-site ownership cleanly without touching any parallel subsite (`docs/`, `considered/`, `for-two/`, `plan/`, `verify/`, `research/`, `scripts/build.py`, `tests/test_site.py`, `tests/browser.cjs`, `data/dataset.py`, `generate.py`, `check_links.py`).
+- **Scope claimed:**
+  - Root HTML dashboard pages: `index.html`, `executive-summary.html`, `itinerary.html`, `hotels.html`, `restaurants.html`, `activities.html`, `transport.html`, `budget.html`, `questions.html`, `suggestions.html`, `sources.html`, `flagged.html`, `methodology.html`, `404.html`
+  - Root assets & JSON datasets: `assets/css/style.css`, `assets/js/app.js`, `data/*.json` (excluding `data/dataset.py` and `data/__init__.py`)
+  - Root generator & validation suite: `scripts/build_root.py`, `tests/test_root_site.py`
+  - Joint integration updates: `COORDINATION.md`, `README.md` (preserving all subsite links and sections)
+- **Audit findings (`F01`–`F10`) against legacy root site:**
+  - `F01`: `Ultraviolet` listed as open 3★ (closed March 29, 2025).
+  - `F02`: Legacy root claimed 46 Shanghai Michelin starred restaurants; live 2026 MICHELIN Guide lists **50 Starred** (1×3★, 11×2★, 38×1★) + **33 Bib Gourmand** + **70 Selected** (**153 total**), and notes `102 House` closed July 8, 2026.
+  - `F03`: Legacy root hardcoded unverified/stale nightly hotel prices; replaced with live Feb 15–22, 2027 MICHELIN Guide Hotels checkout totals (12 properties, incl. taxes/fees & cancellation terms) plus Peninsula's 6-window direct-booking promo (`CNY 2,465/nt` Feb 15–Mar 8 vs `CNY 2,805/nt` Mar 8–23, bookable Nov 23–Dec 7, 2026).
+  - `F04`: Legacy root recommended `Four Seasons Hotel Shanghai` (Huaihai Zhong Rd) at `$390/nt`, which is slated for 2027 opening and not bookable on Feb 15–22, 2027.
+  - `F05`: Legacy root gave unsourced single-figure tasting menu prices; replaced with exact verified 2026 Taian Table FAQ (`¥5,176–5,776` for 2) and 2026 hotel/PDF menus (`T'ang Court ¥888/¥2,288`, `Yi Long Court ¥788.22`, `Bao Li Xuan ¥3,576–5,176`, `Sir Elly's ¥3,003.62`) + official MICHELIN `¥` bands only where exact menu prices are unpublished.
+  - `F06`: Legacy root misstated Yu Garden off-peak fee (`¥30/adult` = `¥60` for 2 from Dec 1–Mar 31, not `¥40`) and misstated Shanghai Museum People's Square permanent gallery availability during the Jul 2026–Nov 2027 Americas special exhibition.
+  - `F07`: Legacy root cited unverified door-to-door transit minutes and `shmetro.com` (broken/unreachable from sandbox); replaced with verified Metro line/station & district proximity plus explicit flagging of unverified transit minutes.
+  - `F08`–`F10`: Replaced unsourced holiday/visa text with official State Council `国办发明电〔2026〕10号` (Spring Festival Feb 5–13, 2027; Feb 14 make-up workday; Feb 15 normal workday) and NIA 240-hour visa-free transit rules, plus verified YouTube/Instagram/TikTok links and room-level bed/bath verification notes.
+- **Completion status (`2026-11-26`):**
+  - Merged `origin/main` (`d191f46`: PRs #15–#20 from `d4b2f26a`, `9ee6f5e0`, and `3f54228c`), preserving `audit-2026-11-26/index.html` and every prior session's `COORDINATION.md` record without discard, and linked `audit-2026-11-26/index.html` on root `index.html` and `README.md` (while completing the canonical single-dataset rebuild that resolves all remaining audit discrepancies: 2024 claims, unverified 44-restaurant transit counts, and surrogate prices).
+  - Rebuilt all 14 root HTML pages via `python3 scripts/build_root.py` from `data/{trip,hotels,restaurants,activities,transport,budget,flagged}.json`.
+  - Passed all offline/CI checks: `tests/test_root_site.py` + `tests/test_site.py` (11/11), `verify/tests/test_site.py` (10/10), `for-two/tests/test_site.py` (9/9), `check_links.py` (9 pages), `node --check assets/js/app.js`.
+  - All parallel subsites (`docs/`, `considered/`, `for-two/`, `plan/`, `verify/`, `audit-2026-11-26/`) remain untouched.
+
 - `python3 check_links.py` → 9 pages, no broken links, no malformed tables.
 
 ---

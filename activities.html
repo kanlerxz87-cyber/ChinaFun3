@@ -1,163 +1,85 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Activities — Within 1 Hour — ChinaFun3</title>
-<link rel="stylesheet" href="assets/css/style.css"><script defer src="assets/js/app.js"></script>
-</head><body>
-<header class="topbar"><div class="container topbar-inner">
-<a class="brand" href="index.html"><span class="brand-mark">CN</span><span>ChinaFun3 <small>Activities ≤1h</small></span></a>
-<button class="hamburger" data-nav-toggle aria-expanded="false">☰</button>
-<nav class="nav" data-nav>
-<a href="index.html">Dashboard</a><a href="executive-summary.html">Executive Summary</a><a href="itinerary.html">Itinerary & Dates</a><a href="hotels.html">Hotels</a><a href="restaurants.html">Michelin</a><a class="active" href="activities.html">Activities</a><a href="transport.html">Transport</a><a href="budget.html">Budget</a><a href="questions.html">Q&A Gaps</a><a href="suggestions.html">Suggestions</a><a href="sources.html">Sources</a><a href="flagged.html">Flagged</a>
-</nav></div></header>
-<main class="container">
-<section class="section">
-<span class="kicker">All ≤1 hour by subway or bus from your Huangpu base</span>
-<h1 class="h1" style="font-size:32px">Activities you can reach in 60 minutes</h1>
-<p class="lead">Every activity below is measured from <strong>East Nanjing Road Station (Lines 2/10)</strong> — the station for your #1–#2 ranked hotels (Peninsula/Waldorf). We show metro line + walk time, so you can verify on <a href="https://www.shmetro.com" target="_blank">shmetro.com</a> or Amap. Each has official site, hours/open days/exceptions, entry fee, and social video links.</p>
-</section>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Activities ≤1h — ChinaFun3</title>
+  <meta name="description" content="Shanghai attractions within 1h metro of central hotels with verified hours, tickets, and social links.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="ChinaFun3 home">
+        <span class="brand-mark">CN</span>
+        <span>ChinaFun3 <small>Shanghai • Feb 15–Mar 23, 2027 • Verified 2026-11-26</small></span>
+      </a>
+      <button class="hamburger" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav class="nav" data-nav>
+        <a href="index.html">Dashboard</a>
+        <a href="executive-summary.html">Executive Summary</a>
+        <a href="itinerary.html">Itinerary &amp; Dates</a>
+        <a href="hotels.html">Hotels</a>
+        <a href="restaurants.html">Michelin</a>
+        <a class="active" href="activities.html">Activities</a>
+        <a href="transport.html">Transport</a>
+        <a href="budget.html">Budget</a>
+        <a href="questions.html">Q&amp;A Gaps</a>
+        <a href="suggestions.html">Suggestions</a>
+        <a href="sources.html">Sources</a>
+        <a href="flagged.html">Flagged</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="notice">
-<strong>How “≤1h” is proved:</strong> Walk 6–8 min hotel→station + metro (6–22 min per table) + 3–6 min exit walk. All totals below are <strong>12–34 min</strong> door-to-door — well inside your 1-hour requirement. Full isochrone proof + map pins: <a href="transport.html#isochrone">Transport</a>.
-</div>
+  <section class="hero">
+    <div class="container">
+      <span class="kicker">Activities Within ≤1h Central Envelope</span>
+      <h1 class="h1">12 Shanghai Attractions — Verified Hours, Closed Days &amp; Ticket Rules.</h1>
+      <p class="lead">Sourced from official portals (<code>yugarden.com.cn</code>, <code>shanghaimuseum.net</code>, <code>english.shanghai.gov.cn</code>, <code>shanghaidisneyresort.com</code>). Unreachable portals (Oriental Pearl Tower) and unpublished 2027 schedules (Disneyland Feb 2027) are flagged rather than guessed.</p>
+    </div>
+  </section>
+  <main class="container">
+    <section class="section">
+      <div class="filter-bar">
+        <input class="search-input" type="search" placeholder="Filter activities, districts, Monday closures..." data-filter-target="act-table" aria-label="Filter activities">
+        <div class="chip-group" data-chip-target="act-table">
+          <button class="chip-btn active" data-chip="all" type="button">All (12)</button>
+          <button class="chip-btn" data-chip="huangpu" type="button">Huangpu</button>
+          <button class="chip-btn" data-chip="pudong" type="button">Pudong</button>
+          <button class="chip-btn" data-chip="verified" type="button">Hours Verified</button>
+          <button class="chip-btn" data-chip="flagged" type="button">Flagged</button>
+        </div>
+        <span class="small" data-count-for="act-table">12 of 12 shown</span>
+      </div>
+      <div class="table-wrap">
+        <table id="act-table">
+          <thead><tr><th data-sort="text">Activity</th><th data-sort="text">District &amp; Metro</th><th>Open Days &amp; Hours</th><th>Exceptions &amp; Notes</th><th>Cost for 2</th><th>Social / Video</th><th>Official Source</th></tr></thead>
+          <tbody><tr data-cats='huangpu verified'><td><strong>Yu Garden (豫园)</strong><br><span class='small'>Classical Ming Garden</span><br><span class="badge badge-verified">Official Hours Verified</span></td><td>Huangpu<br><span class='small'>Metro Line 10 / Line 14 · Yuyuan Garden Station (same district as Xintiandi/Bund)</span></td><td>Tue–Sun (closed Mondays except national statutory holidays)<br>09:00–16:30 (last entry 16:00; garden clears 16:30)</td><td><span class='small'>Spring Festival hours announced separately by notice. North Gate: 168 Fuyou Rd; South Gate: 279 Yuyuan Old St (individual only).</span></td><td><strong>¥60 (¥30/adult off-peak Dec 1–Mar 31, covers Feb–Mar 2027)</strong></td><td><a class='social-link' href='https://www.youtube.com/watch?v=Ay96PAha8uQ' target='_blank' rel='noopener noreferrer'>YouTube</a></td><td><a href="https://www.yugarden.com.cn/page/articleView/message.html" target="_blank" rel="noopener noreferrer">Official →</a></td></tr>
+<tr data-cats='huangpu flagged'><td><strong>Yu Garden Night Tour (2025 Seasonal Ref)</strong><br><span class='small'>Night Garden Experience</span><br><span class="badge badge-unverified">Partial / Flagged</span></td><td>Huangpu<br><span class='small'>Metro Line 10 / Line 14 · Yuyuan Garden Station</span></td><td>Fri–Sun (closed Mon–Thu; 2025 winter schedule — 2027 schedule unconfirmed)<br>18:00–21:20 (last entry 20:30)</td><td><span class='small'>Feb 20, 2027 is Lantern Festival — confirm 2027 night-tour notice via official WeChat &#x27;上海豫园&#x27; or yugarden.com.cn.</span></td><td><span class='small'>2025 ref was ¥300–436 for 2; 2027 pricing not yet published (blank/flagged).</span></td><td><a class='social-link' href='https://www.youtube.com/shorts/nh1FRv9eK8U' target='_blank' rel='noopener noreferrer'>YouTube</a></td><td><a href="https://www.yugarden.com.cn/page/articleView/message.html" target="_blank" rel="noopener noreferrer">Official →</a></td></tr>
+<tr data-cats='pudong verified'><td><strong>Shanghai Museum East (上海博物馆东馆)</strong><br><span class='small'>Museum (Permanent Ancient Chinese Art)</span><br><span class="badge badge-verified">Official Hours Verified</span></td><td>Pudong<br><span class='small'>Pudong · 1952 Century Avenue (Metro Line 2 Shanghai Science &amp; Technology Museum)</span></td><td>Wed–Mon (closed Tuesdays except national statutory holidays)<br>10:00–18:00 (last entry 17:00)</td><td><span class='small'>Individual walk-in via B1 East Gate with original valid passport/ID; special reservation needed only for Curio-City / Digital Gallery.</span></td><td><strong>¥0 (permanent exhibitions free)</strong></td><td><a class='social-link' href='https://www.youtube.com/@theshanghaimuseum' target='_blank' rel='noopener noreferrer'>YouTube</a> <a class='social-link' href='https://www.youtube.com/watch?v=bqU3WbL6xac' target='_blank' rel='noopener noreferrer'>YouTube</a> <a class='social-link' href='https://www.instagram.com/theshanghaimuseum/' target='_blank' rel='noopener noreferrer'>Instagram</a></td><td><a href="https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-east" target="_blank" rel="noopener noreferrer">Official →</a></td></tr>
+<tr data-cats='huangpu verified'><td><strong>Shanghai Museum — People&#x27;s Square</strong><br><span class='small'>Museum (Special Exhibition Hall)</span><br><span class="badge badge-verified">Official Hours Verified</span></td><td>Huangpu<br><span class='small'>Huangpu · 201 Renmin Dadao (People&#x27;s Square Metro Lines 1/2/8)</span></td><td>Tue–Sun (closed Mondays except national statutory holidays)<br>09:00–17:00 (last entry 15:00)</td><td><span class='small'>During &#x27;On Top of the World Tree: Ancient Civilizations of the Americas&#x27; (Jul 9, 2026 – Nov 14, 2027), no other permanent galleries are hosted here (visit East Hall for permanent displays). Book via WeChat / Trip.com.</span></td><td><span class='small'>Special exhibition requires paid ticket (exact 2027 ticket price unverified — flagged).</span></td><td><a class='social-link' href='https://www.youtube.com/@theshanghaimuseum' target='_blank' rel='noopener noreferrer'>YouTube</a> <a class='social-link' href='https://www.instagram.com/theshanghaimuseum/' target='_blank' rel='noopener noreferrer'>Instagram</a></td><td><a href="https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-west" target="_blank" rel="noopener noreferrer">Official →</a></td></tr>
+<tr data-cats='pudong verified'><td><strong>China Art Museum (中华艺术宫)</strong><br><span class='small'>Art Museum (2010 Expo China Pavilion)</span><br><span class="badge badge-verified">Official Hours Verified</span></td><td>Pudong<br><span class='small'>Pudong · 205 Shangnan Rd · Metro Line 8 China Art Museum Exit 3 / Line 7 Yaohua Rd Exit 1</span></td><td>Tue–Sun (closed Mondays except national statutory holidays)<br>10:00–18:00 (last entry 17:00)</td><td><span class='small'>Special exhibitions (e.g. multimedia Qingming Shanghe Tu) may require separate reservation/ticket.</span></td><td><strong>¥0 (permanent exhibitions free)</strong></td><td><a class='social-link' href='https://www.youtube.com/watch?v=QUanjfsHTB0' target='_blank' rel='noopener noreferrer'>YouTube</a></td><td><a href="https://english.shanghai.gov.cn/en-MuseumsGalleries/20241018/dfda779aa5f644f48f99e89ffb745703.html" target="_blank" rel="noopener noreferrer">Official →</a></td></tr>
+<tr data-cats='huangpu verified'><td><strong>Power Station of Art (上海当代艺术博物馆)</strong><br><span class='small'>Contemporary Art Museum</span><br><span class="badge badge-verified">Official Hours Verified</span></td><td>Huangpu<br><span class='small'>Huangpu waterfront — same district as Bund/Xintiandi hotels</span></td><td>Tue–Sun (closed Mondays except national statutory holidays)<br>11:00–19:00 (last entry 18:00)</td><td><span class='small'>678 Miaojiang Rd, Huangpu (star-rated museum per Shanghai Municipal Gov). Special exhibitions may be ticketed.</span></td><td><span class='small'>Permanent exhibitions typically free; special exhibition ticket prices unverified (blank/flagged).</span></td><td><a class='social-link' href='https://www.youtube.com/watch?v=H4nkvd4Ar20' target='_blank' rel='noopener noreferrer'>YouTube</a> <a class='social-link' href='https://www.youtube.com/watch?v=50zqPIVoHPk' target='_blank' rel='noopener noreferrer'>YouTube</a></td><td><a href="https://english.shanghai.gov.cn/en-MuseumsGalleries/20250702/64d1d26886b3458b8dffb3a8533787b5.html" target="_blank" rel="noopener noreferrer">Official →</a></td></tr>
+<tr data-cats='pudong verified'><td><strong>Museum of Art Pudong (浦东美术馆)</strong><br><span class='small'>Art Museum</span><br><span class="badge badge-verified">Official Hours Verified</span></td><td>Pudong (Lujiazui)<br><span class='small'>Pudong Lujiazui riverside (Metro Lines 2/14 Lujiazui)</span></td><td>Open daily<br>10:00–21:00 (last entry 20:00)</td><td><span class='small'>2777 Binjiang Avenue, Pudong New Area (official star-rated museum list).</span></td><td><span class='small'>Ticket pricing not captured from official ticketing page (blank/flagged).</span></td><td><span class='small'>None verified</span></td><td><a href="https://english.shanghai.gov.cn/en-MuseumsGalleries/20250702/64d1d26886b3458b8dffb3a8533787b5.html" target="_blank" rel="noopener noreferrer">Official →</a></td></tr>
+<tr data-cats='huangpu verified'><td><strong>Fosun Foundation &amp; Rockbund Art Museum</strong><br><span class='small'>Bund Waterfront Art Galleries</span><br><span class="badge badge-verified">Official Hours Verified</span></td><td>Huangpu<br><span class='small'>Huangpu (The Bund) — walkable from Peninsula / EDITION / BFC</span></td><td>Fosun: Tue–Sun (closed Mon) · Rockbund: Wed–Sun (closed Mon–Tue)<br>Fosun: Tue/Wed/Fri/Sun 10:00–18:00, Thu/Sat 10:00–20:00 · Rockbund: Wed–Sun 11:00–20:00</td><td><span class='small'>Fosun Foundation: 600 East Zhongshan No. 2 Rd (BFC, beside Da Vittorio 2★); Rockbund: 20 Huqiu Rd (steps from Peninsula &amp; 8 ½ Otto e Mezzo).</span></td><td><span class='small'>Exhibition ticket prices vary by show (blank/flagged).</span></td><td><span class='small'>None verified</span></td><td><a href="https://english.shanghai.gov.cn/en-MuseumsGalleries/20250702/64d1d26886b3458b8dffb3a8533787b5.html" target="_blank" rel="noopener noreferrer">Official →</a></td></tr>
+<tr data-cats='pudong flagged'><td><strong>Shanghai Tower · 118F Observatory &amp; 52F Duoyun Bookstore</strong><br><span class='small'>Skyscraper Observatory &amp; Sky Bookstore</span><br><span class="badge badge-unverified">Partial / Flagged</span></td><td>Pudong (Lujiazui)<br><span class='small'>Pudong · 479 Lujiazui Ring Rd / 501 Middle Yincheng Rd (Metro Lines 2/14 Lujiazui)</span></td><td><span class="badge badge-unverified">Unverified</span><br><span class="badge badge-unverified">Hours Unverified</span></td><td><span class='small'>632m tower; 118F &#x27;Top of Shanghai&#x27; at 546m, 125–126F SKY632 Damper Performance, 52F Duoyun Bookstore (world&#x27;s highest bookstore). Official site does not publish live 2027 hours/tickets statically (flagged).</span></td><td><span class='small'>Observatory ticket price unverified on official shanghaitower.com (blank/flagged).</span></td><td><span class='small'>None verified</span></td><td><a href="https://english.shanghai.gov.cn/en-ScenicSpots/20240507/f3ce9cade30f4ff2a0bad6293626a232.html" target="_blank" rel="noopener noreferrer">Official →</a></td></tr>
+<tr data-cats='pudong flagged'><td><strong>Oriental Pearl Tower (东方明珠)</strong><br><span class='small'>5A Observation Landmark</span><br><span class="badge badge-unverified">Partial / Flagged</span></td><td>Pudong (Lujiazui)<br><span class='small'>Pudong · Lujiazui Metro Station (Lines 2/14)</span></td><td><span class="badge badge-unverified">Unverified</span><br><span class="badge badge-unverified">Hours Unverified</span></td><td><span class='small'>468m landmark tower. Official orientalpearltower.com.cn is unreachable from sandbox; hours and ticket tiers flagged rather than guessed.</span></td><td><span class='small'>Ticket prices &amp; hours unverified (official site unreachable from sandbox).</span></td><td><a class='social-link' href='https://www.youtube.com/watch?v=lql_4YSqGg8' target='_blank' rel='noopener noreferrer'>YouTube</a> <a class='social-link' href='https://www.tiktok.com/@missmedia_/video/7465614444664507654' target='_blank' rel='noopener noreferrer'>TikTok</a></td><td><a href="https://english.shanghai.gov.cn/en-CityTour/20250530/b8fbbd2155c4468bab9b363a5e6c566a.html" target="_blank" rel="noopener noreferrer">Official →</a></td></tr>
+<tr data-cats='pudong flagged'><td><strong>Shanghai Disneyland (上海迪士尼乐园)</strong><br><span class='small'>Theme Park</span><br><span class="badge badge-unverified">Partial / Flagged</span></td><td>Pudong (Chuansha)<br><span class='small'>Pudong · 310 Huangzhao Rd · Metro Line 11 Disney Resort Station (longest ride on list; edge of ~1h envelope)</span></td><td>Open daily (date-specific calendar)<br><span class="badge badge-unverified">Hours Unverified</span></td><td><span class='small'>Sample off-peak calendar shows 08:30–21:30 (Disneytown 10:00–22:00); Feb–Mar 2027 daily hours &amp; tiered ticket prices not yet published as of Nov 2026 (flagged). Book only via official app/website/WeChat.</span></td><td><span class='small'>Feb–Mar 2027 ticket tiers not yet published on official calendar (blank/flagged).</span></td><td><a class='social-link' href='https://www.instagram.com/shanghaidisneyresort_park/' target='_blank' rel='noopener noreferrer'>Instagram</a></td><td><a href="https://www.shanghaidisneyresort.com/en/park-calendar" target="_blank" rel="noopener noreferrer">Official →</a></td></tr>
+<tr data-cats='huangpu flagged'><td><strong>The Bund Waterfront Promenade (外滩)</strong><br><span class='small'>Historic Waterfront Walk</span><br><span class="badge badge-unverified">Partial / Flagged</span></td><td>Huangpu<br><span class='small'>Huangpu · walkable from Peninsula / EDITION; Metro Lines 2/10 East Nanjing Rd</span></td><td>Public waterfront promenade<br><span class="badge badge-unverified">Hours Unverified</span></td><td><span class='small'>Free public promenade; exact official lighting shutoff schedule unverified (lighting times vary seasonally).</span></td><td><strong>¥0 (public space)</strong></td><td><a class='social-link' href='https://www.youtube.com/watch?v=bZCLgcNMz5M' target='_blank' rel='noopener noreferrer'>YouTube</a> <a class='social-link' href='https://www.youtube.com/watch?v=7ZmHufvKaWE' target='_blank' rel='noopener noreferrer'>YouTube</a></td><td><a href="https://guide.michelin.com/en/hotels-stays/shanghai/the-peninsula-shanghai-5858" target="_blank" rel="noopener noreferrer">Official →</a></td></tr>
+</tbody>
+        </table>
+      </div>
+    </section>
+  </main>
 
-<div class="filters">
-<input type="search" placeholder="Filter: bund, garden, tower, free…" data-filter-target="actTable">
-<span class="hint">Free entries: The Bund, Yuyuan Bazaar, Shanghai Museum.</span>
-</div>
-
-<div class="table-wrap"><table id="actTable">
-<thead><tr>
-<th data-sort="text">Activity (district)</th>
-<th>What you'll do</th>
-<th>Hours / Open days + exceptions</th>
-<th class="num" data-sort="numeric">Entry (for 2)</th>
-<th>Transit ≤1h from hotel?</th>
-<th>Social (YT/TikTok/IG)</th>
-<th>Official link</th>
-<th>Source</th>
-</tr></thead>
-<tbody>
-<tr>
-<td><strong>The Bund (Waitan) waterfront</strong><br><span class="small">Huangpu — Zhongshan East 1st Rd</span></td>
-<td>Free promenade 1.5 km; colonial architecture vs. Pudong skyline; night lights; river ferry</td>
-<td>24 hours daily, no gate<br><strong>Lights:</strong> May–Oct 19:00–23:00; Nov–Apr 18:00–21:00<br><em>Exception: none — public road</em></td>
-<td class="num">¥0 for 2<br><span class="small">free</span></td>
-<td><strong>0–6 min walk</strong> from Peninsula/Waldorf (The Bund is their street) <span class="badge badge-verified">verified</span></td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=The+Bund+Shanghai+night" target="_blank">YouTube</a> · <a href="https://www.tiktok.com/search?q=the%20bund%20shanghai" target="_blank">TikTok</a> · <a href="https://www.instagram.com/explore/tags/thebundshanghai/" target="_blank">IG</a></td>
-<td class="small"><a href="https://www.meet-in-shanghai.net/the-bund/" target="_blank">meet-in-shanghai.net (city tourism)</a></td>
-<td class="source"><a href="https://chinafortravelers.com/guides/the-bunds-shanghai/" target="_blank">24/7 free guide</a> + <a href="https://www.guangzhoudaytrips.com/the-bund/" target="_blank">light-up times</a></td>
-</tr>
-<tr>
-<td><strong>Yu Garden (Yuyuan Garden) + Bazaar</strong><br><span class="small">Huangpu · 218 Anren St</span></td>
-<td>Ming dynasty classical garden (ticketed) + free Yuyuan Bazaar food/shops/teahouses</td>
-<td>Garden: 09:00–16:30 daily, last entry 16:00 · <strong>Closed Mon</strong> except holidays<br>Bazaar shops: 10:00–22:00 daily<br><em>CNY: follows special notice — check official WeChat 上海豫园</em></td>
-<td class="num">¥60 for 2 (Feb–Mar off-season)<br><span class="small">¥30 pp off-season (Dec–Mar); ¥40 pp peak (Apr–Jun, Sep–Nov); Bazaar free</span></td>
-<td><strong>14 min</strong>: L10/14 to Yuyuan Sta Exit 6 + 5-min walk</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Yu+Garden+Shanghai" target="_blank">YT</a> · <a href="https://www.tiktok.com/search?q=yu%20garden%20shanghai" target="_blank">TikTok</a></td>
-<td class="small"><a href="https://www.yugarden.com.cn/page/articleView/message.html" target="_blank">yugarden.com.cn (official visit info)</a> + WeChat mini 上海豫园</td>
-<td class="source"><a href="https://www.yugarden.com.cn/page/articleView/message.html" target="_blank">Yu Garden official: 9:00–16:30, closed Mon, ¥30 off-season / ¥40 peak</a></td>
-</tr>
-<tr>
-<td><strong>Oriental Pearl Tower (Lujiazui)</strong><br><span class="small">Pudong · 1 Century Ave</span></td>
-<td>468m TV tower: 259m glass skywalk, 360° deck, History Museum, VR, revolving restaurant</td>
-<td>09:00–21:00 daily (last entry 20:30)<br><strong>Revolving restaurant:</strong> lunch 11–14, dinner 17–21<br><em>Glass walk may close in storm — on-site notice</em></td>
-<td class="num">¥398 for 2<br><span class="small">¥199 pp (standard)</span></td>
-<td><strong>18 min</strong>: L2 East Nanjing Rd → Lujiazui (1 stop) + 6-min walk</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Oriental+Pearl+Tower+Shanghai" target="_blank">YT</a> · <a href="https://www.tiktok.com/search?q=oriental%20pearl%20tower" target="_blank">TikTok</a></td>
-<td class="small"><a href="https://www.orientalpearltower.com" target="_blank">orientalpearltower.com</a></td>
-<td class="source"><a href="https://www.chinadiscovery.com/shanghai/oriental-pearl-tower.html" target="_blank">Opening 09:00–21:00</a> + <a href="https://www.tripomatic.com/en/poi/oriental-pearl-tower-poi:21653" target="_blank">official site mirror</a></td>
-</tr>
-<tr>
-<td><strong>Shanghai Museum (People’s Square)</strong><br><span class="small">Huangpu/Pujing · People’s Square</span></td>
-<td>Free national museum: bronze, ceramics, painting, jade (2–3h)</td>
-<td>People's Square: Tue–Sun 09:00–17:00 (last entry <strong>15:00</strong>)<br><strong>Closed Mon</strong> except holidays · East Hall: 10:00–18:00, closed Tue<br><em>Reserve via museum WeChat 上海博物馆 · Domain moves to shanghaimuseum.cn on 1 Jan 2027</em></td>
-<td class="num">¥0 for 2</td>
-<td><strong>12 min</strong>: L2/L10 East Nanjing Rd → People’s Square (1 stop) + 4-min walk</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Shanghai+Museum" target="_blank">YT</a></td>
-<td class="small"><a href="https://www.shanghaimuseum.cn/mu/frontend/pg/index" target="_blank">shanghaimuseum.cn (official from 1 Jan 2027)</a> · <a href="https://www.shanghaimuseum.net/mu/frontend/pg/index" target="_blank">.net (until 31 Dec 2026)</a></td>
-<td class="source"><a href="https://www.shanghaimuseum.net/mu/frontend/pg/index" target="_blank">Museum official: People's Square 9:00–17:00 last 15:00 closed Mon; East 10:00–18:00 closed Tue</a></td>
-</tr>
-<tr>
-<td><strong>Shanghai Tower Observatory (632m)</strong><br><span class="small">Pudong · Lujiazui ring</span>
-
-</td>
-<td>Highest observatory in China; 118F indoor deck; fastest elevators</td>
-<td>Daily 08:30–21:30 (last entry 21:00)<br><em>Clear-day recommended</em></td>
-<td class="num">¥360 for 2<br><span class="small">¥180 pp approx.</span></td>
-<td><strong>18 min</strong>: L2 to Lujiazui + 8-min walk (same cluster as Pearl)</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Shanghai+Tower+observatory" target="_blank">YT</a></td>
-<td class="small"><a href="https://www.shanghaitower.com.cn" target="_blank">shanghaitower.com.cn</a></td>
-<td class="source"><a href="https://www.shanghaitower.com.cn" target="_blank">Official hours</a></td>
-</tr>
-<tr>
-<td><strong>Jade Buddha Temple</strong><br><span class="small">Putuo · 170 Anyuan Rd</span></td>
-<td>Active Buddhist temple; white jade Buddha statues; incense; vegetarian dining nearby</td>
-<td>08:00–17:00 daily<br><em>Buddhist festivals = crowds → go early</em></td>
-<td class="num">¥40 for 2<br><span class="small">¥20 pp</span></td>
-<td><strong>26 min</strong>: L10/L13 transfer via Xintiandi</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Jade+Buddha+Temple+Shanghai" target="_blank">YT</a></td>
-<td class="small"><a href="https://www.yufotemple.com" target="_blank">yufotemple.com (if live)</a></td>
-<td class="source">City temple notice via <a href="https://www.travelchinaguide.com/attraction/shanghai/jade-buddha-temple.htm" target="_blank">Travel China Guide</a> (non-official, flagged)</td>
-</tr>
-<tr>
-<td><strong>Tianzifang + Xintiandi (French Concession walk)</strong><br><span class="small">Huangpu/Xuhui · Taikang Rd / Xintiandi</span></td>
-<td>Lane-house alleys: boutiques, galleries, cafés, street food; evening bars</td>
-<td>Alleys 10:00–22:00 (shops vary); Xintiandi plaza 24h<br><em>No ticket</em></td>
-<td class="num">¥0 for 2</td>
-<td><strong>14–20 min</strong>: L10 to Xintiandi or Dapuqiao + 4-min walk</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Tianzifang+Shanghai" target="_blank">YT</a> · <a href="https://www.tiktok.com/search?q=tianzifang" target="_blank">TikTok</a></td>
-<td class="small"><a href="https://www.xintiandi.com" target="_blank">xintiandi.com</a></td>
-<td class="source"><a href="https://www.xintiandi.com" target="_blank">Xintiandi official</a></td>
-</tr>
-<tr>
-<td><strong>Zhujiajiao Water Town (day trip)</strong><br><span class="small">Qingpu · ancient canal town</span></td>
-<td>Canals, stone bridges, Kezhi Garden, boat ride; 400-year-old lanes</td>
-<td>Shops 08:30–17:30; boats 08:30–16:50 daily<br><em>Weekends busy — weekday recommended</em></td>
-<td class="num">¥0–¥60 for 2<br><span class="small">Town free; combined garden/temple ticket ¥60</span></td>
-<td><strong>48 min</strong>: L17 Zhujiajiao direct from Hongqiao (≤60 min verified on shmetro.com)</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Zhujiajiao+water+town" target="_blank">YT</a></td>
-<td class="small"><a href="https://www.zhujiajiao.com" target="_blank">Town tourism site</a></td>
-<td class="source"><a href="https://www.shmetro.com" target="_blank">L17 to Zhujiajiao = 45–50 min</a></td>
-</tr>
-<tr>
-<td><strong>Shanghai Disneyland (optional stretch)</strong><br><span class="small">Pudong Chuansha · Disneyland Resort</span></td>
-<td>Disney park with Shanghai-specific castle/pyrates zone (full day)</td>
-<td>09:00–21:00 typical (seasonal); check app<br><em>Ticket date-specific — book 7 days ahead</em></td>
-<td class="num">¥1,198 for 2<br><span class="small">¥599 pp weekday base (2024)</span></td>
-<td><strong>54 min</strong>: L11 Disneyland from Xujiahui + transfer (within 1h from Huangpu via maglev+ transfer edge — flagged as “max 58 min”)</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Shanghai+Disneyland" target="_blank">YT</a></td>
-<td class="small"><a href="https://www.shanghaidisneyresort.com" target="_blank">shanghaidisneyresort.com</a></td>
-<td class="source"><a href="https://www.shanghaidisneyresort.com" target="_blank">Official hours/pricing</a></td>
-</tr>
-<tr>
-<td><strong>Huangpu River Night Cruise</strong><br><span class="small">Huangpu · Shiliupu / The Bund terminals</span></td>
-<td>50-min river cruise with both skyline lights; best 18:30–20:00</td>
-<td>10:00–21:00 sailings (every hour); night 19:00,20:00<br><em>CNY week reduced</em></td>
-<td class="num">¥240–¥300 for 2<br><span class="small">¥120–150 pp</span></td>
-<td><strong>10 min</strong>: walk to Bund terminals from hotel</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Huangpu+River+cruise" target="_blank">YT</a></td>
-<td class="small"><a href="https://www.shanghailinjiangferry.com" target="_blank">Linjiang Ferry official</a></td>
-<td class="source"><a href="https://chinafortravelers.com/guides/the-bunds-shanghai/" target="_blank">Cruise price ¥120–150</a></td>
-</tr>
-</tbody></table></div>
-<p class="small mt8">Every “Transit” time is <strong>verified on Shanghai Metro official + Amap at 11:00 off-peak 2026-11-25 check</strong> — see <a href="transport.html">Transport → time table</a>. Where the activity has no single official English site (Jade Buddha Temple, some bazaar shops), we mark the source as non-official + link it and flag on <a href="flagged.html">Flagged</a>.</p>
-
-<div class="grid grid-2 mt16">
-<div class="card">
-<h3>Free vs. paid — what this costs for 2 (1 week)</h3>
-<div class="table-wrap"><table><thead><tr><th>Category</th><th class="num">For 2 (total)</th><th>Source</th></tr></thead><tbody>
-<tr><td>Free sights (Bund, Museum, Xintiandi/Tianzifang, Bazaar)</td><td class="num">¥0</td><td><a href="https://www.shanghaimuseum.net" target="_blank">Museum free</a> + <a href="https://chinafortravelers.com/guides/the-bunds-shanghai/" target="_blank">Bund free</a></td></tr>
-<tr><td>Yu Garden + Pearl + Shanghai Tower</td><td class="num">¥60 + ¥398 + ¥360 = ¥818 (Feb–Mar off-season)</td><td>As per row tables (Yu Garden ¥30pp off-season)</td></tr>
-<tr><td>River cruise (optional)</td><td class="num">¥270 avg</td><td>¥120–150 pp</td></tr>
-</tbody></table></div>
-</div>
-<div class="card">
-<h3>Social inspiration — copy/paste search</h3>
-<p class="small">Every activity above has one-click YouTube + TikTok + IG searches (links pre-filled for that activity). For Michelin restaurants, <a href="restaurants.html">Michelin page</a> has per-restaurant YT/TikTok/IG links. No embedded player (avoids tracking + broken embeds) — just official search on the platform so you always get current creators.</p>
-<div class="notice good" style="margin-top:8px">Tip: On TikTok, search in Chinese for more recent food videos: e.g., “康家8号” for Canton 8, “老正兴” for Lao Zheng Xing.</div>
-</div>
-</div>
-
-<footer class="footer"><div class="container"><a href="index.html">← Dashboard</a> • <a href="transport.html">Next: Transport proof →</a></div></div></footer>
-</main></body></html>
+  <footer class="footer">
+    <div class="container footer-row">
+      <span>ChinaFun3 Root Dashboard · Verified <strong>2026-11-26</strong> · Every table row carries an official source link or explicit <span class="badge badge-unverified">Unverified · Flagged</span> label.</span>
+      <span><a href="methodology.html">Verification Methodology</a> · <a href="flagged.html">Audit Log (F01–F10)</a> · <a href="sources.html">All Sources</a></span>
+    </div>
+  </footer>
+</body>
+</html>

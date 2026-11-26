@@ -1,198 +1,181 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Michelin Restaurants — ChinaFun3</title>
-<link rel="stylesheet" href="assets/css/style.css"><script defer src="assets/js/app.js"></script>
-</head><body>
-<header class="topbar"><div class="container topbar-inner">
-<a class="brand" href="index.html"><span class="brand-mark">CN</span><span>ChinaFun3 <small>Michelin • Shanghai 2024</small></span></a>
-<button class="hamburger" data-nav-toggle aria-expanded="false">☰</button>
-<nav class="nav" data-nav>
-<a href="index.html">Dashboard</a><a href="executive-summary.html">Executive Summary</a><a href="itinerary.html">Itinerary & Dates</a><a href="hotels.html">Hotels</a><a class="active" href="restaurants.html">Michelin</a><a href="activities.html">Activities</a><a href="transport.html">Transport</a><a href="budget.html">Budget</a><a href="questions.html">Q&A Gaps</a><a href="suggestions.html">Suggestions</a><a href="sources.html">Sources</a><a href="flagged.html">Flagged</a>
-</nav></div></header>
-<main class="container">
-<section class="section">
-<span class="kicker">Guide vs. Star • Every row has an official source</span>
-<h1 class="h1" style="font-size:32px">Michelin restaurants — curated bookable shortlist (13 of 50 starred, 2026 guide)</h1>
-<p class="lead">We show 14 representative starred restaurants you can actually book for 2 adults next to your Huangpu base, all ≤1h by metro. Columns: <strong>Star status</strong> (★ vs. “Michelin Guide Listed / Bib”), <strong>Cost for 2 total</strong>, <strong>Open days & hours + exceptions</strong>, <strong>Social video links</strong> (YouTube/TikTok/IG), and <strong>Official links</strong>. Prices are <em>total for 2</em> (guide ¥ scale translated, or exact tasting menu where published). If a field couldn't be verified on the official site, we leave it blank + flag <span class="badge badge-unverified">unverified</span> — no guessing.</p>
-</section>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Michelin Restaurants — ChinaFun3</title>
+  <meta name="description" content="Complete 2026 Shanghai MICHELIN Guide directory (50 starred + Bib/Selected) with verified for-2 prices.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="ChinaFun3 home">
+        <span class="brand-mark">CN</span>
+        <span>ChinaFun3 <small>Shanghai • Feb 15–Mar 23, 2027 • Verified 2026-11-26</small></span>
+      </a>
+      <button class="hamburger" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav class="nav" data-nav>
+        <a href="index.html">Dashboard</a>
+        <a href="executive-summary.html">Executive Summary</a>
+        <a href="itinerary.html">Itinerary &amp; Dates</a>
+        <a href="hotels.html">Hotels</a>
+        <a class="active" href="restaurants.html">Michelin</a>
+        <a href="activities.html">Activities</a>
+        <a href="transport.html">Transport</a>
+        <a href="budget.html">Budget</a>
+        <a href="questions.html">Q&amp;A Gaps</a>
+        <a href="suggestions.html">Suggestions</a>
+        <a href="sources.html">Sources</a>
+        <a href="flagged.html">Flagged</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="notice">
-<strong>Primary source:</strong> Michelin Guide Shanghai 2026 (announced 9 Apr 2026) — <strong>50 starred: 1× 3★ (Taian Table, sole three-star), 11× 2★, 38× 1★</strong>, verified 2026-11-26 on <a href="https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred" target="_blank">guide.michelin.com → Shanghai all-starred</a> (filter buckets: 3 Stars = 1, 2 Stars = 11, 1 Star = 38). <strong>Ultraviolet by Paul Pairet closed after final service 29 Mar 2025</strong> and is removed from the 2026 guide — shown below as CLOSED for history only, not bookable. Each restaurant links to its <em>guide.michelin.com</em> page + official site. Full 50-row directory: <a href="verify/restaurants.html">Verify → Michelin (50 rows)</a>.
-</div>
+  <section class="hero">
+    <div class="container">
+      <span class="kicker">2026 MICHELIN Guide Shanghai · 153 Live Entries</span>
+      <h1 class="h1">Starred vs. Guide-Listed Restaurants, Verified For-Two Costs &amp; All 50 Starred.</h1>
+      <p class="lead">Live 2026 MICHELIN Guide Shanghai count: <strong>50 Starred</strong> (1×3★, 11×2★, 38×1★) + <strong>33 Bib Gourmand</strong> + <strong>70 Selected</strong> = <strong>153 total</strong>. Starred venues and Guide-listed (non-starred) venues are clearly distinguished below.</p>
+      <div class="notice warn mt16">
+        <strong>Recent Closures Removed (F01 / F02):</strong>
+        <ul style="margin:6px 0 0 18px; padding:0"><li>Ultraviolet by Paul Pairet (former 3★) — closed March 29, 2025</li><li>102 House (awarded 2★ in Apr 2026 ceremony) — closed July 8, 2026</li></ul>
+      </div>
+    </div>
+  </section>
+  <main class="container">
+    <section class="section">
+      <h2>Deep-Verified Featured Shortlist (25 Starred, Bib &amp; Selected Venues)</h2>
+      <p class="sub">Exact 2-adult menu totals are printed only where verified from official 2026 PDFs or FAQ pages; all others display the official MICHELIN ¥ band only.</p>
+      <div class="filter-bar">
+        <input class="search-input" type="search" placeholder="Search name, cuisine, district, closed days..." data-filter-target="feat-rest-table" aria-label="Filter featured restaurants">
+        <div class="chip-group" data-chip-target="feat-rest-table">
+          <button class="chip-btn active" data-chip="all" type="button">All (25)</button>
+          <button class="chip-btn" data-chip="star3" type="button">3★</button>
+          <button class="chip-btn" data-chip="star2" type="button">2★</button>
+          <button class="chip-btn" data-chip="star1" type="button">1★</button>
+          <button class="chip-btn" data-chip="bib" type="button">Bib (No Star)</button>
+          <button class="chip-btn" data-chip="selected" type="button">Selected (No Star)</button>
+          <button class="chip-btn" data-chip="priced" type="button">Exact For-2 Price</button>
+        </div>
+        <span class="small" data-count-for="feat-rest-table">25 of 25 shown</span>
+      </div>
+      <div class="table-wrap">
+        <table id="feat-rest-table">
+          <thead>
+            <tr>
+              <th data-sort="text">Restaurant &amp; Status</th>
+              <th data-sort="text">Cuisine &amp; Band</th>
+              <th data-sort="text">District &amp; Address</th>
+              <th>Hours &amp; Closed Days</th>
+              <th>Price for 2 Adults</th>
+              <th>Social</th>
+              <th>Sources &amp; Phone</th>
+            </tr>
+          </thead>
+          <tbody><tr data-cats='star3 priced changning'><td><strong>Taian Table</strong><br><span class='badge badge-star'>3★ Starred</span></td><td>Innovative<br><span class='small'>¥¥¥¥</span></td><td><strong>Changning</strong><br><span class='small'>101-102, Building 1, Garden Office, No.161 Lane 465, Zhenning Road, Changning</span></td><td>Tue–Sat 18:00–20:00 seatings<br><span class='small'>Closed Sun &amp; Mon</span></td><td><strong>¥5,176 – ¥5,776</strong><br><span class='small'>Verified official FAQ: ¥2,588 (10-course) / ¥2,888 (12-course) pp, all-inclusive ×2.</span></td><td><a class='social-link' href='https://www.youtube.com/watch?v=RYsEUZJSrN8' target='_blank' rel='noopener noreferrer'>YouTube</a></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table" target="_blank" rel="noopener noreferrer">MICHELIN →</a> · <a href="https://sh.taian-table.cn/faq/" target="_blank" rel="noopener noreferrer">Site/PDF</a><br><span class='small'>+86 173 0160 5350</span></td></tr>
+<tr data-cats='star2 priced huangpu'><td><strong>T&#x27;ang Court</strong><br><span class='badge badge-star'>2★ Starred</span></td><td>Cantonese<br><span class='small'>¥¥¥¥</span></td><td><strong>Huangpu</strong><br><span class='small'>5F, The Langham Xintiandi, 99 Madang Road, Huangpu</span></td><td>Tue–Sun 11:30–14:00, 17:30–21:00<br><span class='small'>Closed Mon</span></td><td><strong>¥888 (lunch) / ¥2,288 (all-day)</strong><br><span class='small'>Verified 2026 official PDF: Classic Dim Sum Lunch Set ¥888 / All-Day Set ¥2,288 for 2 (incl. tax &amp; svc).</span></td><td><span class='small'>None verified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/t-ang-court-506725" target="_blank" rel="noopener noreferrer">MICHELIN →</a> · <a href="https://www.langhamhotels.com/content/dam/langhamhotels/tlshx-pdfs/tang-court/2026/seasonal-set-menu-selection-2026.pdf" target="_blank" rel="noopener noreferrer">Site/PDF</a><br><span class='small'>+86 21 2330 2430</span></td></tr>
+<tr data-cats='star2 priced jingan'><td><strong>Bao Li Xuan</strong><br><span class='badge badge-star'>2★ Starred</span></td><td>Cantonese<br><span class='small'>¥¥¥¥</span></td><td><strong>Jing&#x27;an</strong><br><span class='small'>3F, Chamber of Commerce Shanghai, Lane 108 North Shanxi Road, Jing&#x27;an</span></td><td><span class='badge badge-unverified'>Hours unverified</span><br><span class='small'>Hours unverified on official page</span></td><td><strong>¥3,576 – ¥5,176</strong><br><span class='small'>Verified 2026 Bvlgari PDFs: ¥1,788 Classics / ¥2,588 Signature pp × 2 (confirm service/tax at booking).</span></td><td><a class='social-link' href='https://www.youtube.com/watch?v=6zxepoFgqJk' target='_blank' rel='noopener noreferrer'>YouTube</a></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/bao-li-xuan" target="_blank" rel="noopener noreferrer">MICHELIN →</a> · <a href="https://www.bulgarihotels.com/en_US/shanghai/dining/chinese-fine-dining-restaurant" target="_blank" rel="noopener noreferrer">Site/PDF</a><br><span class='small'>+86 21 3606 7788</span></td></tr>
+<tr data-cats='star2  huangpu'><td><strong>8 ½ Otto e Mezzo Bombana</strong><br><span class='badge badge-star'>2★ Starred</span></td><td>Italian<br><span class='small'>¥¥¥¥</span></td><td><strong>Huangpu</strong><br><span class='small'>6-7F, Associate Mission Building, 169 Yuanmingyuan Road, Huangpu</span></td><td>Mon–Wed 18:00–21:00 · Thu–Sun 12:00–13:30, 18:00–21:00<br><span class='small'>No lunch Mon–Wed</span></td><td>¥¥¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>No published 2026 official PDF menu price (MICHELIN band ¥¥¥¥).</span></td><td><a class='social-link' href='https://www.instagram.com/ottoemezzobombanashanghai/' target='_blank' rel='noopener noreferrer'>Instagram</a> <a class='social-link' href='https://www.youtube.com/watch?v=LtmHnG6sU3Q' target='_blank' rel='noopener noreferrer'>YouTube</a></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/8-%C2%BD-otto-e-mezzo-bombana" target="_blank" rel="noopener noreferrer">MICHELIN →</a> · <a href="https://www.ottoemezzobombana.com/branch/shanghai/" target="_blank" rel="noopener noreferrer">Site/PDF</a><br><span class='small'>+86 21 6087 2890</span></td></tr>
+<tr data-cats='star2  huangpu'><td><strong>Da Vittorio</strong><br><span class='badge badge-star'>2★ Starred</span></td><td>Italian<br><span class='small'>¥¥¥¥</span></td><td><strong>Huangpu</strong><br><span class='small'>3F, N3 Building, The Bund Finance Centre, 600 Zhongshan Dong Er Road, Huangpu</span></td><td>Tue–Sun 12:00–13:30, 18:00–21:30<br><span class='small'>Closed Mon</span></td><td>¥¥¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>No published 2026 official PDF menu price (MICHELIN band ¥¥¥¥).</span></td><td><a class='social-link' href='https://www.instagram.com/davittorioristorante/' target='_blank' rel='noopener noreferrer'>Instagram</a></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-vittorio-570570" target="_blank" rel="noopener noreferrer">MICHELIN →</a> · <a href="https://www.davittorio.com/en/restaurants/da-vittorio-shanghai.html" target="_blank" rel="noopener noreferrer">Site/PDF</a><br><span class='small'>+86 21 6330 2198</span></td></tr>
+<tr data-cats='star2  changning'><td><strong>Fu He Hui</strong><br><span class='badge badge-star'>2★ Starred</span></td><td>Vegetarian<br><span class='small'>¥¥¥¥</span></td><td><strong>Changning</strong><br><span class='small'>1037 Yuyuan Road, Changning</span></td><td>Daily 11:00–13:00, 17:30–21:00<br><span class='small'>Open daily</span></td><td>¥¥¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>Menu pricing not published on MICHELIN page (MICHELIN band ¥¥¥¥).</span></td><td><a class='social-link' href='https://www.youtube.com/shorts/7APfxnHcnMw' target='_blank' rel='noopener noreferrer'>YouTube</a></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fu-he-hui" target="_blank" rel="noopener noreferrer">MICHELIN →</a><br><span class='small'>+86 21 3980 9188</span></td></tr>
+<tr data-cats='star2  huangpu'><td><strong>Canton 8 (Huangpu)</strong><br><span class='badge badge-star'>2★ Starred</span></td><td>Cantonese<br><span class='small'>¥¥</span></td><td><strong>Huangpu</strong><br><span class='small'>63 Runan Street, Huangpu</span></td><td><span class='badge badge-unverified'>Hours unverified</span><br><span class='small'>Hours unverified on MICHELIN page</span></td><td>¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>Famous value 2★ (MICHELIN band ¥¥); exact 2026 official set price unverified.</span></td><td><a class='social-link' href='https://www.youtube.com/watch?v=1V1Yqa9yCYQ' target='_blank' rel='noopener noreferrer'>YouTube</a></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-8-runan-street" target="_blank" rel="noopener noreferrer">MICHELIN →</a><br><span class='small'>+86 21 6733 7123</span></td></tr>
+<tr data-cats='star2  huangpu'><td><strong>Imperial Treasure Fine Chinese Cuisine</strong><br><span class='badge badge-star'>2★ Starred</span></td><td>Cantonese<br><span class='small'>¥¥¥</span></td><td><strong>Huangpu</strong><br><span class='small'>L402-403, 4F Yi Feng Galleria, 99 East Beijing Road, Huangpu</span></td><td><span class='badge badge-unverified'>Hours unverified</span><br><span class='small'>Hours unverified</span></td><td>¥¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>MICHELIN band ¥¥¥; exact 2026 official menu price unverified.</span></td><td><span class='small'>None verified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/imperial-treasure-fine-chinese-cuisine-huangpu" target="_blank" rel="noopener noreferrer">MICHELIN →</a> · <a href="https://www.imperialtreasure.com.cn/china/LG-en/restaurant/Imperial_Treasure_Fine_Chinese_Cuisine-1" target="_blank" rel="noopener noreferrer">Site/PDF</a><br><span class='small'>+86 21 5308 1188</span></td></tr>
+<tr data-cats='star2  xuhui'><td><strong>Ji Pin Court</strong><br><span class='badge badge-star'>2★ Starred</span></td><td>Cantonese<br><span class='small'>¥¥¥</span></td><td><strong>Xuhui</strong><br><span class='small'>3F, 55 South Wulumuqi Road, Xuhui</span></td><td><span class='badge badge-unverified'>Hours unverified</span><br><span class='small'>Hours unverified</span></td><td>¥¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>MICHELIN band ¥¥¥; exact 2026 official menu price unverified.</span></td><td><span class='small'>None verified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/ji-pin-court" target="_blank" rel="noopener noreferrer">MICHELIN →</a><br><span class='small'>+86 21 6469 9969</span></td></tr>
+<tr data-cats='star2  jingan'><td><strong>Tou Zao</strong><br><span class='badge badge-star'>2★ Starred</span></td><td>Cantonese<br><span class='small'>¥¥¥¥</span></td><td><strong>Jing&#x27;an</strong><br><span class='small'>Shop 211, East Wing, Shanghai Centre, 1376 West Nanjing Road, Jing&#x27;an</span></td><td><span class='badge badge-unverified'>Hours unverified</span><br><span class='small'>Hours unverified</span></td><td>¥¥¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>MICHELIN band ¥¥¥¥; exact 2026 official menu price unverified.</span></td><td><span class='small'>None verified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/tou-zao" target="_blank" rel="noopener noreferrer">MICHELIN →</a><br><span class='small'>+86 191 2133 7327</span></td></tr>
+<tr data-cats='star1 priced huangpu'><td><strong>Yi Long Court</strong><br><span class='badge badge-star'>1★ Starred</span></td><td>Cantonese<br><span class='small'>¥¥¥¥</span></td><td><strong>Huangpu</strong><br><span class='small'>2F, The Peninsula Shanghai, 32 Zhongshan Dong Yi Road, Huangpu</span></td><td>Daily 11:30–14:30, 18:00–22:30<br><span class='small'>Open daily</span></td><td><strong>¥788.22 (dim sum lunch)</strong><br><span class='small'>Verified official Peninsula PDF: Chef Dim Sum Lunch for 2 (incl. 16.6% service &amp; tax).</span></td><td><a class='social-link' href='https://www.instagram.com/thepeninsulashanghai/' target='_blank' rel='noopener noreferrer'>Instagram</a></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yi-long-court" target="_blank" rel="noopener noreferrer">MICHELIN →</a> · <a href="https://www.peninsula.com/-/media/files/shanghai/new-dining/yi-long-court/yi-long-court---chef-dim-sum-menu-set_en.pdf" target="_blank" rel="noopener noreferrer">Site/PDF</a><br><span class='small'>+86 21 2327 6742</span></td></tr>
+<tr data-cats='star1  pudong'><td><strong>Jin Xuan</strong><br><span class='badge badge-star'>1★ Starred</span></td><td>Cantonese<br><span class='small'>¥¥¥¥</span></td><td><strong>Pudong</strong><br><span class='small'>53F, The Ritz-Carlton Shanghai, Pudong, 8 Century Avenue, Pudong</span></td><td>Mon–Thu &amp; Sun 11:30–21:30 · Fri–Sat 11:30–22:00<br><span class='small'>Open daily</span></td><td>¥¥¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>MICHELIN band ¥¥¥¥; exact 2026 official menu price unverified.</span></td><td><span class='small'>None verified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/jin-xuan" target="_blank" rel="noopener noreferrer">MICHELIN →</a> · <a href="https://www.ritzcarlton.com/en/hotels/shasz-the-ritz-carlton-shanghai-pudong/dining/" target="_blank" rel="noopener noreferrer">Site/PDF</a><br><span class='small'>+86 21 2020 1717</span></td></tr>
+<tr data-cats='star1  huangpu'><td><strong>Ling Long</strong><br><span class='badge badge-star'>1★ Starred</span></td><td>Innovative<br><span class='small'>¥¥¥¥</span></td><td><strong>Huangpu</strong><br><span class='small'>105, 1F Waldorf Astoria Hotel, 2 Zhongshan Dong Yi Road, Huangpu</span></td><td>Daily 16:00–01:00<br><span class='small'>Open daily</span></td><td>¥¥¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>MICHELIN band ¥¥¥¥; exact 2026 official menu price unverified.</span></td><td><a class='social-link' href='https://www.youtube.com/shorts/3NKW1ISiCKk' target='_blank' rel='noopener noreferrer'>YouTube</a></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/ling-long-1209951" target="_blank" rel="noopener noreferrer">MICHELIN →</a> · <a href="https://restaurantlinglong.com/" target="_blank" rel="noopener noreferrer">Site/PDF</a><br><span class='small'>+86 21 2329 0313</span></td></tr>
+<tr data-cats='star1  huangpu'><td><strong>Canton Table</strong><br><span class='badge badge-star'>1★ Starred</span></td><td>Cantonese<br><span class='small'>¥¥¥</span></td><td><strong>Huangpu</strong><br><span class='small'>5F, Three on the Bund, 3 Zhongshan Dong Yi Road, Huangpu</span></td><td>Daily 11:30–14:30, 17:30–21:30<br><span class='small'>Open daily</span></td><td>¥¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>MICHELIN band ¥¥¥; exact 2026 official menu price unverified.</span></td><td><span class='small'>None verified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-table" target="_blank" rel="noopener noreferrer">MICHELIN →</a><br><span class='small'>+86 21 6321 3737</span></td></tr>
+<tr data-cats='star1  huangpu'><td><strong>Sheng Yong Xing (Huangpu)</strong><br><span class='badge badge-star'>1★ Starred</span></td><td>Beijing Cuisine<br><span class='small'>¥¥¥</span></td><td><strong>Huangpu</strong><br><span class='small'>5F, Bund 5, 20 Guangdong Road, Huangpu</span></td><td><span class='badge badge-unverified'>Hours unverified</span><br><span class='small'>Hours unverified</span></td><td>¥¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>MICHELIN band ¥¥¥; exact 2026 official menu price unverified.</span></td><td><span class='small'>None verified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/sheng-yong-xing" target="_blank" rel="noopener noreferrer">MICHELIN →</a><br><span class='small'>+86 21 6330 2885</span></td></tr>
+<tr data-cats='star1  huangpu'><td><strong>Yong Fu (Huangpu)</strong><br><span class='badge badge-star'>1★ Starred</span></td><td>Ningbo<br><span class='small'>¥¥¥</span></td><td><strong>Huangpu</strong><br><span class='small'>11-12F, Cathay Building, Jin Jiang Hotel, 59 South Maoming Road, Huangpu</span></td><td>Daily 11:00–14:00, 17:00–21:00<br><span class='small'>Open daily</span></td><td>¥¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>MICHELIN band ¥¥¥; exact 2026 official menu price unverified.</span></td><td><span class='small'>None verified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yong-fu" target="_blank" rel="noopener noreferrer">MICHELIN →</a> · <a href="https://www.yongfugroup.com/" target="_blank" rel="noopener noreferrer">Site/PDF</a><br><span class='small'>+86 21 3356 6777</span></td></tr>
+<tr data-cats='star1  jingan'><td><strong>Xin Rong Ji (West Nanjing Road)</strong><br><span class='badge badge-star'>1★ Starred</span></td><td>Taizhou<br><span class='small'>¥¥¥¥</span></td><td><strong>Jing&#x27;an</strong><br><span class='small'>West Nanjing Road, Jing&#x27;an (HKRI Taikoo Hui)</span></td><td><span class='badge badge-unverified'>Hours unverified</span><br><span class='small'>Hours unverified</span></td><td>¥¥¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>MICHELIN band ¥¥¥¥; exact 2026 official menu price unverified.</span></td><td><a class='social-link' href='https://www.youtube.com/watch?v=iKhz-w8cPY8' target='_blank' rel='noopener noreferrer'>YouTube</a></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/xin-rong-ji-west-nanjing-road" target="_blank" rel="noopener noreferrer">MICHELIN →</a> · <a href="https://www.xinrongji.com/" target="_blank" rel="noopener noreferrer">Site/PDF</a><br><span class='small'></span></td></tr>
+<tr data-cats='star1  jingan'><td><strong>Il Ristorante - Niko Romito</strong><br><span class='badge badge-star'>1★ Starred</span></td><td>Italian<br><span class='small'>¥¥¥¥</span></td><td><strong>Jing&#x27;an</strong><br><span class='small'>Bvlgari Hotel Shanghai, Lane 108 North Shanxi Road, Jing&#x27;an</span></td><td><span class='badge badge-unverified'>Hours unverified</span><br><span class='small'>Hours unverified</span></td><td>¥¥¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>MICHELIN band ¥¥¥¥; shares Bvlgari property with 2★ Bao Li Xuan.</span></td><td><span class='small'>None verified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/il-ristorante-niko-romito-563683" target="_blank" rel="noopener noreferrer">MICHELIN →</a> · <a href="https://www.bulgarihotels.com/en_US/shanghai/dining" target="_blank" rel="noopener noreferrer">Site/PDF</a><br><span class='small'></span></td></tr>
+<tr data-cats='star1  huangpu'><td><strong>Cheng Long Hang (Huangpu)</strong><br><span class='badge badge-star'>1★ Starred</span></td><td>Shanghainese<br><span class='small'>¥¥¥</span></td><td><strong>Huangpu</strong><br><span class='small'>216 Jiujiang Road, Huangpu</span></td><td><span class='badge badge-unverified'>Hours unverified</span><br><span class='small'>Hours unverified</span></td><td>¥¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>MICHELIN band ¥¥¥; hairy-crab specialist.</span></td><td><span class='small'>None verified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/cheng-long-hang-huangpu" target="_blank" rel="noopener noreferrer">MICHELIN →</a><br><span class='small'>+86 21 6321 2010</span></td></tr>
+<tr data-cats='selected priced huangpu'><td><strong>Sir Elly&#x27;s</strong><br><span class='badge badge-guide'>MICHELIN Selected · No Star</span></td><td>European Contemporary<br><span class='small'>¥¥¥¥</span></td><td><strong>Huangpu</strong><br><span class='small'>13F, The Peninsula Shanghai, 32 Zhongshan Dong Yi Road, Huangpu</span></td><td><span class='badge badge-unverified'>Hours unverified</span><br><span class='small'>Verify dinner seating on Peninsula site</span></td><td><strong>¥3,003.62 (4-course dinner)</strong><br><span class='small'>Verified official Peninsula PDF: ¥1,288 pp × 2 + 16.6% service &amp; tax.</span></td><td><a class='social-link' href='https://www.instagram.com/sirellys.restaurant/' target='_blank' rel='noopener noreferrer'>Instagram</a></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/sir-elly-s" target="_blank" rel="noopener noreferrer">MICHELIN →</a> · <a href="https://www.peninsula.com/-/media/files/shanghai/new-dining/sir-ellys/dinner/4_course_menu.pdf" target="_blank" rel="noopener noreferrer">Site/PDF</a><br><span class='small'>+86 21 2327 6756</span></td></tr>
+<tr data-cats='selected  huangpu'><td><strong>Mr &amp; Mrs Bund</strong><br><span class='badge badge-guide'>MICHELIN Selected · No Star</span></td><td>French Contemporary<br><span class='small'>¥¥¥¥</span></td><td><strong>Huangpu</strong><br><span class='small'>6F, Bund 18, 18 Zhongshan Dong Yi Road, Huangpu</span></td><td><span class='badge badge-unverified'>Hours unverified</span><br><span class='small'>Hours unverified</span></td><td>¥¥¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>Listed in MICHELIN Guide (Selected — no star). Band ¥¥¥¥.</span></td><td><span class='small'>None verified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/mr-mrs-bund" target="_blank" rel="noopener noreferrer">MICHELIN →</a><br><span class='small'></span></td></tr>
+<tr data-cats='selected  xuhui'><td><strong>YongFoo Élite</strong><br><span class='badge badge-guide'>MICHELIN Selected · No Star</span></td><td>Shanghainese<br><span class='small'>¥¥¥¥</span></td><td><strong>Xuhui</strong><br><span class='small'>200 Yongfu Road, Xuhui</span></td><td><span class='badge badge-unverified'>Hours unverified</span><br><span class='small'>Hours unverified</span></td><td>¥¥¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>Listed in MICHELIN Guide (Selected — no star). Band ¥¥¥¥.</span></td><td><span class='small'>None verified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yongfoo-elite" target="_blank" rel="noopener noreferrer">MICHELIN →</a><br><span class='small'></span></td></tr>
+<tr data-cats='bib  huangpu'><td><strong>Polux</strong><br><span class='badge badge-guide'>Bib Gourmand · No Star</span></td><td>French<br><span class='small'>¥¥</span></td><td><strong>Huangpu</strong><br><span class='small'>Xintiandi North Block, Huangpu (steps from Langham &amp; Andaz)</span></td><td><span class='badge badge-unverified'>Hours unverified</span><br><span class='small'>Hours unverified</span></td><td>¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>Listed in MICHELIN Guide (Bib Gourmand — no star). Band ¥¥.</span></td><td><a class='social-link' href='https://www.instagram.com/poluxbypp/' target='_blank' rel='noopener noreferrer'>Instagram</a></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/polux" target="_blank" rel="noopener noreferrer">MICHELIN →</a><br><span class='small'></span></td></tr>
+<tr data-cats='bib  jingan'><td><strong>Gong De Lin (West Nanjing Road)</strong><br><span class='badge badge-guide'>Bib Gourmand · No Star</span></td><td>Vegetarian<br><span class='small'>¥</span></td><td><strong>Jing&#x27;an</strong><br><span class='small'>445 West Nanjing Road, Jing&#x27;an</span></td><td><span class='badge badge-unverified'>Hours unverified</span><br><span class='small'>Hours unverified</span></td><td>¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>Listed in MICHELIN Guide (Bib Gourmand — no star). Historic vegetarian spot, band ¥.</span></td><td><span class='small'>None verified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/gong-de-lin-jingan" target="_blank" rel="noopener noreferrer">MICHELIN →</a><br><span class='small'>+86 21 6327 0218</span></td></tr>
+<tr data-cats='bib  huangpu'><td><strong>Rong Cuisine (Huangpu)</strong><br><span class='badge badge-guide'>Bib Gourmand · No Star</span></td><td>Taizhou<br><span class='small'>¥¥</span></td><td><strong>Huangpu</strong><br><span class='small'>Huangpu</span></td><td><span class='badge badge-unverified'>Hours unverified</span><br><span class='small'>Hours unverified</span></td><td>¥¥ · <span class='badge badge-unverified'>Menu unverified</span><br><span class='small'>Listed in MICHELIN Guide (Bib Gourmand — no star). Band ¥¥.</span></td><td><span class='small'>None verified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/rong-cuisine-huangpu" target="_blank" rel="noopener noreferrer">MICHELIN →</a><br><span class='small'></span></td></tr>
+</tbody>
+        </table>
+      </div>
+    </section>
 
-<div class="filters">
-<input type="search" placeholder="Filter: Canton 8, vegetarian, 2 stars, Huangpu…" data-filter-target="restTable">
-<span class="hint">Click any ★ column to sort. All prices are totals for 2 (tasting + fees where listed). Source per row.</span>
-</div>
+    <section class="section">
+      <h2>Complete Official 2026 Shanghai Starred Directory (50 Venues)</h2>
+      <p class="sub">Every currently starred restaurant on <a href="https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred" target="_blank" rel="noopener noreferrer">guide.michelin.com/shanghai/all-starred</a>. District cells remain flagged where individual pages were not yet fetched.</p>
+      <div class="filter-bar">
+        <input class="search-input" type="search" placeholder="Filter all 50 starred restaurants..." data-filter-target="all50-table" aria-label="Filter all 50 starred restaurants">
+        <span class="small" data-count-for="all50-table">50 of 50 shown</span>
+      </div>
+      <div class="table-wrap">
+        <table id="all50-table">
+          <thead><tr><th class="num" data-sort="numeric">#</th><th data-sort="text">Name</th><th data-sort="text">Stars</th><th data-sort="text">Cuisine</th><th data-sort="text">Band</th><th data-sort="text">District</th><th>Official Listing</th></tr></thead>
+          <tbody><tr><td class='num'>1</td><td><strong>Taian Table</strong></td><td><span class='badge badge-star'>3★</span></td><td>Innovative</td><td>¥¥¥¥</td><td>Changning</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>2</td><td><strong>T&#x27;ang Court</strong></td><td><span class='badge badge-star'>2★</span></td><td>Cantonese</td><td>¥¥¥¥</td><td>Huangpu</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/t-ang-court-506725" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>3</td><td><strong>Ji Pin Court</strong></td><td><span class='badge badge-star'>2★</span></td><td>Cantonese</td><td>¥¥¥</td><td>Xuhui</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/ji-pin-court" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>4</td><td><strong>Fu He Hui</strong></td><td><span class='badge badge-star'>2★</span></td><td>Vegetarian</td><td>¥¥¥¥</td><td>Changning</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fu-he-hui" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>5</td><td><strong>Tou Zao</strong></td><td><span class='badge badge-star'>2★</span></td><td>Cantonese</td><td>¥¥¥¥</td><td>Jing&#x27;an</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/tou-zao" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>6</td><td><strong>Amazing Chinese Cuisine (Changning)</strong></td><td><span class='badge badge-star'>2★</span></td><td>Chao Zhou</td><td>¥¥¥¥</td><td>Changning</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/amazing-chinese-cuisine-changning" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>7</td><td><strong>The House of Rong</strong></td><td><span class='badge badge-star'>2★</span></td><td>Taizhou</td><td>¥¥¥¥</td><td>Jing&#x27;an</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/the-house-of-rong" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>8</td><td><strong>Canton 8 (Huangpu)</strong></td><td><span class='badge badge-star'>2★</span></td><td>Cantonese</td><td>¥¥</td><td>Huangpu</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-8-runan-street" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>9</td><td><strong>8 ½ Otto e Mezzo Bombana</strong></td><td><span class='badge badge-star'>2★</span></td><td>Italian</td><td>¥¥¥¥</td><td>Huangpu</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/8-%C2%BD-otto-e-mezzo-bombana" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>10</td><td><strong>Imperial Treasure Fine Chinese Cuisine</strong></td><td><span class='badge badge-star'>2★</span></td><td>Cantonese</td><td>¥¥¥</td><td>Huangpu</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/imperial-treasure-fine-chinese-cuisine-huangpu" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>11</td><td><strong>Da Vittorio</strong></td><td><span class='badge badge-star'>2★</span></td><td>Italian</td><td>¥¥¥¥</td><td>Huangpu</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-vittorio-570570" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>12</td><td><strong>Bao Li Xuan</strong></td><td><span class='badge badge-star'>2★</span></td><td>Cantonese</td><td>¥¥¥¥</td><td>Jing&#x27;an</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/bao-li-xuan" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>13</td><td><strong>Lu Style (Huangpu)</strong></td><td><span class='badge badge-star'>1★</span></td><td>Shandong</td><td>¥¥¥</td><td>Huangpu</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/lu-style-1203592" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>14</td><td><strong>Oriental Sense &amp; Palate</strong></td><td><span class='badge badge-star'>1★</span></td><td>Chao Zhou</td><td>¥¥¥¥</td><td>Huangpu</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/oriental-sense-palate" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>15</td><td><strong>Obscura</strong></td><td><span class='badge badge-star'>1★</span></td><td>Innovative</td><td>¥¥¥¥</td><td><span class="badge badge-unverified">Unverified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/obscura" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>16</td><td><strong>Vivant by Johnny Pham</strong></td><td><span class='badge badge-star'>1★</span></td><td>French Contemporary</td><td>¥¥¥¥</td><td><span class="badge badge-unverified">Unverified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/vivant-by-johnny-pham" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>17</td><td><strong>Narisawa</strong></td><td><span class='badge badge-star'>1★</span></td><td>Innovative</td><td>¥¥¥¥</td><td><span class="badge badge-unverified">Unverified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/narisawa-1209925" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>18</td><td><strong>Fabula</strong></td><td><span class='badge badge-star'>1★</span></td><td>Innovative</td><td>¥¥¥¥</td><td>Jing&#x27;an</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fabula" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>19</td><td><strong>Xin Rong Ji (West Nanjing Road)</strong></td><td><span class='badge badge-star'>1★</span></td><td>Taizhou</td><td>¥¥¥¥</td><td>Jing&#x27;an</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/xin-rong-ji-west-nanjing-road" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>20</td><td><strong>Yong Fu (Huangpu)</strong></td><td><span class='badge badge-star'>1★</span></td><td>Ningbo</td><td>¥¥¥</td><td>Huangpu</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yong-fu" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>21</td><td><strong>Seventh Son</strong></td><td><span class='badge badge-star'>1★</span></td><td>Cantonese</td><td>¥¥¥</td><td>Jing&#x27;an</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/seventh-son-jingan" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>22</td><td><strong>Fu 1015</strong></td><td><span class='badge badge-star'>1★</span></td><td>Shanghainese</td><td>¥¥¥¥</td><td>Changning</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fu-1015" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>23</td><td><strong>Wu You Xian</strong></td><td><span class='badge badge-star'>1★</span></td><td>Dim Sum</td><td>¥¥</td><td><span class="badge badge-unverified">Unverified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/wu-you-xian" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>24</td><td><strong>Moose (Changning)</strong></td><td><span class='badge badge-star'>1★</span></td><td>Jiangzhe</td><td>¥¥¥</td><td>Changning</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/moose-changning" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>25</td><td><strong>le Comptoir de Pierre Gagnaire</strong></td><td><span class='badge badge-star'>1★</span></td><td>French Contemporary</td><td>¥¥¥¥</td><td>Xuhui</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/le-comptoir-de-pierre-gagnaire" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>26</td><td><strong>Lao Zheng Xing</strong></td><td><span class='badge badge-star'>1★</span></td><td>Shanghainese</td><td>¥¥</td><td>Huangpu</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/lao-zheng-xing-huangpu" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>27</td><td><strong>Gastro Esthetics at DaDong</strong></td><td><span class='badge badge-star'>1★</span></td><td>Chinese Contemporary</td><td>¥¥¥</td><td><span class="badge badge-unverified">Unverified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/gastro-esthetics-at-dadong" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>28</td><td><strong>Fu 1088</strong></td><td><span class='badge badge-star'>1★</span></td><td>Shanghainese</td><td>¥¥¥</td><td><span class="badge badge-unverified">Unverified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fu-1088" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>29</td><td><strong>Da Dong (Xuhui)</strong></td><td><span class='badge badge-star'>1★</span></td><td>Chinese Contemporary</td><td>¥¥¥</td><td>Xuhui</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-dong-xuhui" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>30</td><td><strong>Huaiyang Delights (Jingan)</strong></td><td><span class='badge badge-star'>1★</span></td><td>Huaiyang</td><td>¥¥¥</td><td>Jing&#x27;an</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/huaiyang-delights-jingan" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>31</td><td><strong>Ren He Guan (Xuhui)</strong></td><td><span class='badge badge-star'>1★</span></td><td>Shanghainese</td><td>¥¥</td><td>Xuhui</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/ren-he-guan-zhaojiabang-road" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>32</td><td><strong>Sole</strong></td><td><span class='badge badge-star'>1★</span></td><td>Cantonese</td><td>¥¥¥</td><td><span class="badge badge-unverified">Unverified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/sole" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>33</td><td><strong>Lei Garden (Xuhui)</strong></td><td><span class='badge badge-star'>1★</span></td><td>Cantonese</td><td>¥¥</td><td>Xuhui</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/lei-garden-xuhui" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>34</td><td><strong>Fu 1039</strong></td><td><span class='badge badge-star'>1★</span></td><td>Shanghainese</td><td>¥¥¥</td><td><span class="badge badge-unverified">Unverified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fu-1039" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>35</td><td><strong>Yong Yi Ting</strong></td><td><span class='badge badge-star'>1★</span></td><td>Jiangzhe</td><td>¥¥¥</td><td><span class="badge badge-unverified">Unverified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yong-yi-ting" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>36</td><td><strong>Moose (Pudong)</strong></td><td><span class='badge badge-star'>1★</span></td><td>Jiangzhe</td><td>¥¥¥</td><td>Pudong</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/moose-pudong" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>37</td><td><strong>Canton Table</strong></td><td><span class='badge badge-star'>1★</span></td><td>Cantonese</td><td>¥¥¥</td><td>Huangpu</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-table" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>38</td><td><strong>Cheng Long Hang (Huangpu)</strong></td><td><span class='badge badge-star'>1★</span></td><td>Shanghainese</td><td>¥¥¥</td><td>Huangpu</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/cheng-long-hang-huangpu" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>39</td><td><strong>Maison Lameloise</strong></td><td><span class='badge badge-star'>1★</span></td><td>French Contemporary</td><td>¥¥¥¥</td><td><span class="badge badge-unverified">Unverified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/maison-lameloise-563686" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>40</td><td><strong>Sheng Yong Xing (Huangpu)</strong></td><td><span class='badge badge-star'>1★</span></td><td>Beijing Cuisine</td><td>¥¥¥</td><td>Huangpu</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/sheng-yong-xing" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>41</td><td><strong>Jin Xuan</strong></td><td><span class='badge badge-star'>1★</span></td><td>Cantonese</td><td>¥¥¥¥</td><td>Pudong</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/jin-xuan" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>42</td><td><strong>Il Ristorante - Niko Romito</strong></td><td><span class='badge badge-star'>1★</span></td><td>Italian</td><td>¥¥¥¥</td><td>Jing&#x27;an</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/il-ristorante-niko-romito-563683" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>43</td><td><strong>Yi Long Court</strong></td><td><span class='badge badge-star'>1★</span></td><td>Cantonese</td><td>¥¥¥¥</td><td>Huangpu</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yi-long-court" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>44</td><td><strong>Meet the Bund (Zhongshan Dong Er Road)</strong></td><td><span class='badge badge-star'>1★</span></td><td>Fujian</td><td>¥¥¥</td><td>Huangpu</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/meet-the-bund" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>45</td><td><strong>Lei Garden (Pudong)</strong></td><td><span class='badge badge-star'>1★</span></td><td>Cantonese</td><td>¥¥¥</td><td>Pudong</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/lei-garden-pudong" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>46</td><td><strong>Ling Long</strong></td><td><span class='badge badge-star'>1★</span></td><td>Innovative</td><td>¥¥¥¥</td><td>Huangpu</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/ling-long-1209951" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>47</td><td><strong>Yong Fu (Hongkou)</strong></td><td><span class='badge badge-star'>1★</span></td><td>Ningbo</td><td>¥¥¥¥</td><td>Hongkou</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yong-fu-hongkou" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>48</td><td><strong>Ming Court (Minhang)</strong></td><td><span class='badge badge-star'>1★</span></td><td>Cantonese</td><td>¥¥¥</td><td>Minhang</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/ming-court-570629" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>49</td><td><strong>Yue Hai Tang</strong></td><td><span class='badge badge-star'>1★</span></td><td>Cantonese</td><td>¥¥¥</td><td><span class="badge badge-unverified">Unverified</span></td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yue-hai-tang" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+<tr><td class='num'>50</td><td><strong>Zhou She (Minhang)</strong></td><td><span class='badge badge-star'>1★</span></td><td>Shanghainese</td><td>¥¥¥</td><td>Minhang</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/zhou-she-minhang" target="_blank" rel="noopener noreferrer">MICHELIN →</a></td></tr>
+</tbody>
+        </table>
+      </div>
+    </section>
+  </main>
 
-<div class="table-wrap"><table id="restTable">
-<thead><tr>
-<th data-sort="text">Restaurant (district • Cuisine)</th>
-<th data-sort="text">Michelin status</th>
-<th class="num" data-sort="numeric">Cost for 2 (total)</th>
-<th>Open days & hours + exceptions</th>
-<th>Social (YT/TikTok/IG)</th>
-<th>Official links</th>
-<th>Source</th>
-</tr></thead>
-<tbody>
-<!-- Taian -->
-<tr>
-<td><strong>Taian Table</strong><br><span class="small">Changning · Innovative · 101-102 Garden Office No.161 Lane 465 Zhenning Road, Changning</span></td>
-<td><span class="badge badge-star">3 Michelin Stars</span><br><span class="small">2026 guide: sole 3★ in Shanghai — “Exceptional”</span></td>
-<td class="num">¥5,176–¥5,776 total for 2<br><span class="small">¥2,588 (10 courses) / ¥2,888 (12 courses) pp, incl. service &amp; taxes</span></td>
-<td>Tue–Sat lunch 12:00–14:00, dinner 18:30–22:30<br>Closed Sun/Mon<br><em>Exception: CNY week reduced (reconfirm Jan 2027)</em></td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Taian+Table+Shanghai" target="_blank">YouTube</a> · <a href="https://www.tiktok.com/search?q=Taian%20Table%20Shanghai" target="_blank">TikTok</a> · <a href="https://www.instagram.com/explore/tags/taianTable/" target="_blank">IG</a></td>
-<td class="small"><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table" target="_blank">Michelin page</a> · <a href="https://sh.taian-table.cn/" target="_blank">sh.taian-table.cn</a> · <a href="tel:+8617301605350">+86 173 0160 5350</a></td>
-<td class="source"><a href="https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred" target="_blank">guide.michelin.com starred (50)</a> · <a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table" target="_blank">Taian 3★ page</a></td>
-</tr>
-<!-- Ultraviolet -->
-<tr>
-<td><strong>Ultraviolet by Paul Pairet — CLOSED</strong><br><span class="small">Formerly Huangpu (secret loc.) · Innovative/Avant-garde</span></td>
-<td><span class="badge badge-unverified">Closed 29 Mar 2025 — removed from 2026 guide</span></td>
-<td class="num">— (closed, not bookable)</td>
-<td>Closed permanently (final service 29 Mar 2025)</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Ultraviolet+Paul+Pairet+Shanghai" target="_blank">YouTube</a> · <a href="https://www.tiktok.com/search?q=Ultraviolet%20Shanghai" target="_blank">TikTok</a> · <a href="https://www.instagram.com/uvbypp/" target="_blank">IG uvbypp</a></td>
-<td class="small">— (closed)</td>
-<td class="source"><a href="https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred" target="_blank">2026 guide: Ultraviolet absent (50 starred)</a> · closure reported in 2026 guide coverage</td>
-</tr>
-<!-- 8½ Otto -->
-<tr>
-<td><strong>8½ Otto e Mezzo Bombana</strong><br><span class="small">Huangpu (The Peninsula) · Italian</span></td>
-<td><span class="badge badge-star">2 Stars</span></td>
-<td class="num">¥1,800–¥3,200 total for 2<br><span class="small">Set ~¥800–1,400 pp</span></td>
-<td>Daily 11:30–14:30, 18:00–22:30<br><em>No Mon closure currently</em></td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Otto+e+Mezzo+Shanghai" target="_blank">YT</a> · <a href="https://www.tiktok.com/search?q=otto%20mezzo%20shanghai" target="_blank">TikTok</a> · <a href="https://www.instagram.com/ottoemezzoshanghai/" target="_blank">IG</a></td>
-<td class="small"><a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/8-1-2-otto-e-mezzo-bombana" target="_blank">Michelin</a> · <a href="https://www.peninsula.com/en/shanghai/dining" target="_blank">Peninsula dining</a></td>
-<td class="source"><a href="https://guide.michelin.com/us/en/shanghai-municipality/restaurants/all-starred" target="_blank">guide starred list</a></td>
-</tr>
-<!-- Bao Li Xuan -->
-<tr>
-<td><strong>Bao Li Xuan (The Bull & Claw)</strong><br><span class="small">Huangpu · Cantonese</span></td>
-<td><span class="badge badge-star">2 Stars</span></td>
-<td class="num">¥1,200–¥2,000 total for 2</td>
-<td>Tue–Sun 11:30–14:30, 17:30–22:00<br>Closed Mon</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Bao+Li+Xuan+Shanghai" target="_blank">YT</a> · <a href="https://www.tiktok.com/search?q=baolixuan%20shanghai" target="_blank">TikTok</a></td>
-<td class="small"><a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/bao-li-xuan" target="_blank">Michelin</a></td>
-<td class="source"><a href="https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred" target="_blank">Michelin starred</a></td>
-</tr>
-<!-- Canton 8 -->
-<tr>
-<td><strong>Canton 8 (Runan St.)</strong><br><span class="small">Huangpu · Cantonese dim sum</span></td>
-<td><span class="badge badge-star">2 Stars</span></td>
-<td class="num">¥424 total for 2<br><span class="small">¥212 pp budget (Michelin “Budget-friendly” 2024 feature)</span></td>
-<td>Mon–Sun 11:00–14:00, 17:00–21:00<br><em>Queue expected — weekend waits flagged</em></td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Canton+8+Shanghai" target="_blank">YT</a> · <a href="https://www.tiktok.com/search?q=canton%208%20shanghai" target="_blank">TikTok</a></td>
-<td class="small"><a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/canton-8-1139821" target="_blank">Michelin</a></td>
-<td class="source"><a href="https://guide.michelin.com/tw/en/article/travel/budget-friendly-michelin-star-restaurants-in-mainland-china" target="_blank">Michelin budget article ¥212pp</a></td>
-</tr>
-<!-- Da Vittorio -->
-<tr>
-<td><strong>Da Vittorio Shanghai</strong><br><span class="small">Huangpu (The Middle? Xuhui) · Italian</span></td>
-<td><span class="badge badge-star">2 Stars</span></td>
-<td class="num">¥2,600–¥4,000 total for 2<br><span class="small">¥1,298 pp tasting (2024)</span></td>
-<td>Daily 11:30–14:00, 18:00–22:00</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Da+Vittorio+Shanghai" target="_blank">YT</a> · <a href="https://www.instagram.com/davittorioshanghai/" target="_blank">IG</a></td>
-<td class="small"><a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/da-vittorio" target="_blank">Michelin</a></td>
-<td class="source"><a href="https://www.sophieservesup.com/articles/51-restaurants-receive-stars-in-the-2024-michelin-guide-shanghai/" target="_blank">2024 2★ list</a></td>
-</tr>
-<!-- Fu He Hui -->
-<tr>
-<td><strong>Fu He Hui (Fuhehui)</strong><br><span class="small">Changning · Vegetarian · Chaozhou-inspired</span></td>
-<td><span class="badge badge-star">2 Stars</span><br><span class="small">Promoted to 2★ in 2026 guide</span></td>
-<td class="num">¥900–¥1,600 total for 2<br><span class="small">¥¥¥¥ guide = 500+ pp</span></td>
-<td>Tue–Sun 11:30–14:00, 18:00–22:00<br>Closed Mon</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Fu+He+Hui+Shanghai+vegetarian" target="_blank">YT</a> · <a href="https://www.tiktok.com/search?q=fuhehui" target="_blank">TikTok</a></td>
-<td class="small"><a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/fu-he-hui" target="_blank">Michelin</a></td>
-<td class="source"><a href="https://guide.michelin.com/us/en/shanghai-municipality/restaurants/all-starred" target="_blank">Michelin starred</a></td>
-</tr>
-<!-- Fu 1039 -->
-<tr>
-<td><strong>Fu 1039</strong><br><span class="small">Jing’an — Shanghainese</span></td>
-<td><span class="badge badge-star">1 Star</span></td>
-<td class="num">¥800–¥1,400 total for 2<br><span class="small">¥¥¥ guide</span></td>
-<td>Daily 11:30–14:00, 17:30–22:00</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Fu+1039+Shanghai" target="_blank">YT</a> · <a href="https://www.instagram.com/explore/tags/fu1039/" target="_blank">IG</a></td>
-<td class="small"><a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/fu-1039" target="_blank">Michelin</a></td>
-<td class="source"><a href="https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred" target="_blank">Michelin Shanghai</a></td>
-</tr>
-<!-- Jin Xuan -->
-<tr>
-<td><strong>Jin Xuan (Ritz-Carlton Pudong)</strong><br><span class="small">Pudong · Cantonese</span></td>
-<td><span class="badge badge-star">1 Star</span></td>
-<td class="num">¥1,100–¥1,900 total for 2<br><span class="small">¥¥¥¥ guide</span></td>
-<td>Daily 11:30–14:30, 18:00–22:00</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Jin+Xuan+Shanghai" target="_blank">YT</a></td>
-<td class="small"><a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/jin-xuan-1139875" target="_blank">Michelin</a> · <a href="https://www.ritzcarlton.com/en/hotels/sharz-the-ritz-carlton-shanghai-pudong/dining/" target="_blank">Ritz dining</a></td>
-<td class="source"><a href="https://guide.michelin.com/us/en/shanghai-municipality/restaurants/all-starred" target="_blank">Michelin</a></td>
-</tr>
-<!-- Lao Zheng Xing -->
-<tr>
-<td><strong>Lao Zheng Xing (Huangpu)</strong><br><span class="small">Huangpu · Shanghainese (est. 1862)</span></td>
-<td><span class="badge badge-star">1 Star</span></td>
-<td class="num">¥372 total for 2<br><span class="small">¥186 pp (Michelin budget article)</span></td>
-<td>Daily 11:00–14:00, 17:00–21:00</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Lao+Zheng+Xing+Shanghai" target="_blank">YT</a> · <a href="https://www.tiktok.com/search?q=lao%20zheng%20xing" target="_blank">TikTok</a></td>
-<td class="small"><a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/lao-zheng-xing-1139946" target="_blank">Michelin</a></td>
-<td class="source"><a href="https://guide.michelin.com/tw/en/article/travel/budget-friendly-michelin-star-restaurants-in-mainland-china" target="_blank">Michelin ¥186pp verify</a></td>
-</tr>
-<!-- Yong Fu -->
-<tr>
-<td><strong>Yong Fu (Huangpu) — Ningbo cuisine</strong><br><span class="small">Huangpu · Ningbo</span></td>
-<td><span class="badge badge-star">1 Star</span></td>
-<td class="num">¥600–¥1,000 total for 2<br><span class="small">¥¥¥ guide</span></td>
-<td>Tue–Sun 11:30–14:00, 17:00–22:00<br>Closed Mon (check hotel host Yongfoo Élite variation)</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Yong+Fu+Shanghai" target="_blank">YT</a></td>
-<td class="small"><a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/yong-fu-1139921" target="_blank">Michelin</a></td>
-<td class="source"><a href="https://guide.michelin.com/us/en/shanghai-municipality/restaurants/all-starred" target="_blank">Michelin</a></td>
-</tr>
-<!-- Cheng Long Hang -->
-<tr>
-<td><strong>Cheng Long Hang (Huangpu)</strong><br><span class="small">Huangpu · Shanghainese</span></td>
-<td><span class="badge badge-star">1 Star</span></td>
-<td class="num">¥700–¥1,200 total for 2</td>
-<td>Daily 11:00–14:00, 17:00–21:30</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Cheng+Long+Hang+Shanghai" target="_blank">YT</a></td>
-<td class="small"><a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/cheng-long-hang-huangpu-1139899" target="_blank">Michelin</a></td>
-<td class="source"><a href="https://guide.michelin.com/us/en/shanghai-municipality/restaurants/all-starred" target="_blank">Michelin</a></td>
-</tr>
-<!-- Ren He Guan -->
-<tr>
-<td><strong>Ren He Guan (Xuhui)</strong><br><span class="small">Xuhui · Shanghainese</span></td>
-<td><span class="badge badge-star">1 Star</span></td>
-<td class="num">¥412 total for 2<br><span class="small">¥206 pp (Michelin budget article)</span></td>
-<td>Daily 11:00–14:00, 17:00–21:30</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Ren+He+Guan+Shanghai" target="_blank">YT</a></td>
-<td class="small"><a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/ren-he-guan-1139942" target="_blank">Michelin</a></td>
-<td class="source"><a href="https://guide.michelin.com/tw/en/article/travel/budget-friendly-michelin-star-restaurants-in-mainland-china" target="_blank">Michelin ¥206pp</a></td>
-</tr>
-<!-- Yi Long Court -->
-<tr>
-<td><strong>Yi Long Court (The Peninsula)</strong><br><span class="small">Huangpu · Cantonese</span></td>
-<td><span class="badge badge-star">1 Star</span></td>
-<td class="num">¥1,400–¥2,200 total for 2<br><span class="small">Hotel restaurant — Peninsula dining</span></td>
-<td>Daily 11:30–14:30, 18:00–22:00</td>
-<td class="small"><a href="https://www.youtube.com/results?search_query=Yi+Long+Court+Peninsula+Shanghai" target="_blank">YT</a> · <a href="https://www.instagram.com/thepeninsulashanghai/" target="_blank">IG Peninsula</a></td>
-<td class="small"><a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/yi-long-court" target="_blank">Michelin</a> · <a href="https://www.peninsula.com/en/shanghai/dining/yi-long-court" target="_blank">Peninsula dining</a></td>
-<td class="source"><a href="https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred" target="_blank">Michelin Shanghai</a></td>
-</tr>
-</tbody></table></div>
-<p class="small mt8">Guide key: ¥ = ≤RMB 150 pp · ¥¥ = 150–350 pp · ¥¥¥ = 350–600 pp · ¥¥¥¥ = 600+ pp (Michelin China scale on guide pages). Where guide shows an exact per-person budget article (Canton 8, Lao Zheng Xing, Ren He Guan) we compute exact totals for 2; else we show a range derived from that scale and flag as <span class="badge badge-unverified">estimate</span> — every range cell links to the guide ¥ indicator on that restaurant’s Michelin page.</p>
-
-<div class="card mt16">
-<h3>Bib Gourmand (good value, Guide-listed not starred — book if starred is full)</h3>
-<div class="table-wrap"><table><thead><tr><th>Restaurant (Bib)</th><th>Michelin status</th><th class="num">For 2 (total)</th><th>Open / Hours</th><th>Official</th></tr></thead><tbody>
-<tr><td><strong>A Niang Mian Guan</strong> (Xuhui)</td><td><span class="badge badge-guide">Bib Gourmand — Good value</span></td><td class="num">¥120–¥200 for 2</td><td>Daily 10:00–21:00</td><td><a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/a-niang-mian-guan" target="_blank">Michelin</a></td></tr>
-<tr><td><strong>Da Hu Chun (Sichuan Rd) — shengjian bao</strong></td><td><span class="badge badge-guide">Bib Gourmand</span></td><td class="num">¥80–¥160 for 2</td><td>Daily 07:00–21:00</td><td><a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/da-hu-chun-1139913" target="_blank">Michelin</a></td></tr>
-<tr><td><strong>Ya’s Sichuan (Rong Cuisine) Huangpu</strong></td><td><span class="badge badge-guide">Bib Gourmand</span></td><td class="num">¥200–¥400 for 2</td><td>Daily 11:00–22:00</td><td><a href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/rong-cuisine" target="_blank">Michelin</a></td></tr>
-</tbody></table></div>
-<p class="small">Bib = Michelin's “good quality, good value cooking” badge — not a star, but still <em>Michelin-selected</em>. Listed here for budget nights. Sources: <a href="https://guide.michelin.com/us/en/shanghai-municipality/restaurants" target="_blank">Michelin Shanghai overview</a>.</p>
-</div>
-
-<div class="notice warn">
-<strong>Irregularity flagged:</strong> Hours above are from guide pages + hotel dining pages at 2026-11-25 check. Shanghai kitchens often close an extra day after CNY and take Mondays in Feb — see <a href="flagged.html#restaurant-hours">Flagged → Restaurant hours</a> for the Monday-warning list (Taian, Fu He Hui, Bao Li Xuan, Yong Fu). Always reconfirm via phone/WeChat 2 weeks before you go; we list phone on each restaurant’s official link where published.
-</div>
-
-<footer class="footer"><div class="container"><a href="index.html">← Dashboard</a> • <a href="activities.html">Next: Activities →</a></div></div></footer>
-</main></body></html>
+  <footer class="footer">
+    <div class="container footer-row">
+      <span>ChinaFun3 Root Dashboard · Verified <strong>2026-11-26</strong> · Every table row carries an official source link or explicit <span class="badge badge-unverified">Unverified · Flagged</span> label.</span>
+      <span><a href="methodology.html">Verification Methodology</a> · <a href="flagged.html">Audit Log (F01–F10)</a> · <a href="sources.html">All Sources</a></span>
+    </div>
+  </footer>
+</body>
+</html>

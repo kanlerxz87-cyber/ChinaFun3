@@ -1,8 +1,206 @@
 {
-  "meta": { "anchor_station": "East Nanjing Road L2/L10 (hotel base)", "verified": "2026-11-25 on shmetro.com + Amap 11:00 off-peak" },
+  "title": "Activities — Verified Hours, Tickets, Metro Proximity & Social Links (≤1h Central Envelope)",
+  "checked_date": "2026-11-26",
   "activities": [
-    { "name": "The Bund (Waitan)", "hours": "24h daily, lights May-Oct 19:00-23:00 / Nov-Apr 18:00-21:00", "entry_for_2": "¥0", "transit": "6 min walk", "official": "https://www.meet-in-shanghai.net/the-bund/" },
-    { "name": "Yu Garden + Bazaar", "hours": "Garden 09:00-16:30 last 16:00, Closed Mon except holidays; Bazaar 10:00-22:00", "entry_for_2": "¥80", "transit": "L10/14 to Yuyuan 14 min", "official": "WeChat mini Shanghai Yu Yuan + https://www.yuyuantm.com" },
-    { "name": "Oriental Pearl Tower", "hours": "09:00-21:00 last 20:30", "entry_for_2": "¥398", "transit": "L2 East Nanjing -> Lujiazui 18 min", "official": "https://www.orientalpearltower.com" }
+    {
+      "name": "Yu Garden (豫园)",
+      "type": "Classical Ming Garden",
+      "district": "Huangpu",
+      "days": "Tue–Sun (closed Mondays except national statutory holidays)",
+      "hours": "09:00–16:30 (last entry 16:00; garden clears 16:30)",
+      "exceptions": "Spring Festival hours announced separately by notice. North Gate: 168 Fuyou Rd; South Gate: 279 Yuyuan Old St (individual only).",
+      "cost_for_two": "¥60 (¥30/adult off-peak Dec 1–Mar 31, covers Feb–Mar 2027)",
+      "metro": "Metro Line 10 / Line 14 · Yuyuan Garden Station (same district as Xintiandi/Bund)",
+      "transit_minutes_verified": false,
+      "social_links": [
+        {"platform": "YouTube", "label": "Yu Garden vlog / walk", "url": "https://www.youtube.com/watch?v=Ay96PAha8uQ"}
+      ],
+      "source_url": "https://www.yugarden.com.cn/page/articleView/message.html",
+      "verified": true
+    },
+    {
+      "name": "Yu Garden Night Tour (2025 Seasonal Ref)",
+      "type": "Night Garden Experience",
+      "district": "Huangpu",
+      "days": "Fri–Sun (closed Mon–Thu; 2025 winter schedule — 2027 schedule unconfirmed)",
+      "hours": "18:00–21:20 (last entry 20:30)",
+      "exceptions": "Feb 20, 2027 is Lantern Festival — confirm 2027 night-tour notice via official WeChat '上海豫园' or yugarden.com.cn.",
+      "cost_for_two": "",
+      "cost_note": "2025 ref was ¥300–436 for 2; 2027 pricing not yet published (blank/flagged).",
+      "metro": "Metro Line 10 / Line 14 · Yuyuan Garden Station",
+      "transit_minutes_verified": false,
+      "social_links": [
+        {"platform": "YouTube", "label": "Yu Garden evening lights Short", "url": "https://www.youtube.com/shorts/nh1FRv9eK8U"}
+      ],
+      "source_url": "https://www.yugarden.com.cn/page/articleView/message.html",
+      "verified": false
+    },
+    {
+      "name": "Shanghai Museum East (上海博物馆东馆)",
+      "type": "Museum (Permanent Ancient Chinese Art)",
+      "district": "Pudong",
+      "days": "Wed–Mon (closed Tuesdays except national statutory holidays)",
+      "hours": "10:00–18:00 (last entry 17:00)",
+      "exceptions": "Individual walk-in via B1 East Gate with original valid passport/ID; special reservation needed only for Curio-City / Digital Gallery.",
+      "cost_for_two": "¥0 (permanent exhibitions free)",
+      "metro": "Pudong · 1952 Century Avenue (Metro Line 2 Shanghai Science & Technology Museum)",
+      "transit_minutes_verified": false,
+      "social_links": [
+        {"platform": "YouTube", "label": "Official @theshanghaimuseum", "url": "https://www.youtube.com/@theshanghaimuseum"},
+        {"platform": "YouTube", "label": "Shanghai Museum East walkthrough", "url": "https://www.youtube.com/watch?v=bqU3WbL6xac"},
+        {"platform": "Instagram", "label": "Official @theshanghaimuseum", "url": "https://www.instagram.com/theshanghaimuseum/"}
+      ],
+      "source_url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-east",
+      "verified": true
+    },
+    {
+      "name": "Shanghai Museum — People's Square",
+      "type": "Museum (Special Exhibition Hall)",
+      "district": "Huangpu",
+      "days": "Tue–Sun (closed Mondays except national statutory holidays)",
+      "hours": "09:00–17:00 (last entry 15:00)",
+      "exceptions": "During 'On Top of the World Tree: Ancient Civilizations of the Americas' (Jul 9, 2026 – Nov 14, 2027), no other permanent galleries are hosted here (visit East Hall for permanent displays). Book via WeChat / Trip.com.",
+      "cost_for_two": "",
+      "cost_note": "Special exhibition requires paid ticket (exact 2027 ticket price unverified — flagged).",
+      "metro": "Huangpu · 201 Renmin Dadao (People's Square Metro Lines 1/2/8)",
+      "transit_minutes_verified": false,
+      "social_links": [
+        {"platform": "YouTube", "label": "Official @theshanghaimuseum", "url": "https://www.youtube.com/@theshanghaimuseum"},
+        {"platform": "Instagram", "label": "Official @theshanghaimuseum", "url": "https://www.instagram.com/theshanghaimuseum/"}
+      ],
+      "source_url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-west",
+      "verified": true
+    },
+    {
+      "name": "China Art Museum (中华艺术宫)",
+      "type": "Art Museum (2010 Expo China Pavilion)",
+      "district": "Pudong",
+      "days": "Tue–Sun (closed Mondays except national statutory holidays)",
+      "hours": "10:00–18:00 (last entry 17:00)",
+      "exceptions": "Special exhibitions (e.g. multimedia Qingming Shanghe Tu) may require separate reservation/ticket.",
+      "cost_for_two": "¥0 (permanent exhibitions free)",
+      "metro": "Pudong · 205 Shangnan Rd · Metro Line 8 China Art Museum Exit 3 / Line 7 Yaohua Rd Exit 1",
+      "transit_minutes_verified": false,
+      "social_links": [
+        {"platform": "YouTube", "label": "China Art Museum video", "url": "https://www.youtube.com/watch?v=QUanjfsHTB0"}
+      ],
+      "source_url": "https://english.shanghai.gov.cn/en-MuseumsGalleries/20241018/dfda779aa5f644f48f99e89ffb745703.html",
+      "verified": true
+    },
+    {
+      "name": "Power Station of Art (上海当代艺术博物馆)",
+      "type": "Contemporary Art Museum",
+      "district": "Huangpu",
+      "days": "Tue–Sun (closed Mondays except national statutory holidays)",
+      "hours": "11:00–19:00 (last entry 18:00)",
+      "exceptions": "678 Miaojiang Rd, Huangpu (star-rated museum per Shanghai Municipal Gov). Special exhibitions may be ticketed.",
+      "cost_for_two": "",
+      "cost_note": "Permanent exhibitions typically free; special exhibition ticket prices unverified (blank/flagged).",
+      "metro": "Huangpu waterfront — same district as Bund/Xintiandi hotels",
+      "transit_minutes_verified": false,
+      "social_links": [
+        {"platform": "YouTube", "label": "Exploring Power Station of Art", "url": "https://www.youtube.com/watch?v=H4nkvd4Ar20"},
+        {"platform": "YouTube", "label": "CHANEL Culture Fund Partner feature", "url": "https://www.youtube.com/watch?v=50zqPIVoHPk"}
+      ],
+      "source_url": "https://english.shanghai.gov.cn/en-MuseumsGalleries/20250702/64d1d26886b3458b8dffb3a8533787b5.html",
+      "verified": true
+    },
+    {
+      "name": "Museum of Art Pudong (浦东美术馆)",
+      "type": "Art Museum",
+      "district": "Pudong (Lujiazui)",
+      "days": "Open daily",
+      "hours": "10:00–21:00 (last entry 20:00)",
+      "exceptions": "2777 Binjiang Avenue, Pudong New Area (official star-rated museum list).",
+      "cost_for_two": "",
+      "cost_note": "Ticket pricing not captured from official ticketing page (blank/flagged).",
+      "metro": "Pudong Lujiazui riverside (Metro Lines 2/14 Lujiazui)",
+      "transit_minutes_verified": false,
+      "social_links": [],
+      "source_url": "https://english.shanghai.gov.cn/en-MuseumsGalleries/20250702/64d1d26886b3458b8dffb3a8533787b5.html",
+      "verified": true
+    },
+    {
+      "name": "Fosun Foundation & Rockbund Art Museum",
+      "type": "Bund Waterfront Art Galleries",
+      "district": "Huangpu",
+      "days": "Fosun: Tue–Sun (closed Mon) · Rockbund: Wed–Sun (closed Mon–Tue)",
+      "hours": "Fosun: Tue/Wed/Fri/Sun 10:00–18:00, Thu/Sat 10:00–20:00 · Rockbund: Wed–Sun 11:00–20:00",
+      "exceptions": "Fosun Foundation: 600 East Zhongshan No. 2 Rd (BFC, beside Da Vittorio 2★); Rockbund: 20 Huqiu Rd (steps from Peninsula & 8 ½ Otto e Mezzo).",
+      "cost_for_two": "",
+      "cost_note": "Exhibition ticket prices vary by show (blank/flagged).",
+      "metro": "Huangpu (The Bund) — walkable from Peninsula / EDITION / BFC",
+      "transit_minutes_verified": false,
+      "social_links": [],
+      "source_url": "https://english.shanghai.gov.cn/en-MuseumsGalleries/20250702/64d1d26886b3458b8dffb3a8533787b5.html",
+      "verified": true
+    },
+    {
+      "name": "Shanghai Tower · 118F Observatory & 52F Duoyun Bookstore",
+      "type": "Skyscraper Observatory & Sky Bookstore",
+      "district": "Pudong (Lujiazui)",
+      "days": "",
+      "hours": "",
+      "exceptions": "632m tower; 118F 'Top of Shanghai' at 546m, 125–126F SKY632 Damper Performance, 52F Duoyun Bookstore (world's highest bookstore). Official site does not publish live 2027 hours/tickets statically (flagged).",
+      "cost_for_two": "",
+      "cost_note": "Observatory ticket price unverified on official shanghaitower.com (blank/flagged).",
+      "metro": "Pudong · 479 Lujiazui Ring Rd / 501 Middle Yincheng Rd (Metro Lines 2/14 Lujiazui)",
+      "transit_minutes_verified": false,
+      "social_links": [],
+      "source_url": "https://english.shanghai.gov.cn/en-ScenicSpots/20240507/f3ce9cade30f4ff2a0bad6293626a232.html",
+      "verified": false
+    },
+    {
+      "name": "Oriental Pearl Tower (东方明珠)",
+      "type": "5A Observation Landmark",
+      "district": "Pudong (Lujiazui)",
+      "days": "",
+      "hours": "",
+      "exceptions": "468m landmark tower. Official orientalpearltower.com.cn is unreachable from sandbox; hours and ticket tiers flagged rather than guessed.",
+      "cost_for_two": "",
+      "cost_note": "Ticket prices & hours unverified (official site unreachable from sandbox).",
+      "metro": "Pudong · Lujiazui Metro Station (Lines 2/14)",
+      "transit_minutes_verified": false,
+      "social_links": [
+        {"platform": "YouTube", "label": "Oriental Pearl Tower walkthrough", "url": "https://www.youtube.com/watch?v=lql_4YSqGg8"},
+        {"platform": "TikTok", "label": "Night skyline view", "url": "https://www.tiktok.com/@missmedia_/video/7465614444664507654"}
+      ],
+      "source_url": "https://english.shanghai.gov.cn/en-CityTour/20250530/b8fbbd2155c4468bab9b363a5e6c566a.html",
+      "verified": false
+    },
+    {
+      "name": "Shanghai Disneyland (上海迪士尼乐园)",
+      "type": "Theme Park",
+      "district": "Pudong (Chuansha)",
+      "days": "Open daily (date-specific calendar)",
+      "hours": "",
+      "exceptions": "Sample off-peak calendar shows 08:30–21:30 (Disneytown 10:00–22:00); Feb–Mar 2027 daily hours & tiered ticket prices not yet published as of Nov 2026 (flagged). Book only via official app/website/WeChat.",
+      "cost_for_two": "",
+      "cost_note": "Feb–Mar 2027 ticket tiers not yet published on official calendar (blank/flagged).",
+      "metro": "Pudong · 310 Huangzhao Rd · Metro Line 11 Disney Resort Station (longest ride on list; edge of ~1h envelope)",
+      "transit_minutes_verified": false,
+      "social_links": [
+        {"platform": "Instagram", "label": "Official @shanghaidisneyresort_park", "url": "https://www.instagram.com/shanghaidisneyresort_park/"}
+      ],
+      "source_url": "https://www.shanghaidisneyresort.com/en/park-calendar",
+      "verified": false
+    },
+    {
+      "name": "The Bund Waterfront Promenade (外滩)",
+      "type": "Historic Waterfront Walk",
+      "district": "Huangpu",
+      "days": "Public waterfront promenade",
+      "hours": "",
+      "exceptions": "Free public promenade; exact official lighting shutoff schedule unverified (lighting times vary seasonally).",
+      "cost_for_two": "¥0 (public space)",
+      "metro": "Huangpu · walkable from Peninsula / EDITION; Metro Lines 2/10 East Nanjing Rd",
+      "transit_minutes_verified": false,
+      "social_links": [
+        {"platform": "YouTube", "label": "The Bund evening walk", "url": "https://www.youtube.com/watch?v=bZCLgcNMz5M"},
+        {"platform": "YouTube", "label": "Shanghai skyline & Bund", "url": "https://www.youtube.com/watch?v=7ZmHufvKaWE"}
+      ],
+      "source_url": "https://guide.michelin.com/en/hotels-stays/shanghai/the-peninsula-shanghai-5858",
+      "verified": false
+    }
   ]
 }

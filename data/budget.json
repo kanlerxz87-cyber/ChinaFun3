@@ -1,0 +1,51 @@
+{
+  "title": "Budget — Combined 7-Night Totals for 2 Adults (Verified Live Quotes + Exact Published Menus)",
+  "checked_date": "2026-11-26",
+  "honest_rule": "Only verified Feb 15–22, 2027 hotel checkout totals and verified exact 2026 menu/ticket prices are summed below. Unpublished menu prices, flights, and discretionary spending are kept separate rather than invented.",
+  "scenarios": [
+    {
+      "name": "Value Michelin Base (Andaz Xintiandi + Verified Dining & Activities)",
+      "hotel_name": "Andaz Xintiandi, Shanghai (7n Feb 15–22, 2027, all-in non-ref)",
+      "hotel_usd": 1376.21,
+      "hotel_source": "https://guide.michelin.com/en/hotels-stays/shanghai/andaz-xintiandi-shanghai-6510?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1",
+      "verified_dining_cny": 6064,
+      "dining_breakdown": "T'ang Court Classic Dim Sum Lunch for 2 (¥888) + Taian Table 10-course dinner for 2 (¥5,176)",
+      "verified_activities_cny": 60,
+      "activities_breakdown": "Yu Garden off-peak for 2 (¥60) + Shanghai Museum East (¥0) + China Art Museum (¥0) + The Bund (¥0)",
+      "unpriced_note": "Excludes flights, visas, Metro fares, 5 additional breakfasts/lunches/dinners, and special-exhibition tickets."
+    },
+    {
+      "name": "Breakfast + In-House 2★ Sweet Spot (The Langham Xintiandi)",
+      "hotel_name": "The Langham, Shanghai, Xintiandi (7n Feb 15–22, 2027, flex incl. breakfast for 2)",
+      "hotel_usd": 2291.93,
+      "hotel_source": "https://guide.michelin.com/en/hotels-stays/shanghai/the-langham-shanghai-xintiandi-5331?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1",
+      "verified_dining_cny": 8252.22,
+      "dining_breakdown": "T'ang Court All-Day Set for 2 (¥2,288) + Yi Long Court Chef Dim Sum Lunch for 2 (¥788.22) + Taian Table 10-course for 2 (¥5,176)",
+      "verified_activities_cny": 60,
+      "activities_breakdown": "Yu Garden off-peak for 2 (¥60) + Free museums & Bund (¥0)",
+      "unpriced_note": "Daily hotel breakfast for 2 is already included in the $2,291.93 checkout total."
+    },
+    {
+      "name": "Flagship Bund Luxury (The Peninsula Direct Promo + Fine Dining)",
+      "hotel_name": "The Peninsula Shanghai (7n Feb 15–22, 2027, 'A Gift for the New Year' incl. breakfast for 2)",
+      "hotel_usd": null,
+      "hotel_cny": 20119.33,
+      "hotel_source": "https://www.peninsula.com/en/shanghai/special-offers/rooms/a-gift-for-the-new-year",
+      "verified_dining_cny": 12243.84,
+      "dining_breakdown": "Taian Table 12-course for 2 (¥5,776) + Bao Li Xuan Classics Menu for 2 (¥3,576) + Sir Elly's 4-course for 2 (¥3,003.62) [note: total ¥12,355.62; or swap Yi Long Court ¥788.22]",
+      "verified_activities_cny": 60,
+      "activities_breakdown": "Yu Garden off-peak for 2 (¥60) + Free museums & Bund (¥0)",
+      "unpriced_note": "Peninsula direct promo quote is in CNY (¥20,119.33 incl. 16.6% service/tax & breakfast, bookable Nov 23–Dec 7, 2026). Live MICHELIN USD base room-only is $3,549."
+    }
+  ],
+  "exact_verified_menu_totals_for_two": [
+    {"venue": "Yi Long Court (1★, The Peninsula)", "menu": "Chef Dim Sum Lunch Menu for 2 (incl. 16.6% service & tax)", "total_cny": 788.22, "source_url": "https://www.peninsula.com/-/media/files/shanghai/new-dining/yi-long-court/yi-long-court---chef-dim-sum-menu-set_en.pdf"},
+    {"venue": "T'ang Court (2★, The Langham)", "menu": "Classic Dim Sum Lunch Set for 2 (incl. service & tax)", "total_cny": 888.00, "source_url": "https://www.langhamhotels.com/content/dam/langhamhotels/tlshx-pdfs/tang-court/2026/seasonal-set-menu-selection-2026.pdf"},
+    {"venue": "T'ang Court (2★, The Langham)", "menu": "All-Day Set Menu for 2 (incl. service & tax)", "total_cny": 2288.00, "source_url": "https://www.langhamhotels.com/content/dam/langhamhotels/tlshx-pdfs/tang-court/2026/seasonal-set-menu-selection-2026.pdf"},
+    {"venue": "Sir Elly's (MICHELIN Selected, The Peninsula)", "menu": "4-Course Menu for 2 (¥1,288 pp + 16.6% service & tax)", "total_cny": 3003.62, "source_url": "https://www.peninsula.com/-/media/files/shanghai/new-dining/sir-ellys/dinner/4_course_menu.pdf"},
+    {"venue": "Bao Li Xuan (2★, Bvlgari)", "menu": "Cantonese Classics Set Menu (¥1,788 pp × 2, tax/service check at booking)", "total_cny": 3576.00, "source_url": "https://www.bulgarihotels.com/documents/2413627/19188240/Bao+Li+Xuan_Menu_Cantonese+Classics.pdf"},
+    {"venue": "Bao Li Xuan (2★, Bvlgari)", "menu": "Signature Set Menu (¥2,588 pp × 2, tax/service check at booking)", "total_cny": 5176.00, "source_url": "https://www.bulgarihotels.com/documents/2413627/19188240/Bao+Li+Xuan_Menu_Signature+Menu.pdf"},
+    {"venue": "Taian Table (3★, Changning)", "menu": "10-Course Tasting Menu (¥2,588 pp × 2, all-inclusive)", "total_cny": 5176.00, "source_url": "https://sh.taian-table.cn/faq/"},
+    {"venue": "Taian Table (3★, Changning)", "menu": "12-Course Tasting Menu (¥2,888 pp × 2, all-inclusive)", "total_cny": 5776.00, "source_url": "https://sh.taian-table.cn/faq/"}
+  ]
+}
