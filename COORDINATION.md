@@ -334,4 +334,8 @@ Existing session scopes are respected; requests for changes to their files will 
 |---|---|---|---|---|---|
 | I02 | Repair broken internal fragments found by the repository-wide link audit | **in progress** | `arena/6e5e57f6-chinafun3` | `budget.html`, `executive-summary.html`, `itinerary.html`, `sources.html`, `questions.html` (root site only) | Recheck all four fragments against the newly integrated root pages; add missing targets without changing data or subsite-owned files |
 
-- The four failures were found before PR #21 rebuilt the root dashboard. This takeover remains limited to its five root-owned target/reference pages; the new root content is preserved and source values are not altered.
+- The four failures were first reported before PR #21 rebuilt the root dashboard. This takeover remains limited to the five root-owned target/reference pages; the current root data is preserved and no source values are changed.
+
+### I01/I02 scope amendment — 2026-11-26
+- After PR #18, this session expanded I01 to make the root page a source-first portal and preserve the then-integrated dashboard. PR #21 subsequently rebuilt the root dashboard before this branch integrated; the archive target is therefore updated to preserve PR #21's latest detailed dashboard. The new root pages/data are not otherwise edited by I01.
+- I02 remains limited to root-owned pages. Recheck and repair the four reported fragments against the PR #21 page versions; retain the hotel-rate terms caveat without asserting one policy for all rates.
