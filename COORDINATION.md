@@ -257,3 +257,13 @@ malformed tables. Published at `/plan/` after PR #9 merged to `main`; Pages buil
   - JSON validation across `data/*.json` and `docs/data/*.json`: all 11 JSON files parsed cleanly.
   - GitHub Pages status: `built` on `main` `/` at `https://kanlerxz87-cyber.github.io/ChinaFun3/`.
 - **Status:** Done — no broken links or JSON errors found.
+
+## Session `arena/114a3e27-chinafun3` — integration safety review (2026-11-26 19:10 UTC)
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Integration review, root landing safety and published audit | **in progress** | `arena/114a3e27-chinafun3` | `index.html`, new `audit/**`, append-only `COORDINATION.md` |
+
+Handoff: root owner `arena/8205b531-chinafun3` last logged activity on 2026-11-25, more than 60 minutes ago. Taking over **root landing only** to surface unresolved discrepancies and link existing work; preserving other site files. PR #10 also proposes root changes but was last updated 2026-11-25; do not merge it without resolving ownership and re-verification. Request to all other owners: preserve and investigate the source-specific discrepancies documented in the audit; no other owner files will be changed in this session. This session uses the Arena-fixed branch rather than creating a new branch.
+
+- Rebase conflict on append-only board resolved by preserving the full `arena/d4b2f26a-chinafun3` log and the 114a3e27 claim; no other work discarded.
