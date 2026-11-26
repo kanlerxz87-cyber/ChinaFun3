@@ -233,12 +233,12 @@ malformed tables. Published at `/plan/` after PR #9 merged to `main`; Pages buil
 
 | ID | Task | Status | Owner Session | Files Touched / Scope | Sources & Verification Note | Updated |
 |---|---|---|---|---|---|---|
-| W01 | Claim integration scope & audit all sites vs requirements | **in progress** | `9ee6f5e0` | `COORDINATION.md` | Audit root/docs/considered/for-two/plan/verify vs brief; PR #10 divergence flagged | 2026-11-26 |
-| W02 | Line-by-line official re-verification (Michelin 2026, CNY 2027, visa, Yu Garden, Museum, Taian price, Andaz rate) | **in progress** | `9ee6f5e0` | `COORDINATION.md`, `flagged.html` | guide.michelin.com (50 starred, Taian 3★ Changning), gov.cn 2027 notice, NIA 240h, yugarden.com.cn, shanghaimuseum.net, Michelin Hotels engine | 2026-11-26 |
-| W03 | Fix root site outdated Michelin (2024→2026: 50 starred, Ultraviolet closed, Fu He Hui 2★, Taian district/price) | **unclaimed** | `9ee6f5e0` | `index.html`, `restaurants.html`, `executive-summary.html`, `sources.html`, `flagged.html`, `data/restaurants.json` | Official 2026 directory + Taian page + closure notice | 2026-11-26 |
-| W04 | Fix activities (Yu Garden off-season ¥60/2, Museum last entry 15:00 + .cn domain) + add live 2027 hotel rates + subsite nav | **unclaimed** | `9ee6f5e0` | `activities.html`, `hotels.html`, `index.html`, `budget.html` | yugarden.com.cn, shanghaimuseum.net, Michelin Hotels engine (Andaz $169/$197) | 2026-11-26 |
-| W05 | Re-verify combined data, run all tests, check links, mobile preview | **unclaimed** | `9ee6f5e0` | all | check_links.py, verify/tests, considered/tests, for-two tests | 2026-11-26 |
-| W06 | PR from integration branch to main, merge, confirm Pages deploy, log PR link | **unclaimed** | `9ee6f5e0` | — | Pages source main /, status built | 2026-11-26 |
+| W01 | Claim integration scope & audit all sites vs requirements | **done** | `9ee6f5e0` | `COORDINATION.md` | Audit root/docs/considered/for-two/plan/verify vs brief; PR #10 divergence flagged | 2026-11-26 |
+| W02 | Line-by-line official re-verification (Michelin 2026, CNY 2027, visa, Yu Garden, Museum, Taian price, Andaz rate) | **done** | `9ee6f5e0` | `COORDINATION.md`, `flagged.html` | guide.michelin.com (50 starred, Taian 3★ Changning), gov.cn 2027 notice, NIA 240h, yugarden.com.cn, shanghaimuseum.net, Michelin Hotels engine | 2026-11-26 |
+| W03 | Fix root site outdated Michelin (2024→2026: 50 starred, Ultraviolet closed, Fu He Hui 2★, Taian district/price) | **done** | `9ee6f5e0` | `index.html`, `restaurants.html`, `executive-summary.html`, `sources.html`, `flagged.html`, `data/restaurants.json` | Official 2026 directory + Taian page + closure notice | 2026-11-26 |
+| W04 | Fix activities (Yu Garden off-season ¥60/2, Museum last entry 15:00 + .cn domain) + add live 2027 hotel rates + subsite nav | **done** | `9ee6f5e0` | `activities.html`, `hotels.html`, `index.html`, `budget.html` | yugarden.com.cn, shanghaimuseum.net, Michelin Hotels engine (Andaz $169/$197) | 2026-11-26 |
+| W05 | Re-verify combined data, run all tests, check links, mobile preview | **done** | `9ee6f5e0` | all | check_links.py, verify/tests, considered/tests, for-two tests | 2026-11-26 |
+| W06 | PR from integration branch to main, merge, confirm Pages deploy, log PR link | **done** | `9ee6f5e0` | — | Pages source main /, status built | 2026-11-26 |
 
 ## Log — Session `arena/9ee6f5e0-chinafun3`
 
