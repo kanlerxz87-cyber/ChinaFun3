@@ -312,3 +312,52 @@ Existing session scopes are respected; requests for changes to their files will 
 **Audit continuation:** PR #16 and follow-up PRs #17–18 merged since the earlier handoff. Some legacy Michelin claims were corrected, but `hotels.html` still reports 44 reachable starred restaurants including two three-star restaurants, while the [official 2026 regional announcement](https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang) reports only one three-star in the wider three-region selection. The audit page now distinguishes already-corrected claims from remaining discrepancies. Request to the root integration owner: link the audit and remove or individually verify those hotel rankings and proxy amounts; no root file was changed by this session. A failed ordinary `git pull --rebase` after the merge was aborted; `git pull --rebase=merges` succeeded, preserving the resolved merge.
 
 **Audit publication:** [PR #19](https://github.com/kanlerxz87-cyber/ChinaFun3/pull/19) merged 2026-11-26 at merge commit `c3a04bc677144edb454f6925313730434895f138`. All three PR workflows passed. GitHub Pages build and deployment [run 45883186639](https://github.com/kanlerxz87-cyber/ChinaFun3/actions/runs/45883186639) succeeded for that commit; audit is at https://kanlerxz87-cyber.github.io/ChinaFun3/audit-2026-11-26/. Audit task status: **needs review** — flagged items published, not a claim of exhaustive source verification. Node.js 20 deprecation warning was emitted by the GitHub-managed Pages workflow; deployment succeeded.
+
+---
+
+## Task Board — Final integration session `arena/6e5e57f6-chinafun3`
+
+| ID | Task | Status | Owner | Files Touched / Scope | Verification plan |
+|---|---|---|---|---|---|
+| I01 | Finish an evidence-first root hub and archive the detailed root dashboard | **in progress** | `arena/6e5e57f6-chinafun3` | `index.html`, `root-dashboard-2026.html`, `assets/css/style.css` (root responsive-layout fixes only), `README.md`, append-only `COORDINATION.md` | Preserve the currently integrated root dashboard and its linked root data pages; make the root entry mobile-friendly; fix confirmed narrow-width header/grid overflows; link review resources without mixing subsite datasets |
+
+### Handoff / claim note — 2026-11-26
+- This session claimed I01 before implementation after the prior root-site claim was stale; it has not checked out or modified another session's branch.
+- PRs #19–20 published and logged the independent targeted audit and its successful Pages deployment. The hub will link the audit without changing its findings.
+- PR #21 merged while this branch was being rebased. It rebuilt the canonical root dashboard and root data pages. I01 now archives that latest detailed dashboard (rather than replacing or reverting its source/data work) and uses a separate hub at `/`.
+- This branch preserves PR #21's root pages and research inputs, except for the narrow, source-linked derived dining-total correction claimed under I03. All companion subsite-owned pages and data remain untouched; I02 navigation changes are additive. Any future root-page integration should preserve or explicitly reconcile the hub/archive and its fragment targets.
+- Rebase conflicts are being resolved additively against current `origin/main`; no merged main history or data is to be discarded.
+
+### Additional takeover — root-page anchor repair (2026-11-26)
+
+| ID | Task | Status | Owner | Files Touched / Scope | Verification |
+|---|---|---|---|---|---|
+| I02 | Reconcile reported legacy fragments against the integrated root pages | **in progress** | `arena/6e5e57f6-chinafun3` | `budget.html`, `executive-summary.html`, `itinerary.html`, `sources.html`, `questions.html` (root site only) | Search the full current tree for active references; preserve rate-term context and traveler decisions; repair only confirmed broken links, without changing root research data or subsite-owned files |
+
+- The four fragments were reported before PR #21 rebuilt the root dashboard. A repository-wide scan of the merged `58a1578` baseline found no inbound references to `sources.html#booking`, `sources.html#hotel-terms`, `questions.html#q1`, or `questions.html#visa`; the corresponding question/source target IDs were absent there. No legacy fragment was therefore repaired or reintroduced. Useful decision and rate-term navigation uses whole-page links, and the Q&A now avoids assuming a US passport or a specific transit route.
+
+### I01/I02 scope amendment — 2026-11-26
+- After PR #18, this session expanded I01 to make the root page a source-first portal and preserve the then-integrated dashboard. PR #21 subsequently rebuilt the root dashboard before this branch integrated; the archive target is therefore updated to preserve PR #21's latest detailed dashboard. The new root pages/data are not otherwise edited by I01.
+- I02 remains limited to root-owned pages. Recheck the four reported fragments against the PR #21 page versions and repair only active broken inbound references; retain the hotel-rate terms caveat without asserting one policy for all rates.
+
+### Narrow I02 arithmetic-validation extension — 2026-11-26
+- Before editing, include a correction to the derived combined dining total shown in both `budget.html` and `executive-summary.html`. Their displayed items are ¥5,776 + ¥3,576 + ¥3,003.62 = ¥12,355.62, while the leading total currently says ¥12,243.84. Also add direct official links for those menu amounts in the summary row/card so the cited amounts are reviewable in context. Do not alter the menu prices or hotel quote.
+
+### Additional root budget-data reconciliation — 2026-11-26
+
+| ID | Task | Status | Owner | Files Touched / Scope | Verification |
+|---|---|---|---|---|---|
+| I03 | Align the derived dining total in the root budget dataset with its official menu inputs | **done** | `arena/6e5e57f6-chinafun3` | `data/budget.json` only: one scenario's derived total and breakdown string | Recomputed ¥5,776 + ¥3,576 + ¥3,003.62 using decimal arithmetic; changed no menu amount, source URL, hotel quote, or companion-site data; root generator not run |
+
+- This narrow additive claim was made after final validation found that PR #21's root dataset still stores ¥12,243.84 beside menu inputs summing to ¥12,355.62. The corrected static `budget.html` and `executive-summary.html` already link the official menu sources; this claim brings their root JSON snapshot into agreement without altering any component prices.
+
+### Narrow mobile-layout fix extension — 2026-11-26
+- Playwright found horizontal overflow at 320px in the newly archived root dashboard: the shared root `.brand` refused to shrink around its long subtitle. The root-owned `assets/css/style.css` was claimed for responsive layout; the targeted brand rule now lets it shrink.
+- A broader recheck also found 320px overflow in the root itinerary's modeled-stay cards because a long status badge set the grid's intrinsic minimum width. The same CSS scope now constrains grid tracks and lets badges wrap. No subsite CSS changed.
+- Mobile recheck complete: all 15 root HTML pages (including hub and archive) passed 320, 375, 390, 768, and 1440px viewport checks with no horizontal page overflow or browser errors (75 page/viewport checks total).
+
+### Pre-PR validation — 2026-11-26
+- `python3 -m unittest discover -s tests -v`: 11 passed (root + Considered); `python3 -m unittest discover -s verify/tests -v`: 10 passed (pre-existing file-handle `ResourceWarning`s only); `cd for-two && python3 -m unittest discover -s tests -v`: 9 passed.
+- `python3 check_links.py`: 9 Plan pages, no issues. Repository-wide local HTML link/fragment audit: 62 HTML pages, 1,141 local targets/fragments, zero issues. README: 75 Markdown links, zero missing local targets. All 27 JSON files parsed successfully; browser JS syntax checks passed.
+- Playwright passed 75 root-page/viewport checks at widths 320, 375, 390, 768, and 1440px; hub → independent audit and hub → archive disclosure/navigation both worked without browser errors.
+- The archived dashboard was compared against `58a1578:index.html`; its markup/data match PR #21 apart from the archive title, description, and warning banner. `scripts/build_root.py` and `generate.py` were not run to avoid overwriting the custom hub/archive and root Q&A edits.

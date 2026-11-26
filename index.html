@@ -3,146 +3,206 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ChinaFun3 — Shanghai 2027 Verified Trip Dashboard</title>
-  <meta name="description" content="Verified 2027 Shanghai trip plan for 2 adults: live Feb 15–22, 2027 hotel quotes, 2026 MICHELIN Guide directory, official museum/garden hours, and source-linked audit.">
+  <meta name="theme-color" content="#f8fafc">
+  <title>ChinaFun3 — Shanghai Trip Planning Hub</title>
+  <meta name="description" content="Mobile-friendly source-first hub for Shanghai trip planning in February–March 2027. Browse hotel, Michelin, activity, travel-time, budget, questions, suggestions, sources, and flagged findings.">
+  <meta property="og:title" content="ChinaFun3 — Shanghai Trip Planning Hub">
+  <meta property="og:description" content="Explore source-linked trip research, review missing information, and compare independent planning views without mixing their data.">
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script defer src="assets/js/app.js"></script>
+  <style>
+    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:12px;top:12px;width:auto;height:auto;z-index:1000;padding:10px 14px;background:#fff;border:2px solid var(--accent);border-radius:8px}
+    .portal-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .portal-nav{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
+    .portal-nav a{display:inline-flex;padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:12px;font-weight:700}
+    .portal-card{height:100%;display:flex;flex-direction:column;gap:8px;text-decoration:none;color:inherit}
+    .portal-card:hover{text-decoration:none;border-color:#7dd3fc;transform:translateY(-1px)}
+    .portal-card h3{font-size:16px;margin:0}
+    .portal-card p{margin:0;line-height:1.55}
+    .portal-card .card-link{margin-top:auto;padding-top:5px;font-weight:800;color:#0369a1;font-size:13px}
+    .decision-list{margin:8px 0 0;padding-left:20px}
+    .decision-list li{margin:8px 0}
+    .subsite-grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:14px}
+    @media(min-width:760px){.subsite-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    .subsite-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px}
+    .subsite-card h3{margin:0 0 5px;font-size:15px}
+    .subsite-card p{margin:0 0 9px;font-size:13px;color:#475569}
+    .subsite-card a{font-weight:700}
+    details.archive{margin-top:14px}
+    details.archive summary{cursor:pointer;font-weight:800;padding:10px 0}
+    .section-intro{max-width:78ch;color:#475569;font-size:14px;margin:0 0 12px}
+    .footnote{font-size:12px;color:#64748b}
+    @media(prefers-reduced-motion:reduce){.portal-card{transition:none}.portal-card:hover{transform:none}}
+  </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
   <header class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="index.html" aria-label="ChinaFun3 home">
-        <span class="brand-mark">CN</span>
-        <span>ChinaFun3 <small>Shanghai • Feb 15–Mar 23, 2027 • Verified 2026-11-26</small></span>
-      </a>
-      <button class="hamburger" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">☰</button>
-      <nav class="nav" data-nav>
-        <a class="active" href="index.html">Dashboard</a>
-        <a href="executive-summary.html">Executive Summary</a>
-        <a href="itinerary.html">Itinerary &amp; Dates</a>
-        <a href="hotels.html">Hotels</a>
-        <a href="restaurants.html">Michelin</a>
-        <a href="activities.html">Activities</a>
-        <a href="transport.html">Transport</a>
-        <a href="budget.html">Budget</a>
-        <a href="questions.html">Q&amp;A Gaps</a>
-        <a href="suggestions.html">Suggestions</a>
-        <a href="sources.html">Sources</a>
-        <a href="flagged.html">Flagged</a>
+    <div class="container">
+      <div class="topbar-inner portal-top">
+        <a class="brand" href="index.html" aria-label="ChinaFun3 trip planning home">
+          <span class="brand-mark">CN</span>
+          <span>ChinaFun3 <small>Trip Planning China · Shanghai focus</small></span>
+        </a>
+        <a class="btn btn-primary" href="verify/index.html">Open source-first dashboard <span aria-hidden="true">→</span></a>
+      </div>
+      <nav class="portal-nav" aria-label="Quick links">
+        <a href="verify/hotels.html">Hotels</a>
+        <a href="verify/restaurants.html">Michelin &amp; dining</a>
+        <a href="verify/activities.html">Activities</a>
+        <a href="verify/transport.html">Travel time</a>
+        <a href="verify/budget.html">Budget</a>
+        <a href="verify/questions.html">Open questions</a>
+        <a href="verify/suggestions.html">Suggestions</a>
+        <a href="verify/flagged.html">Flagged for review</a>
+        <a href="audit-2026-11-26/index.html">Independent audit</a>
       </nav>
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
-      <span class="kicker">● Re-Verified 2026-11-26 • Line-by-line official sources • Zero hallucinations</span>
-      <h1 class="h1">Shanghai 2027 for Two — Live Bookable Hotels, 2026 MICHELIN Guide &amp; Official Activity Schedules.</h1>
-      <p class="lead">Built for <strong>2 adults</strong> inside <strong>Feb 15, 2027 – Mar 23, 2027</strong> (preferred arrival <strong>Feb 15–18</strong>; 7-night baseline <strong>Feb 15–22, 2027</strong>). Every hotel has verified Queen/King+ bedding, official booking checkout totals, and Huangpu/Jing'an Michelin density. Every unverified cell is left blank and explicitly flagged — never estimated.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="executive-summary.html">Executive Summary →</a>
-        <a class="btn" href="hotels.html">12 Hotels Ranked</a>
-        <a class="btn" href="restaurants.html">2026 Michelin (50★ + Bib/Selected)</a>
-        <a class="btn" href="flagged.html">10 Audit Fixes (F01–F10)</a>
+      <span class="kicker">Source-first planning · dated evidence · visible gaps</span>
+      <h1 class="h1">Plan the trip with evidence—not guesses.</h1>
+      <p class="lead">This hub organizes the Shanghai research for your China trip and separates confirmed facts from questions still open. Start with the source-first dashboard, then follow the source links and review flags before relying on any price, opening time, or travel estimate.</p>
+      <div class="meta-row" aria-label="Trip preferences from the planning brief">
+        <span class="pill"><strong>Travel window:</strong> Feb 15–Mar 23, 2027</span>
+        <span class="pill"><strong>Preferred dates:</strong> Feb 15–18, 2027</span>
+        <span class="pill"><strong>Party:</strong> 2 adults</span>
+        <span class="pill"><strong>Length:</strong> not decided</span>
       </div>
-      <div class="meta-row">
-        <span class="pill"><strong>Window:</strong> Feb 15, 2027 – Mar 23, 2027</span>
-        <span class="pill"><strong>Guests:</strong> 2 adults · Queen/King+ · Private bath</span>
-        <span class="pill"><strong>Spring Festival 2027:</strong> Feb 5–13 (Mon Feb 15 = normal workday)</span>
-        <span class="pill"><strong>Live 2026 MICHELIN:</strong> 153 total (50 Starred · 33 Bib · 70 Selected)</span>
-      </div>
-      <div class="notice ok mt16">
-        <strong>Root Audit Complete (F01–F10):</strong> Re-verified against live Nov 26, 2026 sources — replacing outdated 2024 counts, removed closed <em>Ultraviolet</em> &amp; <em>102 House</em>, removed unopened <em>Four Seasons Huaihai</em>, replaced surrogate hotel prices with live Feb 15–22, 2027 checkout quotes, and fixed Yu Garden off-peak ¥30 &amp; NIA 240h visa rules.
+      <div class="notice warn mt16" role="note">
+        <strong>Important:</strong> The brief mentions 1–2 weeks and also possibly 2–4 weeks. The published date comparison models 7, 10, or 14 nights; a 2–4-week itinerary is not established. The evidence also does <strong>not</strong> establish the cheapest hotel dates across the full window or minute-level public-transit times. Read <a href="verify/flagged.html">Flagged for Review</a> and <a href="verify/questions.html">Open Questions</a> before deciding.
       </div>
     </div>
   </section>
 
-  <main class="container">
-    <div class="grid grid-4">
+  <main id="main" class="container">
+    <section class="section" aria-labelledby="decision-status">
+      <h2 id="decision-status">What the evidence can—and cannot—decide</h2>
+      <p class="section-intro">Start with <a href="verify/index.html">Verify</a> for its source-first tables and explicit flags. The latest detailed root dashboard (re-verified Nov 26, 2026) is preserved below; it is a separate evidence snapshot, so compare each page’s own citations and flags rather than combining rankings.</p>
       <div class="card">
-        <p class="small">HOTELS CHECKED (FEB 15–22, 2027)</p>
-        <p class="stat">12 <small>(11 bookable live)</small></p>
-        <p class="small mt8">From $1,376.21 all-in (Andaz Xintiandi). <a href="hotels.html">Compare →</a></p>
-      </div>
-      <div class="card">
-        <p class="small">SHANGHAI MICHELIN 2026</p>
-        <p class="stat">50★ <small>+ 33 Bib + 70 Selected</small></p>
-        <p class="small mt8">1×3★ · 11×2★ · 38×1★ = 153 live venues. <a href="restaurants.html">Directory →</a></p>
-      </div>
-      <div class="card">
-        <p class="small">ACTIVITIES IN ≤1H ENVELOPE</p>
-        <p class="stat">12 <small>official sources + social</small></p>
-        <p class="small mt8">Hours, open days, closed Mondays/Tuesdays, Yu Garden ¥60 for 2. <a href="activities.html">Activities →</a></p>
-      </div>
-      <div class="card">
-        <p class="small">VERIFIED FOR-2 MENU TOTALS</p>
-        <p class="stat">8 <small>official 2026 PDF/FAQ menus</small></p>
-        <p class="small mt8">¥788.22 Yi Long Court lunch to ¥5,776 Taian Table 12-course. <a href="budget.html">Budgets →</a></p>
-      </div>
-    </div>
-
-    <section class="card mt16">
-      <div style="display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap; justify-content:space-between">
-        <div>
-          <h2 style="margin:0 0 4px; font-size:19px">60-Second Executive Decision</h2>
-          <p class="small" style="max-width:74ch">Stay in <strong>Huangpu (Xintiandi or The Bund)</strong> for Shanghai's densest walkable/same-district Michelin cluster (16+ verified starred venues) and direct Metro Lines 1/2/8/10/14 reach. Top picks for <strong>Feb 15–22, 2027</strong>: <strong>The Langham, Shanghai, Xintiandi</strong> at <strong>$2,291.93</strong> all-in (breakfast included, free cancel until Feb 10, in-house 2★ T'ang Court); <strong>Andaz Xintiandi, Shanghai</strong> at <strong>$1,376.21</strong> all-in for lowest verified rate; or <strong>The Peninsula Shanghai</strong> at <strong>CNY 20,119.33</strong> direct promo (bookable Nov 23–Dec 7, 2026 incl. breakfast, 13.8% cheaper Feb 15–Mar 8 than Mar 8–23).</p>
-        </div>
-        <a class="btn btn-primary" href="executive-summary.html">Full Executive Summary</a>
-      </div>
-      <hr class="sep">
-      <div class="grid grid-3" style="margin:0">
-        <div>
-          <strong>Best Value + Breakfast + 2★ In-House</strong>
-          <p class="small mt8">Langham Xintiandi: $2,291.93 all-in (40 m² King, verified marble ensuite, daily breakfast, T'ang Court 2★ upstairs).</p>
-        </div>
-        <div>
-          <strong>Lowest All-In Checkout</strong>
-          <p class="small mt8">Andaz Xintiandi: $1,376.21 all-in (41 m² King, directly across from Langham in Xintiandi Huangpu).</p>
-        </div>
-        <div>
-          <strong>Book-By Deadline: Dec 7, 2026</strong>
-          <p class="small mt8">Peninsula Shanghai 'A Gift for the New Year' (15% off + breakfast) ends Dec 7; Feb 15–Mar 8 saves 13.8% vs Mar 8–23.</p>
-        </div>
+        <ul class="decision-list">
+          <li><strong>Hotel fit:</strong> room-level queen/king bed and private-bathroom confirmation is incomplete. Do not assume every candidate meets both requirements; see <a href="verify/flagged.html">Flag F5</a>.</li>
+          <li><strong>Cheapest dates:</strong> the stored rate snapshot covers Feb 15–22, 2027, checked Nov 25, 2026. Alternative blocks across Feb 15–Mar 23 are unverified, so no cheapest stay date or best booking day is established. See <a href="verify/hotels.html">Hotels</a> and <a href="verify/questions.html">Open Questions</a>.</li>
+          <li><strong>One-hour travel:</strong> the recorded research does not verify minute-level subway/bus routes. District proximity is not proof of a one-hour door-to-door trip; see <a href="verify/transport.html">Travel Time</a> and <a href="verify/flagged.html">Flag F4</a>.</li>
+          <li><strong>Dining totals:</strong> exact menu totals appear only where an official menu supports them. Other restaurant totals remain blank rather than estimated; see <a href="verify/restaurants.html">Michelin &amp; Dining</a>.</li>
+          <li><strong>Michelin directory:</strong> the Verify snapshot records 50 starred entries in the 2026 live directory; its press release differs over 102 House. The discrepancy remains open rather than resolved by inference. See the <a href="https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred" target="_blank" rel="noopener noreferrer">official live directory</a> and <a href="verify/flagged.html">Flags F1–F2</a>.</li>
+          <li><strong>Hours and social links:</strong> coverage is partial. Each listed social link is recorded as venue-specific; a blank field means it was not confirmed in the research, not that no account exists.</li>
+        </ul>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Explore All Root Dashboard Sections</h2>
-      <p class="sub">Every table supports live search and column sorting. Unverified claims are never guessed.</p>
+    <section class="section" aria-labelledby="dashboard-pages">
+      <h2 id="dashboard-pages">Browse the planning dashboard</h2>
+      <p class="section-intro">Open the category pages for source-linked entries, opening days/hours where verified, and visible status labels. The data tables leave unconfirmed values blank and route gaps or conflicts to the review pages.</p>
       <div class="grid grid-3">
-        <a class="card" href="executive-summary.html"><h3>📋 Executive Summary</h3><p>Top hotel picks, budget scenarios, and key closing-day &amp; visa rules.</p></a>
-        <a class="card" href="itinerary.html"><h3>📅 Itinerary &amp; Dates</h3><p>2027 Spring Festival (gov.cn), NIA 240h visa, 6 Peninsula promo windows, and 7-night skeleton.</p></a>
-        <a class="card" href="hotels.html"><h3>🏨 Hotels (12 Ranked)</h3><p>Live Feb 15–22, 2027 checkout quotes, room specs, private bath notes, and cancellation rules.</p></a>
-        <a class="card" href="restaurants.html"><h3>⭐ Michelin Guide 2026</h3><p>25 deep-verified venues (Starred vs. Bib/Selected), exact 2026 PDF/FAQ prices, social links, plus all 50 starred.</p></a>
-        <a class="card" href="activities.html"><h3>🏛️ Activities ≤1h</h3><p>12 central attractions with official hours, closures, Yu Garden ¥60 off-peak tickets, and video links.</p></a>
-        <a class="card" href="transport.html"><h3>🚇 Transport &amp; 1h Radius</h3><p>Verified Metro lines &amp; district corridors with honest flagging of unverified minute estimates.</p></a>
-        <a class="card" href="budget.html"><h3>💰 Budget (Totals for 2)</h3><p>Combined 7-night hotel + exact verified dining &amp; activity scenarios.</p></a>
-        <a class="card" href="questions.html"><h3>❓ Q&amp;A Gaps (10)</h3><p>Decisions to confirm before locking non-refundable flights or hotel rooms.</p></a>
-        <a class="card" href="suggestions.html"><h3>💡 Suggestions (8)</h3><p>Actionable review-before-implement planning proposals.</p></a>
-        <a class="card" href="flagged.html"><h3>🚩 Flagged &amp; Audit (10)</h3><p>Complete F01–F10 remediation log comparing legacy claims against live verified data.</p></a>
-        <a class="card" href="sources.html"><h3>🔗 Sources Register</h3><p>Direct official links to gov.cn, NIA, MICHELIN Guide, Peninsula, Langham, Bvlgari &amp; museums.</p></a>
-        <a class="card" href="methodology.html"><h3>🔬 Methodology</h3><p>Line-by-line evidence standards and anti-hallucination verification protocol.</p></a>
+        <a class="card portal-card" href="verify/index.html">
+          <h3>Executive Summary &amp; Dashboard</h3>
+          <p>Recommended start: planning overview, scope, shortlist, and the decision caveats.</p>
+          <span class="card-link">Open dashboard →</span>
+        </a>
+        <a class="card portal-card" href="verify/hotels.html">
+          <h3>Hotels &amp; Rates</h3>
+          <p>Eight candidates, dated seven-night rate snapshot for two adults, location, Michelin-cluster counts, and room-fit caveats.</p>
+          <span class="card-link">Compare hotel evidence →</span>
+        </a>
+        <a class="card portal-card" href="verify/restaurants.html">
+          <h3>Michelin Restaurants</h3>
+          <p>Star status, guide distinction, price band, hours where confirmed, official venue pages, and verified social links where recorded.</p>
+          <span class="card-link">Browse restaurant table →</span>
+        </a>
+        <a class="card portal-card" href="verify/activities.html">
+          <h3>Activities &amp; Social Reviews</h3>
+          <p>Opening information, tickets, exceptions, official venue links, and social links where verified.</p>
+          <span class="card-link">Browse activities →</span>
+        </a>
+        <a class="card portal-card" href="verify/transport.html">
+          <h3>Travel-Time Check</h3>
+          <p>What the records support about district proximity, with unverified minute-level routes clearly called out.</p>
+          <span class="card-link">Review the one-hour analysis →</span>
+        </a>
+        <a class="card portal-card" href="verify/budget.html">
+          <h3>Budget for Two</h3>
+          <p>Seven-night hotel totals and official menu totals where available; no unsupported meal estimates or currency conversions.</p>
+          <span class="card-link">Review budget evidence →</span>
+        </a>
+        <a class="card portal-card" href="verify/questions.html">
+          <h3>Open Questions</h3>
+          <p>Missing decisions and facts that prevent a reasonable final hotel, date, and itinerary choice, with discovery steps.</p>
+          <span class="card-link">See questions to resolve →</span>
+        </a>
+        <a class="card portal-card" href="verify/suggestions.html">
+          <h3>Suggestions — Review Before Implementing</h3>
+          <p>Decision-support improvements and proposed research steps. This is a review queue, not an automatic change list.</p>
+          <span class="card-link">Review suggestions →</span>
+        </a>
+        <a class="card portal-card" href="verify/flagged.html">
+          <h3>Flagged for Review</h3>
+          <p>Source conflicts, unavailable official pages, unsupported details, and other irregularities with follow-up actions.</p>
+          <span class="card-link">Inspect all flags →</span>
+        </a>
+        <a class="card portal-card" href="verify/sources.html">
+          <h3>Sources</h3>
+          <p>Official-source register and page links used by the source-first dashboard.</p>
+          <span class="card-link">Open source register →</span>
+        </a>
+        <a class="card portal-card" href="verify/verification.html">
+          <h3>Verification Log</h3>
+          <p>Research protocol, checks performed, and the limits of what the recorded sources could confirm.</p>
+          <span class="card-link">Read verification notes →</span>
+        </a>
+        <a class="card portal-card" href="plan/dates.html">
+          <h3>Trip-Length Comparison</h3>
+          <p>Separate 7-, 10-, and 14-night date options, plus a closing-day-aware itinerary outline.</p>
+          <span class="card-link">Compare date options →</span>
+        </a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Companion Subsites Preserved in This Repository</h2>
-      <p class="sub">Independent session builds preserved intact alongside this unified root dashboard.</p>
-      <div class="grid grid-3">
-        <a class="card" href="verify/index.html"><h3>verify/</h3><p>Re-verified Nov 25 snapshot with 50 starred entries, 8 MICHELIN hotels, and T'ang Court PDF verification.</p></a>
-        <a class="card" href="plan/index.html"><h3>plan/</h3><p>Python dataset build featuring Taian Table FAQ, Yu Garden off-peak rules, and 7/10/14-night date comparison.</p></a>
-        <a class="card" href="for-two/index.html"><h3>for-two/</h3><p>6-window Peninsula direct quote audit, 2026 hotel PDF menus, and 113-check Playwright verification.</p></a>
-        <a class="card" href="considered/index.html"><h3>considered/</h3><p>Source-first baseline shortlist with automated schema/link validation.</p></a>
-        <a class="card" href="docs/index.html"><h3>docs/</h3><p>JSON-driven entry rules, State Council 2027 holiday calendar, and museum notices.</p></a>
-        <a class="card" href="audit-2026-11-26/index.html"><h3>audit-2026-11-26/</h3><p>Independent Nov 26 audit of remaining legacy gaps resolved by this canonical root rebuild.</p></a>
+    <section class="section" aria-labelledby="other-views">
+      <h2 id="other-views">Independent research views</h2>
+      <p class="section-intro">Several dashboards were built in separate research passes. They provide additional perspectives, but their methods and snapshots are not identical. Do not combine conflicting counts, rates, or rankings without checking the linked source.</p>
+      <div class="subsite-grid">
+        <article class="subsite-card">
+          <h3>Plan · dates and Michelin comparison</h3>
+          <p>Date options, broader restaurant coverage, a closing-day-aware itinerary, and explicit price/transit unknowns.</p>
+          <a href="plan/index.html">Open Plan →</a>
+        </article>
+        <article class="subsite-card">
+          <h3>For Two · couple-focused shortlist</h3>
+          <p>An independent two-adult planning view with its own hotel, dining, source, and review data.</p>
+          <a href="for-two/index.html">Open For Two →</a>
+        </article>
+        <article class="subsite-card">
+          <h3>Considered · source-first baseline</h3>
+          <p>A separate Shanghai baseline that publishes unresolved hotel-rate, room-fit, and travel-time items rather than estimating them.</p>
+          <a href="considered/index.html">Open Considered →</a>
+        </article>
+        <article class="subsite-card">
+          <h3>Docs · entry, calendar, and repository review</h3>
+          <p>Companion research on entry/calendar information, Michelin, activities, and repository irregularities.</p>
+          <a href="docs/index.html">Open Docs →</a>
+        </article>
       </div>
+      <details class="archive">
+        <summary>Archived detailed root dashboard and category pages</summary>
+        <p class="footnote">The complete detailed root dashboard that preceded this compact hub is preserved with its root navigation. It was re-verified on Nov 26, 2026, but its data snapshot is not fully reconciled with <code>/verify/</code>. Use it as a comparison view and follow its source links and review flags.</p>
+        <p><a class="btn" href="root-dashboard-2026.html">Open archived root dashboard →</a></p>
+      </details>
+    </section>
+
+    <section class="card" aria-labelledby="source-promise">
+      <h2 id="source-promise">Source and review standard</h2>
+      <p>Use each category page’s source link to inspect the relevant official venue, government, Michelin, or booking-channel page. When a value could not be confirmed, the source-first pages leave it blank or label it unverified and route it to <a href="verify/flagged.html">Flagged for Review</a>. Social posts are not treated as proof of hours, prices, or Michelin status.</p>
+      <p class="footnote mt12">The <code>/verify/</code> data records checks as of Nov 25, 2026; selected root corrections were logged Nov 26, 2026. Prices, availability, opening calendars, and restaurant distinctions can change. Re-open the official source before booking or visiting. No reservation or payment is made by this site.</p>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-row">
-      <span>ChinaFun3 Root Dashboard · Verified <strong>2026-11-26</strong> · Every table row carries an official source link or explicit <span class="badge badge-unverified">Unverified · Flagged</span> label.</span>
-      <span><a href="methodology.html">Verification Methodology</a> · <a href="flagged.html">Audit Log (F01–F10)</a> · <a href="sources.html">All Sources</a></span>
+    <div class="container">
+      <p class="m0">ChinaFun3 · Trip Planning China · <a href="verify/sources.html">Sources</a> · <a href="verify/flagged.html">Flagged for Review</a> · <a href="COORDINATION.md">Coordination &amp; audit log</a> · <a href="https://kanlerxz87-cyber.github.io/ChinaFun3/">Live GitHub Pages site</a></p>
     </div>
   </footer>
 </body>
