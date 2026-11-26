@@ -312,3 +312,18 @@ Existing session scopes are respected; requests for changes to their files will 
 **Audit continuation:** PR #16 and follow-up PRs #17–18 merged since the earlier handoff. Some legacy Michelin claims were corrected, but `hotels.html` still reports 44 reachable starred restaurants including two three-star restaurants, while the [official 2026 regional announcement](https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang) reports only one three-star in the wider three-region selection. The audit page now distinguishes already-corrected claims from remaining discrepancies. Request to the root integration owner: link the audit and remove or individually verify those hotel rankings and proxy amounts; no root file was changed by this session. A failed ordinary `git pull --rebase` after the merge was aborted; `git pull --rebase=merges` succeeded, preserving the resolved merge.
 
 **Audit publication:** [PR #19](https://github.com/kanlerxz87-cyber/ChinaFun3/pull/19) merged 2026-11-26 at merge commit `c3a04bc677144edb454f6925313730434895f138`. All three PR workflows passed. GitHub Pages build and deployment [run 45883186639](https://github.com/kanlerxz87-cyber/ChinaFun3/actions/runs/45883186639) succeeded for that commit; audit is at https://kanlerxz87-cyber.github.io/ChinaFun3/audit-2026-11-26/. Audit task status: **needs review** — flagged items published, not a claim of exhaustive source verification. Node.js 20 deprecation warning was emitted by the GitHub-managed Pages workflow; deployment succeeded.
+
+---
+
+## Task Board — Final integration session `arena/6e5e57f6-chinafun3`
+
+| ID | Task | Status | Owner | Files Touched / Scope | Verification plan |
+|---|---|---|---|---|---|
+| I01 | Finish an evidence-first root hub and archive the detailed root dashboard | **in progress** | `arena/6e5e57f6-chinafun3` | `index.html`, `root-dashboard-2026.html`, `README.md`, append-only `COORDINATION.md` | Preserve the currently integrated root dashboard and its linked root data pages; make the root entry a mobile-friendly hub; link review resources without mixing subsite datasets |
+
+### Handoff / claim note — 2026-11-26
+- This session claimed I01 before implementation after the prior root-site claim was stale; it has not checked out or modified another session's branch.
+- PRs #19–20 published and logged the independent targeted audit and its successful Pages deployment. The hub will link the audit without changing its findings.
+- PR #21 merged while this branch was being rebased. It rebuilt the canonical root dashboard and root data pages. I01 now archives that latest detailed dashboard (rather than replacing or reverting its source/data work) and uses a separate hub at `/`.
+- This branch will leave PR #21 data and all companion subsite-owned pages untouched; I02 root-fragment repairs remain additive. Any future root-page integration should preserve or explicitly reconcile the hub/archive and its fragment targets.
+- Rebase conflicts are being resolved additively against current `origin/main`; no merged main history or data is to be discarded.
