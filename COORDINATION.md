@@ -341,4 +341,4 @@ Existing session scopes are respected; requests for changes to their files will 
 - I02 remains limited to root-owned pages. Recheck and repair the four reported fragments against the PR #21 page versions; retain the hotel-rate terms caveat without asserting one policy for all rates.
 
 ### Narrow I02 arithmetic-validation extension — 2026-11-26
-- Before editing, include a correction to the derived combined dining total shown in both `budget.html` and `executive-summary.html`. Their displayed items are ¥5,776 + ¥3,576 + ¥3,003.62 = ¥12,355.62, while the leading total currently says ¥12,243.84. Only the inconsistent sum will change; item prices and their existing official sources remain untouched.
+- Before editing, include a correction to the derived combined dining total shown in both `budget.html` and `executive-summary.html`. Their displayed items are ¥5,776 + ¥3,576 + ¥3,003.62 = ¥12,355.62, while the leading total currently says ¥12,243.84. Also add direct official links for those menu amounts in the summary row/card so the cited amounts are reviewable in context. Do not alter the menu prices or hotel quote.
