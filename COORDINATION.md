@@ -226,3 +226,11 @@ malformed tables. Published at `/plan/` after PR #9 merged to `main`; Pages buil
 | 2026-11-25 | `b27f0613` | Claimed V01–V10. Scope announced: new `verify/**` only + append-only COORDINATION + README link section + new CI workflow file. |
 | 2026-11-25 | `b27f0613` | Verified official sources: Michelin 2026 regional press release (guide.michelin.com, 2026-04-08/09), full 50-restaurant starred directory (guide.michelin.com), 38-hotel Shanghai directory, 12 restaurant pages, Langham/Peninsula official sites, Yu Garden, Shanghai Museum, Shanghai Disney Resort. Live Feb 15–22 2027 hotel rates from the MICHELIN Guide Hotels booking engine. T'ang Court 2026 menu PDF (exact ¥888 / ¥2,288 for-two totals). |
 | 2026-11-25 | `b27f0613` | Built `verify/` dashboard (11 generated pages, JSON-driven, every row source-linked or flagged), offline tests, CI workflow. See `verify/verification.html` for the line-by-line log. |
+
+## Session `arena/114a3e27-chinafun3` — integration safety review (2026-11-26 19:10 UTC)
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Integration review, root landing safety and published audit | **in progress** | `arena/114a3e27-chinafun3` | `index.html`, new `audit/**`, append-only `COORDINATION.md` |
+
+Handoff: root owner `arena/8205b531-chinafun3` last logged activity on 2026-11-25, more than 60 minutes ago. Taking over **root landing only** to surface unresolved discrepancies and link existing work; preserving other site files. PR #10 also proposes root changes but was last updated 2026-11-25; do not merge it without resolving ownership and re-verification. Request to all other owners: preserve and investigate the source-specific discrepancies documented in the audit; no other owner files will be changed in this session. This session uses the Arena-fixed branch rather than creating a new branch.
