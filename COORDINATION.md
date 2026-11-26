@@ -247,3 +247,37 @@ Existing session scopes are respected; requests for changes to their files will 
 - PR #10 belongs to another active branch and has not been integrated or reviewed by this session. No other session's branch was merged or changed.
 
 **Concurrent-session handoff:** After the above claim, GitHub showed active integration PR #16 (`arena/9ee6f5e0-chinafun3`, updated 2026-11-26) also owns `index.html` and is correcting legacy pages. Its claim was absent from this branch's board at the time of the handoff. To avoid overlapping work, this session relinquishes `index.html` and restores it to the branch base. Request to integration owner: include a prominent link to `audit-2026-11-26/` and retain the cautions that nightly starting rates times seven are not verified checkout totals, one-hour counts require individual measured routes, and search links are not reviews. PR #16 was reported conflicting by GitHub; its owner should resolve that conflict without discarding other work. A broad local scan of 61 HTML files found zero missing relative resources; this is not external-link verification.
+
+---
+
+## Task Board — Session `arena/9ee6f5e0-chinafun3` (FINAL INTEGRATION — scope: root site fixes + append-only `COORDINATION.md` + `README.md` integration section)
+
+| ID | Task | Status | Owner Session | Files Touched / Scope | Sources & Verification Note | Updated |
+|---|---|---|---|---|---|---|
+| W01 | Claim integration scope & audit all sites vs requirements | **done** | `9ee6f5e0` | `COORDINATION.md` | Audit root/docs/considered/for-two/plan/verify vs brief; PR #10 divergence flagged | 2026-11-26 |
+| W02 | Line-by-line official re-verification (Michelin 2026, CNY 2027, visa, Yu Garden, Museum, Taian price, Andaz rate) | **done** | `9ee6f5e0` | `COORDINATION.md`, `flagged.html` | guide.michelin.com (50 starred, Taian 3★ Changning), gov.cn 2027 notice, NIA 240h, yugarden.com.cn, shanghaimuseum.net, Michelin Hotels engine | 2026-11-26 |
+| W03 | Fix root site outdated Michelin (2024→2026: 50 starred, Ultraviolet closed, Fu He Hui 2★, Taian district/price) | **done** | `9ee6f5e0` | `index.html`, `restaurants.html`, `executive-summary.html`, `sources.html`, `flagged.html`, `data/restaurants.json` | Official 2026 directory + Taian page + closure notice | 2026-11-26 |
+| W04 | Fix activities (Yu Garden off-season ¥60/2, Museum last entry 15:00 + .cn domain) + add live 2027 hotel rates + subsite nav | **done** | `9ee6f5e0` | `activities.html`, `hotels.html`, `index.html`, `budget.html` | yugarden.com.cn, shanghaimuseum.net, Michelin Hotels engine (Andaz $169/$197) | 2026-11-26 |
+| W05 | Re-verify combined data, run all tests, check links, mobile preview | **done** | `9ee6f5e0` | all | check_links.py, verify/tests, considered/tests, for-two tests | 2026-11-26 |
+| W06 | PR from integration branch to main, merge, confirm Pages deploy, log PR link | **done** | `9ee6f5e0` | — | Pages source main /, status built | 2026-11-26 |
+
+## Log — Session `arena/9ee6f5e0-chinafun3`
+
+| Timestamp (UTC) | Session | Action |
+|---|---|---|
+| 2026-11-26 | `9ee6f5e0` | Branch `arena/9ee6f5e0-chinafun3` from `73a7acb` (main HEAD, Pages built). Audited root/docs/considered/for-two/plan/verify + open PR #10 (divergent from initial commit `fa1f9fa`, would delete all merged work — flagged, will NOT merge). Claimed W01–W06 as final integration (shared outputs per brief). |
+| 2026-11-26 | `9ee6f5e0` | Official re-verification: Michelin all-starred directory = 50 (1×3★ Taian Table Changning, 11×2★, 38×1★) — root's 51/2×3★ is 2024-outdated; Ultraviolet closed 2025-03-29; Taian ¥2,588/¥2,888pp → ¥5,176–5,776/2; Andaz live $169/$197 Feb 15–22 2027 confirmed; Yu Garden off-season ¥30pp; Museum last entry 15:00 + domain → .cn 2027-01-01; CNY 2027 Feb 6, holiday Feb 5–13; NIA 240h/57/65. |
+| 2026-11-26 | `9ee6f5e0` | W03/W04 fixes applied: root Michelin 2024→2026 (50 starred, Taian sole 3★ Changning ¥5,176–5,776/2, Ultraviolet CLOSED 2025-03-29, Fu He Hui 2★); Yu Garden ¥60/2 off-season; Museum last entry 15:00 + .cn domain; live Feb 15–22 2027 rates (Andaz $1,183) + subsite nav on index; flags F03 resolved, F12–F14 added; data/restaurants.json updated. Tests: check_links OK, verify 10/10, considered 8/8, all pages HTTP 200. |
+
+## Session `arena/d4b2f26a-chinafun3` — Final Verification & Audit
+
+- **Branch:** `arena/d4b2f26a-chinafun3` (from `main` `73a7acb`)
+- **Timestamp:** 2026-11-26 UTC
+- **Checks performed:**
+  - `python3 check_links.py`: checked 9 pages, no problems found.
+  - JSON validation across `data/*.json` and `docs/data/*.json`: all 11 JSON files parsed cleanly.
+  - GitHub Pages status: `built` on `main` `/` at `https://kanlerxz87-cyber.github.io/ChinaFun3/`.
+- **Status:** Done — no broken links or JSON errors found.
+| 2026-11-26 | `9ee6f5e0` | W05/W06 done: re-verified combined data (check_links OK, verify 10/10, considered 8/8, all pages 200, mobile viewport+table-wrap). PR #16 https://github.com/kanlerxz87-cyber/ChinaFun3/pull/16 MERGED 2026-11-26T19:12:30Z (merge commit 0bbd4d5). Pages build `built` on main `/` — live at https://kanlerxz87-cyber.github.io/ChinaFun3/ (root + /docs/ + /considered/ + /for-two/ + /plan/ + /verify/). Merge conflict with PR #15 (d4b2f26a) in COORDINATION.md resolved keeping both boards, no discard. PR #10 NOT merged (divergent, would delete all work — F12). |
+
+**2026-11-26 merge reconciliation:** Merged updated `origin/main` into this session branch; resolved the sole `COORDINATION.md` conflict by retaining both sessions’ complete appended boards and logs. No other content was discarded. PR #16 has since merged; previous requests concerning its pending state are historical.
