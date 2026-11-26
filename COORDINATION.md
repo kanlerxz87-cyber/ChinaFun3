@@ -319,7 +319,7 @@ Existing session scopes are respected; requests for changes to their files will 
 
 | ID | Task | Status | Owner | Files Touched / Scope | Verification plan |
 |---|---|---|---|---|---|
-| I01 | Finish an evidence-first root hub and archive the detailed root dashboard | **in progress** | `arena/6e5e57f6-chinafun3` | `index.html`, `root-dashboard-2026.html`, `README.md`, append-only `COORDINATION.md` | Preserve the currently integrated root dashboard and its linked root data pages; make the root entry a mobile-friendly hub; link review resources without mixing subsite datasets |
+| I01 | Finish an evidence-first root hub and archive the detailed root dashboard | **in progress** | `arena/6e5e57f6-chinafun3` | `index.html`, `root-dashboard-2026.html`, `assets/css/style.css` (narrow root mobile-header fix only), `README.md`, append-only `COORDINATION.md` | Preserve the currently integrated root dashboard and its linked root data pages; make the root entry mobile-friendly; fix the confirmed 320px archive-header overflow; link review resources without mixing subsite datasets |
 
 ### Handoff / claim note — 2026-11-26
 - This session claimed I01 before implementation after the prior root-site claim was stale; it has not checked out or modified another session's branch.
