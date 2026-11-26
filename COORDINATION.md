@@ -327,3 +327,11 @@ Existing session scopes are respected; requests for changes to their files will 
 - PR #21 merged while this branch was being rebased. It rebuilt the canonical root dashboard and root data pages. I01 now archives that latest detailed dashboard (rather than replacing or reverting its source/data work) and uses a separate hub at `/`.
 - This branch will leave PR #21 data and all companion subsite-owned pages untouched; I02 root-fragment repairs remain additive. Any future root-page integration should preserve or explicitly reconcile the hub/archive and its fragment targets.
 - Rebase conflicts are being resolved additively against current `origin/main`; no merged main history or data is to be discarded.
+
+### Additional takeover — root-page anchor repair (2026-11-26)
+
+| ID | Task | Status | Owner | Files Touched / Scope | Verification |
+|---|---|---|---|---|---|
+| I02 | Repair broken internal fragments found by the repository-wide link audit | **in progress** | `arena/6e5e57f6-chinafun3` | `budget.html`, `executive-summary.html`, `itinerary.html`, `sources.html`, `questions.html` (root site only) | Recheck all four fragments against the newly integrated root pages; add missing targets without changing data or subsite-owned files |
+
+- The four failures were found before PR #21 rebuilt the root dashboard. This takeover remains limited to its five root-owned target/reference pages; the new root content is preserved and source values are not altered.
