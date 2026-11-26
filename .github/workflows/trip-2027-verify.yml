@@ -1,0 +1,35 @@
+name: Verify Trip-2027 Couple Dashboard
+
+on:
+  push:
+    branches: ["main", "arena/**"]
+    paths:
+      - "trip-2027/**"
+      - ".github/workflows/trip-2027-verify.yml"
+  pull_request:
+    paths:
+      - "trip-2027/**"
+      - ".github/workflows/trip-2027-verify.yml"
+
+jobs:
+  verify-trip-2027:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rebuild trip-2027 static HTML and check clean git diff
+        run: |
+          python3 trip-2027/scripts/build.py
+          git diff --exit-code trip-2027/
+
+      - name: Run trip-2027 automated verification tests
+        run: python3 -m unittest discover -s trip-2027/tests -p "test_*.py" -v
+
+      - name: Validate client JavaScript syntax
+        run: node --check trip-2027/assets/app.js

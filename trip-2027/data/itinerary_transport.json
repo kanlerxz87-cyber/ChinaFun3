@@ -1,0 +1,164 @@
+{
+  "checked_date": "2026-11-26",
+  "itinerary_days": [
+    {
+      "day": "Day 1 · Mon Feb 15, 2027",
+      "theme": "Arrival, The Bund Promenade & Monday-Safe Art + MICHELIN Dining",
+      "calendar_alert": "Normal workday Monday (Spring Festival holiday ended Sat Feb 13; Sun Feb 14 was make-up workday). CLOSED TODAY: Yu Garden, Shanghai Museum People's Square, Power Station of Art, Da Vittorio, Taian Table, Sir Elly's, and (potentially) T'ang Court.",
+      "morning": "Arrive PVG → 8-min Shanghai Maglev (CNY 50/pp, tap Visa/Mastercard at gate, or CNY 55 Maglev + 24h Metro Pass) to Longyang Rd → Metro Line 2/10 to Xintiandi or Bund hotel check-in / bag drop.",
+      "afternoon": "Walk The Bund Heritage Promenade (open 24h, CNY 0) → cross via Line 2 to Museum of Art Pudong (MAP, OPEN MONDAYS 10:00–21:00, Sunset Mirror Hall facing the Bund).",
+      "evening": "Monday-open MICHELIN Dinner: Yi Long Court (1★ Cantonese at The Peninsula, Tasting CNY 2,304/2 or à la carte, open daily 18:00–22:30) OR Mr & Mrs Bund (MICHELIN Selected, PP Classic Sharing Dinner CNY 2,834/2, open daily 17:30–22:00).",
+      "source_url": "https://english.shanghai.gov.cn/en-MuseumsGalleries/20250702/64d1d26886b3458b8dffb3a8533787b5.html",
+      "source_label": "MAP Open-Monday Schedule"
+    },
+    {
+      "day": "Day 2 · Tue Feb 16, 2027",
+      "theme": "Classical Yu Garden, Plane-Tree Lanes & French/Italian Stars",
+      "calendar_alert": "CLOSED TUESDAYS: Shanghai Museum East & Sir Elly's (dinner). Yu Garden, French Concession & Da Vittorio ARE OPEN!",
+      "morning": "09:00 Yu Garden Daytime Entry (Off-peak CNY 60 for 2, Tue–Sun 09:00–16:30, last entry 16:00; Line 10/14 Yuyuan Garden) + local pan-fried bun snack at Da Hu Chun (Bib Gourmand, ¥, open 08:00–21:00).",
+      "afternoon": "Line 10 to Jiaotong University / Shanghai Library → stroll Wukang Mansion, Wukang Road & Anfu Road in the Former French Concession.",
+      "evening": "Starred European Dinner: Da Vittorio Shanghai (2★ Italian at BFC, Tue–Sun 18:00–21:30) OR Le Comptoir de Pierre Gagnaire (1★ French at Capella Jian Ye Li, CNY 2,284–4,556/2 à la carte, daily 18:00–20:30).",
+      "source_url": "https://www.yugarden.com.cn/page/articleView/message.html",
+      "source_label": "Yu Garden Official Hours"
+    },
+    {
+      "day": "Day 3 · Wed Feb 17, 2027",
+      "theme": "Shanghai Museum East Masterpieces, 632m Sky Deck & 2★ Dim Sum",
+      "calendar_alert": "Shanghai Museum East reopens Wednesday (10:00–18:00); Sir Elly's rooftop reopens Wednesday (18:00–22:30).",
+      "morning": "10:00 The Shanghai Museum East (1952 Century Ave, Pudong — FREE, no individual reservation needed, bring US passports to B1 East Gate; Bronze, Jade, Ceramics & Painting galleries).",
+      "afternoon": "Lunch at T'ang Court (2★ Cantonese at Langham Xintiandi — verified Dim Sum Lunch Set CNY 888 for 2 incl. tax/service!) → late-afternoon Top of Shanghai 118F Observatory (CNY 360 for 2).",
+      "evening": "Bund Rooftop or Skyline Dinner: Sir Elly's Restaurant (MICHELIN Selected, 13F Peninsula, 5-course CNY 3,004/2 incl. 16.6%, Wed–Sun) OR Jin Xuan (1★ Cantonese, 53F Ritz-Carlton Pudong).",
+      "source_url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-east",
+      "source_label": "Shanghai Museum East"
+    },
+    {
+      "day": "Day 4 · Thu Feb 18, 2027 (Preferred Mid-Week Anchor)",
+      "theme": "Contemporary Riverfront Art, 2★ Thu–Sun Lunch & Sole 3★ Counter",
+      "calendar_alert": "8½ Otto e Mezzo Bombana's lunch service operates Thu–Sun ONLY (12:00–13:30) — Thursday is first lunch day!",
+      "morning": "Power Station of Art (PSA, Tue–Sun 11:00–19:00, CNY 0 permanent space) along the Huangpu South Bund.",
+      "afternoon": "Thursday-Unlocked Lunch at 8½ Otto e Mezzo Bombana (2★ Italian, Rockbund) OR Creative Dim Sum Set for Two at Sui Tang Li (MICHELIN Selected, Jing'an, CNY 988 for 2 w/ 24h notice).",
+      "evening": "Flagship 3★ Degustation: Taian Table (Shanghai's ONLY 3-Star restaurant, Changning, Tue–Sat 18:00–20:00 counter seating; RMB 4,000 deposit for 2).",
+      "source_url": "https://sh.taian-table.cn/faq/",
+      "source_label": "Taian Table Official FAQ"
+    },
+    {
+      "day": "Day 5 · Fri Feb 19, 2027",
+      "theme": "Weekday Canal Town OR Shanghai Disneyland (Pre-Weekend Low Queues)",
+      "calendar_alert": "Friday beats Saturday's Lantern Festival crowds at both Zhujiajiao and Shanghai Disneyland.",
+      "morning": "Choice A (Heritage): Metro Line 10 → Line 17 to Zhujiajiao Ancient Water Town (scenic combo CNY 120 for 2, canal bridges & Kezhi Garden). Choice B (Modern): Metro Line 11 to Shanghai Disneyland (from CNY 950 for 2; Zootopia & TRON).",
+      "afternoon": "Continue canal boat / tea houses in Zhujiajiao OR afternoon attractions at Shanghai Disneyland.",
+      "evening": "Relaxed Xintiandi Bistro Dinner: Polux by Paul Pairet (Bib Gourmand French Café, Xintiandi terrace) OR Rong Cuisine (Bib Gourmand Taizhou seafood, walk-in couple table).",
+      "source_url": "https://service.shmetro.com/en/yygg/1515.htm",
+      "source_label": "Shanghai Metro Line 11/17 Guide"
+    },
+    {
+      "day": "Day 6 · Sat Feb 20, 2027 (Lantern Festival / 元宵节!)",
+      "theme": "2★ Zen Vegetarian Lunch, Huangpu River Cruise & Lantern Festival Night",
+      "calendar_alert": "15th day of the First Lunar Month (Lantern Festival)! Yuyuan Night Tour runs Fri–Sun 18:00–21:20 — book timed entry early!",
+      "morning": "The Shanghai Museum on People's Square (09:00–17:00, last entry 15:00 — special 'Ancient Civilizations of the Americas' exhibition).",
+      "afternoon": "2★ Lunch at Fu He Hui (2★ Vegetarian Zen sets, Changning, 11:00–13:00) OR Canton 8 Runan St (2★ Cantonese at ¥¥ moderate band) → late-afternoon Huangpu River Cruise (CNY 240 for 2 daytime classic).",
+      "evening": "Lantern Festival Celebration at Yuyuan Old Street & Yu Garden Night Tour ('Yu Xiang Shan Lin' light show, Fri–Sun 18:00–21:20) + late-night Neo-Chinese tasting at Ling Long (1★, Waldorf Bund, open until 01:00).",
+      "source_url": "https://english.shanghai.gov.cn/en-UniqueExperience-travelinshanghai/20250729/25cfb8bce97d4e798f99ac62986255ff.html",
+      "source_label": "Yuyuan Night Tour Official"
+    },
+    {
+      "day": "Day 7 · Sun Feb 21, 2027",
+      "theme": "Bund Terrace Brunch, Shikumen Lanes & Suhe Creek 2★ Finale",
+      "calendar_alert": "Taian Table is closed Sundays; Bao Li Xuan, Yi Long Court, Mr & Mrs Bund, and Ling Long are open.",
+      "morning": "Leisurely morning in Xintiandi Shikumen alleys & Jing'an parks.",
+      "afternoon": "Weekend Bund Terrace Brunch at Mr & Mrs Bund (CNY 990 for 2 incl. 10%) OR Dim Sum Lunch at Yi Long Court (1★, CNY 695–788 for 2 incl. 16.6%).",
+      "evening": "Farewell Gala Dinner at Bao Li Xuan (2★ Cantonese in historic 1916 Chamber of Commerce at Bvlgari Hotel — verified Set Menu CNY 3,576 for 2 incl. service & tax).",
+      "source_url": "https://www.bulgarihotels.com/mgnl/dam/jcr:b07dc4e7-f129-4516-ac0d-4cd860fc3c9b/bvlgari-hotel-shanghai-bao-li-xuan-menu-en.pdf",
+      "source_label": "Bao Li Xuan Official Menu"
+    },
+    {
+      "day": "Day 8 · Mon Feb 22, 2027 (Departure or Extension Pivot)",
+      "theme": "Express Maglev Departure OR 10/14-Night Hangzhou/Suzhou HSR Extension",
+      "calendar_alert": "If extending to 10 nights (Feb 25) or 14 nights (Mar 1), depart Shanghai Hongqiao via 45-min HSR to Hangzhou (13★ MICHELIN venues + West Lake).",
+      "morning": "Hotel breakfast & check-out → Metro Line 2 to Longyang Rd → 8-min Maglev (CNY 50/pp) to PVG Terminal 1/2 (or 40-min Airport Link Line CNY 26 between SHA & PVG).",
+      "afternoon": "Onward flight (to 3rd country/region if using 240h Visa-Free Transit, or direct US return if holding Chinese L-Visa).",
+      "evening": "—",
+      "source_url": "https://english.shanghai.gov.cn/en-Traffic/20260813/f257d5c33862467c8a4a63f47cf7e41c.html",
+      "source_label": "Shanghai Maglev Official Guide"
+    }
+  ],
+  "airport_transit": [
+    {
+      "mode": "Shanghai Maglev Train (PVG ↔ Longyang Road)",
+      "route": "Pudong Int'l Airport (PVG) ↔ Longyang Rd (interchange w/ Metro Lines 2, 7, 16, 18)",
+      "travel_time": "8 minutes nonstop (07:02 – 21:42; every 15–20 min)",
+      "fare_per_person": "CNY 50 single · CNY 80 round-trip · CNY 40 w/ same-day boarding pass · CNY 55 Maglev + 24h Metro Pass",
+      "couple_total": "CNY 100 single (CNY 80 w/ boarding pass) · CNY 110 w/ two 24h Metro passes",
+      "payment_note": "Tap foreign Visa, Mastercard, JCB, Diners, UnionPay directly at Maglev turnstiles, or Alipay/WeChat.",
+      "source_url": "https://english.shanghai.gov.cn/en-Traffic/20260813/f257d5c33862467c8a4a63f47cf7e41c.html",
+      "source_label": "Shanghai Gov Maglev"
+    },
+    {
+      "mode": "Suburban Railway Airport Link Line (PVG ↔ SHA)",
+      "route": "Pudong T1&T2 ↔ Resort East ↔ Zhangjiang ↔ Sanlin South ↔ Jinghong Rd ↔ Qibao ↔ Hongqiao T2",
+      "travel_time": "40 minutes end-to-end (~06:00 – 22:00; every ~15 min)",
+      "fare_per_person": "CNY 26 full route (CNY 4 minimum)",
+      "couple_total": "CNY 52 full PVG↔SHA transfer",
+      "payment_note": "Note from Shmetro: for Shanghai Disneyland from downtown, take Metro Line 11 to Disney Resort station rather than Resort East on Airport Link Line.",
+      "source_url": "https://english.shanghai.gov.cn/en-Administration/20250614/a5c7bac9aa334d34ab6518fc6ab3e961.html",
+      "source_label": "Shanghai Gov Airport Link"
+    },
+    {
+      "mode": "Shanghai Metro Urban Network (20 Lines)",
+      "route": "Line 2 connects PVG ↔ Lujiazui ↔ East Nanjing Rd (Bund) ↔ People's Sq ↔ West Nanjing Rd ↔ Jing'an Temple ↔ Jiangsu Rd ↔ SHA",
+      "travel_time": "Official operating speed 35–40 km/h (~2–3 min per urban station); PVG to East Nanjing Rd ~60–65 min; SHA to Xintiandi (Line 10) ~30–35 min",
+      "fare_per_person": "CNY 3 (0–6 km) · CNY 4 (6–16 km) · +CNY 1 per 10 km >16 km · 1-Day Pass CNY 18 · 3-Day Pass CNY 45",
+      "couple_total": "CNY 6–8 per central ride for 2 · CNY 90 for two 72-hour Unlimited Metro Passes",
+      "payment_note": "Link Visa/Mastercard inside Alipay ('Transport' QR) or purchase 1-Day/3-Day passes at station service centers.",
+      "source_url": "https://service.shmetro.com/en/cczn/73.htm",
+      "source_label": "Shanghai Metro Official Fare Rules"
+    }
+  ],
+  "cluster_routes": [
+    {
+      "origin_cluster": "Xintiandi (#1 Langham · #2 Andaz)",
+      "destination": "The Bund / Rockbund (Peninsula, EDITION, Bombana, Mr & Mrs Bund, Ling Long)",
+      "metro_lines": "Line 10 direct: Xintiandi → Yuyuan Garden (2 stops) or East Nanjing Rd (3 stops)",
+      "estimated_window": "~12–18 min station-to-station + short walk (well under ≤1h threshold)",
+      "fare_for_two": "CNY 6 (CNY 3/pp, <6 km)",
+      "verification_note": "Line/station topology & <6 km fare verified on service.shmetro.com; exact walking minutes flagged in F16.",
+      "source_url": "https://service.shmetro.com/en/operation/965.htm"
+    },
+    {
+      "origin_cluster": "Xintiandi (#1 Langham · #2 Andaz)",
+      "destination": "Changning Fine-Dining Cluster (3★ Taian Table · 2★ Fu He Hui)",
+      "metro_lines": "Line 10 Xintiandi → Jiaotong Univ → Line 11 Jiangsu Rd (4 stops total)",
+      "estimated_window": "~18–25 min rail + 3–8 min walk (well under ≤1h threshold)",
+      "fare_for_two": "CNY 6–8 (CNY 3–4/pp)",
+      "verification_note": "Fu He Hui is 210m from Jiangsu Rd Exit 7; Taian Table is off Zhenning Rd / Jiangsu Rd.",
+      "source_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fu-he-hui"
+    },
+    {
+      "origin_cluster": "Xintiandi (#1 Langham · #2 Andaz) or Bund (#5 EDITION)",
+      "destination": "Lujiazui & Pudong Cultural Axis (1★ Jin Xuan, Shanghai Tower, MAP, Shanghai Museum East)",
+      "metro_lines": "Line 14 direct Xintiandi → Lujiazui (3 stops) OR Line 2 East Nanjing Rd → Lujiazui (1 stop) / Sci & Tech Museum (4 stops)",
+      "estimated_window": "~12–28 min rail + walk (well under ≤1h threshold)",
+      "fare_for_two": "CNY 6–8 (CNY 3–4/pp)",
+      "verification_note": "Exit 8 at Shanghai Science & Technology Museum verified on shanghaimuseum.net.",
+      "source_url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-east"
+    },
+    {
+      "origin_cluster": "Jing'an (#3 Shangri-La · #4 Sukhothai)",
+      "destination": "Xuhui French Concession (1★ Pierre Gagnaire, Wukang Mansion)",
+      "metro_lines": "Line 7 direct Jing'an Temple → Zhaojiabang Rd (3 stops) or Changshu Rd (1 stop)",
+      "estimated_window": "~10–18 min rail + walk (well under ≤1h threshold)",
+      "fare_for_two": "CNY 6 (CNY 3/pp, <6 km)",
+      "verification_note": "Direct north-south Line 7 link across central Puxi.",
+      "source_url": "https://service.shmetro.com/en/operation/965.htm"
+    },
+    {
+      "origin_cluster": "Xintiandi / Bund / Jing'an",
+      "destination": "Outer Scenic / Theme Endpoints: Shanghai Disneyland (Line 11) & Zhujiajiao (Line 17)",
+      "metro_lines": "Line 10 → Line 11 Disney Resort Terminus (~48–55 min) · Line 10 → Line 17 Zhujiajiao (~58–65 min)",
+      "estimated_window": "~50–65 min rail (sits right at the ~1h outer boundary — flagged in F16)",
+      "fare_for_two": "CNY 12–16 (CNY 6–8/pp progressive distance)",
+      "verification_note": "Official Shmetro announcement #1515 specifically instructs Disney visitors to ride Line 11.",
+      "source_url": "https://service.shmetro.com/en/yygg/1515.htm"
+    }
+  ]
+}

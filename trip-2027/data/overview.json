@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Shanghai Couple Culinary & Cultural Trip — Verified 2027 Edition",
+    "subtitle": "Line-by-line live-verified planning dashboard for two US travelers (Feb 15 – Mar 23, 2027)",
+    "verified_date": "2026-11-26",
+    "branch": "arena/b6e6976d-chinafun3",
+    "fx_reference_note": "Hotel checkout quotes on guide.michelin.com are live-fetched in USD (checked 2026-11-26). Direct hotel, restaurant PDF menu, metro, and municipal attraction prices are shown in their published currency (CNY/RMB or USD for US Embassy visa fees); approximate USD equivalents in narrative notes use indicative 1 USD ≈ 7.24 CNY solely as a convenience label and are never substituted for official published figures."
+  },
+  "hero_kpis": [
+    {
+      "label": "Top Mainland China Culinary Hub",
+      "value": "Shanghai · 50 Starred",
+      "detail": "1× 3★, 11× 2★, 38× 1★ + 33 Bib Gourmand + 70 Selected = 153 MICHELIN venues (2026 Guide)",
+      "source_url": "https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred",
+      "source_label": "MICHELIN Guide 2026"
+    },
+    {
+      "label": "Cheapest Verified 7-Night Window",
+      "value": "Feb 15 – Feb 22, 2027",
+      "detail": "Overlaps preferred Feb 15–18, post-CNY holiday lull, 15.5%–40.3% cheaper than March 2027 across live curves",
+      "source_url": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm",
+      "source_label": "State Council + Live Hotel Curves"
+    },
+    {
+      "label": "7-Night Hotel Range (All-In w/ Tax)",
+      "value": "$1,376 – $7,418",
+      "detail": "Andaz Xintiandi $1,376.21 · Shangri-La $1,847.02 · Langham $2,291.93 (incl. breakfast & 2★ T'ang Court)",
+      "source_url": "https://guide.michelin.com/en/hotels-stays/shanghai/the-langham-shanghai-xintiandi-5331?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1",
+      "source_label": "MICHELIN Hotels Live Quotes"
+    },
+    {
+      "label": "US Citizen Entry Pathways",
+      "value": "$0 Transit or $140/pp Visa",
+      "detail": "240h (10-day) Visa-Free Transit w/ onward 3rd-country ticket, OR $140/pp L-Visa reduced fee through Dec 31, 2026",
+      "source_url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html",
+      "source_label": "China NIA & US Embassy"
+    }
+  ],
+  "city_comparison": [
+    {
+      "rank": 1,
+      "city": "Shanghai",
+      "three_star": 1,
+      "two_star": 11,
+      "one_star": 38,
+      "total_starred": 50,
+      "bib_gourmand": 33,
+      "selected": 70,
+      "total_guide": 153,
+      "transit_note": "20-line urban Metro + 8-min PVG Maglev; Huangpu & Jing'an put 18 deep-verified venues ≤35 min by rail",
+      "verdict": "Primary Base — #1 starred count in Mainland China (31.8% of all 157 Mainland starred restaurants)",
+      "source_url": "https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred",
+      "source_label": "MICHELIN Shanghai 2026"
+    },
+    {
+      "rank": 2,
+      "city": "Beijing",
+      "three_star": 2,
+      "two_star": 4,
+      "one_star": 26,
+      "total_starred": 32,
+      "bib_gourmand": 21,
+      "selected": 46,
+      "total_guide": 99,
+      "transit_note": "Wider north-south sprawl; colder late-Feb winter temperatures than Jiangnan/Shanghai",
+      "verdict": "Strong 3–4 week add-on via 4.5h Beijing–Shanghai HSR; 36% fewer starred venues than Shanghai",
+      "source_url": "https://guide.michelin.com/en/cn/beijing-municipality/beijing/restaurants/all-starred",
+      "source_label": "MICHELIN Beijing 2026"
+    },
+    {
+      "rank": 3,
+      "city": "Guangzhou",
+      "three_star": 0,
+      "two_star": 3,
+      "one_star": 17,
+      "total_starred": 20,
+      "bib_gourmand": 44,
+      "selected": 53,
+      "total_guide": 117,
+      "transit_note": "Compact Tianhe/Yuexiu metro core; mildest Feb weather; top Bib Gourmand value density",
+      "verdict": "Runner-up warm-weather culinary hub; 0 three-star venues vs Shanghai's broader international + Jiangnan mix",
+      "source_url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-guangzhou-shenzhen-2026-joint-release-marks-shenzhen-s-unprecedented-debut",
+      "source_label": "MICHELIN Guangzhou 2026"
+    },
+    {
+      "rank": 4,
+      "city": "Chengdu",
+      "three_star": 0,
+      "two_star": 2,
+      "one_star": 12,
+      "total_starred": 14,
+      "bib_gourmand": 27,
+      "selected": 35,
+      "total_guide": 76,
+      "transit_note": "Live directory shows 14 starred (ceremony release cited 13; discrepancy flagged in F14)",
+      "verdict": "Essential Sichuan spice destination for 3–4 week grand tour, smaller fine-dining cluster",
+      "source_url": "https://guide.michelin.com/en/cn/sichuan/chengdu/restaurants/all-starred",
+      "source_label": "MICHELIN Chengdu Live"
+    },
+    {
+      "rank": 5,
+      "city": "Hangzhou",
+      "three_star": 0,
+      "two_star": 1,
+      "one_star": 12,
+      "total_starred": 13,
+      "bib_gourmand": 25,
+      "selected": 50,
+      "total_guide": 88,
+      "transit_note": "45–60 min high-speed rail from Shanghai Hongqiao; West Lake & Longjing tea estates",
+      "verdict": "Best 10–14 night side-trip from Shanghai (adds 13 starred + 75 Bib/Selected venues)",
+      "source_url": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang",
+      "source_label": "MICHELIN Jiangnan 2026"
+    },
+    {
+      "rank": 6,
+      "city": "Shenzhen",
+      "three_star": 0,
+      "two_star": 1,
+      "one_star": 6,
+      "total_starred": 7,
+      "bib_gourmand": 22,
+      "selected": 30,
+      "total_guide": 59,
+      "transit_note": "Debut 2026 MICHELIN selection; 14-min HSR link to Hong Kong West Kowloon",
+      "verdict": "Convenient 240h transit exit pairing via Hong Kong, smaller standalone star count",
+      "source_url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-guangzhou-shenzhen-2026-joint-release-marks-shenzhen-s-unprecedented-debut",
+      "source_label": "MICHELIN Shenzhen 2026"
+    }
+  ],
+  "duration_options": [
+    {
+      "option": "Option A · 7 Nights (Recommended Core)",
+      "dates": "Mon Feb 15 – Mon Feb 22, 2027",
+      "visa_fit": "Eligible for $0 240h (10-day) Visa-Free Transit (with 3rd-country onward ticket) OR L-Visa",
+      "calendar_context": "Starts 2 days after official Feb 5–13 Spring Festival holiday; includes Sat Feb 20 Lantern Festival",
+      "pricing_verdict": "Lowest verified 7-night hotel pricing of entire Feb 15–Mar 23 window ($1,376.21–$2,394.04 mid-luxury tier)",
+      "scope": "Deep Shanghai culinary immersion: 5–7 starred & Bib/Selected meals + Bund, East/West Museums, Yu Garden, French Concession, and 1 water-town or Disney day",
+      "source_url": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm",
+      "source_label": "State Council Notice"
+    },
+    {
+      "option": "Option B · 10 Nights (240h Transit Max)",
+      "dates": "Mon Feb 15 – Thu Feb 25, 2027",
+      "visa_fit": "At 240h transit boundary (check exact arrival/departure clock per NIA rule) OR $140/pp L-Visa",
+      "calendar_context": "Stays entirely inside post-CNY low-rate corporate trough before March 1 rate jump",
+      "pricing_verdict": "Low-season hotel rate curve holds flat through Feb 28 before rising 15%–40% on Mar 1",
+      "scope": "Full Shanghai program + unhurried Shanghai Disneyland day + Zhujiajiao & 1-day Suzhou/Hangzhou HSR excursion",
+      "source_url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html",
+      "source_label": "NIA 240h Policy"
+    },
+    {
+      "option": "Option C · 14 Nights (2-Week Jiangnan Split)",
+      "dates": "Mon Feb 15 – Mon Mar 1, 2027",
+      "visa_fit": "Requires Chinese Tourist L-Visa ($140/pp reduced US fee if submitted by Dec 31, 2026)",
+      "calendar_context": "Captures BOTH low-priced February weeks (Jing An Shangri-La $1,847 + $1,869 est. curve vs +40% in March)",
+      "pricing_verdict": "Best two-week value window; exits right as March business-travel surge begins on Mar 1",
+      "scope": "9–10 nights Shanghai + 2–3 nights Hangzhou (13★) + 1–2 nights Suzhou classical gardens",
+      "source_url": "https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241227_11519914.htm",
+      "source_label": "US Embassy L-Visa"
+    },
+    {
+      "option": "Option D · 21–28 Nights (Extended 3–4 Week Tour)",
+      "dates": "Mon Feb 15 – Mon Mar 15, 2027",
+      "visa_fit": "Requires Chinese Tourist L-Visa (up to 60–90 days per entry typically granted on US 10-year L-visa)",
+      "calendar_context": "Spans late-Feb Jiangnan plum blossoms into mild mid-March spring",
+      "pricing_verdict": "Put Shanghai hotel nights FIRST (Feb 15–25) to avoid +15%–40% March Shanghai hotel surge, then travel south/north in March",
+      "scope": "Shanghai (50★) → Hangzhou (13★) → Guangzhou (20★) & Shenzhen (7★) or Beijing (32★)",
+      "source_url": "https://reservations.brilliantbylangham.com/en-US/booking/rooms?adult=2&arrive=2027-03-01&chain=10316&config=brilliant&depart=2027-03-08&hotel=28382&level=hotel&locale=en-US&rooms=1&theme=brilliant",
+      "source_label": "Langham March Rate Curve"
+    }
+  ],
+  "rate_curve_windows": [
+    {
+      "property": "Jing An Shangri-La, West Shanghai (Deluxe King, MICHELIN Hotels)",
+      "feb_15_22": "$226.29/nt ($1,847.02 total w/ tax)",
+      "feb_22_mar_01": "$229.00/nt base",
+      "mar_01_08": "$317.43/nt base (+40.3%)",
+      "mar_16_23": "$316.00/nt base (+39.6%)",
+      "cheapest_window": "Feb 15 – Feb 22, 2027",
+      "source_url": "https://guide.michelin.com/en/hotels-stays/shanghai/jing-an-shangrila-west-shanghai-7781?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1",
+      "source_label": "MICHELIN Shangri-La Curve"
+    },
+    {
+      "property": "The Langham, Shanghai, Xintiandi (Superior Room, Direct Brilliant Engine)",
+      "feb_15_22": "CNY 1,323/nt Member · CNY 1,571/nt Flex (excl. tax)",
+      "feb_22_mar_01": "Post-CNY transition week",
+      "mar_01_08": "CNY 1,782/nt Member · CNY 2,064/nt Flex (+34.7%)",
+      "mar_16_23": "CNY 1,782/nt Member · CNY 2,064/nt Flex (+34.7%)",
+      "cheapest_window": "Feb 15 – Feb 22, 2027",
+      "source_url": "https://reservations.brilliantbylangham.com/en-US/booking/rooms?adult=2&arrive=2027-02-15&chain=10316&config=brilliant&depart=2027-02-22&hotel=28382&level=hotel&locale=en-US&rooms=1&theme=brilliant",
+      "source_label": "Langham Direct Engine"
+    },
+    {
+      "property": "The Sukhothai Shanghai (Studio King, MICHELIN Hotels)",
+      "feb_15_22": "$293.32/nt ($2,394.04 total w/ tax, Free Cancel)",
+      "feb_22_mar_01": "Late-Feb shoulder",
+      "mar_01_08": "$338.86/nt base (+15.5%)",
+      "mar_16_23": "March corporate peak",
+      "cheapest_window": "Feb 15 – Feb 22, 2027",
+      "source_url": "https://guide.michelin.com/en/hotels-stays/shanghai/the-sukhothai-shanghai-121741-11680?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1",
+      "source_label": "MICHELIN Sukhothai Curve"
+    },
+    {
+      "property": "The Peninsula Shanghai ('A Gift for the New Year' Direct Promo)",
+      "feb_15_22": "15% off rooms + daily breakfast for 2 (CNY 2,465/nt + 16.6% recorded 2026-11-25)",
+      "feb_22_mar_01": "Same lower promo tier through Mar 8",
+      "mar_01_08": "Lower promo tier ends Mar 8",
+      "mar_16_23": "Higher promo tier (+13.8%, CNY 2,805/nt + 16.6%)",
+      "cheapest_window": "Book Nov 23 – Dec 7, 2026 for Feb 15 – Mar 8 stays",
+      "source_url": "https://www.peninsula.com/en/shanghai/special-offers/festive/a-gift-for-the-new-year",
+      "source_label": "Peninsula Festive Offer"
+    }
+  ],
+  "action_timeline": [
+    {
+      "deadline": "By Dec 7, 2026",
+      "window": "Active Now (Nov 23 – Dec 7, 2026)",
+      "action": "Decide on The Peninsula Shanghai 'A Gift for the New Year' direct offer (15% off rooms + breakfast for 2 + 6am/10pm Peninsula Time; non-refundable) OR lock a Free-Cancellation rate at Langham / Shangri-La / Sukhothai.",
+      "source_url": "https://www.peninsula.com/en/shanghai/special-offers/festive/a-gift-for-the-new-year",
+      "source_label": "Peninsula Offer Terms"
+    },
+    {
+      "deadline": "By Dec 31, 2026",
+      "window": "35 Days Remaining",
+      "action": "If flying US ↔ Shanghai round-trip without a 3rd country/region, submit COVA L-Visa application before the $140/person reduced US fee expires Dec 31, 2026 (no flights or hotel bookings required for US L-visa!).",
+      "source_url": "https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241227_11519914.htm",
+      "source_label": "US Embassy Fee Notice"
+    },
+    {
+      "deadline": "Dec 17, 2026 – Jan 16, 2027",
+      "window": "30–60 Days Out",
+      "action": "Book flagship tasting-menu seats: Taian Table (3★, RMB 2,000/pp deposit, free cancel ≥6 days prior), Da Vittorio (2★), 8½ Otto e Mezzo Bombana (2★), Fu He Hui (2★), and Bao Li Xuan (2★).",
+      "source_url": "https://sh.taian-table.cn/faqs/can-i-cancel-or-modify-my-confirmed-booking/",
+      "source_label": "Taian Table Booking FAQ"
+    },
+    {
+      "deadline": "Feb 1 – Feb 7, 2027",
+      "window": "8–14 Days Before Check-In",
+      "action": "Re-price your refundable Feb 15–22 hotel booking before Feb 13–15, 2027 free-cancellation cutoffs, and check Shanghai Disneyland Feb 2027 daily tier calendar + Yu Garden Lantern Festival notice.",
+      "source_url": "https://www.yugarden.com.cn/page/articleView/message.html",
+      "source_label": "Yu Garden Official Notice"
+    }
+  ]
+}
