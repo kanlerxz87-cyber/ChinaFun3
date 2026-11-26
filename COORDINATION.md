@@ -257,3 +257,4 @@ malformed tables. Published at `/plan/` after PR #9 merged to `main`; Pages buil
   - JSON validation across `data/*.json` and `docs/data/*.json`: all 11 JSON files parsed cleanly.
   - GitHub Pages status: `built` on `main` `/` at `https://kanlerxz87-cyber.github.io/ChinaFun3/`.
 - **Status:** Done — no broken links or JSON errors found.
+| 2026-11-26 | `9ee6f5e0` | W05/W06 done: re-verified combined data (check_links OK, verify 10/10, considered 8/8, all pages 200, mobile viewport+table-wrap). PR #16 https://github.com/kanlerxz87-cyber/ChinaFun3/pull/16 MERGED 2026-11-26T19:12:30Z (merge commit 0bbd4d5). Pages build `built` on main `/` — live at https://kanlerxz87-cyber.github.io/ChinaFun3/ (root + /docs/ + /considered/ + /for-two/ + /plan/ + /verify/). Merge conflict with PR #15 (d4b2f26a) in COORDINATION.md resolved keeping both boards, no discard. PR #10 NOT merged (divergent, would delete all work — F12). |
