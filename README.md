@@ -5,7 +5,7 @@
 **Live site (GitHub Pages, `main` → `/`):** https://kanlerxz87-cyber.github.io/ChinaFun3/
 
 - **Root site (this branch: `arena/25a2c056-chinafun3`)** — Unified re-verified dashboard for **Feb 15–Mar 23, 2027** (preferred Feb 15–18), 7 nights, 2 adults, Queen/King+ bedding, private bath, ≤1h Metro/walk cluster. Start here: [`index.html`](index.html) · [Executive Summary](executive-summary.html) · [Hotels (12 Ranked)](hotels.html) · [Michelin 2026 (50★ + Bib/Selected)](restaurants.html) · [Activities ≤1h](activities.html) · [Budget](budget.html) · [Audit Log (F01–F10)](flagged.html)
-- **Parallel subsites preserved:** [`verify/`](verify/index.html) · [`plan/`](plan/index.html) · [`for-two/`](for-two/index.html) · [`considered/`](considered/index.html) · [`docs/`](docs/index.html)
+- **Parallel subsites preserved:** [`verify/`](verify/index.html) · [`plan/`](plan/index.html) · [`for-two/`](for-two/index.html) · [`considered/`](considered/index.html) · [`docs/`](docs/index.html) · [`audit-2026-11-26/`](audit-2026-11-26/index.html)
 
 ## What this is (unified, re-verified 2026-11-26)
 A verified 7-night Shanghai trip plan for **Feb 15–Mar 23, 2027** (preferred Feb 15–18) for **2 adults**, **queen-size or larger bed**, **private bathroom**, with restaurants and activities anchored in the central **Huangpu / Jing'an / Xuhui / Pudong** Metro cluster.
