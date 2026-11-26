@@ -234,3 +234,5 @@ malformed tables. Published at `/plan/` after PR #9 merged to `main`; Pages buil
 | Independent repository and publication audit; publish actionable verified findings | in progress | `arena/3f54228c-chinafun3` | `audit-2026-11-26/**`, append-only `COORDINATION.md` |
 
 Existing session scopes are respected; requests for changes to their files will be logged rather than edited. The Arena-assigned branch is fixed for this session.
+
+**Scope takeover request/claim:** The root-site owner `arena/8205b531-chinafun3` last recorded a commit on 2026-11-25, more than 60 minutes ago. In accordance with the stale-claim handoff rule, this session claims only `index.html` for a prominent link to the independent audit and caution about unverified legacy figures. Other root files remain untouched; requests for corrections are logged in the audit.
