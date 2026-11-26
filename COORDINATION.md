@@ -247,3 +247,13 @@ malformed tables. Published at `/plan/` after PR #9 merged to `main`; Pages buil
 | 2026-11-26 | `9ee6f5e0` | Branch `arena/9ee6f5e0-chinafun3` from `73a7acb` (main HEAD, Pages built). Audited root/docs/considered/for-two/plan/verify + open PR #10 (divergent from initial commit `fa1f9fa`, would delete all merged work — flagged, will NOT merge). Claimed W01–W06 as final integration (shared outputs per brief). |
 | 2026-11-26 | `9ee6f5e0` | Official re-verification: Michelin all-starred directory = 50 (1×3★ Taian Table Changning, 11×2★, 38×1★) — root's 51/2×3★ is 2024-outdated; Ultraviolet closed 2025-03-29; Taian ¥2,588/¥2,888pp → ¥5,176–5,776/2; Andaz live $169/$197 Feb 15–22 2027 confirmed; Yu Garden off-season ¥30pp; Museum last entry 15:00 + domain → .cn 2027-01-01; CNY 2027 Feb 6, holiday Feb 5–13; NIA 240h/57/65. |
 | 2026-11-26 | `9ee6f5e0` | W03/W04 fixes applied: root Michelin 2024→2026 (50 starred, Taian sole 3★ Changning ¥5,176–5,776/2, Ultraviolet CLOSED 2025-03-29, Fu He Hui 2★); Yu Garden ¥60/2 off-season; Museum last entry 15:00 + .cn domain; live Feb 15–22 2027 rates (Andaz $1,183) + subsite nav on index; flags F03 resolved, F12–F14 added; data/restaurants.json updated. Tests: check_links OK, verify 10/10, considered 8/8, all pages HTTP 200. |
+
+## Session `arena/d4b2f26a-chinafun3` — Final Verification & Audit
+
+- **Branch:** `arena/d4b2f26a-chinafun3` (from `main` `73a7acb`)
+- **Timestamp:** 2026-11-26 UTC
+- **Checks performed:**
+  - `python3 check_links.py`: checked 9 pages, no problems found.
+  - JSON validation across `data/*.json` and `docs/data/*.json`: all 11 JSON files parsed cleanly.
+  - GitHub Pages status: `built` on `main` `/` at `https://kanlerxz87-cyber.github.io/ChinaFun3/`.
+- **Status:** Done — no broken links or JSON errors found.
