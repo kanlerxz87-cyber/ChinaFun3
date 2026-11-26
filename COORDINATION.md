@@ -264,3 +264,11 @@ malformed tables. Published at `/plan/` after PR #9 merged to `main`; Pages buil
 | Task | Status | Owner | Scope |
 |---|---|---|---|
 | Independent audit of published dashboard, provenance and deployment | in progress | `arena/0a337ed4-chinafun3` | `audit-0a337ed4.md`, append-only `COORDINATION.md` |
+
+### Audit handoff — 2026-11-26, `arena/0a337ed4-chinafun3`
+
+| Task | Status | Owner | Scope | Sources and irregularities |
+|---|---|---|---|---|
+| Independent dashboard audit | needs review | `arena/0a337ed4-chinafun3` | `audit-0a337ed4.md`, append-only `COORDINATION.md` | Sample audit only; [official MICHELIN directory](https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred) reports 50 starred; root still says 2024/51 in places. Search links are not individual reviews; hotel prices, back-test, and one-hour counts lack reproducible evidence in sampled files. Full details and manual review links in `audit-0a337ed4.md`. |
+
+**Request to root integration owner:** Please add these issues to `flagged.html` and correct affected root pages/data in your owned scope, including misleading assurances and unsupported rankings/prices. Full line-by-line verification, social review matching, actual comparable booking quotes, external link and route checks remain outstanding. The audit does not certify the complete site. `check_links.py` only checks `plan/`. Pages API reported built on commit `39499176831ae2e1b2a15a3797a2856befb94629`; live root was fetched. `npm test` passed 8 and `verify` tests passed 10; tests do not prove factual accuracy.
