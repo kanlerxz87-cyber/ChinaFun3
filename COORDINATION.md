@@ -319,7 +319,7 @@ Existing session scopes are respected; requests for changes to their files will 
 
 | ID | Task | Status | Owner | Files Touched / Scope | Verification plan |
 |---|---|---|---|---|---|
-| I01 | Finish an evidence-first root hub and archive the detailed root dashboard | **in progress** | `arena/6e5e57f6-chinafun3` | `index.html`, `root-dashboard-2026.html`, `assets/css/style.css` (narrow root mobile-header fix only), `README.md`, append-only `COORDINATION.md` | Preserve the currently integrated root dashboard and its linked root data pages; make the root entry mobile-friendly; fix the confirmed 320px archive-header overflow; link review resources without mixing subsite datasets |
+| I01 | Finish an evidence-first root hub and archive the detailed root dashboard | **in progress** | `arena/6e5e57f6-chinafun3` | `index.html`, `root-dashboard-2026.html`, `assets/css/style.css` (root responsive-layout fixes only), `README.md`, append-only `COORDINATION.md` | Preserve the currently integrated root dashboard and its linked root data pages; make the root entry mobile-friendly; fix confirmed narrow-width header/grid overflows; link review resources without mixing subsite datasets |
 
 ### Handoff / claim note — 2026-11-26
 - This session claimed I01 before implementation after the prior root-site claim was stale; it has not checked out or modified another session's branch.
@@ -332,16 +332,17 @@ Existing session scopes are respected; requests for changes to their files will 
 
 | ID | Task | Status | Owner | Files Touched / Scope | Verification |
 |---|---|---|---|---|---|
-| I02 | Repair broken internal fragments found by the repository-wide link audit | **in progress** | `arena/6e5e57f6-chinafun3` | `budget.html`, `executive-summary.html`, `itinerary.html`, `sources.html`, `questions.html` (root site only) | Recheck all four fragments against the newly integrated root pages; add missing targets without changing data or subsite-owned files |
+| I02 | Reconcile reported legacy fragments against the integrated root pages | **in progress** | `arena/6e5e57f6-chinafun3` | `budget.html`, `executive-summary.html`, `itinerary.html`, `sources.html`, `questions.html` (root site only) | Search the full current tree for active references; preserve rate-term context and traveler decisions; repair only confirmed broken links, without changing root research data or subsite-owned files |
 
-- The four failures were first reported before PR #21 rebuilt the root dashboard. This takeover remains limited to the five root-owned target/reference pages; the current root data is preserved and no source values are changed.
+- The four fragments were reported before PR #21 rebuilt the root dashboard. A repository-wide scan of the merged `58a1578` baseline found no inbound references to `sources.html#booking`, `sources.html#hotel-terms`, `questions.html#q1`, or `questions.html#visa`; the corresponding question/source target IDs were absent there. No legacy fragment was therefore repaired or reintroduced. Useful decision and rate-term navigation uses whole-page links, and the Q&A now avoids assuming a US passport or a specific transit route.
 
 ### I01/I02 scope amendment — 2026-11-26
 - After PR #18, this session expanded I01 to make the root page a source-first portal and preserve the then-integrated dashboard. PR #21 subsequently rebuilt the root dashboard before this branch integrated; the archive target is therefore updated to preserve PR #21's latest detailed dashboard. The new root pages/data are not otherwise edited by I01.
-- I02 remains limited to root-owned pages. Recheck and repair the four reported fragments against the PR #21 page versions; retain the hotel-rate terms caveat without asserting one policy for all rates.
+- I02 remains limited to root-owned pages. Recheck the four reported fragments against the PR #21 page versions and repair only active broken inbound references; retain the hotel-rate terms caveat without asserting one policy for all rates.
 
 ### Narrow I02 arithmetic-validation extension — 2026-11-26
 - Before editing, include a correction to the derived combined dining total shown in both `budget.html` and `executive-summary.html`. Their displayed items are ¥5,776 + ¥3,576 + ¥3,003.62 = ¥12,355.62, while the leading total currently says ¥12,243.84. Also add direct official links for those menu amounts in the summary row/card so the cited amounts are reviewable in context. Do not alter the menu prices or hotel quote.
 
 ### Narrow mobile-header fix extension — 2026-11-26
-- Playwright found horizontal overflow at 320px in the newly archived root dashboard: the shared root `.brand` refuses to shrink around its long subtitle. Extend I01 to the root-owned `assets/css/style.css` only, allowing the brand text to wrap at narrow widths. No subsite CSS or research data will change; recheck the hub, archive, and root question/source pages at mobile widths.
+- Playwright found horizontal overflow at 320px in the newly archived root dashboard: the shared root `.brand` refused to shrink around its long subtitle. The root-owned `assets/css/style.css` was claimed for responsive layout; the first targeted rule now lets the brand shrink.
+- A broader recheck also found 320px overflow in the root itinerary's modeled-stay cards because a long status badge set the grid's intrinsic minimum width. Extend the same root CSS scope to constrain grid tracks and let badges wrap; recheck the hub, archive, itinerary, and question/source pages at mobile widths. No subsite CSS or research data will change.

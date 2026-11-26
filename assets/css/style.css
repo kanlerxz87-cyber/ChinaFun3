@@ -56,8 +56,9 @@ img { max-width: 100%; display: block; }
 .brand {
   display: flex; align-items: center; gap: 10px;
   font-weight: 800; letter-spacing: -0.01em; color: var(--ink);
-  flex-shrink: 0;
+  min-width: 0; flex-shrink: 1;
 }
+.brand > span:last-child { min-width: 0; }
 .brand:hover { text-decoration: none; color: var(--ink); }
 .brand-mark {
   width: 34px; height: 34px; border-radius: 10px;

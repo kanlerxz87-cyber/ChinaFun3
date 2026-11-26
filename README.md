@@ -37,7 +37,7 @@ The detailed root tables link to source pages and carry review flags. Unconfirme
 | [Hotels — Ranked](hotels.html) | 12 hotels, live Feb 15–22, 2027 checkout totals, verified beds, bath status, booking links |
 | [Michelin Restaurants](restaurants.html) | 25 featured (Starred vs. Bib/Selected), exact for-2 PDF/FAQ costs, YT/IG links + all 50 starred |
 | [Activities](activities.html) | Venue hours/days, exceptions, ticket sources, and transit-time caveats |
-| [Transport — 1h Proof](transport.html) | Verified district Metro corridors + honest flagging of unverified minute timings |
+| [Transport — Travel-Time Review](transport.html) | Verified district corridors; minute-level public-transit timing remains unverified |
 | [Budget — Modeled Totals for 2](budget.html) | Dated seven-night comparison scenarios and sourced menu/activity totals; not a chosen trip length |
 | [Q&A Gaps](questions.html) | 10 must-answer traveler decisions before booking |
 | [Suggestions — review-only](suggestions.html) | 8 actionable planning proposals — review before acting |
@@ -56,10 +56,10 @@ The detailed root tables link to source pages and carry review flags. Unconfirme
 | [Review & Q&A](docs/review.html) | 11 questions, 8 suggestions, flagged review |
 | [Repo Review](docs/repo-review.html) | Repo + data irregularities |
 
-## Verification promise (merged)
-- Every table row has a **Source** column linking to an official site: `guide.michelin.com`, hotel official (Peninsula, Hilton, Hyatt), attraction official (`orientalpearltower.com`, `shanghaimuseum.net`, `yugarden.com.cn`), `shmetro.com`, or `gov.cn`/`en.nia.gov.cn`.
-- If a value couldn't be confirmed, the cell is blank + flagged `unverified`. No invented prices/hours/dates.
-- The archived root dashboard records date-specific 2027 hotel quotes and a six-window Peninsula comparison. Those snapshots do not prove the cheapest qualifying hotel/room across every date in the full trip window. Re-check the same room and exact official rate terms before booking; see [hotel sources](sources.html#hotel-terms) and [open questions](verify/questions.html).
+## Verification and review notes
+- The archived dashboard is a dated research snapshot, not a guarantee of current rates, availability, hours, or transit timings. Its factual comparison tables provide source links or explicit review flags; the traveler Q&A is a prompt for user-specific decisions, and the day-by-day skeleton remains a model to verify against official venue notices.
+- Values that could not be confirmed should remain blank and flagged rather than inferred. The independent [repository audit](audit-2026-11-26/index.html) is targeted and does **not** claim comprehensive line-by-line verification.
+- The six-window Peninsula quote does not prove the cheapest qualifying hotel or room across every date in the full trip window. Re-check the exact room and official rate terms before booking; see [hotel booking sources](sources.html) and [open questions](verify/questions.html).
 
 ## Coordination and publication
 [`COORDINATION.md`](COORDINATION.md) records task ownership, handoffs, rebase resolutions, and validation. GitHub Pages serves the compact hub at `/`; the detailed root dashboard is archived, while companion views remain under `/verify/`, `/plan/`, `/for-two/`, `/considered/`, `/docs/`, and `/audit-2026-11-26/`.
