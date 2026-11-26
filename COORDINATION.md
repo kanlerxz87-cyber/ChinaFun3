@@ -226,3 +226,11 @@ malformed tables. Published at `/plan/` after PR #9 merged to `main`; Pages buil
 | 2026-11-25 | `b27f0613` | Claimed V01–V10. Scope announced: new `verify/**` only + append-only COORDINATION + README link section + new CI workflow file. |
 | 2026-11-25 | `b27f0613` | Verified official sources: Michelin 2026 regional press release (guide.michelin.com, 2026-04-08/09), full 50-restaurant starred directory (guide.michelin.com), 38-hotel Shanghai directory, 12 restaurant pages, Langham/Peninsula official sites, Yu Garden, Shanghai Museum, Shanghai Disney Resort. Live Feb 15–22 2027 hotel rates from the MICHELIN Guide Hotels booking engine. T'ang Court 2026 menu PDF (exact ¥888 / ¥2,288 for-two totals). |
 | 2026-11-25 | `b27f0613` | Built `verify/` dashboard (11 generated pages, JSON-driven, every row source-linked or flagged), offline tests, CI workflow. See `verify/verification.html` for the line-by-line log. |
+
+### Current session claim — 2026-11-26
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Independent repository and publication audit; publish actionable verified findings | in progress | `arena/3f54228c-chinafun3` | `audit-2026-11-26/**`, append-only `COORDINATION.md` |
+
+Existing session scopes are respected; requests for changes to their files will be logged rather than edited. The Arena-assigned branch is fixed for this session.
