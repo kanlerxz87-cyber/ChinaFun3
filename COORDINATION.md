@@ -258,3 +258,9 @@ malformed tables. Published at `/plan/` after PR #9 merged to `main`; Pages buil
   - GitHub Pages status: `built` on `main` `/` at `https://kanlerxz87-cyber.github.io/ChinaFun3/`.
 - **Status:** Done — no broken links or JSON errors found.
 | 2026-11-26 | `9ee6f5e0` | W05/W06 done: re-verified combined data (check_links OK, verify 10/10, considered 8/8, all pages 200, mobile viewport+table-wrap). PR #16 https://github.com/kanlerxz87-cyber/ChinaFun3/pull/16 MERGED 2026-11-26T19:12:30Z (merge commit 0bbd4d5). Pages build `built` on main `/` — live at https://kanlerxz87-cyber.github.io/ChinaFun3/ (root + /docs/ + /considered/ + /for-two/ + /plan/ + /verify/). Merge conflict with PR #15 (d4b2f26a) in COORDINATION.md resolved keeping both boards, no discard. PR #10 NOT merged (divergent, would delete all work — F12). |
+
+## Session `arena/0a337ed4-chinafun3` — independent audit
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Independent audit of published dashboard, provenance and deployment | in progress | `arena/0a337ed4-chinafun3` | `audit-0a337ed4.md`, append-only `COORDINATION.md` |
