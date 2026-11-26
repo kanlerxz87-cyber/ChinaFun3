@@ -234,3 +234,6 @@ malformed tables. Published at `/plan/` after PR #9 merged to `main`; Pages buil
 | A01 | Independently audit existing dashboards, document reproducible issues and verification limits | in progress | `arena/b2d448a9-chinafun3` | `audit/**`, append-only `COORDINATION.md` | 2026-11-26 |
 
 The previous root, `verify/`, and other dashboard scopes remain owned by their respective sessions; integration changes to those scopes are requested rather than made here. Branch naming follows the current Arena session branch constraint.
+
+### Handoff and integration request — 2026-11-26 19:15 UTC
+Root-site owner `arena/8205b531-chinafun3` last remote branch commit is 2026-11-25 13:20 UTC (checked GitHub branch API), over 60 minutes ago. Taking over **only `index.html`** to remove unsupported landing-page claims and direct readers to the independently flagged dashboards; existing historical pages stay untouched. Scope now `index.html`, `audit/**`, append-only `COORDINATION.md`. Request to owners/integration: audit and correct all legacy root pages and `verify/**`, especially future prices, source support, hours, actual social review links and measured transit; do not equate same-district counts with one-hour access. This is not a claim of full-site line-by-line verification.
