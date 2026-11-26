@@ -1,35 +1,44 @@
-# ChinaFun3 — Shanghai 2027 Trip Planning (Unified Verified Root Dashboard)
+# ChinaFun3 — Shanghai 2027 Trip Planning Hub
 
-> **Re-verified Root Dashboard (`arena/25a2c056-chinafun3`) + Parallel Subsites:** The root site at `/` has been completely re-verified (2026-11-26) against live Nov 2026 sources, removing legacy surrogate prices, closed restaurants (`Ultraviolet`, `102 House`), and unopened hotels (`Four Seasons Huaihai`). All parallel subsites (`docs/`, `considered/`, `for-two/`, `plan/`, `verify/`) remain preserved intact (see `COORDINATION.md`).
+> **Root hub + archived detailed dashboard:** `/` is a compact, source-first portal to the review pages and independent dashboards. The detailed root dashboard re-verified on 2026-11-26 is preserved at [`root-dashboard-2026.html`](root-dashboard-2026.html), with its root category pages still available. Its data snapshot and the separate `/verify/` dashboard are not fully reconciled; compare each page’s cited sources and flags rather than combining rankings. Companion subsites remain separate (see `COORDINATION.md`).
 
 **Live site (GitHub Pages, `main` → `/`):** https://kanlerxz87-cyber.github.io/ChinaFun3/
 
-- **Root site (this branch: `arena/25a2c056-chinafun3`)** — Unified re-verified dashboard for **Feb 15–Mar 23, 2027** (preferred Feb 15–18), 7 nights, 2 adults, Queen/King+ bedding, private bath, ≤1h Metro/walk cluster. Start here: [`index.html`](index.html) · [Executive Summary](executive-summary.html) · [Hotels (12 Ranked)](hotels.html) · [Michelin 2026 (50★ + Bib/Selected)](restaurants.html) · [Activities ≤1h](activities.html) · [Budget](budget.html) · [Audit Log (F01–F10)](flagged.html)
+- **Root site** — Start with the [Trip Planning Hub](index.html) for source-first navigation, open questions, flags, suggestions, and independent views. The [archived detailed dashboard](root-dashboard-2026.html) and its [executive summary](executive-summary.html), [hotels](hotels.html), [Michelin](restaurants.html), [activities](activities.html), [budget](budget.html), and [audit log](flagged.html) remain available as a dated comparison view.
 - **Parallel subsites preserved:** [`verify/`](verify/index.html) · [`plan/`](plan/index.html) · [`for-two/`](for-two/index.html) · [`considered/`](considered/index.html) · [`docs/`](docs/index.html) · [`audit-2026-11-26/`](audit-2026-11-26/index.html)
 
-## What this is (unified, re-verified 2026-11-26)
-A verified 7-night Shanghai trip plan for **Feb 15–Mar 23, 2027** (preferred Feb 15–18) for **2 adults**, **queen-size or larger bed**, **private bathroom**, with restaurants and activities anchored in the central **Huangpu / Jing'an / Xuhui / Pudong** Metro cluster.
+## Detailed root research snapshot (re-verified 2026-11-26)
+The archived dashboard presents a **7-night comparison model** within the **Feb 15–Mar 23, 2027** window (preferred dates Feb 15–18) for two adults. This is not a selected trip length. The brief mentions **1–2 weeks and also possibly 2–4 weeks**; the published comparison covers 7, 10, and 14 nights, and a 2–4-week itinerary is not established. The requested one-hour subway/bus constraint remains subject to the route and room-specific caveats below.
 
 - **Hotels ranked by Michelin clusters + live Feb 15–22, 2027 quotes:** 12 MICHELIN Guide Hotels checked live (`11` bookable for Feb 15–22, 2027 from **$1,376.21** all-in at Andaz Xintiandi, **$2,291.93** incl. breakfast at Langham Xintiandi with 2★ T'ang Court, and **CNY 20,119.33** Peninsula direct promo bookable Nov 23–Dec 7, 2026; Waldorf Astoria unavailable that week). Peninsula's 6-window check confirms **Feb 15–Mar 8 is 13.8% cheaper** than Mar 8–23.
 - **Michelin Guide 2026:** Live Shanghai directory holds **153 total entries** — **50 Starred** (`1×3★`, `11×2★`, `38×1★`), **33 Bib Gourmand**, and **70 MICHELIN Selected**. Root site shows **25 deep-verified featured venues** (clearly distinguishing Starred vs. Guide-listed non-starred) with exact 2026 official PDF/FAQ totals where published (`Taian Table`, `T'ang Court`, `Yi Long Court`, `Sir Elly's`, `Bao Li Xuan`) + all 50 starred venues. `Ultraviolet` (closed Mar 29, 2025) and `102 House` (closed Jul 8, 2026) excluded and logged.
 - **Activities:** 12 central Shanghai attractions with official hours, closed days (`Yu Garden` & `Shanghai Museum People's Square` & `China Art Museum` & `Power Station of Art` closed Mondays; `Shanghai Museum East` closed Tuesdays), **Yu Garden off-peak ¥30/adult (¥60 for 2)**, and verified YouTube/Instagram/TikTok links.
 - **Entry & calendar:** Verified 2027 State Council holiday notice (`gov.cn` `国办发明电〔2026〕10号`: Spring Festival Feb 5–13, Feb 14 make-up workday, Mon Feb 15 normal workday) + NIA **240-hour (10-day)** visa-free transit rule.
 
-Every table row has an **official source link**; unverified fields (including door-to-door Metro minutes since `shmetro.com` fails from the sandbox, unpublished menu prices, and Disneyland Feb 2027 hours) are left blank and flagged — never hallucinated. See [Sources](sources.html) and [Flagged & Audit (F01–F10)](flagged.html).
+The detailed root tables link to source pages and carry review flags. Unconfirmed values—especially minute-level transit, date/room-specific hotel terms, unpublished menu prices, and future operating hours—must not be inferred. See [Sources](sources.html), [Flagged & Audit](flagged.html), and the independent [targeted repository audit](audit-2026-11-26/index.html); the audit explicitly does not claim comprehensive line-by-line verification.
+
+## Planning scope and unanswered decisions
+
+- **Trip length is unresolved:** the brief says 1–2 weeks and also possibly 2–4 weeks. Only 7-, 10-, and 14-night comparisons are currently published; no 2–4-week itinerary is established. Confirm the intended length before choosing dates.
+- **Passport nationality and exact routing are unknown:** check both travelers’ eligibility with the [official NIA source](https://en.nia.gov.cn/n147418/n147463/c183412/content.html) and the relevant Chinese embassy before booking flights.
+- **Budget tier and preferred hotel rate are not chosen:** review the [open questions](verify/questions.html) and re-check the exact official offer, room, inclusions, prepayment, and cancellation terms.
+- **Minute-level public-transit times remain unverified:** district proximity is not a one-hour door-to-door result. See [Verify travel-time flags](verify/transport.html) and the [targeted audit](audit-2026-11-26/index.html).
+- **Suggestions are review-only:** see [Suggestions](verify/suggestions.html) before implementing any proposed research or product changes.
 
 ## Quick links
 
-### Root site — verified dashboard
+### Root hub and detailed pages
 | Page | What you'll find |
 |---|---|
-| [Dashboard](index.html) | Overview + live stats + executive snapshot + companion subsite directory |
+| [Trip Planning Hub](index.html) | Evidence-first start page, dated caveats, review links, and separate research views |
+| [Archived detailed dashboard](root-dashboard-2026.html) | The re-verified Nov 26 root dashboard and its full root navigation, preserved for comparison |
 | [Executive Summary](executive-summary.html) | 60-sec decision + top 5 hotels + 3 budget scenarios + regulatory rules |
 | [Itinerary & Dates](itinerary.html) | Feb 15–Mar 23 window + Gov.cn 2027 calendar + NIA 240h visa + 6 Peninsula promo windows |
 | [Hotels — Ranked](hotels.html) | 12 hotels, live Feb 15–22, 2027 checkout totals, verified beds, bath status, booking links |
 | [Michelin Restaurants](restaurants.html) | 25 featured (Starred vs. Bib/Selected), exact for-2 PDF/FAQ costs, YT/IG links + all 50 starred |
-| [Activities ≤1h](activities.html) | 12 sights, official hours/days/exceptions, Yu Garden ¥60 off-peak, social links |
+| [Activities](activities.html) | Venue hours/days, exceptions, ticket sources, and transit-time caveats |
 | [Transport — 1h Proof](transport.html) | Verified district Metro corridors + honest flagging of unverified minute timings |
-| [Budget — Totals for 2](budget.html) | Combined 7-night live hotel + exact 2026 verified dining/activity totals for 2 |
+| [Budget — Modeled Totals for 2](budget.html) | Dated seven-night comparison scenarios and sourced menu/activity totals; not a chosen trip length |
 | [Q&A Gaps](questions.html) | 10 must-answer traveler decisions before booking |
 | [Suggestions — review-only](suggestions.html) | 8 actionable planning proposals — review before acting |
 | [Sources & Verification](sources.html) | Complete official & social bibliography |
@@ -50,10 +59,10 @@ Every table row has an **official source link**; unverified fields (including do
 ## Verification promise (merged)
 - Every table row has a **Source** column linking to an official site: `guide.michelin.com`, hotel official (Peninsula, Hilton, Hyatt), attraction official (`orientalpearltower.com`, `shanghaimuseum.net`, `yugarden.com.cn`), `shmetro.com`, or `gov.cn`/`en.nia.gov.cn`.
 - If a value couldn't be confirmed, the cell is blank + flagged `unverified`. No invented prices/hours/dates.
-- 2027 hotel inventory is mostly **unpublished** (24-month search limit) → root site shows **surrogate** totals from parallel 2026 dates, labeled `surrogate` with exact check date + re-check instructions. Docs site correctly leaves price cells blank and marks `needs review` when blocked.
+- The archived root dashboard records date-specific 2027 hotel quotes and a six-window Peninsula comparison. Those snapshots do not prove the cheapest qualifying hotel/room across every date in the full trip window. Re-check the same room and exact official rate terms before booking; see [hotel sources](sources.html#hotel-terms) and [open questions](verify/questions.html).
 
-## Coordination
-See [`COORDINATION.md`](COORDINATION.md) — merged task board for both sessions (status, owner, file scopes, logs). No discard merge: root `index.html` conflict resolved to keep the full dashboard at `/`; docs site stays at `/docs/`; both `COORDINATION.md` histories preserved.
+## Coordination and publication
+[`COORDINATION.md`](COORDINATION.md) records task ownership, handoffs, rebase resolutions, and validation. GitHub Pages serves the compact hub at `/`; the detailed root dashboard is archived, while companion views remain under `/verify/`, `/plan/`, `/for-two/`, `/considered/`, `/docs/`, and `/audit-2026-11-26/`.
 
 ## Local preview
 ```bash
@@ -68,7 +77,7 @@ cd docs && python3 -m http.server 8080
 
 ## GitHub Pages publishing
 - Current Pages source: `main` branch `/` (see `gh api repos/kanlerxz87-cyber/ChinaFun3/pages`).
-- After this merge, Pages (legacy build) serves root `index.html` at https://kanlerxz87-cyber.github.io/ChinaFun3/ — docs site accessible at `/docs/`.
+- The root URL serves this hub; the archived dashboard and companion sites are available through the links above.
 
 ---
 Merged 2026-11-25 • Shanghai focus • Mobile-friendly • No hallucinations • All sources linkable • No discard merge (both sessions preserved)

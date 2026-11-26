@@ -339,3 +339,6 @@ Existing session scopes are respected; requests for changes to their files will 
 ### I01/I02 scope amendment — 2026-11-26
 - After PR #18, this session expanded I01 to make the root page a source-first portal and preserve the then-integrated dashboard. PR #21 subsequently rebuilt the root dashboard before this branch integrated; the archive target is therefore updated to preserve PR #21's latest detailed dashboard. The new root pages/data are not otherwise edited by I01.
 - I02 remains limited to root-owned pages. Recheck and repair the four reported fragments against the PR #21 page versions; retain the hotel-rate terms caveat without asserting one policy for all rates.
+
+### Narrow I02 arithmetic-validation extension — 2026-11-26
+- Before editing, include a correction to the derived combined dining total shown in both `budget.html` and `executive-summary.html`. Their displayed items are ¥5,776 + ¥3,576 + ¥3,003.62 = ¥12,355.62, while the leading total currently says ¥12,243.84. Only the inconsistent sum will change; item prices and their existing official sources remain untouched.
