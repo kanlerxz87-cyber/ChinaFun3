@@ -389,6 +389,20 @@ Existing session scopes are respected; requests for changes to their files will 
 
 | ID | Task | Status | Owner Session | Files Touched / Scope | Sources & Verification Note | Updated |
 |---|---|---|---|---|---|---|
-| S01 | Independent spot-check of `trip-2027/` data (hotel rows, Michelin star status, museum/garden hours, 2027 calendar weekdays) against official pages; publish a verification report with every unverified value blank + flagged | **in progress** | `arena/6cf7a2ed-chinafun3` | `spot-check-2027/**`, append-only `COORDINATION.md` (does NOT edit `trip-2027/**`, root, `docs/**`, `verify/**`, `plan/**`, `for-two/**`, `considered/**`) | Sources to be recorded on completion | 2026-11-27 |
+| S01 | Independent spot-check of `trip-2027/` data (hotel rows, Michelin star status, museum/garden hours, 2027 calendar weekdays) against official pages; publish a verification report with every unverified value blank + flagged | **done (needs review — sample only, not a full audit)** | `arena/6cf7a2ed-chinafun3` | `spot-check-2027/index.html`, append-only `COORDINATION.md` (does NOT edit `trip-2027/**`, root, `docs/**`, `verify/**`, `plan/**`, `for-two/**`, `considered/**`) | 13 rows checked: 8 verified, 1 discrepancy, 1 omission, 3 needs review. Sources: [Taian Table Michelin](https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table) · [Taian Table FAQ](https://sh.taian-table.cn/faq/) · [Shanghai Museum East](https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-east) · [Shanghai Museum People's Square](https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-west) · [Yu Garden 参观信息](https://www.yugarden.com.cn/page/articleView/message.html) · [Langham Deluxe Room](https://www.langhamhotels.com/en/the-langham/shanghai/stay/rooms/deluxe-room/) · [Langham Michelin hotel quote](https://guide.michelin.com/en/hotels-stays/shanghai/the-langham-shanghai-xintiandi-5331?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1) · [State Council notice 国办发明电〔2026〕10号 (Shanghai mirror)](https://www.shyp.gov.cn/shypq/xwzx-gwyxx/20261123/517288.html). Irregularities: Taian Table couple price (FAQ states ¥2,588/¥2,888 pp, dashboard says unstated); Langham "1 King Bed" is King **or** two singles; Langham $2,291.93 consistent with $327.42/nt but breakfast + "MICHELIN Selected" not confirmed (19.2/20 is guest score); People's Square evening session omitted; one mirror prints Feb 5 2027 as 周日 (it is a Friday). Not checked: other 8 hotels, 17 restaurants, 9 activities, social links, live room rates. | 2026-11-27 |
+
+**Handoff requests to the `trip-2027/**` owner (logged, not edited by S01):**
+1. Taian Table: replace "base tasting price unstated" with the official FAQ figures ¥2,588 (10 courses) / ¥2,888 (12 courses) per person, "generally", subject to change.
+2. Langham Shanghai Xintiandi: state that the Deluxe Room is King **or** two 1.35 m singles; booking must specify King.
+3. Langham: mark "MICHELIN Selected" and the breakfast inclusion as needs review; 19.2/20 is the guest score.
+4. People's Square museum: add the 09:00–21:00 Day & Evening Session noted on the official page.
+5. Optional, root owner: link `spot-check-2027/` from the hub once the integration session runs.
 
 **Claim note:** Session `arena/6cf7a2ed-chinafun3` claims S01 on 2026-11-27. Open PR #10 (`arena/256b850d-chinafun3`) is not touched by this session. Findings that would require changing `trip-2027/**` are logged as handoff requests, not edited.
+
+### Log — Session `arena/6cf7a2ed-chinafun3` (2026-11-27 UTC)
+- Claimed S01 (commit `857f9f1`, pushed). Ran `trip-2027` build and tests: build clean (12 pages), 5/5 tests pass, `check_links.py` no problems.
+- Fetched official pages (Michelin, Taian Table FAQ, Shanghai Museum East/People's Square, Yu Garden, Langham, Shanghai gov mirror of 国办发明电〔2026〕10号). Results and limits are in `spot-check-2027/index.html`.
+- Published `spot-check-2027/index.html` as a standalone page. Did not edit `trip-2027/**`, root, or other sessions' scopes. Handoff requests logged in S01.
+- Not done: full line-by-line audit of all rows (sample of 13 only). Primary gov.cn page not fetched directly (Shanghai mirror used). Live hotel room rates not reproduced from public pages.
+- Note: open PR #10 (`arena/256b850d-chinafun3`) is another session's; not touched.
