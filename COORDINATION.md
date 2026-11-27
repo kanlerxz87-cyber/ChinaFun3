@@ -440,6 +440,12 @@ Existing session scopes are respected; requests for changes to their files will 
 - **Publication:** PR #24 merged successfully; its PR checks succeeded and Pages deployment succeeded for merge commit `2fa19bd031619ac21e7e730dc7ead6fd152ebd85` (Actions run `46059914751`). Pages API reports `built`, source `main` `/`. Root: https://kanlerxz87-cyber.github.io/ChinaFun3/ · detailed trip dashboard: https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/.
 - **Evidence boundary / review flags:** this session independently validated build, data shape/math, source-or-flag coverage, local links, and existing CI evidence, but did not re-fetch every third-party official source or re-price future hotel nights. The research snapshot remains dated 2026-11-26; use the linked official MICHELIN, hotel, attraction, transport, and government sources in the dashboard and check the `Flagged for Review` page before booking. Existing `trip-2027/data/governance.json` and `trip-2027/flagged.html` remain the canonical review register; no new irregularity was silently resolved.
 
+### Publication record — Session `arena/6cf7a2ed-chinafun3` (S01)
+- **PR:** [#27](https://github.com/kanlerxz87-cyber/ChinaFun3/pull/27) (`arena/6cf7a2ed-chinafun3` → `main`), merged 2026-11-27T19:58:22Z, merge commit `a4df8f2`. Merge method: `--merge`.
+- **Conflict:** `main` moved during the session (`COORDINATION.md`, `README.md`, `index.html`). Resolved by merging `origin/main` into the branch and keeping both append-only sections. No other session's content discarded.
+- **Checks:** PR workflows `verify` ×3 all SUCCESS; local `check_links.py` no problems; `trip-2027` 5/5 and root 2/2 tests OK.
+- **Pages:** build/deploy run `46060387059` success; `https://kanlerxz87-cyber.github.io/ChinaFun3/spot-check-2027/` fetched and serving the report.
+- **Task status:** S01 **done (needs review)** — sample of 13 rows; flagged items published on the report page for owner review.
 ---
 
 ## Task Board — Session `arena/ddc78a00-chinafun3` (scope: `audit-ddc78a00/**` only + append-only `COORDINATION.md`)
