@@ -384,3 +384,46 @@ Existing session scopes are respected; requests for changes to their files will 
 - Per the non-overlapping scope protocol, this session touches **only** `trip-2027/**`, `.github/workflows/trip-2027-verify.yml`, and append-only updates to `COORDINATION.md`. No file owned by any other session is modified.
 - **Publication record:** [PR #23](https://github.com/kanlerxz87-cyber/ChinaFun3/pull/23) merged from `arena/b6e6976d-chinafun3` into `main`; live GitHub Pages subsite URL: `https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/`.
 - **Cross-session request (logged per protocol):** Once `trip-2027/` is published, the root `index.html` / `README.md` owner may optionally add a navigation link to `trip-2027/index.html` (`https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/`).
+
+---
+
+## Session `arena/addba0c7-chinafun3` — Independent Verification & Publication Confirmation
+
+**Branch:** `arena/addba0c7-chinafun3` (branched from `main` `24bdc0f`, which already integrates `trip-2027/` via PR #23).
+
+**Scope claimed (non-overlapping, append-only):**
+- `COORDINATION.md` (this session's verification record + cross-session requests only)
+- No `trip-2027/**`, root HTML, or other-session files touched (those scopes are owned by `arena/b6e6976d-chinafun3` and `arena/6e5e57f6-chinafun3` respectively).
+
+### Task Board
+
+| ID | Task | Status | Owner Session | Files Touched / Scope | Sources & Verification Note | Updated |
+|---|---|---|---|---|---|---|
+| XV1 | Independent official-source verification of `trip-2027/` key facts | **done** | `arena/addba0c7-chinafun3` | `COORDINATION.md` (record only) | `guide.michelin.com` all-starred directory; `gov.cn` 国办发明电〔2026〕10号; `en.nia.gov.cn` 240h transit; US Embassy L-visa fee notice | 2026-11-27 |
+| XV2 | Confirm `trip-2027/` builds + test suite passes + live Pages deploy reachable | **done** | `arena/addba0c7-chinafun3` | `trip-2027/scripts/build.py`, `trip-2027/tests/test_trip_2027.py` | `python3 scripts/build.py` → 12 pages; `5/5` tests OK; live page fetched at github.io | 2026-11-27 |
+| XV3 | Log cross-session requests + irregularities without editing other sessions' files | **done** | `arena/addba0c7-chinafun3` | `COORDINATION.md` (record only) | Root `index.html` → `trip-2027/` link request; JS-rendered hotel price caveat | 2026-11-27 |
+
+### Verification Findings (line-by-line, official sources)
+
+| # | Claim in `trip-2027/` | Official Source Checked | Result |
+|---|---|---|---|
+| XV-F1 | Shanghai 2026 Michelin: 50 starred (1×3★ Taian Table, 11×2★, 38×1★), 33 Bib Gourmand, 70 Selected = 153 total | `guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred` (live directory) | **CONFIRMED** — official directory shows exactly 1×3★, 11×2★, 38×1★, 33 Bib, 70 Selected, "1-48 of 50 restaurants". Secondary sources citing 51★/12×2★/35 Bib are contradicted by the official directory; `trip-2027/` uses the official count. Taian Table confirmed sole 3★ (2026 award). |
+| XV-F2 | Spring Festival holiday Fri Feb 5 – Sat Feb 13, 2027; CNY Sat Feb 6; make-up workdays Jan 31 & Feb 14 | State Council `国办发明电〔2026〕10号` via `gov.cn` and `english.beijing.gov.cn` | **CONFIRMED** — matches `trip-2027/` executive summary exactly. |
+| XV-F3 | 240-hour (10-day) visa-free transit: US eligible, 57 countries, 65 ports, 24 stay areas, onward ticket to third country required | `en.nia.gov.cn` NIA policy + corroborating official-aligned references | **CONFIRMED** — matches `trip-2027/` visa summary. |
+| XV-F4 | US citizen L-visa reduced fee $140/pp through Dec 31, 2026 (from $185); simplified documents (no flight/hotel/invitation required) | US Embassy / China visa service notices | **CONFIRMED** — matches `trip-2027/`. |
+| XV-F5 | Live 7-night hotel checkout quotes Feb 15–22, 2027 (Andaz $1,376.21 … Bvlgari $7,418.17) via MICHELIN Hotels engine | `guide.michelin.com/en/hotels-stays/…` hotel pages | **PARTIAL / CAVEAT** — Andaz Xintiandi hotel page confirmed real (MICHELIN Guide listing, 307 rooms, Xintiandi), but the exact dollar price is rendered by a JS booking widget that did not populate in static fetch. `trip-2027/` correctly labels quotes as "live-fetched 2026-11-26" and leaves unavailable inventory blank (Peninsula, Waldorf Astoria, Capella, Middle House, PuLi) rather than estimating. Re-check exact rates by opening each dated `quote_url` before booking. |
+| XV-F6 | Live site reachable | `https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/` | **CONFIRMED** — full Overview page renders with KPIs, tables, and source links. GitHub Pages deploy successful. |
+
+### Cross-Session Requests (logged per protocol; no other-session files edited)
+
+1. **Root landing page → `trip-2027/` link:** `trip-2027/` is the most complete, requirement-matched subsite and is live, but root `index.html` does not yet link to it. Requested of root `index.html` / `README.md` owner (`arena/6e5e57f6-chinafun3`, I01 in progress): optionally add a navigation link to `trip-2027/index.html` (`https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/`). Root `index.html` is **not** edited by this session to avoid overlapping an active claim.
+
+### Log — Session `arena/addba0c7-chinafun3`
+
+| Timestamp (UTC) | Session | Action |
+|---|---|---|
+| 2026-11-27 | `arena/addba0c7-chinafun3` | Branch `arena/addba0c7-chinafun3` at `main` `24bdc0f` (includes PR #23 / `trip-2027/`, already live). Claimed XV1–XV3, append-only `COORDINATION.md`. |
+| 2026-11-27 | `arena/addba0c7-chinafun3` | Independent verification: Michelin 2026 Shanghai directory (50★/1×3★/11×2★/38×1★/33 Bib/70 Selected) CONFIRMED against official `guide.michelin.com`; State Council 2027 Spring Festival (Feb 5–13) CONFIRMED; NIA 240h US transit CONFIRMED; US L-visa $140 through Dec 31 2026 CONFIRMED. Noted secondary-source Michelin discrepancy (51★/12×2★/35 Bib) is contradicted by official directory; `trip-2027/` uses official count. |
+| 2026-11-27 | `arena/addba0c7-chinafun3` | Build + tests: `python3 scripts/build.py` → 12 pages; `tests/test_trip_2027.py` 5/5 OK. Live Pages confirmed reachable at `/trip-2027/`. Logged JS-rendered hotel-price caveat (exact $ figures require opening dated `quote_url`s). |
+| 2026-11-27 | `arena/addba0c7-chinafun3` | Logged cross-session request: root `index.html` should link to live `/trip-2027/`; root file owned by `arena/6e5e57f6-chinafun3` (I01), so not edited here. |
+
