@@ -1,0 +1,182 @@
+{
+  "session": "arena/ddc78a00-chinafun3",
+  "scope_note": "Independent read-only spot-check of claims published in trip-2027/ (owner arena/b6e6976d-chinafun3). No values were copied from trip-2027 without a matching official source fetched in this session. Where a value could not be reproduced it is marked Unverified or Not reproduced and must not be treated as confirmed.",
+  "checked_date": "2026-11-27",
+  "status_key": {
+    "Confirmed": "Value matches the official source fetched on the checked date.",
+    "Partially confirmed": "Part of the claim matches; the rest could not be reproduced from an official source.",
+    "Discrepancy": "Published value conflicts with the official source. Owner should correct.",
+    "Not reproduced": "Official source found, but the specific value (for example a dated price) could not be reproduced on the checked date.",
+    "Unverified": "No official source found in this session. Leave blank and flag."
+  },
+  "checks": [
+    {
+      "id": "A01",
+      "topic": "MICHELIN Shanghai starred count",
+      "trip_claim": "50 starred (1 three-star, 11 two-star, 38 one-star); 33 Bib Gourmand; 70 Selected",
+      "official_source": "https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants/all-starred",
+      "source_label": "MICHELIN Guide, Shanghai all-starred listing",
+      "result": "Confirmed",
+      "evidence": "Live page shows 3 Stars 1, 2 Stars 11, 1 Star 38, Bib Gourmand 33, Selected Restaurants 70; heading reads 'Shanghai and surroundings: 1-48 of 50 restaurants'.",
+      "action": "None. Note the page heading says 'Shanghai and surroundings', so the 50 count includes the wider listing area."
+    },
+    {
+      "id": "A02",
+      "topic": "Yu Garden hours and closing day",
+      "trip_claim": "Open 09:00-16:30, last entry 16:00, closed Mondays except national public holidays",
+      "official_source": "https://www.yugarden.com.cn/page/articleView/message.html",
+      "source_label": "Yu Garden official visitor information (Chinese)",
+      "result": "Confirmed",
+      "evidence": "开放时间 9:00—16:30 （16:00停止入园，16:30闭园）；每周一闭园（国家法定节假日除外）.",
+      "action": "None."
+    },
+    {
+      "id": "A03",
+      "topic": "Yu Garden off-peak adult ticket",
+      "trip_claim": "RMB 30 adult, off-peak 1 Dec-31 Mar (RMB 60 for two)",
+      "official_source": "https://www.yugarden.com.cn/page/articleView/message.html",
+      "source_label": "Yu Garden official visitor information (Chinese)",
+      "result": "Confirmed",
+      "evidence": "淡季（每年7月1日至8月31日，12月1日至3月31日）【成人每位30元】; 旺季 (1 Apr-30 Jun, 1 Sep-30 Nov) 40 yuan.",
+      "action": "Official page also lists 1 Jul-31 Aug as off-peak. Season ticket price for Feb 2027 is RMB 30 per adult under this page; ticket prices can change, so re-check before the trip."
+    },
+    {
+      "id": "A04",
+      "topic": "2027 Spring Festival holiday and make-up workdays",
+      "trip_claim": "Spring Festival 5-13 Feb 2027 (9 days); 31 Jan (Sun) and 14 Feb (Sun) are workdays",
+      "official_source": "https://www.news.cn/politics/20261105/f90cd6ad4df94ab4833b141e52ccfc13/c.html",
+      "source_label": "Xinhua (news.cn) reproduction of State Council General Office notice 国办发明电〔2026〕10号",
+      "result": "Confirmed",
+      "evidence": "二、春节：2月5日（农历除夕、周五）至13日（农历正月初八、周六）放假调休，共9天。1月31日（周日）、2月14日（周日）上班。",
+      "action": "Official gov.cn original was not fetched directly in this sandbox. Re-check the State Council copy before booking. Some third-party pages show different 2027 dates (for example, a Baidu Baike snippet listing 15-23 Feb); these conflict with the notice and should not be used."
+    },
+    {
+      "id": "A05",
+      "topic": "Weekday and workday status of the preferred trip dates",
+      "trip_claim": "Mon 15 Feb 2027 is a normal workday; Sun 21 Feb is a weekend day",
+      "official_source": "https://www.news.cn/politics/20261105/f90cd6ad4df94ab4833b141e52ccfc13/c.html",
+      "source_label": "Holiday notice (above) plus calendar arithmetic",
+      "result": "Confirmed",
+      "evidence": "Calendar check: 15 Feb 2027 = Monday; 14 Feb 2027 = Sunday (make-up workday); 21 Feb 2027 = Sunday; 22 Feb 2027 = Monday; 1 Mar 2027 = Monday; 23 Mar 2027 = Tuesday. 15 Feb is outside the 5-13 Feb holiday, so it is a normal workday.",
+      "action": "None."
+    },
+    {
+      "id": "A06",
+      "topic": "240-hour visa-free transit: number of eligible countries and US eligibility",
+      "trip_claim": "Describes the US as one of the '55+ eligible countries' under the NIA 240-hour policy",
+      "official_source": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html",
+      "source_label": "China NIA (National Immigration Administration), Visa-Free Transit Policies, dated 2026-08-20",
+      "result": "Discrepancy",
+      "evidence": "'Currently, China is implementing this policy for nationals of 57 countries including Russia, the United Kingdom and the United States... 65 designated open exit-entry ports in 24 provinces... no more than 10 days.' United States is listed under North America.",
+      "action": "Owner should change '55+' to 57 and cite this NIA page. US eligibility is confirmed. Transit still requires a third-country onward ticket with a confirmed seat (NIA: 'onward tickets with confirmed seats')."
+    },
+    {
+      "id": "A07",
+      "topic": "Shanghai Museum East hours",
+      "trip_claim": "10:00-18:00, last entry 17:00, closed Tuesdays except national holidays",
+      "official_source": "https://www.shanghaimuseum.cn/mu/frontend/pg/m/index",
+      "source_label": "Shanghai Museum official site (.cn domain, current)",
+      "result": "Confirmed",
+      "evidence": "东馆 10:00~18:00; 17:00后停止入场，基本陈列免预约。除国定节假日外，周二闭馆.",
+      "action": "None on the hours. See A08 for the domain."
+    },
+    {
+      "id": "A08",
+      "topic": "Shanghai Museum official domain used in trip links",
+      "trip_claim": "Official links point to https://www.shanghaimuseum.net/... (about 20 links across trip-2027 pages and data)",
+      "official_source": "https://www.shanghaimuseum.cn/mu/frontend/pg/m/index",
+      "source_label": "Shanghai Museum official site, domain-change notice dated 1 Sep 2026",
+      "result": "Discrepancy",
+      "evidence": "域名变更公告: 自2026年9月1日起，上海博物馆官方网站域名地址变更为 www.shanghaimuseum.cn，原网址www.shanghaimuseum.net将于2027年1月1日起停用.",
+      "action": "Owner should switch museum links to www.shanghaimuseum.cn. The .net links are scheduled to stop working on 1 Jan 2027, before the trip. Nothing else in this row was changed in this audit."
+    },
+    {
+      "id": "A09",
+      "topic": "Shanghai Museum on People's Square hours and last entry",
+      "trip_claim": "09:00-17:00, last entry 15:00, closed Mondays",
+      "official_source": "https://www.shanghaimuseum.cn/mu/frontend/pg/m/index",
+      "source_label": "Shanghai Museum official site (.cn domain, current)",
+      "result": "Confirmed",
+      "evidence": "人民广场馆 9:00~17:00; 15:00后停止入场，美洲古代文明大展期间，需购票参观。除国定节假日外，周一闭馆。",
+      "action": "Third-party guide chinagotrip.com says last admission 16:00. The official page (15:00) controls."
+    },
+    {
+      "id": "A10",
+      "topic": "Ancient Civilizations of the Americas exhibition at People's Square",
+      "trip_claim": "Exhibition runs 9 Jul 2026 to 14 Nov 2027; People's Square is ticketed for this exhibition",
+      "official_source": "https://german.shanghai.gov.cn/ge-ArtExhibitions/20260520/66932a42e2324b3081e81589f5741892.html",
+      "source_label": "Shanghai municipal government portal (German edition) announcement, 20 May 2026",
+      "result": "Confirmed",
+      "evidence": "Vom 9. Juli 2026 bis zum 14. November 2027 ... Geschlossen an Montagen, außer an gesetzlichen Feiertagen; Tickets 74-148 Yuan. Museum notice (above) also says 美洲古代文明大展期间，需购票参观.",
+      "action": "Ticket prices in the announcement are as published in May 2026 and must be re-checked on the official WeChat mini program before the visit."
+    },
+    {
+      "id": "A11",
+      "topic": "Museum of Art Pudong hours",
+      "trip_claim": "Open daily 10:00-21:00, last entry 20:00 (open Mon 15 Feb 2027)",
+      "official_source": "https://english.shanghai.gov.cn/en-MuseumsGalleries/20250702/64d1d26886b3458b8dffb3a8533787b5.html",
+      "source_label": "Shanghai municipal government English portal, 'Guide to Shanghai's best art museums'",
+      "result": "Confirmed",
+      "evidence": "Museum of Art Pudong — 'Daily 10 am – 9 pm (last entry at 8 pm)'. Museum's own page www.museumofartpd.org.cn/en/visit also lists 10:00-21:00.",
+      "action": "Gov list's 'daily' hours are a current listing, not a 2027 schedule. Re-check closer to the date."
+    },
+    {
+      "id": "A12",
+      "topic": "Power Station of Art hours and Monday closure",
+      "trip_claim": "Tue-Sun 11:00-19:00, last entry 18:00, closed Mondays (except national holidays)",
+      "official_source": "https://english.shanghai.gov.cn/en-MuseumsGalleries/20250702/64d1d26886b3458b8dffb3a8533787b5.html",
+      "source_label": "Shanghai municipal government English portal, 'Guide to Shanghai's best art museums'",
+      "result": "Confirmed",
+      "evidence": "Power Station of Art — 'Tuesday to Sunday 11 am – 7 pm (last entry at 6 pm). Closed on Mondays (except national holidays)'.",
+      "action": "None."
+    },
+    {
+      "id": "A13",
+      "topic": "Langham Shanghai Xintiandi Deluxe Room bed and private bathroom",
+      "trip_claim": "1 King Bed (1.8 m), 40 m2, marble bathroom with separate rain shower",
+      "official_source": "https://www.langhamhotels.com/en/the-langham/shanghai/stay/rooms/deluxe-room/",
+      "source_label": "The Langham Shanghai, Xintiandi — Deluxe Room (official brand page)",
+      "result": "Confirmed",
+      "evidence": "'...a luxurious 1.8-meter king-size bed or two 1.35-meter single beds...'; 40㎡; 'Marble bathroom with separate rain shower; Heated bathroom floor'.",
+      "action": "The same room type can be booked as two single beds. When booking, select the King option so the room matches the brief (queen or bigger)."
+    },
+    {
+      "id": "A14",
+      "topic": "Langham 7-night total price for 15-22 Feb 2027",
+      "trip_claim": "Seven-night total $2,291.93 incl. taxes (nightly base $280.81; breakfast included)",
+      "official_source": "https://guide.michelin.com/en/hotels-stays/shanghai/the-langham-shanghai-xintiandi-5331?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1",
+      "source_label": "MICHELIN Guide Hotels booking page, The Langham Shanghai Xintiandi, 15-22 Feb 2027, 2 adults",
+      "result": "Not reproduced",
+      "evidence": "Page shows 'Starting at $281 — $327 total with taxes per/nt' for Feb 15-22. $327 x 7 = $2,289, which is close to but not equal to $2,291.93. The per-night breakdown and breakfast inclusion were not visible in the page text captured here.",
+      "action": "Leave the exact total unverified until the booking engine is re-run for the chosen room and rate. Use the live page quote, not the stored figure."
+    },
+    {
+      "id": "A15",
+      "topic": "US citizen L (tourist) visa fee",
+      "trip_claim": "$140 per person through 31 Dec 2026; $280 for two. Reverts to $185 per person after 31 Dec 2026 if not extended.",
+      "official_source": "https://sanfrancisco.china-consulate.gov.cn/eng/lsfw/lszj/notice/202512/t20251230_11790159.htm",
+      "source_label": "Chinese Consulate General San Francisco, Notice on Extension of Visa-Fee Reduction (dated 29 Dec 2025); same notice issued by the Chinese Embassy in the US",
+      "result": "Partially confirmed",
+      "evidence": "Notice: reduced fees 'until December 31, 2026' — US citizen $140 for single, double, 6-month multiple and 12-month-plus multiple entries; express +$25 per visa. The notice does not state the post-2026 fee.",
+      "action": "The $140 figure applies only to applications made by 31 Dec 2026. Any visa applied for in Feb 2027 has no verified fee on this source; leave the post-2026 amount unverified and flag it. The $185 standard figure appears only in secondary guides and is not verified here."
+    },
+    {
+      "id": "A16",
+      "topic": "Which Chinese mission serves Texas (relevant to a Dallas applicant)",
+      "trip_claim": "Trip data refers to US consulates for L-visa applications",
+      "official_source": "https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202509/t20250920_11712385.htm",
+      "source_label": "Chinese Embassy in the US, Requirements and Procedures for Chinese Visa Application (updated 22 Sep 2025)",
+      "result": "Confirmed",
+      "evidence": "Consular jurisdiction of the Embassy in Washington D.C. includes ... Oklahoma, Texas, Puerto Rico. Applicants must confirm they live in the listed states before applying.",
+      "action": "For a Dallas, Texas applicant, the Washington D.C. embassy is listed as the consular jurisdiction in this notice (the notice also says the New COVA system is used). Confirm with the embassy before applying; the Sep 2025 notice may have been updated since."
+    }
+  ],
+  "not_checked": [
+    "Hotel rates other than The Langham (Peninsula, Ritz-Carlton, Andaz and others): dynamic booking-engine prices, not reproducible from static pages.",
+    "Michelin restaurant hours, couple menu prices and social-media links on the trip-2027 restaurant rows.",
+    "Taian Table opening days and prices (trip-2027 lists Tue-Sat dinner; closed Sun and Mon).",
+    "Shanghai Disneyland tickets and hours, and metro/bus travel times (door-to-door minutes).",
+    "Social-media links (YouTube, TikTok, Instagram): reachability and content were not checked.",
+    "The 'one-hour' travel ranking: no timed route was computed in this session."
+  ]
+}

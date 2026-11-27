@@ -385,6 +385,27 @@ Existing session scopes are respected; requests for changes to their files will 
 - **Publication record:** [PR #23](https://github.com/kanlerxz87-cyber/ChinaFun3/pull/23) merged from `arena/b6e6976d-chinafun3` into `main`; live GitHub Pages subsite URL: `https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/`.
 - **Cross-session request (logged per protocol):** Once `trip-2027/` is published, the root `index.html` / `README.md` owner may optionally add a navigation link to `trip-2027/index.html` (`https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/`).
 
+## Task Board — Session `arena/6cf7a2ed-chinafun3` (non-overlapping scope: `spot-check-2027/**` + append-only `COORDINATION.md`)
+
+| ID | Task | Status | Owner Session | Files Touched / Scope | Sources & Verification Note | Updated |
+|---|---|---|---|---|---|---|
+| S01 | Independent spot-check of `trip-2027/` data (hotel rows, Michelin star status, museum/garden hours, 2027 calendar weekdays) against official pages; publish a verification report with every unverified value blank + flagged | **done (needs review — sample only, not a full audit)** | `arena/6cf7a2ed-chinafun3` | `spot-check-2027/index.html`, append-only `COORDINATION.md` (does NOT edit `trip-2027/**`, root, `docs/**`, `verify/**`, `plan/**`, `for-two/**`, `considered/**`) | 13 rows checked: 8 verified, 1 discrepancy, 1 omission, 3 needs review. Sources: [Taian Table Michelin](https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table) · [Taian Table FAQ](https://sh.taian-table.cn/faq/) · [Shanghai Museum East](https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-east) · [Shanghai Museum People's Square](https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-west) · [Yu Garden 参观信息](https://www.yugarden.com.cn/page/articleView/message.html) · [Langham Deluxe Room](https://www.langhamhotels.com/en/the-langham/shanghai/stay/rooms/deluxe-room/) · [Langham Michelin hotel quote](https://guide.michelin.com/en/hotels-stays/shanghai/the-langham-shanghai-xintiandi-5331?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1) · [State Council notice 国办发明电〔2026〕10号 (Shanghai mirror)](https://www.shyp.gov.cn/shypq/xwzx-gwyxx/20261123/517288.html). Irregularities: Taian Table couple price (FAQ states ¥2,588/¥2,888 pp, dashboard says unstated); Langham "1 King Bed" is King **or** two singles; Langham $2,291.93 consistent with $327.42/nt but breakfast + "MICHELIN Selected" not confirmed (19.2/20 is guest score); People's Square evening session omitted; one mirror prints Feb 5 2027 as 周日 (it is a Friday). Not checked: other 8 hotels, 17 restaurants, 9 activities, social links, live room rates. | 2026-11-27 |
+
+**Handoff requests to the `trip-2027/**` owner (logged, not edited by S01):**
+1. Taian Table: replace "base tasting price unstated" with the official FAQ figures ¥2,588 (10 courses) / ¥2,888 (12 courses) per person, "generally", subject to change.
+2. Langham Shanghai Xintiandi: state that the Deluxe Room is King **or** two 1.35 m singles; booking must specify King.
+3. Langham: mark "MICHELIN Selected" and the breakfast inclusion as needs review; 19.2/20 is the guest score.
+4. People's Square museum: add the 09:00–21:00 Day & Evening Session noted on the official page.
+5. Optional, root owner: link `spot-check-2027/` from the hub once the integration session runs.
+
+**Claim note:** Session `arena/6cf7a2ed-chinafun3` claims S01 on 2026-11-27. Open PR #10 (`arena/256b850d-chinafun3`) is not touched by this session. Findings that would require changing `trip-2027/**` are logged as handoff requests, not edited.
+
+### Log — Session `arena/6cf7a2ed-chinafun3` (2026-11-27 UTC)
+- Claimed S01 (commit `857f9f1`, pushed). Ran `trip-2027` build and tests: build clean (12 pages), 5/5 tests pass, `check_links.py` no problems.
+- Fetched official pages (Michelin, Taian Table FAQ, Shanghai Museum East/People's Square, Yu Garden, Langham, Shanghai gov mirror of 国办发明电〔2026〕10号). Results and limits are in `spot-check-2027/index.html`.
+- Published `spot-check-2027/index.html` as a standalone page. Did not edit `trip-2027/**`, root, or other sessions' scopes. Handoff requests logged in S01.
+- Not done: full line-by-line audit of all rows (sample of 13 only). Primary gov.cn page not fetched directly (Shanghai mirror used). Live hotel room rates not reproduced from public pages.
+- Note: open PR #10 (`arena/256b850d-chinafun3`) is another session's; not touched.
 ---
 
 ## Task Board — Session `arena/e33a1b10-chinafun3` (final integration: root hub link + re-verification + PR to main)
@@ -421,9 +442,47 @@ Existing session scopes are respected; requests for changes to their files will 
 
 ---
 
+## Task Board — Session `arena/ddc78a00-chinafun3` (scope: `audit-ddc78a00/**` only + append-only `COORDINATION.md`)
+
+Claimed 2026-11-27 (UTC). Read-only independent re-verification of high-stakes claims already published in `trip-2027/` (owner `arena/b6e6976d-chinafun3`, status done). This session does **not** edit `trip-2027/**`, root site, `docs/**`, `for-two/**`, `plan/**`, `verify/**`, `considered/**`, `audit-2026-11-26/**`, or any workflow. Any correction needed in those files will be logged here as a request to the owning session.
+
+| ID | Task | Status | Owner Session | Files Touched / Scope |
+|---|---|---|---|---|
+| D01 | Independent spot-check of the trip-2027 official-source claims (Michelin 2026 counts, Yu Garden, Shanghai Museum, NIA 240h transit, 2027 holiday notice, Langham room/bed/bath, visa fee) — 16 checks, each linked to the official page; unreproducible values marked, not filled | **done (published for review; flags listed on page)** | `arena/ddc78a00-chinafun3` | `audit-ddc78a00/**` |
+
+### D01 results — session `arena/ddc78a00-chinafun3` (2026-11-27 UTC)
+
+**Published:** `audit-ddc78a00/index.html` (page: `/audit-ddc78a00/`), generated by `audit-ddc78a00/build.py` from `audit-ddc78a00/data/checks.json`; tests `audit-ddc78a00/tests/test_audit.py` (6/6 pass). Every row cites an https official source; unreproduced values are marked, not inferred.
+
+**Results (16 checks):** 9 Confirmed · 2 Partially confirmed/Not reproduced · 2 Discrepancy · 1 Unverified-by-design (post-2026 visa fee) · remainder listed on the page.
+
+**Irregularities found in `trip-2027/` (owner `arena/b6e6976d-chinafun3`; logged as requests, not edited):**
+1. **Museum domain (A08):** trip-2027 cites `shanghaimuseum.net` (about 20 links in `trip-2027/activities.html`, `flagged.html`, `itinerary.html`, `transport.html`, `repo-audit.html`, `data/activities.json`, `data/governance.json`, `data/itinerary_transport.json`). The museum's notice says `.net` stops on **1 Jan 2027**, before the trip. Request: switch to `www.shanghaimuseum.cn`.
+2. **240-hour transit count (A06):** trip-2027 says "55+ eligible countries" (`data/governance.json`, `visa-budget.html`). NIA's 2026-08-20 notice says **57**. Request: change to 57 and cite the NIA page.
+3. **Post-2026 visa fee (A15):** the $140 reduced fee is confirmed only through 31 Dec 2026 (Embassy notice dated 29 Dec 2025). The post-2026 fee is not verified. Request: keep the Feb 2027 visa cost as unverified, and show the standard-fee scenario only with its official source.
+4. **Langham 7-night total (A14):** live page shows $327/night with taxes ($2,289 for 7 nights); stored figure is $2,291.93. Not reproduced exactly. Request: mark as "live quote, re-check at booking".
+5. **Shanghai Museum People's Square last entry:** official 15:00 (matches trip-2027); a third-party guide says 16:00. No change needed; logged as evidence that official pages control.
+6. **Conflicting third-party 2027 holiday dates** exist (e.g. a Baidu Baike snippet listing 15–23 Feb). The official notice (Xinhua reproduction, 国办发明电〔2026〕10号) is 5–13 Feb. No change needed.
+
+**Verified facts relevant to a Dallas, Texas applicant (A16):** the Chinese Embassy's Sep-2025 notice lists Texas in the Washington D.C. consular jurisdiction. Confirm with the embassy before applying.
+
+**Not checked (left unverified):** dynamic hotel rates other than Langham; restaurant hours and couple prices; social links reachability; timed transit minutes. See the page section "Not checked".
+
+**Cross-session request:** root and `trip-2027/` owners may link `audit-ddc78a00/index.html` from their Flagged pages. No edits made to those files by this session.
+
+---
+
+### Integration PR / deployment record — 2026-11-27
+
+- **Site integration PR:** [#24](https://github.com/kanlerxz87-cyber/ChinaFun3/pull/24) merged at `2fa19bd031619ac21e7e730dc7ead6fd152ebd85`; root hub now links the detailed `trip-2027/` dashboard. PR checks passed and Pages deployment run [46059914751](https://github.com/kanlerxz87-cyber/ChinaFun3/actions/runs/46059914751) succeeded.
+- **Independent audit-log PR:** [#26](https://github.com/kanlerxz87-cyber/ChinaFun3/pull/26) merged at `6340a2f1347dbc55c0c52eb54d134df402bcbf7a`; all three required checks passed. Pages deployment run [46060114978](https://github.com/kanlerxz87-cyber/ChinaFun3/actions/runs/46060114978) succeeded; GitHub Pages API reports status `built`, source `main` `/`.
+- **Live addresses:** root hub https://kanlerxz87-cyber.github.io/ChinaFun3/ · trip dashboard https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/.
+
+---
+
 ## Session `arena/addba0c7-chinafun3` — Independent Verification & Publication Confirmation
 
-**Branch:** `arena/addba0c7-chinafun3` (branched from `main` `24bdc0f`, which already integrates `trip-2027/` via PR #23). Rebased/merged onto current `main` `6340a2f` (PR #24 + PR #26) without discarding any prior session record.
+**Branch:** `arena/addba0c7-chinafun3` (branched from `main` `24bdc0f`, which already integrates `trip-2027/` via PR #23). Merged onto current `main` `39cbd9a` (PR #24–#29) without discarding any prior session record.
 
 **Scope claimed (non-overlapping, append-only):**
 - `COORDINATION.md` (this session's verification record only)
@@ -451,6 +510,7 @@ Existing session scopes are respected; requests for changes to their files will 
 ### Cross-Session Requests (logged per protocol; no other-session files edited)
 
 1. **Root landing page → `trip-2027/` link:** RESOLVED — session `arena/e33a1b10-chinafun3` (PR #24, task E03) added an additive portal-nav link + subsite card to root `index.html` pointing at `trip-2027/index.html`. No further action needed; this session did not edit root files.
+2. **Independent audit cross-links:** session `arena/ddc78a00-chinafun3` published an independent 16-check source audit at `audit-ddc78a00/`; root and `trip-2027/` owners may link it from their Flagged pages (no edits made by this session).
 
 ### Log — Session `arena/addba0c7-chinafun3`
 
@@ -459,4 +519,4 @@ Existing session scopes are respected; requests for changes to their files will 
 | 2026-11-27 | `arena/addba0c7-chinafun3` | Branch `arena/addba0c7-chinafun3` at `main` `24bdc0f` (includes PR #23 / `trip-2027/`, already live). Claimed XV1–XV3, append-only `COORDINATION.md`. |
 | 2026-11-27 | `arena/addba0c7-chinafun3` | Independent verification: Michelin 2026 Shanghai directory (50★/1×3★/11×2★/38×1★/33 Bib/70 Selected) CONFIRMED against official `guide.michelin.com`; State Council 2027 Spring Festival (Feb 5–13) CONFIRMED; NIA 240h US transit CONFIRMED; US L-visa $140 through Dec 31 2026 CONFIRMED. Noted secondary-source Michelin discrepancy (51★/12×2★/35 Bib) is contradicted by official directory; `trip-2027/` uses official count. |
 | 2026-11-27 | `arena/addba0c7-chinafun3` | Build + tests: `python3 scripts/build.py` → 12 pages; `tests/test_trip_2027.py` 5/5 OK. Live Pages confirmed reachable at `/trip-2027/`. Logged JS-rendered hotel-price caveat (exact $ figures require opening dated `quote_url`s). |
-| 2026-11-27 | `arena/addba0c7-chinafun3` | Merged current `main` `6340a2f` (PR #24 + PR #26) into branch; resolved `COORDINATION.md` append/append conflict by retaining e33a1b10, e51219fd, and addba0c7 sections without discarding any. Noted root→trip-2027 link already present via PR #24. |
+| 2026-11-27 | `arena/addba0c7-chinafun3` | Merged current `main` `39cbd9a` (PR #24–#29) into branch; resolved `COORDINATION.md` append/append conflict by retaining e33a1b10, e51219fd, ddc78a00, and addba0c7 sections without discarding any. Noted root→trip-2027 link already present via PR #24. |
