@@ -399,3 +399,24 @@ Existing session scopes are respected; requests for changes to their files will 
 ### Handoff note — Session `arena/e33a1b10-chinafun3` (2026-11-27 UTC)
 - Branch fixed by Arena (`arena/e33a1b10-chinafun3`), branched from `24bdc0f` (main, PR #23 merged). Prior sessions' scopes (`docs/**`, `considered/**`, `for-two/**`, `plan/**`, `verify/**`, `trip-2027/**` B01–B09 done, root I01–I03 done) are preserved; this session edits only its claimed scope above and appends here. Cross-session file requests will be logged here, not edited directly.
 - Claim commit follows immediately per protocol.
+
+## Session `arena/0ded578e-chinafun3` — Independent Final Review & Publication (`/` root hub + verification layer)
+
+**Branch:** `arena/0ded578e-chinafun3` (from `main` `24bdc0f`, fully synced with origin)
+**Session ID:** `0ded578e`
+**Scope (non-overlapping):** Independent line-by-line review of the integrated root hub and the `/verify/` source-first dashboard; verification of key facts against official sources; documentation of gaps that remain unverified (cheapest 7-night booking date, minute-level 1-hour transit, room-level bed/bath confirmation); confirmation that GitHub Pages is live; PR creation + merge to `main` + Pages deploy confirmation. No subsite (`docs/`, `plan/`, `for-two/`, `considered/`, `trip-2027/`, `audit-2026-11-26/`) file is modified.
+
+| ID | Task | Status | Owner Session | Files Touched / Scope | Sources & Verification Note | Updated |
+|---|---|---|---|---|---|---|
+| R01 | Claim scope & record session in Active Sessions | **in progress** | `0ded578e` | `COORDINATION.md` (append-only) | This claim | 2026-11-27 |
+| R02 | Independent line-by-line review of root hub + verify dashboard | **in progress** | `0ded578e` | `index.html`, `verify/*.html`, `verify/data/*.json` | Cross-check each table row's source link against the live official page where reachable | 2026-11-27 |
+| R03 | Verify key official facts (Michelin 2026 Shanghai, 2027 State Council holiday, NIA 240h visa, Taian/Andaz rates) | **in progress** | `0ded578e` | `verify/`, root pages, COORDINATION log | guide.michelin.com, gov.cn, nia.gov.cn, michelin guide hotels engine | 2026-11-27 |
+| R04 | Document remaining gaps (no cheapest booking date; no minute-level transit; incomplete bed/bath) | **in progress** | `0ded578e` | `verify/flagged.html`, `verify/questions.html`, COORDINATION log | Honest blank+flag per verification rule | 2026-11-27 |
+| R05 | Confirm GitHub Pages live build/deploy on `main` `/` | **in progress** | `0ded578e` | Pages setting, live URL | https://kanlerxz87-cyber.github.io/ChinaFun3/ | 2026-11-27 |
+| R06 | PR from this branch to `main`, merge, confirm Pages deploy, record PR link | **in progress** | `0ded578e` | PR + merge + COORDINATION log | gh PR/merge + Pages API | 2026-11-27 |
+
+### Log — Session `arena/0ded578e-chinafun3`
+
+| Timestamp (UTC) | Session | Action |
+|---|---|---|
+| 2026-11-27 | `0ded578e` | Branch `arena/0ded578e-chinafun3` is at `24bdc0f` = `main` HEAD = origin/main; fully synced. All existing test suites pass (root 11, verify 10, trip-2027 5, for-two 9); `check_links.py` clean. Claimed R01–R06 for an independent final review and publication confirmation. No other session's files touched. |
