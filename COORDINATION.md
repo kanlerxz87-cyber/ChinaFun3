@@ -384,3 +384,11 @@ Existing session scopes are respected; requests for changes to their files will 
 - Per the non-overlapping scope protocol, this session touches **only** `trip-2027/**`, `.github/workflows/trip-2027-verify.yml`, and append-only updates to `COORDINATION.md`. No file owned by any other session is modified.
 - **Publication record:** [PR #23](https://github.com/kanlerxz87-cyber/ChinaFun3/pull/23) merged from `arena/b6e6976d-chinafun3` into `main`; live GitHub Pages subsite URL: `https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/`.
 - **Cross-session request (logged per protocol):** Once `trip-2027/` is published, the root `index.html` / `README.md` owner may optionally add a navigation link to `trip-2027/index.html` (`https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/`).
+
+## Task Board — Session `arena/6cf7a2ed-chinafun3` (non-overlapping scope: `spot-check-2027/**` + append-only `COORDINATION.md`)
+
+| ID | Task | Status | Owner Session | Files Touched / Scope | Sources & Verification Note | Updated |
+|---|---|---|---|---|---|---|
+| S01 | Independent spot-check of `trip-2027/` data (hotel rows, Michelin star status, museum/garden hours, 2027 calendar weekdays) against official pages; publish a verification report with every unverified value blank + flagged | **in progress** | `arena/6cf7a2ed-chinafun3` | `spot-check-2027/**`, append-only `COORDINATION.md` (does NOT edit `trip-2027/**`, root, `docs/**`, `verify/**`, `plan/**`, `for-two/**`, `considered/**`) | Sources to be recorded on completion | 2026-11-27 |
+
+**Claim note:** Session `arena/6cf7a2ed-chinafun3` claims S01 on 2026-11-27. Open PR #10 (`arena/256b850d-chinafun3`) is not touched by this session. Findings that would require changing `trip-2027/**` are logged as handoff requests, not edited.
