@@ -535,3 +535,22 @@ Claimed 2026-11-27 (UTC). Read-only independent re-verification of high-stakes c
 | 2026-11-27 | `arena/addba0c7-chinafun3` | Merged current `main` `148da6d` (PR #24–#32) into branch; resolved `COORDINATION.md` append/append conflict by retaining e33a1b10, e51219fd, ddc78a00, and addba0c7 sections without discarding any. Noted root→trip-2027 link already present via PR #24. |
 
 | 2026-11-27 | `arena/addba0c7-chinafun3` | PR #30 (https://github.com/kanlerxz87-cyber/ChinaFun3/pull/30) merged to `main` as commit `2363f77` "Merge pull request #30 from kanlerxz87-cyber/arena/addba0c7-chinafun3"; all XV1–XV3 records, XV-F1–XV-F6 official-source verification findings, and sources now in `main`; GitHub Pages live and confirmed reachable at https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/ |
+---
+
+## Task Board — Session `arena/75d997c1-chinafun3` (current active session; branch fixed at `arena/75d997c1-chinafun3`, from `main` 24bdc0f)
+
+| ID | Task | Status | Owner Session | Files Touched / Scope | Sources & Verification Note | Updated |
+|---|---|---|---|---|---|---|
+| R01 | Claim scope; re-verify `trip-2027/` official sources line by line | **done** | `arena/75d997c1-chinafun3` | `trip-2027/**` (audit log only — no data edits) | `guide.michelin.com` Shanghai all-starred directory: 50 starred (1×3★, 11×2★, 38×1★) + 33 Bib + 70 Selected = 153 ✓ matches data; NIA 240h (en.nia.gov.cn): US eligible, 65 ports, 24 provinces ✓ matches Q01/S01; State Council 国办发明电〔2026〕10号 (gov.cn): Spring Festival Feb 5–13 2027, Feb 14 make-up workday ✓ matches exec summary; Yu Garden (yugarden.com.cn): 9:00–16:30, closed Mon except statutory holidays, ¥30 off-peak Dec 1–Mar 31 / ¥40 peak ✓ matches activities; Shanghai Museum East (shanghaimuseum.net): Wed–Mon 10:00–18:00, closed Tue ✓ matches; Shanghai Disney Resort (shanghaidisneyresort.com): official channel reachable, Feb 2027 calendar unpublished ✓ flagged F15; Andaz Xintiandi Michelin hotel page reachable ✓ (checkout prices render client-side → dated 2026-11-26 snapshot, F01/F02 stand) | 2026-11-27 |
+| R02 | Irregularity observation this session | **done** | `arena/75d997c1-chinafun3` | COORDINATION.md log | `service.shmetro.com/en` and `/en/operation/965.htm` return errors in this session — metro speed/fare claims could not be re-confirmed; F16 stands (door-to-door minutes never asserted). Michelin Guide Hotels checkout totals are JS-rendered dated snapshots (never multiply by 7 without re-quote). Taian Table base tasting price unstated on live 2026 FAQ/PDF → blank ✓ F06. | 2026-11-27 |
+| R03 | Honor logged cross-session request: add `/trip-2027/` nav link to root hub + README link section | **done — superseded by PR #24** | `arena/75d997c1-chinafun3` | `COORDINATION.md` record only | Additive root `index.html` → `trip-2027/` link requested by arena/b6e6976d-chinafun3 (B09) was already merged into main via PR #24 (session arena/e33a1b10-chinafun3, E03) before this rebase; this session's identical index.html/README.md link commit was skipped during rebase to avoid a duplicate card/bullet. No root research data touched. Stale prior root claim arena/6e5e57f6-chinafun3 (I01/I02, last active 2026-11-26) noted, not overridden. | 2026-11-27 |
+| R04 | Final integration: PR `arena/75d997c1-chinafun3` → `main`, merge, confirm GitHub Pages deploy, record PR link + merge result here | **in progress** | `arena/75d997c1-chinafun3` | `COORDINATION.md` (this record), GitHub Pages (`main` `/`) | Trip-2027/ tests 5/5 pass; build deterministic; check_links.py clean for plan/; root/tests + verify/tests + for-two/tests previously green on main | 2026-11-27 |
+
+### Log — Session `arena/75d997c1-chinafun3` (2026-11-27 UTC)
+
+| Timestamp (UTC) | Session | Action |
+|---|---|---|
+| 2026-11-27 | `arena/75d997c1-chinafun3` | Claimed R01–R04 on branch `arena/75d997c1-chinafun3` (== `main` 24bdc0f). Scopes announced: audit-only re-verification of `trip-2027/`; additive `/trip-2027/` nav link on root `index.html` + `README.md` (honoring `arena/b6e6976d-chinafun3`'s logged request); no other session's content files modified. Commit+push of this claim follows immediately. |
+| 2026-11-27 | `arena/75d997c1-chinafun3` | Official-source re-verification completed: Michelin Shanghai directory (50★ live, 102 House removed, Ultraviolet closed), NIA 240h, State Council 2027 notice, Yu Garden official page, Shanghai Museum East official page, Shanghai Disney official site, Andaz Michelin hotel page. All match `trip-2027/` data; discrepancies already flagged F01–F16. | 2026-11-27 |
+
+
