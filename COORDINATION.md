@@ -384,3 +384,18 @@ Existing session scopes are respected; requests for changes to their files will 
 - Per the non-overlapping scope protocol, this session touches **only** `trip-2027/**`, `.github/workflows/trip-2027-verify.yml`, and append-only updates to `COORDINATION.md`. No file owned by any other session is modified.
 - **Publication record:** [PR #23](https://github.com/kanlerxz87-cyber/ChinaFun3/pull/23) merged from `arena/b6e6976d-chinafun3` into `main`; live GitHub Pages subsite URL: `https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/`.
 - **Cross-session request (logged per protocol):** Once `trip-2027/` is published, the root `index.html` / `README.md` owner may optionally add a navigation link to `trip-2027/index.html` (`https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/`).
+
+---
+
+## Task Board — Session `arena/e33a1b10-chinafun3` (final integration: root hub link + re-verification + PR to main)
+
+| ID | Task | Status | Owner Session | Files Touched / Scope | Sources & Verification Note | Updated |
+|---|---|---|---|---|---|---|
+| E01 | Claim non-overlapping integration scope; audit current main (PR #23 merged) + open PR #10 state | **in progress** | `arena/e33a1b10-chinafun3` | `COORDINATION.md` (append-only) | Pages `built` on `main` `/`; PR #23 merged 2026-11-26; PR #10 open/stale from 2026-11-25 (not merged, not touched) | 2026-11-27 |
+| E02 | Line-by-line re-verification of `trip-2027/` data vs official sources (Michelin directory, hotel engines, gov.cn calendar, NIA visa, venue hours) | unclaimed | `arena/e33a1b10-chinafun3` | `trip-2027/data/*.json`, `trip-2027/*.html` (fixes only if verification fails) | Every row must have official source link or blank+flag; no inference | 2026-11-27 |
+| E03 | Root hub integration: additive navigation to `trip-2027/` from `index.html` + `README.md` (no data changes, no discard) | unclaimed | `arena/e33a1b10-chinafun3` | `index.html`, `README.md` (additive links only) | Preserve PR #21 root dashboard + hub; link trip-2027 as verified 2027 edition | 2026-11-27 |
+| E04 | Full build/test/link/mobile validation; PR to `main`, merge, confirm Pages deploy, record result | unclaimed | `arena/e33a1b10-chinafun3` | `COORDINATION.md` (record PR/merge) | All suites green; Pages `built`; flagged items do not block merge | 2026-11-27 |
+
+### Handoff note — Session `arena/e33a1b10-chinafun3` (2026-11-27 UTC)
+- Branch fixed by Arena (`arena/e33a1b10-chinafun3`), branched from `24bdc0f` (main, PR #23 merged). Prior sessions' scopes (`docs/**`, `considered/**`, `for-two/**`, `plan/**`, `verify/**`, `trip-2027/**` B01–B09 done, root I01–I03 done) are preserved; this session edits only its claimed scope above and appends here. Cross-session file requests will be logged here, not edited directly.
+- Claim commit follows immediately per protocol.
