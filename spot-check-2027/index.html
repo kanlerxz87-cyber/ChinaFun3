@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spot-Check — trip-2027 Data vs Official Sources</title>
+<style>
+  :root { --ink:#1b2430; --muted:#5b6675; --line:#dfe4ea; --bg:#f7f9fb; --ok:#1d7a3e; --bad:#b42318; --warn:#9a6700; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; color:var(--ink); background:var(--bg); }
+  header, main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+  header { padding-bottom: 0; }
+  h1 { font-size: 1.6rem; margin: .4rem 0 .2rem; }
+  h2 { font-size: 1.2rem; margin: 1.6rem 0 .6rem; }
+  p, li { color: var(--ink); }
+  .muted { color: var(--muted); font-size: .92rem; }
+  nav a { margin-right: 12px; color: #0b5cad; text-decoration: none; font-weight: 600; }
+  .card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin: 10px 0; }
+  .kpis { display:grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap:10px; }
+  .kpi b { display:block; font-size:1.4rem; }
+  .table-wrap { overflow-x:auto; background:#fff; border:1px solid var(--line); border-radius:10px; }
+  table { width:100%; border-collapse: collapse; min-width: 720px; font-size: .92rem; }
+  th, td { text-align:left; vertical-align: top; padding: 9px 10px; border-bottom: 1px solid var(--line); }
+  th { background:#eef2f7; position: sticky; top: 0; }
+  .tag { display:inline-block; padding:2px 8px; border-radius: 999px; font-weight:700; font-size:.8rem; white-space: nowrap; }
+  .v-ok { background:#e6f4ea; color:var(--ok); }
+  .v-bad { background:#fde8e6; color:var(--bad); }
+  .v-warn { background:#fff4d6; color:var(--warn); }
+  a { color:#0b5cad; word-break: break-word; }
+  footer { max-width:1100px; margin: 0 auto; padding: 16px; color: var(--muted); font-size:.85rem; }
+</style>
+</head>
+<body>
+<header>
+  <nav><a href="../trip-2027/index.html">← trip-2027 dashboard</a><a href="../index.html">Repo home</a></nav>
+  <h1>Spot-Check: trip-2027 data vs official sources</h1>
+  <p class="muted">Session <code>arena/6cf7a2ed-chinafun3</code> · Task S01 · Checked 2026-11-27 (UTC) · Scope: a sample of rows, not a full line-by-line audit.</p>
+</header>
+
+<main>
+  <section>
+    <h2>Summary</h2>
+    <div class="kpis">
+      <div class="card kpi"><b>13</b>rows checked</div>
+      <div class="card kpi"><b>8</b>confirmed by an official page</div>
+      <div class="card kpi"><b>5</b>flagged: 1 discrepancy, 1 omission, 3 needs review</div>
+      <div class="card kpi"><b>0</b>values filled in by this check</div>
+    </div>
+    <p>This check did <strong>not</strong> change any file in <code>trip-2027/</code>. Each discrepancy below is a handoff request for the owner of that dashboard. Values that could not be confirmed are left as they are and flagged here.</p>
+  </section>
+
+  <section>
+    <h2>Row-level results</h2>
+    <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Item</th><th>Field checked</th><th>trip-2027 value</th><th>What the official page says</th><th>Result</th><th>Official source</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Taian Table (Changning)</td><td>Michelin star count</td><td>3 MICHELIN Stars</td><td>Michelin page shows three star icons; Michelin Guide cuisine “Innovative”, price ¥¥¥¥.</td><td><span class="tag v-ok">Verified</span></td>
+          <td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table">guide.michelin.com — Taian Table</a></td>
+        </tr>
+        <tr>
+          <td>Taian Table</td><td>Open days &amp; hours</td><td>Tue–Sat dinner; seatings 18:00–20:00</td><td>“open from Tuesday to Saturday for dinner only. The first booking is at 6 pm and the last booking is at 8:00 pm.”</td><td><span class="tag v-ok">Verified</span></td>
+          <td><a href="https://sh.taian-table.cn/faq/">sh.taian-table.cn — FAQ</a></td>
+        </tr>
+        <tr>
+          <td>Taian Table</td><td>Couple price</td><td>“— (base tasting price unstated on 2026 FAQ/PDF)”; deposit RMB 4,000 for 2</td><td>FAQ states the tasting menu is “generally” ¥2,588 (10 courses) and ¥2,888 (12 courses) per person, may change with season and products; deposit ¥2,000 per person.</td><td><span class="tag v-bad">Discrepancy</span></td>
+          <td><a href="https://sh.taian-table.cn/faq/">sh.taian-table.cn — FAQ</a></td>
+        </tr>
+        <tr>
+          <td>Shanghai Museum East</td><td>Hours &amp; closed day</td><td>10:00–18:00 (last entry 17:00); closed Tuesdays except national holidays</td><td>“Wednesday to Monday, 10:00-18:00 (last entry at 17:00). Closed on Tuesdays (except national holidays).” No advance reservation for individual visitors.</td><td><span class="tag v-ok">Verified</span></td>
+          <td><a href="https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-east">shanghaimuseum.net — Visit East</a></td>
+        </tr>
+        <tr>
+          <td>Shanghai Museum on People’s Square</td><td>Hours, closed day, exhibition</td><td>Tue–Sun 09:00–17:00 (last entry 15:00); closed Mon; Americas exhibition only to 2027-11-14</td><td>Tue–Sun 09:00–17:00 (last entry 15:00), closed Mondays except national holidays. Americas exhibition runs 9 Jul 2026–14 Nov 2027 and no other exhibitions are held there.</td><td><span class="tag v-ok">Verified</span></td>
+          <td><a href="https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-west">shanghaimuseum.net — Visit People’s Square</a></td>
+        </tr>
+        <tr>
+          <td>Shanghai Museum on People’s Square</td><td>Evening sessions</td><td>Not listed</td><td>Official page lists a “Day &amp; Evening Session: 09:00–21:00 (last entry 19:00)” alongside the day session, and says to follow WeChat for dates.</td><td><span class="tag v-warn">Omission</span></td>
+          <td><a href="https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-west">shanghaimuseum.net — Visit People’s Square</a></td>
+        </tr>
+        <tr>
+          <td>Yu Garden (daytime)</td><td>Hours, closed day</td><td>09:00–16:30 (last entry 16:00); closed Mondays except statutory holidays</td><td>“9:00—16:30 （16:00停止入园，16:30闭园）”; “每周一闭园（国家法定节假日除外）”.</td><td><span class="tag v-ok">Verified</span></td>
+          <td><a href="https://www.yugarden.com.cn/page/articleView/message.html">yugarden.com.cn — 参观信息</a></td>
+        </tr>
+        <tr>
+          <td>Yu Garden (daytime)</td><td>Adult ticket, off-peak (Dec 1–Mar 31)</td><td>CNY 30/adult; CNY 60 for 2</td><td>淡季 (Jul 1–Aug 31, Dec 1–Mar 31): 成人每位30元. Peak Apr 1–Jun 30, Sep 1–Nov 30: 40元.</td><td><span class="tag v-ok">Verified</span></td>
+          <td><a href="https://www.yugarden.com.cn/page/articleView/message.html">yugarden.com.cn — 参观信息</a></td>
+        </tr>
+        <tr>
+          <td>The Langham Shanghai Xintiandi — Deluxe Room</td><td>Bed type</td><td>“1 King Bed (1.8m)”</td><td>Official page offers “a luxurious 1.8-meter king-size bed <em>or</em> two 1.35-meter single beds”. King is one option, not a guarantee.</td><td><span class="tag v-warn">Needs review</span></td>
+          <td><a href="https://www.langhamhotels.com/en/the-langham/shanghai/stay/rooms/deluxe-room/">langhamhotels.com — Deluxe Room</a></td>
+        </tr>
+        <tr>
+          <td>The Langham Shanghai Xintiandi — Deluxe Room</td><td>Private marble bathroom</td><td>Marble bathroom, separate rain shower, heated floor</td><td>“Marble bathroom with separate rain shower”, “Heated bathroom floor”.</td><td><span class="tag v-ok">Verified</span></td>
+          <td><a href="https://www.langhamhotels.com/en/the-langham/shanghai/stay/rooms/deluxe-room/">langhamhotels.com — Deluxe Room</a></td>
+        </tr>
+        <tr>
+          <td>The Langham Shanghai Xintiandi</td><td>7-night total, Feb 15–22 2027</td><td>USD 2,291.93 (incl. breakfast for 2 + taxes)</td><td>Public page: “Starting at $281 · $327 total with taxes per/nt”. $2,291.93 ÷ 7 = $327.42/nt, which rounds to $327. Breakfast inclusion not shown on the public page; the room-level rate was not reproduced.</td><td><span class="tag v-warn">Needs review</span></td>
+          <td><a href="https://guide.michelin.com/en/hotels-stays/shanghai/the-langham-shanghai-xintiandi-5331?arr=2027-02-15&amp;dep=2027-02-22&amp;nA=2&amp;nC=0&amp;nR=1">guide.michelin.com — Langham hotel</a></td>
+        </tr>
+        <tr>
+          <td>The Langham Shanghai Xintiandi</td><td>Tier label</td><td>“MICHELIN Selected · 19.2/20”</td><td>19.2 / 20 is the MICHELIN guest score (post-stay ratings). The Selected tier is not shown on the fetched page.</td><td><span class="tag v-warn">Needs review</span></td>
+          <td><a href="https://guide.michelin.com/en/hotels-stays/shanghai/the-langham-shanghai-xintiandi-5331?arr=2027-02-15&amp;dep=2027-02-22&amp;nA=2&amp;nC=0&amp;nR=1">guide.michelin.com — Langham hotel</a></td>
+        </tr>
+        <tr>
+          <td>2027 State Council holiday notice</td><td>Spring Festival &amp; weekdays</td><td>Feb 5–13 2027 holiday; Feb 14 workday (per notice)</td><td>Official text: “2月5日（农历除夕、周五）至13日…放假调休，共9天。1月31日（周日）、2月14日（周日）上班。” Verified weekday: Feb 5 2027 = Friday.</td><td><span class="tag v-ok">Verified</span></td>
+          <td><a href="https://www.shyp.gov.cn/shypq/xwzx-gwyxx/20261123/517288.html">shyp.gov.cn — 国办发明电〔2026〕10号 (mirror)</a></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Irregularities for review</h2>
+    <div class="card">
+      <ol>
+        <li><strong>Taian Table price (discrepancy).</strong> The dashboard says no base price is published. The official FAQ states ¥2,588 (10 courses) and ¥2,888 (12 courses) per person, “generally”, subject to change. The couple cost of the base menu is therefore ¥5,176–¥5,776 before supplements, per that FAQ; the dashboard should be updated by its owner.</li>
+        <li><strong>Langham bed type.</strong> The Deluxe Room offers a King <em>or</em> two singles. Booking must specify King; the dashboard states “1 King Bed” as a verified fact.</li>
+        <li><strong>Langham rate and tier.</strong> The $2,291.93 total is consistent with the public “$327/nt with taxes” figure (rounding), but the breakfast inclusion and the room-level rate are not reproduced from a public page. “MICHELIN Selected” is not confirmed; 19.2/20 is a guest score.</li>
+        <li><strong>People’s Square evening session.</strong> The dashboard omits the 09:00–21:00 Day &amp; Evening Session the museum lists.</li>
+        <li><strong>Holiday-notice mirror typo.</strong> One Shanghai republication of the State Council notice prints “2月5日（农历除夕、周日）”. The weekday is Friday (computed), matching the other copy. The primary gov.cn page was not fetched directly in this session.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <h2>Handoff requests (not edited by this session)</h2>
+    <div class="card">
+      <p>Logged in <code>COORDINATION.md</code> for the owner of <code>trip-2027/**</code>: update Taian Table couple price (item 1), add the Langham bed-type condition (item 2), mark the Langham tier and breakfast-inclusion claims as needs review (item 3), and add the People’s Square evening session (item 4).</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Method and limits</h2>
+    <div class="card">
+      <ul>
+        <li>Fetched official pages with a page fetcher on 2026-11-27; text quoted from those pages.</li>
+        <li>Weekdays were computed with Python’s <code>datetime</code> module.</li>
+        <li>Not checked in this session: the other 8 hotels, the other 17 restaurants, the other 9 activities, TikTok and Instagram links, and live hotel room rates. These remain as recorded by the owning session.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Spot-check, not a full audit. Values not confirmed by an official page are left as-is and flagged. Source pages are linked in every row.
+</footer>
+</body>
+</html>
