@@ -448,3 +448,11 @@ Claimed 2026-11-27 (UTC). Read-only independent re-verification of high-stakes c
 **Not checked (left unverified):** dynamic hotel rates other than Langham; restaurant hours and couple prices; social links reachability; timed transit minutes. See the page section "Not checked".
 
 **Cross-session request:** root and `trip-2027/` owners may link `audit-ddc78a00/index.html` from their Flagged pages. No edits made to those files by this session.
+
+---
+
+### Integration PR / deployment record — 2026-11-27
+
+- **Site integration PR:** [#24](https://github.com/kanlerxz87-cyber/ChinaFun3/pull/24) merged at `2fa19bd031619ac21e7e730dc7ead6fd152ebd85`; root hub now links the detailed `trip-2027/` dashboard. PR checks passed and Pages deployment run [46059914751](https://github.com/kanlerxz87-cyber/ChinaFun3/actions/runs/46059914751) succeeded.
+- **Independent audit-log PR:** [#26](https://github.com/kanlerxz87-cyber/ChinaFun3/pull/26) merged at `6340a2f1347dbc55c0c52eb54d134df402bcbf7a`; all three required checks passed. Pages deployment run [46060114978](https://github.com/kanlerxz87-cyber/ChinaFun3/actions/runs/46060114978) succeeded; GitHub Pages API reports status `built`, source `main` `/`.
+- **Live addresses:** root hub https://kanlerxz87-cyber.github.io/ChinaFun3/ · trip dashboard https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/.
