@@ -6,6 +6,7 @@
 
 - **Root site** — Start with the [Trip Planning Hub](index.html) for source-first navigation, open questions, flags, suggestions, and independent views. The [archived detailed dashboard](root-dashboard-2026.html) and its [executive summary](executive-summary.html), [hotels](hotels.html), [Michelin](restaurants.html), [activities](activities.html), [budget](budget.html), and [audit log](flagged.html) remain available as a dated comparison view.
 - **Parallel subsites preserved:** [`verify/`](verify/index.html) · [`plan/`](plan/index.html) · [`for-two/`](for-two/index.html) · [`considered/`](considered/index.html) · [`docs/`](docs/index.html) · [`audit-2026-11-26/`](audit-2026-11-26/index.html)
+- **Verified 2027 couple edition** — [`trip-2027/`](trip-2027/index.html): line-by-line verified couple trip dashboard (hotels, Michelin dining, activities, itinerary, transport, visa/budget, open questions, suggestions, Flagged for Review). Live: https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/
 
 ## Detailed root research snapshot (re-verified 2026-11-26)
 The archived dashboard presents a **7-night comparison model** within the **Feb 15–Mar 23, 2027** window (preferred dates Feb 15–18) for two adults. This is not a selected trip length. The brief mentions **1–2 weeks and also possibly 2–4 weeks**; the published comparison covers 7, 10, and 14 nights, and a 2–4-week itinerary is not established. The requested one-hour subway/bus constraint remains subject to the route and room-specific caveats below.

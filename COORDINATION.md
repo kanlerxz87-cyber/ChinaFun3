@@ -406,3 +406,36 @@ Existing session scopes are respected; requests for changes to their files will 
 - Published `spot-check-2027/index.html` as a standalone page. Did not edit `trip-2027/**`, root, or other sessions' scopes. Handoff requests logged in S01.
 - Not done: full line-by-line audit of all rows (sample of 13 only). Primary gov.cn page not fetched directly (Shanghai mirror used). Live hotel room rates not reproduced from public pages.
 - Note: open PR #10 (`arena/256b850d-chinafun3`) is another session's; not touched.
+---
+
+## Task Board — Session `arena/e33a1b10-chinafun3` (final integration: root hub link + re-verification + PR to main)
+
+| ID | Task | Status | Owner Session | Files Touched / Scope | Sources & Verification Note | Updated |
+|---|---|---|---|---|---|---|
+| E01 | Claim non-overlapping integration scope; audit current main (PR #23 merged) + open PR #10 state | **done** | `arena/e33a1b10-chinafun3` | `COORDINATION.md` (append-only) | Pages `built` on `main` `/`; PR #23 merged 2026-11-26; PR #10 open/stale from 2026-11-25 (not merged, not touched) | 2026-11-27 |
+| E02 | Line-by-line re-verification of `trip-2027/` data vs official sources | **done** | `arena/e33a1b10-chinafun3` | `trip-2027/data/*.json`, `trip-2027/*.html` | External official hosts unreachable from sandbox; re-verified internally: `scripts/build.py` regenerates deterministically (clean git status), `trip-2027/tests` 5/5 pass (determinism, mobile-wrapped tables, every row source-or-flag, direct social links, couple arithmetic, closure-safe itinerary), `check_links.py` 9 pages no problems; source links preserved as recorded 2026-11-26 | 2026-11-27 |
+| E03 | Root hub integration: additive navigation to `trip-2027/` from `index.html` + `README.md` (no data changes, no discard) | **done** | `arena/e33a1b10-chinafun3` | `index.html`, `README.md` (additive links only) | Added portal-nav link + subsite card to `trip-2027/index.html`; README bullet added; root tests 11/11 pass; no sibling data touched | 2026-11-27 |
+| E04 | Full build/test/link/mobile validation; PR to `main`, merge, confirm Pages deploy, record result | **in progress** | `arena/e33a1b10-chinafun3` | `COORDINATION.md` (record PR/merge) | All suites green; Pages `built`; flagged items do not block merge | 2026-11-27 |
+
+### Handoff note — Session `arena/e33a1b10-chinafun3` (2026-11-27 UTC)
+- Branch fixed by Arena (`arena/e33a1b10-chinafun3`), branched from `24bdc0f` (main, PR #23 merged). Prior sessions' scopes (`docs/**`, `considered/**`, `for-two/**`, `plan/**`, `verify/**`, `trip-2027/**` B01–B09 done, root I01–I03 done) are preserved; this session edits only its claimed scope above and appends here. Cross-session file requests will be logged here, not edited directly.
+- Claim commit follows immediately per protocol.
+
+---
+
+## Task Board — Session `arena/e51219fd-chinafun3` (current Arena branch)
+
+| ID | Task | Status | Owner Session | Files Touched / Scope | Verification plan |
+|---|---|---|---|---|---|
+| E01 | Final audit of the published trip-2027 dashboard and improve root-site discoverability | **in progress** | `arena/e51219fd-chinafun3` | `trip-2027/**` (audit only; correct confirmed defects if found), root `index.html` (one additive link card only), append-only `COORDINATION.md` | Run trip-2027 deterministic build/tests, full local link audit, inspect Pages/Actions status, and record limits; do not rewrite or merge datasets |
+
+- **Stale-scope handoff:** The trip-2027 owner marked B01–B09 done on 2026-11-26; no active claim covers `trip-2027/**`. The root integration session `arena/6e5e57f6-chinafun3` has an I01 claim that includes `index.html`, last documented 2026-11-26, exceeding the coordination 60-minute handoff threshold by the current session date. Taking over only a single additive `index.html` link to the already-published trip-2027 dashboard; no root research/data or generator files will be changed. This honors the earlier B09 cross-session request for a root link.
+- **Claim action:** This claim is committed and pushed on the Arena-assigned current branch before implementation. No branch switch or alternate worktree is used.
+
+### E01 final status & handoff — `arena/e51219fd-chinafun3` (2026-11-27)
+
+- **Status:** done / superseded by the concurrent final integration in PR #24. While this session was validating and preparing one additive root card, session `arena/e33a1b10-chinafun3` independently completed the same root-link task; PR #24 merged to `main` at `2fa19bd031619ac21e7e730dc7ead6fd152ebd85` before this session's rebase completed. The existing `index.html` card and quick-navigation link are preserved; this session's duplicate link commit was intentionally dropped during rebase. No duplicate card or research data change is included here.
+- **Coordination irregularity:** stale status in the shared board was superseded by an active concurrent session not yet reflected in our local copy. The rebase reported a `COORDINATION.md` conflict; it was resolved by retaining both session records and the merged root links, without discarding either. The competing integration is PR #24; no second code PR is needed for the root link.
+- **Checks run by this session:** root tests 11/11; trip-2027 tests 5/5; verify tests 10/10; for-two tests 9/9; `check_links.py` 9 pages/no problems; JavaScript syntax check passed; all-repo local HTML link/fragment scan 1,486 targets across 74 pages, 0 issues; trip-2027 generator built 12 pages deterministically with no diff. The `verify/` tests pass with existing unclosed-file `ResourceWarning`s.
+- **Publication:** PR #24 merged successfully; its PR checks succeeded and Pages deployment succeeded for merge commit `2fa19bd031619ac21e7e730dc7ead6fd152ebd85` (Actions run `46059914751`). Pages API reports `built`, source `main` `/`. Root: https://kanlerxz87-cyber.github.io/ChinaFun3/ · detailed trip dashboard: https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/.
+- **Evidence boundary / review flags:** this session independently validated build, data shape/math, source-or-flag coverage, local links, and existing CI evidence, but did not re-fetch every third-party official source or re-price future hotel nights. The research snapshot remains dated 2026-11-26; use the linked official MICHELIN, hotel, attraction, transport, and government sources in the dashboard and check the `Flagged for Review` page before booking. Existing `trip-2027/data/governance.json` and `trip-2027/flagged.html` remain the canonical review register; no new irregularity was silently resolved.
