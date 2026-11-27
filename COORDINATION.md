@@ -399,3 +399,14 @@ Existing session scopes are respected; requests for changes to their files will 
 ### Handoff note — Session `arena/e33a1b10-chinafun3` (2026-11-27 UTC)
 - Branch fixed by Arena (`arena/e33a1b10-chinafun3`), branched from `24bdc0f` (main, PR #23 merged). Prior sessions' scopes (`docs/**`, `considered/**`, `for-two/**`, `plan/**`, `verify/**`, `trip-2027/**` B01–B09 done, root I01–I03 done) are preserved; this session edits only its claimed scope above and appends here. Cross-session file requests will be logged here, not edited directly.
 - Claim commit follows immediately per protocol.
+
+---
+
+## Task Board — Session `arena/e51219fd-chinafun3` (current Arena branch)
+
+| ID | Task | Status | Owner Session | Files Touched / Scope | Verification plan |
+|---|---|---|---|---|---|
+| E01 | Final audit of the published trip-2027 dashboard and improve root-site discoverability | **in progress** | `arena/e51219fd-chinafun3` | `trip-2027/**` (audit only; correct confirmed defects if found), root `index.html` (one additive link card only), append-only `COORDINATION.md` | Run trip-2027 deterministic build/tests, full local link audit, inspect Pages/Actions status, and record limits; do not rewrite or merge datasets |
+
+- **Stale-scope handoff:** The trip-2027 owner marked B01–B09 done on 2026-11-26; no active claim covers `trip-2027/**`. The root integration session `arena/6e5e57f6-chinafun3` has an I01 claim that includes `index.html`, last documented 2026-11-26, exceeding the coordination 60-minute handoff threshold by the current session date. Taking over only a single additive `index.html` link to the already-published trip-2027 dashboard; no root research/data or generator files will be changed. This honors the earlier B09 cross-session request for a root link.
+- **Claim action:** This claim is committed and pushed on the Arena-assigned current branch before implementation. No branch switch or alternate worktree is used.
