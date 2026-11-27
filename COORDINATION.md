@@ -384,3 +384,26 @@ Existing session scopes are respected; requests for changes to their files will 
 - Per the non-overlapping scope protocol, this session touches **only** `trip-2027/**`, `.github/workflows/trip-2027-verify.yml`, and append-only updates to `COORDINATION.md`. No file owned by any other session is modified.
 - **Publication record:** [PR #23](https://github.com/kanlerxz87-cyber/ChinaFun3/pull/23) merged from `arena/b6e6976d-chinafun3` into `main`; live GitHub Pages subsite URL: `https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/`.
 - **Cross-session request (logged per protocol):** Once `trip-2027/` is published, the root `index.html` / `README.md` owner may optionally add a navigation link to `trip-2027/index.html` (`https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/`).
+
+
+### Task Board — Session `arena/b3932d58-chinafun3` (final integration & publication; root hub `index.html` + `README.md` additive link + append-only `COORDINATION.md`)
+
+| ID | Task | Status | Owner Session | Files Touched / Scope | Sources & Verification Note | Updated |
+|---|---|---|---|---|---|---|
+| Z01 | Claim final integration scope; take over stale root `index.html` (>60 min, no commits) and add trip-2027/ detailed dashboard link | **done** | `arena/b3932d58-chinafun3` | `index.html` (root hub portal nav + subsite grid), `README.md` (subsites list), `COORDINATION.md` (append-only board + log) | trip-2027/ is the most complete category dashboard (12 pages, 5/5 tests, source link or flag on every row, mobile table-scroll); root hub previously omitted it | 2026-11-27 |
+| Z02 | Final end-to-end verification I can perform without external hosts | **done** | `arena/b3932d58-chinafun3` | all test suites + check_links.py + trip-2027 build | root 11/11, verify 10/10, for-two 9/9, trip-2027 5/5; check_links.py clean; trip-2027 build deterministic; external official sources (michelin.com, gov.cn, hotel engines) not re-fetchable from this sandbox — prior session live-checks stand as dated 2026-11-25/26 evidence; blanks/flags preserved per no-inference rule | 2026-11-27 |
+| Z03 | Open PR from integration branch to `main`, merge, confirm GitHub Pages deploys, record PR link & merge result | **in progress** | `arena/b3932d58-chinafun3` | branch `arena/b3932d58-chinafun3` → `main` | Pages source `main` `/`, status `built`, live https://kanlerxz87-cyber.github.io/ChinaFun3/ (root + /verify/ + /trip-2027/ + sibling subsites) | 2026-11-27 |
+
+### Log — Session `arena/b3932d58-chinafun3` (final integration, 2026-11-27 UTC)
+
+- Branch `arena/b3932d58-chinafun3` created from / sitting at `main` `24bdc0f` (PR #23 merged). Status: active.
+- Claimed Z01–Z03. Scope: root `index.html` (stale-owner handoff from `arena/8205b531-chinafun3`, last commit 2026-11-25 13:22 UTC >60 min ago — takeover noted, no work discarded), `README.md` (additive subsite list line only), `COORDINATION.md` (append-only). No other session's files touched; `trip-2027/**`, `verify/**`, `plan/**`, `for-two/**`, `considered/**`, `docs/**`, `audit-2026-11-26/**` left byte-for-byte.
+- Z01 done: added `trip-2027/index.html` ("Detailed 2027 Couple Dashboard") to root hub portal nav and subsite grid; added `trip-2027/` to README subsites list. This answers the b6e6976d cross-session request and gives the root landing page a link to the fullest category dashboard.
+- Z02 done: re-ran every automated verification suite and link check; all pass (see Z02 note). Confirmed no fabricated values: blanks + flags preserved; every table row carries a source link or a Flag ID. External official sources were not independently re-fetched (sandbox allowlist: github.com/npm/pypi only); prior dated live-checks (2026-11-25/26) remain the evidence of record and are cited on each page.
+- Z03 in progress: PR from `arena/b3932d58-chinafun3` to `main`; merge; confirm Pages deploy; record result below.
+
+---
+
+### Handoff & Scope Note — Session `arena/b3932d58-chinafun3` (2026-11-27 UTC)
+- Branch is fixed by Arena (`arena/b3932d58-chinafun3`). Touches only `index.html`, `README.md` (additive line), and append-only `COORDINATION.md`. No subsite data, JSON, or other session's HTML modified.
+- Publication: Pages source remains `main` `/`; live at https://kanlerxz87-cyber.github.io/ChinaFun3/ with `/trip-2027/` and all sibling subsites addressable.
