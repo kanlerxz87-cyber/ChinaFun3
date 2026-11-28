@@ -39,7 +39,7 @@
         }
       });
       if (countEl) {
-        countEl.textContent = "Showing " + shown + " of " + rows.length + " verified entries";
+        countEl.textContent = "Showing " + shown + " of " + rows.length + " shortlisted properties";
       }
     }
 
@@ -74,29 +74,33 @@
   if (hotelSel && visaSel && diningSel && actSel && outBox) {
     function updateBudget() {
       var hotelUsd = parseFloat(hotelSel.value || "0");
-      var visaUsd = parseFloat(visaSel.value || "0");
+      var hasVisaExample = visaSel.value !== "";
+      var visaUsd = hasVisaExample ? parseFloat(visaSel.value) : 0;
       var diningCny = parseFloat(diningSel.value || "0");
       var actCny = parseFloat(actSel.value || "0");
       var totalCny = diningCny + actCny;
       var approxCnyInUsd = totalCny / 7.24;
-      var combinedApproxUsd = hotelUsd + visaUsd + approxCnyInUsd;
+      var subtotalUsd = hotelUsd + visaUsd + approxCnyInUsd;
+      var visaLine = hasVisaExample
+        ? "Conditional example (not traveler-specific): " + visaSel.options[visaSel.selectedIndex].text
+        : "Not included — passport nationality, visa status, and route are unknown";
+      var subtotalLabel = hasVisaExample
+        ? "Illustrative subtotal including the selected conditional visa example"
+        : "Observed subtotal before visa / entry costs and airfare";
 
       outBox.innerHTML =
-        "<strong>Verified USD Components (Hotel + Visa):</strong> $" +
-        (hotelUsd + visaUsd).toFixed(2) +
-        " USD ($" +
+        "<strong>Dated hotel quote snapshot:</strong> $" +
         hotelUsd.toFixed(2) +
-        " 7-night tax-incl. hotel + $" +
-        visaUsd.toFixed(2) +
-        " US entry pathway)<br>" +
-        "<strong>Verified CNY On-Ground Bundle (Published Menus + Transit + Tickets):</strong> CNY " +
+        " USD (7 nights; checked 2026-11-26)<br>" +
+        "<strong>Visa / entry scenario:</strong> " + visaLine + "<br>" +
+        "<strong>Published CNY on-ground bundle (menus + transit + tickets):</strong> CNY " +
         totalCny.toFixed(2) +
-        " (approx. $" +
+        " (about $" +
         approxCnyInUsd.toFixed(0) +
-        " USD at indicative 7.24 CNY/USD)<br>" +
-        "<strong>Combined Verified Baseline for Two Travelers:</strong> ~$" +
-        combinedApproxUsd.toFixed(0) +
-        " USD <span class='muted-note'>Strictly excludes unverified international airfare and unpublished à la carte/3★ tasting balances (see Flagged F06/F10).</span>";
+        " USD at the indicative 7.24 CNY/USD rate)<br>" +
+        "<strong>" + subtotalLabel + ":</strong> about $" +
+        subtotalUsd.toFixed(0) +
+        " USD for two <span class='muted-note'>This is not a complete trip budget: airfare, unknown visa/entry costs when not selected, unpriced à la carte/3★ balances, and rate changes are excluded. See Flags F06, F17, and F18.</span>";
     }
 
     [hotelSel, visaSel, diningSel, actSel].forEach(function (el) {

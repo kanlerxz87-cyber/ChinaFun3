@@ -11,7 +11,7 @@
       "hours": "10:00 – 18:00 (Last entry 17:00)",
       "exceptions": "Closed Tuesdays (except national holidays — CLOSED Tue Feb 16, 2027! OPEN Mon Feb 15, 2027!)",
       "couple_cost_display": "Free general entry (RMB 0 for 2; special exhibitions ticketed separately)",
-      "booking_rule": "No advance reservation required for individual general admission — bring original US passports at B1 East Gate. Curio-City & Digital Gallery require separate online reservation.",
+      "booking_rule": "No advance reservation required for individual general admission — bring each traveler’s passport to the B1 East Gate. Curio-City & Digital Gallery require separate online reservation.",
       "metro_route": "Line 2 Shanghai Science & Technology Museum Exit 8 / Line 4 Xiangcheng Rd Exit 2 (~22–28 min from Bund/Xintiandi)",
       "official_url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-east",
       "social": {
@@ -179,7 +179,7 @@
         "tiktok": null,
         "instagram": {"url": "https://www.instagram.com/meetinshanghai/", "label": "@meetinshanghai (Official Tourism)", "scope": "hotel_property"}
       },
-      "flag_id": null
+      "flag_id": "F20"
     },
     {
       "id": "french-concession-walk",
@@ -231,7 +231,7 @@
       "hours": "— (Published 30–60 days ahead on official Shanghai Disney Resort app/calendar)",
       "exceptions": "Post-CNY weekday (Feb 17–19) has far lighter queues than Sat Feb 20 Lantern Festival weekend",
       "couple_cost_display": "From CNY 950 for 2 (Official 1-Day Ticket starts at CNY 475/pp; exact Feb 2027 date tier TBD)",
-      "booking_rule": "Buy ONLY via official Shanghai Disney Resort website/app/WeChat with passport numbers; bring original US passports to park gate.",
+      "booking_rule": "Buy ONLY via official Shanghai Disney Resort website/app/WeChat with passport numbers; bring each traveler’s passport to the park gate.",
       "metro_route": "Line 10 Xintiandi → Jiaotong Univ → Metro Line 11 Disney Resort Terminus (~48–55 min rail; official Shmetro guide advises Line 11 over Suburban Airport Line)",
       "official_url": "https://www.shanghaidisneyresort.com/en/",
       "social": {
