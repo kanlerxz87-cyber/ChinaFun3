@@ -1,7 +1,7 @@
 {
   "checked_date": "2026-11-26",
   "stay_window": "2027-02-15 to 2027-02-22 (7 nights, 2 adults, 1 room)",
-  "ranking_methodology": "Ranked by verified central Metro interchange connectivity and proximity to our 18 deep-verified MICHELIN restaurants (11 Starred + 7 Bib/Selected) within ≤1 hour by Shanghai Metro/walk, paired with live 2026-11-26 room-level 7-night checkout totals (including taxes & fees), verified Queen/King+ bedding, and official brand en-suite private bathroom specifications.",
+  "ranking_methodology": "Overall order is a qualitative decision-support shortlist, not a weighted score or price sort. It prioritizes documented fit to the requested Queen/King bed and private bath, then the dated 7-night quote plus cancellation/breakfast terms, walkable or on-property MICHELIN dining and Metro access, and unresolved property alerts; each row states its reason. All nine properties tie at 18/18 only within the curated subset (11 starred, 3 Bib Gourmand, 4 MICHELIN Selected), not the full 153-entry Shanghai Guide; the raw count does not distinguish these hotels and is not used to rank them. A separate price rank in the quote cell orders the eight recorded USD seven-night totals from low to high; The Peninsula has no comparable live USD checkout total and is unranked. Quote totals are not normalized for room type, breakfast, refundability, or other terms; where multiple beds have different prices, the displayed total is the lower recorded option and the exact room must be reselected at checkout. Room-fit uncertainties remain flagged and are not booking-ready until confirmed. Route times are dated rail/short-walk estimates, not guaranteed door-to-door times; see F04–F05, F16, F18, F19, and F21.",
   "hotels": [
     {
       "rank": 1,
@@ -15,24 +15,35 @@
       "cluster_summary": "18/18 deep-verified venues ≤40 min Metro (4 walkable in Xintiandi: in-house 2★ T'ang Court, Bib Polux, Bib Rong Cuisine, Selected Yè Shanghai; 10–15 min Line 10 to Bund cluster)",
       "in_house_michelin": "T'ang Court (2★ Cantonese)",
       "room_name": "Deluxe Room",
-      "bed_verified": "1 King Bed (1.8m) · 40 m²",
+      "bed_verified": "— Exact bed setup not confirmed; official Deluxe Room source lists 1 King or 2 single beds. Request and confirm one King before booking (F21).",
       "bath_verified": "Verified private marble bathroom w/ separate rain shower, deep soaking tub & heated floor (official Langham room page)",
       "seven_night_total_usd": 2291.93,
       "nightly_base_usd": 280.81,
       "rate_inclusions": "Includes Daily Breakfast for 2 + Taxes & Fees",
       "cancellation": "Free Cancellation until Feb 14, 2027",
       "direct_channel_note": "Direct Brilliant engine quotes Superior CNY 1,323/nt Member (CNY 1,571 Flex) excl. tax for Feb 15–22 vs CNY 1,782 (+34.7%) in March. Official alert: no Brilliant Points awarded for check-out on/after Jan 12, 2027.",
-      "filter_tags": ["under-2500", "breakfast", "free-cancel", "in-house-star", "huangpu"],
+      "filter_tags": [
+        "under-2500",
+        "breakfast",
+        "free-cancel",
+        "in-house-star",
+        "huangpu"
+      ],
       "quote_url": "https://guide.michelin.com/en/hotels-stays/shanghai/the-langham-shanghai-xintiandi-5331?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1",
       "room_spec_url": "https://www.langhamhotels.com/en/the-langham/shanghai/stay/rooms/deluxe-room/",
       "direct_engine_url": "https://reservations.brilliantbylangham.com/en-US/booking/rooms?adult=2&arrive=2027-02-15&chain=10316&config=brilliant&depart=2027-02-22&hotel=28382&level=hotel&locale=en-US&rooms=1&theme=brilliant",
-      "flag_id": "F04"
+      "flag_id": "F04",
+      "rank_rationale": "Top provisional balance, not the cheapest: the recorded $2,291.93 seven-night total includes breakfast for two and free cancellation to Feb 14, with an on-site 2★ restaurant and a three-line Xintiandi hub. Confirm one King rather than two singles before booking; see F21.",
+      "flag_ids": [
+        "F04",
+        "F21"
+      ]
     },
     {
       "rank": 2,
       "id": "andaz-xintiandi",
       "name": "Andaz Xintiandi, Shanghai",
-      "badge": "Lowest Verified 7-Night Checkout Total",
+      "badge": "Lowest Recorded USD Total Among Priced Rows · Nonref Snapshot",
       "michelin_tier": "MICHELIN Selected",
       "district": "Huangpu (Xintiandi)",
       "address": "88 Songshan Road, Xintiandi, Huangpu District",
@@ -46,18 +57,24 @@
       "nightly_base_usd": 168.61,
       "rate_inclusions": "Room Only · Taxes & Fees Included ($183.27/nt base for Free Cancel)",
       "cancellation": "$1,376.21 is Non-Refundable; Free Cancellation tier available until Feb 13, 2027 ($183.27/nt base)",
-      "direct_channel_note": "Saves $915.72 over Langham across 7 nights — enough to fund 3–4 starred dinners for two.",
-      "filter_tags": ["under-2000", "under-2500", "free-cancel", "huangpu"],
+      "direct_channel_note": "Observed 7-night room totals were $915.72 below the Langham snapshot for these dates; confirm the same room/bed, refundability, and live total before comparing.",
+      "filter_tags": [
+        "under-2000",
+        "under-2500",
+        "free-cancel",
+        "huangpu"
+      ],
       "quote_url": "https://guide.michelin.com/en/hotels-stays/shanghai/andaz-xintiandi-shanghai-6510?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1",
       "room_spec_url": "https://www.hyatt.com/andaz/en-US/shazc-andaz-xintiandi-shanghai/rooms",
       "direct_engine_url": null,
-      "flag_id": null
+      "flag_id": null,
+      "rank_rationale": "Price-led choice: the $1,376.21 tax/fee-inclusive seven-night quote is the lowest recorded USD total among priced rows and the King/private bath are specified. That quote is non-refundable; its refundable alternative has no comparable seven-night total recorded."
     },
     {
       "rank": 3,
       "id": "jingan-shangrila",
       "name": "Jing An Shangri-La, West Shanghai",
-      "badge": "Best West-Central Value · Line 2/7/14 Hub",
+      "badge": "West-Central Value · Line 2/7/14 Hub",
       "michelin_tier": "MICHELIN Selected",
       "district": "Jing'an",
       "address": "1218 Middle Yan'an Road, Jing'an Kerry Centre, Jing'an District",
@@ -71,12 +88,18 @@
       "nightly_base_usd": 226.29,
       "rate_inclusions": "Room Only · Taxes & Fees Included",
       "cancellation": "$1,847.02 Non-Refundable; Free Cancellation until Feb 14, 2027 at $263.14/nt base",
-      "direct_channel_note": "Proven seasonal bargain: $226.29/nt base for Feb 15–22 vs $317.43/nt (+40.3%) for Mar 1–8, 2027.",
-      "filter_tags": ["under-2000", "under-2500", "free-cancel", "jingan"],
+      "direct_channel_note": "The dated 2026-11-26 snapshot shows $226.29/nt base for Feb 15–22 vs $317.43/nt base for Mar 1–8; future availability and rates can change.",
+      "filter_tags": [
+        "under-2000",
+        "under-2500",
+        "free-cancel",
+        "jingan"
+      ],
       "quote_url": "https://guide.michelin.com/en/hotels-stays/shanghai/jing-an-shangrila-west-shanghai-7781?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1",
       "room_spec_url": "https://www.shangri-la.com/en/shanghai/jinganshangrila/rooms-suites/rooms/deluxe-room/",
       "direct_engine_url": null,
-      "flag_id": null
+      "flag_id": null,
+      "rank_rationale": "Lower-cost transit option: $1,847.02 for seven nights with a specified King/private bath and a three-line Jing’an Temple hub. The quoted total is non-refundable; the refundable alternative is recorded only as a nightly base, not a full checkout total."
     },
     {
       "rank": 4,
@@ -96,12 +119,17 @@
       "nightly_base_usd": 293.32,
       "rate_inclusions": "Free Cancellation Included · Complimentary non-alcoholic minibar · Taxes & Fees Included",
       "cancellation": "Free Cancellation until Feb 14, 2027 included in $2,394.04 total",
-      "direct_channel_note": "Feb 15–22 base $293.32/nt beats Mar 1–8 base $338.86/nt (+15.5%).",
-      "filter_tags": ["under-2500", "free-cancel", "jingan"],
+      "direct_channel_note": "The 2026-11-26 snapshot shows a Feb 15–22 base of $293.32/nt vs $338.86/nt for Mar 1–8; future availability and rates can change.",
+      "filter_tags": [
+        "under-2500",
+        "free-cancel",
+        "jingan"
+      ],
       "quote_url": "https://guide.michelin.com/en/hotels-stays/shanghai/the-sukhothai-shanghai-121741-11680?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1",
       "room_spec_url": "https://shanghai.sukhothai.com/en/accommodations/studio-room/",
       "direct_engine_url": null,
-      "flag_id": null
+      "flag_id": null,
+      "rank_rationale": "Flexibility and room-size option: $2,394.04 includes free cancellation through Feb 14, a 55 m² Studio King and private bath. Its quoted total is higher than the first three rows but the cancellation terms are included in this dated total."
     },
     {
       "rank": 5,
@@ -122,11 +150,15 @@
       "rate_inclusions": "Free Cancellation Included · Taxes & Fees Included",
       "cancellation": "Free Cancellation until Feb 15, 2027",
       "direct_channel_note": "Ideal if you want 2 Queen beds or step-out East Nanjing Rd Line 2/10 access + Bund walks.",
-      "filter_tags": ["free-cancel", "huangpu"],
+      "filter_tags": [
+        "free-cancel",
+        "huangpu"
+      ],
       "quote_url": "https://guide.michelin.com/en/hotels-stays/shanghai/the-shanghai-edition-121740-11679?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1",
       "room_spec_url": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/rooms/",
       "direct_engine_url": null,
-      "flag_id": null
+      "flag_id": null,
+      "rank_rationale": "Bed-choice and Bund option: the dated $3,222.01 total includes free cancellation, and the listed room types include one King or two Queens with a specified private bath. Confirm the exact bed-specific rate at checkout; the total is higher than the first four rows."
     },
     {
       "rank": 6,
@@ -147,11 +179,16 @@
       "rate_inclusions": "Active Direct Promo ('A Gift for the New Year', book Nov 23 – Dec 7, 2026): 15% off rooms + Daily Breakfast for 2 + Peninsula Time (6am in / 10pm out) + 16.6% surcharge (non-refundable). Live MICHELIN engine showed no rate on 2026-11-26; prior-day direct engine check recorded CNY 2,465/nt excl. 16.6% (CNY 20,119.33 / 7 nights) for Feb 15–Mar 8.",
       "cancellation": "Direct Festive Offer requires full non-refundable prepayment",
       "direct_channel_note": "Hard deadline Dec 7, 2026 for the 15%-off + breakfast direct offer.",
-      "filter_tags": ["breakfast", "in-house-star", "huangpu"],
+      "filter_tags": [
+        "breakfast",
+        "in-house-star",
+        "huangpu"
+      ],
       "quote_url": "https://www.peninsula.com/en/shanghai/special-offers/festive/a-gift-for-the-new-year",
       "room_spec_url": "https://www.peninsula.com/en/shanghai/luxury-hotel-room-suite-types/deluxe-room",
       "direct_engine_url": "https://www.peninsula.com/en/shanghai/5-star-luxury-hotel-bund",
-      "flag_id": "F01"
+      "flag_id": "F01",
+      "rank_rationale": "Kept as a premium Bund candidate for its on-site 1★ restaurant and Selected venue, but it has no comparable live USD seven-night checkout total in the snapshot. The direct offer is non-refundable; obtain a current dated total before comparing or booking (F01)."
     },
     {
       "rank": 7,
@@ -172,11 +209,16 @@
       "rate_inclusions": "Room Only · Taxes & Fees Included ($344.81/nt base for Free Cancel)",
       "cancellation": "$2,532.92 Non-Refundable; Free Cancellation until Feb 15, 2027 at $344.81/nt base",
       "direct_channel_note": "IMPORTANT RENOVATION ALERT (flagged in F03): Official Jin Xuan website announces enhancement work in 1F Lobby, 1F Retail, 3F Banquet Hall, and 55F Spa starting Oct 1, 2026.",
-      "filter_tags": ["free-cancel", "in-house-star", "pudong"],
+      "filter_tags": [
+        "free-cancel",
+        "in-house-star",
+        "pudong"
+      ],
       "quote_url": "https://guide.michelin.com/en/hotels-stays/shanghai/the-ritz-carlton-shanghai-pudong-10509?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1",
       "room_spec_url": "https://www.ritzcarlton.com/en/hotels/shasz-the-ritz-carlton-shanghai-pudong/rooms/",
       "direct_engine_url": "https://www.jinxuanchineserestaurantshanghai.com/",
-      "flag_id": "F03"
+      "flag_id": "F03",
+      "rank_rationale": "A specified King/private bath, a $2,532.92 seven-night non-refundable quote and on-site 1★ dining are documented, but the unresolved enhancement work in the official notice reduces its practical fit until the hotel confirms completion (F03)."
     },
     {
       "rank": 8,
@@ -191,17 +233,23 @@
       "in_house_michelin": "None starred on-site",
       "room_name": "Marvelous Room (1 Queen) / Wonderful King (1 King)",
       "bed_verified": "1 Queen Bed ($2,733.53) OR 1 King Bed ($2,792.31) · 46 m²",
-      "bath_verified": "Category-level 5-star private en-suite bathroom; confirm room-specific layout at checkout (flagged F05)",
+      "bath_verified": "— Exact quoted-room private-bath details not confirmed; obtain written confirmation before booking (F05).",
       "seven_night_total_usd": 2733.53,
       "nightly_base_usd": 334.91,
       "rate_inclusions": "Room Only Non-Ref ($2,733.53 Queen / $2,792.31 King); Free Cancel + Breakfast $376.41/nt base",
       "cancellation": "Free Cancellation + Breakfast tier available until Feb 14, 2027 ($376.41/nt base)",
       "direct_channel_note": "MICHELIN engine labels 'Marvelous Room Oversize King' with '1 Queen Bed' in specs — select 'Wonderful King' ($2,792.31) if you specifically want a King mattress.",
-      "filter_tags": ["free-cancel", "breakfast", "hongkou"],
+      "filter_tags": [
+        "free-cancel",
+        "breakfast",
+        "hongkou"
+      ],
       "quote_url": "https://guide.michelin.com/en/hotels-stays/shanghai/w-shanghai-10556?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1",
       "room_spec_url": "https://guide.michelin.com/en/hotels-stays/shanghai/w-shanghai-10556?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1",
       "direct_engine_url": null,
-      "flag_id": "F05"
+      "flag_id": "F05",
+      "rank_rationale": "The $2,733.53 seven-night quote is for the Queen option (the King option is quoted higher), but private-bath details for the exact room are not confirmed. Keep below verified room-fit options until the hotel confirms the bathroom in writing (F05).",
+      "room_spec_label": "MICHELIN Room Listing (exact private bath unconfirmed)"
     },
     {
       "rank": 9,
@@ -216,17 +264,24 @@
       "in_house_michelin": "Bao Li Xuan (2★ Cantonese) · Il Ristorante - Niko Romito (1★ Italian)",
       "room_name": "Superior City View (1 Queen) / Premium City View (1 King)",
       "bed_verified": "1 Queen Bed (52 m², $6,858.31) OR 1 King Bed (62 m², $7,418.17)",
-      "bath_verified": "Black granite/marble en-suite w/ walk-in rain shower & heated toilet; Superior room page unreachable on 2026-11-26 so private-exclusivity wording flagged in F05",
+      "bath_verified": "— Exact-room private-bath exclusivity not confirmed in the available room spec; verify before booking (F05).",
       "seven_night_total_usd": 6858.31,
       "nightly_base_usd": 840.27,
       "rate_inclusions": "Includes Daily Breakfast for 2 + Free Cancellation + Taxes & Fees",
       "cancellation": "Free Cancellation included",
       "direct_channel_note": "Only hotel in Shanghai housing 3 combined MICHELIN stars (2★ + 1★) on-property.",
-      "filter_tags": ["breakfast", "free-cancel", "in-house-star", "jingan"],
+      "filter_tags": [
+        "breakfast",
+        "free-cancel",
+        "in-house-star",
+        "jingan"
+      ],
       "quote_url": "https://guide.michelin.com/en/hotels-stays/shanghai/bulgari-hotel-shanghai-12400?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1",
       "room_spec_url": "https://guide.michelin.com/en/hotels-stays/shanghai/bulgari-hotel-shanghai-12400?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1",
       "direct_engine_url": null,
-      "flag_id": "F05"
+      "flag_id": "F05",
+      "rank_rationale": "Ultra-luxury splurge with two on-site starred venues and breakfast/free cancellation; the recorded Queen option is $6,858.31 for seven nights and the King option is $7,418.17. The exact room’s private-bath exclusivity remains unconfirmed, so verify before treating it as a fit (F05).",
+      "room_spec_label": "MICHELIN Room Listing (official room spec unavailable)"
     }
   ],
   "checked_unavailable_feb15": [
@@ -250,5 +305,18 @@
       "status": "No live MICHELIN checkout inventory returned for Feb 15–22, 2027 on 2026-11-26",
       "source_url": "https://guide.michelin.com/en/hotels-stays/shanghai/the-puli-shanghai-4541?arr=2027-02-15&dep=2027-02-22&nA=2&nC=0&nR=1"
     }
-  ]
+  ],
+  "cluster_coverage": {
+    "snapshot_date": "2026-11-26",
+    "tracked_venue_count": 18,
+    "starred_count": 11,
+    "bib_gourmand_count": 3,
+    "selected_count": 4,
+    "access_limit_minutes": 60,
+    "recorded_max_route_minutes": 45,
+    "source_url": "https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants",
+    "transit_source_url": "https://service.shmetro.com/en/operation/965.htm",
+    "scope_note": "Curated 18-venue subset from the Shanghai 2026 MICHELIN Guide; not the full city guide. All nine hotel candidates are recorded as reaching all 18 within the 60-minute threshold in the dated route estimates; exact door-to-door times can vary."
+  },
+  "rate_snapshot_note": "Displayed hotel checkout amounts are room-level 7-night USD snapshots for 2027-02-15 to 2027-02-22, recorded 2026-11-26. They do not establish current inventory, a lowest price across every stay date, or the cheapest future booking date; refresh the exact quote and cancellation terms before purchase."
 }

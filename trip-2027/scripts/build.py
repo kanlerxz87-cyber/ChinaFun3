@@ -19,7 +19,7 @@ PAGES = [
     ("activities.html", "Activities"),
     ("itinerary.html", "Itinerary"),
     ("transport.html", "Transit"),
-    ("visa-budget.html", "US Visa & Budget"),
+    ("visa-budget.html", "Entry & Budget"),
     ("questions.html", "Open Questions"),
     ("suggestions.html", "Suggestions"),
     ("flagged.html", "Flagged"),
@@ -51,6 +51,13 @@ def flag_badge(flag_id: str | None) -> str:
     )
 
 
+def flag_badges(flag_ids: list[str] | None, fallback: str | None = None) -> str:
+    ids = flag_ids or ([fallback] if fallback else [])
+    if not ids:
+        return flag_badge(None)
+    return " ".join(flag_badge(flag_id) for flag_id in ids)
+
+
 def render_socials(social: dict, flag_id: str | None) -> str:
     items: list[str] = []
     platform_names = [
@@ -75,7 +82,14 @@ def render_socials(social: dict, flag_id: str | None) -> str:
     return '<div class="social-stack">' + "".join(items) + "</div>"
 
 
+def flag_summary() -> tuple[int, str]:
+    flags = json.loads((DATA_DIR / "governance.json").read_text(encoding="utf-8"))["flagged_items"]
+    ids = [flag["id"] for flag in flags]
+    return len(ids), f"{ids[0]}–{ids[-1]}"
+
+
 def render_shell(active_file: str, page_title: str, eyebrow: str, h1: str, lead: str, body_html: str) -> str:
+    flag_count, flag_range = flag_summary()
     nav_links = []
     for href, label in PAGES:
         cls = ' class="active"' if href == active_file else ""
@@ -87,14 +101,14 @@ def render_shell(active_file: str, page_title: str, eyebrow: str, h1: str, lead:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{esc(page_title)} · Shanghai 2027 Verified Couple Trip</title>
+  <title>{esc(page_title)} · Shanghai 2027 Couple Trip Planner</title>
   <meta name="description" content="{esc(lead)}">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <div class="verify-ribbon">
-    Line-by-line live verification snapshot: <strong>2026-11-26 UTC</strong> · Zero fabricated prices or search-placeholder social links ·
-    <a href="flagged.html">16 Flagged Items</a> · <a href="repo-audit.html">Master Source Ledger</a>
+    Latest recorded official-source check: <strong>2026-11-26</strong> · Passport nationality unknown; US visa examples are conditional (<a href="flagged.html#F17">F17</a>) · Hotel quotes are dated snapshots, not current availability (<a href="flagged.html#F18">F18</a>) ·
+    <a href="flagged.html">{flag_count} review flags ({flag_range})</a> · <a href="repo-audit.html">Source ledger</a>
   </div>
   <header class="site-header">
     <div class="header-inner">
@@ -123,8 +137,8 @@ def render_shell(active_file: str, page_title: str, eyebrow: str, h1: str, lead:
   <footer class="site-footer">
     <div class="footer-inner">
       <div>
-        <strong>Shanghai 2027 Verified Couple Planner (<code>/trip-2027/</code>)</strong> · Checked <code>2026-11-26</code> for two US passport holders.
-        Unverified figures are intentionally left blank (<code>—</code>) and indexed in <a href="flagged.html">Flagged for Review</a>.
+        <strong>Shanghai 2027 Couple Trip Planner (<code>/trip-2027/</code>)</strong> · Official-source snapshot <code>2026-11-26</code>; wording, scope, and local consistency reviewed <code>2026-11-28</code>.
+        Passport nationality is not specified; US visa examples are conditional. Refresh dynamic hotel quotes before booking. Unverified values remain blank and are indexed in <a href="flagged.html">Flagged for Review</a>.
       </div>
       <div>
         Repository sibling editions:
@@ -178,16 +192,16 @@ def build_index(overview: dict, hotels: dict, restaurants: dict) -> str:
         )
 
     nav_cards = [
-        ("executive-summary.html", "1. Executive Summary & Optimal Dates", "7 vs 10 vs 14 vs 21–28 night comparisons, live Feb–Mar 2027 hotel price curve (+15.5%–40.3% March surge), and Dec 7 / Dec 31 action deadlines."),
-        ("hotels.html", "2. Ranked Hotels & Live 2027 Checkout Quotes", "9 MICHELIN-listed properties ranked by ≤1h culinary cluster access with live Feb 15–22 tax-inclusive totals, King/Queen beds, brand bathroom specs & renovation alerts."),
+        ("executive-summary.html", "1. Executive Summary & In-Scope Dates", "7-, 10-, and 14-night options only; preferred-date conflict is explicit; hotel amounts are dated observations, not a booking forecast."),
+        ("hotels.html", "2. Hotel Shortlist & Dated 2027 Quote Snapshots", "9 properties tie at 18/18 tracked Michelin venues within ≤1h; compare bed/bath, amenities, cancellation, price snapshots, and documented alerts."),
         ("restaurants.html", "3. Starred vs Non-Starred MICHELIN Dining", "18 deep-verified venues clearly separating 3★/2★/1★ Starred from Bib Gourmand & MICHELIN Selected, with 2026 PDF couple totals & verified social links."),
         ("activities.html", "4. Verified Cultural & Modern Activities", "12 Shanghai attractions ≤1h from top hotels with official hours, Monday/Tuesday closures, People's Square Americas-only notice & social previews."),
         ("itinerary.html", "5. Closure-Safe Couple Itinerary (Feb 15–22)", "Day-by-day plan built around Monday/Tuesday closures, Thu–Sun Bombana lunch, and Sat Feb 20 Lantern Festival."),
-        ("transport.html", "6. Maglev, Airport Link & Metro Fare Matrix", "Live-verified service.shmetro.com progressive fares, 8-min PVG Maglev tap-to-pay, Line 11 Disney routing & station-to-station cluster windows."),
-        ("visa-budget.html", "7. US Visa Pathways & Interactive Budget", "$0 240h Visa-Free Transit vs simplified $140/pp US L-Visa (through Dec 31, 2026) + interactive couple cost calculator."),
-        ("questions.html", "8. Missing Info & Discovery Matrix", "10 open traveler & vendor questions paired with concrete step-by-step methods to resolve each gap."),
+        ("transport.html", "6. Airport, Metro & Local Transit", "Official Metro source links, fare references, and station-to-station route estimates; time-boundary assumptions are flagged."),
+        ("visa-budget.html", "7. Entry & Budget (Conditional US Example)", "Passport nationality is unknown; US-only pathways are examples. The calculator leaves visa cost unresolved by default."),
+        ("questions.html", "8. Missing Information & Discovery Matrix", f"{len(load_json('governance.json')['questions'])} open traveler/vendor questions paired with concrete ways to resolve each gap."),
         ("suggestions.html", "9. Suggestions (For Review Only)", "6 high-leverage optimizations (3rd-country transit routing, starred lunch arbitrage, Free-Cancel + Feb 1 re-price) kept strictly separate."),
-        ("flagged.html", "10. Flagged for Review (F01–F16)", "Complete audit register of blank cells, operator contradictions, Ritz-Carlton 55F spa works, and social media gaps."),
+        ("flagged.html", f"10. Flagged for Review ({flag_summary()[1]})", "Passport assumptions, dynamic hotel quote limits, cluster-count ties, blank values, operator contradictions, renovation alerts, and social-link gaps."),
         ("repo-audit.html", "11. Repo Audit & Master Source Ledger", "Cross-audit of all 7 repository sites plus every primary official & social URL verified on 2026-11-26."),
     ]
     cards_html = "\n".join(
@@ -201,7 +215,10 @@ def build_index(overview: dict, hotels: dict, restaurants: dict) -> str:
     </div>
 
     <div class="callout jade">
-      <strong>Bottom-Line Recommendation for Two Travelers:</strong> Base in <strong>Huangpu (Xintiandi or Bund)</strong> or <strong>Jing'an</strong> for <strong>7 nights (Mon Feb 15 – Mon Feb 22, 2027)</strong> — or <strong>14 nights (Feb 15 – Mar 1, 2027)</strong> adding Hangzhou via 45-min high-speed rail. Starting on <strong>Feb 15</strong> overlaps your preferred Feb 15–18 dates, lands right after China's official Feb 5–13 Spring Festival holiday, includes <strong>Lantern Festival (Sat Feb 20)</strong>, and saves <strong>15.5%–40.3%</strong> on luxury hotels compared with March 2027.
+      <strong>Provisional base recommendation:</strong> For the 7–14-night options shown, compare <strong>Huangpu (Xintiandi/Bund)</strong> and <strong>Jing'an</strong>. The 7-night candidate runs <strong>Feb 15–22, 2027</strong>; the 14-night candidate runs <strong>Feb 15–Mar 1</strong>. The dated 2026-11-26 sample showed lower February stay-date quotes than selected March dates, but does not prove present availability or the cheapest future booking day. Recheck live totals and cancellation terms before booking.
+    </div>
+    <div class="callout amber">
+      <strong>Constraint mismatch to resolve:</strong> Your brief asks for <strong>1–2 weeks</strong> but marks <strong>Feb 15–18</strong> as preferred. From a Feb 15 check-in, a Feb 18 checkout is 3 hotel nights; leaving Feb 19 after the night of Feb 18 is 4 nights. Both are shorter than the 7-night minimum. The displayed 7-night plan ends Feb 22, so it overlaps—but does not fit inside—the preferred dates. See <a href="questions.html">Q11</a> before treating any dates as final.
     </div>
 
     <section class="section-block">
@@ -232,8 +249,8 @@ def build_index(overview: dict, hotels: dict, restaurants: dict) -> str:
 
     <section class="section-block">
       <div class="section-header">
-        <h2>Explore All Verified Sections</h2>
-        <span>Mobile-friendly tables &amp; source links on every row</span>
+        <h2>Explore Source-Linked Planning Sections</h2>
+        <span>Mobile-friendly tables with row-level references and review flags</span>
       </div>
       <div class="nav-cards">
         {cards_html}
@@ -243,7 +260,7 @@ def build_index(overview: dict, hotels: dict, restaurants: dict) -> str:
     return render_shell(
         "index.html",
         "Overview & City Comparison",
-        "Verified 2027 Edition · 2 US Travelers",
+        "2027 Planning Draft · 2 Adults",
         overview["meta"]["title"],
         overview["meta"]["subtitle"],
         body,
@@ -274,7 +291,7 @@ def build_exec_summary(overview: dict) -> str:
           <td>{esc(r["feb_22_mar_01"])}</td>
           <td>{esc(r["mar_01_08"])}</td>
           <td>{esc(r["mar_16_23"])}</td>
-          <td class="num-strong">{esc(r["cheapest_window"])}</td>
+          <td>{esc(r["comparison_note"])}</td>
           <td>{ext_link(r["source_url"], r["source_label"])}</td>
         </tr>"""
         )
@@ -292,21 +309,25 @@ def build_exec_summary(overview: dict) -> str:
 
     body = f"""
     <div class="callout">
-      <strong>Official 2027 Holiday Verification (<code>国办发明电〔2026〕10号</code>):</strong> Lunar New Year's Day is <strong>Sat Feb 6, 2027</strong>; Mainland China's statutory 9-day Spring Festival holiday runs <strong>Fri Feb 5 – Sat Feb 13, 2027</strong>, with <strong>Sun Feb 14</strong> designated an official make-up workday. Arriving <strong>Mon Feb 15, 2027</strong> avoids peak domestic holiday crowds while still catching <strong>Lantern Festival (Sat Feb 20, 2027)</strong>.
+      <strong>Official 2027 Holiday Verification (<code>国办发明电〔2026〕10号</code>):</strong> Lunar New Year's Day is <strong>Sat Feb 6, 2027</strong>; Mainland China's statutory 9-day Spring Festival holiday runs <strong>Fri Feb 5 – Sat Feb 13, 2027</strong>, with <strong>Sun Feb 14</strong> designated an official make-up workday. Arriving <strong>Mon Feb 15, 2027</strong> is after the stated holiday period and still catches <strong>Lantern Festival (Sat Feb 20, 2027)</strong>.
+    </div>
+    <div class="callout amber">
+      <strong>Duration / preferred-date conflict:</strong> The brief asks for 1–2 weeks but prefers Feb 15–18. A 7-night stay from Feb 15 ends Feb 22; it does not fit entirely within Feb 15–18. Checkout on Feb 18 gives 3 nights; including the night of Feb 18 and leaving Feb 19 gives 4 nights. Neither interpretation meets the 7-night minimum. Resolve this in <a href="questions.html">Q11</a> before using the date recommendation.
     </div>
 
     <section class="section-block">
       <div class="section-header">
-        <h2>Vacation Length Trade-Offs (1–2 Weeks Core vs 2–4 Weeks Extended)</h2>
-        <span>Window: Feb 15 – Mar 23, 2027</span>
+        <h2>In-Scope Vacation Lengths (7–14 Nights)</h2>
+        <span>Travel window: Feb 15 – Mar 23, 2027 · Longer trips excluded from this brief</span>
       </div>
+      <p class="section-sub">The table shows only 7-, 10-, and 14-night scenarios, matching the requested one- to two-week range. The exact total for stays longer than the priced 7-night quotes is not extrapolated.</p>
       <div class="table-scroll">
         <table class="data-table">
           <thead>
             <tr>
               <th>Duration Option</th>
               <th>Recommended Dates</th>
-              <th>US Visa Pathway Fit</th>
+              <th>Passport-Dependent Entry Notes</th>
               <th>Holiday &amp; Season Context</th>
               <th>Hotel Rate Impact</th>
               <th>Recommended Geographic Scope</th>
@@ -322,10 +343,10 @@ def build_exec_summary(overview: dict) -> str:
 
     <section class="section-block">
       <div class="section-header">
-        <h2>Empirical Cheapest Travel Dates: Live Feb vs March 2027 Hotel Price Curve</h2>
-        <span>Checked live on <code>2026-11-26</code></span>
+        <h2>Observed Hotel Stay-Date Quotes (Snapshot; Not a Booking Forecast)</h2>
+        <span>Quote snapshot: <code>2026-11-26</code></span>
       </div>
-      <p class="section-sub">Across live-queried MICHELIN Hotels and direct brand booking engines, <strong>Feb 15–22, 2027</strong> is consistently 15.5% to 40.3% cheaper than March 2027 once corporate convention travel resumes on March 1.</p>
+      <p class="section-sub">The listed properties/windows are a limited sample. Recorded quotes showed lower February stay-date prices than the sampled March dates in some comparisons; this does not establish the cheapest price for every date, a current available rate, or the cheapest future day to book. See <a href="flagged.html#F18">F18</a> and refresh the source before purchase.</p>
       <div class="table-scroll">
         <table class="data-table">
           <thead>
@@ -335,8 +356,8 @@ def build_exec_summary(overview: dict) -> str:
               <th>Feb 22 – Mar 1, 2027</th>
               <th>Mar 1 – Mar 8, 2027</th>
               <th>Mar 16 – Mar 23, 2027</th>
-              <th>Verified Cheapest Window</th>
-              <th>Live Rate Source</th>
+              <th>Observed Stay-Date Comparison (Not a Booking Forecast)</th>
+              <th>Dated Rate Source</th>
             </tr>
           </thead>
           <tbody>
@@ -348,14 +369,15 @@ def build_exec_summary(overview: dict) -> str:
 
     <section class="section-block">
       <div class="section-header">
-        <h2>When to Book for Best Prices &amp; Zero-Fee Visa Deadlines</h2>
-        <span>Today: <code>2026-11-26</code> (~81 days before Feb 15, 2027)</span>
+        <h2>Booking Checkpoints &amp; Published Deadlines</h2>
+        <span>Source snapshot: <code>2026-11-26</code> · no cheapest booking date established</span>
       </div>
+      <p class="section-sub">A stay-date price comparison is not a booking-timing forecast. The entries below are offer deadlines or suggested recheck dates from the recorded sources; they do not prove that booking on any specific date will be cheapest. The current hotel amounts need a new checkout quote.</p>
       <div class="table-scroll">
         <table class="data-table">
           <thead>
             <tr>
-              <th>Hard Deadline</th>
+              <th>Action Timing</th>
               <th>Lead Window</th>
               <th>Action &amp; Financial Reason</th>
               <th>Official Source</th>
@@ -370,38 +392,49 @@ def build_exec_summary(overview: dict) -> str:
     """
     return render_shell(
         "executive-summary.html",
-        "Executive Summary, Optimal Dates & Booking Curve",
-        "Executive Decision Brief",
-        "Optimal Dates, Duration Options & Booking-Timing Proof",
-        "Why Mon Feb 15 – Mon Feb 22, 2027 (or Feb 15 – Mar 1 for 2 weeks) beats March 2027 on price, crowds, and festival timing — backed by live multi-window quotes.",
+        "Executive Summary, In-Scope Dates & Price Snapshot",
+        "Executive Decision Brief · 2 Adults",
+        "In-Scope Dates, Duration Conflict & Observed Hotel Quotes",
+        "Compare 7-, 10-, and 14-night scenarios for two adults; the preferred Feb 15–18 window does not fit the stated minimum length, and dated hotel quotes do not predict the cheapest day to book.",
         body,
     )
 
 
 def build_hotels(hotels_data: dict) -> str:
     rows = []
+    cluster = hotels_data["cluster_coverage"]
+    priced_hotels = sorted(
+        (h for h in hotels_data["hotels"] if h["seven_night_total_usd"] is not None),
+        key=lambda h: (h["seven_night_total_usd"], h["name"].casefold()),
+    )
+    price_ranks = {h["id"]: rank for rank, h in enumerate(priced_hotels, start=1)}
     for h in hotels_data["hotels"]:
         tags = " ".join(["all"] + h["filter_tags"])
+        price_rank = price_ranks.get(h["id"])
         if h["seven_night_total_usd"] is not None:
             price_cell = (
-                f'<span class="num-strong">${h["seven_night_total_usd"]:,.2f} USD</span>'
-                f'<span class="muted-note">${h["nightly_base_usd"]:,.2f}/nt pre-tax · {esc(h["rate_inclusions"])}</span>'
+                f'<span class="num-strong">${h["seven_night_total_usd"]:,.2f} USD · 7 nights</span>'
+                f'<span class="muted-note">Snapshot 2026-11-26 · ${h["nightly_base_usd"]:,.2f}/nt pre-tax · {esc(h["rate_inclusions"])}</span>'
+                f'<span class="muted-note"><strong>Observed price rank:</strong> #{price_rank} of {len(priced_hotels)} quoted USD totals (ascending; room and rate terms are not normalized).</span>'
             )
         else:
             price_cell = (
-                f'<span class="blank-cell">— (Live 11-26 USD N/A)</span>'
+                f'<span class="blank-cell">— (No comparable live USD checkout total returned on 2026-11-26)</span>'
                 f'<span class="muted-note">{esc(h["rate_inclusions"])}</span>'
+                '<span class="muted-note"><strong>Observed price rank:</strong> Not ranked; no comparable USD total.</span>'
             )
 
         links_list = [
             ext_link(h["quote_url"], "Dated Quote / Offer"),
-            ext_link(h["room_spec_url"], "Official Room/Bath Spec"),
+            ext_link(h["room_spec_url"], h.get("room_spec_label", "Official Room/Bath Spec")),
+            ext_link(cluster["source_url"], "Official MICHELIN Directory"),
+            ext_link(cluster["transit_source_url"], "Official Metro Reference"),
         ]
         if h.get("direct_engine_url"):
             links_list.append(ext_link(h["direct_engine_url"], "Direct Notice"))
 
         rows.append(
-            f"""<tr data-tags="{esc(tags)}">
+            f"""<tr data-tags="{esc(tags)}" data-overall-rank="{h["rank"]}" data-price-rank="{price_rank if price_rank is not None else "unranked"}">
           <td class="num-strong">#{h["rank"]}</td>
           <td>
             <strong>{esc(h["name"])}</strong>
@@ -411,6 +444,7 @@ def build_hotels(hotels_data: dict) -> str:
           <td>
             <strong>{esc(h["metro_hub"])}</strong>
             <span class="muted-note">{esc(h["cluster_summary"])}</span>
+            <span class="muted-note"><strong>Coverage tie:</strong> {cluster["tracked_venue_count"]}/{cluster["tracked_venue_count"]} tracked venues within ≤{cluster["access_limit_minutes"]} min ({cluster["starred_count"]} starred + {cluster["bib_gourmand_count"]} Bib + {cluster["selected_count"]} Selected). Curated subset only; see <a href="flagged.html#F19">F19</a>.</span>
             <span class="muted-note"><strong>On-site:</strong> {esc(h["in_house_michelin"])}</span>
           </td>
           <td>
@@ -423,9 +457,10 @@ def build_hotels(hotels_data: dict) -> str:
             {esc(h["cancellation"])}
             <span class="muted-note">{esc(h["direct_channel_note"])}</span>
           </td>
+          <td>{esc(h["rank_rationale"])}</td>
           <td>
             {"<br>".join(links_list)}<br>
-            {flag_badge(h["flag_id"])}
+            {flag_badges(h.get("flag_ids"), h["flag_id"])}
           </td>
         </tr>"""
         )
@@ -442,17 +477,20 @@ def build_hotels(hotels_data: dict) -> str:
 
     body = f"""
     <div class="callout amber">
-      <strong>Strict Room-Level Verification:</strong> Every USD total below is an actual <strong>room-level 7-night checkout quote including taxes &amp; fees for 2 adults sharing 1 room (<code>2027-02-15</code> to <code>2027-02-22</code>)</strong> — never an unverified banner "starting at × 7" estimate. Also note two critical property alerts caught during our live check: <strong>The Ritz-Carlton Pudong (#7)</strong> has active 1F Lobby / 3F / <strong>55F Spa</strong> enhancement works since Oct 1, 2026 (<a href="flagged.html#F03">Flag F03</a>), and <strong>The Peninsula Shanghai (#6)</strong> has a 15%-off + breakfast promo closing <strong>Dec 7, 2026</strong> (<a href="flagged.html#F01">Flag F01</a>).
+      <strong>Dated room-level checkout snapshots:</strong> The amounts below were recorded for <strong>2 adults, 1 room, 7 nights (<code>2027-02-15</code> to <code>2027-02-22</code>) on 2026-11-26</strong>; they are not current availability, a guaranteed price, or a forecast of the cheapest booking day. Re-open the dated quote and confirm room, bed, private bathroom, cancellation, taxes, and fees before purchase (<a href="flagged.html#F18">Flag F18</a>). Property alerts recorded in the same research pass: <strong>The Ritz-Carlton Pudong (#7)</strong> renovation notice (<a href="flagged.html#F03">F03</a>) and <strong>The Peninsula Shanghai (#6)</strong> offer deadline Dec 7, 2026 (<a href="flagged.html#F01">F01</a>).
+    </div>
+    <div class="callout">
+      <strong>How to read the order:</strong> The overall order is a qualitative decision-support shortlist, not a weighted score or lowest-price order; each row gives its reason. The separate observed price rank sorts the eight recorded USD totals from low to high, while Peninsula is unranked because no comparable USD checkout total was captured. Room type, breakfast, and cancellation terms are not normalized. All nine hotels tie at 18/18 only within the curated venue subset, so the count does not distinguish them. Langham's selected bed setup and the exact-room private-bath details for W Shanghai and Bvlgari need confirmation before booking (<a href="flagged.html#F21">F21</a>, <a href="flagged.html#F05">F05</a>).
     </div>
 
     <section class="section-block">
       <div class="section-header">
-        <h2>Ranked Hotels: ≤1h MICHELIN Cluster Reach &amp; Live Feb 15–22, 2027 Totals</h2>
-        <span>2 Adults · 1 Private Room · Queen/King+ Bed &amp; En-Suite Bath</span>
+        <h2>Hotel Shortlist: 18/18 MICHELIN Count Tie (≤1h) &amp; Feb 15–22 Quote Snapshots</h2>
+        <span>2 Adults · Target: 1 private room with Queen/King+ bed; verify flagged room details</span>
       </div>
 
       <div id="hotel-filters" class="filter-bar" role="toolbar" aria-label="Filter hotels">
-        <button class="filter-btn active" type="button" data-filter="all">All Ranked (9)</button>
+        <button class="filter-btn active" type="button" data-filter="all">All Shortlisted (9)</button>
         <button class="filter-btn" type="button" data-filter="under-2000">Under $2,000</button>
         <button class="filter-btn" type="button" data-filter="under-2500">Under $2,500</button>
         <button class="filter-btn" type="button" data-filter="breakfast">Breakfast Included</button>
@@ -460,19 +498,20 @@ def build_hotels(hotels_data: dict) -> str:
         <button class="filter-btn" type="button" data-filter="in-house-star">In-House MICHELIN Star</button>
         <button class="filter-btn" type="button" data-filter="huangpu">Huangpu (Xintiandi/Bund)</button>
         <button class="filter-btn" type="button" data-filter="jingan">Jing'an</button>
-        <span id="hotel-count" class="filter-count">Showing 9 of 9 verified entries</span>
+        <span id="hotel-count" class="filter-count">Showing 9 of 9 shortlisted properties</span>
       </div>
 
       <div class="table-scroll">
         <table id="hotels-table" class="data-table">
           <thead>
             <tr>
-              <th>Rank</th>
+              <th>Decision-Support Order</th>
               <th>Hotel &amp; MICHELIN Key Status</th>
               <th>Metro Hub &amp; ≤1h MICHELIN Cluster Reach</th>
-              <th>Verified Room, Bed &amp; Private Bathroom</th>
-              <th>7-Night Total (Feb 15–22, 2027)</th>
+              <th>Room, Bed &amp; Private Bathroom Fit</th>
+              <th>Observed 7-Night USD Total &amp; Price Rank</th>
               <th>Cancellation &amp; Property Alerts</th>
+              <th>Why This Order</th>
               <th>Sources &amp; Audit</th>
             </tr>
           </thead>
@@ -485,8 +524,8 @@ def build_hotels(hotels_data: dict) -> str:
 
     <section class="section-block">
       <div class="section-header">
-        <h2>Checked Properties Returning No Live Checkout Inventory on 2026-11-26</h2>
-        <span>Zero surrogate prices used</span>
+        <h2>Properties With No Quote Returned in the 2026-11-26 Snapshot</h2>
+        <span>Current inventory is unknown; no surrogate prices used</span>
       </div>
       <div class="table-scroll">
         <table class="data-table">
@@ -506,9 +545,9 @@ def build_hotels(hotels_data: dict) -> str:
     """
     return render_shell(
         "hotels.html",
-        "Ranked Hotels & Live Feb 15–22, 2027 Rates",
-        "Verified Accommodations · 1 Room, 2 Adults",
-        "Shanghai Hotels Ranked by ≤1h MICHELIN Access & Live 7-Night Quotes",
+        "Hotel Shortlist & Feb 15–22, 2027 Quote Snapshots",
+        "Decision Support · 1 Room, 2 Adults",
+        "Shanghai Hotels: 18/18 MICHELIN Cluster Tie & Dated 7-Night Quotes",
         hotels_data["ranking_methodology"],
         body,
     )
@@ -892,25 +931,24 @@ def build_visa_budget(gov: dict) -> str:
         )
 
     body = f"""
-    <div class="callout">
-      <strong>Critical US Citizen Visa Fee Deadline (<code>Dec 31, 2026</code>):</strong>
-      The United States is <em>not</em> on China's 30-day unilateral visa-free list, so US travelers use either (1) <strong>$0 240-Hour Visa-Free Transit</strong> when flying onward to a third country/region, OR (2) the <strong>simplified US Tourist L-Visa</strong> (no air ticket, hotel booking, or invitation required!). Per the Chinese Embassy in the US, the reduced <strong>$140/person ($280/couple)</strong> regular US visa fee is scheduled through <strong>December 31, 2026</strong> ($185/pp baseline if unextended).
+    <div class="callout amber">
+      <strong>Conditional example only — traveler passport status is unknown:</strong> The trip brief provides no passport nationality or current visa status. The table below summarizes a U.S.-passport case for reference and must not be treated as either traveler’s eligibility or fee. Check both travelers’ passports, route, ports, stay length, and current requirements with the competent Chinese authority before booking (<a href="flagged.html#F17">Flag F17</a>). Any fee deadline shown is from a dated source and should be reconfirmed.
     </div>
 
     <section class="section-block">
       <div class="section-header">
-        <h2>Official US Passport Entry Pathways (Checked 2026-11-26)</h2>
-        <span>China NIA &amp; Embassy of PRC in the USA</span>
+        <h2>Conditional U.S.-Passport Entry Examples (Source Snapshot 2026-11-26)</h2>
+        <span>Not traveler-specific; eligibility unknown for both adults</span>
       </div>
       <div class="table-scroll">
         <table class="data-table">
           <thead>
             <tr>
               <th>Entry Pathway</th>
-              <th>US Passport Eligibility</th>
+              <th>U.S.-Passport Case (Conditional)</th>
               <th>Mandatory Flight Routing Rule</th>
               <th>Permitted Duration</th>
-              <th>Couple Fee (2 Adults)</th>
+              <th>Conditional Example Fee (2)</th>
               <th>Required Application Documents</th>
               <th>Official Gov Source</th>
             </tr>
@@ -924,29 +962,30 @@ def build_visa_budget(gov: dict) -> str:
 
     <section class="section-block">
       <div class="section-header">
-        <h2>Interactive Verified Couple Budget Builder (7 Nights · Feb 15–22, 2027)</h2>
-        <span>Sums ONLY verified published figures</span>
+        <h2>Interactive Scenario Calculator (7 Nights · Feb 15–22, 2027)</h2>
+        <span>Visa cost defaults to unresolved until passports and routing are known</span>
       </div>
       <div class="calc-grid">
         <div class="calc-field">
-          <label for="calc-hotel">1. Verified 7-Night Hotel (Tax-Inclusive USD)</label>
+          <label for="calc-hotel">1. Dated 7-Night Hotel Quote Snapshot (USD)</label>
           <select id="calc-hotel">
-            <option value="1376.21">Andaz Xintiandi — $1,376.21 (King, Non-Ref)</option>
-            <option value="1847.02">Jing An Shangri-La — $1,847.02 (King, Non-Ref)</option>
-            <option value="2291.93" selected>The Langham Xintiandi — $2,291.93 (King + Breakfast + Free Cancel)</option>
+            <option value="1376.21" selected>Andaz Xintiandi — $1,376.21 (verified King/private bath; non-refundable)</option>
+            <option value="1847.02">Jing An Shangri-La — $1,847.02 (King, non-refundable)</option>
+            <option value="2291.93">The Langham Xintiandi — $2,291.93 snapshot (breakfast + free cancel; confirm one King, F21)</option>
             <option value="2394.04">The Sukhothai — $2,394.04 (55m² Studio King + Free Cancel)</option>
             <option value="2532.92">Ritz-Carlton Pudong — $2,532.92 (King; see Spa Flag F03)</option>
-            <option value="2792.31">W Shanghai The Bund — $2,792.31 (Wonderful King)</option>
+            <option value="2792.31">W Shanghai The Bund — $2,792.31 (King; confirm private bath, F05)</option>
             <option value="3222.01">The Shanghai EDITION — $3,222.01 (King/2 Queens + Free Cancel)</option>
-            <option value="6858.31">Bvlgari Hotel Shanghai — $6,858.31 (Superior + Breakfast + Free Cancel)</option>
+            <option value="6858.31">Bvlgari Hotel Shanghai — $6,858.31 (Queen + breakfast/free cancel; confirm private bath, F05)</option>
           </select>
         </div>
         <div class="calc-field">
-          <label for="calc-visa">2. US Citizen Entry Pathway (For 2)</label>
+          <label for="calc-visa">2. Visa / Entry Cost (Not Yet Determined)</label>
           <select id="calc-visa">
-            <option value="0" selected>$0 — 240h Visa-Free Transit (via 3rd country/region)</option>
-            <option value="280">$280 — 2× US L-Visa Regular ($140/pp by Dec 31, 2026)</option>
-            <option value="370">$370 — 2× US L-Visa Baseline ($185/pp if post-2026 unextended)</option>
+            <option value="" selected>Not included — verify both passports and route</option>
+            <option value="0">Conditional example: $0 visa fee if both qualify for 240h transit</option>
+            <option value="280">Conditional U.S. example: $280 for two L-Visas under the cited fee notice</option>
+            <option value="370">Conditional U.S. example: $370 for two at the cited baseline fee</option>
           </select>
         </div>
         <div class="calc-field">
@@ -979,7 +1018,7 @@ def build_visa_budget(gov: dict) -> str:
             <tr>
               <th>Scenario Tier</th>
               <th>7-Night Hotel (Tax-Inclusive)</th>
-              <th>US Entry Cost</th>
+              <th>Conditional U.S.-Passport Example (Not Traveler-Specific)</th>
               <th>Verified Published MICHELIN Menus (for 2)</th>
               <th>Verified Transit &amp; Tickets (for 2)</th>
               <th>Verified Subtotal &amp; Unpriced Exclusions</th>
@@ -995,16 +1034,17 @@ def build_visa_budget(gov: dict) -> str:
     """
     return render_shell(
         "visa-budget.html",
-        "US Citizen Visa Rules & Verified Couple Budget",
+        "Entry Options & Couple Budget Scenarios",
         "Entry Compliance & Cost Transparency",
-        "US Passport Visa Options & Line-Item Couple Budget Builder",
-        "Official NIA 240h visa-free transit rules, US Embassy simplified L-visa requirements ($140 reduced fee through Dec 31, 2026), and strictly verified couple cost scenarios.",
+        "Conditional Entry Examples & Couple Budget Builder",
+        "Passport nationality and visa status were not supplied. U.S.-passport rules appear only as conditional examples; the calculator excludes visa costs until eligibility is known.",
         body,
     )
 
 
 def build_questions(gov: dict) -> str:
     rows = []
+    question_range = f"{gov['questions'][0]['id']}–{gov['questions'][-1]['id']}"
     for q in gov["questions"]:
         rows.append(
             f"""<tr>
@@ -1020,7 +1060,7 @@ def build_questions(gov: dict) -> str:
     body = f"""
     <section class="section-block">
       <div class="section-header">
-        <h2>Missing Information &amp; Concrete Discovery Matrix (Q01–Q10)</h2>
+        <h2>Missing Information &amp; Concrete Discovery Matrix ({question_range})</h2>
         <span>Every gap paired with an actionable resolution step</span>
       </div>
       <p class="section-sub">Rather than guessing traveler preferences or unpublished vendor tariffs, each open variable below states why it changes the plan and the exact method to verify it.</p>
@@ -1104,13 +1144,15 @@ def build_suggestions(gov: dict) -> str:
         "Strategic Suggestions (For Review Only)",
         "For Review Only — Not Implemented",
         "High-Leverage Ideas to Improve Value, Routing & Crowd Timing",
-        "Optional optimizations surfaced from our live hotel rate curves, visa fee rules, and 2026 MICHELIN lunch-vs-dinner menus.",
+        "Optional ideas are based on dated 2026 hotel quote snapshots, conditional visa examples, and published 2026 MICHELIN menus; verify current terms before acting.",
         body,
     )
 
 
 def build_flagged(gov: dict) -> str:
     rows = []
+    flag_count = len(gov["flagged_items"])
+    flag_range = f"{gov['flagged_items'][0]['id']}–{gov['flagged_items'][-1]['id']}"
     for f in gov["flagged_items"]:
         rows.append(
             f"""<tr id="{esc(f["id"])}">
@@ -1125,13 +1167,13 @@ def build_flagged(gov: dict) -> str:
 
     body = f"""
     <div class="callout">
-      <strong>Zero-Guesswork Transparency Policy:</strong> Whenever a price, operating day, room-bath phrase, renovation end date, or venue-exact Western social link could not be confirmed from an official or live-verified source on <code>2026-11-26</code> — or where an official operator page contradicted itself — we left the cell blank (<code>—</code>) and logged the exact evidence below.
+      <strong>Zero-Guesswork Transparency Policy:</strong> The underlying official-source research snapshot is dated <code>2026-11-26</code>. Unconfirmed values stay blank (<code>—</code>); dated dynamic hotel quotes are not presented as current availability; and traveler-specific gaps, source contradictions, or ranking limitations are listed below. This integration review checked local consistency on <code>2026-11-28</code> but did not re-fetch third-party hotel/restaurant pages.
     </div>
 
     <section class="section-block">
       <div class="section-header">
-        <h2>Flagged for Review Registry (F01 – F16)</h2>
-        <span>16 audited anomalies, contradictions &amp; unverified gaps</span>
+        <h2>Flagged for Review Registry ({flag_range})</h2>
+        <span>{flag_count} audited assumptions, limitations, contradictions &amp; unverified gaps</span>
       </div>
       <div class="table-scroll">
         <table class="data-table">
@@ -1154,7 +1196,7 @@ def build_flagged(gov: dict) -> str:
     """
     return render_shell(
         "flagged.html",
-        "Flagged for Review (F01–F16)",
+        f"Flagged for Review ({flag_range})",
         "Audit & Irregularity Log",
         "Flagged for Review: Unverified Cells, Contradictions & Renovation Alerts",
         "Every blank cell, operator contradiction, active hotel enhancement notice, and social-link gap documented with clickable evidence.",
@@ -1225,7 +1267,7 @@ def build_repo_audit(overview: dict, hotels: dict, restaurants: dict, activities
         <h2>Repository-Wide Audit Across Existing Sites (Checked 2026-11-26)</h2>
         <span>Non-destructive audit — zero sibling files modified</span>
       </div>
-      <p class="section-sub">Before building <code>/trip-2027/</code>, we audited root (including PR #21's rebuild) and all 6 parallel subsites against live official sources. Below is what prior sessions solved and what new factual corrections <code>/trip-2027/</code> contributes.</p>
+      <p class="section-sub">This page preserves the cross-site source audit recorded on 2026-11-26 for the root dashboard and six companion subsites. The 2026-11-28 integration reviewed local assumptions, route-count scope, and generated output; it did not re-fetch official third-party pages. See Flags F17–F19 for passport nationality, dated hotel quote limits, and the hotel-cluster count tie.</p>
       <div class="table-scroll">
         <table class="data-table">
           <thead>
