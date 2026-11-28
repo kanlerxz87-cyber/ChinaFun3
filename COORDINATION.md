@@ -555,3 +555,18 @@ Claimed 2026-11-27 (UTC). Read-only independent re-verification of high-stakes c
 | 2026-11-27 | `arena/75d997c1-chinafun3` | PR #31 merged to `main` as commit `f70f19cafeaa89fd2527faab6754b112409bb28d`; GitHub Pages build #33 succeeded, Pages API status `built`, source `main` `/`; live site at https://kanlerxz87-cyber.github.io/ChinaFun3/ (root hub) and https://kanlerxz87-cyber.github.io/ChinaFun3/trip-2027/ (verified couple trip dashboard). R04 done — no further action. | 2026-11-27 |
 
 
+
+---
+
+## Task Board — Final Integration Session `arena/f4c3af90-chinafun3` (branch fixed by Arena)
+
+| ID | Task | Status | Owner Session | Files Touched / Scope | Verification Plan |
+|---|---|---|---|---|---|
+| FI01 | Reconcile the stated 1–2-week trip length with preferred Feb 15–18 dates; keep duration choices in scope | **in progress** | `arena/f4c3af90-chinafun3` | `trip-2027/data/overview.json`, `trip-2027/data/governance.json`, generated `trip-2027/executive-summary.html`, `trip-2027/questions.html`, `trip-2027/index.html` | Derive date/night arithmetic only from the user's stated dates; explicitly show the 7-night recommendation extends beyond Feb 18 and do not silently assume availability |
+| FI02 | Make the hotel Michelin-cluster count and ranking tie-breaks transparent | **in progress** | `arena/f4c3af90-chinafun3` | `trip-2027/data/hotels.json`, `trip-2027/scripts/build.py`, generated `trip-2027/hotels.html`, `trip-2027/tests/test_trip_2027.py` | Check all nine hotel records against the 18-venue restaurant dataset and existing route notes; disclose equal 18/18 coverage as a dataset subset and explain that raw counts do not distinguish hotels |
+| FI03 | Distinguish observed stay-date rates from a claim about the cheapest future booking date; strengthen deterministic completeness tests | **in progress** | `arena/f4c3af90-chinafun3` | `trip-2027/data/overview.json`, `trip-2027/data/governance.json`, `trip-2027/scripts/build.py`, generated `trip-2027/*.html`, `trip-2027/tests/test_trip_2027.py`, append-only `COORDINATION.md` | Preserve the 2026-11-26 price snapshot and quote URLs; do not fabricate a booking-time forecast or refresh claims without live official-source access; build all pages and run applicable test/link/mobile checks |
+
+### Claim / handoff note — 2026-11-28
+- This final integration session is on the Arena-assigned branch `arena/f4c3af90-chinafun3` at base/main commit `11dd2cf25319916b7b70f37dbe1d5802c5069dd5`; no alternate branch or worktree is used. The prior root, `trip-2027/`, and companion-site tasks present on this baseline are complete/merged; the stale `arena/e51219fd-chinafun3` audit claim is recorded as done/superseded above.
+- The claim is scoped to resolving ambiguities in the existing published planner, not re-researching or replacing menu, hotel, attraction, visa, or Michelin facts. Existing source dates and official URLs are retained; any dynamic rates remain dated snapshots and require a fresh checkout review before purchase.
+- This claim was committed and pushed on the current Arena branch before implementation. No other session scope is taken over.
